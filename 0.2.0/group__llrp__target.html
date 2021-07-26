@@ -1,0 +1,533 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RDMnet: LLRP Target</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<!-- BEGIN CUSTOM SCRIPTS -->
+<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<script type="text/javascript">
+  $(function () {
+    $.get('/RDMnetDocs/versions.txt', function (data) {
+      if (data) {
+        var lines = data.split('\n');
+        if (lines.length > 0) {
+          var version_select = $("#version_select").empty();
+          lines.forEach(function (line) {
+            line = line.trim();
+            if (!line) {
+              return;
+            }
+            line = line.split(':');
+            var option_name = line[0].replace(/^v/, '');
+            if (line.length > 1) {
+              option_name += ' (' + line[1] + ')';
+            }
+            var option_val = '/RDMnetDocs/' + line[0];
+            var option = $('<option></option>').attr("value", option_val)
+              .text(option_name);
+            if (window.location.pathname.match(line[0])) {
+              option = option.attr("selected", "selected");
+            }
+            version_select.append(option);
+          });
+        }
+      }
+    }, 'text');
+  });
+</script>
+<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<script type="text/javascript">
+  $(function () { selectAllC() });
+</script>
+<script type="text/javascript">
+  function selectAllC() {
+    // Enable all C-language blocks
+    var tabcontent = document.getElementsByClassName("code-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      if (tabcontent[i].id.endsWith("_c")) {
+        tabcontent[i].style.display = "block";
+      } else {
+        tabcontent[i].style.display = "none"
+      }
+    }
+    // Enable all C-language buttons
+    var tablinks = document.getElementsByClassName("code-tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      if (tablinks[i].id.endsWith("_c")) {
+        if (!tablinks[i].className.includes("active")) {
+          tablinks[i].className = tablinks[i].className += " active";
+        }
+      } else {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    }
+  }
+  function selectAllCpp() {
+    // Enable all C++-language blocks
+    var tabcontent = document.getElementsByClassName("code-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      if (tabcontent[i].id.endsWith("_cpp")) {
+        tabcontent[i].style.display = "block";
+      } else {
+        tabcontent[i].style.display = "none"
+      }
+    }
+    // Enable all C++-language buttons
+    var tablinks = document.getElementsByClassName("code-tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      if (tablinks[i].id.endsWith("_cpp")) {
+        if (!tablinks[i].className.includes("active")) {
+          tablinks[i].className = tablinks[i].className += " active";
+        }
+      } else {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    }
+  }
+  function selectLanguage(evt, block_id, language) {
+    // Get all elements with class="tabcontent" and hide them
+    var tabcontent = document.getElementsByClassName("code-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      if (tabcontent[i].id.startsWith("div_" + block_id)) {
+        tabcontent[i].style.display = "none";
+      }
+    }
+    // Get all elements with class="tablinks" and remove the class "active"
+    var tablinks = document.getElementsByClassName("code-tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      if (tablinks[i].id.startsWith("button_" + block_id)) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById("div_" + block_id + "_" + language).style.display = "block";
+    if (!evt.currentTarget.className.includes("active")) {
+      evt.currentTarget.className += " active";
+    }
+  }
+</script>
+<!-- END CUSTOM SCRIPTS -->
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RDMnet
+   &#160;<span id="projectnumber">0.2.0</span>
+   </div>
+   <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+  </td>
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <td style="text-align: right; padding-right: 0.5em">
+    <div id="otherversions">
+      View other versions:
+      <select id="version_select" onchange="location = this.value">
+      </select>
+    </div>
+  </td>
+  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__llrp__target.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">LLRP Target<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__llrp.html">LLRP</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Implement the functionality required by an LLRP Target in E1.33. </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_local_rdm_response.html">LlrpLocalRdmResponse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command to be sent from a local LLRP Target.  <a href="struct_llrp_local_rdm_response.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager.  <a href="struct_llrp_remote_rdm_command.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_callbacks.html">LlrpTargetCallbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_optional_config.html">LlrpTargetOptionalConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_config.html">LlrpTargetConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga21149cf08c8d5edaef04b3f8399c8c7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#ga21149cf08c8d5edaef04b3f8399c8c7d">LLRP_CREATE_RESPONSE_FROM_COMMAND</a>(resp,  received_cmd,  rdm_resp)</td></tr>
+<tr class="memdesc:ga21149cf08c8d5edaef04b3f8399c8c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="struct_llrp_local_rdm_response.html" title="An RDM command to be sent from a local LLRP Target.">LlrpLocalRdmResponse</a> to a received <a class="el" href="struct_llrp_remote_rdm_command.html" title="An RDM command received from a remote LLRP Manager.">LlrpRemoteRdmCommand</a>.  <a href="group__llrp__target.html#ga21149cf08c8d5edaef04b3f8399c8c7d">More...</a><br /></td></tr>
+<tr class="separator:ga21149cf08c8d5edaef04b3f8399c8c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e524547ca88e29e79673846d2459f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>LLRP_TARGET_INIT_OPTIONAL_CONFIG_VALUES</b>(optionalcfgptr,  manu_id)</td></tr>
+<tr class="separator:ga1e524547ca88e29e79673846d2459f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4ca669ae28171e1ca1305c3757c96ce"><td class="memItemLeft" align="right" valign="top"><a id="gae4ca669ae28171e1ca1305c3757c96ce"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LLRP_TARGET_CONFIG_INIT</b>(targetcfgptr,  manu_id)&#160;&#160;&#160;  LLRP_TARGET_INIT_OPTIONAL_CONFIG_VALUES(&amp;(targetcfgptr)-&gt;optional, manu_id)</td></tr>
+<tr class="separator:gae4ca669ae28171e1ca1305c3757c96ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gae5c6ed129dfbf77ce3abb34e41679c6e"><td class="memItemLeft" align="right" valign="top"><a id="gae5c6ed129dfbf77ce3abb34e41679c6e"></a>
+typedef struct <a class="el" href="struct_llrp_local_rdm_response.html">LlrpLocalRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#gae5c6ed129dfbf77ce3abb34e41679c6e">LlrpLocalRdmResponse</a></td></tr>
+<tr class="memdesc:gae5c6ed129dfbf77ce3abb34e41679c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command to be sent from a local LLRP Target. <br /></td></tr>
+<tr class="separator:gae5c6ed129dfbf77ce3abb34e41679c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa865318570d5186bd1c50803d3b26f3d"><td class="memItemLeft" align="right" valign="top"><a id="gaa865318570d5186bd1c50803d3b26f3d"></a>
+typedef struct <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#gaa865318570d5186bd1c50803d3b26f3d">LlrpRemoteRdmCommand</a></td></tr>
+<tr class="memdesc:gaa865318570d5186bd1c50803d3b26f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager. <br /></td></tr>
+<tr class="separator:gaa865318570d5186bd1c50803d3b26f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa086f0526596a7360c5c0e1f55672222"><td class="memItemLeft" align="right" valign="top"><a id="gaa086f0526596a7360c5c0e1f55672222"></a>
+typedef struct <a class="el" href="struct_llrp_target_callbacks.html">LlrpTargetCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LlrpTargetCallbacks</b></td></tr>
+<tr class="separator:gaa086f0526596a7360c5c0e1f55672222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59e3163bb9f4686547218d2951a56f55"><td class="memItemLeft" align="right" valign="top"><a id="ga59e3163bb9f4686547218d2951a56f55"></a>
+typedef struct <a class="el" href="struct_llrp_target_optional_config.html">LlrpTargetOptionalConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LlrpTargetOptionalConfig</b></td></tr>
+<tr class="separator:ga59e3163bb9f4686547218d2951a56f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46d051cf6673c92d688435b5971abb30"><td class="memItemLeft" align="right" valign="top"><a id="ga46d051cf6673c92d688435b5971abb30"></a>
+typedef struct <a class="el" href="struct_llrp_target_config.html">LlrpTargetConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LlrpTargetConfig</b></td></tr>
+<tr class="separator:ga46d051cf6673c92d688435b5971abb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1757a9e92a8bca19152c447908e522d1"><td class="memItemLeft" align="right" valign="top">lwpa_error_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#ga1757a9e92a8bca19152c447908e522d1">rdmnet_llrp_target_create</a> (const <a class="el" href="struct_llrp_target_config.html">LlrpTargetConfig</a> *config, <a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a> *handle)</td></tr>
+<tr class="memdesc:ga1757a9e92a8bca19152c447908e522d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new LLRP target instance.  <a href="group__llrp__target.html#ga1757a9e92a8bca19152c447908e522d1">More...</a><br /></td></tr>
+<tr class="separator:ga1757a9e92a8bca19152c447908e522d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea8ed114f6644bb80ac2169ef9986afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#gaea8ed114f6644bb80ac2169ef9986afb">rdmnet_llrp_target_destroy</a> (<a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a> handle)</td></tr>
+<tr class="memdesc:gaea8ed114f6644bb80ac2169ef9986afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an LLRP target instance.  <a href="group__llrp__target.html#gaea8ed114f6644bb80ac2169ef9986afb">More...</a><br /></td></tr>
+<tr class="separator:gaea8ed114f6644bb80ac2169ef9986afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga999fb35f44ba501a0aa1f308e3e73323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#ga999fb35f44ba501a0aa1f308e3e73323">rdmnet_llrp_target_update_connection_state</a> (<a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a> handle, bool connected_to_broker)</td></tr>
+<tr class="memdesc:ga999fb35f44ba501a0aa1f308e3e73323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the Broker connection state of an LLRP target.  <a href="group__llrp__target.html#ga999fb35f44ba501a0aa1f308e3e73323">More...</a><br /></td></tr>
+<tr class="separator:ga999fb35f44ba501a0aa1f308e3e73323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2271b736434c43ab21eb76672afe9fa6"><td class="memItemLeft" align="right" valign="top">lwpa_error_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#ga2271b736434c43ab21eb76672afe9fa6">rdmnet_llrp_send_rdm_response</a> (<a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a> handle, const <a class="el" href="struct_llrp_local_rdm_response.html">LlrpLocalRdmResponse</a> *resp)</td></tr>
+<tr class="memdesc:ga2271b736434c43ab21eb76672afe9fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM response from an LLRP target.  <a href="group__llrp__target.html#ga2271b736434c43ab21eb76672afe9fa6">More...</a><br /></td></tr>
+<tr class="separator:ga2271b736434c43ab21eb76672afe9fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga21149cf08c8d5edaef04b3f8399c8c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21149cf08c8d5edaef04b3f8399c8c7d">&#9670;&nbsp;</a></span>LLRP_CREATE_RESPONSE_FROM_COMMAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LLRP_CREATE_RESPONSE_FROM_COMMAND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">resp, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">received_cmd, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rdm_resp&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                    \</div>
+<div class="line">  {                                                                     \</div>
+<div class="line">    (resp)-&gt;dest_cid = (received_cmd)-&gt;src_cid;                         \</div>
+<div class="line">    (resp)-&gt;seq_num = (received_cmd)-&gt;seq_num;                          \</div>
+<div class="line">    (resp)-&gt;interface_index = (received_cmd)-&gt;interface_index;          \</div>
+<div class="line">    (resp)-&gt;<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command.html">rdm</a> = *(rdm_resp);                                          \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="aclassrdm_1_1_command_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command.html">rdm</a></div></div>
+</div><!-- fragment -->
+<p>Initialize a <a class="el" href="struct_llrp_local_rdm_response.html" title="An RDM command to be sent from a local LLRP Target.">LlrpLocalRdmResponse</a> to a received <a class="el" href="struct_llrp_remote_rdm_command.html" title="An RDM command received from a remote LLRP Manager.">LlrpRemoteRdmCommand</a>. </p>
+<p>Provide the received command and the RdmResponse to be sent in response.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resp</td><td>Response to initialize (<a class="el" href="struct_llrp_local_rdm_response.html" title="An RDM command to be sent from a local LLRP Target.">LlrpLocalRdmResponse</a> *). </td></tr>
+    <tr><td class="paramname">received_cmd</td><td>Received command (<a class="el" href="struct_llrp_remote_rdm_command.html" title="An RDM command received from a remote LLRP Manager.">LlrpRemoteRdmCommand</a> *). </td></tr>
+    <tr><td class="paramname">rdm_resp</td><td>RDM response to send (RdmResponse *). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1e524547ca88e29e79673846d2459f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e524547ca88e29e79673846d2459f68">&#9670;&nbsp;</a></span>LLRP_TARGET_INIT_OPTIONAL_CONFIG_VALUES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LLRP_TARGET_INIT_OPTIONAL_CONFIG_VALUES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">optionalcfgptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">manu_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                     \</div>
+<div class="line">  {                                                                      \</div>
+<div class="line">    (optionalcfgptr)-&gt;netint_arr = NULL;                                 \</div>
+<div class="line">    (optionalcfgptr)-&gt;num_netints = 0;                                   \</div>
+<div class="line">    RDMNET_INIT_DYNAMIC_UID_REQUEST(&amp;(optionalcfgptr)-&gt;uid, (manu_id));  \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga2271b736434c43ab21eb76672afe9fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2271b736434c43ab21eb76672afe9fa6">&#9670;&nbsp;</a></span>rdmnet_llrp_send_rdm_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lwpa_error_t rdmnet_llrp_send_rdm_response </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_llrp_local_rdm_response.html">LlrpLocalRdmResponse</a> *&#160;</td>
+          <td class="paramname"><em>resp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send an RDM response from an LLRP target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to LLRP target from which to send an RDM response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resp</td><td>Response to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>#kLwpaErrOk: Response sent successfully. </dd>
+<dd>
+#kLwpaErrInvalid: Invalid argument provided. </dd>
+<dd>
+#kLwpaErrNotInit: Module not initialized. </dd>
+<dd>
+#kLwpaErrNotFound: Handle is not associated with a valid LLRP target instance. </dd>
+<dd>
+Note: Other error codes might be propagated from underlying socket calls. </dd></dl>
+
+</div>
+</div>
+<a id="ga1757a9e92a8bca19152c447908e522d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1757a9e92a8bca19152c447908e522d1">&#9670;&nbsp;</a></span>rdmnet_llrp_target_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lwpa_error_t rdmnet_llrp_target_create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_llrp_target_config.html">LlrpTargetConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a> *&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new LLRP target instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the LLRP target to be created. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Handle to the newly-created target instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>#kLwpaErrOk: Target created successfully. </dd>
+<dd>
+#kLwpaErrInvalid: Invalid argument provided. </dd>
+<dd>
+#kLwpaErrNotInit: Module not initialized. </dd>
+<dd>
+#kLwpaErrNoMem: No memory to allocate additional target instance. </dd>
+<dd>
+#kLwpaErrSys: An internal library or system call error occurred. </dd>
+<dd>
+Note: Other error codes might be propagated from underlying socket calls. </dd></dl>
+
+</div>
+</div>
+<a id="gaea8ed114f6644bb80ac2169ef9986afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea8ed114f6644bb80ac2169ef9986afb">&#9670;&nbsp;</a></span>rdmnet_llrp_target_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_llrp_target_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an LLRP target instance. </p>
+<p>The handle will be invalidated for any future calls to API functions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to target to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga999fb35f44ba501a0aa1f308e3e73323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga999fb35f44ba501a0aa1f308e3e73323">&#9670;&nbsp;</a></span>rdmnet_llrp_target_update_connection_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_llrp_target_update_connection_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__llrp.html#ga1815e7492bd00c1b7c1afda7de00e2b3">llrp_target_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>connected_to_broker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the Broker connection state of an LLRP target. </p>
+<p>If an LLRP target is associated with an RPT client, this should be called each time the client connects or disconnects from a broker. Controllers are considered not connected when they are not connected to any broker. This affects whether the LLRP target responds to filtered LLRP probe requests.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to LLRP target for which to update the connection state. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">connected_to_broker</td><td>Whether the LLRP target is currently connected to a broker. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

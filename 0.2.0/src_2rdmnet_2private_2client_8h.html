@@ -1,0 +1,340 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RDMnet: src/rdmnet/private/client.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<!-- BEGIN CUSTOM SCRIPTS -->
+<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<script type="text/javascript">
+  $(function () {
+    $.get('/RDMnetDocs/versions.txt', function (data) {
+      if (data) {
+        var lines = data.split('\n');
+        if (lines.length > 0) {
+          var version_select = $("#version_select").empty();
+          lines.forEach(function (line) {
+            line = line.trim();
+            if (!line) {
+              return;
+            }
+            line = line.split(':');
+            var option_name = line[0].replace(/^v/, '');
+            if (line.length > 1) {
+              option_name += ' (' + line[1] + ')';
+            }
+            var option_val = '/RDMnetDocs/' + line[0];
+            var option = $('<option></option>').attr("value", option_val)
+              .text(option_name);
+            if (window.location.pathname.match(line[0])) {
+              option = option.attr("selected", "selected");
+            }
+            version_select.append(option);
+          });
+        }
+      }
+    }, 'text');
+  });
+</script>
+<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<script type="text/javascript">
+  $(function () { selectAllC() });
+</script>
+<script type="text/javascript">
+  function selectAllC() {
+    // Enable all C-language blocks
+    var tabcontent = document.getElementsByClassName("code-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      if (tabcontent[i].id.endsWith("_c")) {
+        tabcontent[i].style.display = "block";
+      } else {
+        tabcontent[i].style.display = "none"
+      }
+    }
+    // Enable all C-language buttons
+    var tablinks = document.getElementsByClassName("code-tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      if (tablinks[i].id.endsWith("_c")) {
+        if (!tablinks[i].className.includes("active")) {
+          tablinks[i].className = tablinks[i].className += " active";
+        }
+      } else {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    }
+  }
+  function selectAllCpp() {
+    // Enable all C++-language blocks
+    var tabcontent = document.getElementsByClassName("code-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      if (tabcontent[i].id.endsWith("_cpp")) {
+        tabcontent[i].style.display = "block";
+      } else {
+        tabcontent[i].style.display = "none"
+      }
+    }
+    // Enable all C++-language buttons
+    var tablinks = document.getElementsByClassName("code-tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      if (tablinks[i].id.endsWith("_cpp")) {
+        if (!tablinks[i].className.includes("active")) {
+          tablinks[i].className = tablinks[i].className += " active";
+        }
+      } else {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    }
+  }
+  function selectLanguage(evt, block_id, language) {
+    // Get all elements with class="tabcontent" and hide them
+    var tabcontent = document.getElementsByClassName("code-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      if (tabcontent[i].id.startsWith("div_" + block_id)) {
+        tabcontent[i].style.display = "none";
+      }
+    }
+    // Get all elements with class="tablinks" and remove the class "active"
+    var tablinks = document.getElementsByClassName("code-tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      if (tablinks[i].id.startsWith("button_" + block_id)) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById("div_" + block_id + "_" + language).style.display = "block";
+    if (!evt.currentTarget.className.includes("active")) {
+      evt.currentTarget.className += " active";
+    }
+  }
+</script>
+<!-- END CUSTOM SCRIPTS -->
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RDMnet
+   &#160;<span id="projectnumber">0.2.0</span>
+   </div>
+   <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+  </td>
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <td style="text-align: right; padding-right: 0.5em">
+    <div id="otherversions">
+      View other versions:
+      <select id="version_select" onchange="location = this.value">
+      </select>
+    </div>
+  </td>
+  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('src_2rdmnet_2private_2client_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle">
+<div class="title">client.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="include_2rdmnet_2client_8h_source.html">rdmnet/client.h</a>&quot;</code><br />
+<code>#include &quot;rdmnet/defs.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="include_2rdmnet_2core_2discovery_8h_source.html">rdmnet/core/discovery.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">rdmnet/core/connection.h</a>&quot;</code><br />
+</div>
+<p><a href="src_2rdmnet_2private_2client_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_scope_list_entry.html">ClientScopeListEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_client_data.html">RptClientData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_data.html">EptClientData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_client.html">RdmnetClient</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connected_args.html">ConnectedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_failed_args.html">ConnectFailedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_disconnected_args.html">DisconnectedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_broker_msg_received_args.html">BrokerMsgReceivedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_msg_received_args.html">LlrpMsgReceivedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_msg_received_args.html">RptMsgReceivedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_msg_received_args.html">EptMsgReceivedArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_callback_dispatch_info.html">RptCallbackDispatchInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_callback_dispatch_info.html">EptCallbackDispatchInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_callback_dispatch_info.html">ClientCallbackDispatchInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a9c7ea38cb206b14601693c439e6f7571"><td class="memItemLeft" align="right" valign="top"><a id="a9c7ea38cb206b14601693c439e6f7571"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_client_uid_is_dynamic</b>(configuidptr)&#160;&#160;&#160;((configuidptr)-&gt;id == 0)</td></tr>
+<tr class="separator:a9c7ea38cb206b14601693c439e6f7571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a53cc0e36652dd71cb0ffcce7b1981cce"><td class="memItemLeft" align="right" valign="top"><a id="a53cc0e36652dd71cb0ffcce7b1981cce"></a>
+typedef struct <a class="el" href="struct_rdmnet_client.html">RdmnetClient</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetClient</b></td></tr>
+<tr class="separator:a53cc0e36652dd71cb0ffcce7b1981cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14014b257835349b109c0281bcd6e83"><td class="memItemLeft" align="right" valign="top"><a id="ae14014b257835349b109c0281bcd6e83"></a>
+typedef struct <a class="el" href="struct_client_scope_list_entry.html">ClientScopeListEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientScopeListEntry</b></td></tr>
+<tr class="separator:ae14014b257835349b109c0281bcd6e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c4b5a4e45b388a35473a321f94d57f"><td class="memItemLeft" align="right" valign="top"><a id="a96c4b5a4e45b388a35473a321f94d57f"></a>
+typedef struct <a class="el" href="struct_rpt_client_data.html">RptClientData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RptClientData</b></td></tr>
+<tr class="separator:a96c4b5a4e45b388a35473a321f94d57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662886eb29eb112ea34063645f3b91ff"><td class="memItemLeft" align="right" valign="top"><a id="a662886eb29eb112ea34063645f3b91ff"></a>
+typedef struct <a class="el" href="struct_ept_client_data.html">EptClientData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptClientData</b></td></tr>
+<tr class="separator:a662886eb29eb112ea34063645f3b91ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2d80371ee500ddeb56e5ca1af692b0"><td class="memItemLeft" align="right" valign="top"><a id="a4e2d80371ee500ddeb56e5ca1af692b0"></a>
+typedef struct <a class="el" href="struct_connected_args.html">ConnectedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectedArgs</b></td></tr>
+<tr class="separator:a4e2d80371ee500ddeb56e5ca1af692b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1430366e65f4b512a47d7a02f45898b"><td class="memItemLeft" align="right" valign="top"><a id="aa1430366e65f4b512a47d7a02f45898b"></a>
+typedef struct <a class="el" href="struct_connect_failed_args.html">ConnectFailedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectFailedArgs</b></td></tr>
+<tr class="separator:aa1430366e65f4b512a47d7a02f45898b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2b10d61141c4caf24ef04eefcaac13"><td class="memItemLeft" align="right" valign="top"><a id="a1e2b10d61141c4caf24ef04eefcaac13"></a>
+typedef struct <a class="el" href="struct_disconnected_args.html">DisconnectedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DisconnectedArgs</b></td></tr>
+<tr class="separator:a1e2b10d61141c4caf24ef04eefcaac13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed777003a62beac6d9b4c62ea634fb91"><td class="memItemLeft" align="right" valign="top"><a id="aed777003a62beac6d9b4c62ea634fb91"></a>
+typedef struct <a class="el" href="struct_broker_msg_received_args.html">BrokerMsgReceivedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerMsgReceivedArgs</b></td></tr>
+<tr class="separator:aed777003a62beac6d9b4c62ea634fb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad642f202b062b12cdf1d8d4d2f7dba10"><td class="memItemLeft" align="right" valign="top"><a id="ad642f202b062b12cdf1d8d4d2f7dba10"></a>
+typedef struct <a class="el" href="struct_llrp_msg_received_args.html">LlrpMsgReceivedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LlrpMsgReceivedArgs</b></td></tr>
+<tr class="separator:ad642f202b062b12cdf1d8d4d2f7dba10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74220f897c4416145c1d4d1430a053aa"><td class="memItemLeft" align="right" valign="top"><a id="a74220f897c4416145c1d4d1430a053aa"></a>
+typedef struct <a class="el" href="struct_rpt_msg_received_args.html">RptMsgReceivedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RptMsgReceivedArgs</b></td></tr>
+<tr class="separator:a74220f897c4416145c1d4d1430a053aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae387edea44a26acb4dcebc51c1f59bca"><td class="memItemLeft" align="right" valign="top"><a id="ae387edea44a26acb4dcebc51c1f59bca"></a>
+typedef struct <a class="el" href="struct_ept_msg_received_args.html">EptMsgReceivedArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptMsgReceivedArgs</b></td></tr>
+<tr class="separator:ae387edea44a26acb4dcebc51c1f59bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5254d17fa50953d6956697ed9f2365d"><td class="memItemLeft" align="right" valign="top"><a id="aa5254d17fa50953d6956697ed9f2365d"></a>
+typedef struct <a class="el" href="struct_rpt_callback_dispatch_info.html">RptCallbackDispatchInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RptCallbackDispatchInfo</b></td></tr>
+<tr class="separator:aa5254d17fa50953d6956697ed9f2365d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e25e9b1cffe7f3a783c8a229efebcd"><td class="memItemLeft" align="right" valign="top"><a id="af4e25e9b1cffe7f3a783c8a229efebcd"></a>
+typedef struct <a class="el" href="struct_ept_callback_dispatch_info.html">EptCallbackDispatchInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptCallbackDispatchInfo</b></td></tr>
+<tr class="separator:af4e25e9b1cffe7f3a783c8a229efebcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbfb7dc27126de1ae518283a9cee504"><td class="memItemLeft" align="right" valign="top"><a id="a9cbfb7dc27126de1ae518283a9cee504"></a>
+typedef struct <a class="el" href="struct_client_callback_dispatch_info.html">ClientCallbackDispatchInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientCallbackDispatchInfo</b></td></tr>
+<tr class="separator:a9cbfb7dc27126de1ae518283a9cee504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a0c5ec74020197145de751e9c59c8cf8f"><td class="memItemLeft" align="right" valign="top"><a id="a0c5ec74020197145de751e9c59c8cf8f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>scope_state_t</b> { <br />
+&#160;&#160;<b>kScopeStateDiscovery</b>
+, <br />
+&#160;&#160;<b>kScopeStateConnecting</b>
+, <br />
+&#160;&#160;<b>kScopeStateConnected</b>
+<br />
+ }</td></tr>
+<tr class="separator:a0c5ec74020197145de751e9c59c8cf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08acddd7b84ab1ced66d849d3571d47f"><td class="memItemLeft" align="right" valign="top"><a id="a08acddd7b84ab1ced66d849d3571d47f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>client_callback_t</b> { <br />
+&#160;&#160;<b>kClientCallbackNone</b>
+, <br />
+&#160;&#160;<b>kClientCallbackConnected</b>
+, <br />
+&#160;&#160;<b>kClientCallbackConnectFailed</b>
+, <br />
+&#160;&#160;<b>kClientCallbackDisconnected</b>
+, <br />
+&#160;&#160;<b>kClientCallbackBrokerMsgReceived</b>
+, <br />
+&#160;&#160;<b>kClientCallbackLlrpMsgReceived</b>
+, <br />
+&#160;&#160;<b>kClientCallbackMsgReceived</b>
+<br />
+ }</td></tr>
+<tr class="separator:a08acddd7b84ab1ced66d849d3571d47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_041d03f1e4b32013f3f78680c82e8283.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_c41793d289e64573390c0b68dfc53ac4.html">private</a></li><li class="navelem"><a class="el" href="src_2rdmnet_2private_2client_8h.html">client.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
