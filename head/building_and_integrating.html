@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('building_and_integrating.html',''); in
 <div class="title">Building and Integrating the RDMnet Library into Your Project </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpsvq8gp38_docs_getting_started_building_and_integrating"></a> </p><h1>Prerequisites</h1>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpg8srm9i8_docs_getting_started_building_and_integrating"></a> </p><h1>Prerequisites</h1>
 <ul>
 <li><b>CMake &gt;= 3.8</b>. CMake is an industry-standard cross-platform build system generator for C and C++. CMake can be downloaded <a href="https://cmake.org/download">here</a>. It is also available as a package in many Linux distributions.</li>
 <li><b>An implementation of DNS-SD/mDNS</b>. There are different options for this on different platforms:<ul>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('building_and_integrating.html',''); in
 <div class="line">|--- sACN/</div>
 </div><!-- fragment --><p>The CMake configurations for these libraries will automatically check for their dependencies at this level before using submodules. You can disable this behavior by defining the CMake option <code>RDMNET_FORCE_SUBMODULE_DEPS</code> to ON.</p>
 <h1>Including RDMnet in your project</h1>
-<p>When adding RDMnet to your project, you can choose whether to use RDMnet in binary or source form. RDMnet publishes a small set of built binaries for specific platforms and toolchains to <a href="https://bintray.com/beta/#/etclabs/rdmnet_bin?tab=packages">JFrog Bintray</a>.</p>
+<p>When adding RDMnet to your project, you can choose whether to use RDMnet in binary or source form. RDMnet publishes a small set of built binaries for specific platforms and toolchains to its <a href="https://github.com/ETCLabs/RDMnet/releases">Releases page</a>.</p>
 <h2>Including RDMnet in CMake projects</h2>
 <h3>Binaries</h3>
 <p>RDMnet binary packages come with exported CMake config files which allow them to be added using <code>find_package()</code>. Once the binary package has been downloaded, you can include it in your project by adding:</p>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('building_and_integrating.html',''); in
 <div class="line">target_link_libraries(MyApp PRIVATE RDMnetBroker) # RDMnet will be linked transitively</div>
 </div><!-- fragment --><h2>Including RDMnet in non-CMake projects</h2>
 <p>RDMnet can be built on its own using CMake and its headers and binaries can be installed for inclusion in a non-CMake project. Typical practice is to create a clean directory to hold the build results named some varion of "build".</p>
-<p><b>NOTE</b>: If you are cross-compiling and/or building for an embedded target, some additional configuration is necessary. EtcPal helps make this possible; see the <a href="https://etclabs.github.io/EtcPal/docs/head/building_for_embedded.html">EtcPal embedded build documentation</a> for more details.</p>
+<p><b>NOTE</b>: If you are cross-compiling and/or building for an embedded target, some additional configuration is necessary. EtcPal helps make this possible; see the <a href="https://etclabs.github.io/EtcPalDocs/head/building_for_embedded.html">EtcPal embedded build documentation</a> for more details.</p>
 <ol type="1">
 <li>Create a directory in your location of choice (a directory called 'build' at the repository root is recommended) to hold your build projects or Makefiles: <div class="fragment"><div class="line">$ mkdir build &amp;&amp; cd build</div>
 </div><!-- fragment --></li>

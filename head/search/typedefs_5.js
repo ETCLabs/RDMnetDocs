@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scopehandle_2947',['ScopeHandle',['../group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb',1,'rdmnet']]]
+  ['scopehandle_2969',['ScopeHandle',['../group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb',1,'rdmnet']]]
 ];

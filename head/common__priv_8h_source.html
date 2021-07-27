@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetController</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  RdmnetStructId            id;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>            lock;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>            lock;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="struct_rdmnet_controller_callbacks.html">RdmnetControllerCallbacks</a> callbacks;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  rdm_handle_method_t rdm_handle_method;</div>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>EndpointResponder</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> rid;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> rid;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>     uid;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>     binding_uid;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  uint16_t   control_field;</div>
@@ -336,7 +336,7 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetDevice</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  RdmnetStructId        id;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>        lock;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>        lock;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a> callbacks;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>LlrpManager</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  RdmnetStructId       id;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>       lock;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>       lock;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <a class="code" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a> callbacks;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  RCLlrpManager rc_manager;</div>
@@ -376,7 +376,7 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>LlrpTarget</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  RdmnetStructId      id;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>      lock;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>      lock;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="struct_llrp_target_callbacks.html">LlrpTargetCallbacks</a> callbacks;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  uint8_t*            response_buf;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetEptClient</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  RdmnetStructId           id;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>           lock;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>           lock;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="struct_rdmnet_ept_client_callbacks.html">RdmnetEptClientCallbacks</a> callbacks;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  RCClient client;</div>
@@ -415,13 +415,13 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="ttc" id="acontroller_8h_html"><div class="ttname"><a href="controller_8h.html">controller.h</a></div><div class="ttdoc">Definitions for the RDMnet Controller API.</div></div>
 <div class="ttc" id="adevice_8h_html"><div class="ttname"><a href="device_8h.html">device.h</a></div><div class="ttdoc">Definitions for the RDMnet Device API.</div></div>
 <div class="ttc" id="aept__client_8h_html"><div class="ttname"><a href="ept__client_8h.html">ept_client.h</a></div><div class="ttdoc">Definitions for the RDMnet EPT Client API.</div></div>
-<div class="ttc" id="agroup__etcpal__mutex_html_ga7360372b14b0feb1ad9f22d2a42734a9"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a></div><div class="ttdeci">PLATFORM_DEFINED etcpal_mutex_t</div></div>
+<div class="ttc" id="agroup__etcpal__mutex_html_ga7360372b14b0feb1ad9f22d2a42734a9"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a></div><div class="ttdeci">PLATFORM_DEFINED etcpal_mutex_t</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga7244ab5c8edb8bc9c1e4792a6c64f798"><div class="ttname"><a href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a></div><div class="ttdeci">int rdmnet_client_scope_t</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:41</div></div>
 <div class="ttc" id="agroup__rdmnetopts__client_html_ga6e15b0a545dc66b5dfe841bcfeed67d4"><div class="ttname"><a href="group__rdmnetopts__client.html#ga6e15b0a545dc66b5dfe841bcfeed67d4">RDMNET_MAX_RESPONDERS_PER_DEVICE_ENDPOINT</a></div><div class="ttdeci">#define RDMNET_MAX_RESPONDERS_PER_DEVICE_ENDPOINT</div><div class="ttdoc">The maximum number of responders that can be added to each device endpoint.</div><div class="ttdef"><b>Definition:</b> opts.h:180</div></div>
 <div class="ttc" id="agroup__rdmnetopts__client_html_gaf2e797d5e45375b925f1f6bf55d64961"><div class="ttname"><a href="group__rdmnetopts__client.html#gaf2e797d5e45375b925f1f6bf55d64961">RDMNET_MAX_ENDPOINTS_PER_DEVICE</a></div><div class="ttdeci">#define RDMNET_MAX_ENDPOINTS_PER_DEVICE</div><div class="ttdoc">The maximum number of nonzero endpoints that can be added to each device instance.</div><div class="ttdef"><b>Definition:</b> opts.h:171</div></div>
 <div class="ttc" id="allrp__manager_8h_html"><div class="ttname"><a href="llrp__manager_8h.html">llrp_manager.h</a></div><div class="ttdoc">Functions for implementing LLRP Manager functionality.</div></div>
 <div class="ttc" id="allrp__target_8h_html"><div class="ttname"><a href="llrp__target_8h.html">llrp_target.h</a></div><div class="ttdoc">Functions for implementing LLRP Target functionality.</div></div>
-<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
+<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
 <div class="ttc" id="astruct_llrp_manager_callbacks_html"><div class="ttname"><a href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a></div><div class="ttdoc">A set of notification callbacks received about an LLRP manager.</div><div class="ttdef"><b>Definition:</b> llrp_manager.h:84</div></div>
 <div class="ttc" id="astruct_llrp_target_callbacks_html"><div class="ttname"><a href="struct_llrp_target_callbacks.html">LlrpTargetCallbacks</a></div><div class="ttdoc">A set of notification callbacks received about an LLRP target.</div><div class="ttdef"><b>Definition:</b> llrp_target.h:78</div></div>
 <div class="ttc" id="astruct_rdm_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a></div></div>
