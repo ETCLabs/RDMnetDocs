@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="title">Using the EPT Client API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp5nbfg0sc_docs_getting_started_using_ept_client"></a> The EPT Client API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpywhxgp_3_docs_getting_started_using_ept_client"></a> The EPT Client API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -831,7 +831,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">  printf(<span class="stringliteral">&quot;Error sending EPT data to component %s: &#39;%s&#39;\n&quot;</span>, cid_str,</div>
 <div class="line">         <a class="code" href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a>(status-&gt;<a class="code" href="struct_rdmnet_ept_status.html#ad2e681d1a760b87719d5192727b91e60">status_code</a>));</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_ga1d378dff587acdfa8306c1075e316f4a"><div class="ttname"><a href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a></div><div class="ttdeci">const char * rdmnet_ept_status_code_to_string(ept_status_code_t code)</div><div class="ttdoc">Get a string representation of an EPT status code.</div><div class="ttdef"><b>Definition:</b> common.c:250</div></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_ga1d378dff587acdfa8306c1075e316f4a"><div class="ttname"><a href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a></div><div class="ttdeci">const char * rdmnet_ept_status_code_to_string(ept_status_code_t code)</div><div class="ttdoc">Get a string representation of an EPT status code.</div><div class="ttdef"><b>Definition:</b> common.c:251</div></div>
 <div class="ttc" id="astruct_rdmnet_ept_status_html"><div class="ttname"><a href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a></div><div class="ttdoc">An RDMnet EPT status message received by a local component.</div><div class="ttdef"><b>Definition:</b> message.h:310</div></div>
 <div class="ttc" id="astruct_rdmnet_ept_status_html_a0393a00733c2f0a144f436dd1fcb8456"><div class="ttname"><a href="struct_rdmnet_ept_status.html#a0393a00733c2f0a144f436dd1fcb8456">RdmnetEptStatus::source_cid</a></div><div class="ttdeci">EtcPalUuid source_cid</div><div class="ttdoc">The CID of the EPT client that sent this status message.</div><div class="ttdef"><b>Definition:</b> message.h:312</div></div>
 <div class="ttc" id="astruct_rdmnet_ept_status_html_ad2e681d1a760b87719d5192727b91e60"><div class="ttname"><a href="struct_rdmnet_ept_status.html#ad2e681d1a760b87719d5192727b91e60">RdmnetEptStatus::status_code</a></div><div class="ttdeci">ept_status_code_t status_code</div><div class="ttdoc">A status code that indicates the specific error or status condition.</div><div class="ttdef"><b>Definition:</b> message.h:314</div></div>
