@@ -203,8 +203,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client.html',''); 
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rdmnet::EptClient Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__ept__client__cpp.html">EPT Client API</a></div></div>  </div>
 </div><!--header-->
@@ -226,10 +225,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a36b8fa2d0851a29b79c4ae6824484af6"><td class="memItemLeft" align="right" valign="top"><a id="a36b8fa2d0851a29b79c4ae6824484af6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> = <a class="el" href="group__rdmnet__ept__client.html#gafe4439590493e7a8abedabc8de8ab51c">rdmnet_ept_client_t</a></td></tr>
-<tr class="memdesc:a36b8fa2d0851a29b79c4ae6824484af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify EPT client instances. <br /></td></tr>
-<tr class="separator:a36b8fa2d0851a29b79c4ae6824484af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e2bfa4e5e7831a83a5dceb71098444"><td class="memItemLeft" align="right" valign="top"><a id="a00e2bfa4e5e7831a83a5dceb71098444"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a00e2bfa4e5e7831a83a5dceb71098444">Handle</a> = <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId</a>&lt; <a class="el" href="classrdmnet_1_1detail_1_1_ept_client_handle_type.html">detail::EptClientHandleType</a>, <a class="el" href="group__rdmnet__ept__client.html#gafe4439590493e7a8abedabc8de8ab51c">rdmnet_ept_client_t</a>, <a class="el" href="group__rdmnet__ept__client.html#ga603271eb3751c5563831ffbb4e7a4476">RDMNET_EPT_CLIENT_INVALID</a> &gt;</td></tr>
+<tr class="memdesc:a00e2bfa4e5e7831a83a5dceb71098444"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify EPT client instances. <br /></td></tr>
+<tr class="separator:a00e2bfa4e5e7831a83a5dceb71098444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -253,45 +252,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4590d3e0925a92a92c028661a8415c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a4590d3e0925a92a92c028661a8415c36">Shutdown</a> (<a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason=<a class="el" href="group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a336a46d8d36f5b1f32fac4653913cdd2">kRdmnetDisconnectShutdown</a>)</td></tr>
 <tr class="memdesc:a4590d3e0925a92a92c028661a8415c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down this EPT client and deallocate resources.  <a href="classrdmnet_1_1_ept_client.html#a4590d3e0925a92a92c028661a8415c36">More...</a><br /></td></tr>
 <tr class="separator:a4590d3e0925a92a92c028661a8415c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebcb6c7c8d9b16280766525ca25b524b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#aebcb6c7c8d9b16280766525ca25b524b">AddScope</a> (const char *id, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
+<tr class="memitem:aebcb6c7c8d9b16280766525ca25b524b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#aebcb6c7c8d9b16280766525ca25b524b">AddScope</a> (const char *id, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
 <tr class="memdesc:aebcb6c7c8d9b16280766525ca25b524b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope to this EPT client instance.  <a href="classrdmnet_1_1_ept_client.html#aebcb6c7c8d9b16280766525ca25b524b">More...</a><br /></td></tr>
 <tr class="separator:aebcb6c7c8d9b16280766525ca25b524b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8da7313bdd0a83c53fa1d1612bd9e91"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#af8da7313bdd0a83c53fa1d1612bd9e91">AddScope</a> (const <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &amp;scope_config)</td></tr>
+<tr class="memitem:af8da7313bdd0a83c53fa1d1612bd9e91"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#af8da7313bdd0a83c53fa1d1612bd9e91">AddScope</a> (const <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &amp;scope_config)</td></tr>
 <tr class="memdesc:af8da7313bdd0a83c53fa1d1612bd9e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope to this EPT client instance.  <a href="classrdmnet_1_1_ept_client.html#af8da7313bdd0a83c53fa1d1612bd9e91">More...</a><br /></td></tr>
 <tr class="separator:af8da7313bdd0a83c53fa1d1612bd9e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555b53b301e2b732058df8c0e805dc62"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a555b53b301e2b732058df8c0e805dc62">AddDefaultScope</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
+<tr class="memitem:a555b53b301e2b732058df8c0e805dc62"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a555b53b301e2b732058df8c0e805dc62">AddDefaultScope</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
 <tr class="memdesc:a555b53b301e2b732058df8c0e805dc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut to add the default RDMnet scope to an EPT client instance.  <a href="classrdmnet_1_1_ept_client.html#a555b53b301e2b732058df8c0e805dc62">More...</a><br /></td></tr>
 <tr class="separator:a555b53b301e2b732058df8c0e805dc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09364fb774865ba61cf0e4748af73444"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a09364fb774865ba61cf0e4748af73444">RemoveScope</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
+<tr class="memitem:a09364fb774865ba61cf0e4748af73444"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a09364fb774865ba61cf0e4748af73444">RemoveScope</a> (<a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
 <tr class="memdesc:a09364fb774865ba61cf0e4748af73444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously-added scope from this EPT client instance.  <a href="classrdmnet_1_1_ept_client.html#a09364fb774865ba61cf0e4748af73444">More...</a><br /></td></tr>
 <tr class="separator:a09364fb774865ba61cf0e4748af73444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6afbaee81d5049431a8a6e0747c27b93"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a6afbaee81d5049431a8a6e0747c27b93">RequestClientList</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle)</td></tr>
+<tr class="memitem:a6afbaee81d5049431a8a6e0747c27b93"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a6afbaee81d5049431a8a6e0747c27b93">RequestClientList</a> (<a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> scope_handle)</td></tr>
 <tr class="memdesc:a6afbaee81d5049431a8a6e0747c27b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a client list from a broker.  <a href="classrdmnet_1_1_ept_client.html#a6afbaee81d5049431a8a6e0747c27b93">More...</a><br /></td></tr>
 <tr class="separator:a6afbaee81d5049431a8a6e0747c27b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab64b62efe1efb21827dcc87d1059ceed"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#ab64b62efe1efb21827dcc87d1059ceed">SendData</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;dest_cid, uint16_t manufacturer_id, uint16_t protocol_id, const uint8_t *data, size_t data_len)</td></tr>
+<tr class="memitem:ab64b62efe1efb21827dcc87d1059ceed"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#ab64b62efe1efb21827dcc87d1059ceed">SendData</a> (<a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> scope_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;dest_cid, uint16_t manufacturer_id, uint16_t protocol_id, const uint8_t *data, size_t data_len)</td></tr>
 <tr class="memdesc:ab64b62efe1efb21827dcc87d1059ceed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data from an EPT client on a scope.  <a href="classrdmnet_1_1_ept_client.html#ab64b62efe1efb21827dcc87d1059ceed">More...</a><br /></td></tr>
 <tr class="separator:ab64b62efe1efb21827dcc87d1059ceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82d42bd0424940331b7e72ea79687dd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#ac82d42bd0424940331b7e72ea79687dd">SendStatus</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;dest_cid, <a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code, const char *status_string=nullptr)</td></tr>
+<tr class="memitem:ac82d42bd0424940331b7e72ea79687dd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#ac82d42bd0424940331b7e72ea79687dd">SendStatus</a> (<a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> scope_handle, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;dest_cid, <a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code, const char *status_string=nullptr)</td></tr>
 <tr class="memdesc:ac82d42bd0424940331b7e72ea79687dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a status message from an EPT client on a scope.  <a href="classrdmnet_1_1_ept_client.html#ac82d42bd0424940331b7e72ea79687dd">More...</a><br /></td></tr>
 <tr class="separator:ac82d42bd0424940331b7e72ea79687dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5e53f23d12edf16c30a1ef2f9b1fc8"><td class="memItemLeft" align="right" valign="top"><a id="adf5e53f23d12edf16c30a1ef2f9b1fc8"></a>
-<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#adf5e53f23d12edf16c30a1ef2f9b1fc8">handle</a> () const</td></tr>
+<a class="el" href="classrdmnet_1_1_ept_client.html#a00e2bfa4e5e7831a83a5dceb71098444">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#adf5e53f23d12edf16c30a1ef2f9b1fc8">handle</a> () const</td></tr>
 <tr class="memdesc:adf5e53f23d12edf16c30a1ef2f9b1fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of an EPT client instance. <br /></td></tr>
 <tr class="separator:adf5e53f23d12edf16c30a1ef2f9b1fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92f068e21c3f781a6fb9488191790f3"><td class="memItemLeft" align="right" valign="top"><a id="aa92f068e21c3f781a6fb9488191790f3"></a>
 <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">NotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#aa92f068e21c3f781a6fb9488191790f3">notify_handler</a> () const</td></tr>
 <tr class="memdesc:aa92f068e21c3f781a6fb9488191790f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client.">NotifyHandler</a> reference that this EPT client was configured with. <br /></td></tr>
 <tr class="separator:aa92f068e21c3f781a6fb9488191790f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4936281394e537dc67da1c9545dafea5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a4936281394e537dc67da1c9545dafea5">scope</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle) const</td></tr>
+<tr class="memitem:a4936281394e537dc67da1c9545dafea5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a4936281394e537dc67da1c9545dafea5">scope</a> (<a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> scope_handle) const</td></tr>
 <tr class="memdesc:a4936281394e537dc67da1c9545dafea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope configuration associated with a given scope handle.  <a href="classrdmnet_1_1_ept_client.html#a4936281394e537dc67da1c9545dafea5">More...</a><br /></td></tr>
 <tr class="separator:a4936281394e537dc67da1c9545dafea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a12070ddf610ba1fd85a23dfb8ecdd8d0"><td class="memItemLeft" align="right" valign="top"><a id="a12070ddf610ba1fd85a23dfb8ecdd8d0"></a>
-static constexpr <a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a12070ddf610ba1fd85a23dfb8ecdd8d0">kInvalidHandle</a> = <a class="el" href="group__rdmnet__ept__client.html#ga603271eb3751c5563831ffbb4e7a4476">RDMNET_EPT_CLIENT_INVALID</a></td></tr>
-<tr class="memdesc:a12070ddf610ba1fd85a23dfb8ecdd8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid Handle value. <br /></td></tr>
-<tr class="separator:a12070ddf610ba1fd85a23dfb8ecdd8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a555b53b301e2b732058df8c0e805dc62"></a>
@@ -304,7 +296,7 @@ static constexpr <a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d08
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> &gt; rdmnet::EptClient::AddDefaultScope </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> &gt; rdmnet::EptClient::AddDefaultScope </td>
           <td>(</td>
           <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;&#160;</td>
           <td class="paramname"><em>static_broker_addr</em> = <code><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{}</code></td><td>)</td>
@@ -342,7 +334,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__ept__client.html
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> &gt; rdmnet::EptClient::AddScope </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> &gt; rdmnet::EptClient::AddScope </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -391,7 +383,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__ept__client.html
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> &gt; rdmnet::EptClient::AddScope </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a> &gt; rdmnet::EptClient::AddScope </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &amp;&#160;</td>
           <td class="paramname"><em>scope_config</em></td><td>)</td>
@@ -431,7 +423,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__ept__client.html
         <tr>
           <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::EptClient::RemoveScope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a>&#160;</td>
           <td class="paramname"><em>scope_handle</em>, </td>
         </tr>
         <tr>
@@ -480,7 +472,7 @@ Error codes from from <a class="el" href="group__rdmnet__ept__client.html#ga60c1
         <tr>
           <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::EptClient::RequestClientList </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a>&#160;</td>
           <td class="paramname"><em>scope_handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -518,7 +510,7 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
         <tr>
           <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt; rdmnet::EptClient::scope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a>&#160;</td>
           <td class="paramname"><em>scope_handle</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -551,7 +543,7 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
         <tr>
           <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::EptClient::SendData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a>&#160;</td>
           <td class="paramname"><em>scope_handle</em>, </td>
         </tr>
         <tr>
@@ -633,7 +625,7 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
         <tr>
           <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::EptClient::SendStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220">ScopeHandle</a>&#160;</td>
           <td class="paramname"><em>scope_handle</em>, </td>
         </tr>
         <tr>

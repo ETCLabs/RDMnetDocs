@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="title">Using the Controller API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpvu9qokab_docs_getting_started_using_controller"></a> The RDMnet Controller API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp2091t80k_docs_getting_started_using_controller"></a> The RDMnet Controller API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"><span class="keywordflow">if</span> (result)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Controller is valid and running.</span></div>
-<div class="line">  <a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> handle = controller.<a class="code" href="classrdmnet_1_1_controller.html#a3cd6da9f67ba9e721738b6bc97dc8927">handle</a>();</div>
+<div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> handle = controller.<a class="code" href="classrdmnet_1_1_controller.html#a3cd6da9f67ba9e721738b6bc97dc8927">handle</a>();</div>
 <div class="line">  <span class="comment">// Store handle for later lookup from the NotifyHandler callback functions.</span></div>
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
@@ -323,17 +323,17 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
+<div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::ControllerHandleType, rdmnet_controller_t, RDMNET_CONTROLLER_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html_ae1ccf480526751a937afb32a2db7346a"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a></div><div class="ttdeci">static Uuid OsPreferred() noexcept</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_1_1_notify_handler_html"><div class="ttname"><a href="classrdmnet_1_1_controller_1_1_notify_handler.html">rdmnet::Controller::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:71</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html"><div class="ttname"><a href="classrdmnet_1_1_controller.html">rdmnet::Controller</a></div><div class="ttdoc">An instance of RDMnet controller functionality.</div><div class="ttdef"><b>Definition:</b> controller.h:59</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a1d0150d73e64cfff241b351f7b8efd55"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">rdmnet::Controller::Startup</a></div><div class="ttdeci">etcpal::Error Startup(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const RdmData &amp;rdm_data)</div><div class="ttdoc">Allocate resources and start up this controller with the given configuration.</div><div class="ttdef"><b>Definition:</b> controller.h:501</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a3cd6da9f67ba9e721738b6bc97dc8927"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a3cd6da9f67ba9e721738b6bc97dc8927">rdmnet::Controller::handle</a></div><div class="ttdeci">Handle handle() const</div><div class="ttdoc">Retrieve the handle of a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:1023</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a585adefdd50c5a7bc63d3a5625889c7d"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a></div><div class="ttdeci">rdmnet_controller_t Handle</div><div class="ttdoc">A handle type used by the RDMnet library to identify controller instances.</div><div class="ttdef"><b>Definition:</b> controller.h:62</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_1_1_notify_handler_html"><div class="ttname"><a href="classrdmnet_1_1_controller_1_1_notify_handler.html">rdmnet::Controller::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:77</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html"><div class="ttname"><a href="classrdmnet_1_1_controller.html">rdmnet::Controller</a></div><div class="ttdoc">An instance of RDMnet controller functionality.</div><div class="ttdef"><b>Definition:</b> controller.h:67</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a1d0150d73e64cfff241b351f7b8efd55"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">rdmnet::Controller::Startup</a></div><div class="ttdeci">etcpal::Error Startup(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const RdmData &amp;rdm_data)</div><div class="ttdoc">Allocate resources and start up this controller with the given configuration.</div><div class="ttdef"><b>Definition:</b> controller.h:512</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a3cd6da9f67ba9e721738b6bc97dc8927"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a3cd6da9f67ba9e721738b6bc97dc8927">rdmnet::Controller::handle</a></div><div class="ttdeci">Handle handle() const</div><div class="ttdoc">Retrieve the handle of a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:1045</div></div>
 <div class="ttc" id="acpp_2controller_8h_html"><div class="ttname"><a href="cpp_2controller_8h.html">controller.h</a></div><div class="ttdoc">C++ wrapper for the RDMnet Controller API.</div></div>
 <div class="ttc" id="acpp_2uuid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
-<div class="ttc" id="astructrdmnet_1_1_controller_1_1_rdm_data_html"><div class="ttname"><a href="structrdmnet_1_1_controller_1_1_rdm_data.html">rdmnet::Controller::RdmData</a></div><div class="ttdoc">A set of initial identifying RDM data to use for a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:194</div></div>
-<div class="ttc" id="astructrdmnet_1_1_controller_1_1_settings_html"><div class="ttname"><a href="structrdmnet_1_1_controller_1_1_settings.html">rdmnet::Controller::Settings</a></div><div class="ttdoc">A set of configuration settings that a controller needs to initialize.</div><div class="ttdef"><b>Definition:</b> controller.h:171</div></div>
+<div class="ttc" id="astructrdmnet_1_1_controller_1_1_rdm_data_html"><div class="ttname"><a href="structrdmnet_1_1_controller_1_1_rdm_data.html">rdmnet::Controller::RdmData</a></div><div class="ttdoc">A set of initial identifying RDM data to use for a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:200</div></div>
+<div class="ttc" id="astructrdmnet_1_1_controller_1_1_settings_html"><div class="ttname"><a href="structrdmnet_1_1_controller_1_1_settings.html">rdmnet::Controller::Settings</a></div><div class="ttdoc">A set of configuration settings that a controller needs to initialize.</div><div class="ttdef"><b>Definition:</b> controller.h:177</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -359,7 +359,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line"><span class="comment">// At this point, the controller is no longer running and its handle is no longer valid. It can be</span></div>
 <div class="line"><span class="comment">// started again (with a new handle) by calling Startup() again.</span></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a05affd966d0250020eaba3ceb39bbd8d"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a05affd966d0250020eaba3ceb39bbd8d">rdmnet::Controller::Shutdown</a></div><div class="ttdeci">void Shutdown(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</div><div class="ttdoc">Shut down this controller and deallocate resources.</div><div class="ttdef"><b>Definition:</b> controller.h:624</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a05affd966d0250020eaba3ceb39bbd8d"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a05affd966d0250020eaba3ceb39bbd8d">rdmnet::Controller::Shutdown</a></div><div class="ttdeci">void Shutdown(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</div><div class="ttdoc">Shut down this controller and deallocate resources.</div><div class="ttdef"><b>Definition:</b> controller.h:645</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (add_res)</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> default_scope_handle = *add_res;</div>
+<div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> default_scope_handle = *add_res;</div>
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
@@ -407,9 +407,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_expected_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_expected_html_a60850b440a4ff7f769627b46d79043f6"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">etcpal::Expected::error</a></div><div class="ttdeci">constexpr Error error() const noexcept</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a747d4c004d271d2b4eff5174489670e3"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">rdmnet::Controller::AddDefaultScope</a></div><div class="ttdeci">etcpal::Expected&lt; ScopeHandle &gt; AddDefaultScope(const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Shortcut to add the default RDMnet scope to a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:692</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a752a7b8897f2ccae3b76c0e36946cf26"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">rdmnet::Controller::AddScope</a></div><div class="ttdeci">etcpal::Expected&lt; ScopeHandle &gt; AddScope(const char *id, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Add a new scope to this controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:641</div></div>
-<div class="ttc" id="agroup__rdmnet__cpp__common_html_gadf5994aa4727265c21622c5a0f997ceb"><div class="ttname"><a href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a></div><div class="ttdeci">rdmnet_client_scope_t ScopeHandle</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:447</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a747d4c004d271d2b4eff5174489670e3"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">rdmnet::Controller::AddDefaultScope</a></div><div class="ttdeci">etcpal::Expected&lt; ScopeHandle &gt; AddDefaultScope(const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Shortcut to add the default RDMnet scope to a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:713</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a752a7b8897f2ccae3b76c0e36946cf26"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">rdmnet::Controller::AddScope</a></div><div class="ttdeci">etcpal::Expected&lt; ScopeHandle &gt; AddScope(const char *id, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Add a new scope to this controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:662</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -486,8 +485,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_6_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleConnectedToBroker(<a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> controller_handle,</div>
-<div class="line">                                                        <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleConnectedToBroker(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="line">                                                        <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                        <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a>&amp; info)</div>
 <div class="line">{</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a>()</div>
@@ -497,10 +496,10 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">  controller.<a class="code" href="classrdmnet_1_1_controller.html#a31525848734a10e0762b9114a98dcc5b">RequestClientList</a>(scope_handle);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_sock_addr_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::SockAddr::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a></div><div class="ttdoc">Information about a successful connection to a broker delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> client.h:149</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_a751d070cb4c1f89d838955298270b6cf"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">rdmnet::ClientConnectedInfo::broker_name</a></div><div class="ttdeci">std::string broker_name() const</div><div class="ttdoc">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty stri...</div><div class="ttdef"><b>Definition:</b> client.h:184</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_af30653fa66bd5b267c54cf81a8c7eb3d"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">rdmnet::ClientConnectedInfo::broker_addr</a></div><div class="ttdeci">constexpr etcpal::SockAddr broker_addr() const noexcept</div><div class="ttdoc">Get the IP address and port of the remote broker to which we have connected.</div><div class="ttdef"><b>Definition:</b> client.h:178</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a31525848734a10e0762b9114a98dcc5b"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a31525848734a10e0762b9114a98dcc5b">rdmnet::Controller::RequestClientList</a></div><div class="ttdeci">etcpal::Error RequestClientList(ScopeHandle scope_handle)</div><div class="ttdoc">Request a client list from a broker.</div><div class="ttdef"><b>Definition:</b> controller.h:861</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a></div><div class="ttdoc">Information about a successful connection to a broker delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> client.h:158</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_a751d070cb4c1f89d838955298270b6cf"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">rdmnet::ClientConnectedInfo::broker_name</a></div><div class="ttdeci">std::string broker_name() const</div><div class="ttdoc">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty stri...</div><div class="ttdef"><b>Definition:</b> client.h:193</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_af30653fa66bd5b267c54cf81a8c7eb3d"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">rdmnet::ClientConnectedInfo::broker_addr</a></div><div class="ttdeci">constexpr etcpal::SockAddr broker_addr() const noexcept</div><div class="ttdoc">Get the IP address and port of the remote broker to which we have connected.</div><div class="ttdef"><b>Definition:</b> client.h:187</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a31525848734a10e0762b9114a98dcc5b"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a31525848734a10e0762b9114a98dcc5b">rdmnet::Controller::RequestClientList</a></div><div class="ttdeci">etcpal::Error RequestClientList(ScopeHandle scope_handle)</div><div class="ttdoc">Request a client list from a broker.</div><div class="ttdef"><b>Definition:</b> controller.h:882</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -572,8 +571,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_7_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleClientListUpdate(<a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> controller_handle,</div>
-<div class="line">                                                       <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleClientListUpdate(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="line">                                                       <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                       <a class="code" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action,</div>
 <div class="line">                                                       <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rpt_client_list.html">rdmnet::RptClientList</a>&amp; list)</div>
 <div class="line">{</div>
@@ -653,8 +652,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">{</div>
 <div class="line">  <span class="comment">// *result identifies this command transaction. Store it for when a response is received.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a1cbb710605f06cddd4e043ce71653390"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a1cbb710605f06cddd4e043ce71653390">rdmnet::Controller::SendGetCommand</a></div><div class="ttdeci">etcpal::Expected&lt; uint32_t &gt; SendGetCommand(ScopeHandle scope_handle, const DestinationAddr &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</div><div class="ttdoc">Send an RDM GET command from a controller on a scope.</div><div class="ttdef"><b>Definition:</b> controller.h:812</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_destination_addr_html_a8c1f337f355371cdb56f19f164cf125b"><div class="ttname"><a href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">rdmnet::DestinationAddr::ToDefaultResponder</a></div><div class="ttdeci">static constexpr DestinationAddr ToDefaultResponder(const rdm::Uid &amp;rdmnet_uid, uint16_t subdevice=0)</div><div class="ttdoc">Get a DestinationAddr representing a message addressed to a component's default responder.</div><div class="ttdef"><b>Definition:</b> client.h:94</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_a1cbb710605f06cddd4e043ce71653390"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a1cbb710605f06cddd4e043ce71653390">rdmnet::Controller::SendGetCommand</a></div><div class="ttdeci">etcpal::Expected&lt; uint32_t &gt; SendGetCommand(ScopeHandle scope_handle, const DestinationAddr &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</div><div class="ttdoc">Send an RDM GET command from a controller on a scope.</div><div class="ttdef"><b>Definition:</b> controller.h:833</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_destination_addr_html_a8c1f337f355371cdb56f19f164cf125b"><div class="ttname"><a href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">rdmnet::DestinationAddr::ToDefaultResponder</a></div><div class="ttdeci">static constexpr DestinationAddr ToDefaultResponder(const rdm::Uid &amp;rdmnet_uid, uint16_t subdevice=0)</div><div class="ttdoc">Get a DestinationAddr representing a message addressed to a component's default responder.</div><div class="ttdef"><b>Definition:</b> client.h:103</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -720,8 +719,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_9_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRdmResponse(<a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> controller_handle,</div>
-<div class="line">                                                  <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRdmResponse(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="line">                                                  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                  <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_response.html">rdmnet::RdmResponse</a>&amp; resp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handles as necessary...</span></div>
@@ -802,8 +801,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_10_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRptStatus(<a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> controller_handle,</div>
-<div class="line">                                                <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRptStatus(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="line">                                                <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rpt_status.html">rdmnet::RptStatus</a>&amp; status)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handles as necessary...</span></div>
@@ -882,7 +881,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_ab9f5541545bf3a35120513286c33d71e"><div class="ttname"><a href="classrdmnet_1_1_controller.html#ab9f5541545bf3a35120513286c33d71e">rdmnet::Controller::RequestResponderIds</a></div><div class="ttdeci">etcpal::Error RequestResponderIds(ScopeHandle scope_handle, const rdm::Uid *uids, size_t num_uids)</div><div class="ttdoc">Request mappings from dynamic UIDs to Responder IDs (RIDs).</div><div class="ttdef"><b>Definition:</b> controller.h:876</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_html_ab9f5541545bf3a35120513286c33d71e"><div class="ttname"><a href="classrdmnet_1_1_controller.html#ab9f5541545bf3a35120513286c33d71e">rdmnet::Controller::RequestResponderIds</a></div><div class="ttdeci">etcpal::Error RequestResponderIds(ScopeHandle scope_handle, const rdm::Uid *uids, size_t num_uids)</div><div class="ttdoc">Request mappings from dynamic UIDs to Responder IDs (RIDs).</div><div class="ttdef"><b>Definition:</b> controller.h:897</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -926,8 +925,8 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_12_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleResponderIdsReceived(<a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> controller_handle,</div>
-<div class="line">                                                           <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleResponderIdsReceived(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="line">                                                           <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                           <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">rdmnet::DynamicUidAssignmentList</a>&amp; list)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handles as necessary...</span></div>
@@ -986,7 +985,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"><a class="code" href="structrdmnet_1_1_controller_1_1_settings.html">rdmnet::Controller::Settings</a> my_settings(my_cid, MY_ESTA_MANUFACTURER_ID_VAL);</div>
 <div class="line"> </div>
 <div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">Startup</a>(my_controller_notify_handler, my_settings, my_rdm_cmd_handler);</div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_1_1_rdm_command_handler_html"><div class="ttname"><a href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">rdmnet::Controller::RdmCommandHandler</a></div><div class="ttdoc">A base class for a class that receives RDM commands addressed to a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:145</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_controller_1_1_rdm_command_handler_html"><div class="ttname"><a href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">rdmnet::Controller::RdmCommandHandler</a></div><div class="ttdoc">A base class for a class that receives RDM commands addressed to a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:151</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>

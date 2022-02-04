@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 <div class="title">Data Ownership Paradigms in the RDMnet Library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpvu9qokab_docs_getting_started_data_ownership"></a> RDMnet APIs are <em>non-ownership-transferring</em>; this means that when calling API functions that take pointers to data buffers as arguments, the data buffer memory is owned by the caller, and the caller is responsible for managing that memory both before and after the API function call.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp2091t80k_docs_getting_started_data_ownership"></a> RDMnet APIs are <em>non-ownership-transferring</em>; this means that when calling API functions that take pointers to data buffers as arguments, the data buffer memory is owned by the caller, and the caller is responsible for managing that memory both before and after the API function call.</p>
 <p>For example, consider sending an RDM command with parameter data using the RDMnet controller API:</p>
 <p> 
 <div class="code-tab-selector">
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 <div class="line"><span class="comment">// returns. The memory associated with the string will then be freed when the string goes out of</span></div>
 <div class="line"><span class="comment">// scope.</span></div>
 <div class="ttc" id="aclassetcpal_1_1_expected_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a></div></div>
-<div class="ttc" id="aclassrdmnet_1_1_destination_addr_html_a8c1f337f355371cdb56f19f164cf125b"><div class="ttname"><a href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">rdmnet::DestinationAddr::ToDefaultResponder</a></div><div class="ttdeci">static constexpr DestinationAddr ToDefaultResponder(const rdm::Uid &amp;rdmnet_uid, uint16_t subdevice=0)</div><div class="ttdoc">Get a DestinationAddr representing a message addressed to a component's default responder.</div><div class="ttdef"><b>Definition:</b> client.h:94</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_destination_addr_html_a8c1f337f355371cdb56f19f164cf125b"><div class="ttname"><a href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">rdmnet::DestinationAddr::ToDefaultResponder</a></div><div class="ttdeci">static constexpr DestinationAddr ToDefaultResponder(const rdm::Uid &amp;rdmnet_uid, uint16_t subdevice=0)</div><div class="ttdoc">Get a DestinationAddr representing a message addressed to a component's default responder.</div><div class="ttdef"><b>Definition:</b> client.h:103</div></div>
 <div class="ttc" id="acpp_2controller_8h_html"><div class="ttname"><a href="cpp_2controller_8h.html">controller.h</a></div><div class="ttdoc">C++ wrapper for the RDMnet Controller API.</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -298,8 +298,8 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRdmResponse(<a class="code" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a> controller_handle,</div>
-<div class="line">                                                  <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRdmResponse(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="line">                                                  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                  <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_response.html">rdmnet::RdmResponse</a>&amp; resp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// resp.data() and resp.original_cmd_data() return pointers to data buffers owned by the library.</span></div>
@@ -317,14 +317,13 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 <div class="line">  <span class="comment">// The SavedRdmResponse class has allocating containers to hold the data - it will be cleaned up</span></div>
 <div class="line">  <span class="comment">// when it goes out of scope.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_controller_html_a585adefdd50c5a7bc63d3a5625889c7d"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a></div><div class="ttdeci">rdmnet_controller_t Handle</div><div class="ttdoc">A handle type used by the RDMnet library to identify controller instances.</div><div class="ttdef"><b>Definition:</b> controller.h:62</div></div>
+<div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::ControllerHandleType, rdmnet_controller_t, RDMNET_CONTROLLER_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_html"><div class="ttname"><a href="classrdmnet_1_1_rdm_response.html">rdmnet::RdmResponse</a></div><div class="ttdoc">An RDM response received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:47</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_html_a223becaa3360fc6cb5d1fa84a86a32ad"><div class="ttname"><a href="classrdmnet_1_1_rdm_response.html#a223becaa3360fc6cb5d1fa84a86a32ad">rdmnet::RdmResponse::data</a></div><div class="ttdeci">constexpr const uint8_t * data() const noexcept</div><div class="ttdoc">Get a pointer to the RDM parameter data buffer contained within this response.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:279</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_html_a910a0f0e0e0127452911439cde553974"><div class="ttname"><a href="classrdmnet_1_1_rdm_response.html#a910a0f0e0e0127452911439cde553974">rdmnet::RdmResponse::Save</a></div><div class="ttdeci">SavedRdmResponse Save() const</div><div class="ttdoc">Save the data in this response for later use from a different context.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:411</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_html_ac03a6034914006c9d1ec0b4cea65590c"><div class="ttname"><a href="classrdmnet_1_1_rdm_response.html#ac03a6034914006c9d1ec0b4cea65590c">rdmnet::RdmResponse::GetData</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; GetData() const</div><div class="ttdoc">Copy out the data in a RdmResponse.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:374</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_html_af8f2d231fa209babefdaec4a5748a788"><div class="ttname"><a href="classrdmnet_1_1_rdm_response.html#af8f2d231fa209babefdaec4a5748a788">rdmnet::RdmResponse::data_len</a></div><div class="ttdeci">constexpr size_t data_len() const noexcept</div><div class="ttdoc">Get the length of the RDM parameter data contained within this response.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:285</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_saved_rdm_response_html"><div class="ttname"><a href="classrdmnet_1_1_saved_rdm_response.html">rdmnet::SavedRdmResponse</a></div><div class="ttdoc">An RDM response received over RDMnet and saved for later processing.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:111</div></div>
-<div class="ttc" id="agroup__rdmnet__cpp__common_html_gadf5994aa4727265c21622c5a0f997ceb"><div class="ttname"><a href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a></div><div class="ttdeci">rdmnet_client_scope_t ScopeHandle</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:447</div></div>
 </div><!-- fragment --><p> 
 </div>
  </p>

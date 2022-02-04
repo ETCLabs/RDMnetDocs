@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"struct_rdmnet_saved_rdm_response.html#a8eb7d36502a3f31d057e7dd28bd13315":[0,0,0,14,5],
+"struct_rdmnet_saved_rdm_response.html#ae02534d43bb6ef379672a2a7cf775067":[0,0,0,14,8],
+"struct_rdmnet_saved_rdm_response.html#ae2dc2a539787dd85d4985718b35c2813":[0,0,0,14,1],
+"struct_rdmnet_saved_rdm_response.html#ae5cdc5587568b1b40ac706156d60c850":[0,0,0,14,3],
+"struct_rdmnet_saved_rdm_response.html#aeae09591285ec44d306a1c59429fe7bd":[0,0,0,14,2],
+"struct_rdmnet_saved_rpt_status.html":[0,0,0,16],
 "struct_rdmnet_saved_rpt_status.html#a13f4822272610830bf0fb03fac03fb8e":[0,0,0,16,1],
 "struct_rdmnet_saved_rpt_status.html#a16968e004cd51efa08eaeae3f31a2257":[0,0,0,16,0],
 "struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600":[0,0,0,16,4],

@@ -17,7 +17,7 @@ var group__rdmnet__device__cpp =
       [ "get", "classrdmnet_1_1_physical_endpoint_config.html#a6defbbaf9dfa5f326372e9fef8e139f0", null ]
     ] ],
     [ "Device", "classrdmnet_1_1_device.html", [
-      [ "Handle", "classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9", null ],
+      [ "Handle", "classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1", null ],
       [ "Device", "classrdmnet_1_1_device.html#acc993cfeb5fc3d3daf5a71cf69aa53ce", null ],
       [ "Device", "classrdmnet_1_1_device.html#aee259ce8b2a5cc1148e9eb12f8b32ffa", null ],
       [ "Device", "classrdmnet_1_1_device.html#a238cd08406976efabb25d28c075049d2", null ],

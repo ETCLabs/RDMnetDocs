@@ -167,6 +167,7 @@
     <path>/builds/etc/common-tech/net/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2client_8h.html</filename>
     <includes id="client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
+    <class kind="class">rdmnet::detail::ScopeHandleType</class>
     <class kind="class">rdmnet::SourceAddr</class>
     <class kind="class">rdmnet::DestinationAddr</class>
     <class kind="class">rdmnet::ClientConnectedInfo</class>
@@ -175,10 +176,10 @@
     <class kind="class">rdmnet::Scope</class>
     <namespace>rdmnet</namespace>
     <member kind="typedef">
-      <type>rdmnet_client_scope_t</type>
+      <type>etcpal::OpaqueId&lt; detail::ScopeHandleType, rdmnet_client_scope_t, RDMNET_CLIENT_SCOPE_INVALID &gt;</type>
       <name>ScopeHandle</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gadf5994aa4727265c21622c5a0f997ceb</anchor>
+      <anchor>gaa772f132fb4c3e567e6a4610eb7d8220</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -996,6 +997,7 @@
     <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">rdmnet/cpp/common.h</includes>
     <includes id="cpp_2message_8h" name="message.h" local="yes" imported="no">rdmnet/cpp/message.h</includes>
     <includes id="controller_8h" name="controller.h" local="yes" imported="no">rdmnet/controller.h</includes>
+    <class kind="class">rdmnet::detail::ControllerHandleType</class>
     <class kind="class">rdmnet::Controller</class>
     <class kind="class">rdmnet::Controller::NotifyHandler</class>
     <class kind="class">rdmnet::Controller::RdmCommandHandler</class>
@@ -1416,6 +1418,7 @@
     <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">rdmnet/cpp/common.h</includes>
     <includes id="cpp_2client_8h" name="client.h" local="yes" imported="no">rdmnet/cpp/client.h</includes>
     <includes id="cpp_2message_8h" name="message.h" local="yes" imported="no">rdmnet/cpp/message.h</includes>
+    <class kind="class">rdmnet::detail::DeviceHandleType</class>
     <class kind="class">rdmnet::VirtualEndpointConfig</class>
     <class kind="class">rdmnet::PhysicalEndpointResponder</class>
     <class kind="class">rdmnet::PhysicalEndpointConfig</class>
@@ -1860,6 +1863,7 @@
     <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">rdmnet/cpp/common.h</includes>
     <includes id="cpp_2message_8h" name="message.h" local="yes" imported="no">rdmnet/cpp/message.h</includes>
     <includes id="ept__client_8h" name="ept_client.h" local="yes" imported="no">rdmnet/ept_client.h</includes>
+    <class kind="class">rdmnet::detail::EptClientHandleType</class>
     <class kind="class">rdmnet::EptClient</class>
     <class kind="class">rdmnet::EptClient::NotifyHandler</class>
     <class kind="struct">rdmnet::EptClient::Settings</class>
@@ -3263,10 +3267,10 @@
     <class kind="struct">rdmnet::Controller::RdmData</class>
     <class kind="struct">rdmnet::Controller::Settings</class>
     <member kind="typedef">
-      <type>rdmnet_controller_t</type>
+      <type>etcpal::OpaqueId&lt; detail::ControllerHandleType, rdmnet_controller_t, RDMNET_CONTROLLER_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a585adefdd50c5a7bc63d3a5625889c7d</anchor>
+      <anchor>a69cd4c66d7d3974557f4c6049bd57a9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -3493,13 +3497,10 @@
       <anchor>a8b207dba47b05c6d5d5cddfef7c91d1b</anchor>
       <arglist>(const RdmData &amp;new_data)</arglist>
     </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr Handle</type>
-      <name>kInvalidHandle</name>
-      <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>ae606b0ed0b8be8b85aac2e13f7c6a349</anchor>
-      <arglist></arglist>
-    </member>
+  </compound>
+  <compound kind="class">
+    <name>rdmnet::detail::ControllerHandleType</name>
+    <filename>classrdmnet_1_1detail_1_1_controller_handle_type.html</filename>
   </compound>
   <compound kind="class">
     <name>rdmnet::DestinationAddr</name>
@@ -3557,10 +3558,10 @@
     <class kind="class">rdmnet::Device::NotifyHandler</class>
     <class kind="struct">rdmnet::Device::Settings</class>
     <member kind="typedef">
-      <type>rdmnet_device_t</type>
+      <type>etcpal::OpaqueId&lt; detail::DeviceHandleType, rdmnet_device_t, RDMNET_DEVICE_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a7e0d6654da08564c996e6518ebe5def9</anchor>
+      <anchor>a8aceb3d8870acdc9c349c624f0e45bc1</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -3850,13 +3851,10 @@
       <anchor>a3f46dd4c3976eff06bfb157008fcf9b9</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr Handle</type>
-      <name>kInvalidHandle</name>
-      <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>ada2390256d95fdca156ac47f09f12fe8</anchor>
-      <arglist></arglist>
-    </member>
+  </compound>
+  <compound kind="class">
+    <name>rdmnet::detail::DeviceHandleType</name>
+    <filename>classrdmnet_1_1detail_1_1_device_handle_type.html</filename>
   </compound>
   <compound kind="struct">
     <name>rdmnet::llrp::DiscoveredTarget</name>
@@ -4143,10 +4141,10 @@
     <class kind="class">rdmnet::EptClient::NotifyHandler</class>
     <class kind="struct">rdmnet::EptClient::Settings</class>
     <member kind="typedef">
-      <type>rdmnet_ept_client_t</type>
+      <type>etcpal::OpaqueId&lt; detail::EptClientHandleType, rdmnet_ept_client_t, RDMNET_EPT_CLIENT_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a36b8fa2d0851a29b79c4ae6824484af6</anchor>
+      <anchor>a00e2bfa4e5e7831a83a5dceb71098444</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -4247,13 +4245,6 @@
       <anchor>a4936281394e537dc67da1c9545dafea5</anchor>
       <arglist>(ScopeHandle scope_handle) const</arglist>
     </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr Handle</type>
-      <name>kInvalidHandle</name>
-      <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a12070ddf610ba1fd85a23dfb8ecdd8d0</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>rdmnet::EptClientEntry</name>
@@ -4286,6 +4277,10 @@
       <anchor>a152346969f158ad6106e77a05ee05664</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>rdmnet::detail::EptClientHandleType</name>
+    <filename>classrdmnet_1_1detail_1_1_ept_client_handle_type.html</filename>
   </compound>
   <compound kind="class">
     <name>rdmnet::EptClientList</name>
@@ -4789,6 +4784,10 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>rdmnet::detail::LlrpManagerHandleType</name>
+    <filename>classrdmnet_1_1detail_1_1_llrp_manager_handle_type.html</filename>
+  </compound>
   <compound kind="struct">
     <name>LlrpRdmCommand</name>
     <filename>struct_llrp_rdm_command.html</filename>
@@ -5028,10 +5027,10 @@
     <filename>classrdmnet_1_1llrp_1_1_manager.html</filename>
     <class kind="class">rdmnet::llrp::Manager::NotifyHandler</class>
     <member kind="typedef">
-      <type>llrp_manager_t</type>
+      <type>etcpal::OpaqueId&lt; detail::LlrpManagerHandleType, llrp_manager_t, LLRP_MANAGER_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a6c30402a2b9f27caa5c9ce580ee05b85</anchor>
+      <anchor>a6c5520438db5b6fa9ac1ba30ba09455c</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -5110,13 +5109,6 @@
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
       <anchor>a4fb7d30129774502f657cabf6b9223fb</anchor>
       <arglist>() const</arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr Handle</type>
-      <name>kInvalidHandle</name>
-      <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>ae5c32e2c2036a5b81d509fd138bde386</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -9325,6 +9317,10 @@
       <arglist>(const etcpal::SockAddr &amp;static_broker_addr)</arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>rdmnet::detail::ScopeHandleType</name>
+    <filename>classrdmnet_1_1detail_1_1_scope_handle_type.html</filename>
+  </compound>
   <compound kind="struct">
     <name>rdmnet::Broker::Settings</name>
     <filename>structrdmnet_1_1_broker_1_1_settings.html</filename>
@@ -9716,10 +9712,10 @@
     <class kind="class">rdmnet::RptStatus</class>
     <class kind="class">rdmnet::SavedRptStatus</class>
     <member kind="typedef">
-      <type>rdmnet_client_scope_t</type>
+      <type>etcpal::OpaqueId&lt; detail::ScopeHandleType, rdmnet_client_scope_t, RDMNET_CLIENT_SCOPE_INVALID &gt;</type>
       <name>ScopeHandle</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gadf5994aa4727265c21622c5a0f997ceb</anchor>
+      <anchor>gaa772f132fb4c3e567e6a4610eb7d8220</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -12092,10 +12088,10 @@
     <class kind="class">rdmnet::RptStatus</class>
     <class kind="class">rdmnet::SavedRptStatus</class>
     <member kind="typedef">
-      <type>rdmnet_client_scope_t</type>
+      <type>etcpal::OpaqueId&lt; detail::ScopeHandleType, rdmnet_client_scope_t, RDMNET_CLIENT_SCOPE_INVALID &gt;</type>
       <name>ScopeHandle</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gadf5994aa4727265c21622c5a0f997ceb</anchor>
+      <anchor>gaa772f132fb4c3e567e6a4610eb7d8220</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -12371,97 +12367,97 @@
     <name>building_and_integrating</name>
     <title>Building and Integrating the RDMnet Library into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpvu9qokab_docs_getting_started_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmp2091t80k_docs_getting_started_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>data_ownership</name>
     <title>Data Ownership Paradigms in the RDMnet Library</title>
     <filename>data_ownership.html</filename>
-    <docanchor file="data_ownership.html">md__tmp_tmpvu9qokab_docs_getting_started_data_ownership</docanchor>
+    <docanchor file="data_ownership.html">md__tmp_tmp2091t80k_docs_getting_started_data_ownership</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpvu9qokab_docs_getting_started_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmp2091t80k_docs_getting_started_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpvu9qokab_docs_getting_started_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmp2091t80k_docs_getting_started_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>handling_rdm_commands</name>
     <title>Handling RDM Commands</title>
     <filename>handling_rdm_commands.html</filename>
-    <docanchor file="handling_rdm_commands.html">md__tmp_tmpvu9qokab_docs_getting_started_handling_rdm_commands</docanchor>
+    <docanchor file="handling_rdm_commands.html">md__tmp_tmp2091t80k_docs_getting_started_handling_rdm_commands</docanchor>
   </compound>
   <compound kind="page">
     <name>using_broker</name>
     <title>Using the Broker API</title>
     <filename>using_broker.html</filename>
-    <docanchor file="using_broker.html">md__tmp_tmpvu9qokab_docs_getting_started_using_broker</docanchor>
+    <docanchor file="using_broker.html">md__tmp_tmp2091t80k_docs_getting_started_using_broker</docanchor>
   </compound>
   <compound kind="page">
     <name>using_controller</name>
     <title>Using the Controller API</title>
     <filename>using_controller.html</filename>
-    <docanchor file="using_controller.html">md__tmp_tmpvu9qokab_docs_getting_started_using_controller</docanchor>
+    <docanchor file="using_controller.html">md__tmp_tmp2091t80k_docs_getting_started_using_controller</docanchor>
   </compound>
   <compound kind="page">
     <name>using_device</name>
     <title>Using the Device API</title>
     <filename>using_device.html</filename>
-    <docanchor file="using_device.html">md__tmp_tmpvu9qokab_docs_getting_started_using_device</docanchor>
+    <docanchor file="using_device.html">md__tmp_tmp2091t80k_docs_getting_started_using_device</docanchor>
   </compound>
   <compound kind="page">
     <name>using_ept_client</name>
     <title>Using the EPT Client API</title>
     <filename>using_ept_client.html</filename>
-    <docanchor file="using_ept_client.html">md__tmp_tmpvu9qokab_docs_getting_started_using_ept_client</docanchor>
+    <docanchor file="using_ept_client.html">md__tmp_tmp2091t80k_docs_getting_started_using_ept_client</docanchor>
   </compound>
   <compound kind="page">
     <name>using_llrp_manager</name>
     <title>Using the LLRP Manager API</title>
     <filename>using_llrp_manager.html</filename>
-    <docanchor file="using_llrp_manager.html">md__tmp_tmpvu9qokab_docs_getting_started_using_llrp_manager</docanchor>
+    <docanchor file="using_llrp_manager.html">md__tmp_tmp2091t80k_docs_getting_started_using_llrp_manager</docanchor>
   </compound>
   <compound kind="page">
     <name>devices_and_gateways</name>
     <title>Devices and Gateways</title>
     <filename>devices_and_gateways.html</filename>
-    <docanchor file="devices_and_gateways.html">md__tmp_tmpvu9qokab_docs_how_rdmnet_works_devices_and_gateways</docanchor>
+    <docanchor file="devices_and_gateways.html">md__tmp_tmp2091t80k_docs_how_rdmnet_works_devices_and_gateways</docanchor>
   </compound>
   <compound kind="page">
     <name>discovery</name>
     <title>Discovery</title>
     <filename>discovery.html</filename>
-    <docanchor file="discovery.html">md__tmp_tmpvu9qokab_docs_how_rdmnet_works_discovery</docanchor>
+    <docanchor file="discovery.html">md__tmp_tmp2091t80k_docs_how_rdmnet_works_discovery</docanchor>
   </compound>
   <compound kind="page">
     <name>ept</name>
     <title>Extensible Packet Transport (EPT)</title>
     <filename>ept.html</filename>
-    <docanchor file="ept.html">md__tmp_tmpvu9qokab_docs_how_rdmnet_works_ept</docanchor>
+    <docanchor file="ept.html">md__tmp_tmp2091t80k_docs_how_rdmnet_works_ept</docanchor>
   </compound>
   <compound kind="page">
     <name>how_it_works</name>
     <title>How RDMnet Works</title>
     <filename>how_it_works.html</filename>
-    <docanchor file="how_it_works.html">md__tmp_tmpvu9qokab_docs_how_rdmnet_works_how_it_works</docanchor>
+    <docanchor file="how_it_works.html">md__tmp_tmp2091t80k_docs_how_rdmnet_works_how_it_works</docanchor>
   </compound>
   <compound kind="page">
     <name>llrp</name>
     <title>Low-Level Recovery Protocol (LLRP)</title>
     <filename>llrp.html</filename>
-    <docanchor file="llrp.html">md__tmp_tmpvu9qokab_docs_how_rdmnet_works_llrp</docanchor>
+    <docanchor file="llrp.html">md__tmp_tmp2091t80k_docs_how_rdmnet_works_llrp</docanchor>
   </compound>
   <compound kind="page">
     <name>roles_and_addressing</name>
     <title>Roles and Addressing</title>
     <filename>roles_and_addressing.html</filename>
-    <docanchor file="roles_and_addressing.html">md__tmp_tmpvu9qokab_docs_how_rdmnet_works_roles_and_addressing</docanchor>
+    <docanchor file="roles_and_addressing.html">md__tmp_tmp2091t80k_docs_how_rdmnet_works_roles_and_addressing</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

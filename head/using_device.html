@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="title">Using the Device API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpvu9qokab_docs_getting_started_using_device"></a> The RDMnet Device API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp2091t80k_docs_getting_started_using_device"></a> The RDMnet Device API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -293,11 +293,11 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html_a30a2f58b68d4d0e7d2ae6a63213a388a"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a30a2f58b68d4d0e7d2ae6a63213a388a">etcpal::Uuid::Device</a></div><div class="ttdeci">static Uuid Device(const std::string &amp;device_str, const uint8_t *mac_addr, uint32_t uuid_num) noexcept</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_1_1_notify_handler_html"><div class="ttname"><a href="classrdmnet_1_1_device_1_1_notify_handler.html">rdmnet::Device::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a device.</div><div class="ttdef"><b>Definition:</b> device.h:327</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html"><div class="ttname"><a href="classrdmnet_1_1_device.html">rdmnet::Device</a></div><div class="ttdoc">An instance of RDMnet device functionality.</div><div class="ttdef"><b>Definition:</b> device.h:315</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_afe17981d3035416d657b269ad2034960"><div class="ttname"><a href="classrdmnet_1_1_device.html#afe17981d3035416d657b269ad2034960">rdmnet::Device::StartupWithDefaultScope</a></div><div class="ttdeci">etcpal::Error StartupWithDefaultScope(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Allocate resources and start up this device with the given configuration on the default RDMnet scope.</div><div class="ttdef"><b>Definition:</b> device.h:606</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_1_1_notify_handler_html"><div class="ttname"><a href="classrdmnet_1_1_device_1_1_notify_handler.html">rdmnet::Device::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a device.</div><div class="ttdef"><b>Definition:</b> device.h:333</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html"><div class="ttname"><a href="classrdmnet_1_1_device.html">rdmnet::Device</a></div><div class="ttdoc">An instance of RDMnet device functionality.</div><div class="ttdef"><b>Definition:</b> device.h:323</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_afe17981d3035416d657b269ad2034960"><div class="ttname"><a href="classrdmnet_1_1_device.html#afe17981d3035416d657b269ad2034960">rdmnet::Device::StartupWithDefaultScope</a></div><div class="ttdeci">etcpal::Error StartupWithDefaultScope(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Allocate resources and start up this device with the given configuration on the default RDMnet scope.</div><div class="ttdef"><b>Definition:</b> device.h:612</div></div>
 <div class="ttc" id="acpp_2device_8h_html"><div class="ttname"><a href="cpp_2device_8h.html">device.h</a></div><div class="ttdoc">C++ wrapper for the RDMnet Device API.</div></div>
-<div class="ttc" id="astructrdmnet_1_1_device_1_1_settings_html"><div class="ttname"><a href="structrdmnet_1_1_device_1_1_settings.html">rdmnet::Device::Settings</a></div><div class="ttdoc">A set of configuration settings that a device needs to initialize.</div><div class="ttdef"><b>Definition:</b> device.h:378</div></div>
+<div class="ttc" id="astructrdmnet_1_1_device_1_1_settings_html"><div class="ttname"><a href="structrdmnet_1_1_device_1_1_settings.html">rdmnet::Device::Settings</a></div><div class="ttdoc">A set of configuration settings that a device needs to initialize.</div><div class="ttdef"><b>Definition:</b> device.h:384</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -323,7 +323,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line"> </div>
 <div class="line"><span class="comment">// At this point, the device is no longer running and its handle is no longer valid. It can be</span></div>
 <div class="line"><span class="comment">// started again (with a new handle) by calling Startup() again.</span></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_a84538ed8fcb63d968c760649df74c61c"><div class="ttname"><a href="classrdmnet_1_1_device.html#a84538ed8fcb63d968c760649df74c61c">rdmnet::Device::Shutdown</a></div><div class="ttdeci">void Shutdown(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</div><div class="ttdoc">Shut down this device and deallocate resources.</div><div class="ttdef"><b>Definition:</b> device.h:664</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_a84538ed8fcb63d968c760649df74c61c"><div class="ttname"><a href="classrdmnet_1_1_device.html#a84538ed8fcb63d968c760649df74c61c">rdmnet::Device::Shutdown</a></div><div class="ttdeci">void Shutdown(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</div><div class="ttdoc">Shut down this device and deallocate resources.</div><div class="ttdef"><b>Definition:</b> device.h:688</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -358,7 +358,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line"> </div>
 <div class="line"><span class="comment">// Or, if configured with a static broker address...</span></div>
 <div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = device.<a class="code" href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7">Startup</a>(my_device_notify_handler, settings, <span class="stringliteral">&quot;My initial scope&quot;</span>, my_static_broker_addr);</div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_ab4573244d38d30c40900484f53b9fbe7"><div class="ttname"><a href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7">rdmnet::Device::Startup</a></div><div class="ttdeci">etcpal::Error Startup(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const char *scope_id_str, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Allocate resources and start up this device with the given configuration on the given RDMnet scope.</div><div class="ttdef"><b>Definition:</b> device.h:629</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_ab4573244d38d30c40900484f53b9fbe7"><div class="ttname"><a href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7">rdmnet::Device::Startup</a></div><div class="ttdeci">etcpal::Error Startup(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const char *scope_id_str, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Allocate resources and start up this device with the given configuration on the given RDMnet scope.</div><div class="ttdef"><b>Definition:</b> device.h:641</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -386,7 +386,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="fragment"><div class="line"><span class="comment">// The disconnect_reason argument provides the RDMnet disconnect reason code to send on the current</span></div>
 <div class="line"><span class="comment">// connected scope. Select the most appropriate value for why the scope is changing.</span></div>
 <div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = device.<a class="code" href="classrdmnet_1_1_device.html#a9f0e9d76c4ce0487b0fd38edec014fe4">ChangeScope</a>(<span class="stringliteral">&quot;My new scope&quot;</span>, <a class="code" href="group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a25de5a2953a7a4ae379975bb300d8165">kRdmnetDisconnectUserReconfigure</a>);</div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_a9f0e9d76c4ce0487b0fd38edec014fe4"><div class="ttname"><a href="classrdmnet_1_1_device.html#a9f0e9d76c4ce0487b0fd38edec014fe4">rdmnet::Device::ChangeScope</a></div><div class="ttdeci">etcpal::Error ChangeScope(const char *new_scope_id_str, rdmnet_disconnect_reason_t disconnect_reason, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Change the device's RDMnet scope.</div><div class="ttdef"><b>Definition:</b> device.h:683</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_a9f0e9d76c4ce0487b0fd38edec014fe4"><div class="ttname"><a href="classrdmnet_1_1_device.html#a9f0e9d76c4ce0487b0fd38edec014fe4">rdmnet::Device::ChangeScope</a></div><div class="ttdeci">etcpal::Error ChangeScope(const char *new_scope_id_str, rdmnet_disconnect_reason_t disconnect_reason, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Change the device's RDMnet scope.</div><div class="ttdef"><b>Definition:</b> device.h:707</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -417,17 +417,17 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 </div>
 <div id="div_6_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyDeviceNotifyHandler::HandleConnectedToBroker(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyDeviceNotifyHandler::HandleConnectedToBroker(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                    <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a>&amp; info)</div>
 <div class="line">{</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a>()</div>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot;&#39; at IP address &quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">broker_addr</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
+<div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::DeviceHandleType, rdmnet_device_t, RDMNET_DEVICE_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_sock_addr_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::SockAddr::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a></div><div class="ttdoc">Information about a successful connection to a broker delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> client.h:149</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_a751d070cb4c1f89d838955298270b6cf"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">rdmnet::ClientConnectedInfo::broker_name</a></div><div class="ttdeci">std::string broker_name() const</div><div class="ttdoc">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty stri...</div><div class="ttdef"><b>Definition:</b> client.h:184</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_af30653fa66bd5b267c54cf81a8c7eb3d"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">rdmnet::ClientConnectedInfo::broker_addr</a></div><div class="ttdeci">constexpr etcpal::SockAddr broker_addr() const noexcept</div><div class="ttdoc">Get the IP address and port of the remote broker to which we have connected.</div><div class="ttdef"><b>Definition:</b> client.h:178</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_a7e0d6654da08564c996e6518ebe5def9"><div class="ttname"><a href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a></div><div class="ttdeci">rdmnet_device_t Handle</div><div class="ttdoc">A handle type used by the RDMnet library to identify device instances.</div><div class="ttdef"><b>Definition:</b> device.h:318</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a></div><div class="ttdoc">Information about a successful connection to a broker delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> client.h:158</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_a751d070cb4c1f89d838955298270b6cf"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">rdmnet::ClientConnectedInfo::broker_name</a></div><div class="ttdeci">std::string broker_name() const</div><div class="ttdoc">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty stri...</div><div class="ttdef"><b>Definition:</b> client.h:193</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_af30653fa66bd5b267c54cf81a8c7eb3d"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">rdmnet::ClientConnectedInfo::broker_addr</a></div><div class="ttdeci">constexpr etcpal::SockAddr broker_addr() const noexcept</div><div class="ttdoc">Get the IP address and port of the remote broker to which we have connected.</div><div class="ttdef"><b>Definition:</b> client.h:187</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -475,7 +475,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">  <span class="comment">// The endpoint has been added. If currently connected, the library will send the proper</span></div>
 <div class="line">  <span class="comment">// notification which indicates to connected controllers that there is a new endpoint present.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_a875fae87db81a2fe2236566e45892f1b"><div class="ttname"><a href="classrdmnet_1_1_device.html#a875fae87db81a2fe2236566e45892f1b">rdmnet::Device::AddPhysicalEndpoint</a></div><div class="ttdeci">etcpal::Error AddPhysicalEndpoint(const PhysicalEndpointConfig &amp;physical_config)</div><div class="ttdoc">Add a physical endpoint to a device.</div><div class="ttdef"><b>Definition:</b> device.h:909</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_a875fae87db81a2fe2236566e45892f1b"><div class="ttname"><a href="classrdmnet_1_1_device.html#a875fae87db81a2fe2236566e45892f1b">rdmnet::Device::AddPhysicalEndpoint</a></div><div class="ttdeci">etcpal::Error AddPhysicalEndpoint(const PhysicalEndpointConfig &amp;physical_config)</div><div class="ttdoc">Add a physical endpoint to a device.</div><div class="ttdef"><b>Definition:</b> device.h:935</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -524,7 +524,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassrdm_1_1_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a></div></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_aa55f54189e6601365456952655cc1c4f"><div class="ttname"><a href="classrdmnet_1_1_device.html#aa55f54189e6601365456952655cc1c4f">rdmnet::Device::AddPhysicalResponder</a></div><div class="ttdeci">etcpal::Error AddPhysicalResponder(uint16_t endpoint_id, const rdm::Uid &amp;responder_uid, uint16_t control_field, const rdm::Uid &amp;binding_uid=rdm::Uid{})</div><div class="ttdoc">Add a responder to a physical endpoint.</div><div class="ttdef"><b>Definition:</b> device.h:1070</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_aa55f54189e6601365456952655cc1c4f"><div class="ttname"><a href="classrdmnet_1_1_device.html#aa55f54189e6601365456952655cc1c4f">rdmnet::Device::AddPhysicalResponder</a></div><div class="ttdeci">etcpal::Error AddPhysicalResponder(uint16_t endpoint_id, const rdm::Uid &amp;responder_uid, uint16_t control_field, const rdm::Uid &amp;binding_uid=rdm::Uid{})</div><div class="ttdoc">Add a responder to a physical endpoint.</div><div class="ttdef"><b>Definition:</b> device.h:1096</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -579,8 +579,8 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">  <span class="comment">// notification which indicates to connected controllers that there is a new endpoint and new</span></div>
 <div class="line">  <span class="comment">// responders present.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a></div><div class="ttdoc">Configuration information for a physical endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:251</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_responder_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_responder.html">rdmnet::PhysicalEndpointResponder</a></div><div class="ttdoc">Identifying information for a physical RDM responder connected to an RDMnet gateway.</div><div class="ttdef"><b>Definition:</b> device.h:203</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a></div><div class="ttdoc">Configuration information for a physical endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:259</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_responder_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_responder.html">rdmnet::PhysicalEndpointResponder</a></div><div class="ttdoc">Identifying information for a physical RDM responder connected to an RDMnet gateway.</div><div class="ttdef"><b>Definition:</b> device.h:211</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -640,8 +640,8 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">  <span class="comment">// MyDeviceNotifyHandler::HandleDynamicUidStatus() callback.</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html_ab017791f5f66829527591d8bd6bd840f"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ab017791f5f66829527591d8bd6bd840f">etcpal::Uuid::FromString</a></div><div class="ttdeci">static Uuid FromString(const char *uuid_str) noexcept</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_a99f7314c8662242597afe5c54b4800d7"><div class="ttname"><a href="classrdmnet_1_1_device.html#a99f7314c8662242597afe5c54b4800d7">rdmnet::Device::AddVirtualEndpoint</a></div><div class="ttdeci">etcpal::Error AddVirtualEndpoint(const VirtualEndpointConfig &amp;endpoint_config)</div><div class="ttdoc">Add a virtual endpoint to a device.</div><div class="ttdef"><b>Definition:</b> device.h:875</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_virtual_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_virtual_endpoint_config.html">rdmnet::VirtualEndpointConfig</a></div><div class="ttdoc">Configuration information for a virtual endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:71</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_device_html_a99f7314c8662242597afe5c54b4800d7"><div class="ttname"><a href="classrdmnet_1_1_device.html#a99f7314c8662242597afe5c54b4800d7">rdmnet::Device::AddVirtualEndpoint</a></div><div class="ttdeci">etcpal::Error AddVirtualEndpoint(const VirtualEndpointConfig &amp;endpoint_config)</div><div class="ttdoc">Add a virtual endpoint to a device.</div><div class="ttdef"><b>Definition:</b> device.h:901</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_virtual_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_virtual_endpoint_config.html">rdmnet::VirtualEndpointConfig</a></div><div class="ttdoc">Configuration information for a virtual endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:79</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -688,7 +688,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 </div>
 <div id="div_11_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyDeviceNotifyHandler::HandleDynamicUidStatus(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyDeviceNotifyHandler::HandleDynamicUidStatus(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                   <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">rdmnet::DynamicUidAssignmentList</a>&amp; list)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handles as necessary...</span></div>

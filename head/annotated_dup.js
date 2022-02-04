@@ -1,6 +1,13 @@
 var annotated_dup =
 [
     [ "rdmnet", "namespacerdmnet.html", [
+      [ "detail", null, [
+        [ "ScopeHandleType", "classrdmnet_1_1detail_1_1_scope_handle_type.html", null ],
+        [ "ControllerHandleType", "classrdmnet_1_1detail_1_1_controller_handle_type.html", null ],
+        [ "DeviceHandleType", "classrdmnet_1_1detail_1_1_device_handle_type.html", null ],
+        [ "EptClientHandleType", "classrdmnet_1_1detail_1_1_ept_client_handle_type.html", null ],
+        [ "LlrpManagerHandleType", "classrdmnet_1_1detail_1_1_llrp_manager_handle_type.html", null ]
+      ] ],
       [ "llrp", "namespacerdmnet_1_1llrp.html", [
         [ "DestinationAddr", "classrdmnet_1_1llrp_1_1_destination_addr.html", "classrdmnet_1_1llrp_1_1_destination_addr" ],
         [ "DiscoveredTarget", "structrdmnet_1_1llrp_1_1_discovered_target.html", "structrdmnet_1_1llrp_1_1_discovered_target" ],

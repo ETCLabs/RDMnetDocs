@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classrdmnet_1_1_physical_endpoint_responder.html#ac89bd1a476e261075f41a0b56ece4c4c":[0,1,3,1,1],
 "classrdmnet_1_1_rdm_command.html":[0,1,1,21],
 "classrdmnet_1_1_rdm_command.html#a028cfb7b0a4a762dea6b5b0144639bee":[0,1,1,21,5],
 "classrdmnet_1_1_rdm_command.html#a050574a4910350565f3c2a3109aa7090":[0,1,1,21,1],
@@ -211,9 +212,14 @@ var NAVTREEINDEX1 =
 "classrdmnet_1_1_virtual_endpoint_config.html#a3782269d48a334fab4027c4fa0c315ad":[0,1,3,0,0],
 "classrdmnet_1_1_virtual_endpoint_config.html#a40bd7d58009aa763a5a8b8df565ac676":[0,1,3,0,1],
 "classrdmnet_1_1_virtual_endpoint_config.html#addd22b010bc81f28a7dcd0e2a808020c":[0,1,3,0,3],
-"classrdmnet_1_1llrp_1_1_destination_addr.html":[2,0,0,0,0],
-"classrdmnet_1_1llrp_1_1_destination_addr.html#a1edec4d1f637e87de8d9b73696125e32":[2,0,0,0,0,0],
-"classrdmnet_1_1llrp_1_1_destination_addr.html#a6cdfe5f8e2322672e46c172f86b78d41":[2,0,0,0,0,1],
+"classrdmnet_1_1detail_1_1_controller_handle_type.html":[2,0,0,0,1],
+"classrdmnet_1_1detail_1_1_device_handle_type.html":[2,0,0,0,2],
+"classrdmnet_1_1detail_1_1_ept_client_handle_type.html":[2,0,0,0,3],
+"classrdmnet_1_1detail_1_1_llrp_manager_handle_type.html":[2,0,0,0,4],
+"classrdmnet_1_1detail_1_1_scope_handle_type.html":[2,0,0,0,0],
+"classrdmnet_1_1llrp_1_1_destination_addr.html":[2,0,0,1,0],
+"classrdmnet_1_1llrp_1_1_destination_addr.html#a1edec4d1f637e87de8d9b73696125e32":[2,0,0,1,0,0],
+"classrdmnet_1_1llrp_1_1_destination_addr.html#a6cdfe5f8e2322672e46c172f86b78d41":[2,0,0,1,0,1],
 "classrdmnet_1_1llrp_1_1_manager.html":[0,1,5,1],
 "classrdmnet_1_1llrp_1_1_manager.html#a02a5129770ac898eceb3d9b1c909ef2c":[0,1,5,1,8],
 "classrdmnet_1_1llrp_1_1_manager.html#a175b745b349c7f96072617428ac771eb":[0,1,5,1,1],
@@ -221,7 +227,7 @@ var NAVTREEINDEX1 =
 "classrdmnet_1_1llrp_1_1_manager.html#a4fb7d30129774502f657cabf6b9223fb":[0,1,5,1,5],
 "classrdmnet_1_1llrp_1_1_manager.html#a5735be1b670012d7daf37590d51a7e44":[0,1,5,1,3],
 "classrdmnet_1_1llrp_1_1_manager.html#a575ac406c87c8fcd0e6c67e4b523a432":[0,1,5,1,2],
-"classrdmnet_1_1llrp_1_1_manager.html#a6c30402a2b9f27caa5c9ce580ee05b85":[0,1,5,1,0],
+"classrdmnet_1_1llrp_1_1_manager.html#a6c5520438db5b6fa9ac1ba30ba09455c":[0,1,5,1,0],
 "classrdmnet_1_1llrp_1_1_manager.html#a870fa780bd25f7af1e3229f9aa117ac4":[0,1,5,1,7],
 "classrdmnet_1_1llrp_1_1_manager.html#a8d46615ee9fc87bc07b9da606e406788":[0,1,5,1,14],
 "classrdmnet_1_1llrp_1_1_manager.html#a93da3a31f3c3b53c09a4e7122aa7940d":[0,1,5,1,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX1 =
 "classrdmnet_1_1llrp_1_1_rdm_command.html#a420474554934cdc89606631e1da9d40e":[0,1,1,17,6],
 "classrdmnet_1_1llrp_1_1_rdm_command.html#a502263cb42667492da1a8af3d3ea1ace":[0,1,1,17,21],
 "classrdmnet_1_1llrp_1_1_rdm_command.html#a562859214aa6b99c40eb56895ca6ee6f":[0,1,1,17,3],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a5734c0f1e9d456f5768706125513abeb":[0,1,1,17,4],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a6070d269a6678cfc0a9ecc57fb0f2e27":[0,1,1,17,17],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a6c20ecfa9c3ef1f63060041e5130e2e2":[0,1,1,17,9],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a7db88b8dee5604358fb8f59a33ba1df8":[0,1,1,17,7],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a7fb6d9c91daa359fb18eb4f25aad5846":[0,1,1,17,20],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a8574b82f4a8c06d337efc1135af8330e":[0,1,1,17,12],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a8db3f3acf0211b6e14a1abdbbd9509e7":[0,1,1,17,15]
+"classrdmnet_1_1llrp_1_1_rdm_command.html#a5734c0f1e9d456f5768706125513abeb":[0,1,1,17,4]
 };

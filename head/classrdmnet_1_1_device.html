@@ -203,8 +203,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_device.html',''); init
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rdmnet::Device Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__device__cpp.html">Device API</a></div></div>  </div>
 </div><!--header-->
@@ -226,10 +225,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7e0d6654da08564c996e6518ebe5def9"><td class="memItemLeft" align="right" valign="top"><a id="a7e0d6654da08564c996e6518ebe5def9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">Handle</a> = <a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a></td></tr>
-<tr class="memdesc:a7e0d6654da08564c996e6518ebe5def9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify device instances. <br /></td></tr>
-<tr class="separator:a7e0d6654da08564c996e6518ebe5def9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aceb3d8870acdc9c349c624f0e45bc1"><td class="memItemLeft" align="right" valign="top"><a id="a8aceb3d8870acdc9c349c624f0e45bc1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> = <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId</a>&lt; <a class="el" href="classrdmnet_1_1detail_1_1_device_handle_type.html">detail::DeviceHandleType</a>, <a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a>, <a class="el" href="group__rdmnet__device.html#ga42be52a101f03361b7db0b29a063516a">RDMNET_DEVICE_INVALID</a> &gt;</td></tr>
+<tr class="memdesc:a8aceb3d8870acdc9c349c624f0e45bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify device instances. <br /></td></tr>
+<tr class="separator:a8aceb3d8870acdc9c349c624f0e45bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -356,7 +355,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1bf9f11a6cb5b5b773063d44e5cd081b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove multiple responders from a physical endpoint.  <a href="classrdmnet_1_1_device.html#a1bf9f11a6cb5b5b773063d44e5cd081b">More...</a><br /></td></tr>
 <tr class="separator:a1bf9f11a6cb5b5b773063d44e5cd081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92857222f73fbda03c2bf6ba5d95edc3"><td class="memItemLeft" align="right" valign="top"><a id="a92857222f73fbda03c2bf6ba5d95edc3"></a>
-constexpr <a class="el" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a> () const</td></tr>
+constexpr <a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a> () const</td></tr>
 <tr class="memdesc:a92857222f73fbda03c2bf6ba5d95edc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of a device instance. <br /></td></tr>
 <tr class="separator:a92857222f73fbda03c2bf6ba5d95edc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a646ed4c0fac6dc42ddd0737c8376d543"><td class="memItemLeft" align="right" valign="top"><a id="a646ed4c0fac6dc42ddd0737c8376d543"></a>
@@ -366,13 +365,6 @@ constexpr <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">No
 <tr class="memitem:a3f46dd4c3976eff06bfb157008fcf9b9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a3f46dd4c3976eff06bfb157008fcf9b9">scope</a> () const</td></tr>
 <tr class="memdesc:a3f46dd4c3976eff06bfb157008fcf9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope configuration associated with a device instance.  <a href="classrdmnet_1_1_device.html#a3f46dd4c3976eff06bfb157008fcf9b9">More...</a><br /></td></tr>
 <tr class="separator:a3f46dd4c3976eff06bfb157008fcf9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ada2390256d95fdca156ac47f09f12fe8"><td class="memItemLeft" align="right" valign="top"><a id="ada2390256d95fdca156ac47f09f12fe8"></a>
-static constexpr <a class="el" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#ada2390256d95fdca156ac47f09f12fe8">kInvalidHandle</a> = <a class="el" href="group__rdmnet__device.html#ga42be52a101f03361b7db0b29a063516a">RDMNET_DEVICE_INVALID</a></td></tr>
-<tr class="memdesc:ada2390256d95fdca156ac47f09f12fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid Handle value. <br /></td></tr>
-<tr class="separator:ada2390256d95fdca156ac47f09f12fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a875fae87db81a2fe2236566e45892f1b"></a>

@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="title">Handling RDM Commands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpvu9qokab_docs_getting_started_handling_rdm_commands"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp2091t80k_docs_getting_started_handling_rdm_commands"></a></p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line">rdmnet::ResponseAction MyRdmnetNotifyHander::HandleRdmCommand(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
+<div class="fragment"><div class="line">rdmnet::ResponseAction MyRdmnetNotifyHander::HandleRdmCommand(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                              <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a>&amp; cmd)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordflow">if</span> (cmd.<a class="code" href="classrdmnet_1_1_rdm_command.html#a18ab3142115df0d52a43673c8af4527e">IsToDefaultResponder</a>())</div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">    <span class="comment">// Inspect cmd.dest_endpoint() and cmd.rdm_dest_uid() to determine which one.</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_device_html_a7e0d6654da08564c996e6518ebe5def9"><div class="ttname"><a href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a></div><div class="ttdeci">rdmnet_device_t Handle</div><div class="ttdoc">A handle type used by the RDMnet library to identify device instances.</div><div class="ttdef"><b>Definition:</b> device.h:318</div></div>
+<div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::DeviceHandleType, rdmnet_device_t, RDMNET_DEVICE_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a></div><div class="ttdoc">An RDM command received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:43</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_a18ab3142115df0d52a43673c8af4527e"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#a18ab3142115df0d52a43673c8af4527e">rdmnet::RdmCommand::IsToDefaultResponder</a></div><div class="ttdeci">constexpr bool IsToDefaultResponder() const noexcept</div><div class="ttdoc">Whether this command is addressed to the RDMnet default responder.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:222</div></div>
 </div><!-- fragment --><p> 
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line"><span class="comment">// initialized.</span></div>
 <div class="line"><span class="keyword">static</span> uint8_t my_rdmnet_response_buf[kMyMaxResponseSize];</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
+<div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                                 <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a>&amp; cmd)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 </div>
 <div id="div_4_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
+<div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                                 <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a>&amp; cmd)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 </div>
 <div id="div_6_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
+<div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                                 <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a>&amp; cmd)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Note that this type contains a byte array large enough for the largest possible RDM command</span></div>
