@@ -14,7 +14,7 @@ var controller_8h =
     [ "RdmnetControllerRdmCmdHandler", "group__rdmnet__controller.html#ga171b3d972dbc31cd7fb28e6f92b3a862", null ],
     [ "RdmnetControllerRdmCommandReceivedCallback", "group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a", null ],
     [ "RdmnetControllerRdmData", "group__rdmnet__controller.html#gaf0ad1714c49e369590ba8fd6f6d9366e", null ],
-    [ "RdmnetControllerRdmResponseReceivedCallback", "group__rdmnet__controller.html#ga936e8ddb41d707184b48439bbab5eb7e", null ],
+    [ "RdmnetControllerRdmResponseReceivedCallback", "group__rdmnet__controller.html#ga7aefd6780a7216c9f7eb2de1bdffcefb", null ],
     [ "RdmnetControllerResponderIdsReceivedCallback", "group__rdmnet__controller.html#ga4408acb283a85c751fae58102a4038f3", null ],
     [ "RdmnetControllerStatusReceivedCallback", "group__rdmnet__controller.html#gad09b6820907dc813fba7e67bf93f2453", null ],
     [ "rdmnet_controller_add_default_scope", "group__rdmnet__controller.html#ga95f857453eb6b8da8cadaa373420ab61", null ],

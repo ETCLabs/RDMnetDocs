@@ -17,7 +17,7 @@ var searchData=
   ['handlellrptargetdiscovered_633',['HandleLlrpTargetDiscovered',['../classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html#a5a0f226efba2695aac7a9004492b0d04',1,'rdmnet::llrp::Manager::NotifyHandler']]],
   ['handlelogmessage_634',['HandleLogMessage',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_log_message_handler.html#a9d89d39c4e9149f340fe950da112ec6c',1,'etcpal::LogMessageHandler']]],
   ['handlerdmcommand_635',['HandleRdmCommand',['../classrdmnet_1_1_controller_1_1_rdm_command_handler.html#a059a481216c098434cb3642ef48a3f81',1,'rdmnet::Controller::RdmCommandHandler::HandleRdmCommand()'],['../classrdmnet_1_1_device_1_1_notify_handler.html#ad6b12b981d6f6664eba437bad431f1e9',1,'rdmnet::Device::NotifyHandler::HandleRdmCommand()']]],
-  ['handlerdmresponse_636',['HandleRdmResponse',['../classrdmnet_1_1_controller_1_1_notify_handler.html#a492cbc1e38883cca90d319247c1f69c9',1,'rdmnet::Controller::NotifyHandler']]],
+  ['handlerdmresponse_636',['HandleRdmResponse',['../classrdmnet_1_1_controller_1_1_notify_handler.html#ad05f2f78ec366a6ef2a5466b1cb7e482',1,'rdmnet::Controller::NotifyHandler']]],
   ['handleresponderidsreceived_637',['HandleResponderIdsReceived',['../classrdmnet_1_1_controller_1_1_notify_handler.html#adf7409ba82776523a28e282ca10d2e9c',1,'rdmnet::Controller::NotifyHandler']]],
   ['handlerptstatus_638',['HandleRptStatus',['../classrdmnet_1_1_controller_1_1_notify_handler.html#a7030c5573ce3aec234ffe027639d5e54',1,'rdmnet::Controller::NotifyHandler']]],
   ['handlescopechanged_639',['HandleScopeChanged',['../classrdmnet_1_1_broker_1_1_notify_handler.html#a9cd9acff94735df721d260c73d066127',1,'rdmnet::Broker::NotifyHandler']]],

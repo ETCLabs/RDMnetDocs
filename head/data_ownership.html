@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 <div class="title">Data Ownership Paradigms in the RDMnet Library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpx9ac0k5r_docs_getting_started_data_ownership"></a> RDMnet APIs are <em>non-ownership-transferring</em>; this means that when calling API functions that take pointers to data buffers as arguments, the data buffer memory is owned by the caller, and the caller is responsible for managing that memory both before and after the API function call.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpp0dtw0u5_docs_getting_started_data_ownership"></a> RDMnet APIs are <em>non-ownership-transferring</em>; this means that when calling API functions that take pointers to data buffers as arguments, the data buffer memory is owned by the caller, and the caller is responsible for managing that memory both before and after the API function call.</p>
 <p>For example, consider sending an RDM command with parameter data using the RDMnet controller API:</p>
 <p> 
 <div class="code-tab-selector">
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 </div>
 <div id="div_2_c" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> controller_rdm_response_callback(<a class="code" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">bool</span> controller_rdm_response_callback(<a class="code" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle,</div>
 <div class="line">                                      <span class="keyword">const</span> <a class="code" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a>* resp, <span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// resp-&gt;rdm_data and resp-&gt;original_cmd_data are pointers to data buffers owned by the library.</span></div>
@@ -285,6 +285,8 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 <div class="line"> </div>
 <div class="line">  <span class="comment">// If you use this method, you must then free the saved_resp data when you&#39;re done with it:</span></div>
 <div class="line">  <a class="code" href="group__rdmnet__api__common.html#ga192b92f8d612f8098f799ef87e4bea11">rdmnet_free_saved_rdm_response</a>(&amp;saved_resp);</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga192b92f8d612f8098f799ef87e4bea11"><div class="ttname"><a href="group__rdmnet__api__common.html#ga192b92f8d612f8098f799ef87e4bea11">rdmnet_free_saved_rdm_response</a></div><div class="ttdeci">etcpal_error_t rdmnet_free_saved_rdm_response(RdmnetSavedRdmResponse *saved_response)</div><div class="ttdoc">Free the memory owned by a saved RDM response.</div><div class="ttdef"><b>Definition:</b> message.c:265</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga7244ab5c8edb8bc9c1e4792a6c64f798"><div class="ttname"><a href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a></div><div class="ttdeci">int rdmnet_client_scope_t</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:41</div></div>
@@ -298,7 +300,7 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyControllerNotifyHandler::HandleRdmResponse(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
+<div class="fragment"><div class="line"><span class="keywordtype">bool</span> MyControllerNotifyHandler::HandleRdmResponse(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Controller::Handle</a> controller_handle,</div>
 <div class="line">                                                  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                  <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_response.html">rdmnet::RdmResponse</a>&amp; resp)</div>
 <div class="line">{</div>
@@ -316,6 +318,8 @@ $(document).ready(function(){initNavTree('data_ownership.html',''); initResizabl
 <div class="line"> </div>
 <div class="line">  <span class="comment">// The SavedRdmResponse class has allocating containers to hold the data - it will be cleaned up</span></div>
 <div class="line">  <span class="comment">// when it goes out of scope.</span></div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::ControllerHandleType, rdmnet_controller_t, RDMNET_CONTROLLER_INVALID &gt;</a></div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_html"><div class="ttname"><a href="classrdmnet_1_1_rdm_response.html">rdmnet::RdmResponse</a></div><div class="ttdoc">An RDM response received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> rdm_response.h:47</div></div>

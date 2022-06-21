@@ -44,7 +44,7 @@ var group__rdmnet__controller__cpp =
       [ "HandleClientListUpdate", "classrdmnet_1_1_controller_1_1_notify_handler.html#a6d6a6f0fba6fbd878cc69a7609f09748", null ],
       [ "HandleConnectedToBroker", "classrdmnet_1_1_controller_1_1_notify_handler.html#aab7d17d4235d613ea1da37ac3804ce56", null ],
       [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_controller_1_1_notify_handler.html#ab8c0c86829e8bf710feedff5be3d2b22", null ],
-      [ "HandleRdmResponse", "classrdmnet_1_1_controller_1_1_notify_handler.html#a492cbc1e38883cca90d319247c1f69c9", null ],
+      [ "HandleRdmResponse", "classrdmnet_1_1_controller_1_1_notify_handler.html#ad05f2f78ec366a6ef2a5466b1cb7e482", null ],
       [ "HandleResponderIdsReceived", "classrdmnet_1_1_controller_1_1_notify_handler.html#adf7409ba82776523a28e282ca10d2e9c", null ],
       [ "HandleRptStatus", "classrdmnet_1_1_controller_1_1_notify_handler.html#a7030c5573ce3aec234ffe027639d5e54", null ]
     ] ],

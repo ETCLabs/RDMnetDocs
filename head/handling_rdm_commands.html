@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="title">Handling RDM Commands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpx9ac0k5r_docs_getting_started_handling_rdm_commands"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpp0dtw0u5_docs_getting_started_handling_rdm_commands"></a></p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 </p>
 <p>Handling and responding to RDM commands is the core functionality of RDMnet devices and gateways, and an optional part of the functionality of RDMnet controllers.</p>
 <h1>Interpreting RDM Commands</h1>
-<p>RDM commands are delivered via a callback that looks like the below:</p>
+<p>RDM commands are delivered via a callback that looks like the following:</p>
 <p> 
 <div class="code-tab-selector">
   <button id="button_2_c" class="code-tab-links" onclick="selectLanguage(event, '2', 'c')">C</button>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="ttc" id="agroup__rdmnet__api__common_html_gaacb0f33f5d6610d7ce65b7debccfccd0"><div class="ttname"><a href="group__rdmnet__api__common.html#gaacb0f33f5d6610d7ce65b7debccfccd0">RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER</a></div><div class="ttdeci">#define RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER(cmd_ptr)</div><div class="ttdoc">Whether an RdmnetRdmCommand is addressed to the default responder.</div><div class="ttdef"><b>Definition:</b> message.h:70</div></div>
 <div class="ttc" id="agroup__rdmnet__device_html_gad17bb8836a86ad4c8a774cd94a01d63c"><div class="ttname"><a href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a></div><div class="ttdeci">int rdmnet_device_t</div><div class="ttdoc">A handle to an RDMnet device.</div><div class="ttdef"><b>Definition:</b> device.h:54</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_command_html"><div class="ttname"><a href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a></div><div class="ttdoc">An RDMnet RDM command received by this component.</div><div class="ttdef"><b>Definition:</b> message.h:54</div></div>
-<div class="ttc" id="astruct_rdmnet_sync_rdm_response_html"><div class="ttname"><a href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a></div><div class="ttdoc">This structure should not be manipulated directly - use the macros to access it:</div><div class="ttdef"><b>Definition:</b> common.h:214</div></div>
+<div class="ttc" id="astruct_rdmnet_sync_rdm_response_html"><div class="ttname"><a href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a></div><div class="ttdoc">This structure should not be manipulated directly - use the macros to access it:</div><div class="ttdef"><b>Definition:</b> common.h:217</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_2_cpp" class="code-tab-content">
@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__message_html_ggafda6b6d4c08788e755cb3cb6c1ca021ba434701b28c3c83f9230b5da6d54e26ab"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggafda6b6d4c08788e755cb3cb6c1ca021ba434701b28c3c83f9230b5da6d54e26ab">kRdmCCGetCommand</a></div><div class="ttdeci">kRdmCCGetCommand</div></div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_gaf4ea2570562bd8f38159f2d7413ca188"><div class="ttname"><a href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188">RDMNET_SYNC_SEND_RDM_ACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_ACK(response_ptr, response_data_len_in)</div><div class="ttdoc">Indicate that an RDM ACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:240</div></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gaf4ea2570562bd8f38159f2d7413ca188"><div class="ttname"><a href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188">RDMNET_SYNC_SEND_RDM_ACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_ACK(response_ptr, response_data_len_in)</div><div class="ttdoc">Indicate that an RDM ACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:243</div></div>
 <div class="ttc" id="astruct_rdm_command_header_html_a43f5e73445b99b42061429682fdc78fc"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a43f5e73445b99b42061429682fdc78fc">RdmCommandHeader::param_id</a></div><div class="ttdeci">uint16_t param_id</div></div>
 <div class="ttc" id="astruct_rdm_command_header_html_a8627e24459da221d560b593ea2d9f5f6"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a8627e24459da221d560b593ea2d9f5f6">RdmCommandHeader::command_class</a></div><div class="ttdeci">rdm_command_class_t command_class</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_command_html_a5465508fc1c33985e0b9525573644f05"><div class="ttname"><a href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">RdmnetRdmCommand::rdm_header</a></div><div class="ttdeci">RdmCommandHeader rdm_header</div><div class="ttdoc">The header information from the encapsulated RDM command.</div><div class="ttdef"><b>Definition:</b> message.h:62</div></div>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_a63629cb9cb2169388593a9161a32c72f"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#a63629cb9cb2169388593a9161a32c72f">rdmnet::RdmCommand::param_id</a></div><div class="ttdeci">constexpr uint16_t param_id() const noexcept</div><div class="ttdoc">Get the RDM parameter ID (PID) of this command.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:179</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_af01ca868e13240d0a4ddb07f82d9907e"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#af01ca868e13240d0a4ddb07f82d9907e">rdmnet::RdmCommand::IsGet</a></div><div class="ttdeci">constexpr bool IsGet() const noexcept</div><div class="ttdoc">Whether this command is an RDM GET command.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:209</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a></div><div class="ttdoc">A class representing a synchronous action to take in response to a received RDM command.</div><div class="ttdef"><b>Definition:</b> common.h:106</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a66301810814d353b92754a177d92dcaa"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">rdmnet::RdmResponseAction::SendAck</a></div><div class="ttdeci">static RdmResponseAction SendAck(size_t response_data_len=0)</div><div class="ttdoc">Send an RDM ACK, optionally including some response data.</div><div class="ttdef"><b>Definition:</b> common.h:122</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a66301810814d353b92754a177d92dcaa"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">rdmnet::RdmResponseAction::SendAck</a></div><div class="ttdeci">static RdmResponseAction SendAck(size_t response_data_len=0)</div><div class="ttdoc">Send an RDM ACK, optionally including some response data.</div><div class="ttdef"><b>Definition:</b> common.h:123</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -416,7 +416,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__message_html_ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3">kRdmNRDataOutOfRange</a></div><div class="ttdeci">kRdmNRDataOutOfRange</div></div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_ga91e96da81698ff84a605e9c21fdc46b3"><div class="ttname"><a href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">RDMNET_SYNC_SEND_RDM_NACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_NACK(response_ptr, nack_reason_in)</div><div class="ttdoc">Indicate that an RDM NACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:252</div></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_ga91e96da81698ff84a605e9c21fdc46b3"><div class="ttname"><a href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">RDMNET_SYNC_SEND_RDM_NACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_NACK(response_ptr, nack_reason_in)</div><div class="ttdoc">Indicate that an RDM NACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:255</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_5_cpp" class="code-tab-content">
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">rdmnet::RdmResponseAction::SendNack</a>(<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3">kRdmNRDataOutOfRange</a>);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a0f084460d0d89d9af564dd573720d251"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">rdmnet::RdmResponseAction::SendNack</a></div><div class="ttdeci">static RdmResponseAction SendNack(rdm_nack_reason_t nack_reason)</div><div class="ttdoc">Send an RDM NACK with a reason code.</div><div class="ttdef"><b>Definition:</b> common.h:131</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a0f084460d0d89d9af564dd573720d251"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">rdmnet::RdmResponseAction::SendNack</a></div><div class="ttdeci">static RdmResponseAction SendNack(rdm_nack_reason_t nack_reason)</div><div class="ttdoc">Send an RDM NACK with a reason code.</div><div class="ttdef"><b>Definition:</b> common.h:132</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -470,7 +470,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line"><span class="comment">// Later, when the response is available...</span></div>
 <div class="line"><a class="code" href="group__rdmnet__device.html#gace1ea6c76a6b3f441c1f7ccaa27e9aa6">rdmnet_device_send_rdm_ack</a>(my_device_handle, &amp;saved_cmd, response_data, response_data_len);</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga5d5b5c221b97833f4480af01b05ca02d"><div class="ttname"><a href="group__rdmnet__api__common.html#ga5d5b5c221b97833f4480af01b05ca02d">rdmnet_save_rdm_command</a></div><div class="ttdeci">etcpal_error_t rdmnet_save_rdm_command(const RdmnetRdmCommand *command, RdmnetSavedRdmCommand *saved_command)</div><div class="ttdoc">Save the data in a received RDM command for later use with API functions from a different context.</div><div class="ttdef"><b>Definition:</b> message.c:70</div></div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_gae50ccf46c68476302b14c450929ba43d"><div class="ttname"><a href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">RDMNET_SYNC_DEFER_RDM_RESPONSE</a></div><div class="ttdeci">#define RDMNET_SYNC_DEFER_RDM_RESPONSE(response_ptr)</div><div class="ttdoc">Defer the RDM response to be sent later from another context.</div><div class="ttdef"><b>Definition:</b> common.h:264</div></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gae50ccf46c68476302b14c450929ba43d"><div class="ttname"><a href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">RDMNET_SYNC_DEFER_RDM_RESPONSE</a></div><div class="ttdeci">#define RDMNET_SYNC_DEFER_RDM_RESPONSE(response_ptr)</div><div class="ttdoc">Defer the RDM response to be sent later from another context.</div><div class="ttdef"><b>Definition:</b> common.h:267</div></div>
 <div class="ttc" id="agroup__rdmnet__device_html_gace1ea6c76a6b3f441c1f7ccaa27e9aa6"><div class="ttname"><a href="group__rdmnet__device.html#gace1ea6c76a6b3f441c1f7ccaa27e9aa6">rdmnet_device_send_rdm_ack</a></div><div class="ttdeci">etcpal_error_t rdmnet_device_send_rdm_ack(rdmnet_device_t handle, const RdmnetSavedRdmCommand *received_cmd, const uint8_t *response_data, size_t response_data_len)</div><div class="ttdoc">Send an RDM ACK response from a device.</div><div class="ttdef"><b>Definition:</b> device.c:286</div></div>
 <div class="ttc" id="astruct_rdmnet_saved_rdm_command_html"><div class="ttname"><a href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a></div><div class="ttdoc">An RDM command received by this component and saved for a later response.</div><div class="ttdef"><b>Definition:</b> message.h:74</div></div>
 </div><!-- fragment --><p> 
@@ -492,11 +492,61 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line"><span class="comment">// Later, when the response is available...</span></div>
 <div class="line">my_device.SendRdmAck(saved_cmd, response_data, response_data_len);</div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_a78e3d10f3f539e2314643d7017a6beb7"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#a78e3d10f3f539e2314643d7017a6beb7">rdmnet::RdmCommand::Save</a></div><div class="ttdeci">SavedRdmCommand Save() const</div><div class="ttdoc">Save the data in this command for later use with API functions from a different context.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:241</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_ae84cb7af11813b1ccadd00b167ceff62"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#ae84cb7af11813b1ccadd00b167ceff62">rdmnet::RdmResponseAction::DeferResponse</a></div><div class="ttdeci">static RdmResponseAction DeferResponse()</div><div class="ttdoc">Defer the RDM response to be sent later from another context.</div><div class="ttdef"><b>Definition:</b> common.h:150</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_ae84cb7af11813b1ccadd00b167ceff62"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#ae84cb7af11813b1ccadd00b167ceff62">rdmnet::RdmResponseAction::DeferResponse</a></div><div class="ttdeci">static RdmResponseAction DeferResponse()</div><div class="ttdoc">Defer the RDM response to be sent later from another context.</div><div class="ttdef"><b>Definition:</b> common.h:151</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_saved_rdm_command_html"><div class="ttname"><a href="classrdmnet_1_1_saved_rdm_command.html">rdmnet::SavedRdmCommand</a></div><div class="ttdoc">An RDM command received over RDMnet by a local component and saved for a later response.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:87</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
+<h3>Delaying Command Processing</h3>
+<p>In the case where your application doesn't have the resources to process an RDM command, you can use the API-specific method to indicate that another notification should occur for the command at a later time:</p>
+<p> 
+<div class="code-tab-selector">
+  <button id="button_7_c" class="code-tab-links" onclick="selectLanguage(event, '7', 'c')">C</button>
+  <button id="button_7_cpp" class="code-tab-links" onclick="selectLanguage(event, '7', 'cpp')">C++</button>
+</div>
+<div id="div_7_c" class="code-tab-content">
+</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> rdm_command_received(<a class="code" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, <span class="keyword">const</span> <a class="code" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a>* cmd, <a class="code" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a>* response,</div>
+<div class="line">                          <span class="keywordtype">void</span>* context)</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">if</span>(my_app.rdm_command_queue_has_room)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">// Save command and add it to the queue...</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Ready for the next command, so just defer the response.</span></div>
+<div class="line">    <a class="code" href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">RDMNET_SYNC_DEFER_RDM_RESPONSE</a>(response);</div>
+<div class="line">  }</div>
+<div class="line">  <span class="keywordflow">else</span></div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">// There&#39;s no room to save the command, so retry this notification later.</span></div>
+<div class="line">    <a class="code" href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">RDMNET_SYNC_RETRY_LATER</a>(response);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gabd9314ec325c7f2bd666866b54c9e82c"><div class="ttname"><a href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">RDMNET_SYNC_RETRY_LATER</a></div><div class="ttdeci">#define RDMNET_SYNC_RETRY_LATER(response_ptr)</div><div class="ttdoc">Trigger another notification for the (non-LLRP) RDM command on the next tick.</div><div class="ttdef"><b>Definition:</b> common.h:273</div></div>
+</div><!-- fragment --><p> 
+</div>
+<div id="div_7_cpp" class="code-tab-content">
+</p>
+<div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a> MyRdmnetNotifyHander::HandleRdmCommand(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::Device::Handle</a> handle,</div>
+<div class="line">                                                                 <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a>&amp; cmd)</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">if</span>(my_app_.RdmCommandQueueHasRoom())</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">// Save command and add it to the queue...</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Ready for the next command, so just defer the response.</span></div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#ae84cb7af11813b1ccadd00b167ceff62">rdmnet::RdmResponseAction::DeferResponse</a>();</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// There&#39;s no room to save the command, so retry this notification later.</span></div>
+<div class="line">  <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a9d119d1d362acb263c3f45860a50978f">rdmnet::RdmResponseAction::RetryLater</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a9d119d1d362acb263c3f45860a50978f"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a9d119d1d362acb263c3f45860a50978f">rdmnet::RdmResponseAction::RetryLater</a></div><div class="ttdeci">static RdmResponseAction RetryLater()</div><div class="ttdoc">Trigger another notification for the (non-LLRP) RDM command on the next tick.</div><div class="ttdef"><b>Definition:</b> common.h:159</div></div>
+</div><!-- fragment --><p> 
+</div>
+</p>
+<p>The application can do this consecutively for as long as needed, but keep in mind that this will delay the library's processing of future messages from the broker (ultimately delaying potential notifications), and may also narrow the TCP window of the connection with the broker, potentially resulting in backpressure.</p>
+<p>This is currently only supported for RDM commands received outside of LLRP.</p>
 <h1>PIDs handled by the library</h1>
 <p>The RDMnet library has all the information necessary to handle certain RDMnet-related RDM commands internally with no intervention by the application. The list of PIDs fully handled by the RDMnet library are:</p>
 <ul>

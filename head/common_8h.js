@@ -2,6 +2,7 @@ var common_8h =
 [
     [ "RDMNET_SYNC_DEFER_EPT_RESPONSE", "group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9", null ],
     [ "RDMNET_SYNC_DEFER_RDM_RESPONSE", "group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d", null ],
+    [ "RDMNET_SYNC_RETRY_LATER", "group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c", null ],
     [ "RDMNET_SYNC_SEND_EPT_DATA", "group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9", null ],
     [ "RDMNET_SYNC_SEND_EPT_STATUS", "group__rdmnet__api__common.html#gaead1ffc05edef5d42829d8247ff558c0", null ],
     [ "RDMNET_SYNC_SEND_RDM_ACK", "group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188", null ],
@@ -64,7 +65,8 @@ var common_8h =
     [ "rdmnet_rdm_response_action_t", "group__rdmnet__api__common.html#gabef0caf0d0a3748a4dd53b2af3b0896a", [
       [ "kRdmnetRdmResponseActionSendAck", "group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aaecf57cdc3719865e3ca28d882952db1f", null ],
       [ "kRdmnetRdmResponseActionSendNack", "group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a", null ],
-      [ "kRdmnetRdmResponseActionDefer", "group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2", null ]
+      [ "kRdmnetRdmResponseActionDefer", "group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2", null ],
+      [ "kRdmnetRdmResponseActionRetryLater", "group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f", null ]
     ] ],
     [ "rpt_status_code_t", "group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2", [
       [ "kRptStatusUnknownRptUid", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2af30548e86cb4ffea1370501b566ccb4b", null ],

@@ -220,6 +220,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>RDMNET_SYNC_RETRY_LATER</name>
+      <anchorfile>group__rdmnet__api__common.html</anchorfile>
+      <anchor>gabd9314ec325c7f2bd666866b54c9e82c</anchor>
+      <arglist>(response_ptr)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>RDMNET_SYNC_SEND_EPT_DATA</name>
       <anchorfile>group__rdmnet__api__common.html</anchorfile>
       <anchor>ga5075bf8b8590d72ad8f2626eb4b19bb9</anchor>
@@ -574,6 +581,12 @@
       <anchor>ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>kRdmnetRdmResponseActionRetryLater</name>
+      <anchorfile>group__rdmnet__api__common.html</anchorfile>
+      <anchor>ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>rdmnet_ept_response_action_t</name>
@@ -779,10 +792,10 @@
       <arglist>)(rdmnet_controller_t controller_handle, rdmnet_client_scope_t scope_handle, client_list_action_t list_action, const RdmnetRptClientList *client_list, void *context)</arglist>
     </member>
     <member kind="typedef">
-      <type>void(*</type>
+      <type>bool(*</type>
       <name>RdmnetControllerRdmResponseReceivedCallback</name>
       <anchorfile>group__rdmnet__controller.html</anchorfile>
-      <anchor>ga936e8ddb41d707184b48439bbab5eb7e</anchor>
+      <anchor>ga7aefd6780a7216c9f7eb2de1bdffcefb</anchor>
       <arglist>)(rdmnet_controller_t controller_handle, rdmnet_client_scope_t scope_handle, const RdmnetRdmResponse *resp, void *context)</arglist>
     </member>
     <member kind="typedef">
@@ -5154,10 +5167,10 @@
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, client_list_action_t list_action, const RptClientList &amp;list)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
+      <type>virtual bool</type>
       <name>HandleRdmResponse</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>a492cbc1e38883cca90d319247c1f69c9</anchor>
+      <anchor>ad05f2f78ec366a6ef2a5466b1cb7e482</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const RdmResponse &amp;resp)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -7970,6 +7983,13 @@
       <anchor>ae84cb7af11813b1ccadd00b167ceff62</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static RdmResponseAction</type>
+      <name>RetryLater</name>
+      <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
+      <anchor>a9d119d1d362acb263c3f45860a50978f</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>rdmnet::RptClientEntry</name>
@@ -9899,6 +9919,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>RDMNET_SYNC_RETRY_LATER</name>
+      <anchorfile>group__rdmnet__api__common.html</anchorfile>
+      <anchor>gabd9314ec325c7f2bd666866b54c9e82c</anchor>
+      <arglist>(response_ptr)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>RDMNET_SYNC_SEND_EPT_DATA</name>
       <anchorfile>group__rdmnet__api__common.html</anchorfile>
       <anchor>ga5075bf8b8590d72ad8f2626eb4b19bb9</anchor>
@@ -10345,6 +10372,12 @@
       <name>kRdmnetRdmResponseActionDefer</name>
       <anchorfile>group__rdmnet__api__common.html</anchorfile>
       <anchor>ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRdmnetRdmResponseActionRetryLater</name>
+      <anchorfile>group__rdmnet__api__common.html</anchorfile>
+      <anchor>ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -10933,10 +10966,10 @@
       <arglist>)(rdmnet_controller_t controller_handle, rdmnet_client_scope_t scope_handle, client_list_action_t list_action, const RdmnetRptClientList *client_list, void *context)</arglist>
     </member>
     <member kind="typedef">
-      <type>void(*</type>
+      <type>bool(*</type>
       <name>RdmnetControllerRdmResponseReceivedCallback</name>
       <anchorfile>group__rdmnet__controller.html</anchorfile>
-      <anchor>ga936e8ddb41d707184b48439bbab5eb7e</anchor>
+      <anchor>ga7aefd6780a7216c9f7eb2de1bdffcefb</anchor>
       <arglist>)(rdmnet_controller_t controller_handle, rdmnet_client_scope_t scope_handle, const RdmnetRdmResponse *resp, void *context)</arglist>
     </member>
     <member kind="typedef">
@@ -12367,97 +12400,97 @@
     <name>building_and_integrating</name>
     <title>Building and Integrating the RDMnet Library into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpx9ac0k5r_docs_getting_started_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpp0dtw0u5_docs_getting_started_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>data_ownership</name>
     <title>Data Ownership Paradigms in the RDMnet Library</title>
     <filename>data_ownership.html</filename>
-    <docanchor file="data_ownership.html">md__tmp_tmpx9ac0k5r_docs_getting_started_data_ownership</docanchor>
+    <docanchor file="data_ownership.html">md__tmp_tmpp0dtw0u5_docs_getting_started_data_ownership</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpx9ac0k5r_docs_getting_started_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpp0dtw0u5_docs_getting_started_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpx9ac0k5r_docs_getting_started_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpp0dtw0u5_docs_getting_started_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>handling_rdm_commands</name>
     <title>Handling RDM Commands</title>
     <filename>handling_rdm_commands.html</filename>
-    <docanchor file="handling_rdm_commands.html">md__tmp_tmpx9ac0k5r_docs_getting_started_handling_rdm_commands</docanchor>
+    <docanchor file="handling_rdm_commands.html">md__tmp_tmpp0dtw0u5_docs_getting_started_handling_rdm_commands</docanchor>
   </compound>
   <compound kind="page">
     <name>using_broker</name>
     <title>Using the Broker API</title>
     <filename>using_broker.html</filename>
-    <docanchor file="using_broker.html">md__tmp_tmpx9ac0k5r_docs_getting_started_using_broker</docanchor>
+    <docanchor file="using_broker.html">md__tmp_tmpp0dtw0u5_docs_getting_started_using_broker</docanchor>
   </compound>
   <compound kind="page">
     <name>using_controller</name>
     <title>Using the Controller API</title>
     <filename>using_controller.html</filename>
-    <docanchor file="using_controller.html">md__tmp_tmpx9ac0k5r_docs_getting_started_using_controller</docanchor>
+    <docanchor file="using_controller.html">md__tmp_tmpp0dtw0u5_docs_getting_started_using_controller</docanchor>
   </compound>
   <compound kind="page">
     <name>using_device</name>
     <title>Using the Device API</title>
     <filename>using_device.html</filename>
-    <docanchor file="using_device.html">md__tmp_tmpx9ac0k5r_docs_getting_started_using_device</docanchor>
+    <docanchor file="using_device.html">md__tmp_tmpp0dtw0u5_docs_getting_started_using_device</docanchor>
   </compound>
   <compound kind="page">
     <name>using_ept_client</name>
     <title>Using the EPT Client API</title>
     <filename>using_ept_client.html</filename>
-    <docanchor file="using_ept_client.html">md__tmp_tmpx9ac0k5r_docs_getting_started_using_ept_client</docanchor>
+    <docanchor file="using_ept_client.html">md__tmp_tmpp0dtw0u5_docs_getting_started_using_ept_client</docanchor>
   </compound>
   <compound kind="page">
     <name>using_llrp_manager</name>
     <title>Using the LLRP Manager API</title>
     <filename>using_llrp_manager.html</filename>
-    <docanchor file="using_llrp_manager.html">md__tmp_tmpx9ac0k5r_docs_getting_started_using_llrp_manager</docanchor>
+    <docanchor file="using_llrp_manager.html">md__tmp_tmpp0dtw0u5_docs_getting_started_using_llrp_manager</docanchor>
   </compound>
   <compound kind="page">
     <name>devices_and_gateways</name>
     <title>Devices and Gateways</title>
     <filename>devices_and_gateways.html</filename>
-    <docanchor file="devices_and_gateways.html">md__tmp_tmpx9ac0k5r_docs_how_rdmnet_works_devices_and_gateways</docanchor>
+    <docanchor file="devices_and_gateways.html">md__tmp_tmpp0dtw0u5_docs_how_rdmnet_works_devices_and_gateways</docanchor>
   </compound>
   <compound kind="page">
     <name>discovery</name>
     <title>Discovery</title>
     <filename>discovery.html</filename>
-    <docanchor file="discovery.html">md__tmp_tmpx9ac0k5r_docs_how_rdmnet_works_discovery</docanchor>
+    <docanchor file="discovery.html">md__tmp_tmpp0dtw0u5_docs_how_rdmnet_works_discovery</docanchor>
   </compound>
   <compound kind="page">
     <name>ept</name>
     <title>Extensible Packet Transport (EPT)</title>
     <filename>ept.html</filename>
-    <docanchor file="ept.html">md__tmp_tmpx9ac0k5r_docs_how_rdmnet_works_ept</docanchor>
+    <docanchor file="ept.html">md__tmp_tmpp0dtw0u5_docs_how_rdmnet_works_ept</docanchor>
   </compound>
   <compound kind="page">
     <name>how_it_works</name>
     <title>How RDMnet Works</title>
     <filename>how_it_works.html</filename>
-    <docanchor file="how_it_works.html">md__tmp_tmpx9ac0k5r_docs_how_rdmnet_works_how_it_works</docanchor>
+    <docanchor file="how_it_works.html">md__tmp_tmpp0dtw0u5_docs_how_rdmnet_works_how_it_works</docanchor>
   </compound>
   <compound kind="page">
     <name>llrp</name>
     <title>Low-Level Recovery Protocol (LLRP)</title>
     <filename>llrp.html</filename>
-    <docanchor file="llrp.html">md__tmp_tmpx9ac0k5r_docs_how_rdmnet_works_llrp</docanchor>
+    <docanchor file="llrp.html">md__tmp_tmpp0dtw0u5_docs_how_rdmnet_works_llrp</docanchor>
   </compound>
   <compound kind="page">
     <name>roles_and_addressing</name>
     <title>Roles and Addressing</title>
     <filename>roles_and_addressing.html</filename>
-    <docanchor file="roles_and_addressing.html">md__tmp_tmpx9ac0k5r_docs_how_rdmnet_works_roles_and_addressing</docanchor>
+    <docanchor file="roles_and_addressing.html">md__tmp_tmpp0dtw0u5_docs_how_rdmnet_works_roles_and_addressing</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

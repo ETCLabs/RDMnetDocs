@@ -354,6 +354,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gae50ccf46c68476302b14c450929ba43d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">RDMNET_SYNC_DEFER_RDM_RESPONSE</a>(response_ptr)&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2">kRdmnetRdmResponseActionDefer</a>)</td></tr>
 <tr class="memdesc:gae50ccf46c68476302b14c450929ba43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the RDM response to be sent later from another context.  <a href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">More...</a><br /></td></tr>
 <tr class="separator:gae50ccf46c68476302b14c450929ba43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd9314ec325c7f2bd666866b54c9e82c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">RDMNET_SYNC_RETRY_LATER</a>(response_ptr)&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a>)</td></tr>
+<tr class="memdesc:gabd9314ec325c7f2bd666866b54c9e82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger another notification for the (non-LLRP) RDM command on the next tick.  <a href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">More...</a><br /></td></tr>
+<tr class="separator:gabd9314ec325c7f2bd666866b54c9e82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5075bf8b8590d72ad8f2626eb4b19bb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9">RDMNET_SYNC_SEND_EPT_DATA</a>(response_ptr,  response_data_len_in)</td></tr>
 <tr class="memdesc:ga5075bf8b8590d72ad8f2626eb4b19bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that an EPT data message should be sent when this callback returns.  <a href="group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9">More...</a><br /></td></tr>
 <tr class="separator:ga5075bf8b8590d72ad8f2626eb4b19bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -537,6 +540,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a">kRdmnetRdmResponseActionSendNack</a>
 , <br />
 &#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2">kRdmnetRdmResponseActionDefer</a>
+, <br />
+&#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gabef0caf0d0a3748a4dd53b2af3b0896a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration representing an action to take after an "RDM command received" callback completes.  <a href="group__rdmnet__api__common.html#gabef0caf0d0a3748a4dd53b2af3b0896a">More...</a><br /></td></tr>
@@ -1295,6 +1300,32 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 
 </div>
 </div>
+<a id="gabd9314ec325c7f2bd666866b54c9e82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd9314ec325c7f2bd666866b54c9e82c">&#9670;&nbsp;</a></span>RDMNET_SYNC_RETRY_LATER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_SYNC_RETRY_LATER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">response_ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trigger another notification for the (non-LLRP) RDM command on the next tick. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">response_ptr</td><td>Pointer to <a class="el" href="struct_rdmnet_sync_rdm_response.html" title="This structure should not be manipulated directly - use the macros to access it:">RdmnetSyncRdmResponse</a> in which to set data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga5075bf8b8590d72ad8f2626eb4b19bb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5075bf8b8590d72ad8f2626eb4b19bb9">&#9670;&nbsp;</a></span>RDMNET_SYNC_SEND_EPT_DATA</h2>
 
@@ -1325,7 +1356,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a>;       \</div>
 <div class="line">    (response_ptr)-&gt;response_data.response_data_len = (response_data_len_in); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendData</div><div class="ttdoc">Send an EPT data message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:272</div></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendData</div><div class="ttdoc">Send an EPT data message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:281</div></div>
 </div><!-- fragment -->
 <p>Indicate that an EPT data message should be sent when this callback returns. </p>
 <p>Data must be copied to the buffer provided at initialization time before the callback returns.</p>
@@ -1369,7 +1400,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a>; \</div>
 <div class="line">    (response_ptr)-&gt;response_data.status_code = (status_code_in);         \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendStatus</div><div class="ttdoc">Send an EPT status message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:274</div></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendStatus</div><div class="ttdoc">Send an EPT status message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:283</div></div>
 </div><!-- fragment -->
 <p>Indicate that an EPT status message should be sent when this callback returns. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1668,8 +1699,9 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <li><a class="el" href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188" title="Indicate that an RDM ACK should be sent when this callback returns.">RDMNET_SYNC_SEND_RDM_ACK()</a></li>
 <li><a class="el" href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3" title="Indicate that an RDM NACK should be sent when this callback returns.">RDMNET_SYNC_SEND_RDM_NACK()</a></li>
 <li><a class="el" href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d" title="Defer the RDM response to be sent later from another context.">RDMNET_SYNC_DEFER_RDM_RESPONSE()</a></li>
+<li><a class="el" href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c" title="Trigger another notification for the (non-LLRP) RDM command on the next tick.">RDMNET_SYNC_RETRY_LATER()</a></li>
 </ul>
-<p>Contains information about an RDMnet RDM response to be sent synchronously from an RDMnet callback. </p>
+<p>Contains information about an RDMnet RDM response to be sent synchronously from an RDMnet callback, or the notification that the (non-LLRP) command notification must be retried later. </p>
 
 </div>
 </div>
@@ -1967,6 +1999,8 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 </td></tr>
 <tr><td class="fieldname"><a id="ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2"></a>kRdmnetRdmResponseActionDefer&#160;</td><td class="fielddoc"><p>Do nothing; the application will send the response later. </p>
 <p>Be sure to save the command. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f"></a>kRdmnetRdmResponseActionRetryLater&#160;</td><td class="fielddoc"><p>The command cannot be processed at this time - trigger another notification for this (non-LLRP) command later. </p>
 </td></tr>
 </table>
 
