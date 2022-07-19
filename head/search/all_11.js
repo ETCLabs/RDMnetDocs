@@ -188,7 +188,7 @@ var searchData=
   ['rdmnet_5fmax_5fmcast_5fnetints_1211',['RDMNET_MAX_MCAST_NETINTS',['../group__rdmnetopts__core.html#gac78f794414f9c445454ba9bfd8ddbcd4',1,'opts.h']]],
   ['rdmnet_5fmax_5fmonitored_5fscopes_1212',['RDMNET_MAX_MONITORED_SCOPES',['../group__rdmnetopts__disc.html#gae9812fcf31d8d70fd3a79b96824d00aa',1,'opts.h']]],
   ['rdmnet_5fmax_5fprotocols_5fper_5fept_5fclient_1213',['RDMNET_MAX_PROTOCOLS_PER_EPT_CLIENT',['../group__rdmnetopts__client.html#ga1c50a4d51539fa49a2507a6bb039a609',1,'opts.h']]],
-  ['rdmnet_5fmax_5fresponders_5fper_5fdevice_5fendpoint_1214',['RDMNET_MAX_RESPONDERS_PER_DEVICE_ENDPOINT',['../group__rdmnetopts__client.html#ga6e15b0a545dc66b5dfe841bcfeed67d4',1,'opts.h']]],
+  ['rdmnet_5fmax_5fresponders_5fper_5fdevice_1214',['RDMNET_MAX_RESPONDERS_PER_DEVICE',['../group__rdmnetopts__client.html#ga20a59abf9ac76b1ce8c8ba710122a1b9',1,'opts.h']]],
   ['rdmnet_5fmax_5fscopes_5fper_5fcontroller_1215',['RDMNET_MAX_SCOPES_PER_CONTROLLER',['../group__rdmnetopts__client.html#gae7827cb85bcf2d33c8cef1ece557633b',1,'opts.h']]],
   ['rdmnet_5fmax_5fsent_5fack_5foverflow_5fresponses_1216',['RDMNET_MAX_SENT_ACK_OVERFLOW_RESPONSES',['../group__rdmnetopts__client.html#ga2dfe29380b1a6c39a8e0fed52332ed36',1,'opts.h']]],
   ['rdmnet_5fparser_5fmax_5fack_5foverflow_5fresponses_1217',['RDMNET_PARSER_MAX_ACK_OVERFLOW_RESPONSES',['../group__rdmnetopts__core.html#ga39d8d2e6c1e0310c65ded1b6141d72f4',1,'opts.h']]],
