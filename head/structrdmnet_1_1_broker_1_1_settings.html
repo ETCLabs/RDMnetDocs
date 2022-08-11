@@ -253,16 +253,8 @@ Data Fields</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_settings.html#a5215b30e498502b452a102cf8ffbc7a5">scope</a> {E133_DEFAULT_SCOPE}</td></tr>
 <tr class="memdesc:a5215b30e498502b452a102cf8ffbc7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The RDMnet scope on which this broker should operate. <br /></td></tr>
 <tr class="separator:a5215b30e498502b452a102cf8ffbc7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c9b5e58121159e780536934bdfef6b"><td class="memItemLeft" align="right" valign="top"><a id="a44c9b5e58121159e780536934bdfef6b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_settings.html#a44c9b5e58121159e780536934bdfef6b">allow_rdm_scope_change</a> {true}</td></tr>
-<tr class="memdesc:a44c9b5e58121159e780536934bdfef6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the broker should allow the scope to be changed via RDM commands. <br /></td></tr>
-<tr class="separator:a44c9b5e58121159e780536934bdfef6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1a03b298388e1586eb180a2c94be03d"><td class="memItemLeft" align="right" valign="top"><a id="ad1a03b298388e1586eb180a2c94be03d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_settings.html#ad1a03b298388e1586eb180a2c94be03d">allow_rdm_disable</a> {true}</td></tr>
-<tr class="memdesc:ad1a03b298388e1586eb180a2c94be03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the broker should allow being disabled and enabled via the BROKER_STATUS RDM command. <br /></td></tr>
-<tr class="separator:ad1a03b298388e1586eb180a2c94be03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0622f9c6f92665091b6d1df4b8190383"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_settings.html#a0622f9c6f92665091b6d1df4b8190383">listen_port</a> {0}</td></tr>
-<tr class="memdesc:a0622f9c6f92665091b6d1df4b8190383"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port on which this broker should listen for incoming connections (and advertise via DNS).  <a href="structrdmnet_1_1_broker_1_1_settings.html#a0622f9c6f92665091b6d1df4b8190383">More...</a><br /></td></tr>
+<tr class="memdesc:a0622f9c6f92665091b6d1df4b8190383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the broker should allow the scope to be changed via RDM commands.  <a href="structrdmnet_1_1_broker_1_1_settings.html#a0622f9c6f92665091b6d1df4b8190383">More...</a><br /></td></tr>
 <tr class="separator:a0622f9c6f92665091b6d1df4b8190383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14cfd1ae1e44f96e6cc95e90cfda1e8e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_settings.html#a14cfd1ae1e44f96e6cc95e90cfda1e8e">listen_interfaces</a></td></tr>
 <tr class="memdesc:a14cfd1ae1e44f96e6cc95e90cfda1e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of strings representing the system name of network interfaces to listen on.  <a href="structrdmnet_1_1_broker_1_1_settings.html#a14cfd1ae1e44f96e6cc95e90cfda1e8e">More...</a><br /></td></tr>
@@ -298,8 +290,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
       </table>
 </div><div class="memdoc">
 
-<p>The port on which this broker should listen for incoming connections (and advertise via DNS). </p>
-<p>0 means use an ephemeral port. </p>
+<p>Whether the broker should allow the scope to be changed via RDM commands. </p>
+<p>Whether the broker should allow being disabled and enabled via the BROKER_STATUS RDM command. The port on which this broker should listen for incoming connections (and advertise via DNS). 0 means use an ephemeral port. </p>
 
 </div>
 </div>

@@ -42,8 +42,6 @@ var group__rdmnet__broker =
       [ "Settings", "structrdmnet_1_1_broker_1_1_settings.html#a449fe98a8a6da9f92ca1c472b10987ee", null ],
       [ "IsValid", "structrdmnet_1_1_broker_1_1_settings.html#a8f6fb7968b5871d2b41ed72dd5d048fe", null ],
       [ "SetDefaultServiceInstanceName", "structrdmnet_1_1_broker_1_1_settings.html#a27eeb33182c3a9dcda479f0de628ea06", null ],
-      [ "allow_rdm_disable", "structrdmnet_1_1_broker_1_1_settings.html#ad1a03b298388e1586eb180a2c94be03d", null ],
-      [ "allow_rdm_scope_change", "structrdmnet_1_1_broker_1_1_settings.html#a44c9b5e58121159e780536934bdfef6b", null ],
       [ "cid", "structrdmnet_1_1_broker_1_1_settings.html#a2f144da96f88502384709ba8a9397daa", null ],
       [ "dns", "structrdmnet_1_1_broker_1_1_settings.html#afff292ebd552dc37f7fdd94f9e46ed69", null ],
       [ "limits", "structrdmnet_1_1_broker_1_1_settings.html#a0179281be8c14cf532d7895c42f46a64", null ],

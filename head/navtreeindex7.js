@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"struct_rdmnet_saved_rdm_response.html#a1252b5961c7fdacb8358b561318a116a":[0,0,0,14,6],
 "struct_rdmnet_saved_rdm_response.html#a4be5c087517d033632f91a4751b16029":[0,0,0,14,7],
 "struct_rdmnet_saved_rdm_response.html#a61b3adab7b79bb2d967f590ad4270643":[0,0,0,14,9],
 "struct_rdmnet_saved_rdm_response.html#a77996802788a63c21fa6bdbb6663f277":[0,0,0,14,0],
@@ -59,20 +60,18 @@ var NAVTREEINDEX7 =
 "structrdmnet_1_1_broker_1_1_limits.html#abc3a7d5b02fd63dc6b009f22d60fecdc":[0,1,0,3,2],
 "structrdmnet_1_1_broker_1_1_limits.html#ae9d419c316b08eb103edc37bdc186661":[0,1,0,3,3],
 "structrdmnet_1_1_broker_1_1_settings.html":[0,1,0,4],
-"structrdmnet_1_1_broker_1_1_settings.html#a0179281be8c14cf532d7895c42f46a64":[0,1,0,4,9],
-"structrdmnet_1_1_broker_1_1_settings.html#a0622f9c6f92665091b6d1df4b8190383":[0,1,0,4,11],
-"structrdmnet_1_1_broker_1_1_settings.html#a14cfd1ae1e44f96e6cc95e90cfda1e8e":[0,1,0,4,10],
+"structrdmnet_1_1_broker_1_1_settings.html#a0179281be8c14cf532d7895c42f46a64":[0,1,0,4,7],
+"structrdmnet_1_1_broker_1_1_settings.html#a0622f9c6f92665091b6d1df4b8190383":[0,1,0,4,9],
+"structrdmnet_1_1_broker_1_1_settings.html#a14cfd1ae1e44f96e6cc95e90cfda1e8e":[0,1,0,4,8],
 "structrdmnet_1_1_broker_1_1_settings.html#a27ee645e20f2ce6ec44ea7aede33a1bb":[0,1,0,4,0],
 "structrdmnet_1_1_broker_1_1_settings.html#a27eeb33182c3a9dcda479f0de628ea06":[0,1,0,4,4],
-"structrdmnet_1_1_broker_1_1_settings.html#a2f144da96f88502384709ba8a9397daa":[0,1,0,4,7],
+"structrdmnet_1_1_broker_1_1_settings.html#a2f144da96f88502384709ba8a9397daa":[0,1,0,4,5],
 "structrdmnet_1_1_broker_1_1_settings.html#a449fe98a8a6da9f92ca1c472b10987ee":[0,1,0,4,2],
-"structrdmnet_1_1_broker_1_1_settings.html#a44c9b5e58121159e780536934bdfef6b":[0,1,0,4,6],
-"structrdmnet_1_1_broker_1_1_settings.html#a5215b30e498502b452a102cf8ffbc7a5":[0,1,0,4,12],
+"structrdmnet_1_1_broker_1_1_settings.html#a5215b30e498502b452a102cf8ffbc7a5":[0,1,0,4,10],
 "structrdmnet_1_1_broker_1_1_settings.html#a5fdc96845a1512c36876a363c04daf7a":[0,1,0,4,1],
 "structrdmnet_1_1_broker_1_1_settings.html#a8f6fb7968b5871d2b41ed72dd5d048fe":[0,1,0,4,3],
-"structrdmnet_1_1_broker_1_1_settings.html#a984b211df565e4e224614d5a3a5aa2d0":[0,1,0,4,13],
-"structrdmnet_1_1_broker_1_1_settings.html#ad1a03b298388e1586eb180a2c94be03d":[0,1,0,4,5],
-"structrdmnet_1_1_broker_1_1_settings.html#afff292ebd552dc37f7fdd94f9e46ed69":[0,1,0,4,8],
+"structrdmnet_1_1_broker_1_1_settings.html#a984b211df565e4e224614d5a3a5aa2d0":[0,1,0,4,11],
+"structrdmnet_1_1_broker_1_1_settings.html#afff292ebd552dc37f7fdd94f9e46ed69":[0,1,0,4,6],
 "structrdmnet_1_1_controller_1_1_rdm_data.html":[0,1,2,4],
 "structrdmnet_1_1_controller_1_1_rdm_data.html#a09dc4e3dc50098b9dfb702bf0dabf1b7":[0,1,2,4,3],
 "structrdmnet_1_1_controller_1_1_rdm_data.html#a1596625c00ce7175d1a607c91677eabd":[0,1,2,4,9],
@@ -177,6 +176,5 @@ var NAVTREEINDEX7 =
 "using_ept_client.html":[4,5],
 "using_llrp_manager.html":[4,4],
 "version_8h.html":[3,0,0,0,12],
-"version_8h_source.html":[3,0,0,0,12],
-"":[1,0,0,0]
+"version_8h_source.html":[3,0,0,0,12]
 };
