@@ -1,4 +1,0 @@
-var dir_a9d5660ef89b63eb1847971bba516784 =
-[
-    [ "rdmnet", "dir_992ffe185ca94803bb328b98160e3015.html", "dir_992ffe185ca94803bb328b98160e3015" ]
-];
