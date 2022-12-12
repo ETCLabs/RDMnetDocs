@@ -2,7 +2,7 @@
 <tagfile doxygen_version="1.9.1" doxygen_gitid="ef9b20ac7f8a8621fcfc299f8bd0b80422390f4b">
   <compound kind="file">
     <name>broker.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/</path>
     <filename>broker_8h.html</filename>
     <includes id="log_8h" name="log.h" local="yes" imported="no">rdmnet/broker/log.h</includes>
     <includes id="socket__manager_8h" name="socket_manager.h" local="yes" imported="no">rdmnet/broker/socket_manager.h</includes>
@@ -14,14 +14,14 @@
   </compound>
   <compound kind="file">
     <name>log.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/broker/</path>
     <filename>log_8h.html</filename>
     <class kind="class">RDMnet::BrokerLog</class>
     <namespace>RDMnet</namespace>
   </compound>
   <compound kind="file">
     <name>socket_manager.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/broker/</path>
     <filename>socket__manager_8h.html</filename>
     <includes id="include_2rdmnet_2core_2connection_8h" name="connection.h" local="yes" imported="no">rdmnet/core/connection.h</includes>
     <class kind="class">RDMnet::BrokerSocketManagerNotify</class>
@@ -30,7 +30,7 @@
   </compound>
   <compound kind="file">
     <name>client_entry.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>client__entry_8h.html</filename>
     <class kind="struct">EptSubProtocol</class>
     <class kind="struct">ClientEntryDataRpt</class>
@@ -39,7 +39,7 @@
   </compound>
   <compound kind="file">
     <name>ept_prot.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>ept__prot_8h.html</filename>
     <class kind="struct">EptDataMsg</class>
     <class kind="struct">EptStatusMsg</class>
@@ -54,7 +54,7 @@
   </compound>
   <compound kind="file">
     <name>version.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/</path>
     <filename>version_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -115,7 +115,7 @@
   </compound>
   <compound kind="file">
     <name>broker_client.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/broker/</path>
     <filename>broker__client_8h.html</filename>
     <includes id="include_2rdmnet_2client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <includes id="include_2rdmnet_2core_2message_8h" name="message.h" local="yes" imported="no">rdmnet/core/message.h</includes>
@@ -133,7 +133,7 @@
   </compound>
   <compound kind="file">
     <name>broker_core.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/broker/</path>
     <filename>broker__core_8h.html</filename>
     <includes id="broker_8h" name="broker.h" local="yes" imported="no">rdmnet/broker.h</includes>
     <includes id="broker__client_8h" name="broker_client.h" local="yes" imported="no">broker_client.h</includes>
@@ -144,7 +144,7 @@
   </compound>
   <compound kind="file">
     <name>broker_discovery.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/broker/</path>
     <filename>broker__discovery_8h.html</filename>
     <includes id="broker_8h" name="broker.h" local="yes" imported="no">rdmnet/broker.h</includes>
     <includes id="include_2rdmnet_2core_2discovery_8h" name="discovery.h" local="yes" imported="no">rdmnet/core/discovery.h</includes>
@@ -153,7 +153,7 @@
   </compound>
   <compound kind="file">
     <name>broker_threads.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/broker/</path>
     <filename>broker__threads_8h.html</filename>
     <includes id="include_2rdmnet_2core_2connection_8h" name="connection.h" local="yes" imported="no">rdmnet/core/connection.h</includes>
     <includes id="broker_8h" name="broker.h" local="yes" imported="no">rdmnet/broker.h</includes>
@@ -165,14 +165,14 @@
   </compound>
   <compound kind="file">
     <name>broker_uid_manager.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/broker/</path>
     <filename>broker__uid__manager_8h.html</filename>
     <includes id="include_2rdmnet_2core_2connection_8h" name="connection.h" local="yes" imported="no">rdmnet/core/connection.h</includes>
     <class kind="class">BrokerUidManager</class>
   </compound>
   <compound kind="file">
     <name>broker_util.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/broker/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/broker/</path>
     <filename>broker__util_8h.html</filename>
     <includes id="include_2rdmnet_2core_2rpt__prot_8h" name="rpt_prot.h" local="yes" imported="no">rdmnet/core/rpt_prot.h</includes>
     <class kind="class">BrokerMutexGuard</class>
@@ -181,14 +181,14 @@
   </compound>
   <compound kind="file">
     <name>broker_prot.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>src_2rdmnet_2private_2broker__prot_8h.html</filename>
     <includes id="include_2rdmnet_2core_2broker__prot_8h" name="broker_prot.h" local="yes" imported="no">rdmnet/core/broker_prot.h</includes>
     <includes id="src_2rdmnet_2private_2connection_8h" name="connection.h" local="yes" imported="no">rdmnet/private/connection.h</includes>
   </compound>
   <compound kind="file">
     <name>broker_prot.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2broker__prot_8h.html</filename>
     <includes id="include_2rdmnet_2core_8h" name="core.h" local="yes" imported="no">rdmnet/core.h</includes>
     <includes id="client__entry_8h" name="client_entry.h" local="yes" imported="no">rdmnet/core/client_entry.h</includes>
@@ -636,7 +636,7 @@
   </compound>
   <compound kind="file">
     <name>client.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>src_2rdmnet_2private_2client_8h.html</filename>
     <includes id="include_2rdmnet_2client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <includes id="include_2rdmnet_2core_2discovery_8h" name="discovery.h" local="yes" imported="no">rdmnet/core/discovery.h</includes>
@@ -658,7 +658,7 @@
   </compound>
   <compound kind="file">
     <name>client.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/</path>
     <filename>include_2rdmnet_2client_8h.html</filename>
     <includes id="include_2rdmnet_2core_8h" name="core.h" local="yes" imported="no">rdmnet/core.h</includes>
     <includes id="include_2rdmnet_2core_2message_8h" name="message.h" local="yes" imported="no">rdmnet/core/message.h</includes>
@@ -894,7 +894,7 @@
   </compound>
   <compound kind="file">
     <name>connection.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>src_2rdmnet_2private_2connection_8h.html</filename>
     <includes id="include_2rdmnet_2core_2connection_8h" name="connection.h" local="yes" imported="no">rdmnet/core/connection.h</includes>
     <includes id="opts_8h" name="opts.h" local="yes" imported="no">rdmnet/private/opts.h</includes>
@@ -915,7 +915,7 @@
   </compound>
   <compound kind="file">
     <name>connection.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2connection_8h.html</filename>
     <includes id="include_2rdmnet_2core_8h" name="core.h" local="yes" imported="no">rdmnet/core.h</includes>
     <includes id="include_2rdmnet_2core_2message_8h" name="message.h" local="yes" imported="no">rdmnet/core/message.h</includes>
@@ -1056,7 +1056,7 @@
   </compound>
   <compound kind="file">
     <name>controller.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/</path>
     <filename>include_2rdmnet_2controller_8h.html</filename>
     <includes id="include_2rdmnet_2client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <class kind="struct">RdmnetControllerCallbacks</class>
@@ -1085,7 +1085,7 @@
   </compound>
   <compound kind="file">
     <name>core.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/</path>
     <filename>include_2rdmnet_2core_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -1104,7 +1104,7 @@
   </compound>
   <compound kind="file">
     <name>device.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/</path>
     <filename>include_2rdmnet_2device_8h.html</filename>
     <includes id="include_2rdmnet_2client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <class kind="struct">RdmnetDeviceCallbacks</class>
@@ -1133,7 +1133,7 @@
   </compound>
   <compound kind="file">
     <name>discovery.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2discovery_8h.html</filename>
     <class kind="struct">BrokerListenAddr</class>
     <class kind="struct">RdmnetBrokerDiscInfo</class>
@@ -1144,7 +1144,7 @@
   </compound>
   <compound kind="file">
     <name>llrp.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2llrp_8h.html</filename>
     <class kind="struct">DiscoveredLlrpTarget</class>
     <member kind="define">
@@ -1216,7 +1216,7 @@
   </compound>
   <compound kind="file">
     <name>llrp_manager.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2llrp__manager_8h.html</filename>
     <includes id="include_2rdmnet_2core_2llrp_8h" name="llrp.h" local="yes" imported="no">rdmnet/core/llrp.h</includes>
     <class kind="struct">LlrpLocalRdmCommand</class>
@@ -1275,7 +1275,7 @@
   </compound>
   <compound kind="file">
     <name>llrp_target.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2llrp__target_8h.html</filename>
     <includes id="include_2rdmnet_2core_2llrp_8h" name="llrp.h" local="yes" imported="no">rdmnet/core/llrp.h</includes>
     <class kind="struct">LlrpLocalRdmResponse</class>
@@ -1335,7 +1335,7 @@
   </compound>
   <compound kind="file">
     <name>message.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2message_8h.html</filename>
     <includes id="include_2rdmnet_2core_2broker__prot_8h" name="broker_prot.h" local="yes" imported="no">rdmnet/core/broker_prot.h</includes>
     <includes id="include_2rdmnet_2core_2rpt__prot_8h" name="rpt_prot.h" local="yes" imported="no">rdmnet/core/rpt_prot.h</includes>
@@ -1479,7 +1479,7 @@
   </compound>
   <compound kind="file">
     <name>msg_buf.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>msg__buf_8h.html</filename>
     <includes id="include_2rdmnet_2core_2connection_8h" name="connection.h" local="yes" imported="no">rdmnet/core/connection.h</includes>
     <includes id="include_2rdmnet_2core_2message_8h" name="message.h" local="yes" imported="no">rdmnet/core/message.h</includes>
@@ -1499,7 +1499,7 @@
   </compound>
   <compound kind="file">
     <name>opts.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>opts_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -1637,12 +1637,12 @@
   </compound>
   <compound kind="file">
     <name>rpt_prot.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>src_2rdmnet_2private_2rpt__prot_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>rpt_prot.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2rpt__prot_8h.html</filename>
     <includes id="include_2rdmnet_2core_8h" name="core.h" local="yes" imported="no">rdmnet/core.h</includes>
     <includes id="include_2rdmnet_2core_2util_8h" name="util.h" local="yes" imported="no">rdmnet/core/util.h</includes>
@@ -1869,13 +1869,13 @@
   </compound>
   <compound kind="file">
     <name>util.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/src/rdmnet/private/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/src/rdmnet/private/</path>
     <filename>src_2rdmnet_2private_2util_8h.html</filename>
     <class kind="struct">IntHandleManager</class>
   </compound>
   <compound kind="file">
     <name>util.h</name>
-    <path>/tmp/tmpt5s_7pmz/rdmnet/include/rdmnet/core/</path>
+    <path>/tmp/tmplg3vwmcl/rdmnet/include/rdmnet/core/</path>
     <filename>include_2rdmnet_2core_2util_8h.html</filename>
     <member kind="function">
       <type>char *</type>
