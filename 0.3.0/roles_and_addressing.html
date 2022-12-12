@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('roles_and_addressing.html',''); initRe
 <div class="title">Roles and Addressing </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpvu34lvse_docs_how_rdmnet_works_roles_and_addressing"></a> </p><h1>Addressing Constructs</h1>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpdp8fvp9b_docs_how_rdmnet_works_roles_and_addressing"></a> </p><h1>Addressing Constructs</h1>
 <h2>CIDs</h2>
 <p>Each software entity communicating using RDMnet is referred to as a <em>component</em>. Each component has a unique ID called a <em>Component ID</em>, or <em>CID</em>. A CID is simply a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>. Components should, wherever possible, make sure their CID doesn't change throughout the lifetime of the corresponding product. For pure-software components like desktop or mobile applications, this typically means generating and storing the CID as persistent data associated with each distinct installation of the software. For hardware-locked components like lighting fixtures or gateways, it's often convenient to generate a CID using the UUID version 3 or version 5 method, seeded with some static property of the hardware such as a MAC address.</p>
 <h2>UIDs</h2>
