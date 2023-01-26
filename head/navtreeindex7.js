@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"struct_rdmnet_saved_rdm_command.html#a28bde55e4a60ad10607d44b31d8ab15e":[0,0,0,12,3],
 "struct_rdmnet_saved_rdm_command.html#a7cce60de9a7c1351d7710f9e084e970b":[0,0,0,12,5],
 "struct_rdmnet_saved_rdm_command.html#aeaec7f640c8ba5499ea390db23d6ac31":[0,0,0,12,4],
 "struct_rdmnet_saved_rdm_response.html":[0,0,0,14],
@@ -180,6 +181,5 @@ var NAVTREEINDEX7 =
 "using_ept_client.html":[4,5],
 "using_llrp_manager.html":[4,4],
 "version_8h.html":[3,0,0,0,12],
-"version_8h_source.html":[3,0,0,0,12],
-"":[1,0,0,0]
+"version_8h_source.html":[3,0,0,0,12]
 };
