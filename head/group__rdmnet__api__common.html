@@ -366,6 +366,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga552e1d71c574e91cc6436e75465b35e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9">RDMNET_SYNC_DEFER_EPT_RESPONSE</a>(response_ptr)</td></tr>
 <tr class="memdesc:ga552e1d71c574e91cc6436e75465b35e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the response to the EPT message, either to be sent later or because no response is necessary.  <a href="group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9">More...</a><br /></td></tr>
 <tr class="separator:ga552e1d71c574e91cc6436e75465b35e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa92d6ed223bb87b3b643ebdaf2fa6a72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa92d6ed223bb87b3b643ebdaf2fa6a72">RDMNET_NETINT_CONFIG_DEFAULT_INIT</a></td></tr>
+<tr class="memdesc:gaa92d6ed223bb87b3b643ebdaf2fa6a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_rdmnet_netint_config.html" title="Network interface configuration information to give the RDMnet library at initialization.">RdmnetNetintConfig</a> struct.  <a href="group__rdmnet__api__common.html#gaa92d6ed223bb87b3b643ebdaf2fa6a72">More...</a><br /></td></tr>
+<tr class="separator:gaa92d6ed223bb87b3b643ebdaf2fa6a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -1195,6 +1198,29 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </dd>
 </dl>
 
+</div>
+</div>
+<a id="gaa92d6ed223bb87b3b643ebdaf2fa6a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa92d6ed223bb87b3b643ebdaf2fa6a72">&#9670;&nbsp;</a></span>RDMNET_NETINT_CONFIG_DEFAULT_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_NETINT_CONFIG_DEFAULT_INIT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  {                                       \</div>
+<div class="line">    NULL, 0, <span class="keyword">false</span>                        \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>A default-value initializer for an <a class="el" href="struct_rdmnet_netint_config.html" title="Network interface configuration information to give the RDMnet library at initialization.">RdmnetNetintConfig</a> struct. </p>
+<p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> config = <a class="code" href="group__rdmnet__api__common.html#gaa92d6ed223bb87b3b643ebdaf2fa6a72">RDMNET_NETINT_CONFIG_DEFAULT_INIT</a>;</div>
+<div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gaa92d6ed223bb87b3b643ebdaf2fa6a72"><div class="ttname"><a href="group__rdmnet__api__common.html#gaa92d6ed223bb87b3b643ebdaf2fa6a72">RDMNET_NETINT_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_NETINT_CONFIG_DEFAULT_INIT</div><div class="ttdoc">A default-value initializer for an RdmnetNetintConfig struct.</div><div class="ttdef"><b>Definition:</b> common.h:403</div></div>
+<div class="ttc" id="astruct_rdmnet_netint_config_html"><div class="ttname"><a href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a></div><div class="ttdoc">Network interface configuration information to give the RDMnet library at initialization.</div><div class="ttdef"><b>Definition:</b> common.h:383</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="gae3d2636f051536b2224118cdac2b5770"></a>

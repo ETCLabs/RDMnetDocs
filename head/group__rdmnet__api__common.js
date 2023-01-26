@@ -47,6 +47,7 @@ var group__rdmnet__api__common =
     ] ],
     [ "RdmnetNetintConfig", "struct_rdmnet_netint_config.html", [
       [ "netints", "struct_rdmnet_netint_config.html#afdc860aa58c95fc16c3925d4d3370f06", null ],
+      [ "no_netints", "struct_rdmnet_netint_config.html#a9ea17cdf601d714c01c6d76bc2dddd94", null ],
       [ "num_netints", "struct_rdmnet_netint_config.html#a4e2166c863a92fa525273a5408c4e1e7", null ]
     ] ],
     [ "LlrpDestinationAddr", "struct_llrp_destination_addr.html", [
@@ -216,6 +217,7 @@ var group__rdmnet__api__common =
     [ "RDMNET_CLIENT_SET_STATIC_DEFAULT_SCOPE", "group__rdmnet__api__common.html#gab2855ff14aba079140f1070f80140247", null ],
     [ "RDMNET_CLIENT_SET_STATIC_SCOPE", "group__rdmnet__api__common.html#ga500c0af02a2db3a6b835f26cf304da85", null ],
     [ "RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER", "group__rdmnet__api__common.html#gaacb0f33f5d6610d7ce65b7debccfccd0", null ],
+    [ "RDMNET_NETINT_CONFIG_DEFAULT_INIT", "group__rdmnet__api__common.html#gaa92d6ed223bb87b3b643ebdaf2fa6a72", null ],
     [ "RDMNET_RESP_ORIGINAL_COMMAND_INCLUDED", "group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770", null ],
     [ "RDMNET_SCOPE_CONFIG_DEFAULT_INIT", "group__rdmnet__api__common.html#gac8a93b214f8dc87d944bc1d6e3e216f4", null ],
     [ "RDMNET_SYNC_DEFER_EPT_RESPONSE", "group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9", null ],

@@ -1,5 +1,6 @@
 var common_8h =
 [
+    [ "RDMNET_NETINT_CONFIG_DEFAULT_INIT", "group__rdmnet__api__common.html#gaa92d6ed223bb87b3b643ebdaf2fa6a72", null ],
     [ "RDMNET_SYNC_DEFER_EPT_RESPONSE", "group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9", null ],
     [ "RDMNET_SYNC_DEFER_RDM_RESPONSE", "group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d", null ],
     [ "RDMNET_SYNC_RETRY_LATER", "group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c", null ],

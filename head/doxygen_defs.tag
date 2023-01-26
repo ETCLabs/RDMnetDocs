@@ -246,6 +246,13 @@
       <anchor>ga552e1d71c574e91cc6436e75465b35e9</anchor>
       <arglist>(response_ptr)</arglist>
     </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>RDMNET_NETINT_CONFIG_DEFAULT_INIT</name>
+      <anchorfile>group__rdmnet__api__common.html</anchorfile>
+      <anchor>gaa92d6ed223bb87b3b643ebdaf2fa6a72</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>struct RdmnetSyncRdmResponse</type>
       <name>RdmnetSyncRdmResponse</name>
@@ -6831,6 +6838,13 @@
       <anchor>a4e2166c863a92fa525273a5408c4e1e7</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>no_netints</name>
+      <anchorfile>struct_rdmnet_netint_config.html</anchorfile>
+      <anchor>a9ea17cdf601d714c01c6d76bc2dddd94</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>RdmnetPhysicalEndpointConfig</name>
@@ -9952,6 +9966,13 @@
       <anchor>ga552e1d71c574e91cc6436e75465b35e9</anchor>
       <arglist>(response_ptr)</arglist>
     </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>RDMNET_NETINT_CONFIG_DEFAULT_INIT</name>
+      <anchorfile>group__rdmnet__api__common.html</anchorfile>
+      <anchor>gaa92d6ed223bb87b3b643ebdaf2fa6a72</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>int</type>
       <name>rdmnet_client_scope_t</name>
@@ -12421,97 +12442,97 @@
     <name>building_and_integrating</name>
     <title>Building and Integrating the RDMnet Library into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpmuhrtc0s_docs_getting_started_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmplr_k7arq_docs_getting_started_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>data_ownership</name>
     <title>Data Ownership Paradigms in the RDMnet Library</title>
     <filename>data_ownership.html</filename>
-    <docanchor file="data_ownership.html">md__tmp_tmpmuhrtc0s_docs_getting_started_data_ownership</docanchor>
+    <docanchor file="data_ownership.html">md__tmp_tmplr_k7arq_docs_getting_started_data_ownership</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpmuhrtc0s_docs_getting_started_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmplr_k7arq_docs_getting_started_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpmuhrtc0s_docs_getting_started_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmplr_k7arq_docs_getting_started_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>handling_rdm_commands</name>
     <title>Handling RDM Commands</title>
     <filename>handling_rdm_commands.html</filename>
-    <docanchor file="handling_rdm_commands.html">md__tmp_tmpmuhrtc0s_docs_getting_started_handling_rdm_commands</docanchor>
+    <docanchor file="handling_rdm_commands.html">md__tmp_tmplr_k7arq_docs_getting_started_handling_rdm_commands</docanchor>
   </compound>
   <compound kind="page">
     <name>using_broker</name>
     <title>Using the Broker API</title>
     <filename>using_broker.html</filename>
-    <docanchor file="using_broker.html">md__tmp_tmpmuhrtc0s_docs_getting_started_using_broker</docanchor>
+    <docanchor file="using_broker.html">md__tmp_tmplr_k7arq_docs_getting_started_using_broker</docanchor>
   </compound>
   <compound kind="page">
     <name>using_controller</name>
     <title>Using the Controller API</title>
     <filename>using_controller.html</filename>
-    <docanchor file="using_controller.html">md__tmp_tmpmuhrtc0s_docs_getting_started_using_controller</docanchor>
+    <docanchor file="using_controller.html">md__tmp_tmplr_k7arq_docs_getting_started_using_controller</docanchor>
   </compound>
   <compound kind="page">
     <name>using_device</name>
     <title>Using the Device API</title>
     <filename>using_device.html</filename>
-    <docanchor file="using_device.html">md__tmp_tmpmuhrtc0s_docs_getting_started_using_device</docanchor>
+    <docanchor file="using_device.html">md__tmp_tmplr_k7arq_docs_getting_started_using_device</docanchor>
   </compound>
   <compound kind="page">
     <name>using_ept_client</name>
     <title>Using the EPT Client API</title>
     <filename>using_ept_client.html</filename>
-    <docanchor file="using_ept_client.html">md__tmp_tmpmuhrtc0s_docs_getting_started_using_ept_client</docanchor>
+    <docanchor file="using_ept_client.html">md__tmp_tmplr_k7arq_docs_getting_started_using_ept_client</docanchor>
   </compound>
   <compound kind="page">
     <name>using_llrp_manager</name>
     <title>Using the LLRP Manager API</title>
     <filename>using_llrp_manager.html</filename>
-    <docanchor file="using_llrp_manager.html">md__tmp_tmpmuhrtc0s_docs_getting_started_using_llrp_manager</docanchor>
+    <docanchor file="using_llrp_manager.html">md__tmp_tmplr_k7arq_docs_getting_started_using_llrp_manager</docanchor>
   </compound>
   <compound kind="page">
     <name>devices_and_gateways</name>
     <title>Devices and Gateways</title>
     <filename>devices_and_gateways.html</filename>
-    <docanchor file="devices_and_gateways.html">md__tmp_tmpmuhrtc0s_docs_how_rdmnet_works_devices_and_gateways</docanchor>
+    <docanchor file="devices_and_gateways.html">md__tmp_tmplr_k7arq_docs_how_rdmnet_works_devices_and_gateways</docanchor>
   </compound>
   <compound kind="page">
     <name>discovery</name>
     <title>Discovery</title>
     <filename>discovery.html</filename>
-    <docanchor file="discovery.html">md__tmp_tmpmuhrtc0s_docs_how_rdmnet_works_discovery</docanchor>
+    <docanchor file="discovery.html">md__tmp_tmplr_k7arq_docs_how_rdmnet_works_discovery</docanchor>
   </compound>
   <compound kind="page">
     <name>ept</name>
     <title>Extensible Packet Transport (EPT)</title>
     <filename>ept.html</filename>
-    <docanchor file="ept.html">md__tmp_tmpmuhrtc0s_docs_how_rdmnet_works_ept</docanchor>
+    <docanchor file="ept.html">md__tmp_tmplr_k7arq_docs_how_rdmnet_works_ept</docanchor>
   </compound>
   <compound kind="page">
     <name>how_it_works</name>
     <title>How RDMnet Works</title>
     <filename>how_it_works.html</filename>
-    <docanchor file="how_it_works.html">md__tmp_tmpmuhrtc0s_docs_how_rdmnet_works_how_it_works</docanchor>
+    <docanchor file="how_it_works.html">md__tmp_tmplr_k7arq_docs_how_rdmnet_works_how_it_works</docanchor>
   </compound>
   <compound kind="page">
     <name>llrp</name>
     <title>Low-Level Recovery Protocol (LLRP)</title>
     <filename>llrp.html</filename>
-    <docanchor file="llrp.html">md__tmp_tmpmuhrtc0s_docs_how_rdmnet_works_llrp</docanchor>
+    <docanchor file="llrp.html">md__tmp_tmplr_k7arq_docs_how_rdmnet_works_llrp</docanchor>
   </compound>
   <compound kind="page">
     <name>roles_and_addressing</name>
     <title>Roles and Addressing</title>
     <filename>roles_and_addressing.html</filename>
-    <docanchor file="roles_and_addressing.html">md__tmp_tmpmuhrtc0s_docs_how_rdmnet_works_roles_and_addressing</docanchor>
+    <docanchor file="roles_and_addressing.html">md__tmp_tmplr_k7arq_docs_how_rdmnet_works_roles_and_addressing</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>

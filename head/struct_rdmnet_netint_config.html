@@ -214,15 +214,68 @@ $(document).ready(function(){initNavTree('struct_rdmnet_netint_config.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afdc860aa58c95fc16c3925d4d3370f06"><td class="memItemLeft" align="right" valign="top"><a id="afdc860aa58c95fc16c3925d4d3370f06"></a>
-const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_netint_config.html#afdc860aa58c95fc16c3925d4d3370f06">netints</a></td></tr>
-<tr class="memdesc:afdc860aa58c95fc16c3925d4d3370f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of network interface IDs to which to restrict RDMnet traffic. <br /></td></tr>
+<tr class="memitem:afdc860aa58c95fc16c3925d4d3370f06"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_netint_config.html#afdc860aa58c95fc16c3925d4d3370f06">netints</a></td></tr>
+<tr class="memdesc:afdc860aa58c95fc16c3925d4d3370f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of network interface IDs to which to restrict RDMnet traffic.  <a href="struct_rdmnet_netint_config.html#afdc860aa58c95fc16c3925d4d3370f06">More...</a><br /></td></tr>
 <tr class="separator:afdc860aa58c95fc16c3925d4d3370f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2166c863a92fa525273a5408c4e1e7"><td class="memItemLeft" align="right" valign="top"><a id="a4e2166c863a92fa525273a5408c4e1e7"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_netint_config.html#a4e2166c863a92fa525273a5408c4e1e7">num_netints</a></td></tr>
-<tr class="memdesc:a4e2166c863a92fa525273a5408c4e1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of netints array. <br /></td></tr>
+<tr class="memitem:a4e2166c863a92fa525273a5408c4e1e7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_netint_config.html#a4e2166c863a92fa525273a5408c4e1e7">num_netints</a></td></tr>
+<tr class="memdesc:a4e2166c863a92fa525273a5408c4e1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of netints array.  <a href="struct_rdmnet_netint_config.html#a4e2166c863a92fa525273a5408c4e1e7">More...</a><br /></td></tr>
 <tr class="separator:a4e2166c863a92fa525273a5408c4e1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea17cdf601d714c01c6d76bc2dddd94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_netint_config.html#a9ea17cdf601d714c01c6d76bc2dddd94">no_netints</a></td></tr>
+<tr class="memdesc:a9ea17cdf601d714c01c6d76bc2dddd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is true, no network interfaces will be used for multicast.  <a href="struct_rdmnet_netint_config.html#a9ea17cdf601d714c01c6d76bc2dddd94">More...</a><br /></td></tr>
+<tr class="separator:a9ea17cdf601d714c01c6d76bc2dddd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="afdc860aa58c95fc16c3925d4d3370f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc860aa58c95fc16c3925d4d3370f06">&#9670;&nbsp;</a></span>netints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>* RdmnetNetintConfig::netints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of network interface IDs to which to restrict RDMnet traffic. </p>
+<p>If this is null, and no_netints is false, all system interfaces will be used. </p>
+
+</div>
+</div>
+<a id="a9ea17cdf601d714c01c6d76bc2dddd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea17cdf601d714c01c6d76bc2dddd94">&#9670;&nbsp;</a></span>no_netints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RdmnetNetintConfig::no_netints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If this is true, no network interfaces will be used for multicast. </p>
+<p>If any are specified in netints, they will be ignored. </p>
+
+</div>
+</div>
+<a id="a4e2166c863a92fa525273a5408c4e1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2166c863a92fa525273a5408c4e1e7">&#9670;&nbsp;</a></span>num_netints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t RdmnetNetintConfig::num_netints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of netints array. </p>
+<p>Must be 0 if netints is null. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="common_8h_source.html">common.h</a></li>
 </ul>
