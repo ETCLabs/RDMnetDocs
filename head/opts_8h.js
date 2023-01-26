@@ -1,6 +1,7 @@
 var opts_8h =
 [
     [ "RDMNET_ASSERT", "group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61", null ],
+    [ "RDMNET_ASSERT_VERIFY", "group__rdmnetopts__global.html#gaddc2345fc1299ec4cb8614bc048ebf34", null ],
     [ "RDMNET_BIND_MCAST_SOCKETS_TO_MCAST_ADDRESS", "group__rdmnetopts__core.html#gaabb88c0b6425ab4f5f3c9ba21d98de2e", null ],
     [ "RDMNET_DYNAMIC_MEM", "group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555", null ],
     [ "RDMNET_LOG_MSG_PREFIX", "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56", null ],
@@ -23,5 +24,6 @@ var opts_8h =
     [ "RDMNET_PARSER_MAX_DYNAMIC_UID_ENTRIES", "group__rdmnetopts__core.html#gae5f0432bbffcd8774fae6aae0a17ca5e", null ],
     [ "RDMNET_PARSER_MAX_EPT_SUBPROTS", "group__rdmnetopts__core.html#ga30214a9f1686c87bc276b237fd7a088a", null ],
     [ "RDMNET_TICK_THREAD_PRIORITY", "group__rdmnetopts__core.html#ga01c981e26f97509ad1f1993e8b942cc7", null ],
-    [ "RDMNET_TICK_THREAD_STACK", "group__rdmnetopts__core.html#ga4c498e0e0a0e402b62a5212cf6a2fbee", null ]
+    [ "RDMNET_TICK_THREAD_STACK", "group__rdmnetopts__core.html#ga4c498e0e0a0e402b62a5212cf6a2fbee", null ],
+    [ "rdmnet_assert_verify_fail", "group__rdmnetopts__global.html#gace0c3a1fd1be3f11874ab475c1a7e042", null ]
 ];

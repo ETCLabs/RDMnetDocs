@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_physical_endpoint_conf
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Configuration information for a physical endpoint on a device. </p>
 <p>Can be implicitly converted from a simple endpoint number to create an endpoint configuration with no initial responders, e.g.: </p><div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a> endpoint_config = 1;</div>
-<div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a></div><div class="ttdoc">Configuration information for a physical endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:259</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a></div><div class="ttdoc">Configuration information for a physical endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:260</div></div>
 </div><!-- fragment --><p>Or use the constructors to create an endpoint with responders: </p><div class="fragment"><div class="line">std::vector&lt;rdm::Uid&gt; physical_responders;</div>
 <div class="line">physical_responders.push_back(uid_1);</div>
 <div class="line">physical_responders.push_back(uid_2);</div>
@@ -276,8 +276,8 @@ const <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhy
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Endpoint ID - must be between 1 and 63,999 inclusive. </td></tr>
-    <tr><td class="paramname">responders</td><td>Array of UIDs identifying the initial physical RDM responders present on the endpoint. </td></tr>
-    <tr><td class="paramname">num_responders</td><td>Size of responders array. </td></tr>
+    <tr><td class="paramname">responders</td><td>(optional) Array of UIDs identifying the initial physical RDM responders present on the endpoint. </td></tr>
+    <tr><td class="paramname">num_responders</td><td>(optional) Size of responders array. </td></tr>
   </table>
   </dd>
 </dl>

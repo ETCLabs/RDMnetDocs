@@ -201,7 +201,8 @@ $(document).ready(function(){initNavTree('group__rdmnetopts__global.html',''); i
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Global<div class="ingroups"><a class="el" href="group__rdmnetopts.html">RDMnet Configuration Options</a></div></div>  </div>
 </div><!--header-->
@@ -219,9 +220,19 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56">RDMNET_LOG_MSG_PREFIX</a>&#160;&#160;&#160;&quot;RDMnet: &quot;</td></tr>
 <tr class="memdesc:ga5f0474e77d60dada179f04312ddb3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the RDMnet library. <br /></td></tr>
 <tr class="separator:ga5f0474e77d60dada179f04312ddb3f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddc2345fc1299ec4cb8614bc048ebf34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#gaddc2345fc1299ec4cb8614bc048ebf34">RDMNET_ASSERT_VERIFY</a>(exp)&#160;&#160;&#160;((exp) ? true : <a class="el" href="group__rdmnetopts__global.html#gace0c3a1fd1be3f11874ab475c1a7e042">rdmnet_assert_verify_fail</a>(#exp, __FILE__, __func__, __LINE__))</td></tr>
+<tr class="memdesc:gaddc2345fc1299ec4cb8614bc048ebf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The assertion handler used by the RDMnet library.  <a href="group__rdmnetopts__global.html#gaddc2345fc1299ec4cb8614bc048ebf34">More...</a><br /></td></tr>
+<tr class="separator:gaddc2345fc1299ec4cb8614bc048ebf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb1e42a2bf6953c86b78899550950e61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61">RDMNET_ASSERT</a>(expr)&#160;&#160;&#160;assert(expr)</td></tr>
-<tr class="memdesc:gafb1e42a2bf6953c86b78899550950e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The debug assert used by the RDMnet library.  <a href="group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61">More...</a><br /></td></tr>
+<tr class="memdesc:gafb1e42a2bf6953c86b78899550950e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower-level debug assert used by the RDMnet library.  <a href="group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61">More...</a><br /></td></tr>
 <tr class="separator:gafb1e42a2bf6953c86b78899550950e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gace0c3a1fd1be3f11874ab475c1a7e042"><td class="memItemLeft" align="right" valign="top"><a id="gace0c3a1fd1be3f11874ab475c1a7e042"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#gace0c3a1fd1be3f11874ab475c1a7e042">rdmnet_assert_verify_fail</a> (const char *exp, const char *file, const char *func, const int line)</td></tr>
+<tr class="memdesc:gace0c3a1fd1be3f11874ab475c1a7e042"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handler for all assertion failures from the RDMnet library. <br /></td></tr>
+<tr class="separator:gace0c3a1fd1be3f11874ab475c1a7e042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gafb1e42a2bf6953c86b78899550950e61"></a>
@@ -240,8 +251,30 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The debug assert used by the RDMnet library. </p>
+<p>The lower-level debug assert used by the RDMnet library. </p>
+<p>This is the assertion that gets called by <a class="el" href="group__rdmnetopts__global.html#gaddc2345fc1299ec4cb8614bc048ebf34" title="The assertion handler used by the RDMnet library.">RDMNET_ASSERT_VERIFY</a> on failure. Redefine this to retain the logging done by the default <a class="el" href="group__rdmnetopts__global.html#gaddc2345fc1299ec4cb8614bc048ebf34" title="The assertion handler used by the RDMnet library.">RDMNET_ASSERT_VERIFY</a> macro.</p>
 <p>By default, just uses the C library assert. If redefining this, it must be redefined as a macro taking a single argument (the assertion expression). </p>
+
+</div>
+</div>
+<a id="gaddc2345fc1299ec4cb8614bc048ebf34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddc2345fc1299ec4cb8614bc048ebf34">&#9670;&nbsp;</a></span>RDMNET_ASSERT_VERIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_ASSERT_VERIFY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">exp</td><td>)</td>
+          <td>&#160;&#160;&#160;((exp) ? true : <a class="el" href="group__rdmnetopts__global.html#gace0c3a1fd1be3f11874ab475c1a7e042">rdmnet_assert_verify_fail</a>(#exp, __FILE__, __func__, __LINE__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The assertion handler used by the RDMnet library. </p>
+<p>By default, evaluates to true on success, or false on failure (additionally asserting and logging). If redefining this, it must be redefined as a macro taking a single argument (the assertion expression). </p>
 
 </div>
 </div>

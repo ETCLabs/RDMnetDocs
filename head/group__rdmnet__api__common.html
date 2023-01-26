@@ -351,10 +351,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ga91e96da81698ff84a605e9c21fdc46b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">RDMNET_SYNC_SEND_RDM_NACK</a>(response_ptr,  nack_reason_in)</td></tr>
 <tr class="memdesc:ga91e96da81698ff84a605e9c21fdc46b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that an RDM NACK should be sent when this callback returns.  <a href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">More...</a><br /></td></tr>
 <tr class="separator:ga91e96da81698ff84a605e9c21fdc46b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae50ccf46c68476302b14c450929ba43d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">RDMNET_SYNC_DEFER_RDM_RESPONSE</a>(response_ptr)&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2">kRdmnetRdmResponseActionDefer</a>)</td></tr>
+<tr class="memitem:gae50ccf46c68476302b14c450929ba43d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">RDMNET_SYNC_DEFER_RDM_RESPONSE</a>(response_ptr)</td></tr>
 <tr class="memdesc:gae50ccf46c68476302b14c450929ba43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the RDM response to be sent later from another context.  <a href="group__rdmnet__api__common.html#gae50ccf46c68476302b14c450929ba43d">More...</a><br /></td></tr>
 <tr class="separator:gae50ccf46c68476302b14c450929ba43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd9314ec325c7f2bd666866b54c9e82c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">RDMNET_SYNC_RETRY_LATER</a>(response_ptr)&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a>)</td></tr>
+<tr class="memitem:gabd9314ec325c7f2bd666866b54c9e82c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">RDMNET_SYNC_RETRY_LATER</a>(response_ptr)</td></tr>
 <tr class="memdesc:gabd9314ec325c7f2bd666866b54c9e82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger another notification for the (non-LLRP) RDM command on the next tick.  <a href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c">More...</a><br /></td></tr>
 <tr class="separator:gabd9314ec325c7f2bd666866b54c9e82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5075bf8b8590d72ad8f2626eb4b19bb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9">RDMNET_SYNC_SEND_EPT_DATA</a>(response_ptr,  response_data_len_in)</td></tr>
@@ -363,7 +363,7 @@ Macros</h2></td></tr>
 <tr class="memitem:gaead1ffc05edef5d42829d8247ff558c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaead1ffc05edef5d42829d8247ff558c0">RDMNET_SYNC_SEND_EPT_STATUS</a>(response_ptr,  status_code_in)</td></tr>
 <tr class="memdesc:gaead1ffc05edef5d42829d8247ff558c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that an EPT status message should be sent when this callback returns.  <a href="group__rdmnet__api__common.html#gaead1ffc05edef5d42829d8247ff558c0">More...</a><br /></td></tr>
 <tr class="separator:gaead1ffc05edef5d42829d8247ff558c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga552e1d71c574e91cc6436e75465b35e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9">RDMNET_SYNC_DEFER_EPT_RESPONSE</a>(response_ptr)&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687afd522d7eba98ff9ca5cea835f40f8d32">kRdmnetEptResponseActionDefer</a>)</td></tr>
+<tr class="memitem:ga552e1d71c574e91cc6436e75465b35e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9">RDMNET_SYNC_DEFER_EPT_RESPONSE</a>(response_ptr)</td></tr>
 <tr class="memdesc:ga552e1d71c574e91cc6436e75465b35e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the response to the EPT message, either to be sent later or because no response is necessary.  <a href="group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9">More...</a><br /></td></tr>
 <tr class="separator:ga552e1d71c574e91cc6436e75465b35e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -718,10 +718,10 @@ typedef struct <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmRes
 <tr class="memdesc:ga9bd44fb94a6332fab339fdc46271deb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over RDMnet and saved for later processing.  <a href="group__rdmnet__api__common.html#ga9bd44fb94a6332fab339fdc46271deb5">More...</a><br /></td></tr>
 <tr class="separator:ga9bd44fb94a6332fab339fdc46271deb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="memItemLeft" align="right" valign="top"><a id="gaacb0f33f5d6610d7ce65b7debccfccd0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaacb0f33f5d6610d7ce65b7debccfccd0">RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER</a>(cmd_ptr)&#160;&#160;&#160;((cmd_ptr)-&gt;dest_endpoint == E133_NULL_ENDPOINT)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaacb0f33f5d6610d7ce65b7debccfccd0">RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER</a>(cmd_ptr)&#160;&#160;&#160;((cmd_ptr) &amp;&amp; ((cmd_ptr)-&gt;dest_endpoint == E133_NULL_ENDPOINT))</td></tr>
 <tr class="memdesc:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="struct_rdmnet_rdm_command.html" title="An RDMnet RDM command received by this component.">RdmnetRdmCommand</a> is addressed to the default responder. <br /></td></tr>
 <tr class="separator:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3d2636f051536b2224118cdac2b5770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770">RDMNET_RESP_ORIGINAL_COMMAND_INCLUDED</a>(resp)&#160;&#160;&#160;((resp)-&gt;seq_num == 0)</td></tr>
+<tr class="memitem:gae3d2636f051536b2224118cdac2b5770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770">RDMNET_RESP_ORIGINAL_COMMAND_INCLUDED</a>(resp)&#160;&#160;&#160;((resp) &amp;&amp; ((resp)-&gt;seq_num == 0))</td></tr>
 <tr class="memdesc:gae3d2636f051536b2224118cdac2b5770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the original command is included in an <a class="el" href="struct_rdmnet_rdm_response.html" title="An RDMnet RDM response received by a local component.">RdmnetRdmResponse</a> or <a class="el" href="struct_rdmnet_saved_rdm_response.html" title="An RDM response received over RDMnet and saved for later processing.">RdmnetSavedRdmResponse</a>.  <a href="group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770">More...</a><br /></td></tr>
 <tr class="separator:gae3d2636f051536b2224118cdac2b5770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1044,11 +1044,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                            \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (configptr)                                                \</div>
 <div class="line">  {                                                             \</div>
 <div class="line">    (configptr)-&gt;scope = E133_DEFAULT_SCOPE;                    \</div>
 <div class="line">    ETCPAL_IP_SET_INVALID(&amp;(configptr)-&gt;static_broker_addr.ip); \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
 <p>Initialize an <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a> struct with the default RDMnet scope. </p>
 <p>Scopes are resolved using RDMnet discovery (DNS-SD) by default; to override this behavior with a static broker address and port, use rdmnet_set_static_default_scope().</p>
@@ -1086,11 +1086,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                            \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (configptr)                                                \</div>
 <div class="line">  {                                                             \</div>
 <div class="line">    (configptr)-&gt;scope = scope_str;                             \</div>
 <div class="line">    ETCPAL_IP_SET_INVALID(&amp;(configptr)-&gt;static_broker_addr.ip); \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
 <p>Initialize an <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a> struct with a scope string. </p>
 <p>Scopes are resolved using RDMnet discovery (DNS-SD) by default; to override this behavior with a static broker address and port, use rdmnet_set_static_scope().</p>
@@ -1129,11 +1129,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                   \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (configptr)                                                       \</div>
 <div class="line">  {                                                                    \</div>
 <div class="line">    (configptr)-&gt;scope = E133_DEFAULT_SCOPE;                           \</div>
 <div class="line">    (configptr)-&gt;static_broker_addr = (broker_addr);                   \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
 <p>Initialize an <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a> struct with the default RDMnet scope and a static broker address. </p>
 <p>DNS-SD discovery will be bypassed and broker connection will be attempted using the address and port given.</p>
@@ -1178,11 +1178,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (configptr)                                                          \</div>
 <div class="line">  {                                                                       \</div>
 <div class="line">    (configptr)-&gt;scope = (scope_str);                                     \</div>
 <div class="line">    (configptr)-&gt;static_broker_addr = (broker_addr);                      \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
 <p>Initialize an <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a> struct with a scope string and static broker address. </p>
 <p>DNS-SD discovery will be bypassed and broker connection will be attempted using the address and port given.</p>
@@ -1208,7 +1208,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">resp</td><td>)</td>
-          <td>&#160;&#160;&#160;((resp)-&gt;seq_num == 0)</td>
+          <td>&#160;&#160;&#160;((resp) &amp;&amp; ((resp)-&gt;seq_num == 0))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1259,11 +1259,16 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">response_ptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687afd522d7eba98ff9ca5cea835f40f8d32">kRdmnetEptResponseActionDefer</a>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                  \</div>
+<div class="line">  {                                                                  \</div>
+<div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687afd522d7eba98ff9ca5cea835f40f8d32">kRdmnetEptResponseActionDefer</a>; \</div>
+<div class="line">  }</div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687afd522d7eba98ff9ca5cea835f40f8d32"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687afd522d7eba98ff9ca5cea835f40f8d32">kRdmnetEptResponseActionDefer</a></div><div class="ttdeci">@ kRdmnetEptResponseActionDefer</div><div class="ttdoc">Do nothing; either the application will send the response later or no response is required.</div><div class="ttdef"><b>Definition:</b> common.h:296</div></div>
+</div><!-- fragment -->
 <p>Defer the response to the EPT message, either to be sent later or because no response is necessary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1285,11 +1290,16 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">response_ptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2">kRdmnetRdmResponseActionDefer</a>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                  \</div>
+<div class="line">  {                                                                  \</div>
+<div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2">kRdmnetRdmResponseActionDefer</a>; \</div>
+<div class="line">  }</div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2"><div class="ttname"><a href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aad453c180836d55ee1251b28ecd1d9cc2">kRdmnetRdmResponseActionDefer</a></div><div class="ttdeci">@ kRdmnetRdmResponseActionDefer</div><div class="ttdoc">Do nothing; the application will send the response later.</div><div class="ttdef"><b>Definition:</b> common.h:200</div></div>
+</div><!-- fragment -->
 <p>Defer the RDM response to be sent later from another context. </p>
 <p>Make sure to save any RDM command data for later processing using the appropriate API function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1311,11 +1321,16 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">response_ptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((response_ptr)-&gt;response_action = <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                       \</div>
+<div class="line">  {                                                                       \</div>
+<div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a>; \</div>
+<div class="line">  }</div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f"><div class="ttname"><a href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa500a9c758c8ac4c05261f2aee2027a4f">kRdmnetRdmResponseActionRetryLater</a></div><div class="ttdeci">@ kRdmnetRdmResponseActionRetryLater</div><div class="ttdoc">The command cannot be processed at this time - trigger another notification for this (non-LLRP) comma...</div><div class="ttdef"><b>Definition:</b> common.h:202</div></div>
+</div><!-- fragment -->
 <p>Trigger another notification for the (non-LLRP) RDM command on the next tick. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1351,12 +1366,12 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                          \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                           \</div>
 <div class="line">  {                                                                           \</div>
 <div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a>;       \</div>
 <div class="line">    (response_ptr)-&gt;response_data.response_data_len = (response_data_len_in); \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendData</div><div class="ttdoc">Send an EPT data message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:281</div></div>
+<div class="line">  }</div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendData</div><div class="ttdoc">Send an EPT data message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:289</div></div>
 </div><!-- fragment -->
 <p>Indicate that an EPT data message should be sent when this callback returns. </p>
 <p>Data must be copied to the buffer provided at initialization time before the callback returns.</p>
@@ -1395,12 +1410,12 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                       \</div>
 <div class="line">  {                                                                       \</div>
 <div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a>; \</div>
 <div class="line">    (response_ptr)-&gt;response_data.status_code = (status_code_in);         \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendStatus</div><div class="ttdoc">Send an EPT status message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:283</div></div>
+<div class="line">  }</div>
+<div class="ttc" id="agroup__rdmnet__api__common_html_gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f"><div class="ttname"><a href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a></div><div class="ttdeci">@ kRdmnetEptResponseActionSendStatus</div><div class="ttdoc">Send an EPT status message to the originating EPT client.</div><div class="ttdef"><b>Definition:</b> common.h:291</div></div>
 </div><!-- fragment -->
 <p>Indicate that an EPT status message should be sent when this callback returns. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1438,11 +1453,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                          \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                           \</div>
 <div class="line">  {                                                                           \</div>
 <div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aaecf57cdc3719865e3ca28d882952db1f">kRdmnetRdmResponseActionSendAck</a>;        \</div>
 <div class="line">    (response_ptr)-&gt;response_data.response_data_len = (response_data_len_in); \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  }</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ggabef0caf0d0a3748a4dd53b2af3b0896aaecf57cdc3719865e3ca28d882952db1f"><div class="ttname"><a href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aaecf57cdc3719865e3ca28d882952db1f">kRdmnetRdmResponseActionSendAck</a></div><div class="ttdeci">@ kRdmnetRdmResponseActionSendAck</div><div class="ttdoc">Send an RDM ACK to the originating controller.</div><div class="ttdef"><b>Definition:</b> common.h:196</div></div>
 </div><!-- fragment -->
 <p>Indicate that an RDM ACK should be sent when this callback returns. </p>
@@ -1482,11 +1497,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span>                                                                    \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (response_ptr)                                                     \</div>
 <div class="line">  {                                                                     \</div>
 <div class="line">    (response_ptr)-&gt;response_action = <a class="code" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a">kRdmnetRdmResponseActionSendNack</a>; \</div>
 <div class="line">    (response_ptr)-&gt;response_data.nack_reason = (nack_reason_in);       \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  }</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a"><div class="ttname"><a href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a">kRdmnetRdmResponseActionSendNack</a></div><div class="ttdeci">@ kRdmnetRdmResponseActionSendNack</div><div class="ttdoc">Send an RDM NACK with reason to the originating controller.</div><div class="ttdef"><b>Definition:</b> common.h:198</div></div>
 </div><!-- fragment -->
 <p>Indicate that an RDM NACK should be sent when this callback returns. </p>

@@ -298,150 +298,157 @@ $(document).ready(function(){initNavTree('common__priv_8h_source.html',''); init
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  RCClient client;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} RdmnetController;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define CONTROLLER_RDM_DATA(controller_ptr) (&amp;(controller_ptr)-&gt;rdm_handler.data)</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">/******************************************************************************</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * Device</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  kDeviceEndpointTypeVirtual = 0,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  kDeviceEndpointTypePhysical = 1</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;} device_endpoint_type_t;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>EndpointResponder</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> rid;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>     uid;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>     binding_uid;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  uint16_t   control_field;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} EndpointResponder;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>DeviceEndpoint</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  uint16_t               id;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  device_endpoint_type_t type;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  uint32_t               responder_list_change_number;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_tree.html">EtcPalRbTree</a>           responders;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} DeviceEndpoint;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define DEVICE_ENDPOINT_INIT_RESPONDER_REFS(endpoint_ptr, initial_capacity) TODO_REMOVE</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define DEVICE_ENDPOINT_DEINIT_RESPONDER_REFS(endpoint_ptr) TODO_REMOVE</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetDevice</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  RdmnetStructId        id;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>        lock;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a> callbacks;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  uint8_t* response_buf;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  uint32_t endpoint_list_change_number;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  RC_DECLARE_BUF(DeviceEndpoint, endpoints, <a class="code" href="group__rdmnetopts__client.html#gaf2e797d5e45375b925f1f6bf55d64961">RDMNET_MAX_ENDPOINTS_PER_DEVICE</a>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  RCClient client;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">bool</span>     connected_to_broker;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  uint16_t manufacturer_id;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;} RdmnetDevice;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#define DEVICE_INIT_ENDPOINTS(device_ptr, initial_capacity) \</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">  RC_INIT_BUF(device_ptr, DeviceEndpoint, endpoints, initial_capacity, RDMNET_MAX_ENDPOINTS_PER_DEVICE)</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#define DEVICE_DEINIT_ENDPOINTS(device_ptr) RC_DEINIT_BUF(device_ptr, endpoints)</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#define DEVICE_CHECK_ENDPOINTS_CAPACITY(device_ptr, num_additional) \</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">  RC_CHECK_BUF_CAPACITY(device_ptr, DeviceEndpoint, endpoints, RDMNET_MAX_ENDPOINTS_PER_DEVICE, num_additional)</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#define DEVICE_INIT_RESPONDERS(device_ptr, initial_capacity) TODO_REMOVE</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#define DEVICE_DEINIT_RESPONDERS(device_ptr) TODO_REMOVE</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#define DEVICE_CHECK_RESPONDERS_CAPACITY(device_ptr, endpoint_ptr, num_additional) TODO_REMOVE</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">/******************************************************************************</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> * LLRP Manager</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>LlrpManager</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  RdmnetStructId       id;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>       lock;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <a class="code" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a> callbacks;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  RCLlrpManager rc_manager;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;} LlrpManager;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/******************************************************************************</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> * LLRP Target</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define CONTROLLER_RDM_DATA(controller_ptr) \</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">  (RDMNET_ASSERT_VERIFY(controller_ptr) ? &amp;(controller_ptr)-&gt;rdm_handler.data : NULL)</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> * Device</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  kDeviceEndpointTypeVirtual = 0,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  kDeviceEndpointTypePhysical = 1</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} device_endpoint_type_t;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>EndpointResponder</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> rid;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>     uid;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>     binding_uid;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  uint16_t   control_field;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} EndpointResponder;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>DeviceEndpoint</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  uint16_t               id;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  device_endpoint_type_t type;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  uint32_t               responder_list_change_number;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_tree.html">EtcPalRbTree</a>           responders;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} DeviceEndpoint;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define DEVICE_ENDPOINT_INIT_RESPONDER_REFS(endpoint_ptr, initial_capacity) TODO_REMOVE</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define DEVICE_ENDPOINT_DEINIT_RESPONDER_REFS(endpoint_ptr) TODO_REMOVE</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetDevice</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  RdmnetStructId        id;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>        lock;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a> callbacks;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  uint8_t* response_buf;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  uint32_t endpoint_list_change_number;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  RC_DECLARE_BUF(DeviceEndpoint, endpoints, <a class="code" href="group__rdmnetopts__client.html#gaf2e797d5e45375b925f1f6bf55d64961">RDMNET_MAX_ENDPOINTS_PER_DEVICE</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  RCClient client;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">bool</span>     connected_to_broker;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  uint16_t manufacturer_id;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} RdmnetDevice;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#define DEVICE_INIT_ENDPOINTS(device_ptr, initial_capacity) \</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">  (RDMNET_ASSERT_VERIFY(device_ptr) &amp;&amp;                      \</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">   RC_INIT_BUF(device_ptr, DeviceEndpoint, endpoints, initial_capacity, RDMNET_MAX_ENDPOINTS_PER_DEVICE))</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#define DEVICE_DEINIT_ENDPOINTS(device_ptr) \</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">  if (RDMNET_ASSERT_VERIFY(device_ptr))     \</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">  {                                         \</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">    RC_DEINIT_BUF(device_ptr, endpoints);   \</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define DEVICE_CHECK_ENDPOINTS_CAPACITY(device_ptr, num_additional) \</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">  (RDMNET_ASSERT_VERIFY(device_ptr) &amp;&amp;                              \</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">   RC_CHECK_BUF_CAPACITY(device_ptr, DeviceEndpoint, endpoints, RDMNET_MAX_ENDPOINTS_PER_DEVICE, num_additional))</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#define DEVICE_INIT_RESPONDERS(device_ptr, initial_capacity) TODO_REMOVE</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#define DEVICE_DEINIT_RESPONDERS(device_ptr) TODO_REMOVE</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#define DEVICE_CHECK_RESPONDERS_CAPACITY(device_ptr, endpoint_ptr, num_additional) TODO_REMOVE</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> * LLRP Manager</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>LlrpManager</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  RdmnetStructId       id;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>       lock;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a> callbacks;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>LlrpTarget</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  RdmnetStructId      id;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>      lock;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="struct_llrp_target_callbacks.html">LlrpTargetCallbacks</a> callbacks;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  uint8_t*            response_buf;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  RCLlrpManager rc_manager;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} LlrpManager;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> * LLRP Target</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  RCLlrpTarget rc_target;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;} LlrpTarget;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">/******************************************************************************</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> * EPT client</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>LlrpTarget</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  RdmnetStructId      id;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>      lock;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="struct_llrp_target_callbacks.html">LlrpTargetCallbacks</a> callbacks;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  uint8_t*            response_buf;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetEptClient</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  RdmnetStructId           id;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>           lock;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="struct_rdmnet_ept_client_callbacks.html">RdmnetEptClientCallbacks</a> callbacks;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  RCClient client;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">bool</span>     connected_to_broker;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;} RdmnetEptClient;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;RdmnetController* rdmnet_alloc_controller_instance(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;RdmnetDevice*     rdmnet_alloc_device_instance(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;LlrpManager*      rdmnet_alloc_llrp_manager_instance(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;LlrpTarget*       rdmnet_alloc_llrp_target_instance(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;RdmnetEptClient*  rdmnet_alloc_ept_client_instance(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keywordtype">void</span>* rdmnet_find_struct_instance(<span class="keywordtype">int</span> handle, rdmnet_struct_type_t type);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">void</span>  rdmnet_unregister_struct_instance(<span class="keywordtype">void</span>* instance);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">void</span>  rdmnet_free_struct_instance(<span class="keywordtype">void</span>* instance);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordtype">void</span> rdmnet_init_endpoints(DeviceEndpoint* endpoints, <span class="keywordtype">size_t</span> num_endpoints);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">void</span> rdmnet_deinit_endpoints(DeviceEndpoint* endpoints, <span class="keywordtype">size_t</span> num_endpoints);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  RCLlrpTarget rc_target;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;} LlrpTarget;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> * EPT client</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>RdmnetEptClient</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  RdmnetStructId           id;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a>           lock;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="struct_rdmnet_ept_client_callbacks.html">RdmnetEptClientCallbacks</a> callbacks;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  RCClient client;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">bool</span>     connected_to_broker;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;} RdmnetEptClient;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;RdmnetController* rdmnet_alloc_controller_instance(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;RdmnetDevice*     rdmnet_alloc_device_instance(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;LlrpManager*      rdmnet_alloc_llrp_manager_instance(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;LlrpTarget*       rdmnet_alloc_llrp_target_instance(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;RdmnetEptClient*  rdmnet_alloc_ept_client_instance(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_add_static_responders(RdmnetDevice*   device,</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                            DeviceEndpoint* endpoint,</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                            <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>*   uids,</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                            <span class="keywordtype">size_t</span>          num_uids);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_add_dynamic_responders(RdmnetDevice*     device,</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                             DeviceEndpoint*   endpoint,</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                             uint16_t          manufacturer_id,</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                             <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* rids,</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                             <span class="keywordtype">size_t</span>            num_rids);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_add_physical_responders(RdmnetDevice*                          device,</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                              DeviceEndpoint*                        endpoint,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                              <span class="keyword">const</span> <a class="code" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a>* responders,</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                              <span class="keywordtype">size_t</span>                                 num_responders);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;EndpointResponder* rdmnet_find_responder_by_rid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* rid);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;EndpointResponder* rdmnet_find_responder_by_uid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>* uid);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keywordtype">void</span> rdmnet_remove_responders_by_rid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* rids, <span class="keywordtype">size_t</span> num_rids);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keywordtype">void</span> rdmnet_remove_responders_by_uid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>* uids, <span class="keywordtype">size_t</span> num_uids);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span>* rdmnet_find_struct_instance(<span class="keywordtype">int</span> handle, rdmnet_struct_type_t type);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">void</span>  rdmnet_unregister_struct_instance(<span class="keywordtype">void</span>* instance);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">void</span>  rdmnet_free_struct_instance(<span class="keywordtype">void</span>* instance);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keywordtype">void</span> rdmnet_init_endpoints(DeviceEndpoint* endpoints, <span class="keywordtype">size_t</span> num_endpoints);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keywordtype">void</span> rdmnet_deinit_endpoints(DeviceEndpoint* endpoints, <span class="keywordtype">size_t</span> num_endpoints);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_add_static_responders(RdmnetDevice*   device,</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                            DeviceEndpoint* endpoint,</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                            <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>*   uids,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                            <span class="keywordtype">size_t</span>          num_uids);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_add_dynamic_responders(RdmnetDevice*     device,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                             DeviceEndpoint*   endpoint,</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                             uint16_t          manufacturer_id,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                             <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* rids,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                                             <span class="keywordtype">size_t</span>            num_rids);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_add_physical_responders(RdmnetDevice*                          device,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                                              DeviceEndpoint*                        endpoint,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                              <span class="keyword">const</span> <a class="code" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a>* responders,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                              <span class="keywordtype">size_t</span>                                 num_responders);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;EndpointResponder* rdmnet_find_responder_by_rid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* rid);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;EndpointResponder* rdmnet_find_responder_by_uid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>* uid);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RDMNET_COMMON_PRIV_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">void</span> rdmnet_remove_responders_by_rid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* rids, <span class="keywordtype">size_t</span> num_rids);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keywordtype">void</span> rdmnet_remove_responders_by_uid(DeviceEndpoint* endpoint, <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>* uids, <span class="keywordtype">size_t</span> num_uids);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RDMNET_COMMON_PRIV_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acontroller_8h_html"><div class="ttname"><a href="controller_8h.html">controller.h</a></div><div class="ttdoc">Definitions for the RDMnet Controller API.</div></div>
 <div class="ttc" id="adevice_8h_html"><div class="ttname"><a href="device_8h.html">device.h</a></div><div class="ttdoc">Definitions for the RDMnet Device API.</div></div>
 <div class="ttc" id="aept__client_8h_html"><div class="ttname"><a href="ept__client_8h.html">ept_client.h</a></div><div class="ttdoc">Definitions for the RDMnet EPT Client API.</div></div>
 <div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
 <div class="ttc" id="agroup__etcpal__mutex_html_ga7360372b14b0feb1ad9f22d2a42734a9"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a></div><div class="ttdeci">PLATFORM_DEFINED etcpal_mutex_t</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga7244ab5c8edb8bc9c1e4792a6c64f798"><div class="ttname"><a href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a></div><div class="ttdeci">int rdmnet_client_scope_t</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:41</div></div>
-<div class="ttc" id="agroup__rdmnetopts__client_html_gaf2e797d5e45375b925f1f6bf55d64961"><div class="ttname"><a href="group__rdmnetopts__client.html#gaf2e797d5e45375b925f1f6bf55d64961">RDMNET_MAX_ENDPOINTS_PER_DEVICE</a></div><div class="ttdeci">#define RDMNET_MAX_ENDPOINTS_PER_DEVICE</div><div class="ttdoc">The maximum number of nonzero endpoints that can be added to each device instance.</div><div class="ttdef"><b>Definition:</b> opts.h:171</div></div>
+<div class="ttc" id="agroup__rdmnetopts__client_html_gaf2e797d5e45375b925f1f6bf55d64961"><div class="ttname"><a href="group__rdmnetopts__client.html#gaf2e797d5e45375b925f1f6bf55d64961">RDMNET_MAX_ENDPOINTS_PER_DEVICE</a></div><div class="ttdeci">#define RDMNET_MAX_ENDPOINTS_PER_DEVICE</div><div class="ttdoc">The maximum number of nonzero endpoints that can be added to each device instance.</div><div class="ttdef"><b>Definition:</b> opts.h:193</div></div>
 <div class="ttc" id="allrp__manager_8h_html"><div class="ttname"><a href="llrp__manager_8h.html">llrp_manager.h</a></div><div class="ttdoc">Functions for implementing LLRP Manager functionality.</div></div>
 <div class="ttc" id="allrp__target_8h_html"><div class="ttname"><a href="llrp__target_8h.html">llrp_target.h</a></div><div class="ttdoc">Functions for implementing LLRP Target functionality.</div></div>
 <div class="ttc" id="astruct_etc_pal_rb_tree_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_rb_tree.html">EtcPalRbTree</a></div></div>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"struct_rdmnet_saved_rdm_command.html#a7cce60de9a7c1351d7710f9e084e970b":[0,0,0,12,5],
+"struct_rdmnet_saved_rdm_command.html#aeaec7f640c8ba5499ea390db23d6ac31":[0,0,0,12,4],
+"struct_rdmnet_saved_rdm_response.html":[0,0,0,14],
+"struct_rdmnet_saved_rdm_response.html#a009b5803242968e227e61d9c3905174a":[0,0,0,14,4],
 "struct_rdmnet_saved_rdm_response.html#a1252b5961c7fdacb8358b561318a116a":[0,0,0,14,6],
 "struct_rdmnet_saved_rdm_response.html#a4be5c087517d033632f91a4751b16029":[0,0,0,14,7],
 "struct_rdmnet_saved_rdm_response.html#a61b3adab7b79bb2d967f590ad4270643":[0,0,0,14,9],
