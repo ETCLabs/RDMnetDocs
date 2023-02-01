@@ -286,9 +286,8 @@ typedef struct <a class="el" href="struct_rdmnet_physical_endpoint_responder.htm
 <tr class="memitem:ga2ced220e3673824c5e0be32ac8ea3814"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga2ced220e3673824c5e0be32ac8ea3814">RdmnetPhysicalEndpointConfig</a></td></tr>
 <tr class="memdesc:ga2ced220e3673824c5e0be32ac8ea3814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration information for a physical endpoint on a device.  <a href="group__rdmnet__device.html#ga2ced220e3673824c5e0be32ac8ea3814">More...</a><br /></td></tr>
 <tr class="separator:ga2ced220e3673824c5e0be32ac8ea3814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2eaeaedc5a3e9602ad836debed4e946e"><td class="memItemLeft" align="right" valign="top"><a id="ga2eaeaedc5a3e9602ad836debed4e946e"></a>
-typedef struct <a class="el" href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga2eaeaedc5a3e9602ad836debed4e946e">RdmnetDeviceConfig</a></td></tr>
-<tr class="memdesc:ga2eaeaedc5a3e9602ad836debed4e946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an RDMnet Device. <br /></td></tr>
+<tr class="memitem:ga2eaeaedc5a3e9602ad836debed4e946e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga2eaeaedc5a3e9602ad836debed4e946e">RdmnetDeviceConfig</a></td></tr>
+<tr class="memdesc:ga2eaeaedc5a3e9602ad836debed4e946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an RDMnet Device.  <a href="group__rdmnet__device.html#ga2eaeaedc5a3e9602ad836debed4e946e">More...</a><br /></td></tr>
 <tr class="separator:ga2eaeaedc5a3e9602ad836debed4e946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -390,15 +389,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  {                                                                                            \</div>
 <div class="line">    {{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, NULL, <a class="code" href="group__rdmnet__api__common.html#gac8a93b214f8dc87d944bc1d6e3e216f4">RDMNET_SCOPE_CONFIG_DEFAULT_INIT</a>, \</div>
-<div class="line">        {(0x8000 | manu_id), 0}, NULL, NULL, 0, NULL, 0, NULL, 0                               \</div>
+<div class="line">        {(0x8000 | manu_id), 0}, NULL, NULL, 0, NULL, 0                                        \</div>
 <div class="line">  }</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gac8a93b214f8dc87d944bc1d6e3e216f4"><div class="ttname"><a href="group__rdmnet__api__common.html#gac8a93b214f8dc87d944bc1d6e3e216f4">RDMNET_SCOPE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_SCOPE_CONFIG_DEFAULT_INIT</div><div class="ttdoc">A default-value initializer for an RdmnetScopeConfig struct.</div><div class="ttdef"><b>Definition:</b> client.h:247</div></div>
 </div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_rdmnet_device_config.html" title="A set of information that defines the startup parameters of an RDMnet Device.">RdmnetDeviceConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a> config = <a class="code" href="group__rdmnet__device.html#gac8e03e329deb576755450ed19c0d5ca8">RDMNET_DEVICE_CONFIG_DEFAULT_INIT</a>(MY_ESTA_MANUFACTURER_ID);</div>
 <div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div>
-<div class="ttc" id="agroup__rdmnet__device_html_gac8e03e329deb576755450ed19c0d5ca8"><div class="ttname"><a href="group__rdmnet__device.html#gac8e03e329deb576755450ed19c0d5ca8">RDMNET_DEVICE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_DEVICE_CONFIG_DEFAULT_INIT(manu_id)</div><div class="ttdoc">A default-value initializer for an RdmnetDeviceConfig struct.</div><div class="ttdef"><b>Definition:</b> device.h:299</div></div>
-<div class="ttc" id="astruct_rdmnet_device_config_html"><div class="ttname"><a href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a></div><div class="ttdoc">A set of information that defines the startup parameters of an RDMnet Device.</div><div class="ttdef"><b>Definition:</b> device.h:228</div></div>
+<div class="ttc" id="agroup__rdmnet__device_html_gac8e03e329deb576755450ed19c0d5ca8"><div class="ttname"><a href="group__rdmnet__device.html#gac8e03e329deb576755450ed19c0d5ca8">RDMNET_DEVICE_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_DEVICE_CONFIG_DEFAULT_INIT(manu_id)</div><div class="ttdoc">A default-value initializer for an RdmnetDeviceConfig struct.</div><div class="ttdef"><b>Definition:</b> device.h:294</div></div>
+<div class="ttc" id="astruct_rdmnet_device_config_html"><div class="ttname"><a href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a></div><div class="ttdoc">A set of information that defines the startup parameters of an RDMnet Device.</div><div class="ttdef"><b>Definition:</b> device.h:233</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">manu_id</td><td>Your ESTA manufacturer ID. </td></tr>
@@ -477,6 +476,23 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga2eaeaedc5a3e9602ad836debed4e946e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2eaeaedc5a3e9602ad836debed4e946e">&#9670;&nbsp;</a></span>RdmnetDeviceConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a> <a class="el" href="struct_rdmnet_device_config.html">RdmnetDeviceConfig</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of information that defines the startup parameters of an RDMnet Device. </p>
+<p>Note that network interfaces that the LLRP target of the device should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> is used. </p>
+
+</div>
+</div>
 <a id="gac8f5b31580a4e3a83073663145a21cc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac8f5b31580a4e3a83073663145a21cc1">&#9670;&nbsp;</a></span>RdmnetDeviceConnectedCallback</h2>
 

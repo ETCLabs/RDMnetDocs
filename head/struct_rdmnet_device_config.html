@@ -208,6 +208,7 @@ $(document).ready(function(){initNavTree('struct_rdmnet_device_config.html','');
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of information that defines the startup parameters of an RDMnet Device. </p>
+<p>Note that network interfaces that the LLRP target of the device should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> is used. </p>
 </div>
 <p><code>#include &lt;<a class="el" href="device_8h_source.html">rdmnet/device.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -249,32 +250,8 @@ const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirt
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#aa72098b0a6479ed77f1371a8c1e04b03">num_virtual_endpoints</a></td></tr>
 <tr class="memdesc:aa72098b0a6479ed77f1371a8c1e04b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the virtual_endpoints array. <br /></td></tr>
 <tr class="separator:aa72098b0a6479ed77f1371a8c1e04b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6285754f82af8ebffc942c8b62af4361"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a6285754f82af8ebffc942c8b62af4361">llrp_netints</a></td></tr>
-<tr class="memdesc:a6285754f82af8ebffc942c8b62af4361"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A set of network interfaces to use for the LLRP target associated with this device.  <a href="struct_rdmnet_device_config.html#a6285754f82af8ebffc942c8b62af4361">More...</a><br /></td></tr>
-<tr class="separator:a6285754f82af8ebffc942c8b62af4361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4cbb0439785d6fa6d82a66a8a5dc89"><td class="memItemLeft" align="right" valign="top"><a id="a6d4cbb0439785d6fa6d82a66a8a5dc89"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a6d4cbb0439785d6fa6d82a66a8a5dc89">num_llrp_netints</a></td></tr>
-<tr class="memdesc:a6d4cbb0439785d6fa6d82a66a8a5dc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The size of the llrp_netints array. <br /></td></tr>
-<tr class="separator:a6d4cbb0439785d6fa6d82a66a8a5dc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a6285754f82af8ebffc942c8b62af4361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6285754f82af8ebffc942c8b62af4361">&#9670;&nbsp;</a></span>llrp_netints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>* RdmnetDeviceConfig::llrp_netints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(optional) A set of network interfaces to use for the LLRP target associated with this device. </p>
-<p>If NULL, the set passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> will be used, or all network interfaces on the system if that was not provided. If non-NULL, this must be a subset of the interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> if any were passed in there. </p>
-
-</div>
-</div>
 <a id="aa087a3c2489b51ff355bc017d0cf89f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa087a3c2489b51ff355bc017d0cf89f0">&#9670;&nbsp;</a></span>response_buf</h2>
 

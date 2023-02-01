@@ -208,6 +208,7 @@ $(document).ready(function(){initNavTree('struct_rdmnet_controller_config.html',
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of information that defines the startup parameters of an RDMnet Controller. </p>
+<p>Note that network interfaces that the LLRP target of the controller should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> is used. </p>
 </div>
 <p><code>#include &lt;<a class="el" href="controller_8h_source.html">rdmnet/controller.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -236,13 +237,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aaad1507118f9a56d6ed29a9feb6582f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#aaad1507118f9a56d6ed29a9feb6582f3">create_llrp_target</a></td></tr>
 <tr class="memdesc:aaad1507118f9a56d6ed29a9feb6582f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Whether to create an LLRP target associated with this controller.  <a href="struct_rdmnet_controller_config.html#aaad1507118f9a56d6ed29a9feb6582f3">More...</a><br /></td></tr>
 <tr class="separator:aaad1507118f9a56d6ed29a9feb6582f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04aadde39204a0b82ea35851b8589319"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a04aadde39204a0b82ea35851b8589319">llrp_netints</a></td></tr>
-<tr class="memdesc:a04aadde39204a0b82ea35851b8589319"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A set of network interfaces to use for the LLRP target associated with this controller.  <a href="struct_rdmnet_controller_config.html#a04aadde39204a0b82ea35851b8589319">More...</a><br /></td></tr>
-<tr class="separator:a04aadde39204a0b82ea35851b8589319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac00900edb0e5e53c28cbbf61d6521b50"><td class="memItemLeft" align="right" valign="top"><a id="ac00900edb0e5e53c28cbbf61d6521b50"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#ac00900edb0e5e53c28cbbf61d6521b50">num_llrp_netints</a></td></tr>
-<tr class="memdesc:ac00900edb0e5e53c28cbbf61d6521b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The size of the llrp_netints array. <br /></td></tr>
-<tr class="separator:ac00900edb0e5e53c28cbbf61d6521b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="aaad1507118f9a56d6ed29a9feb6582f3"></a>
@@ -259,23 +253,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 <p>(optional) Whether to create an LLRP target associated with this controller. </p>
 <p>Default is false. </p>
-
-</div>
-</div>
-<a id="a04aadde39204a0b82ea35851b8589319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04aadde39204a0b82ea35851b8589319">&#9670;&nbsp;</a></span>llrp_netints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>* RdmnetControllerConfig::llrp_netints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(optional) A set of network interfaces to use for the LLRP target associated with this controller. </p>
-<p>If NULL, the set passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> will be used, or all network interfaces on the system if that was not provided. If non-NULL, this must be a subset of the interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> if any were passed in there. </p>
 
 </div>
 </div>

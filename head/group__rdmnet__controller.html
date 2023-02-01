@@ -286,9 +286,8 @@ typedef struct <a class="el" href="struct_rdmnet_controller_callbacks.html">Rdmn
 typedef struct <a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gaf0ad1714c49e369590ba8fd6f6d9366e">RdmnetControllerRdmData</a></td></tr>
 <tr class="memdesc:gaf0ad1714c49e369590ba8fd6f6d9366e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of data for the controller library to use for handling RDM commands internally. <br /></td></tr>
 <tr class="separator:gaf0ad1714c49e369590ba8fd6f6d9366e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada414dc2afdaf1daae20130fe0d8356d"><td class="memItemLeft" align="right" valign="top"><a id="gada414dc2afdaf1daae20130fe0d8356d"></a>
-typedef struct <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gada414dc2afdaf1daae20130fe0d8356d">RdmnetControllerConfig</a></td></tr>
-<tr class="memdesc:gada414dc2afdaf1daae20130fe0d8356d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an RDMnet Controller. <br /></td></tr>
+<tr class="memitem:gada414dc2afdaf1daae20130fe0d8356d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gada414dc2afdaf1daae20130fe0d8356d">RdmnetControllerConfig</a></td></tr>
+<tr class="memdesc:gada414dc2afdaf1daae20130fe0d8356d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an RDMnet Controller.  <a href="group__rdmnet__controller.html#gada414dc2afdaf1daae20130fe0d8356d">More...</a><br /></td></tr>
 <tr class="separator:gada414dc2afdaf1daae20130fe0d8356d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -373,16 +372,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                            \</div>
-<div class="line">    {{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}, {NULL, NULL, NULL, NULL},         \</div>
-<div class="line">        RDMNET_CONTROLLER_RDM_DATA_DEFAULT_INIT, {(0x8000 | manu_id), 0}, NULL, <span class="keyword">false</span>, NULL, 0 \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                                    \</div>
+<div class="line">    {{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}, {NULL, NULL, NULL, NULL}, \</div>
+<div class="line">        RDMNET_CONTROLLER_RDM_DATA_DEFAULT_INIT, {(0x8000 | manu_id), 0}, NULL, <span class="keyword">false</span>  \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller.">RdmnetControllerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> config = <a class="code" href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a>(MY_ESTA_MANUFACTURER_ID);</div>
 <div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div>
-<div class="ttc" id="agroup__rdmnet__controller_html_gab61905ff5228301100c6d70c58e77661"><div class="ttname"><a href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT(manu_id)</div><div class="ttdoc">A default-value initializer for an RdmnetControllerConfig struct.</div><div class="ttdef"><b>Definition:</b> controller.h:332</div></div>
-<div class="ttc" id="astruct_rdmnet_controller_config_html"><div class="ttname"><a href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a></div><div class="ttdoc">A set of information that defines the startup parameters of an RDMnet Controller.</div><div class="ttdef"><b>Definition:</b> controller.h:268</div></div>
+<div class="ttc" id="agroup__rdmnet__controller_html_gab61905ff5228301100c6d70c58e77661"><div class="ttname"><a href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT(manu_id)</div><div class="ttdoc">A default-value initializer for an RdmnetControllerConfig struct.</div><div class="ttdef"><b>Definition:</b> controller.h:327</div></div>
+<div class="ttc" id="astruct_rdmnet_controller_config_html"><div class="ttname"><a href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a></div><div class="ttdoc">A set of information that defines the startup parameters of an RDMnet Controller.</div><div class="ttdef"><b>Definition:</b> controller.h:273</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">manu_id</td><td>Your ESTA manufacturer ID. </td></tr>
@@ -439,6 +438,23 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gada414dc2afdaf1daae20130fe0d8356d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada414dc2afdaf1daae20130fe0d8356d">&#9670;&nbsp;</a></span>RdmnetControllerConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of information that defines the startup parameters of an RDMnet Controller. </p>
+<p>Note that network interfaces that the LLRP target of the controller should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> is used. </p>
 
 </div>
 </div>

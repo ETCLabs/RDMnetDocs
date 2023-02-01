@@ -209,6 +209,7 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_controller_1_1_settin
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of configuration settings that a controller needs to initialize. </p>
+<p>Note that network interfaces that the LLRP target of the controller should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539" title="Initialize the RDMnet library.">rdmnet::Init()</a> is used. </p>
 </div>
 <p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -247,9 +248,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a1e92fb9a942c37aec8b7cb94175ab4e1">create_llrp_target</a> {false}</td></tr>
 <tr class="memdesc:a1e92fb9a942c37aec8b7cb94175ab4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Whether to create an LLRP target associated with this controller. <br /></td></tr>
 <tr class="separator:a1e92fb9a942c37aec8b7cb94175ab4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814fdcf2293e4d89ab5214ec7f76fddc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a814fdcf2293e4d89ab5214ec7f76fddc">llrp_netints</a></td></tr>
-<tr class="memdesc:a814fdcf2293e4d89ab5214ec7f76fddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A set of network interfaces to use for the LLRP target associated with this controller.  <a href="structrdmnet_1_1_controller_1_1_settings.html#a814fdcf2293e4d89ab5214ec7f76fddc">More...</a><br /></td></tr>
-<tr class="separator:a814fdcf2293e4d89ab5214ec7f76fddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa9708182dd71e71ac5338aa65aedf146"></a>
@@ -327,24 +325,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 
 <p>Create a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance by passing the required members explicitly. </p>
 <p>This version just takes the controller's ESTA manufacturer ID and uses it to generate an RDMnet dynamic UID request. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a814fdcf2293e4d89ab5214ec7f76fddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a814fdcf2293e4d89ab5214ec7f76fddc">&#9670;&nbsp;</a></span>llrp_netints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>&gt; rdmnet::Controller::Settings::llrp_netints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(optional) A set of network interfaces to use for the LLRP target associated with this controller. </p>
-<p>If empty, the set passed to <a class="el" href="group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539" title="Initialize the RDMnet library.">rdmnet::Init()</a> will be used, or all network interfaces on the system if that was not provided. </p>
 
 </div>
 </div>
