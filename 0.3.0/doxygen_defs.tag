@@ -2,7 +2,7 @@
 <tagfile doxygen_version="1.9.1" doxygen_gitid="ef9b20ac7f8a8621fcfc299f8bd0b80422390f4b">
   <compound kind="file">
     <name>client.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>client_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <class kind="struct">RdmnetSourceAddr</class>
@@ -164,7 +164,7 @@
   </compound>
   <compound kind="file">
     <name>client.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2client_8h.html</filename>
     <includes id="client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <class kind="class">rdmnet::SourceAddr</class>
@@ -191,7 +191,7 @@
   </compound>
   <compound kind="file">
     <name>common.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>common_8h.html</filename>
     <class kind="struct">RdmnetSyncRdmResponse</class>
     <class kind="struct">RdmnetSyncEptResponse</class>
@@ -691,7 +691,7 @@
   </compound>
   <compound kind="file">
     <name>common.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2common_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <class kind="class">rdmnet::RdmResponseAction</class>
@@ -721,7 +721,7 @@
   </compound>
   <compound kind="file">
     <name>controller.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>controller_8h.html</filename>
     <includes id="client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
@@ -998,7 +998,7 @@
   </compound>
   <compound kind="file">
     <name>controller.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2controller_8h.html</filename>
     <includes id="cpp_2client_8h" name="client.h" local="yes" imported="no">rdmnet/cpp/client.h</includes>
     <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">rdmnet/cpp/common.h</includes>
@@ -1013,7 +1013,7 @@
   </compound>
   <compound kind="file">
     <name>broker.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>broker_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <class kind="struct">rdmnet::DnsTxtRecordItem</class>
@@ -1026,7 +1026,7 @@
   </compound>
   <compound kind="file">
     <name>dynamic_uid.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>dynamic__uid_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
@@ -1036,7 +1036,7 @@
   </compound>
   <compound kind="file">
     <name>ept_data.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>ept__data_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="class">rdmnet::EptData</class>
@@ -1045,7 +1045,7 @@
   </compound>
   <compound kind="file">
     <name>ept_status.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>ept__status_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
@@ -1055,7 +1055,7 @@
   </compound>
   <compound kind="file">
     <name>llrp_rdm_command.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>llrp__rdm__command_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="class">rdmnet::llrp::RdmCommand</class>
@@ -1065,7 +1065,7 @@
   </compound>
   <compound kind="file">
     <name>llrp_rdm_response.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>llrp__rdm__response_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="class">rdmnet::llrp::RdmResponse</class>
@@ -1075,7 +1075,7 @@
   </compound>
   <compound kind="file">
     <name>rdm_command.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>rdm__command_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="class">rdmnet::RdmCommand</class>
@@ -1084,7 +1084,7 @@
   </compound>
   <compound kind="file">
     <name>rdm_response.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>rdm__response_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="class">rdmnet::RdmResponse</class>
@@ -1093,7 +1093,7 @@
   </compound>
   <compound kind="file">
     <name>rpt_client.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>rpt__client_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="struct">rdmnet::RptClientEntry</class>
@@ -1102,7 +1102,7 @@
   </compound>
   <compound kind="file">
     <name>rpt_status.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>rpt__status_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
@@ -1112,7 +1112,7 @@
   </compound>
   <compound kind="file">
     <name>device.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>device_8h.html</filename>
     <includes id="client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
@@ -1418,7 +1418,7 @@
   </compound>
   <compound kind="file">
     <name>device.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2device_8h.html</filename>
     <includes id="device_8h" name="device.h" local="yes" imported="no">rdmnet/device.h</includes>
     <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">rdmnet/cpp/common.h</includes>
@@ -1434,7 +1434,7 @@
   </compound>
   <compound kind="file">
     <name>discovery.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>discovery_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <class kind="struct">RdmnetDnsTxtRecordItem</class>
@@ -1691,7 +1691,7 @@
   </compound>
   <compound kind="file">
     <name>ept_client.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>ept__client_8h.html</filename>
     <includes id="client_8h" name="client.h" local="yes" imported="no">rdmnet/client.h</includes>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
@@ -1862,7 +1862,7 @@
   </compound>
   <compound kind="file">
     <name>ept_client.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2ept__client_8h.html</filename>
     <includes id="cpp_2client_8h" name="client.h" local="yes" imported="no">rdmnet/cpp/client.h</includes>
     <includes id="cpp_2common_8h" name="common.h" local="yes" imported="no">rdmnet/cpp/common.h</includes>
@@ -1875,7 +1875,7 @@
   </compound>
   <compound kind="file">
     <name>ept_client.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/message_types/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/message_types/</path>
     <filename>cpp_2message__types_2ept__client_8h.html</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">rdmnet/message.h</includes>
     <class kind="struct">rdmnet::EptSubProtocol</class>
@@ -1885,7 +1885,7 @@
   </compound>
   <compound kind="file">
     <name>llrp.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>llrp_8h.html</filename>
     <class kind="struct">LlrpDestinationAddr</class>
     <class kind="struct">LlrpDiscoveredTarget</class>
@@ -1944,7 +1944,7 @@
   </compound>
   <compound kind="file">
     <name>llrp_manager.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>llrp__manager_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <includes id="llrp_8h" name="llrp.h" local="yes" imported="no">rdmnet/llrp.h</includes>
@@ -2073,7 +2073,7 @@
   </compound>
   <compound kind="file">
     <name>llrp_target.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>llrp__target_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <includes id="llrp_8h" name="llrp.h" local="yes" imported="no">rdmnet/llrp.h</includes>
@@ -2160,7 +2160,7 @@
   </compound>
   <compound kind="file">
     <name>message.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>message_8h.html</filename>
     <includes id="common_8h" name="common.h" local="yes" imported="no">rdmnet/common.h</includes>
     <class kind="struct">RdmnetRdmCommand</class>
@@ -2590,7 +2590,7 @@
   </compound>
   <compound kind="file">
     <name>message.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/cpp/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/cpp/</path>
     <filename>cpp_2message_8h.html</filename>
     <includes id="dynamic__uid_8h" name="dynamic_uid.h" local="yes" imported="no">rdmnet/cpp/message_types/dynamic_uid.h</includes>
     <includes id="cpp_2message__types_2ept__client_8h" name="ept_client.h" local="yes" imported="no">rdmnet/cpp/message_types/ept_client.h</includes>
@@ -2605,7 +2605,7 @@
   </compound>
   <compound kind="file">
     <name>version.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/include/rdmnet/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/include/rdmnet/</path>
     <filename>version_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -2666,7 +2666,7 @@
   </compound>
   <compound kind="file">
     <name>opts.h</name>
-    <path>/tmp/tmp87t3fjpd/rdmnet/src/rdmnet/core/</path>
+    <path>/tmp/tmp4pyfw38q/rdmnet/src/rdmnet/core/</path>
     <filename>opts_8h.html</filename>
     <member kind="define">
       <type>#define</type>
@@ -12319,97 +12319,97 @@
     <name>building_and_integrating</name>
     <title>Building and Integrating the RDMnet Library into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpu6k6gw33_docs_getting_started_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpucerxa8p_docs_getting_started_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>data_ownership</name>
     <title>Data Ownership Paradigms in the RDMnet Library</title>
     <filename>data_ownership.html</filename>
-    <docanchor file="data_ownership.html">md__tmp_tmpu6k6gw33_docs_getting_started_data_ownership</docanchor>
+    <docanchor file="data_ownership.html">md__tmp_tmpucerxa8p_docs_getting_started_data_ownership</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpu6k6gw33_docs_getting_started_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpucerxa8p_docs_getting_started_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpu6k6gw33_docs_getting_started_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpucerxa8p_docs_getting_started_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>handling_rdm_commands</name>
     <title>Handling RDM Commands</title>
     <filename>handling_rdm_commands.html</filename>
-    <docanchor file="handling_rdm_commands.html">md__tmp_tmpu6k6gw33_docs_getting_started_handling_rdm_commands</docanchor>
+    <docanchor file="handling_rdm_commands.html">md__tmp_tmpucerxa8p_docs_getting_started_handling_rdm_commands</docanchor>
   </compound>
   <compound kind="page">
     <name>using_broker</name>
     <title>Using the Broker API</title>
     <filename>using_broker.html</filename>
-    <docanchor file="using_broker.html">md__tmp_tmpu6k6gw33_docs_getting_started_using_broker</docanchor>
+    <docanchor file="using_broker.html">md__tmp_tmpucerxa8p_docs_getting_started_using_broker</docanchor>
   </compound>
   <compound kind="page">
     <name>using_controller</name>
     <title>Using the Controller API</title>
     <filename>using_controller.html</filename>
-    <docanchor file="using_controller.html">md__tmp_tmpu6k6gw33_docs_getting_started_using_controller</docanchor>
+    <docanchor file="using_controller.html">md__tmp_tmpucerxa8p_docs_getting_started_using_controller</docanchor>
   </compound>
   <compound kind="page">
     <name>using_device</name>
     <title>Using the Device API</title>
     <filename>using_device.html</filename>
-    <docanchor file="using_device.html">md__tmp_tmpu6k6gw33_docs_getting_started_using_device</docanchor>
+    <docanchor file="using_device.html">md__tmp_tmpucerxa8p_docs_getting_started_using_device</docanchor>
   </compound>
   <compound kind="page">
     <name>using_ept_client</name>
     <title>Using the EPT Client API</title>
     <filename>using_ept_client.html</filename>
-    <docanchor file="using_ept_client.html">md__tmp_tmpu6k6gw33_docs_getting_started_using_ept_client</docanchor>
+    <docanchor file="using_ept_client.html">md__tmp_tmpucerxa8p_docs_getting_started_using_ept_client</docanchor>
   </compound>
   <compound kind="page">
     <name>using_llrp_manager</name>
     <title>Using the LLRP Manager API</title>
     <filename>using_llrp_manager.html</filename>
-    <docanchor file="using_llrp_manager.html">md__tmp_tmpu6k6gw33_docs_getting_started_using_llrp_manager</docanchor>
+    <docanchor file="using_llrp_manager.html">md__tmp_tmpucerxa8p_docs_getting_started_using_llrp_manager</docanchor>
   </compound>
   <compound kind="page">
     <name>devices_and_gateways</name>
     <title>Devices and Gateways</title>
     <filename>devices_and_gateways.html</filename>
-    <docanchor file="devices_and_gateways.html">md__tmp_tmpu6k6gw33_docs_how_rdmnet_works_devices_and_gateways</docanchor>
+    <docanchor file="devices_and_gateways.html">md__tmp_tmpucerxa8p_docs_how_rdmnet_works_devices_and_gateways</docanchor>
   </compound>
   <compound kind="page">
     <name>discovery</name>
     <title>Discovery</title>
     <filename>discovery.html</filename>
-    <docanchor file="discovery.html">md__tmp_tmpu6k6gw33_docs_how_rdmnet_works_discovery</docanchor>
+    <docanchor file="discovery.html">md__tmp_tmpucerxa8p_docs_how_rdmnet_works_discovery</docanchor>
   </compound>
   <compound kind="page">
     <name>ept</name>
     <title>Extensible Packet Transport (EPT)</title>
     <filename>ept.html</filename>
-    <docanchor file="ept.html">md__tmp_tmpu6k6gw33_docs_how_rdmnet_works_ept</docanchor>
+    <docanchor file="ept.html">md__tmp_tmpucerxa8p_docs_how_rdmnet_works_ept</docanchor>
   </compound>
   <compound kind="page">
     <name>how_it_works</name>
     <title>How RDMnet Works</title>
     <filename>how_it_works.html</filename>
-    <docanchor file="how_it_works.html">md__tmp_tmpu6k6gw33_docs_how_rdmnet_works_how_it_works</docanchor>
+    <docanchor file="how_it_works.html">md__tmp_tmpucerxa8p_docs_how_rdmnet_works_how_it_works</docanchor>
   </compound>
   <compound kind="page">
     <name>llrp</name>
     <title>Low-Level Recovery Protocol (LLRP)</title>
     <filename>llrp.html</filename>
-    <docanchor file="llrp.html">md__tmp_tmpu6k6gw33_docs_how_rdmnet_works_llrp</docanchor>
+    <docanchor file="llrp.html">md__tmp_tmpucerxa8p_docs_how_rdmnet_works_llrp</docanchor>
   </compound>
   <compound kind="page">
     <name>roles_and_addressing</name>
     <title>Roles and Addressing</title>
     <filename>roles_and_addressing.html</filename>
-    <docanchor file="roles_and_addressing.html">md__tmp_tmpu6k6gw33_docs_how_rdmnet_works_roles_and_addressing</docanchor>
+    <docanchor file="roles_and_addressing.html">md__tmp_tmpucerxa8p_docs_how_rdmnet_works_roles_and_addressing</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
