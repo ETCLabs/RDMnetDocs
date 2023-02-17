@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::Device::NotifyHandler Class Reference</title>
+<title>RDMnet: Device::NotifyHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,39 +203,37 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_device_1_1_notify_hand
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::Device::NotifyHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__device__cpp.html">Device API</a></div></div>  </div>
+<div class="title">Device::NotifyHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__device__cpp.html">Device API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A base class for a class that receives notification callbacks from a device. </p>
 <p>See <a class="el" href="using_device.html">Using the Device API</a> for details of how to use this API. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2device_8h_source.html">rdmnet/cpp/device.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a304d6c141b50577e81b53ed55518e003"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a304d6c141b50577e81b53ed55518e003">HandleConnectedToBroker</a> (<a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a>, const <a class="el" href="classrdmnet_1_1_client_connected_info.html">ClientConnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:a304d6c141b50577e81b53ed55518e003"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device has successfully connected to a broker.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a304d6c141b50577e81b53ed55518e003">More...</a><br /></td></tr>
-<tr class="separator:a304d6c141b50577e81b53ed55518e003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a9ad0af303a7a7fbca3aa7c1551c70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a20a9ad0af303a7a7fbca3aa7c1551c70">HandleBrokerConnectFailed</a> (<a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a>, const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:a20a9ad0af303a7a7fbca3aa7c1551c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a device and a broker.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a20a9ad0af303a7a7fbca3aa7c1551c70">More...</a><br /></td></tr>
-<tr class="separator:a20a9ad0af303a7a7fbca3aa7c1551c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a489cdca3808b58a6420516d8f3a01c6f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a489cdca3808b58a6420516d8f3a01c6f">HandleDisconnectedFromBroker</a> (<a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a>, const <a class="el" href="classrdmnet_1_1_client_disconnected_info.html">ClientDisconnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:a489cdca3808b58a6420516d8f3a01c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device which was previously connected to a broker has disconnected.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a489cdca3808b58a6420516d8f3a01c6f">More...</a><br /></td></tr>
-<tr class="separator:a489cdca3808b58a6420516d8f3a01c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b12b981d6f6664eba437bad431f1e9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#ad6b12b981d6f6664eba437bad431f1e9">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a>, const <a class="el" href="classrdmnet_1_1_rdm_command.html">RdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="memdesc:ad6b12b981d6f6664eba437bad431f1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#ad6b12b981d6f6664eba437bad431f1e9">More...</a><br /></td></tr>
-<tr class="separator:ad6b12b981d6f6664eba437bad431f1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b8ec2bd2104aeadf771c5bcd6865fa5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a9b8ec2bd2104aeadf771c5bcd6865fa5">HandleLlrpRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a>, const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">llrp::RdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="memdesc:a9b8ec2bd2104aeadf771c5bcd6865fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a device.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a9b8ec2bd2104aeadf771c5bcd6865fa5">More...</a><br /></td></tr>
-<tr class="separator:a9b8ec2bd2104aeadf771c5bcd6865fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4c808de576d3c9e241edc2a897a0f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a4d4c808de576d3c9e241edc2a897a0f7">HandleDynamicUidStatus</a> (<a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a>, const <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;list)</td></tr>
-<tr class="memdesc:a4d4c808de576d3c9e241edc2a897a0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dynamic UID assignment status for a set of virtual responders has been received.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a4d4c808de576d3c9e241edc2a897a0f7">More...</a><br /></td></tr>
-<tr class="separator:a4d4c808de576d3c9e241edc2a897a0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada016c498e2f60ccc03d18a95cc1b244"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#ada016c498e2f60ccc03d18a95cc1b244">HandleConnectedToBroker</a> (<a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a3a687dc70a6e5a15c01d66776c0ed205">handle</a>, const <a class="el" href="classrdmnet_1_1_client_connected_info.html">ClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:ada016c498e2f60ccc03d18a95cc1b244"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device has successfully connected to a broker.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#ada016c498e2f60ccc03d18a95cc1b244">More...</a><br /></td></tr>
+<tr class="separator:ada016c498e2f60ccc03d18a95cc1b244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ae2e51760f78d601557600bfc2540e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#aa7ae2e51760f78d601557600bfc2540e">HandleBrokerConnectFailed</a> (<a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a3a687dc70a6e5a15c01d66776c0ed205">handle</a>, const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:aa7ae2e51760f78d601557600bfc2540e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a device and a broker.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#aa7ae2e51760f78d601557600bfc2540e">More...</a><br /></td></tr>
+<tr class="separator:aa7ae2e51760f78d601557600bfc2540e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6273abe28ccf151383a2df6e46815aee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a6273abe28ccf151383a2df6e46815aee">HandleDisconnectedFromBroker</a> (<a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a3a687dc70a6e5a15c01d66776c0ed205">handle</a>, const <a class="el" href="classrdmnet_1_1_client_disconnected_info.html">ClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a6273abe28ccf151383a2df6e46815aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device which was previously connected to a broker has disconnected.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a6273abe28ccf151383a2df6e46815aee">More...</a><br /></td></tr>
+<tr class="separator:a6273abe28ccf151383a2df6e46815aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c65f645dceda8052eae3e69fb09a99"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a26c65f645dceda8052eae3e69fb09a99">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a3a687dc70a6e5a15c01d66776c0ed205">handle</a>, const <a class="el" href="classrdmnet_1_1_rdm_command.html">RdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:a26c65f645dceda8052eae3e69fb09a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a26c65f645dceda8052eae3e69fb09a99">More...</a><br /></td></tr>
+<tr class="separator:a26c65f645dceda8052eae3e69fb09a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e1cc42399790a59c5fb29adb398855"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#af6e1cc42399790a59c5fb29adb398855">HandleLlrpRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a3a687dc70a6e5a15c01d66776c0ed205">handle</a>, const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">llrp::RdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:af6e1cc42399790a59c5fb29adb398855"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a device.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#af6e1cc42399790a59c5fb29adb398855">More...</a><br /></td></tr>
+<tr class="separator:af6e1cc42399790a59c5fb29adb398855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1593f9eb7d540e3335b63b923f4d09ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a1593f9eb7d540e3335b63b923f4d09ca">HandleDynamicUidStatus</a> (<a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a> <a class="el" href="classrdmnet_1_1_device.html#a3a687dc70a6e5a15c01d66776c0ed205">handle</a>, const <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;list)</td></tr>
+<tr class="memdesc:a1593f9eb7d540e3335b63b923f4d09ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dynamic UID assignment status for a set of virtual responders has been received.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#a1593f9eb7d540e3335b63b923f4d09ca">More...</a><br /></td></tr>
+<tr class="separator:a1593f9eb7d540e3335b63b923f4d09ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a20a9ad0af303a7a7fbca3aa7c1551c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a9ad0af303a7a7fbca3aa7c1551c70">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
+<a id="aa7ae2e51760f78d601557600bfc2540e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ae2e51760f78d601557600bfc2540e">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,9 +242,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::Device::NotifyHandler::HandleBrokerConnectFailed </td>
+          <td class="memname">virtual void HandleBrokerConnectFailed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -279,8 +277,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a304d6c141b50577e81b53ed55518e003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a304d6c141b50577e81b53ed55518e003">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
+<a id="ada016c498e2f60ccc03d18a95cc1b244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada016c498e2f60ccc03d18a95cc1b244">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,9 +287,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::Device::NotifyHandler::HandleConnectedToBroker </td>
+          <td class="memname">virtual void HandleConnectedToBroker </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -324,8 +322,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a489cdca3808b58a6420516d8f3a01c6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a489cdca3808b58a6420516d8f3a01c6f">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
+<a id="a6273abe28ccf151383a2df6e46815aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6273abe28ccf151383a2df6e46815aee">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,9 +332,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::Device::NotifyHandler::HandleDisconnectedFromBroker </td>
+          <td class="memname">virtual void HandleDisconnectedFromBroker </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -369,8 +367,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d4c808de576d3c9e241edc2a897a0f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d4c808de576d3c9e241edc2a897a0f7">&#9670;&nbsp;</a></span>HandleDynamicUidStatus()</h2>
+<a id="a1593f9eb7d540e3335b63b923f4d09ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1593f9eb7d540e3335b63b923f4d09ca">&#9670;&nbsp;</a></span>HandleDynamicUidStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,9 +377,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::Device::NotifyHandler::HandleDynamicUidStatus </td>
+          <td class="memname">virtual void HandleDynamicUidStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -416,8 +414,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b8ec2bd2104aeadf771c5bcd6865fa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b8ec2bd2104aeadf771c5bcd6865fa5">&#9670;&nbsp;</a></span>HandleLlrpRdmCommand()</h2>
+<a id="af6e1cc42399790a59c5fb29adb398855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e1cc42399790a59c5fb29adb398855">&#9670;&nbsp;</a></span>HandleLlrpRdmCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,9 +424,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::Device::NotifyHandler::HandleLlrpRdmCommand </td>
+          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> HandleLlrpRdmCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -462,8 +460,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6b12b981d6f6664eba437bad431f1e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6b12b981d6f6664eba437bad431f1e9">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
+<a id="a26c65f645dceda8052eae3e69fb09a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c65f645dceda8052eae3e69fb09a99">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,9 +470,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::Device::NotifyHandler::HandleRdmCommand </td>
+          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> HandleRdmCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a8aceb3d8870acdc9c349c624f0e45bc1">Handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html#a6a600f0b3eac02ad65fe4ac28f16ef3b">Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>

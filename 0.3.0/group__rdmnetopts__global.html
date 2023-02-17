@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -258,7 +257,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use dynamic memory allocation. </p>
-<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through EtcPal's <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mempool.html">mempool (Memory Pools)</a>. The size of the pools and arrays is controlled with other config options starting with RDMNET_MAX_.</p>
+<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through EtcPal's <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__mempool.html">mempool (Memory Pools)</a>. The size of the pools and arrays is controlled with other config options starting with RDMNET_MAX_.</p>
 <p>If not defined in rdmnet_config.h, the library attempts to guess using standard OS predefined macros whether it is being compiled for a full-featured OS, in which case this option is defined to 1 (otherwise an embedded application is assumed and it is defined to 0). </p>
 
 </div>

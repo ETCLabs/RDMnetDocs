@@ -1,6 +1,6 @@
 var struct_rdmnet_dns_txt_record_item =
 [
-    [ "key", "struct_rdmnet_dns_txt_record_item.html#a1f90ff3c8c6e66108e3c800b51e7382d", null ],
-    [ "value", "struct_rdmnet_dns_txt_record_item.html#ac36f37595b2a6de5cf0e805438b89f58", null ],
-    [ "value_len", "struct_rdmnet_dns_txt_record_item.html#a5645aa4fa2a853ce21a1ad85ccebba79", null ]
+    [ "key", "struct_rdmnet_dns_txt_record_item.html#acd3d88da3c0e0313c3645ff34f62f542", null ],
+    [ "value", "struct_rdmnet_dns_txt_record_item.html#a3b453099a540c13329a7fa7d45579d4e", null ],
+    [ "value_len", "struct_rdmnet_dns_txt_record_item.html#ae02b3e5d161799d5639f0f0b9877997c", null ]
 ];

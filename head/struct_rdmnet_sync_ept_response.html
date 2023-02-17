@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -207,66 +207,84 @@ $(document).ready(function(){initNavTree('struct_rdmnet_sync_ept_response.html',
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<div class="textblock"><p>This structure should not be manipulated directly - use the macros to access it: </p>
+<div class="textblock"><p>This structure should not be manipulated directly - use the macros to access it:</p>
 <ul>
 <li><a class="el" href="group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9" title="Indicate that an EPT data message should be sent when this callback returns.">RDMNET_SYNC_SEND_EPT_DATA()</a></li>
 <li><a class="el" href="group__rdmnet__api__common.html#gaead1ffc05edef5d42829d8247ff558c0" title="Indicate that an EPT status message should be sent when this callback returns.">RDMNET_SYNC_SEND_EPT_STATUS()</a></li>
 <li><a class="el" href="group__rdmnet__api__common.html#ga552e1d71c574e91cc6436e75465b35e9" title="Defer the response to the EPT message, either to be sent later or because no response is necessary.">RDMNET_SYNC_DEFER_EPT_RESPONSE()</a></li>
 </ul>
 <p>Contains information about an RDMnet EPT response to be sent synchronously from an RDMnet callback. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1dbd4d5ad7fb220f905f00a128fe26a4"><td class="memItemLeft" align="right" valign="top"><a id="a1dbd4d5ad7fb220f905f00a128fe26a4"></a>
-<a class="el" href="group__rdmnet__api__common.html#ga0eb0a252159c7ae727d1e5b2b0244687">rdmnet_ept_response_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_ept_response.html#a1dbd4d5ad7fb220f905f00a128fe26a4">response_action</a></td></tr>
-<tr class="memdesc:a1dbd4d5ad7fb220f905f00a128fe26a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the response action to take. <br /></td></tr>
-<tr class="separator:a1dbd4d5ad7fb220f905f00a128fe26a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d0c8296f65b2d96e52c4f729305631"><td class="memItemLeft" ><a id="a09d0c8296f65b2d96e52c4f729305631"></a>
-union {</td></tr>
-<tr class="memitem:aebe04f38724cb01673f9866c0d7f4b67"><td class="memItemLeft" >&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_ept_response.html#a5f715590acfda9084b8e6921a6beefe5">response_data_len</a></td></tr>
-<tr class="memdesc:aebe04f38724cb01673f9866c0d7f4b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the response data which has been copied into the buffer given at initialization time.  <a href="union_rdmnet_sync_ept_response_1_1_0d1.html#aebe04f38724cb01673f9866c0d7f4b67">More...</a><br /></td></tr>
-<tr class="separator:aebe04f38724cb01673f9866c0d7f4b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b4c18c29f39abf382a2528721d8637"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a>&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_ept_response.html#a47005d788d7e5daab00018bdb7574e0e">status_code</a></td></tr>
-<tr class="memdesc:a92b4c18c29f39abf382a2528721d8637"><td class="mdescLeft">&#160;</td><td class="mdescRight">The EPT status code.  <a href="union_rdmnet_sync_ept_response_1_1_0d1.html#a92b4c18c29f39abf382a2528721d8637">More...</a><br /></td></tr>
-<tr class="separator:a92b4c18c29f39abf382a2528721d8637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d0c8296f65b2d96e52c4f729305631"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_ept_response.html#a09d0c8296f65b2d96e52c4f729305631">response_data</a></td></tr>
-<tr class="memdesc:a09d0c8296f65b2d96e52c4f729305631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data associated with certain response actions (use the macros to access). <br /></td></tr>
-<tr class="separator:a09d0c8296f65b2d96e52c4f729305631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339ec93920ecce36ef60046f552b37c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__api__common.html#ga0eb0a252159c7ae727d1e5b2b0244687">rdmnet_ept_response_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_ept_response.html#a339ec93920ecce36ef60046f552b37c9">response_action</a></td></tr>
+<tr class="separator:a339ec93920ecce36ef60046f552b37c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab171cabfcfe68c6736a329492fd1a0"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a3990ab9d830c68fd17925a5d1f689f74"><td class="memItemLeft" >&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_ept_response.html#a3990ab9d830c68fd17925a5d1f689f74">response_data_len</a></td></tr>
+<tr class="separator:a3990ab9d830c68fd17925a5d1f689f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173906502e3b5416044e8545ecfd5541"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a>&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_ept_response.html#a173906502e3b5416044e8545ecfd5541">status_code</a></td></tr>
+<tr class="separator:a173906502e3b5416044e8545ecfd5541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab171cabfcfe68c6736a329492fd1a0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_ept_response.html#a1ab171cabfcfe68c6736a329492fd1a0">response_data</a></td></tr>
+<tr class="separator:a1ab171cabfcfe68c6736a329492fd1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a5f715590acfda9084b8e6921a6beefe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f715590acfda9084b8e6921a6beefe5">&#9670;&nbsp;</a></span>response_data_len</h2>
+<a id="a339ec93920ecce36ef60046f552b37c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339ec93920ecce36ef60046f552b37c9">&#9670;&nbsp;</a></span>response_action</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t RdmnetSyncEptResponse::response_data_len</td>
+          <td class="memname"><a class="el" href="group__rdmnet__api__common.html#ga0eb0a252159c7ae727d1e5b2b0244687">rdmnet_ept_response_action_t</a> response_action</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The length of the response data which has been copied into the buffer given at initialization time. </p>
-<p>Valid if response_action is <a class="el" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac" title="Send an EPT data message to the originating EPT client.">kRdmnetEptResponseActionSendData</a>. </p>
+<p>Represents the response action to take. </p>
 
 </div>
 </div>
-<a id="a47005d788d7e5daab00018bdb7574e0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47005d788d7e5daab00018bdb7574e0e">&#9670;&nbsp;</a></span>status_code</h2>
+<a id="a1ab171cabfcfe68c6736a329492fd1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab171cabfcfe68c6736a329492fd1a0">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> RdmnetSyncEptResponse::status_code</td>
+          <td class="memname">union { ... }  response_data</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data associated with certain response actions (use the macros to access). </p>
 
-<p>The EPT status code. </p>
-<p>Valid if response action is <a class="el" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f" title="Send an EPT status message to the originating EPT client.">kRdmnetEptResponseActionSendStatus</a>. </p>
+</div>
+</div>
+<a id="a3990ab9d830c68fd17925a5d1f689f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3990ab9d830c68fd17925a5d1f689f74">&#9670;&nbsp;</a></span>response_data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t response_data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the response data which has been copied into the buffer given at initialization time. Valid if response_action is <a class="el" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687aec5d73811c5aad22b9808bc8ec26b4ac">kRdmnetEptResponseActionSendData</a>. </p>
+
+</div>
+</div>
+<a id="a173906502e3b5416044e8545ecfd5541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173906502e3b5416044e8545ecfd5541">&#9670;&nbsp;</a></span>status_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The EPT status code. Valid if response action is <a class="el" href="group__rdmnet__api__common.html#gga0eb0a252159c7ae727d1e5b2b0244687ae1249ee8597f072dcda17e1bb1f82a0f">kRdmnetEptResponseActionSendStatus</a>. </p>
 
 </div>
 </div>

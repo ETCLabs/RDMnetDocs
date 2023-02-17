@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -580,7 +579,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac35e678c3cc099a73e9314614215e1d8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8">rdmnet_init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *netint_config)</td></tr>
+<tr class="memitem:gac35e678c3cc099a73e9314614215e1d8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8">rdmnet_init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *netint_config)</td></tr>
 <tr class="memdesc:gac35e678c3cc099a73e9314614215e1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RDMnet library.  <a href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8">More...</a><br /></td></tr>
 <tr class="separator:gac35e678c3cc099a73e9314614215e1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba69f27b44e5b49f8635a75514a6c4da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaba69f27b44e5b49f8635a75514a6c4da">rdmnet_deinit</a> (void)</td></tr>
@@ -615,55 +614,55 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:gad9fa849981e1ebf2109c58febd774cf0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gad9fa849981e1ebf2109c58febd774cf0">rdmnet_rpt_client_type_to_string</a> (<a class="el" href="group__rdmnet__api__common.html#gaa736f925394f04b673b5070a6b4203b1">rpt_client_type_t</a> client_type)</td></tr>
 <tr class="memdesc:gad9fa849981e1ebf2109c58febd774cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string description of an RPT client type.  <a href="group__rdmnet__api__common.html#gad9fa849981e1ebf2109c58febd774cf0">More...</a><br /></td></tr>
 <tr class="separator:gad9fa849981e1ebf2109c58febd774cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d5b5c221b97833f4480af01b05ca02d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga5d5b5c221b97833f4480af01b05ca02d">rdmnet_save_rdm_command</a> (const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *command, <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *saved_command)</td></tr>
+<tr class="memitem:ga5d5b5c221b97833f4480af01b05ca02d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga5d5b5c221b97833f4480af01b05ca02d">rdmnet_save_rdm_command</a> (const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *command, <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *saved_command)</td></tr>
 <tr class="memdesc:ga5d5b5c221b97833f4480af01b05ca02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received RDM command for later use with API functions from a different context.  <a href="group__rdmnet__api__common.html#ga5d5b5c221b97833f4480af01b05ca02d">More...</a><br /></td></tr>
 <tr class="separator:ga5d5b5c221b97833f4480af01b05ca02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5d372571287234f8d82988755a1e967"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gad5d372571287234f8d82988755a1e967">rdmnet_save_rdm_response</a> (const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *response, <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_response)</td></tr>
+<tr class="memitem:gad5d372571287234f8d82988755a1e967"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gad5d372571287234f8d82988755a1e967">rdmnet_save_rdm_response</a> (const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *response, <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_response)</td></tr>
 <tr class="memdesc:gad5d372571287234f8d82988755a1e967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received RDM response for later use from a different context.  <a href="group__rdmnet__api__common.html#gad5d372571287234f8d82988755a1e967">More...</a><br /></td></tr>
 <tr class="separator:gad5d372571287234f8d82988755a1e967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga480d58441aecb63a71b68b2fce5ba8b5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga480d58441aecb63a71b68b2fce5ba8b5">rdmnet_append_to_saved_rdm_response</a> (const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *new_response, <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *previously_saved_response)</td></tr>
+<tr class="memitem:ga480d58441aecb63a71b68b2fce5ba8b5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga480d58441aecb63a71b68b2fce5ba8b5">rdmnet_append_to_saved_rdm_response</a> (const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *new_response, <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *previously_saved_response)</td></tr>
 <tr class="memdesc:ga480d58441aecb63a71b68b2fce5ba8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append more data to a SavedRdmResponse's parameter data.  <a href="group__rdmnet__api__common.html#ga480d58441aecb63a71b68b2fce5ba8b5">More...</a><br /></td></tr>
 <tr class="separator:ga480d58441aecb63a71b68b2fce5ba8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac21c16cd05695c03c5833ae57d0506c6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gac21c16cd05695c03c5833ae57d0506c6">rdmnet_save_rpt_status</a> (const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *status, <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status)</td></tr>
+<tr class="memitem:gac21c16cd05695c03c5833ae57d0506c6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gac21c16cd05695c03c5833ae57d0506c6">rdmnet_save_rpt_status</a> (const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *status, <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status)</td></tr>
 <tr class="memdesc:gac21c16cd05695c03c5833ae57d0506c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received RPT status message for later use from a different context.  <a href="group__rdmnet__api__common.html#gac21c16cd05695c03c5833ae57d0506c6">More...</a><br /></td></tr>
 <tr class="separator:gac21c16cd05695c03c5833ae57d0506c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ef8939b66788309e425357245cda524"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga0ef8939b66788309e425357245cda524">rdmnet_copy_saved_rdm_response</a> (const <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_resp_old, <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_resp_new)</td></tr>
+<tr class="memitem:ga0ef8939b66788309e425357245cda524"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga0ef8939b66788309e425357245cda524">rdmnet_copy_saved_rdm_response</a> (const <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_resp_old, <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_resp_new)</td></tr>
 <tr class="memdesc:ga0ef8939b66788309e425357245cda524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data from a saved RDM response to a different saved RDM response.  <a href="group__rdmnet__api__common.html#ga0ef8939b66788309e425357245cda524">More...</a><br /></td></tr>
 <tr class="separator:ga0ef8939b66788309e425357245cda524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac82388d3b3fe3487842c3157ad7889ba"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gac82388d3b3fe3487842c3157ad7889ba">rdmnet_copy_saved_rpt_status</a> (const <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status_old, <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status_new)</td></tr>
+<tr class="memitem:gac82388d3b3fe3487842c3157ad7889ba"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gac82388d3b3fe3487842c3157ad7889ba">rdmnet_copy_saved_rpt_status</a> (const <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status_old, <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status_new)</td></tr>
 <tr class="memdesc:gac82388d3b3fe3487842c3157ad7889ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data from a saved RPT status message to a different saved RPT status message.  <a href="group__rdmnet__api__common.html#gac82388d3b3fe3487842c3157ad7889ba">More...</a><br /></td></tr>
 <tr class="separator:gac82388d3b3fe3487842c3157ad7889ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga192b92f8d612f8098f799ef87e4bea11"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga192b92f8d612f8098f799ef87e4bea11">rdmnet_free_saved_rdm_response</a> (<a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_response)</td></tr>
+<tr class="memitem:ga192b92f8d612f8098f799ef87e4bea11"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga192b92f8d612f8098f799ef87e4bea11">rdmnet_free_saved_rdm_response</a> (<a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *saved_response)</td></tr>
 <tr class="memdesc:ga192b92f8d612f8098f799ef87e4bea11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory owned by a saved RDM response.  <a href="group__rdmnet__api__common.html#ga192b92f8d612f8098f799ef87e4bea11">More...</a><br /></td></tr>
 <tr class="separator:ga192b92f8d612f8098f799ef87e4bea11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f98ea42e26733ec7923afee2975b6b4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga5f98ea42e26733ec7923afee2975b6b4">rdmnet_free_saved_rpt_status</a> (<a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status)</td></tr>
+<tr class="memitem:ga5f98ea42e26733ec7923afee2975b6b4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga5f98ea42e26733ec7923afee2975b6b4">rdmnet_free_saved_rpt_status</a> (<a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *saved_status)</td></tr>
 <tr class="memdesc:ga5f98ea42e26733ec7923afee2975b6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory owned by a saved RPT status message.  <a href="group__rdmnet__api__common.html#ga5f98ea42e26733ec7923afee2975b6b4">More...</a><br /></td></tr>
 <tr class="separator:ga5f98ea42e26733ec7923afee2975b6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa415286760ac23790d49a89bcc75c5ea"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa415286760ac23790d49a89bcc75c5ea">rdmnet_save_ept_data</a> (const <a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a> *data, <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data)</td></tr>
+<tr class="memitem:gaa415286760ac23790d49a89bcc75c5ea"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa415286760ac23790d49a89bcc75c5ea">rdmnet_save_ept_data</a> (const <a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a> *data, <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data)</td></tr>
 <tr class="memdesc:gaa415286760ac23790d49a89bcc75c5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received EPT data message for later use from a different context.  <a href="group__rdmnet__api__common.html#gaa415286760ac23790d49a89bcc75c5ea">More...</a><br /></td></tr>
 <tr class="separator:gaa415286760ac23790d49a89bcc75c5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedd5a417910f696872456a39f15e53fc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaedd5a417910f696872456a39f15e53fc">rdmnet_save_ept_status</a> (const <a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a> *status, <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status)</td></tr>
+<tr class="memitem:gaedd5a417910f696872456a39f15e53fc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaedd5a417910f696872456a39f15e53fc">rdmnet_save_ept_status</a> (const <a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a> *status, <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status)</td></tr>
 <tr class="memdesc:gaedd5a417910f696872456a39f15e53fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received EPT status message for later use from a different context.  <a href="group__rdmnet__api__common.html#gaedd5a417910f696872456a39f15e53fc">More...</a><br /></td></tr>
 <tr class="separator:gaedd5a417910f696872456a39f15e53fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e9e2c2e2abd61cb59db234583e90a77"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga6e9e2c2e2abd61cb59db234583e90a77">rdmnet_copy_saved_ept_data</a> (const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data_old, <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data_new)</td></tr>
+<tr class="memitem:ga6e9e2c2e2abd61cb59db234583e90a77"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga6e9e2c2e2abd61cb59db234583e90a77">rdmnet_copy_saved_ept_data</a> (const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data_old, <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data_new)</td></tr>
 <tr class="memdesc:ga6e9e2c2e2abd61cb59db234583e90a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data from a saved EPT data message to a different saved EPT data message.  <a href="group__rdmnet__api__common.html#ga6e9e2c2e2abd61cb59db234583e90a77">More...</a><br /></td></tr>
 <tr class="separator:ga6e9e2c2e2abd61cb59db234583e90a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbee09c7332dd56aed9be717689d4904"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gadbee09c7332dd56aed9be717689d4904">rdmnet_copy_saved_ept_status</a> (const <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status_old, <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status_new)</td></tr>
+<tr class="memitem:gadbee09c7332dd56aed9be717689d4904"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gadbee09c7332dd56aed9be717689d4904">rdmnet_copy_saved_ept_status</a> (const <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status_old, <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status_new)</td></tr>
 <tr class="memdesc:gadbee09c7332dd56aed9be717689d4904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data from a saved EPT status message to a different saved EPT status message.  <a href="group__rdmnet__api__common.html#gadbee09c7332dd56aed9be717689d4904">More...</a><br /></td></tr>
 <tr class="separator:gadbee09c7332dd56aed9be717689d4904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0ef2d0dace2d4047327c3a6f1d33baf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gab0ef2d0dace2d4047327c3a6f1d33baf">rdmnet_free_saved_ept_data</a> (<a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data)</td></tr>
+<tr class="memitem:gab0ef2d0dace2d4047327c3a6f1d33baf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gab0ef2d0dace2d4047327c3a6f1d33baf">rdmnet_free_saved_ept_data</a> (<a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *saved_data)</td></tr>
 <tr class="memdesc:gab0ef2d0dace2d4047327c3a6f1d33baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory owned by a saved EPT data message.  <a href="group__rdmnet__api__common.html#gab0ef2d0dace2d4047327c3a6f1d33baf">More...</a><br /></td></tr>
 <tr class="separator:gab0ef2d0dace2d4047327c3a6f1d33baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a0311e9decd926ae40ab2afc1063b9b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga1a0311e9decd926ae40ab2afc1063b9b">rdmnet_free_saved_ept_status</a> (<a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status)</td></tr>
+<tr class="memitem:ga1a0311e9decd926ae40ab2afc1063b9b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga1a0311e9decd926ae40ab2afc1063b9b">rdmnet_free_saved_ept_status</a> (<a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *saved_status)</td></tr>
 <tr class="memdesc:ga1a0311e9decd926ae40ab2afc1063b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory owned by a saved EPT status message.  <a href="group__rdmnet__api__common.html#ga1a0311e9decd926ae40ab2afc1063b9b">More...</a><br /></td></tr>
 <tr class="separator:ga1a0311e9decd926ae40ab2afc1063b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5f28f78f4a446b9d58cd1a27e8f6764"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa5f28f78f4a446b9d58cd1a27e8f6764">rdmnet_save_llrp_rdm_command</a> (const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *command, <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *saved_command)</td></tr>
+<tr class="memitem:gaa5f28f78f4a446b9d58cd1a27e8f6764"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa5f28f78f4a446b9d58cd1a27e8f6764">rdmnet_save_llrp_rdm_command</a> (const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *command, <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *saved_command)</td></tr>
 <tr class="memdesc:gaa5f28f78f4a446b9d58cd1a27e8f6764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received LLRP RDM command for later use with API functions from a different context.  <a href="group__rdmnet__api__common.html#gaa5f28f78f4a446b9d58cd1a27e8f6764">More...</a><br /></td></tr>
 <tr class="separator:gaa5f28f78f4a446b9d58cd1a27e8f6764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga534978db963058f2913a62ac143f3a09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga534978db963058f2913a62ac143f3a09">rdmnet_save_llrp_rdm_response</a> (const <a class="el" href="struct_llrp_rdm_response.html">LlrpRdmResponse</a> *response, <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *saved_response)</td></tr>
+<tr class="memitem:ga534978db963058f2913a62ac143f3a09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga534978db963058f2913a62ac143f3a09">rdmnet_save_llrp_rdm_response</a> (const <a class="el" href="struct_llrp_rdm_response.html">LlrpRdmResponse</a> *response, <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *saved_response)</td></tr>
 <tr class="memdesc:ga534978db963058f2913a62ac143f3a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in a received LLRP RDM response for later use from a different context.  <a href="group__rdmnet__api__common.html#ga534978db963058f2913a62ac143f3a09">More...</a><br /></td></tr>
 <tr class="separator:ga534978db963058f2913a62ac143f3a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f9e20a7230b89ba6a9c99bafb3ff60d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga3f9e20a7230b89ba6a9c99bafb3ff60d">rdmnet_copy_saved_llrp_rdm_response</a> (const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *saved_resp_old, <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *saved_resp_new)</td></tr>
+<tr class="memitem:ga3f9e20a7230b89ba6a9c99bafb3ff60d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga3f9e20a7230b89ba6a9c99bafb3ff60d">rdmnet_copy_saved_llrp_rdm_response</a> (const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *saved_resp_old, <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *saved_resp_new)</td></tr>
 <tr class="memdesc:ga3f9e20a7230b89ba6a9c99bafb3ff60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data from a saved LLRP RDM response to a different saved LLRP RDM response.  <a href="group__rdmnet__api__common.html#ga3f9e20a7230b89ba6a9c99bafb3ff60d">More...</a><br /></td></tr>
 <tr class="separator:ga3f9e20a7230b89ba6a9c99bafb3ff60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1137,7 +1136,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configptr</td><td>Pointer to <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a>. </td></tr>
-    <tr><td class="paramname">broker_addr</td><td>Address and port for a static broker (<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>) </td></tr>
+    <tr><td class="paramname">broker_addr</td><td>Address and port for a static broker (<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1187,7 +1186,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   <table class="params">
     <tr><td class="paramname">configptr</td><td>Pointer to <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a>. </td></tr>
     <tr><td class="paramname">scope_str</td><td>UTF-8 scope string (const char *), must remain valid for as long as this scope config exists. </td></tr>
-    <tr><td class="paramname">broker_addr</td><td>Address and port for a static broker (<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>). </td></tr>
+    <tr><td class="paramname">broker_addr</td><td>Address and port for a static broker (<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1233,9 +1232,9 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  {                                                   \</div>
-<div class="line">    E133_DEFAULT_SCOPE, { 0, <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gad8ef4406c72bd87baad2ce085fb29daf">ETCPAL_IP_INVALID_INIT</a> } \</div>
+<div class="line">    E133_DEFAULT_SCOPE, { 0, <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gad8ef4406c72bd87baad2ce085fb29daf">ETCPAL_IP_INVALID_INIT</a> } \</div>
 <div class="line">  }</div>
-<div class="ttc" id="agroup__etcpal__inet_html_gad8ef4406c72bd87baad2ce085fb29daf"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gad8ef4406c72bd87baad2ce085fb29daf">ETCPAL_IP_INVALID_INIT</a></div><div class="ttdeci">#define ETCPAL_IP_INVALID_INIT</div></div>
+<div class="ttc" id="agroup__etcpal__inet_html_gad8ef4406c72bd87baad2ce085fb29daf"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gad8ef4406c72bd87baad2ce085fb29daf">ETCPAL_IP_INVALID_INIT</a></div><div class="ttdeci">#define ETCPAL_IP_INVALID_INIT</div></div>
 </div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating.">RdmnetScopeConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> scope_config = <a class="code" href="group__rdmnet__api__common.html#gac8a93b214f8dc87d944bc1d6e3e216f4">RDMNET_SCOPE_CONFIG_DEFAULT_INIT</a>;</div>
@@ -2087,7 +2086,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_append_to_saved_rdm_response </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_append_to_saved_rdm_response </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *&#160;</td>
           <td class="paramname"><em>new_response</em>, </td>
@@ -2115,13 +2114,13 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Data appended successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Data appended successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for new response data. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for new response data. </dd></dl>
 
 </div>
 </div>
@@ -2188,7 +2187,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_ept_data </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_ept_data </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *&#160;</td>
           <td class="paramname"><em>saved_data_old</em>, </td>
@@ -2216,13 +2215,13 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Data copied successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Data copied successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for data. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for data. </dd></dl>
 
 </div>
 </div>
@@ -2233,7 +2232,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_ept_status </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_ept_status </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *&#160;</td>
           <td class="paramname"><em>saved_status_old</em>, </td>
@@ -2261,13 +2260,13 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message copied successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message copied successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
 
 </div>
 </div>
@@ -2278,7 +2277,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_llrp_rdm_response </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_llrp_rdm_response </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> *&#160;</td>
           <td class="paramname"><em>saved_resp_old</em>, </td>
@@ -2305,9 +2304,9 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response copied successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response copied successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
 
 </div>
 </div>
@@ -2318,7 +2317,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_rdm_response </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_rdm_response </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *&#160;</td>
           <td class="paramname"><em>saved_resp_old</em>, </td>
@@ -2346,13 +2345,13 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response copied successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response copied successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for response data. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for response data. </dd></dl>
 
 </div>
 </div>
@@ -2363,7 +2362,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_rpt_status </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_copy_saved_rpt_status </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *&#160;</td>
           <td class="paramname"><em>saved_status_old</em>, </td>
@@ -2391,13 +2390,13 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message copied successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message copied successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
 
 </div>
 </div>
@@ -2513,7 +2512,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_ept_data </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_ept_data </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> *&#160;</td>
           <td class="paramname"><em>saved_data</em></td><td>)</td>
@@ -2530,11 +2529,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response freed successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response freed successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
 
 </div>
 </div>
@@ -2545,7 +2544,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_ept_status </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_ept_status </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a> *&#160;</td>
           <td class="paramname"><em>saved_status</em></td><td>)</td>
@@ -2562,11 +2561,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message freed successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message freed successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
 
 </div>
 </div>
@@ -2577,7 +2576,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_rdm_response </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_rdm_response </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a> *&#160;</td>
           <td class="paramname"><em>saved_response</em></td><td>)</td>
@@ -2594,11 +2593,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response freed successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response freed successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
 
 </div>
 </div>
@@ -2609,7 +2608,7 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_rpt_status </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_free_saved_rpt_status </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a> *&#160;</td>
           <td class="paramname"><em>saved_status</em></td><td>)</td>
@@ -2626,11 +2625,11 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message freed successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message freed successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd></dl>
 
 </div>
 </div>
@@ -2641,9 +2640,9 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_init </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_init </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *&#160;</td>
           <td class="paramname"><em>log_params</em>, </td>
         </tr>
         <tr>
@@ -2669,13 +2668,13 @@ typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSave
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: No network interfaces found on the system. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: No network interfaces found on the system. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd>
 <dd>
 Other error codes are possible from the initialization of EtcPal. </dd></dl>
 
@@ -2716,7 +2715,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_ept_data </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_ept_data </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a> *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -2745,13 +2744,13 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Data saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Data saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for data. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for data. </dd></dl>
 
 </div>
 </div>
@@ -2762,7 +2761,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_ept_status </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_ept_status </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a> *&#160;</td>
           <td class="paramname"><em>status</em>, </td>
@@ -2791,13 +2790,13 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
 
 </div>
 </div>
@@ -2808,7 +2807,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_llrp_rdm_command </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_llrp_rdm_command </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *&#160;</td>
           <td class="paramname"><em>command</em>, </td>
@@ -2836,9 +2835,9 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Command saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Command saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
 
 </div>
 </div>
@@ -2849,7 +2848,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_llrp_rdm_response </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_llrp_rdm_response </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_llrp_rdm_response.html">LlrpRdmResponse</a> *&#160;</td>
           <td class="paramname"><em>response</em>, </td>
@@ -2877,9 +2876,9 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
 
 </div>
 </div>
@@ -2890,7 +2889,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_rdm_command </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_rdm_command </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *&#160;</td>
           <td class="paramname"><em>command</em>, </td>
@@ -2918,9 +2917,9 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Command saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Command saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
 
 </div>
 </div>
@@ -2931,7 +2930,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_rdm_response </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_rdm_response </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *&#160;</td>
           <td class="paramname"><em>response</em>, </td>
@@ -2960,13 +2959,13 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Response saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for response data. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for response data. </dd></dl>
 
 </div>
 </div>
@@ -2977,7 +2976,7 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_rpt_status </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_save_rpt_status </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *&#160;</td>
           <td class="paramname"><em>status</em>, </td>
@@ -3006,13 +3005,13 @@ Other error codes are possible from the initialization of EtcPal. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message saved successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Status message saved successfully. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet was compiled with <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation.">RDMNET_DYNAMIC_MEM</a> set to 0. </dd>
 <dd>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: Couldn't allocate memory for status string. </dd></dl>
 
 </div>
 </div>

@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -234,7 +233,7 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:afd0fb795778d3bb5b16083a27446dbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an <a class="el" href="classrdmnet_1_1_rdm_command.html" title="An RDM command received over RDMnet and delivered to an RDMnet callback function.">RdmCommand</a> to an instance of this class. <br /></td></tr>
 <tr class="separator:afd0fb795778d3bb5b16083a27446dbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71098fea089577a71ca3c35226ec3617"><td class="memItemLeft" align="right" valign="top"><a id="a71098fea089577a71ca3c35226ec3617"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a71098fea089577a71ca3c35226ec3617">rdmnet_source_uid</a> () const noexcept</td></tr>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a71098fea089577a71ca3c35226ec3617">rdmnet_source_uid</a> () const noexcept</td></tr>
 <tr class="memdesc:a71098fea089577a71ca3c35226ec3617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the RDMnet controller that sent this command. <br /></td></tr>
 <tr class="separator:a71098fea089577a71ca3c35226ec3617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af121ba9f857b4fd8cfccb05104769064"><td class="memItemLeft" align="right" valign="top"><a id="af121ba9f857b4fd8cfccb05104769064"></a>
@@ -246,11 +245,11 @@ constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memdesc:a8d832053aa92b9072bfb14b0c8c8963b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDMnet sequence number of this command. <br /></td></tr>
 <tr class="separator:a8d832053aa92b9072bfb14b0c8c8963b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51b1a0b2b4a103401ac461d048e2e32c"><td class="memItemLeft" align="right" valign="top"><a id="a51b1a0b2b4a103401ac461d048e2e32c"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a51b1a0b2b4a103401ac461d048e2e32c">rdm_source_uid</a> () const noexcept</td></tr>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a51b1a0b2b4a103401ac461d048e2e32c">rdm_source_uid</a> () const noexcept</td></tr>
 <tr class="memdesc:a51b1a0b2b4a103401ac461d048e2e32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the RDM controller that sent this command. <br /></td></tr>
 <tr class="separator:a51b1a0b2b4a103401ac461d048e2e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8302a85dc4d6e38a4c19e56834dc21cc"><td class="memItemLeft" align="right" valign="top"><a id="a8302a85dc4d6e38a4c19e56834dc21cc"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a8302a85dc4d6e38a4c19e56834dc21cc">rdm_dest_uid</a> () const noexcept</td></tr>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a8302a85dc4d6e38a4c19e56834dc21cc">rdm_dest_uid</a> () const noexcept</td></tr>
 <tr class="memdesc:a8302a85dc4d6e38a4c19e56834dc21cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the RDM responder to which this command is addressed. <br /></td></tr>
 <tr class="separator:a8302a85dc4d6e38a4c19e56834dc21cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090fb7c94f2225f56956e0e84b24dc0e"><td class="memItemLeft" align="right" valign="top"><a id="a090fb7c94f2225f56956e0e84b24dc0e"></a>
@@ -258,7 +257,7 @@ constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memdesc:a090fb7c94f2225f56956e0e84b24dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM subdevice to which this command is addressed (0 means the root device). <br /></td></tr>
 <tr class="separator:a090fb7c94f2225f56956e0e84b24dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a355515fc831f8dadb835b9cd55ce5e1c"><td class="memItemLeft" align="right" valign="top"><a id="a355515fc831f8dadb835b9cd55ce5e1c"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gafda6b6d4c08788e755cb3cb6c1ca021b">rdm_command_class_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a355515fc831f8dadb835b9cd55ce5e1c">command_class</a> () const noexcept</td></tr>
+constexpr rdm_command_class_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a355515fc831f8dadb835b9cd55ce5e1c">command_class</a> () const noexcept</td></tr>
 <tr class="memdesc:a355515fc831f8dadb835b9cd55ce5e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM command class of this command. <br /></td></tr>
 <tr class="separator:a355515fc831f8dadb835b9cd55ce5e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2815346e2109fbde79590d14a2e32275"><td class="memItemLeft" align="right" valign="top"><a id="a2815346e2109fbde79590d14a2e32275"></a>
@@ -266,7 +265,7 @@ constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memdesc:a2815346e2109fbde79590d14a2e32275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM parameter ID (PID) of this command. <br /></td></tr>
 <tr class="separator:a2815346e2109fbde79590d14a2e32275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a418a1a69079ad57223bd29fd0860d187"><td class="memItemLeft" align="right" valign="top"><a id="a418a1a69079ad57223bd29fd0860d187"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command_header.html">rdm::CommandHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a418a1a69079ad57223bd29fd0860d187">rdm_header</a> () const noexcept</td></tr>
+constexpr rdm::CommandHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a418a1a69079ad57223bd29fd0860d187">rdm_header</a> () const noexcept</td></tr>
 <tr class="memdesc:a418a1a69079ad57223bd29fd0860d187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM protocol header contained within this command. <br /></td></tr>
 <tr class="separator:a418a1a69079ad57223bd29fd0860d187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc8692bc54e516d2213509da27593e7"><td class="memItemLeft" align="right" valign="top"><a id="a0dc8692bc54e516d2213509da27593e7"></a>
@@ -296,7 +295,7 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr class="memdesc:a84bc5c3c4d44b98c502aacc5fd3b79f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command is an RDM SET command. <br /></td></tr>
 <tr class="separator:a84bc5c3c4d44b98c502aacc5fd3b79f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f34bea9e393f9eebd033c7cb4579842"><td class="memItemLeft" align="right" valign="top"><a id="a8f34bea9e393f9eebd033c7cb4579842"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__cpp.html#ga27619ac477b23790da36baecb4389ee1">ETCPAL_CONSTEXPR_14</a> <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a8f34bea9e393f9eebd033c7cb4579842">get</a> () noexcept</td></tr>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp.html#ga27619ac477b23790da36baecb4389ee1">ETCPAL_CONSTEXPR_14</a> <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a8f34bea9e393f9eebd033c7cb4579842">get</a> () noexcept</td></tr>
 <tr class="memdesc:a8f34bea9e393f9eebd033c7cb4579842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mutable reference to the underlying C type. <br /></td></tr>
 <tr class="separator:a8f34bea9e393f9eebd033c7cb4579842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd58b1c0dd9ab25df8427a6b5f2e901"><td class="memItemLeft" align="right" valign="top"><a id="a4dd58b1c0dd9ab25df8427a6b5f2e901"></a>
@@ -304,7 +303,7 @@ constexpr const <a class="el" href="struct_rdmnet_saved_rdm_command.html">Rdmnet
 <tr class="memdesc:a4dd58b1c0dd9ab25df8427a6b5f2e901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
 <tr class="separator:a4dd58b1c0dd9ab25df8427a6b5f2e901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce2e273a01f37ce06424ae1ad03a5b4"><td class="memItemLeft" align="right" valign="top"><a id="a5ce2e273a01f37ce06424ae1ad03a5b4"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command.html">rdm::Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a5ce2e273a01f37ce06424ae1ad03a5b4">ToRdm</a> () const</td></tr>
+rdm::Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html#a5ce2e273a01f37ce06424ae1ad03a5b4">ToRdm</a> () const</td></tr>
 <tr class="memdesc:a5ce2e273a01f37ce06424ae1ad03a5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the RDM data in this command to an RDM command type. <br /></td></tr>
 <tr class="separator:a5ce2e273a01f37ce06424ae1ad03a5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,78 +208,232 @@ $(document).ready(function(){initNavTree('struct_rdmnet_broker_disc_info.html','
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Information about a broker discovered or registered using DNS-SD. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="discovery_8h_source.html">rdmnet/discovery.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a9891833bc86684e7aff6a70a7cee9080"><td class="memItemLeft" align="right" valign="top"><a id="a9891833bc86684e7aff6a70a7cee9080"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a9891833bc86684e7aff6a70a7cee9080">cid</a></td></tr>
-<tr class="memdesc:a9891833bc86684e7aff6a70a7cee9080"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's CID. <br /></td></tr>
-<tr class="separator:a9891833bc86684e7aff6a70a7cee9080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb56819d9a3493f778e57c385f8c859"><td class="memItemLeft" align="right" valign="top"><a id="a7fb56819d9a3493f778e57c385f8c859"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a7fb56819d9a3493f778e57c385f8c859">uid</a></td></tr>
-<tr class="memdesc:a7fb56819d9a3493f778e57c385f8c859"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's UID. <br /></td></tr>
-<tr class="separator:a7fb56819d9a3493f778e57c385f8c859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be6ebc05a04a1a35d592d953793c803"><td class="memItemLeft" align="right" valign="top"><a id="a7be6ebc05a04a1a35d592d953793c803"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a7be6ebc05a04a1a35d592d953793c803">e133_version</a></td></tr>
-<tr class="memdesc:a7be6ebc05a04a1a35d592d953793c803"><td class="mdescLeft">&#160;</td><td class="mdescRight">The E1.33 version that the broker supports. <br /></td></tr>
-<tr class="separator:a7be6ebc05a04a1a35d592d953793c803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a772228c94095042fd186172d11fce5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a6a772228c94095042fd186172d11fce5">service_instance_name</a></td></tr>
-<tr class="memdesc:a6a772228c94095042fd186172d11fce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's service instance name.  <a href="struct_rdmnet_broker_disc_info.html#a6a772228c94095042fd186172d11fce5">More...</a><br /></td></tr>
-<tr class="separator:a6a772228c94095042fd186172d11fce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5d5aaea9e77c5452f904f6f0f0fd8e"><td class="memItemLeft" align="right" valign="top"><a id="a2c5d5aaea9e77c5452f904f6f0f0fd8e"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a2c5d5aaea9e77c5452f904f6f0f0fd8e">port</a></td></tr>
-<tr class="memdesc:a2c5d5aaea9e77c5452f904f6f0f0fd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port on which the broker is listening for RDMnet connections. <br /></td></tr>
-<tr class="separator:a2c5d5aaea9e77c5452f904f6f0f0fd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af66604c055013caff26ed5425a2834a8"><td class="memItemLeft" align="right" valign="top"><a id="af66604c055013caff26ed5425a2834a8"></a>
-const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#af66604c055013caff26ed5425a2834a8">listen_addrs</a></td></tr>
-<tr class="memdesc:af66604c055013caff26ed5425a2834a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of IP addresses at which the broker is listening for RDMnet connections. <br /></td></tr>
-<tr class="separator:af66604c055013caff26ed5425a2834a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a753f47526e6fbc38099d6966727e59"><td class="memItemLeft" align="right" valign="top"><a id="a2a753f47526e6fbc38099d6966727e59"></a>
-const unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a2a753f47526e6fbc38099d6966727e59">listen_addr_netints</a></td></tr>
-<tr class="memdesc:a2a753f47526e6fbc38099d6966727e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of local network interface IDs for reaching each respective address in listen_addrs. <br /></td></tr>
-<tr class="separator:a2a753f47526e6fbc38099d6966727e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e30b641a7d8d8883983f124c8faffb4"><td class="memItemLeft" align="right" valign="top"><a id="a9e30b641a7d8d8883983f124c8faffb4"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a9e30b641a7d8d8883983f124c8faffb4">num_listen_addrs</a></td></tr>
-<tr class="memdesc:a9e30b641a7d8d8883983f124c8faffb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the listen_addrs and listen_addr_netints arrays. <br /></td></tr>
-<tr class="separator:a9e30b641a7d8d8883983f124c8faffb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a572a29380550d625bd533dbea9a7ffd8"><td class="memItemLeft" align="right" valign="top"><a id="a572a29380550d625bd533dbea9a7ffd8"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a572a29380550d625bd533dbea9a7ffd8">scope</a></td></tr>
-<tr class="memdesc:a572a29380550d625bd533dbea9a7ffd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's RDMnet scope. <br /></td></tr>
-<tr class="separator:a572a29380550d625bd533dbea9a7ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51a474c17a6a0130b4b239a2a9fb5948"><td class="memItemLeft" align="right" valign="top"><a id="a51a474c17a6a0130b4b239a2a9fb5948"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a51a474c17a6a0130b4b239a2a9fb5948">model</a></td></tr>
-<tr class="memdesc:a51a474c17a6a0130b4b239a2a9fb5948"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's product model name. <br /></td></tr>
-<tr class="separator:a51a474c17a6a0130b4b239a2a9fb5948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a3251c4d2656a765e7582e76377cad9"><td class="memItemLeft" align="right" valign="top"><a id="a5a3251c4d2656a765e7582e76377cad9"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a5a3251c4d2656a765e7582e76377cad9">manufacturer</a></td></tr>
-<tr class="memdesc:a5a3251c4d2656a765e7582e76377cad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the broker's manufacturer. <br /></td></tr>
-<tr class="separator:a5a3251c4d2656a765e7582e76377cad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d1e15016f7b4012511074bc89f0a318"><td class="memItemLeft" align="right" valign="top"><a id="a5d1e15016f7b4012511074bc89f0a318"></a>
-const <a class="el" href="struct_rdmnet_dns_txt_record_item.html">RdmnetDnsTxtRecordItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a5d1e15016f7b4012511074bc89f0a318">additional_txt_items</a></td></tr>
-<tr class="memdesc:a5d1e15016f7b4012511074bc89f0a318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any additional non-standard items that were present in the discovered broker's TXT record. <br /></td></tr>
-<tr class="separator:a5d1e15016f7b4012511074bc89f0a318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf93a120ca0267a52471081b813fd608"><td class="memItemLeft" align="right" valign="top"><a id="acf93a120ca0267a52471081b813fd608"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#acf93a120ca0267a52471081b813fd608">num_additional_txt_items</a></td></tr>
-<tr class="memdesc:acf93a120ca0267a52471081b813fd608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the additional_txt_items array. <br /></td></tr>
-<tr class="separator:acf93a120ca0267a52471081b813fd608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a></td></tr>
+<tr class="separator:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad908bad751766196cc2334b0f8579a5c"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#ad908bad751766196cc2334b0f8579a5c">uid</a></td></tr>
+<tr class="separator:ad908bad751766196cc2334b0f8579a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022634c5f7624379b08111f1a0c8d6c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a022634c5f7624379b08111f1a0c8d6c7">e133_version</a></td></tr>
+<tr class="separator:a022634c5f7624379b08111f1a0c8d6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf02cd0ff95b90c4588002535a50440"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#afdf02cd0ff95b90c4588002535a50440">service_instance_name</a></td></tr>
+<tr class="memdesc:afdf02cd0ff95b90c4588002535a50440"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's service instance name.  <a href="struct_rdmnet_broker_disc_info.html#afdf02cd0ff95b90c4588002535a50440">More...</a><br /></td></tr>
+<tr class="separator:afdf02cd0ff95b90c4588002535a50440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a></td></tr>
+<tr class="separator:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23e4ac3e79c69795a69afa2d06004cc"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#ae23e4ac3e79c69795a69afa2d06004cc">listen_addrs</a></td></tr>
+<tr class="separator:ae23e4ac3e79c69795a69afa2d06004cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9db01549cd891c29a85b21e36a5526"><td class="memItemLeft" align="right" valign="top">const unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a1b9db01549cd891c29a85b21e36a5526">listen_addr_netints</a></td></tr>
+<tr class="separator:a1b9db01549cd891c29a85b21e36a5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3837524eb4b81df6ed4c50b5b7badf7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#af3837524eb4b81df6ed4c50b5b7badf7">num_listen_addrs</a></td></tr>
+<tr class="separator:af3837524eb4b81df6ed4c50b5b7badf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab">scope</a></td></tr>
+<tr class="separator:aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedac94690dae483bee8b0dd9d3ead21a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#aedac94690dae483bee8b0dd9d3ead21a">model</a></td></tr>
+<tr class="separator:aedac94690dae483bee8b0dd9d3ead21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84875663cfc7f10e83b39e143e4d6ca2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a84875663cfc7f10e83b39e143e4d6ca2">manufacturer</a></td></tr>
+<tr class="separator:a84875663cfc7f10e83b39e143e4d6ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5434ec3d1480e8c6b0ab4d899ec28bf1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_rdmnet_dns_txt_record_item.html">RdmnetDnsTxtRecordItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a5434ec3d1480e8c6b0ab4d899ec28bf1">additional_txt_items</a></td></tr>
+<tr class="separator:a5434ec3d1480e8c6b0ab4d899ec28bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174b4b1ee87fd017eaace1c1fc6bfc74"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html#a174b4b1ee87fd017eaace1c1fc6bfc74">num_additional_txt_items</a></td></tr>
+<tr class="separator:a174b4b1ee87fd017eaace1c1fc6bfc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a6a772228c94095042fd186172d11fce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a772228c94095042fd186172d11fce5">&#9670;&nbsp;</a></span>service_instance_name</h2>
+<a id="a5434ec3d1480e8c6b0ab4d899ec28bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5434ec3d1480e8c6b0ab4d899ec28bf1">&#9670;&nbsp;</a></span>additional_txt_items</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* RdmnetBrokerDiscInfo::service_instance_name</td>
+          <td class="memname">const <a class="el" href="struct_rdmnet_dns_txt_record_item.html">RdmnetDnsTxtRecordItem</a>* additional_txt_items</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Any additional non-standard items that were present in the discovered broker's TXT record. </p>
+
+</div>
+</div>
+<a id="a4c3f7d9a58af5033f9acd8c942bf81d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3f7d9a58af5033f9acd8c942bf81d9">&#9670;&nbsp;</a></span>cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The broker's CID. </p>
+
+</div>
+</div>
+<a id="a022634c5f7624379b08111f1a0c8d6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022634c5f7624379b08111f1a0c8d6c7">&#9670;&nbsp;</a></span>e133_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int e133_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The E1.33 version that the broker supports. </p>
+
+</div>
+</div>
+<a id="a1b9db01549cd891c29a85b21e36a5526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9db01549cd891c29a85b21e36a5526">&#9670;&nbsp;</a></span>listen_addr_netints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int* listen_addr_netints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An array of local network interface IDs for reaching each respective address in listen_addrs. </p>
+
+</div>
+</div>
+<a id="ae23e4ac3e79c69795a69afa2d06004cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23e4ac3e79c69795a69afa2d06004cc">&#9670;&nbsp;</a></span>listen_addrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a>* listen_addrs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An array of IP addresses at which the broker is listening for RDMnet connections. </p>
+
+</div>
+</div>
+<a id="a84875663cfc7f10e83b39e143e4d6ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84875663cfc7f10e83b39e143e4d6ca2">&#9670;&nbsp;</a></span>manufacturer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* manufacturer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The name of the broker's manufacturer. </p>
+
+</div>
+</div>
+<a id="aedac94690dae483bee8b0dd9d3ead21a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedac94690dae483bee8b0dd9d3ead21a">&#9670;&nbsp;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* model</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The broker's product model name. </p>
+
+</div>
+</div>
+<a id="a174b4b1ee87fd017eaace1c1fc6bfc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174b4b1ee87fd017eaace1c1fc6bfc74">&#9670;&nbsp;</a></span>num_additional_txt_items</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_additional_txt_items</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of the additional_txt_items array. </p>
+
+</div>
+</div>
+<a id="af3837524eb4b81df6ed4c50b5b7badf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3837524eb4b81df6ed4c50b5b7badf7">&#9670;&nbsp;</a></span>num_listen_addrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_listen_addrs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of the listen_addrs and listen_addr_netints arrays. </p>
+
+</div>
+</div>
+<a id="a8e0798404bf2cf5dabb84c5ba9a4f236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0798404bf2cf5dabb84c5ba9a4f236">&#9670;&nbsp;</a></span>port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The port on which the broker is listening for RDMnet connections. </p>
+
+</div>
+</div>
+<a id="aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab">&#9670;&nbsp;</a></span>scope</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* scope</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The broker's RDMnet scope. </p>
+
+</div>
+</div>
+<a id="afdf02cd0ff95b90c4588002535a50440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf02cd0ff95b90c4588002535a50440">&#9670;&nbsp;</a></span>service_instance_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* service_instance_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The broker's service instance name. </p>
 <p>A service instance name uniquely identifies a specific broker on a given network segment. They are a maximum of 63 bytes in length, can contain any UTF-8 character, and should be configurable by a user. </p>
+
+</div>
+</div>
+<a id="ad908bad751766196cc2334b0f8579a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad908bad751766196cc2334b0f8579a5c">&#9670;&nbsp;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The broker's UID. </p>
 
 </div>
 </div>

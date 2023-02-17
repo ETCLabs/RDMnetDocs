@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::RdmResponseAction Class Reference</title>
+<title>RDMnet: RdmResponseAction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,43 +204,41 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_rdm_response_action.ht
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::RdmResponseAction Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">RdmResponseAction Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A class representing a synchronous action to take in response to a received RDM command. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2common_8h_source.html">rdmnet/cpp/common.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c541d55c17afb5ac264f3e2b0dd1ef9"><td class="memItemLeft" align="right" valign="top"><a id="a7c541d55c17afb5ac264f3e2b0dd1ef9"></a>
-constexpr const <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a7c541d55c17afb5ac264f3e2b0dd1ef9">get</a> () const</td></tr>
-<tr class="memdesc:a7c541d55c17afb5ac264f3e2b0dd1ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
-<tr class="separator:a7c541d55c17afb5ac264f3e2b0dd1ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe22631b8692fae38c2ac18b4f4211cd"><td class="memItemLeft" align="right" valign="top"><a id="abe22631b8692fae38c2ac18b4f4211cd"></a>
+constexpr const <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#abe22631b8692fae38c2ac18b4f4211cd">get</a> () const</td></tr>
+<tr class="memdesc:abe22631b8692fae38c2ac18b4f4211cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
+<tr class="separator:abe22631b8692fae38c2ac18b4f4211cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a66301810814d353b92754a177d92dcaa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">SendAck</a> (size_t response_data_len=0)</td></tr>
-<tr class="memdesc:a66301810814d353b92754a177d92dcaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM ACK, optionally including some response data.  <a href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">More...</a><br /></td></tr>
-<tr class="separator:a66301810814d353b92754a177d92dcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f084460d0d89d9af564dd573720d251"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">SendNack</a> (<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
-<tr class="memdesc:a0f084460d0d89d9af564dd573720d251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK with a reason code.  <a href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">More...</a><br /></td></tr>
-<tr class="separator:a0f084460d0d89d9af564dd573720d251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e99340678bb7b99f7e909173f0d214d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a6e99340678bb7b99f7e909173f0d214d">SendNack</a> (uint16_t raw_nack_reason)</td></tr>
-<tr class="memdesc:a6e99340678bb7b99f7e909173f0d214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK with a reason code.  <a href="classrdmnet_1_1_rdm_response_action.html#a6e99340678bb7b99f7e909173f0d214d">More...</a><br /></td></tr>
-<tr class="separator:a6e99340678bb7b99f7e909173f0d214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae84cb7af11813b1ccadd00b167ceff62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#ae84cb7af11813b1ccadd00b167ceff62">DeferResponse</a> ()</td></tr>
-<tr class="memdesc:ae84cb7af11813b1ccadd00b167ceff62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the RDM response to be sent later from another context.  <a href="classrdmnet_1_1_rdm_response_action.html#ae84cb7af11813b1ccadd00b167ceff62">More...</a><br /></td></tr>
-<tr class="separator:ae84cb7af11813b1ccadd00b167ceff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d119d1d362acb263c3f45860a50978f"><td class="memItemLeft" align="right" valign="top"><a id="a9d119d1d362acb263c3f45860a50978f"></a>
-static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a9d119d1d362acb263c3f45860a50978f">RetryLater</a> ()</td></tr>
-<tr class="memdesc:a9d119d1d362acb263c3f45860a50978f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger another notification for the (non-LLRP) RDM command on the next tick. <br /></td></tr>
-<tr class="separator:a9d119d1d362acb263c3f45860a50978f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ddf153fa96dc16e1fd6fcf92382f55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a31ddf153fa96dc16e1fd6fcf92382f55">SendAck</a> (size_t response_data_len=0)</td></tr>
+<tr class="memdesc:a31ddf153fa96dc16e1fd6fcf92382f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM ACK, optionally including some response data.  <a href="classrdmnet_1_1_rdm_response_action.html#a31ddf153fa96dc16e1fd6fcf92382f55">More...</a><br /></td></tr>
+<tr class="separator:a31ddf153fa96dc16e1fd6fcf92382f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0286cbe7b1f91734d7b516c1c66e127c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a0286cbe7b1f91734d7b516c1c66e127c">SendNack</a> (rdm_nack_reason_t nack_reason)</td></tr>
+<tr class="memdesc:a0286cbe7b1f91734d7b516c1c66e127c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK with a reason code.  <a href="classrdmnet_1_1_rdm_response_action.html#a0286cbe7b1f91734d7b516c1c66e127c">More...</a><br /></td></tr>
+<tr class="separator:a0286cbe7b1f91734d7b516c1c66e127c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17a62ef0814317de6583204e893aa36"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#aa17a62ef0814317de6583204e893aa36">SendNack</a> (uint16_t raw_nack_reason)</td></tr>
+<tr class="memdesc:aa17a62ef0814317de6583204e893aa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK with a reason code.  <a href="classrdmnet_1_1_rdm_response_action.html#aa17a62ef0814317de6583204e893aa36">More...</a><br /></td></tr>
+<tr class="separator:aa17a62ef0814317de6583204e893aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5be1265ac841e5f5678027950a2cea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a8b5be1265ac841e5f5678027950a2cea">DeferResponse</a> ()</td></tr>
+<tr class="memdesc:a8b5be1265ac841e5f5678027950a2cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the RDM response to be sent later from another context.  <a href="classrdmnet_1_1_rdm_response_action.html#a8b5be1265ac841e5f5678027950a2cea">More...</a><br /></td></tr>
+<tr class="separator:a8b5be1265ac841e5f5678027950a2cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c17df80bf39478406048e5da5ecef5"><td class="memItemLeft" align="right" valign="top"><a id="a32c17df80bf39478406048e5da5ecef5"></a>
+static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a32c17df80bf39478406048e5da5ecef5">RetryLater</a> ()</td></tr>
+<tr class="memdesc:a32c17df80bf39478406048e5da5ecef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger another notification for the (non-LLRP) RDM command on the next tick. <br /></td></tr>
+<tr class="separator:a32c17df80bf39478406048e5da5ecef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae84cb7af11813b1ccadd00b167ceff62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae84cb7af11813b1ccadd00b167ceff62">&#9670;&nbsp;</a></span>DeferResponse()</h2>
+<a id="a8b5be1265ac841e5f5678027950a2cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5be1265ac841e5f5678027950a2cea">&#9670;&nbsp;</a></span>DeferResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +247,7 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::RdmResponseAction::DeferResponse </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> DeferResponse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -267,8 +265,8 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
 
 </div>
 </div>
-<a id="a66301810814d353b92754a177d92dcaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66301810814d353b92754a177d92dcaa">&#9670;&nbsp;</a></span>SendAck()</h2>
+<a id="a31ddf153fa96dc16e1fd6fcf92382f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ddf153fa96dc16e1fd6fcf92382f55">&#9670;&nbsp;</a></span>SendAck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +275,7 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::RdmResponseAction::SendAck </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> SendAck </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>response_data_len</em> = <code>0</code></td><td>)</td>
@@ -302,8 +300,8 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
 
 </div>
 </div>
-<a id="a0f084460d0d89d9af564dd573720d251"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f084460d0d89d9af564dd573720d251">&#9670;&nbsp;</a></span>SendNack() <span class="overload">[1/2]</span></h2>
+<a id="a0286cbe7b1f91734d7b516c1c66e127c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0286cbe7b1f91734d7b516c1c66e127c">&#9670;&nbsp;</a></span>SendNack() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,9 +310,9 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::RdmResponseAction::SendNack </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> SendNack </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a>&#160;</td>
+          <td class="paramtype">rdm_nack_reason_t&#160;</td>
           <td class="paramname"><em>nack_reason</em></td><td>)</td>
           <td></td>
         </tr>
@@ -336,8 +334,8 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
 
 </div>
 </div>
-<a id="a6e99340678bb7b99f7e909173f0d214d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e99340678bb7b99f7e909173f0d214d">&#9670;&nbsp;</a></span>SendNack() <span class="overload">[2/2]</span></h2>
+<a id="aa17a62ef0814317de6583204e893aa36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17a62ef0814317de6583204e893aa36">&#9670;&nbsp;</a></span>SendNack() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +344,7 @@ static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponse
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::RdmResponseAction::SendNack </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> SendNack </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>raw_nack_reason</em></td><td>)</td>

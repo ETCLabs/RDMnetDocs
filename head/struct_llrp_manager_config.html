@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,42 +208,76 @@ $(document).ready(function(){initNavTree('struct_llrp_manager_config.html',''); 
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of information that defines the startup parameters of an LLRP Manager. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="llrp__manager_8h_source.html">rdmnet/llrp_manager.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a68b1eac8be5285f8cdf20c94caa744ea"><td class="memItemLeft" align="right" valign="top"><a id="a68b1eac8be5285f8cdf20c94caa744ea"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#a68b1eac8be5285f8cdf20c94caa744ea">cid</a></td></tr>
-<tr class="memdesc:a68b1eac8be5285f8cdf20c94caa744ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The manager's CID. <br /></td></tr>
-<tr class="separator:a68b1eac8be5285f8cdf20c94caa744ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd8e9d1ed1eaa7a9461cc88858ca093e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#abd8e9d1ed1eaa7a9461cc88858ca093e">netint</a></td></tr>
-<tr class="memdesc:abd8e9d1ed1eaa7a9461cc88858ca093e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The network interface that this manager operates on.  <a href="struct_llrp_manager_config.html#abd8e9d1ed1eaa7a9461cc88858ca093e">More...</a><br /></td></tr>
-<tr class="separator:abd8e9d1ed1eaa7a9461cc88858ca093e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8867871acbf245a931cb57bdd7a6eee"><td class="memItemLeft" align="right" valign="top"><a id="ab8867871acbf245a931cb57bdd7a6eee"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#ab8867871acbf245a931cb57bdd7a6eee">manu_id</a></td></tr>
-<tr class="memdesc:ab8867871acbf245a931cb57bdd7a6eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The manager's ESTA manufacturer ID. <br /></td></tr>
-<tr class="separator:ab8867871acbf245a931cb57bdd7a6eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacd8c71d1797bfd725d5848dd623000d"><td class="memItemLeft" align="right" valign="top"><a id="aacd8c71d1797bfd725d5848dd623000d"></a>
-<a class="el" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#aacd8c71d1797bfd725d5848dd623000d">callbacks</a></td></tr>
-<tr class="memdesc:aacd8c71d1797bfd725d5848dd623000d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks for the manager to receive RDMnet notifications. <br /></td></tr>
-<tr class="separator:aacd8c71d1797bfd725d5848dd623000d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a></td></tr>
+<tr class="separator:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899716aec7b2e11ef8fa384ee1c0e701"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#a899716aec7b2e11ef8fa384ee1c0e701">netint</a></td></tr>
+<tr class="separator:a899716aec7b2e11ef8fa384ee1c0e701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2232974c932b5888ba8a58ab25fa0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#aeae2232974c932b5888ba8a58ab25fa0">manu_id</a></td></tr>
+<tr class="separator:aeae2232974c932b5888ba8a58ab25fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad022e2f001237d0e09def3d7ae51eac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html#ad022e2f001237d0e09def3d7ae51eac7">callbacks</a></td></tr>
+<tr class="separator:ad022e2f001237d0e09def3d7ae51eac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="abd8e9d1ed1eaa7a9461cc88858ca093e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd8e9d1ed1eaa7a9461cc88858ca093e">&#9670;&nbsp;</a></span>netint</h2>
+<a id="ad022e2f001237d0e09def3d7ae51eac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad022e2f001237d0e09def3d7ae51eac7">&#9670;&nbsp;</a></span>callbacks</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> LlrpManagerConfig::netint</td>
+          <td class="memname"><a class="el" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a> callbacks</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A set of callbacks for the manager to receive RDMnet notifications. </p>
 
-<p>The network interface that this manager operates on. </p>
-<p>This must be one of the interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> if any were passed in there. </p>
+</div>
+</div>
+<a id="a4c3f7d9a58af5033f9acd8c942bf81d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3f7d9a58af5033f9acd8c942bf81d9">&#9670;&nbsp;</a></span>cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The manager's CID. </p>
+
+</div>
+</div>
+<a id="aeae2232974c932b5888ba8a58ab25fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae2232974c932b5888ba8a58ab25fa0">&#9670;&nbsp;</a></span>manu_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t manu_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The manager's ESTA manufacturer ID. </p>
+
+</div>
+</div>
+<a id="a899716aec7b2e11ef8fa384ee1c0e701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a899716aec7b2e11ef8fa384ee1c0e701">&#9670;&nbsp;</a></span>netint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> netint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The network interface that this manager operates on. This must be one of the interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> if any were passed in there. </p>
 
 </div>
 </div>

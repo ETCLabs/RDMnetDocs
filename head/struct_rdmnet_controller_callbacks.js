@@ -1,11 +1,11 @@
 var struct_rdmnet_controller_callbacks =
 [
-    [ "client_list_update_received", "struct_rdmnet_controller_callbacks.html#a7cee8891f9af4e34f3b44f8fdc0bf419", null ],
-    [ "connect_failed", "struct_rdmnet_controller_callbacks.html#aa6431e285774c0fa74e5c3327ebc3d01", null ],
-    [ "connected", "struct_rdmnet_controller_callbacks.html#aa049d14bc899f39c8206df41918f2873", null ],
-    [ "context", "struct_rdmnet_controller_callbacks.html#a51c335237aff6c8f80caacd8584f35cf", null ],
-    [ "disconnected", "struct_rdmnet_controller_callbacks.html#a4307e7b3f04926772c74a27cae890a3f", null ],
-    [ "rdm_response_received", "struct_rdmnet_controller_callbacks.html#ac1eb20fa6a8d9dac6ea10649ba3a06ba", null ],
-    [ "responder_ids_received", "struct_rdmnet_controller_callbacks.html#abb12bf77447029861e4dfb57838e0a5b", null ],
-    [ "status_received", "struct_rdmnet_controller_callbacks.html#a2c605d0196b94746f688cbdf98284387", null ]
+    [ "client_list_update_received", "struct_rdmnet_controller_callbacks.html#a5e3adfd6aeb58eff685b339eae8bd538", null ],
+    [ "connect_failed", "struct_rdmnet_controller_callbacks.html#aee640c0a567ffdc78275d4f74acf35d1", null ],
+    [ "connected", "struct_rdmnet_controller_callbacks.html#aac8219d693567d7b6498bff55899d9da", null ],
+    [ "context", "struct_rdmnet_controller_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
+    [ "disconnected", "struct_rdmnet_controller_callbacks.html#a6551b086e419a976a23023f9e6413e1d", null ],
+    [ "rdm_response_received", "struct_rdmnet_controller_callbacks.html#aeff7f630d1357e2d0e96ae88828e05a6", null ],
+    [ "responder_ids_received", "struct_rdmnet_controller_callbacks.html#a1034561e91a63517367922b84e388f67", null ],
+    [ "status_received", "struct_rdmnet_controller_callbacks.html#a3ada0ef8aed5fe06f593fac27eb15e63", null ]
 ];

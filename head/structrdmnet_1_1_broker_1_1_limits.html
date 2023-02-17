@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::Broker::Limits Struct Reference</title>
+<title>RDMnet: Broker::Limits Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,41 +203,53 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_broker_1_1_limits.htm
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::Broker::Limits Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__broker.html">Broker API</a></div></div>  </div>
+<div class="title">Broker::Limits Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__broker.html">Broker API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of limits for broker operation. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/cpp/broker.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a041ab4ddfc9e0a89ed168aeedf7c0784"><td class="memItemLeft" align="right" valign="top"><a id="a041ab4ddfc9e0a89ed168aeedf7c0784"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a041ab4ddfc9e0a89ed168aeedf7c0784">connections</a> {0}</td></tr>
-<tr class="memdesc:a041ab4ddfc9e0a89ed168aeedf7c0784"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of client connections supported. 0 means infinite. <br /></td></tr>
-<tr class="separator:a041ab4ddfc9e0a89ed168aeedf7c0784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc3a7d5b02fd63dc6b009f22d60fecdc"><td class="memItemLeft" align="right" valign="top"><a id="abc3a7d5b02fd63dc6b009f22d60fecdc"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#abc3a7d5b02fd63dc6b009f22d60fecdc">controllers</a> {0}</td></tr>
-<tr class="memdesc:abc3a7d5b02fd63dc6b009f22d60fecdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of controllers allowed. 0 means infinite. <br /></td></tr>
-<tr class="separator:abc3a7d5b02fd63dc6b009f22d60fecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf2788e87261ff7648bed8e4999efe5"><td class="memItemLeft" align="right" valign="top"><a id="a8cf2788e87261ff7648bed8e4999efe5"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a8cf2788e87261ff7648bed8e4999efe5">controller_messages</a> {500}</td></tr>
-<tr class="memdesc:a8cf2788e87261ff7648bed8e4999efe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of queued messages per controller. 0 means infinite. <br /></td></tr>
-<tr class="separator:a8cf2788e87261ff7648bed8e4999efe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57fd4c4bbab59fd8a2a0201f0d8de49"><td class="memItemLeft" align="right" valign="top"><a id="aa57fd4c4bbab59fd8a2a0201f0d8de49"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#aa57fd4c4bbab59fd8a2a0201f0d8de49">devices</a> {0}</td></tr>
-<tr class="memdesc:aa57fd4c4bbab59fd8a2a0201f0d8de49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of devices allowed. 0 means infinite. <br /></td></tr>
-<tr class="separator:aa57fd4c4bbab59fd8a2a0201f0d8de49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9d419c316b08eb103edc37bdc186661"><td class="memItemLeft" align="right" valign="top"><a id="ae9d419c316b08eb103edc37bdc186661"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#ae9d419c316b08eb103edc37bdc186661">device_messages</a> {500}</td></tr>
-<tr class="memdesc:ae9d419c316b08eb103edc37bdc186661"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of queued messages per device. 0 means infinite. <br /></td></tr>
-<tr class="separator:ae9d419c316b08eb103edc37bdc186661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97154684dffc3902577b1bfd09fe48e9"><td class="memItemLeft" align="right" valign="top"><a id="a97154684dffc3902577b1bfd09fe48e9"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a97154684dffc3902577b1bfd09fe48e9">reject_connections</a> {1000}</td></tr>
-<tr class="memdesc:a97154684dffc3902577b1bfd09fe48e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you reach the number of max connections, this number of tcp-level connections are still supported to reject the connection request. <br /></td></tr>
-<tr class="separator:a97154684dffc3902577b1bfd09fe48e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004883be9f53b0bc17f2f8d0b246b99e"><td class="memItemLeft" align="right" valign="top"><a id="a004883be9f53b0bc17f2f8d0b246b99e"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a004883be9f53b0bc17f2f8d0b246b99e">connections</a> {0}</td></tr>
+<tr class="memdesc:a004883be9f53b0bc17f2f8d0b246b99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of client connections supported. 0 means infinite. <br /></td></tr>
+<tr class="separator:a004883be9f53b0bc17f2f8d0b246b99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3340c0e792ae44d0af90dcad0a47fcf2"><td class="memItemLeft" align="right" valign="top"><a id="a3340c0e792ae44d0af90dcad0a47fcf2"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a3340c0e792ae44d0af90dcad0a47fcf2">controllers</a> {0}</td></tr>
+<tr class="memdesc:a3340c0e792ae44d0af90dcad0a47fcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of controllers allowed. 0 means infinite. <br /></td></tr>
+<tr class="separator:a3340c0e792ae44d0af90dcad0a47fcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c43af297a5490458ae59bb0944d18a"><td class="memItemLeft" align="right" valign="top"><a id="a76c43af297a5490458ae59bb0944d18a"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a76c43af297a5490458ae59bb0944d18a">controller_messages</a> {500}</td></tr>
+<tr class="memdesc:a76c43af297a5490458ae59bb0944d18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of queued messages per controller. 0 means infinite. <br /></td></tr>
+<tr class="separator:a76c43af297a5490458ae59bb0944d18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b6b294128c5b1175d57b57f479d478"><td class="memItemLeft" align="right" valign="top"><a id="a44b6b294128c5b1175d57b57f479d478"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a44b6b294128c5b1175d57b57f479d478">devices</a> {0}</td></tr>
+<tr class="memdesc:a44b6b294128c5b1175d57b57f479d478"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of devices allowed. 0 means infinite. <br /></td></tr>
+<tr class="separator:a44b6b294128c5b1175d57b57f479d478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7fffbddc60ac5c714d5369a3be4e61"><td class="memItemLeft" align="right" valign="top"><a id="afb7fffbddc60ac5c714d5369a3be4e61"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#afb7fffbddc60ac5c714d5369a3be4e61">device_messages</a> {500}</td></tr>
+<tr class="memdesc:afb7fffbddc60ac5c714d5369a3be4e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of queued messages per device. 0 means infinite. <br /></td></tr>
+<tr class="separator:afb7fffbddc60ac5c714d5369a3be4e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bfe9f26268bb49c52b21e496d00eb9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a47bfe9f26268bb49c52b21e496d00eb9">reject_connections</a> {1000}</td></tr>
+<tr class="separator:a47bfe9f26268bb49c52b21e496d00eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a47bfe9f26268bb49c52b21e496d00eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bfe9f26268bb49c52b21e496d00eb9">&#9670;&nbsp;</a></span>reject_connections</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int reject_connections {1000}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If you reach the number of max connections, this number of tcp-level connections are still supported to reject the connection request. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="broker_8h_source.html">broker.h</a></li>
 </ul>

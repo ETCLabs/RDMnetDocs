@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,40 +208,130 @@ $(document).ready(function(){initNavTree('struct_rdmnet_ept_client_callbacks.htm
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of notification callbacks received about an EPT client. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="ept__client_8h_source.html">rdmnet/ept_client.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a636810b26dd423b2389f5627bd62f06b"><td class="memItemLeft" align="right" valign="top"><a id="a636810b26dd423b2389f5627bd62f06b"></a>
-<a class="el" href="group__rdmnet__ept__client.html#ga5cac8658cabfb8fea96ffa87b64d2aad">RdmnetEptClientConnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a636810b26dd423b2389f5627bd62f06b">connected</a></td></tr>
-<tr class="memdesc:a636810b26dd423b2389f5627bd62f06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a636810b26dd423b2389f5627bd62f06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b148a13f8d6b5a32c9e7922a542a28f"><td class="memItemLeft" align="right" valign="top"><a id="a2b148a13f8d6b5a32c9e7922a542a28f"></a>
-<a class="el" href="group__rdmnet__ept__client.html#gafe2081314ef4d525337b56f2487f110a">RdmnetEptClientConnectFailedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a2b148a13f8d6b5a32c9e7922a542a28f">connect_failed</a></td></tr>
-<tr class="memdesc:a2b148a13f8d6b5a32c9e7922a542a28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a2b148a13f8d6b5a32c9e7922a542a28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c296203dc983959c34858f75fa0fd5"><td class="memItemLeft" align="right" valign="top"><a id="aa9c296203dc983959c34858f75fa0fd5"></a>
-<a class="el" href="group__rdmnet__ept__client.html#ga3bf4201992ab95997d7691717b97ed0f">RdmnetEptClientDisconnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#aa9c296203dc983959c34858f75fa0fd5">disconnected</a></td></tr>
-<tr class="memdesc:aa9c296203dc983959c34858f75fa0fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:aa9c296203dc983959c34858f75fa0fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8fc20722ac48324c79eb14a95302f6d"><td class="memItemLeft" align="right" valign="top"><a id="ae8fc20722ac48324c79eb14a95302f6d"></a>
-<a class="el" href="group__rdmnet__ept__client.html#ga9d598e9a448d1fceed5659aa52d47870">RdmnetEptClientClientListUpdateReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#ae8fc20722ac48324c79eb14a95302f6d">client_list_update_received</a></td></tr>
-<tr class="memdesc:ae8fc20722ac48324c79eb14a95302f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:ae8fc20722ac48324c79eb14a95302f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8309a8bd3b9094e15e4e67d15e44e54c"><td class="memItemLeft" align="right" valign="top"><a id="a8309a8bd3b9094e15e4e67d15e44e54c"></a>
-<a class="el" href="group__rdmnet__ept__client.html#ga5c8783fcc14a31e94e6a055985b200bd">RdmnetEptClientDataReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a8309a8bd3b9094e15e4e67d15e44e54c">data_received</a></td></tr>
-<tr class="memdesc:a8309a8bd3b9094e15e4e67d15e44e54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a8309a8bd3b9094e15e4e67d15e44e54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fd5ac82408e58a96910f3353190f5b3"><td class="memItemLeft" align="right" valign="top"><a id="a7fd5ac82408e58a96910f3353190f5b3"></a>
-<a class="el" href="group__rdmnet__ept__client.html#ga90524a0a57526525f28ea5d218bb1970">RdmnetEptClientStatusReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a7fd5ac82408e58a96910f3353190f5b3">status_received</a></td></tr>
-<tr class="memdesc:a7fd5ac82408e58a96910f3353190f5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a7fd5ac82408e58a96910f3353190f5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426437829d4f26053b0ee9353a575283"><td class="memItemLeft" align="right" valign="top"><a id="a426437829d4f26053b0ee9353a575283"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a426437829d4f26053b0ee9353a575283">context</a></td></tr>
-<tr class="memdesc:a426437829d4f26053b0ee9353a575283"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Pointer to opaque data passed back with each callback. <br /></td></tr>
-<tr class="separator:a426437829d4f26053b0ee9353a575283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb912d74536602744374850f1cdabe94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__ept__client.html#ga5cac8658cabfb8fea96ffa87b64d2aad">RdmnetEptClientConnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#afb912d74536602744374850f1cdabe94">connected</a></td></tr>
+<tr class="separator:afb912d74536602744374850f1cdabe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc02f86425f77e9751e82d5ba39a6cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__ept__client.html#gafe2081314ef4d525337b56f2487f110a">RdmnetEptClientConnectFailedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#acdc02f86425f77e9751e82d5ba39a6cf">connect_failed</a></td></tr>
+<tr class="separator:acdc02f86425f77e9751e82d5ba39a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721fac09c6f6091b2fba3a3354ed559c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__ept__client.html#ga3bf4201992ab95997d7691717b97ed0f">RdmnetEptClientDisconnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a721fac09c6f6091b2fba3a3354ed559c">disconnected</a></td></tr>
+<tr class="separator:a721fac09c6f6091b2fba3a3354ed559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f370bbac3d11a0f14de6985d96b9232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__ept__client.html#ga9d598e9a448d1fceed5659aa52d47870">RdmnetEptClientClientListUpdateReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a4f370bbac3d11a0f14de6985d96b9232">client_list_update_received</a></td></tr>
+<tr class="separator:a4f370bbac3d11a0f14de6985d96b9232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c40045ea6ffded25d7062d2a441157c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__ept__client.html#ga5c8783fcc14a31e94e6a055985b200bd">RdmnetEptClientDataReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#a6c40045ea6ffded25d7062d2a441157c">data_received</a></td></tr>
+<tr class="separator:a6c40045ea6ffded25d7062d2a441157c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d92fc3a19aff83da49ce95cee34cba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__ept__client.html#ga90524a0a57526525f28ea5d218bb1970">RdmnetEptClientStatusReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#ae2d92fc3a19aff83da49ce95cee34cba">status_received</a></td></tr>
+<tr class="separator:ae2d92fc3a19aff83da49ce95cee34cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a4f370bbac3d11a0f14de6985d96b9232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f370bbac3d11a0f14de6985d96b9232">&#9670;&nbsp;</a></span>client_list_update_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__ept__client.html#ga9d598e9a448d1fceed5659aa52d47870">RdmnetEptClientClientListUpdateReceivedCallback</a> client_list_update_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="acdc02f86425f77e9751e82d5ba39a6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc02f86425f77e9751e82d5ba39a6cf">&#9670;&nbsp;</a></span>connect_failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__ept__client.html#gafe2081314ef4d525337b56f2487f110a">RdmnetEptClientConnectFailedCallback</a> connect_failed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="afb912d74536602744374850f1cdabe94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb912d74536602744374850f1cdabe94">&#9670;&nbsp;</a></span>connected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__ept__client.html#ga5cac8658cabfb8fea96ffa87b64d2aad">RdmnetEptClientConnectedCallback</a> connected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="a6c40045ea6ffded25d7062d2a441157c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c40045ea6ffded25d7062d2a441157c">&#9670;&nbsp;</a></span>data_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__ept__client.html#ga5c8783fcc14a31e94e6a055985b200bd">RdmnetEptClientDataReceivedCallback</a> data_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="a721fac09c6f6091b2fba3a3354ed559c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721fac09c6f6091b2fba3a3354ed559c">&#9670;&nbsp;</a></span>disconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__ept__client.html#ga3bf4201992ab95997d7691717b97ed0f">RdmnetEptClientDisconnectedCallback</a> disconnected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="ae2d92fc3a19aff83da49ce95cee34cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d92fc3a19aff83da49ce95cee34cba">&#9670;&nbsp;</a></span>status_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__ept__client.html#ga90524a0a57526525f28ea5d218bb1970">RdmnetEptClientStatusReceivedCallback</a> status_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="ept__client_8h_source.html">ept_client.h</a></li>
 </ul>

@@ -1,6 +1,6 @@
 var struct_rdmnet_ept_client_entry =
 [
-    [ "cid", "struct_rdmnet_ept_client_entry.html#a0fc4f36b08efe7fb323753a7a4399227", null ],
-    [ "num_protocols", "struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0", null ],
-    [ "protocols", "struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860", null ]
+    [ "cid", "struct_rdmnet_ept_client_entry.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+    [ "num_protocols", "struct_rdmnet_ept_client_entry.html#ac4c5442623e5438a686daf3f26345968", null ],
+    [ "protocols", "struct_rdmnet_ept_client_entry.html#a01897bbacbe36f0b0114787a6f415ce0", null ]
 ];

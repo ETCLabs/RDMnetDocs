@@ -1,21 +1,21 @@
 var group__rdmnet__ept__client =
 [
     [ "RdmnetEptClientCallbacks", "struct_rdmnet_ept_client_callbacks.html", [
-      [ "client_list_update_received", "struct_rdmnet_ept_client_callbacks.html#ae8fc20722ac48324c79eb14a95302f6d", null ],
-      [ "connect_failed", "struct_rdmnet_ept_client_callbacks.html#a2b148a13f8d6b5a32c9e7922a542a28f", null ],
-      [ "connected", "struct_rdmnet_ept_client_callbacks.html#a636810b26dd423b2389f5627bd62f06b", null ],
-      [ "context", "struct_rdmnet_ept_client_callbacks.html#a426437829d4f26053b0ee9353a575283", null ],
-      [ "data_received", "struct_rdmnet_ept_client_callbacks.html#a8309a8bd3b9094e15e4e67d15e44e54c", null ],
-      [ "disconnected", "struct_rdmnet_ept_client_callbacks.html#aa9c296203dc983959c34858f75fa0fd5", null ],
-      [ "status_received", "struct_rdmnet_ept_client_callbacks.html#a7fd5ac82408e58a96910f3353190f5b3", null ]
+      [ "client_list_update_received", "struct_rdmnet_ept_client_callbacks.html#a4f370bbac3d11a0f14de6985d96b9232", null ],
+      [ "connect_failed", "struct_rdmnet_ept_client_callbacks.html#acdc02f86425f77e9751e82d5ba39a6cf", null ],
+      [ "connected", "struct_rdmnet_ept_client_callbacks.html#afb912d74536602744374850f1cdabe94", null ],
+      [ "context", "struct_rdmnet_ept_client_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
+      [ "data_received", "struct_rdmnet_ept_client_callbacks.html#a6c40045ea6ffded25d7062d2a441157c", null ],
+      [ "disconnected", "struct_rdmnet_ept_client_callbacks.html#a721fac09c6f6091b2fba3a3354ed559c", null ],
+      [ "status_received", "struct_rdmnet_ept_client_callbacks.html#ae2d92fc3a19aff83da49ce95cee34cba", null ]
     ] ],
     [ "RdmnetEptClientConfig", "struct_rdmnet_ept_client_config.html", [
-      [ "callbacks", "struct_rdmnet_ept_client_config.html#a23e0cb48e4773b03e46cdd05f1d191ed", null ],
-      [ "cid", "struct_rdmnet_ept_client_config.html#ae618cb974a2e9b1250a78d572a6a3094", null ],
-      [ "num_protocols", "struct_rdmnet_ept_client_config.html#adc7213b80e2fb086ec1ed3d8bea7d531", null ],
-      [ "protocols", "struct_rdmnet_ept_client_config.html#a04d0c31184e6bc3c9818bcd27f390626", null ],
-      [ "response_buf", "struct_rdmnet_ept_client_config.html#ad2e5342ac6de1fb551e426fbb4629094", null ],
-      [ "search_domain", "struct_rdmnet_ept_client_config.html#a0be032d7a29a5eccf46a8e235e152b6d", null ]
+      [ "callbacks", "struct_rdmnet_ept_client_config.html#ad2e0f268b1b3e390b54ff7ca59a21fb6", null ],
+      [ "cid", "struct_rdmnet_ept_client_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "num_protocols", "struct_rdmnet_ept_client_config.html#ac4c5442623e5438a686daf3f26345968", null ],
+      [ "protocols", "struct_rdmnet_ept_client_config.html#adf8254424d3d9256e2f9abf86dc34440", null ],
+      [ "response_buf", "struct_rdmnet_ept_client_config.html#aa99184bd7c6729427838d2fc31612fea", null ],
+      [ "search_domain", "struct_rdmnet_ept_client_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ]
     ] ],
     [ "RDMNET_EPT_CLIENT_CONFIG_DEFAULT_INIT", "group__rdmnet__ept__client.html#gae4f33c5d2b6c8e0e84871337f41b16ea", null ],
     [ "RDMNET_EPT_CLIENT_INVALID", "group__rdmnet__ept__client.html#ga603271eb3751c5563831ffbb4e7a4476", null ],

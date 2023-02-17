@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -215,7 +214,7 @@ $(document).ready(function(){initNavTree('struct_rdmnet_saved_rdm_response.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a4be5c087517d033632f91a4751b16029"><td class="memItemLeft" align="right" valign="top"><a id="a4be5c087517d033632f91a4751b16029"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#a4be5c087517d033632f91a4751b16029">rdmnet_source_uid</a></td></tr>
+RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#a4be5c087517d033632f91a4751b16029">rdmnet_source_uid</a></td></tr>
 <tr class="memdesc:a4be5c087517d033632f91a4751b16029"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RDMnet component that sent this response. <br /></td></tr>
 <tr class="separator:a4be5c087517d033632f91a4751b16029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b3adab7b79bb2d967f590ad4270643"><td class="memItemLeft" align="right" valign="top"><a id="a61b3adab7b79bb2d967f590ad4270643"></a>
@@ -230,11 +229,11 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a77996802788a63c21fa6bdbb6663f277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the response was sent in response to a command previously sent by this controller.  <a href="struct_rdmnet_saved_rdm_response.html#a77996802788a63c21fa6bdbb6663f277">More...</a><br /></td></tr>
 <tr class="separator:a77996802788a63c21fa6bdbb6663f277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5cdc5587568b1b40ac706156d60c850"><td class="memItemLeft" align="right" valign="top"><a id="ae5cdc5587568b1b40ac706156d60c850"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html">RdmCommandHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#ae5cdc5587568b1b40ac706156d60c850">original_cmd_header</a></td></tr>
+RdmCommandHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#ae5cdc5587568b1b40ac706156d60c850">original_cmd_header</a></td></tr>
 <tr class="memdesc:ae5cdc5587568b1b40ac706156d60c850"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header of the original command associated with this response; valid if seq_num != 0. <br /></td></tr>
 <tr class="separator:ae5cdc5587568b1b40ac706156d60c850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2dc2a539787dd85d4985718b35c2813"><td class="memItemLeft" align="right" valign="top"><a id="ae2dc2a539787dd85d4985718b35c2813"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#ae2dc2a539787dd85d4985718b35c2813">original_cmd_data</a> [<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ga4592ed22b54c1daabb9c506b72a83756">RDM_MAX_PDL</a>]</td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#ae2dc2a539787dd85d4985718b35c2813">original_cmd_data</a> [RDM_MAX_PDL]</td></tr>
 <tr class="memdesc:ae2dc2a539787dd85d4985718b35c2813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any parameter data associated with the original RDM command; valid if seq_num != 0. <br /></td></tr>
 <tr class="separator:ae2dc2a539787dd85d4985718b35c2813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae09591285ec44d306a1c59429fe7bd"><td class="memItemLeft" align="right" valign="top"><a id="aeae09591285ec44d306a1c59429fe7bd"></a>
@@ -242,7 +241,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <tr class="memdesc:aeae09591285ec44d306a1c59429fe7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the parameter data associated with the original RDM command; valid if seq_num != 0. <br /></td></tr>
 <tr class="separator:aeae09591285ec44d306a1c59429fe7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1252b5961c7fdacb8358b561318a116a"><td class="memItemLeft" align="right" valign="top"><a id="a1252b5961c7fdacb8358b561318a116a"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_response_header.html">RdmResponseHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#a1252b5961c7fdacb8358b561318a116a">rdm_header</a></td></tr>
+RdmResponseHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#a1252b5961c7fdacb8358b561318a116a">rdm_header</a></td></tr>
 <tr class="memdesc:a1252b5961c7fdacb8358b561318a116a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header information from the encapsulated RDM response. <br /></td></tr>
 <tr class="separator:a1252b5961c7fdacb8358b561318a116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009b5803242968e227e61d9c3905174a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#a009b5803242968e227e61d9c3905174a">rdm_data</a></td></tr>

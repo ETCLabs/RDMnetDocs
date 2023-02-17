@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,20 +208,45 @@ $(document).ready(function(){initNavTree('struct_llrp_target_callbacks.html','')
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of notification callbacks received about an LLRP target. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="llrp__target_8h_source.html">rdmnet/llrp_target.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a9c916ba64d15d1d496f8994c4e4cba45"><td class="memItemLeft" align="right" valign="top"><a id="a9c916ba64d15d1d496f8994c4e4cba45"></a>
-<a class="el" href="group__llrp__target.html#gae38beb2010553aa1b85201f56ede1fe7">LlrpTargetRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_callbacks.html#a9c916ba64d15d1d496f8994c4e4cba45">rdm_command_received</a></td></tr>
-<tr class="memdesc:a9c916ba64d15d1d496f8994c4e4cba45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a9c916ba64d15d1d496f8994c4e4cba45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae45836c7388e621658bc9a7555556a47"><td class="memItemLeft" align="right" valign="top"><a id="ae45836c7388e621658bc9a7555556a47"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_callbacks.html#ae45836c7388e621658bc9a7555556a47">context</a></td></tr>
-<tr class="memdesc:ae45836c7388e621658bc9a7555556a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Pointer to opaque data passed back with each callback. <br /></td></tr>
-<tr class="separator:ae45836c7388e621658bc9a7555556a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc6b376d1ef1958fb8e43f4f658b452"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__llrp__target.html#gae38beb2010553aa1b85201f56ede1fe7">LlrpTargetRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_callbacks.html#a3fc6b376d1ef1958fb8e43f4f658b452">rdm_command_received</a></td></tr>
+<tr class="separator:a3fc6b376d1ef1958fb8e43f4f658b452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_target_callbacks.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="a3fc6b376d1ef1958fb8e43f4f658b452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc6b376d1ef1958fb8e43f4f658b452">&#9670;&nbsp;</a></span>rdm_command_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__llrp__target.html#gae38beb2010553aa1b85201f56ede1fe7">LlrpTargetRdmCommandReceivedCallback</a> rdm_command_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="llrp__target_8h_source.html">llrp_target.h</a></li>
 </ul>

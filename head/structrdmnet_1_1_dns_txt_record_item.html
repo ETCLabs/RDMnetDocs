@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::DnsTxtRecordItem Struct Reference</title>
+<title>RDMnet: DnsTxtRecordItem Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,48 +204,46 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_dns_txt_record_item.h
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::DnsTxtRecordItem Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__broker.html">Broker API</a></div></div>  </div>
+<div class="title">DnsTxtRecordItem Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__broker.html">Broker API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A key/value pair representing a DNS TXT record item. </p>
 <p>The key and value combined cannot be more than 255 bytes in length. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/cpp/broker.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c0dbce7ad13e649c66bd4c06d0d48d6"><td class="memItemLeft" align="right" valign="top"><a id="a0c0dbce7ad13e649c66bd4c06d0d48d6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a0c0dbce7ad13e649c66bd4c06d0d48d6">DnsTxtRecordItem</a> (const char *new_key, const char *new_value)</td></tr>
-<tr class="memdesc:a0c0dbce7ad13e649c66bd4c06d0d48d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a C-string key and value. <br /></td></tr>
-<tr class="separator:a0c0dbce7ad13e649c66bd4c06d0d48d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f97f390d1dd575f38807c98efb9899"><td class="memItemLeft" align="right" valign="top"><a id="a38f97f390d1dd575f38807c98efb9899"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a38f97f390d1dd575f38807c98efb9899">DnsTxtRecordItem</a> (const char *new_key, const uint8_t *new_value, size_t new_value_len)</td></tr>
-<tr class="memdesc:a38f97f390d1dd575f38807c98efb9899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a C-string key and a binary value. <br /></td></tr>
-<tr class="separator:a38f97f390d1dd575f38807c98efb9899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cd7cb57bca2a790aa716cbdfc83443"><td class="memItemLeft" align="right" valign="top"><a id="a73cd7cb57bca2a790aa716cbdfc83443"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a73cd7cb57bca2a790aa716cbdfc83443">DnsTxtRecordItem</a> (const std::string &amp;new_key, const std::string &amp;new_value)</td></tr>
-<tr class="memdesc:a73cd7cb57bca2a790aa716cbdfc83443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a string key and value. <br /></td></tr>
-<tr class="separator:a73cd7cb57bca2a790aa716cbdfc83443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a441da4ff6c5d929dbdaadd89408e7435"><td class="memItemLeft" align="right" valign="top"><a id="a441da4ff6c5d929dbdaadd89408e7435"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a441da4ff6c5d929dbdaadd89408e7435">DnsTxtRecordItem</a> (const std::string &amp;new_key, const uint8_t *new_value, size_t new_value_len)</td></tr>
-<tr class="memdesc:a441da4ff6c5d929dbdaadd89408e7435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a string key and a binary value. <br /></td></tr>
-<tr class="separator:a441da4ff6c5d929dbdaadd89408e7435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34cf63a11abeeb85be04cf8f7cccd996"><td class="memItemLeft" align="right" valign="top"><a id="a34cf63a11abeeb85be04cf8f7cccd996"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a34cf63a11abeeb85be04cf8f7cccd996">DnsTxtRecordItem</a> (const std::string &amp;new_key, const std::vector&lt; uint8_t &gt; &amp;new_value)</td></tr>
-<tr class="memdesc:a34cf63a11abeeb85be04cf8f7cccd996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a string key and a binary value. <br /></td></tr>
-<tr class="separator:a34cf63a11abeeb85be04cf8f7cccd996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a271ec2dd74bad3939eec86ea492d35"><td class="memItemLeft" align="right" valign="top"><a id="a6a271ec2dd74bad3939eec86ea492d35"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a6a271ec2dd74bad3939eec86ea492d35">DnsTxtRecordItem</a> (const char *new_key, const char *new_value)</td></tr>
+<tr class="memdesc:a6a271ec2dd74bad3939eec86ea492d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a C-string key and value. <br /></td></tr>
+<tr class="separator:a6a271ec2dd74bad3939eec86ea492d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ffa81f18c2a0cc0294e68c35fd41e4"><td class="memItemLeft" align="right" valign="top"><a id="ab7ffa81f18c2a0cc0294e68c35fd41e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#ab7ffa81f18c2a0cc0294e68c35fd41e4">DnsTxtRecordItem</a> (const char *new_key, const uint8_t *new_value, size_t new_value_len)</td></tr>
+<tr class="memdesc:ab7ffa81f18c2a0cc0294e68c35fd41e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a C-string key and a binary value. <br /></td></tr>
+<tr class="separator:ab7ffa81f18c2a0cc0294e68c35fd41e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb086cd8f22a1b5e5d391f20457ba41"><td class="memItemLeft" align="right" valign="top"><a id="acdb086cd8f22a1b5e5d391f20457ba41"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#acdb086cd8f22a1b5e5d391f20457ba41">DnsTxtRecordItem</a> (const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;new_key, const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;new_value)</td></tr>
+<tr class="memdesc:acdb086cd8f22a1b5e5d391f20457ba41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a string key and value. <br /></td></tr>
+<tr class="separator:acdb086cd8f22a1b5e5d391f20457ba41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5dfbfba10de1f5e220e16844bad3e1"><td class="memItemLeft" align="right" valign="top"><a id="aea5dfbfba10de1f5e220e16844bad3e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#aea5dfbfba10de1f5e220e16844bad3e1">DnsTxtRecordItem</a> (const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;new_key, const uint8_t *new_value, size_t new_value_len)</td></tr>
+<tr class="memdesc:aea5dfbfba10de1f5e220e16844bad3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a string key and a binary value. <br /></td></tr>
+<tr class="separator:aea5dfbfba10de1f5e220e16844bad3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e88e72a5975e4348a1b5840aa420d51"><td class="memItemLeft" align="right" valign="top"><a id="a0e88e72a5975e4348a1b5840aa420d51"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a0e88e72a5975e4348a1b5840aa420d51">DnsTxtRecordItem</a> (const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;new_key, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint8_t &gt; &amp;new_value)</td></tr>
+<tr class="memdesc:a0e88e72a5975e4348a1b5840aa420d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1_dns_txt_record_item.html" title="A key/value pair representing a DNS TXT record item.">DnsTxtRecordItem</a> from a string key and a binary value. <br /></td></tr>
+<tr class="separator:a0e88e72a5975e4348a1b5840aa420d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aac2597d0f31617a30eb7e665189558f0"><td class="memItemLeft" align="right" valign="top"><a id="aac2597d0f31617a30eb7e665189558f0"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#aac2597d0f31617a30eb7e665189558f0">key</a></td></tr>
-<tr class="memdesc:aac2597d0f31617a30eb7e665189558f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key is an ASCII-only string. <br /></td></tr>
-<tr class="separator:aac2597d0f31617a30eb7e665189558f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f391737959f5d1b6456d659e6ebbfa"><td class="memItemLeft" align="right" valign="top"><a id="a86f391737959f5d1b6456d659e6ebbfa"></a>
-std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#a86f391737959f5d1b6456d659e6ebbfa">value</a></td></tr>
-<tr class="memdesc:a86f391737959f5d1b6456d659e6ebbfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value is opaque binary data. <br /></td></tr>
-<tr class="separator:a86f391737959f5d1b6456d659e6ebbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cdb693ee7f3d1d131bb328468184b7"><td class="memItemLeft" align="right" valign="top"><a id="aa4cdb693ee7f3d1d131bb328468184b7"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#aa4cdb693ee7f3d1d131bb328468184b7">key</a></td></tr>
+<tr class="memdesc:aa4cdb693ee7f3d1d131bb328468184b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key is an ASCII-only string. <br /></td></tr>
+<tr class="separator:aa4cdb693ee7f3d1d131bb328468184b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae675fc884d19a43ad5f4ae02c7021bf1"><td class="memItemLeft" align="right" valign="top"><a id="ae675fc884d19a43ad5f4ae02c7021bf1"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dns_txt_record_item.html#ae675fc884d19a43ad5f4ae02c7021bf1">value</a></td></tr>
+<tr class="memdesc:ae675fc884d19a43ad5f4ae02c7021bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value is opaque binary data. <br /></td></tr>
+<tr class="separator:ae675fc884d19a43ad5f4ae02c7021bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="broker_8h_source.html">broker.h</a></li>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::llrp::DiscoveredTarget Struct Reference</title>
+<title>RDMnet: DiscoveredTarget Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,59 +204,57 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1llrp_1_1_discovered_ta
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::llrp::DiscoveredTarget Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__llrp__manager__cpp.html">LLRP Manager API</a></div></div>  </div>
+<div class="title">DiscoveredTarget Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__llrp__manager__cpp.html">LLRP Manager API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Represents an LLRP target discovered by a manager. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2llrp__manager_8h_source.html">rdmnet/cpp/llrp_manager.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e2f0b1218b078bbb152cd3133e95bbf"><td class="memItemLeft" align="right" valign="top"><a id="a7e2f0b1218b078bbb152cd3133e95bbf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a7e2f0b1218b078bbb152cd3133e95bbf">DiscoveredTarget</a> ()=default</td></tr>
-<tr class="memdesc:a7e2f0b1218b078bbb152cd3133e95bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a target with null/empty values by default. <br /></td></tr>
-<tr class="separator:a7e2f0b1218b078bbb152cd3133e95bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555f29086daef2ba21012a5dd04795a9"><td class="memItemLeft" align="right" valign="top"><a id="a555f29086daef2ba21012a5dd04795a9"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a555f29086daef2ba21012a5dd04795a9">DiscoveredTarget</a> (const <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> &amp;c_target) noexcept</td></tr>
-<tr class="memdesc:a555f29086daef2ba21012a5dd04795a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html" title="Represents an LLRP target discovered by a manager.">DiscoveredTarget</a> copied from an instance of the C <a class="el" href="struct_llrp_discovered_target.html" title="A set of information associated with an LLRP Target.">LlrpDiscoveredTarget</a> type. <br /></td></tr>
-<tr class="separator:a555f29086daef2ba21012a5dd04795a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd307961ba55558d5cc4c55a1a61caa"><td class="memItemLeft" align="right" valign="top"><a id="a9dd307961ba55558d5cc4c55a1a61caa"></a>
-<a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html">DiscoveredTarget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a9dd307961ba55558d5cc4c55a1a61caa">operator=</a> (const <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> &amp;c_target) noexcept</td></tr>
-<tr class="memdesc:a9dd307961ba55558d5cc4c55a1a61caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_llrp_discovered_target.html" title="A set of information associated with an LLRP Target.">LlrpDiscoveredTarget</a> type to an instance of this class. <br /></td></tr>
-<tr class="separator:a9dd307961ba55558d5cc4c55a1a61caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac236cbba799dea7bf6fe6b228d5f3289"><td class="memItemLeft" align="right" valign="top"><a id="ac236cbba799dea7bf6fe6b228d5f3289"></a>
-constexpr <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#ac236cbba799dea7bf6fe6b228d5f3289">address</a> (uint16_t subdevice=0) const noexcept</td></tr>
-<tr class="memdesc:ac236cbba799dea7bf6fe6b228d5f3289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target's LLRP addressing information. <br /></td></tr>
-<tr class="separator:ac236cbba799dea7bf6fe6b228d5f3289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1090b5a008a60ec77d122820f96278f7"><td class="memItemLeft" align="right" valign="top"><a id="a1090b5a008a60ec77d122820f96278f7"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a1090b5a008a60ec77d122820f96278f7">ComponentTypeToCString</a> () const noexcept</td></tr>
-<tr class="memdesc:a1090b5a008a60ec77d122820f96278f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the target's component type to a string representation. <br /></td></tr>
-<tr class="separator:a1090b5a008a60ec77d122820f96278f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a165eb56b86346e1ef25b6c9ba3de78a6"><td class="memItemLeft" align="right" valign="top"><a id="a165eb56b86346e1ef25b6c9ba3de78a6"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a165eb56b86346e1ef25b6c9ba3de78a6">ComponentTypeToString</a> () const</td></tr>
-<tr class="memdesc:a165eb56b86346e1ef25b6c9ba3de78a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the target's component type to a string representation. <br /></td></tr>
-<tr class="separator:a165eb56b86346e1ef25b6c9ba3de78a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac917c28cc851304ac9aecef39b982cb8"><td class="memItemLeft" align="right" valign="top"><a id="ac917c28cc851304ac9aecef39b982cb8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#ac917c28cc851304ac9aecef39b982cb8">DiscoveredTarget</a> ()=default</td></tr>
+<tr class="memdesc:ac917c28cc851304ac9aecef39b982cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a target with null/empty values by default. <br /></td></tr>
+<tr class="separator:ac917c28cc851304ac9aecef39b982cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9cb2a1c3a99088a6a196cdf51fc759"><td class="memItemLeft" align="right" valign="top"><a id="abe9cb2a1c3a99088a6a196cdf51fc759"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#abe9cb2a1c3a99088a6a196cdf51fc759">DiscoveredTarget</a> (const <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> &amp;c_target) noexcept</td></tr>
+<tr class="memdesc:abe9cb2a1c3a99088a6a196cdf51fc759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html" title="Represents an LLRP target discovered by a manager.">DiscoveredTarget</a> copied from an instance of the C <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> type. <br /></td></tr>
+<tr class="separator:abe9cb2a1c3a99088a6a196cdf51fc759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b52c5310b60066472b705521696ecc7"><td class="memItemLeft" align="right" valign="top"><a id="a7b52c5310b60066472b705521696ecc7"></a>
+<a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html">DiscoveredTarget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a7b52c5310b60066472b705521696ecc7">operator=</a> (const <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> &amp;c_target) noexcept</td></tr>
+<tr class="memdesc:a7b52c5310b60066472b705521696ecc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> type to an instance of this class. <br /></td></tr>
+<tr class="separator:a7b52c5310b60066472b705521696ecc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cc860d18a90b8614d8dd7e3e61e812"><td class="memItemLeft" align="right" valign="top"><a id="aa4cc860d18a90b8614d8dd7e3e61e812"></a>
+constexpr <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#aa4cc860d18a90b8614d8dd7e3e61e812">address</a> (uint16_t subdevice=0) const noexcept</td></tr>
+<tr class="memdesc:aa4cc860d18a90b8614d8dd7e3e61e812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target's LLRP addressing information. <br /></td></tr>
+<tr class="separator:aa4cc860d18a90b8614d8dd7e3e61e812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dbc05e8ca32cdd5515f8a0631e00e7"><td class="memItemLeft" align="right" valign="top"><a id="a89dbc05e8ca32cdd5515f8a0631e00e7"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a89dbc05e8ca32cdd5515f8a0631e00e7">ComponentTypeToCString</a> () const noexcept</td></tr>
+<tr class="memdesc:a89dbc05e8ca32cdd5515f8a0631e00e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the target's component type to a string representation. <br /></td></tr>
+<tr class="separator:a89dbc05e8ca32cdd5515f8a0631e00e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81ece33718c011ec148c88f465a3f09"><td class="memItemLeft" align="right" valign="top"><a id="ad81ece33718c011ec148c88f465a3f09"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#ad81ece33718c011ec148c88f465a3f09">ComponentTypeToString</a> () const</td></tr>
+<tr class="memdesc:ad81ece33718c011ec148c88f465a3f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the target's component type to a string representation. <br /></td></tr>
+<tr class="separator:ad81ece33718c011ec148c88f465a3f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a43b92fed06bf3ebf36ac27dec5575381"><td class="memItemLeft" align="right" valign="top"><a id="a43b92fed06bf3ebf36ac27dec5575381"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a43b92fed06bf3ebf36ac27dec5575381">cid</a></td></tr>
-<tr class="memdesc:a43b92fed06bf3ebf36ac27dec5575381"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target's CID. <br /></td></tr>
-<tr class="separator:a43b92fed06bf3ebf36ac27dec5575381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a562c7ecd3879cdaa21e0d38511dd64e1"><td class="memItemLeft" align="right" valign="top"><a id="a562c7ecd3879cdaa21e0d38511dd64e1"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a562c7ecd3879cdaa21e0d38511dd64e1">uid</a></td></tr>
-<tr class="memdesc:a562c7ecd3879cdaa21e0d38511dd64e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target's RDM UID. <br /></td></tr>
-<tr class="separator:a562c7ecd3879cdaa21e0d38511dd64e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b87a22860fffd00650ff5ac764554c8"><td class="memItemLeft" align="right" valign="top"><a id="a0b87a22860fffd00650ff5ac764554c8"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mac_addr.html">etcpal::MacAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a0b87a22860fffd00650ff5ac764554c8">hardware_address</a></td></tr>
-<tr class="memdesc:a0b87a22860fffd00650ff5ac764554c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lowest hardware address of the machine the target is operating on. <br /></td></tr>
-<tr class="separator:a0b87a22860fffd00650ff5ac764554c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e8f36f0e67eec79e77d13a110279279"><td class="memItemLeft" align="right" valign="top"><a id="a0e8f36f0e67eec79e77d13a110279279"></a>
-<a class="el" href="group__rdmnet__api__common.html#ga994bb762a1d4572348671a0b1e73d567">llrp_component_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a0e8f36f0e67eec79e77d13a110279279">component_type</a></td></tr>
-<tr class="memdesc:a0e8f36f0e67eec79e77d13a110279279"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LLRP component type of the target. <br /></td></tr>
-<tr class="separator:a0e8f36f0e67eec79e77d13a110279279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memItemLeft" align="right" valign="top"><a id="ab74b3ddda3c95279107d0059dd7ee9f3"></a>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#ab74b3ddda3c95279107d0059dd7ee9f3">cid</a></td></tr>
+<tr class="memdesc:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target's CID. <br /></td></tr>
+<tr class="separator:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b7b9dfe0aa5ebbd928817da6444004"><td class="memItemLeft" align="right" valign="top"><a id="a12b7b9dfe0aa5ebbd928817da6444004"></a>
+rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a12b7b9dfe0aa5ebbd928817da6444004">uid</a></td></tr>
+<tr class="memdesc:a12b7b9dfe0aa5ebbd928817da6444004"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target's RDM UID. <br /></td></tr>
+<tr class="separator:a12b7b9dfe0aa5ebbd928817da6444004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0011e5a6491b454068482387e61891b3"><td class="memItemLeft" align="right" valign="top"><a id="a0011e5a6491b454068482387e61891b3"></a>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_mac_addr.html">etcpal::MacAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a0011e5a6491b454068482387e61891b3">hardware_address</a></td></tr>
+<tr class="memdesc:a0011e5a6491b454068482387e61891b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lowest hardware address of the machine the target is operating on. <br /></td></tr>
+<tr class="separator:a0011e5a6491b454068482387e61891b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b74ef88251de997b90bb399762371a"><td class="memItemLeft" align="right" valign="top"><a id="a98b74ef88251de997b90bb399762371a"></a>
+<a class="el" href="group__rdmnet__api__common.html#ga994bb762a1d4572348671a0b1e73d567">llrp_component_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1llrp_1_1_discovered_target.html#a98b74ef88251de997b90bb399762371a">component_type</a></td></tr>
+<tr class="memdesc:a98b74ef88251de997b90bb399762371a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LLRP component type of the target. <br /></td></tr>
+<tr class="separator:a98b74ef88251de997b90bb399762371a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2llrp__manager_8h_source.html">llrp_manager.h</a></li>

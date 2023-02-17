@@ -1,42 +1,42 @@
 var group__rdmnet__device =
 [
     [ "RdmnetDeviceCallbacks", "struct_rdmnet_device_callbacks.html", [
-      [ "connect_failed", "struct_rdmnet_device_callbacks.html#ad1e27cadde6c64dabbbdf43837a79beb", null ],
-      [ "connected", "struct_rdmnet_device_callbacks.html#af89447bd4fa95c36278bb19ea29622ce", null ],
-      [ "context", "struct_rdmnet_device_callbacks.html#aea855069f3e85a29407be8a1fa27b2ad", null ],
-      [ "disconnected", "struct_rdmnet_device_callbacks.html#a52edccc7eecd92f7510e2367a98d134e", null ],
-      [ "dynamic_uid_status_received", "struct_rdmnet_device_callbacks.html#a5c345b7742a777cd9f1ea2aa8b4af186", null ],
-      [ "llrp_rdm_command_received", "struct_rdmnet_device_callbacks.html#a8c95049dcd4ba62b613aa16bc4d7c26e", null ],
-      [ "rdm_command_received", "struct_rdmnet_device_callbacks.html#a5f77366a95993235e128e207a0e4a4bb", null ]
+      [ "connect_failed", "struct_rdmnet_device_callbacks.html#a7e2e4ab2af0063d625aa8ed1289911a6", null ],
+      [ "connected", "struct_rdmnet_device_callbacks.html#a549be00e98b15c79de8c6175ffc54ae0", null ],
+      [ "context", "struct_rdmnet_device_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
+      [ "disconnected", "struct_rdmnet_device_callbacks.html#aea134c641a5c1b0f77b93daffe275496", null ],
+      [ "dynamic_uid_status_received", "struct_rdmnet_device_callbacks.html#a58dc39ccf26f36eb620f137220015c77", null ],
+      [ "llrp_rdm_command_received", "struct_rdmnet_device_callbacks.html#a4bffe139815ed8f20aeeee234809f379", null ],
+      [ "rdm_command_received", "struct_rdmnet_device_callbacks.html#af06e4b4111ad70dfda1dd3a69356e017", null ]
     ] ],
     [ "RdmnetVirtualEndpointConfig", "struct_rdmnet_virtual_endpoint_config.html", [
-      [ "dynamic_responders", "struct_rdmnet_virtual_endpoint_config.html#a1ffc5cad463b0ecb1cbfcf73b7b939ca", null ],
-      [ "endpoint_id", "struct_rdmnet_virtual_endpoint_config.html#ac27f6f1619485d14e1880735cb81c72f", null ],
-      [ "num_dynamic_responders", "struct_rdmnet_virtual_endpoint_config.html#a4fd8e58c72865cbad3db8627aadb3f6f", null ],
-      [ "num_static_responders", "struct_rdmnet_virtual_endpoint_config.html#a4a32978e00d6c1a5765c3d0073bcca37", null ],
-      [ "static_responders", "struct_rdmnet_virtual_endpoint_config.html#a9297c6417d008e13be0f64f8e5dd81e0", null ]
+      [ "dynamic_responders", "struct_rdmnet_virtual_endpoint_config.html#a038ae9f89c4f1ee616359d4cb0f4b0bf", null ],
+      [ "endpoint_id", "struct_rdmnet_virtual_endpoint_config.html#af702743398c1c2c0fd52ca40504cf1f4", null ],
+      [ "num_dynamic_responders", "struct_rdmnet_virtual_endpoint_config.html#ab98a0c9bba3086a4e9711e77dc3916dc", null ],
+      [ "num_static_responders", "struct_rdmnet_virtual_endpoint_config.html#a5093215d5eb866e3535424a1c4ea44e5", null ],
+      [ "static_responders", "struct_rdmnet_virtual_endpoint_config.html#a20c3d037e8a546f97941951363153387", null ]
     ] ],
     [ "RdmnetPhysicalEndpointResponder", "struct_rdmnet_physical_endpoint_responder.html", [
-      [ "binding_uid", "struct_rdmnet_physical_endpoint_responder.html#aa4dd027426319d8717649c4aa0dd1bbf", null ],
-      [ "control_field", "struct_rdmnet_physical_endpoint_responder.html#acf409850ecf2ca32dd2d999c602f00af", null ],
-      [ "uid", "struct_rdmnet_physical_endpoint_responder.html#a4733eb56264b07b7459b7f9d8002cd94", null ]
+      [ "binding_uid", "struct_rdmnet_physical_endpoint_responder.html#ad539b8a0998270c4b389bcba3b0f3da8", null ],
+      [ "control_field", "struct_rdmnet_physical_endpoint_responder.html#afa00abfbafa7d6dc376c83462e646f52", null ],
+      [ "uid", "struct_rdmnet_physical_endpoint_responder.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "RdmnetPhysicalEndpointConfig", "struct_rdmnet_physical_endpoint_config.html", [
-      [ "endpoint_id", "struct_rdmnet_physical_endpoint_config.html#aa3f8182a6de08e3d350968ae504f9c71", null ],
-      [ "num_responders", "struct_rdmnet_physical_endpoint_config.html#ae03e7714ab2513f42f6576df7da65738", null ],
-      [ "responders", "struct_rdmnet_physical_endpoint_config.html#affdd1b20ea4fe23f6c7ecca7dcf85960", null ]
+      [ "endpoint_id", "struct_rdmnet_physical_endpoint_config.html#af702743398c1c2c0fd52ca40504cf1f4", null ],
+      [ "num_responders", "struct_rdmnet_physical_endpoint_config.html#a198b576d97381a141652d54b3f90f681", null ],
+      [ "responders", "struct_rdmnet_physical_endpoint_config.html#aa32e7ac8b86139fd0a79d1d9b2f76840", null ]
     ] ],
     [ "RdmnetDeviceConfig", "struct_rdmnet_device_config.html", [
-      [ "callbacks", "struct_rdmnet_device_config.html#abc6d70dbf56e1ddc2c7e4bafa71db8c1", null ],
-      [ "cid", "struct_rdmnet_device_config.html#ae68596928501f9b5f49882a35470d6dc", null ],
-      [ "num_physical_endpoints", "struct_rdmnet_device_config.html#ac4577e78a0af247b77bc02bbbe63fa4f", null ],
-      [ "num_virtual_endpoints", "struct_rdmnet_device_config.html#aa72098b0a6479ed77f1371a8c1e04b03", null ],
-      [ "physical_endpoints", "struct_rdmnet_device_config.html#a468036d6a69b2e6247df1cf458635d29", null ],
-      [ "response_buf", "struct_rdmnet_device_config.html#aa087a3c2489b51ff355bc017d0cf89f0", null ],
-      [ "scope_config", "struct_rdmnet_device_config.html#a4e5acc99018738e60e1de429f581cdf7", null ],
-      [ "search_domain", "struct_rdmnet_device_config.html#a47b61799a52cea3074c57933d8181667", null ],
-      [ "uid", "struct_rdmnet_device_config.html#ae51f9c3e56fdd51709788f014236c4a0", null ],
-      [ "virtual_endpoints", "struct_rdmnet_device_config.html#a6ce37537401ab63957d2884f22980727", null ]
+      [ "callbacks", "struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629", null ],
+      [ "cid", "struct_rdmnet_device_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "num_physical_endpoints", "struct_rdmnet_device_config.html#a0309db5341399c37db7a2bb7a9ba4c6a", null ],
+      [ "num_virtual_endpoints", "struct_rdmnet_device_config.html#a15213c1baa1cbf253f1c66f517f08fd9", null ],
+      [ "physical_endpoints", "struct_rdmnet_device_config.html#aa348191ff39a94ca9a240f5fc0fc9baa", null ],
+      [ "response_buf", "struct_rdmnet_device_config.html#aa99184bd7c6729427838d2fc31612fea", null ],
+      [ "scope_config", "struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd", null ],
+      [ "search_domain", "struct_rdmnet_device_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ],
+      [ "uid", "struct_rdmnet_device_config.html#ad908bad751766196cc2334b0f8579a5c", null ],
+      [ "virtual_endpoints", "struct_rdmnet_device_config.html#a4143dc0917af2b7523bbcd575d6da4b5", null ]
     ] ],
     [ "RDMNET_DEVICE_CONFIG_DEFAULT_INIT", "group__rdmnet__device.html#gac8e03e329deb576755450ed19c0d5ca8", null ],
     [ "RDMNET_DEVICE_INVALID", "group__rdmnet__device.html#ga42be52a101f03361b7db0b29a063516a", null ],

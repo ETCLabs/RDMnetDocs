@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -221,13 +220,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c1f337f355371cdb56f19f164cf125b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">ToDefaultResponder</a> (const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;rdmnet_uid, uint16_t subdevice=0)</td></tr>
+<tr class="memitem:a8c1f337f355371cdb56f19f164cf125b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">ToDefaultResponder</a> (const rdm::Uid &amp;rdmnet_uid, uint16_t subdevice=0)</td></tr>
 <tr class="memdesc:a8c1f337f355371cdb56f19f164cf125b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classrdmnet_1_1_destination_addr.html" title="A destination address for an RDM command in RDMnet&#39;s RPT protocol.">DestinationAddr</a> representing a message addressed to a component's default responder.  <a href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">More...</a><br /></td></tr>
 <tr class="separator:a8c1f337f355371cdb56f19f164cf125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f050b3bcdb1eafa4acbb292ccd04f0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_destination_addr.html#a45f050b3bcdb1eafa4acbb292ccd04f0">ToDefaultResponder</a> (uint16_t manufacturer_id, uint32_t device_id, uint16_t subdevice=0)</td></tr>
 <tr class="memdesc:a45f050b3bcdb1eafa4acbb292ccd04f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classrdmnet_1_1_destination_addr.html" title="A destination address for an RDM command in RDMnet&#39;s RPT protocol.">DestinationAddr</a> representing a message addressed to a component's default responder.  <a href="classrdmnet_1_1_destination_addr.html#a45f050b3bcdb1eafa4acbb292ccd04f0">More...</a><br /></td></tr>
 <tr class="separator:a45f050b3bcdb1eafa4acbb292ccd04f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c7746701f2ad6f1143918158f0b7e64"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_destination_addr.html#a7c7746701f2ad6f1143918158f0b7e64">ToSubResponder</a> (const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;rdmnet_uid, uint16_t endpoint, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;rdm_uid, uint16_t subdevice=0)</td></tr>
+<tr class="memitem:a7c7746701f2ad6f1143918158f0b7e64"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_destination_addr.html#a7c7746701f2ad6f1143918158f0b7e64">ToSubResponder</a> (const rdm::Uid &amp;rdmnet_uid, uint16_t endpoint, const rdm::Uid &amp;rdm_uid, uint16_t subdevice=0)</td></tr>
 <tr class="memdesc:a7c7746701f2ad6f1143918158f0b7e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classrdmnet_1_1_destination_addr.html" title="A destination address for an RDM command in RDMnet&#39;s RPT protocol.">DestinationAddr</a> representing a message addressed to a sub-responder on a component.  <a href="classrdmnet_1_1_destination_addr.html#a7c7746701f2ad6f1143918158f0b7e64">More...</a><br /></td></tr>
 <tr class="separator:a7c7746701f2ad6f1143918158f0b7e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -272,7 +271,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a> rdmnet::DestinationAddr::ToDefaultResponder </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;&#160;</td>
+          <td class="paramtype">const rdm::Uid &amp;&#160;</td>
           <td class="paramname"><em>rdmnet_uid</em>, </td>
         </tr>
         <tr>
@@ -369,7 +368,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">constexpr <a class="el" href="classrdmnet_1_1_destination_addr.html">DestinationAddr</a> rdmnet::DestinationAddr::ToSubResponder </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;&#160;</td>
+          <td class="paramtype">const rdm::Uid &amp;&#160;</td>
           <td class="paramname"><em>rdmnet_uid</em>, </td>
         </tr>
         <tr>
@@ -381,7 +380,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;&#160;</td>
+          <td class="paramtype">const rdm::Uid &amp;&#160;</td>
           <td class="paramname"><em>rdm_uid</em>, </td>
         </tr>
         <tr>

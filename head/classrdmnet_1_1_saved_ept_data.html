@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::SavedEptData Class Reference</title>
+<title>RDMnet: SavedEptData Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,68 +203,66 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_saved_ept_data.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::SavedEptData Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">SavedEptData Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An EPT data message received over RDMnet and saved for later processing. </p>
 <p>This type is not used by the library API, but can come in handy if an application wants to queue or copy EPT data messages before acting on them. This type does heap allocation to hold the data. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="ept__data_8h_source.html">rdmnet/cpp/message_types/ept_data.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e7fcbf62ae348239369ab62716094f7"><td class="memItemLeft" align="right" valign="top"><a id="a9e7fcbf62ae348239369ab62716094f7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a9e7fcbf62ae348239369ab62716094f7">SavedEptData</a> ()=default</td></tr>
-<tr class="memdesc:a9e7fcbf62ae348239369ab62716094f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty, invalid EPT data structure by default. <br /></td></tr>
-<tr class="separator:a9e7fcbf62ae348239369ab62716094f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7992f765578803e0686a427c775a30f3"><td class="memItemLeft" align="right" valign="top"><a id="a7992f765578803e0686a427c775a30f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a7992f765578803e0686a427c775a30f3">SavedEptData</a> (const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> &amp;c_data)</td></tr>
-<tr class="memdesc:a7992f765578803e0686a427c775a30f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">SavedEptData</a> copied from an instance of the C <a class="el" href="struct_rdmnet_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">RdmnetSavedEptData</a> type. <br /></td></tr>
-<tr class="separator:a7992f765578803e0686a427c775a30f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab721c20b87bee342c3bda917fc7a64"><td class="memItemLeft" align="right" valign="top"><a id="a6ab721c20b87bee342c3bda917fc7a64"></a>
-<a class="el" href="classrdmnet_1_1_saved_ept_data.html">SavedEptData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a6ab721c20b87bee342c3bda917fc7a64">operator=</a> (const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> &amp;c_data)</td></tr>
-<tr class="memdesc:a6ab721c20b87bee342c3bda917fc7a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_rdmnet_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">RdmnetSavedEptData</a> type to an instance of this class. <br /></td></tr>
-<tr class="separator:a6ab721c20b87bee342c3bda917fc7a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8d9ccd4231631c346607615c607e51"><td class="memItemLeft" align="right" valign="top"><a id="abb8d9ccd4231631c346607615c607e51"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#abb8d9ccd4231631c346607615c607e51">SavedEptData</a> (const <a class="el" href="classrdmnet_1_1_ept_data.html">EptData</a> &amp;resp)</td></tr>
-<tr class="memdesc:abb8d9ccd4231631c346607615c607e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">SavedEptData</a> from an <a class="el" href="classrdmnet_1_1_ept_data.html" title="An EPT data message received over RDMnet and delivered to an RDMnet callback function.">EptData</a>. <br /></td></tr>
-<tr class="separator:abb8d9ccd4231631c346607615c607e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2dbfd7ef4f55b1f64d24b5b43cfe4cf"><td class="memItemLeft" align="right" valign="top"><a id="af2dbfd7ef4f55b1f64d24b5b43cfe4cf"></a>
-<a class="el" href="classrdmnet_1_1_saved_ept_data.html">SavedEptData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#af2dbfd7ef4f55b1f64d24b5b43cfe4cf">operator=</a> (const <a class="el" href="classrdmnet_1_1_ept_data.html">EptData</a> &amp;resp)</td></tr>
-<tr class="memdesc:af2dbfd7ef4f55b1f64d24b5b43cfe4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an <a class="el" href="classrdmnet_1_1_ept_data.html" title="An EPT data message received over RDMnet and delivered to an RDMnet callback function.">EptData</a> to an instance of this class. <br /></td></tr>
-<tr class="separator:af2dbfd7ef4f55b1f64d24b5b43cfe4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868d475f94cb3f675502442427213e66"><td class="memItemLeft" align="right" valign="top"><a id="a868d475f94cb3f675502442427213e66"></a>
-const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a868d475f94cb3f675502442427213e66">source_cid</a> () const noexcept</td></tr>
-<tr class="memdesc:a868d475f94cb3f675502442427213e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the EPT client that sent this data. <br /></td></tr>
-<tr class="separator:a868d475f94cb3f675502442427213e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3109d3920aaa5fd81199fe0f2b3ad52f"><td class="memItemLeft" align="right" valign="top"><a id="a3109d3920aaa5fd81199fe0f2b3ad52f"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a3109d3920aaa5fd81199fe0f2b3ad52f">manufacturer_id</a> () const noexcept</td></tr>
-<tr class="memdesc:a3109d3920aaa5fd81199fe0f2b3ad52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ESTA manufacturer ID that identifies the EPT sub-protocol. <br /></td></tr>
-<tr class="separator:a3109d3920aaa5fd81199fe0f2b3ad52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcf23604efbc128ee6beba429a6d08d6"><td class="memItemLeft" align="right" valign="top"><a id="abcf23604efbc128ee6beba429a6d08d6"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#abcf23604efbc128ee6beba429a6d08d6">protocol_id</a> () const noexcept</td></tr>
-<tr class="memdesc:abcf23604efbc128ee6beba429a6d08d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the protocol ID that identifies the EPT sub-protocol. <br /></td></tr>
-<tr class="separator:abcf23604efbc128ee6beba429a6d08d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b518e4d2f56dc997fbda113ea49034"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a25b518e4d2f56dc997fbda113ea49034">sub_protocol</a> () const noexcept</td></tr>
-<tr class="memdesc:a25b518e4d2f56dc997fbda113ea49034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full EPT sub-protocol identifier.  <a href="classrdmnet_1_1_saved_ept_data.html#a25b518e4d2f56dc997fbda113ea49034">More...</a><br /></td></tr>
-<tr class="separator:a25b518e4d2f56dc997fbda113ea49034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a325c105852ded5f39ece3b0994ca20bb"><td class="memItemLeft" align="right" valign="top"><a id="a325c105852ded5f39ece3b0994ca20bb"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a325c105852ded5f39ece3b0994ca20bb">data</a> () const noexcept</td></tr>
-<tr class="memdesc:a325c105852ded5f39ece3b0994ca20bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data associated with this EPT message. <br /></td></tr>
-<tr class="separator:a325c105852ded5f39ece3b0994ca20bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d8fa3acad322482f9838b845e29e46"><td class="memItemLeft" align="right" valign="top"><a id="a18d8fa3acad322482f9838b845e29e46"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a18d8fa3acad322482f9838b845e29e46">data_len</a> () const noexcept</td></tr>
-<tr class="memdesc:a18d8fa3acad322482f9838b845e29e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the data associated with this EPT message. <br /></td></tr>
-<tr class="separator:a18d8fa3acad322482f9838b845e29e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cdf4430e86f7c7955874f5ef31221df"><td class="memItemLeft" align="right" valign="top"><a id="a6cdf4430e86f7c7955874f5ef31221df"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a6cdf4430e86f7c7955874f5ef31221df">IsValid</a> () const noexcept</td></tr>
-<tr class="memdesc:a6cdf4430e86f7c7955874f5ef31221df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the values contained in this class are valid for an EPT data message. <br /></td></tr>
-<tr class="separator:a6cdf4430e86f7c7955874f5ef31221df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f518cc5fe1325568e4f57078a08503"><td class="memItemLeft" align="right" valign="top"><a id="ae5f518cc5fe1325568e4f57078a08503"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#ae5f518cc5fe1325568e4f57078a08503">SavedEptData</a> ()=default</td></tr>
+<tr class="memdesc:ae5f518cc5fe1325568e4f57078a08503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty, invalid EPT data structure by default. <br /></td></tr>
+<tr class="separator:ae5f518cc5fe1325568e4f57078a08503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f696219e3307d9752dec5de47742c27"><td class="memItemLeft" align="right" valign="top"><a id="a8f696219e3307d9752dec5de47742c27"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a8f696219e3307d9752dec5de47742c27">SavedEptData</a> (const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> &amp;c_data)</td></tr>
+<tr class="memdesc:a8f696219e3307d9752dec5de47742c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">SavedEptData</a> copied from an instance of the C <a class="el" href="struct_rdmnet_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">RdmnetSavedEptData</a> type. <br /></td></tr>
+<tr class="separator:a8f696219e3307d9752dec5de47742c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace521cdf211b2a384cc1b6a6bc838aff"><td class="memItemLeft" align="right" valign="top"><a id="ace521cdf211b2a384cc1b6a6bc838aff"></a>
+<a class="el" href="classrdmnet_1_1_saved_ept_data.html">SavedEptData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#ace521cdf211b2a384cc1b6a6bc838aff">operator=</a> (const <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a> &amp;c_data)</td></tr>
+<tr class="memdesc:ace521cdf211b2a384cc1b6a6bc838aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_rdmnet_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">RdmnetSavedEptData</a> type to an instance of this class. <br /></td></tr>
+<tr class="separator:ace521cdf211b2a384cc1b6a6bc838aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646fb8b8ab0fdb579ae8fc7fd60f65f5"><td class="memItemLeft" align="right" valign="top"><a id="a646fb8b8ab0fdb579ae8fc7fd60f65f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a646fb8b8ab0fdb579ae8fc7fd60f65f5">SavedEptData</a> (const <a class="el" href="classrdmnet_1_1_ept_data.html">EptData</a> &amp;resp)</td></tr>
+<tr class="memdesc:a646fb8b8ab0fdb579ae8fc7fd60f65f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_saved_ept_data.html" title="An EPT data message received over RDMnet and saved for later processing.">SavedEptData</a> from an <a class="el" href="classrdmnet_1_1_ept_data.html" title="An EPT data message received over RDMnet and delivered to an RDMnet callback function.">EptData</a>. <br /></td></tr>
+<tr class="separator:a646fb8b8ab0fdb579ae8fc7fd60f65f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af757abbfa9dc710b5455dae61b681c14"><td class="memItemLeft" align="right" valign="top"><a id="af757abbfa9dc710b5455dae61b681c14"></a>
+<a class="el" href="classrdmnet_1_1_saved_ept_data.html">SavedEptData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#af757abbfa9dc710b5455dae61b681c14">operator=</a> (const <a class="el" href="classrdmnet_1_1_ept_data.html">EptData</a> &amp;resp)</td></tr>
+<tr class="memdesc:af757abbfa9dc710b5455dae61b681c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an <a class="el" href="classrdmnet_1_1_ept_data.html" title="An EPT data message received over RDMnet and delivered to an RDMnet callback function.">EptData</a> to an instance of this class. <br /></td></tr>
+<tr class="separator:af757abbfa9dc710b5455dae61b681c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d284f75ee056ab50b3754e1606d59fd"><td class="memItemLeft" align="right" valign="top"><a id="a6d284f75ee056ab50b3754e1606d59fd"></a>
+const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a6d284f75ee056ab50b3754e1606d59fd">source_cid</a> () const noexcept</td></tr>
+<tr class="memdesc:a6d284f75ee056ab50b3754e1606d59fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the EPT client that sent this data. <br /></td></tr>
+<tr class="separator:a6d284f75ee056ab50b3754e1606d59fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8a5d6741267d6e5d59233d0e839bf5"><td class="memItemLeft" align="right" valign="top"><a id="aea8a5d6741267d6e5d59233d0e839bf5"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#aea8a5d6741267d6e5d59233d0e839bf5">manufacturer_id</a> () const noexcept</td></tr>
+<tr class="memdesc:aea8a5d6741267d6e5d59233d0e839bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ESTA manufacturer ID that identifies the EPT sub-protocol. <br /></td></tr>
+<tr class="separator:aea8a5d6741267d6e5d59233d0e839bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3001e20bdaffd3486d5a28db1cd3e254"><td class="memItemLeft" align="right" valign="top"><a id="a3001e20bdaffd3486d5a28db1cd3e254"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a3001e20bdaffd3486d5a28db1cd3e254">protocol_id</a> () const noexcept</td></tr>
+<tr class="memdesc:a3001e20bdaffd3486d5a28db1cd3e254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the protocol ID that identifies the EPT sub-protocol. <br /></td></tr>
+<tr class="separator:a3001e20bdaffd3486d5a28db1cd3e254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a490c72d0ae244ce21e8b750463ee4b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a2a490c72d0ae244ce21e8b750463ee4b">sub_protocol</a> () const noexcept</td></tr>
+<tr class="memdesc:a2a490c72d0ae244ce21e8b750463ee4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full EPT sub-protocol identifier.  <a href="classrdmnet_1_1_saved_ept_data.html#a2a490c72d0ae244ce21e8b750463ee4b">More...</a><br /></td></tr>
+<tr class="separator:a2a490c72d0ae244ce21e8b750463ee4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memItemLeft" align="right" valign="top"><a id="a21b8e060baa6eeed3e5e45e6d760b54c"></a>
+const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a21b8e060baa6eeed3e5e45e6d760b54c">data</a> () const noexcept</td></tr>
+<tr class="memdesc:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data associated with this EPT message. <br /></td></tr>
+<tr class="separator:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9724702c800f9afa146ab4cf598332"><td class="memItemLeft" align="right" valign="top"><a id="a8e9724702c800f9afa146ab4cf598332"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a8e9724702c800f9afa146ab4cf598332">data_len</a> () const noexcept</td></tr>
+<tr class="memdesc:a8e9724702c800f9afa146ab4cf598332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the data associated with this EPT message. <br /></td></tr>
+<tr class="separator:a8e9724702c800f9afa146ab4cf598332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472f705194218179e9cf26ffb288da6c"><td class="memItemLeft" align="right" valign="top"><a id="a472f705194218179e9cf26ffb288da6c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html#a472f705194218179e9cf26ffb288da6c">IsValid</a> () const noexcept</td></tr>
+<tr class="memdesc:a472f705194218179e9cf26ffb288da6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the values contained in this class are valid for an EPT data message. <br /></td></tr>
+<tr class="separator:a472f705194218179e9cf26ffb288da6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a25b518e4d2f56dc997fbda113ea49034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25b518e4d2f56dc997fbda113ea49034">&#9670;&nbsp;</a></span>sub_protocol()</h2>
+<a id="a2a490c72d0ae244ce21e8b750463ee4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a490c72d0ae244ce21e8b750463ee4b">&#9670;&nbsp;</a></span>sub_protocol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +271,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t rdmnet::SavedEptData::sub_protocol </td>
+          <td class="memname">uint32_t sub_protocol </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -287,7 +285,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Get the full EPT sub-protocol identifier. </p>
-<p>Equivalent to (<a class="el" href="classrdmnet_1_1_saved_ept_data.html#a3109d3920aaa5fd81199fe0f2b3ad52f" title="Get the ESTA manufacturer ID that identifies the EPT sub-protocol.">manufacturer_id()</a> &lt;&lt; 16 | <a class="el" href="classrdmnet_1_1_saved_ept_data.html#abcf23604efbc128ee6beba429a6d08d6" title="Get the protocol ID that identifies the EPT sub-protocol.">protocol_id()</a>) </p>
+<p>Equivalent to (<a class="el" href="classrdmnet_1_1_saved_ept_data.html#aea8a5d6741267d6e5d59233d0e839bf5" title="Get the ESTA manufacturer ID that identifies the EPT sub-protocol.">manufacturer_id()</a> &lt;&lt; 16 | <a class="el" href="classrdmnet_1_1_saved_ept_data.html#a3001e20bdaffd3486d5a28db1cd3e254" title="Get the protocol ID that identifies the EPT sub-protocol.">protocol_id()</a>) </p>
 
 </div>
 </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::RptClientList Class Reference</title>
+<title>RDMnet: RptClientList Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,51 +203,49 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_rpt_client_list.html',
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::RptClientList Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">RptClientList Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A list of RPT client entries. </p>
-<p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1_rpt_client_list.html#a0899bb62646ac3b9220986a144219917" title="Copy out the list of client entries.">RptClientList::GetClientEntries()</a> to copy out the data. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="rpt__client_8h_source.html">rdmnet/cpp/message_types/rpt_client.h</a>&gt;</code></p>
-<table class="memberdecls">
+<p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1_rpt_client_list.html#aaf81641004fcb987a9dee6f2cf39cf1c" title="Copy out the list of client entries.">RptClientList::GetClientEntries()</a> to copy out the data. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2744dc9ee79db88b1bfb368a61249f3c"><td class="memItemLeft" align="right" valign="top"><a id="a2744dc9ee79db88b1bfb368a61249f3c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a2744dc9ee79db88b1bfb368a61249f3c">RptClientList</a> ()=delete</td></tr>
-<tr class="memdesc:a2744dc9ee79db88b1bfb368a61249f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
-<tr class="separator:a2744dc9ee79db88b1bfb368a61249f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff442c1fe423934c59aea7e1d8dd298"><td class="memItemLeft" align="right" valign="top"><a id="aeff442c1fe423934c59aea7e1d8dd298"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#aeff442c1fe423934c59aea7e1d8dd298">RptClientList</a> (const <a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:aeff442c1fe423934c59aea7e1d8dd298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1_rpt_client_list.html#a0899bb62646ac3b9220986a144219917" title="Copy out the list of client entries.">GetClientEntries()</a> to copy out the data. <br /></td></tr>
-<tr class="separator:aeff442c1fe423934c59aea7e1d8dd298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75372b0ec35bdf27954411de4735beb7"><td class="memItemLeft" align="right" valign="top"><a id="a75372b0ec35bdf27954411de4735beb7"></a>
-<a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a75372b0ec35bdf27954411de4735beb7">operator=</a> (const <a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:a75372b0ec35bdf27954411de4735beb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1_rpt_client_list.html#a0899bb62646ac3b9220986a144219917" title="Copy out the list of client entries.">GetClientEntries()</a> to copy out the data. <br /></td></tr>
-<tr class="separator:a75372b0ec35bdf27954411de4735beb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c9e74442e769d2d5b4dfaebff77f34"><td class="memItemLeft" align="right" valign="top"><a id="a38c9e74442e769d2d5b4dfaebff77f34"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a38c9e74442e769d2d5b4dfaebff77f34">RptClientList</a> (const <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> &amp;c_list) noexcept</td></tr>
-<tr class="memdesc:a38c9e74442e769d2d5b4dfaebff77f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1_rpt_client_list.html" title="A list of RPT client entries.">RptClientList</a> which references an instance of the C <a class="el" href="struct_rdmnet_rpt_client_list.html" title="A structure that represents a list of RPT Client Entries.">RdmnetRptClientList</a> type. <br /></td></tr>
-<tr class="separator:a38c9e74442e769d2d5b4dfaebff77f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0899bb62646ac3b9220986a144219917"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrdmnet_1_1_rpt_client_entry.html">RptClientEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a0899bb62646ac3b9220986a144219917">GetClientEntries</a> () const</td></tr>
-<tr class="memdesc:a0899bb62646ac3b9220986a144219917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy out the list of client entries.  <a href="classrdmnet_1_1_rpt_client_list.html#a0899bb62646ac3b9220986a144219917">More...</a><br /></td></tr>
-<tr class="separator:a0899bb62646ac3b9220986a144219917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab88e3093b96c76a3e9fbe99a67968e7"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#aab88e3093b96c76a3e9fbe99a67968e7">more_coming</a> () const noexcept</td></tr>
-<tr class="memdesc:aab88e3093b96c76a3e9fbe99a67968e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="classrdmnet_1_1_rpt_client_list.html#aab88e3093b96c76a3e9fbe99a67968e7">More...</a><br /></td></tr>
-<tr class="separator:aab88e3093b96c76a3e9fbe99a67968e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da28fd5933191a6e3df8c0a32376947"><td class="memItemLeft" align="right" valign="top"><a id="a7da28fd5933191a6e3df8c0a32376947"></a>
-constexpr const <a class="el" href="struct_rdmnet_rpt_client_entry.html">RdmnetRptClientEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a7da28fd5933191a6e3df8c0a32376947">raw_entry_array</a> () const noexcept</td></tr>
-<tr class="memdesc:a7da28fd5933191a6e3df8c0a32376947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the raw array of client entry C structures. <br /></td></tr>
-<tr class="separator:a7da28fd5933191a6e3df8c0a32376947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b9eada5fff8ccdfda5a1f0542510b8b"><td class="memItemLeft" align="right" valign="top"><a id="a9b9eada5fff8ccdfda5a1f0542510b8b"></a>
-constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a9b9eada5fff8ccdfda5a1f0542510b8b">raw_entry_array_size</a> () const noexcept</td></tr>
-<tr class="memdesc:a9b9eada5fff8ccdfda5a1f0542510b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the raw array of client entry C structures. <br /></td></tr>
-<tr class="separator:a9b9eada5fff8ccdfda5a1f0542510b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d9c228fdc81d65d6d953c716ba03b9"><td class="memItemLeft" align="right" valign="top"><a id="ac0d9c228fdc81d65d6d953c716ba03b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#ac0d9c228fdc81d65d6d953c716ba03b9">RptClientList</a> ()=delete</td></tr>
+<tr class="memdesc:ac0d9c228fdc81d65d6d953c716ba03b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
+<tr class="separator:ac0d9c228fdc81d65d6d953c716ba03b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc90119dd2ade891460dcb52afa1e4a"><td class="memItemLeft" align="right" valign="top"><a id="a0bc90119dd2ade891460dcb52afa1e4a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a0bc90119dd2ade891460dcb52afa1e4a">RptClientList</a> (const <a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:a0bc90119dd2ade891460dcb52afa1e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1_rpt_client_list.html#aaf81641004fcb987a9dee6f2cf39cf1c" title="Copy out the list of client entries.">GetClientEntries()</a> to copy out the data. <br /></td></tr>
+<tr class="separator:a0bc90119dd2ade891460dcb52afa1e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d36b79c738398228a9966ad7926af11"><td class="memItemLeft" align="right" valign="top"><a id="a5d36b79c738398228a9966ad7926af11"></a>
+<a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a5d36b79c738398228a9966ad7926af11">operator=</a> (const <a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:a5d36b79c738398228a9966ad7926af11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1_rpt_client_list.html#aaf81641004fcb987a9dee6f2cf39cf1c" title="Copy out the list of client entries.">GetClientEntries()</a> to copy out the data. <br /></td></tr>
+<tr class="separator:a5d36b79c738398228a9966ad7926af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962fa8e4e4876db8e5a460bb6dffecf6"><td class="memItemLeft" align="right" valign="top"><a id="a962fa8e4e4876db8e5a460bb6dffecf6"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a962fa8e4e4876db8e5a460bb6dffecf6">RptClientList</a> (const <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> &amp;c_list) noexcept</td></tr>
+<tr class="memdesc:a962fa8e4e4876db8e5a460bb6dffecf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1_rpt_client_list.html" title="A list of RPT client entries.">RptClientList</a> which references an instance of the C <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> type. <br /></td></tr>
+<tr class="separator:a962fa8e4e4876db8e5a460bb6dffecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf81641004fcb987a9dee6f2cf39cf1c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="structrdmnet_1_1_rpt_client_entry.html">RptClientEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#aaf81641004fcb987a9dee6f2cf39cf1c">GetClientEntries</a> () const</td></tr>
+<tr class="memdesc:aaf81641004fcb987a9dee6f2cf39cf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy out the list of client entries.  <a href="classrdmnet_1_1_rpt_client_list.html#aaf81641004fcb987a9dee6f2cf39cf1c">More...</a><br /></td></tr>
+<tr class="separator:aaf81641004fcb987a9dee6f2cf39cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc9106ad47f1f076eb8195dbba22d24"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a4dc9106ad47f1f076eb8195dbba22d24">more_coming</a> () const noexcept</td></tr>
+<tr class="memdesc:a4dc9106ad47f1f076eb8195dbba22d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="classrdmnet_1_1_rpt_client_list.html#a4dc9106ad47f1f076eb8195dbba22d24">More...</a><br /></td></tr>
+<tr class="separator:a4dc9106ad47f1f076eb8195dbba22d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6acda046324e7d15bb166aa0e49ace"><td class="memItemLeft" align="right" valign="top"><a id="a6c6acda046324e7d15bb166aa0e49ace"></a>
+constexpr const <a class="el" href="struct_rdmnet_rpt_client_entry.html">RdmnetRptClientEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a6c6acda046324e7d15bb166aa0e49ace">raw_entry_array</a> () const noexcept</td></tr>
+<tr class="memdesc:a6c6acda046324e7d15bb166aa0e49ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the raw array of client entry C structures. <br /></td></tr>
+<tr class="separator:a6c6acda046324e7d15bb166aa0e49ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4739dc0b762cd3dfe72e139e098095"><td class="memItemLeft" align="right" valign="top"><a id="a0e4739dc0b762cd3dfe72e139e098095"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html#a0e4739dc0b762cd3dfe72e139e098095">raw_entry_array_size</a> () const noexcept</td></tr>
+<tr class="memdesc:a0e4739dc0b762cd3dfe72e139e098095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the raw array of client entry C structures. <br /></td></tr>
+<tr class="separator:a0e4739dc0b762cd3dfe72e139e098095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0899bb62646ac3b9220986a144219917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0899bb62646ac3b9220986a144219917">&#9670;&nbsp;</a></span>GetClientEntries()</h2>
+<a id="aaf81641004fcb987a9dee6f2cf39cf1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf81641004fcb987a9dee6f2cf39cf1c">&#9670;&nbsp;</a></span>GetClientEntries()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +254,7 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="structrdmnet_1_1_rpt_client_entry.html">RptClientEntry</a> &gt; rdmnet::RptClientList::GetClientEntries </td>
+          <td class="memname"><a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="structrdmnet_1_1_rpt_client_entry.html">RptClientEntry</a> &gt; GetClientEntries </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -274,8 +272,8 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 
 </div>
 </div>
-<a id="aab88e3093b96c76a3e9fbe99a67968e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab88e3093b96c76a3e9fbe99a67968e7">&#9670;&nbsp;</a></span>more_coming()</h2>
+<a id="a4dc9106ad47f1f076eb8195dbba22d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc9106ad47f1f076eb8195dbba22d24">&#9670;&nbsp;</a></span>more_coming()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +282,7 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool rdmnet::RptClientList::more_coming </td>
+          <td class="memname">constexpr bool more_coming </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -298,7 +296,7 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </div><div class="memdoc">
 
 <p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="classrdmnet_1_1_rpt_client_list.html" title="A list of RPT client entries.">RptClientList</a> is received with <a class="el" href="classrdmnet_1_1_rpt_client_list.html#aab88e3093b96c76a3e9fbe99a67968e7" title="This message contains a partial list.">more_coming()</a> == false. </p>
+<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="classrdmnet_1_1_rpt_client_list.html" title="A list of RPT client entries.">RptClientList</a> is received with <a class="el" href="classrdmnet_1_1_rpt_client_list.html#a4dc9106ad47f1f076eb8195dbba22d24" title="This message contains a partial list.">more_coming()</a> == false. </p>
 
 </div>
 </div>

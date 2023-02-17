@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -332,7 +331,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6a992b031bed7a5185188376597562e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga6a992b031bed7a5185188376597562e5">rdmnet_scope_monitor_config_set_callbacks</a> (<a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a> *config, <a class="el" href="group__rdmnet__disc.html#ga8f9d261879f95bec257939fb2a4128ef">RdmnetDiscBrokerFoundCallback</a> broker_found, <a class="el" href="group__rdmnet__disc.html#ga7d7aee925082d4817e0b9426b9c8a04e">RdmnetDiscBrokerUpdatedCallback</a> broker_udpated, <a class="el" href="group__rdmnet__disc.html#ga242b140792d3a4d16312af7b136f127f">RdmnetDiscBrokerLostCallback</a> broker_lost, void *context)</td></tr>
 <tr class="memdesc:ga6a992b031bed7a5185188376597562e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks in an RDMnet scope monitor configuration structure.  <a href="group__rdmnet__disc.html#ga6a992b031bed7a5185188376597562e5">More...</a><br /></td></tr>
 <tr class="separator:ga6a992b031bed7a5185188376597562e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1999940ffed68c70e24de44855ffea09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">rdmnet_disc_start_monitoring</a> (const <a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a> *config, <a class="el" href="group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8">rdmnet_scope_monitor_t</a> *handle, int *platform_specific_error)</td></tr>
+<tr class="memitem:ga1999940ffed68c70e24de44855ffea09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">rdmnet_disc_start_monitoring</a> (const <a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a> *config, <a class="el" href="group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8">rdmnet_scope_monitor_t</a> *handle, int *platform_specific_error)</td></tr>
 <tr class="memdesc:ga1999940ffed68c70e24de44855ffea09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin monitoring an RDMnet scope for brokers.  <a href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">More...</a><br /></td></tr>
 <tr class="separator:ga1999940ffed68c70e24de44855ffea09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4633144d80e2e43f3fcc04104e958ef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga4633144d80e2e43f3fcc04104e958ef6">rdmnet_disc_stop_monitoring</a> (<a class="el" href="group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8">rdmnet_scope_monitor_t</a> handle)</td></tr>
@@ -341,7 +340,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaca3cf1d904824d84518f1aa9f8c1207b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#gaca3cf1d904824d84518f1aa9f8c1207b">rdmnet_disc_stop_monitoring_all</a> (void)</td></tr>
 <tr class="memdesc:gaca3cf1d904824d84518f1aa9f8c1207b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop monitoring all RDMnet scopes for brokers.  <a href="group__rdmnet__disc.html#gaca3cf1d904824d84518f1aa9f8c1207b">More...</a><br /></td></tr>
 <tr class="separator:gaca3cf1d904824d84518f1aa9f8c1207b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">rdmnet_disc_register_broker</a> (const <a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a> *config, <a class="el" href="group__rdmnet__disc.html#gabd41ce451024533d6fed8d04192cb451">rdmnet_registered_broker_t</a> *handle)</td></tr>
+<tr class="memitem:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">rdmnet_disc_register_broker</a> (const <a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a> *config, <a class="el" href="group__rdmnet__disc.html#gabd41ce451024533d6fed8d04192cb451">rdmnet_registered_broker_t</a> *handle)</td></tr>
 <tr class="memdesc:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an RDMnet broker on a scope.  <a href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">More...</a><br /></td></tr>
 <tr class="separator:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba7836f5a2dda01823ed110d9033970d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#gaba7836f5a2dda01823ed110d9033970d">rdmnet_disc_unregister_broker</a> (<a class="el" href="group__rdmnet__disc.html#gabd41ce451024533d6fed8d04192cb451">rdmnet_registered_broker_t</a> handle)</td></tr>
@@ -353,7 +352,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="discovery_8h.html">discovery.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="discovery_8h.html">discovery.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

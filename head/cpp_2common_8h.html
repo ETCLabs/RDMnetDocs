@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -210,18 +210,15 @@ $(document).ready(function(){initNavTree('cpp_2common_8h.html',''); initResizabl
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>C++ wrapper for the RDMnet init/deinit functions. </p>
-</div><div class="textblock"><code>#include &quot;<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/cpp_2error_8h.html">etcpal/cpp/error.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/cpp_2log_8h.html">etcpal/cpp/log.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&quot;</code><br />
 </div>
 <p><a href="cpp_2common_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class representing a synchronous action to take in response to a received RDM command.  <a href="classrdmnet_1_1_rdm_response_action.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html">rdmnet::EptResponseAction</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class representing a synchronous action to take in response to a received EPT data message.  <a href="classrdmnet_1_1_ept_response_action.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -233,13 +230,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf67a5727b5378a590e097df2dd9b0539"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539">rdmnet::Init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params=nullptr, const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt; &amp;mcast_netints=std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt;{})</td></tr>
+<tr class="memitem:gaf67a5727b5378a590e097df2dd9b0539"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539">Init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params=nullptr, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt; &amp;mcast_netints=<a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt;{})</td></tr>
 <tr class="memdesc:gaf67a5727b5378a590e097df2dd9b0539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RDMnet library.  <a href="group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539">More...</a><br /></td></tr>
 <tr class="separator:gaf67a5727b5378a590e097df2dd9b0539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33143f39de2d03ca97b963db7df4dbf1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__cpp__common.html#ga33143f39de2d03ca97b963db7df4dbf1">rdmnet::Init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html">etcpal::Logger</a> &amp;logger, const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt; &amp;mcast_netints=std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt;{})</td></tr>
+<tr class="memitem:ga33143f39de2d03ca97b963db7df4dbf1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__cpp__common.html#ga33143f39de2d03ca97b963db7df4dbf1">Init</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html">etcpal::Logger</a> &amp;logger, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt; &amp;mcast_netints=<a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> &gt;{})</td></tr>
 <tr class="memdesc:ga33143f39de2d03ca97b963db7df4dbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RDMnet library.  <a href="group__rdmnet__cpp__common.html#ga33143f39de2d03ca97b963db7df4dbf1">More...</a><br /></td></tr>
 <tr class="separator:ga33143f39de2d03ca97b963db7df4dbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga630a9b2c8c84ea45bc9c2aa4672055fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__cpp__common.html#ga630a9b2c8c84ea45bc9c2aa4672055fb">rdmnet::Deinit</a> ()</td></tr>
+<tr class="memitem:ga630a9b2c8c84ea45bc9c2aa4672055fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__cpp__common.html#ga630a9b2c8c84ea45bc9c2aa4672055fb">Deinit</a> ()</td></tr>
 <tr class="memdesc:ga630a9b2c8c84ea45bc9c2aa4672055fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the RDMnet library.  <a href="group__rdmnet__cpp__common.html#ga630a9b2c8c84ea45bc9c2aa4672055fb">More...</a><br /></td></tr>
 <tr class="separator:ga630a9b2c8c84ea45bc9c2aa4672055fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

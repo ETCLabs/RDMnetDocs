@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::EptResponseAction Class Reference</title>
+<title>RDMnet: EptResponseAction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,37 +204,35 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_ept_response_action.ht
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::EptResponseAction Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">EptResponseAction Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A class representing a synchronous action to take in response to a received EPT data message. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2common_8h_source.html">rdmnet/cpp/common.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f9fc22ec2d160b819e339d22792c843"><td class="memItemLeft" align="right" valign="top"><a id="a8f9fc22ec2d160b819e339d22792c843"></a>
-constexpr const <a class="el" href="struct_rdmnet_sync_ept_response.html">RdmnetSyncEptResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#a8f9fc22ec2d160b819e339d22792c843">get</a> () const</td></tr>
-<tr class="memdesc:a8f9fc22ec2d160b819e339d22792c843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
-<tr class="separator:a8f9fc22ec2d160b819e339d22792c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab422058ad5e8a4d9c01e8a1a4c2eb1c4"><td class="memItemLeft" align="right" valign="top"><a id="ab422058ad5e8a4d9c01e8a1a4c2eb1c4"></a>
+constexpr const <a class="el" href="struct_rdmnet_sync_ept_response.html">RdmnetSyncEptResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#ab422058ad5e8a4d9c01e8a1a4c2eb1c4">get</a> () const</td></tr>
+<tr class="memdesc:ab422058ad5e8a4d9c01e8a1a4c2eb1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
+<tr class="separator:ab422058ad5e8a4d9c01e8a1a4c2eb1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac648b8c90bc48b9d7982b5daee8e2b60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#ac648b8c90bc48b9d7982b5daee8e2b60">SendData</a> (size_t response_data_len)</td></tr>
-<tr class="memdesc:ac648b8c90bc48b9d7982b5daee8e2b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an EPT data message in response.  <a href="classrdmnet_1_1_ept_response_action.html#ac648b8c90bc48b9d7982b5daee8e2b60">More...</a><br /></td></tr>
-<tr class="separator:ac648b8c90bc48b9d7982b5daee8e2b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c5fb57a5485e33d2565655ab636f19"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#a38c5fb57a5485e33d2565655ab636f19">SendStatus</a> (<a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code)</td></tr>
-<tr class="memdesc:a38c5fb57a5485e33d2565655ab636f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an EPT status message.  <a href="classrdmnet_1_1_ept_response_action.html#a38c5fb57a5485e33d2565655ab636f19">More...</a><br /></td></tr>
-<tr class="separator:a38c5fb57a5485e33d2565655ab636f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a549151dc877bdd04a443a5016fd25a13"><td class="memItemLeft" align="right" valign="top"><a id="a549151dc877bdd04a443a5016fd25a13"></a>
-static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#a549151dc877bdd04a443a5016fd25a13">DeferResponse</a> ()</td></tr>
-<tr class="memdesc:a549151dc877bdd04a443a5016fd25a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the response to the EPT message, either to be sent later or because no response is necessary. <br /></td></tr>
-<tr class="separator:a549151dc877bdd04a443a5016fd25a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcc67717e1fef1438da2cded45a631c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">SendData</a> (size_t response_data_len)</td></tr>
+<tr class="memdesc:a1fcc67717e1fef1438da2cded45a631c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an EPT data message in response.  <a href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">More...</a><br /></td></tr>
+<tr class="separator:a1fcc67717e1fef1438da2cded45a631c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15265b500f98e3c739de35f903313425"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#a15265b500f98e3c739de35f903313425">SendStatus</a> (<a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code)</td></tr>
+<tr class="memdesc:a15265b500f98e3c739de35f903313425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an EPT status message.  <a href="classrdmnet_1_1_ept_response_action.html#a15265b500f98e3c739de35f903313425">More...</a><br /></td></tr>
+<tr class="separator:a15265b500f98e3c739de35f903313425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb876c19423878ded5f6e4b26b339b4c"><td class="memItemLeft" align="right" valign="top"><a id="abb876c19423878ded5f6e4b26b339b4c"></a>
+static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_response_action.html#abb876c19423878ded5f6e4b26b339b4c">DeferResponse</a> ()</td></tr>
+<tr class="memdesc:abb876c19423878ded5f6e4b26b339b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the response to the EPT message, either to be sent later or because no response is necessary. <br /></td></tr>
+<tr class="separator:abb876c19423878ded5f6e4b26b339b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac648b8c90bc48b9d7982b5daee8e2b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac648b8c90bc48b9d7982b5daee8e2b60">&#9670;&nbsp;</a></span>SendData()</h2>
+<a id="a1fcc67717e1fef1438da2cded45a631c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcc67717e1fef1438da2cded45a631c">&#9670;&nbsp;</a></span>SendData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +241,7 @@ static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponse
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a> rdmnet::EptResponseAction::SendData </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a> SendData </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>response_data_len</em></td><td>)</td>
@@ -268,8 +266,8 @@ static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponse
 
 </div>
 </div>
-<a id="a38c5fb57a5485e33d2565655ab636f19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38c5fb57a5485e33d2565655ab636f19">&#9670;&nbsp;</a></span>SendStatus()</h2>
+<a id="a15265b500f98e3c739de35f903313425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15265b500f98e3c739de35f903313425">&#9670;&nbsp;</a></span>SendStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +276,7 @@ static <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponse
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a> rdmnet::EptResponseAction::SendStatus </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a> SendStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a>&#160;</td>
           <td class="paramname"><em>status_code</em></td><td>)</td>

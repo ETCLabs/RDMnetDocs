@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::RptStatus Class Reference</title>
+<title>RDMnet: RptStatus Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,72 +203,70 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_rpt_status.html',''); 
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::RptStatus Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">RptStatus Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An RPT status message received over RDMnet and delivered to an RDMnet callback function. </p>
-<p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1_rpt_status.html#a401bcd20f188e7582b6421a3a0c9be0f" title="Save the data in this status message for later use from a different context.">RptStatus::Save()</a> to create a copyable version. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="rpt__status_8h_source.html">rdmnet/cpp/message_types/rpt_status.h</a>&gt;</code></p>
-<table class="memberdecls">
+<p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1_rpt_status.html#ac79122c5e87c0e38937e089a43e13751" title="Save the data in this status message for later use from a different context.">RptStatus::Save()</a> to create a copyable version. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a441bc62942c0f2b541de8b6608417f"><td class="memItemLeft" align="right" valign="top"><a id="a0a441bc62942c0f2b541de8b6608417f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a0a441bc62942c0f2b541de8b6608417f">RptStatus</a> ()=delete</td></tr>
-<tr class="memdesc:a0a441bc62942c0f2b541de8b6608417f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
-<tr class="separator:a0a441bc62942c0f2b541de8b6608417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83df8942f5ecb1f6290ff221894bb4d5"><td class="memItemLeft" align="right" valign="top"><a id="a83df8942f5ecb1f6290ff221894bb4d5"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a83df8942f5ecb1f6290ff221894bb4d5">RptStatus</a> (const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> &amp;c_status)</td></tr>
-<tr class="memdesc:a83df8942f5ecb1f6290ff221894bb4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1_rpt_status.html" title="An RPT status message received over RDMnet and delivered to an RDMnet callback function.">RptStatus</a> from an instance of the C <a class="el" href="struct_rdmnet_rpt_status.html" title="An RDMnet RPT status message received by a local component.">RdmnetRptStatus</a> type. <br /></td></tr>
-<tr class="separator:a83df8942f5ecb1f6290ff221894bb4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6507230a0c2c36aa6a55cfb75ab302ed"><td class="memItemLeft" align="right" valign="top"><a id="a6507230a0c2c36aa6a55cfb75ab302ed"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a> () const noexcept</td></tr>
-<tr class="memdesc:a6507230a0c2c36aa6a55cfb75ab302ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the RDMnet component that sent this RPT status message. <br /></td></tr>
-<tr class="separator:a6507230a0c2c36aa6a55cfb75ab302ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f103daf4882d624b48c734bdf3c5c62"><td class="memItemLeft" align="right" valign="top"><a id="a4f103daf4882d624b48c734bdf3c5c62"></a>
-constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a4f103daf4882d624b48c734bdf3c5c62">source_endpoint</a> () const noexcept</td></tr>
-<tr class="memdesc:a4f103daf4882d624b48c734bdf3c5c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the endpoint from which this RPT status message was sent. <br /></td></tr>
-<tr class="separator:a4f103daf4882d624b48c734bdf3c5c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87bb2e53322efe7a63cecee71e419d58"><td class="memItemLeft" align="right" valign="top"><a id="a87bb2e53322efe7a63cecee71e419d58"></a>
-constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a87bb2e53322efe7a63cecee71e419d58">seq_num</a> () const noexcept</td></tr>
-<tr class="memdesc:a87bb2e53322efe7a63cecee71e419d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDMnet sequence number of this RPT status message, for matching with a corresponding command. <br /></td></tr>
-<tr class="separator:a87bb2e53322efe7a63cecee71e419d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd94fd0b170cc6b385b6d2e5720575a"><td class="memItemLeft" align="right" valign="top"><a id="a8fd94fd0b170cc6b385b6d2e5720575a"></a>
-constexpr <a class="el" href="group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a8fd94fd0b170cc6b385b6d2e5720575a">status_code</a> () const noexcept</td></tr>
-<tr class="memdesc:a8fd94fd0b170cc6b385b6d2e5720575a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RPT status code of this status message. <br /></td></tr>
-<tr class="separator:a8fd94fd0b170cc6b385b6d2e5720575a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a087aa05e2cb2bb05ae46f6f7f5ada9fa"><td class="memItemLeft" align="right" valign="top"><a id="a087aa05e2cb2bb05ae46f6f7f5ada9fa"></a>
-constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a087aa05e2cb2bb05ae46f6f7f5ada9fa">status_c_str</a> () const noexcept</td></tr>
-<tr class="memdesc:a087aa05e2cb2bb05ae46f6f7f5ada9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
-<tr class="separator:a087aa05e2cb2bb05ae46f6f7f5ada9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ded5af40ea10f2351aeadb87ec64cb"><td class="memItemLeft" align="right" valign="top"><a id="ab3ded5af40ea10f2351aeadb87ec64cb"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a> () const</td></tr>
-<tr class="memdesc:ab3ded5af40ea10f2351aeadb87ec64cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
-<tr class="separator:ab3ded5af40ea10f2351aeadb87ec64cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d8761bcefafdccf2a6680be9e053a2"><td class="memItemLeft" align="right" valign="top"><a id="a64d8761bcefafdccf2a6680be9e053a2"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a64d8761bcefafdccf2a6680be9e053a2">CodeToCString</a> () const noexcept</td></tr>
-<tr class="memdesc:a64d8761bcefafdccf2a6680be9e053a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
-<tr class="separator:a64d8761bcefafdccf2a6680be9e053a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc4ab4b133733568b9488dd986e8751a"><td class="memItemLeft" align="right" valign="top"><a id="abc4ab4b133733568b9488dd986e8751a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a> () const</td></tr>
-<tr class="memdesc:abc4ab4b133733568b9488dd986e8751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
-<tr class="separator:abc4ab4b133733568b9488dd986e8751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d5768ef7da3378ccb1616c0a5dda32"><td class="memItemLeft" align="right" valign="top"><a id="a97d5768ef7da3378ccb1616c0a5dda32"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a97d5768ef7da3378ccb1616c0a5dda32">HasStatusString</a> () const noexcept</td></tr>
-<tr class="memdesc:a97d5768ef7da3378ccb1616c0a5dda32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the optional RPT status string is present. <br /></td></tr>
-<tr class="separator:a97d5768ef7da3378ccb1616c0a5dda32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e3276c0a11a611e25b978a340a1581"><td class="memItemLeft" align="right" valign="top"><a id="af0e3276c0a11a611e25b978a340a1581"></a>
-constexpr const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#af0e3276c0a11a611e25b978a340a1581">get</a> () const noexcept</td></tr>
-<tr class="memdesc:af0e3276c0a11a611e25b978a340a1581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
-<tr class="separator:af0e3276c0a11a611e25b978a340a1581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401bcd20f188e7582b6421a3a0c9be0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a401bcd20f188e7582b6421a3a0c9be0f">Save</a> () const</td></tr>
-<tr class="memdesc:a401bcd20f188e7582b6421a3a0c9be0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in this status message for later use from a different context.  <a href="classrdmnet_1_1_rpt_status.html#a401bcd20f188e7582b6421a3a0c9be0f">More...</a><br /></td></tr>
-<tr class="separator:a401bcd20f188e7582b6421a3a0c9be0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0b9556c5ef326171195dc63153ce77"><td class="memItemLeft" align="right" valign="top"><a id="a0f0b9556c5ef326171195dc63153ce77"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a0f0b9556c5ef326171195dc63153ce77">RptStatus</a> ()=delete</td></tr>
+<tr class="memdesc:a0f0b9556c5ef326171195dc63153ce77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
+<tr class="separator:a0f0b9556c5ef326171195dc63153ce77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352f10a1a81a457abcf1560309402385"><td class="memItemLeft" align="right" valign="top"><a id="a352f10a1a81a457abcf1560309402385"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a352f10a1a81a457abcf1560309402385">RptStatus</a> (const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> &amp;c_status)</td></tr>
+<tr class="memdesc:a352f10a1a81a457abcf1560309402385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1_rpt_status.html" title="An RPT status message received over RDMnet and delivered to an RDMnet callback function.">RptStatus</a> from an instance of the C <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> type. <br /></td></tr>
+<tr class="separator:a352f10a1a81a457abcf1560309402385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0c6f98dd20230051f07f9d43a5f824"><td class="memItemLeft" align="right" valign="top"><a id="a1c0c6f98dd20230051f07f9d43a5f824"></a>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a1c0c6f98dd20230051f07f9d43a5f824">source_uid</a> () const noexcept</td></tr>
+<tr class="memdesc:a1c0c6f98dd20230051f07f9d43a5f824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the RDMnet component that sent this RPT status message. <br /></td></tr>
+<tr class="separator:a1c0c6f98dd20230051f07f9d43a5f824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19091558ff754f1cd870f1c4f0c43e14"><td class="memItemLeft" align="right" valign="top"><a id="a19091558ff754f1cd870f1c4f0c43e14"></a>
+constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a19091558ff754f1cd870f1c4f0c43e14">source_endpoint</a> () const noexcept</td></tr>
+<tr class="memdesc:a19091558ff754f1cd870f1c4f0c43e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the endpoint from which this RPT status message was sent. <br /></td></tr>
+<tr class="separator:a19091558ff754f1cd870f1c4f0c43e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12a10f74bc60c641a11af1f665230d6"><td class="memItemLeft" align="right" valign="top"><a id="ab12a10f74bc60c641a11af1f665230d6"></a>
+constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#ab12a10f74bc60c641a11af1f665230d6">seq_num</a> () const noexcept</td></tr>
+<tr class="memdesc:ab12a10f74bc60c641a11af1f665230d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDMnet sequence number of this RPT status message, for matching with a corresponding command. <br /></td></tr>
+<tr class="separator:ab12a10f74bc60c641a11af1f665230d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f1798dd51edaa7d8e6a43f8013a653"><td class="memItemLeft" align="right" valign="top"><a id="a16f1798dd51edaa7d8e6a43f8013a653"></a>
+constexpr <a class="el" href="group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a16f1798dd51edaa7d8e6a43f8013a653">status_code</a> () const noexcept</td></tr>
+<tr class="memdesc:a16f1798dd51edaa7d8e6a43f8013a653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RPT status code of this status message. <br /></td></tr>
+<tr class="separator:a16f1798dd51edaa7d8e6a43f8013a653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af501a785b6225c80768c14bb31357c20"><td class="memItemLeft" align="right" valign="top"><a id="af501a785b6225c80768c14bb31357c20"></a>
+constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#af501a785b6225c80768c14bb31357c20">status_c_str</a> () const noexcept</td></tr>
+<tr class="memdesc:af501a785b6225c80768c14bb31357c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
+<tr class="separator:af501a785b6225c80768c14bb31357c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de517cddeb4e6a5225015dd50acba34"><td class="memItemLeft" align="right" valign="top"><a id="a8de517cddeb4e6a5225015dd50acba34"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a8de517cddeb4e6a5225015dd50acba34">status_string</a> () const</td></tr>
+<tr class="memdesc:a8de517cddeb4e6a5225015dd50acba34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
+<tr class="separator:a8de517cddeb4e6a5225015dd50acba34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a752267bd9197f2a21a4be91966636"><td class="memItemLeft" align="right" valign="top"><a id="ae9a752267bd9197f2a21a4be91966636"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#ae9a752267bd9197f2a21a4be91966636">CodeToCString</a> () const noexcept</td></tr>
+<tr class="memdesc:ae9a752267bd9197f2a21a4be91966636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
+<tr class="separator:ae9a752267bd9197f2a21a4be91966636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5108147af76197fe672d5355221e0a"><td class="memItemLeft" align="right" valign="top"><a id="a6d5108147af76197fe672d5355221e0a"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a6d5108147af76197fe672d5355221e0a">CodeToString</a> () const</td></tr>
+<tr class="memdesc:a6d5108147af76197fe672d5355221e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
+<tr class="separator:a6d5108147af76197fe672d5355221e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4080c22f81c0fc469f0b847f390f9d01"><td class="memItemLeft" align="right" valign="top"><a id="a4080c22f81c0fc469f0b847f390f9d01"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a4080c22f81c0fc469f0b847f390f9d01">HasStatusString</a> () const noexcept</td></tr>
+<tr class="memdesc:a4080c22f81c0fc469f0b847f390f9d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the optional RPT status string is present. <br /></td></tr>
+<tr class="separator:a4080c22f81c0fc469f0b847f390f9d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ccaf1d2ecc222d873e74e695371c16"><td class="memItemLeft" align="right" valign="top"><a id="a90ccaf1d2ecc222d873e74e695371c16"></a>
+constexpr const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a90ccaf1d2ecc222d873e74e695371c16">get</a> () const noexcept</td></tr>
+<tr class="memdesc:a90ccaf1d2ecc222d873e74e695371c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
+<tr class="separator:a90ccaf1d2ecc222d873e74e695371c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79122c5e87c0e38937e089a43e13751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#ac79122c5e87c0e38937e089a43e13751">Save</a> () const</td></tr>
+<tr class="memdesc:ac79122c5e87c0e38937e089a43e13751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in this status message for later use from a different context.  <a href="classrdmnet_1_1_rpt_status.html#ac79122c5e87c0e38937e089a43e13751">More...</a><br /></td></tr>
+<tr class="separator:ac79122c5e87c0e38937e089a43e13751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a401bcd20f188e7582b6421a3a0c9be0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a401bcd20f188e7582b6421a3a0c9be0f">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="ac79122c5e87c0e38937e089a43e13751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79122c5e87c0e38937e089a43e13751">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +275,7 @@ constexpr const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStat
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a> rdmnet::RptStatus::Save </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a> Save </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

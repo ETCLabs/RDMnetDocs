@@ -1,7 +1,7 @@
 var struct_rdmnet_scope_monitor_callbacks =
 [
-    [ "broker_found", "struct_rdmnet_scope_monitor_callbacks.html#a37ad28dadfcd6c6d0b97e63187c966d0", null ],
-    [ "broker_lost", "struct_rdmnet_scope_monitor_callbacks.html#a43d40fdc954f7c2a73317686a8d83ef1", null ],
-    [ "broker_updated", "struct_rdmnet_scope_monitor_callbacks.html#a209df32d2083a44373343948e492cd05", null ],
-    [ "context", "struct_rdmnet_scope_monitor_callbacks.html#acd8ca85db8de30d5798bcd33070883cc", null ]
+    [ "broker_found", "struct_rdmnet_scope_monitor_callbacks.html#af243f7a79d1f406c632fb2a04d7aea3a", null ],
+    [ "broker_lost", "struct_rdmnet_scope_monitor_callbacks.html#a44c0d9d7ead9afb90d4308137d5435d1", null ],
+    [ "broker_updated", "struct_rdmnet_scope_monitor_callbacks.html#a7ef4879be84036b0874a9bd515285996", null ],
+    [ "context", "struct_rdmnet_scope_monitor_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ]
 ];

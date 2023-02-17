@@ -1,10 +1,24 @@
 var searchData=
 [
-  ['destinationaddr_1604',['DestinationAddr',['../classrdmnet_1_1_destination_addr.html',1,'rdmnet::DestinationAddr'],['../classrdmnet_1_1llrp_1_1_destination_addr.html',1,'rdmnet::llrp::DestinationAddr']]],
-  ['device_1605',['Device',['../classrdmnet_1_1_device.html',1,'rdmnet']]],
-  ['discoveredtarget_1606',['DiscoveredTarget',['../structrdmnet_1_1llrp_1_1_discovered_target.html',1,'rdmnet::llrp']]],
-  ['dnsattributes_1607',['DnsAttributes',['../structrdmnet_1_1_broker_1_1_dns_attributes.html',1,'rdmnet::Broker']]],
-  ['dnstxtrecorditem_1608',['DnsTxtRecordItem',['../structrdmnet_1_1_dns_txt_record_item.html',1,'rdmnet']]],
-  ['dynamicuidassignmentlist_1609',['DynamicUidAssignmentList',['../classrdmnet_1_1_dynamic_uid_assignment_list.html',1,'rdmnet']]],
-  ['dynamicuidmapping_1610',['DynamicUidMapping',['../structrdmnet_1_1_dynamic_uid_mapping.html',1,'rdmnet']]]
+  ['deca_3099',['deca',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['decay_3100',['decay',['https://en.cppreference.com/w/cpp/types/decay.html',1,'std']]],
+  ['deci_3101',['deci',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['default_5fdelete_3102',['default_delete',['https://en.cppreference.com/w/cpp/memory/default_delete.html',1,'std']]],
+  ['default_5frandom_5fengine_3103',['default_random_engine',['https://en.cppreference.com/w/cpp/numeric/random.html',1,'std']]],
+  ['defer_5flock_5ft_3104',['defer_lock_t',['https://en.cppreference.com/w/cpp/thread/lock_tag_t.html',1,'std']]],
+  ['deque_3105',['deque',['https://en.cppreference.com/w/cpp/container/deque.html',1,'std']]],
+  ['destinationaddr_3106',['DestinationAddr',['../classrdmnet_1_1_destination_addr.html',1,'rdmnet::DestinationAddr'],['../classrdmnet_1_1llrp_1_1_destination_addr.html',1,'rdmnet::llrp::DestinationAddr']]],
+  ['device_3107',['Device',['../classrdmnet_1_1_device.html',1,'rdmnet']]],
+  ['discard_5fblock_5fengine_3108',['discard_block_engine',['https://en.cppreference.com/w/cpp/numeric/random/discard_block_engine.html',1,'std']]],
+  ['discoveredtarget_3109',['DiscoveredTarget',['../structrdmnet_1_1llrp_1_1_discovered_target.html',1,'rdmnet::llrp']]],
+  ['discrete_5fdistribution_3110',['discrete_distribution',['https://en.cppreference.com/w/cpp/numeric/random/discrete_distribution.html',1,'std']]],
+  ['divides_3111',['divides',['https://en.cppreference.com/w/cpp/utility/functional/divides.html',1,'std']]],
+  ['dnsattributes_3112',['DnsAttributes',['../structrdmnet_1_1_broker_1_1_dns_attributes.html',1,'rdmnet::Broker']]],
+  ['dnstxtrecorditem_3113',['DnsTxtRecordItem',['../structrdmnet_1_1_dns_txt_record_item.html',1,'rdmnet']]],
+  ['domain_5ferror_3114',['domain_error',['https://en.cppreference.com/w/cpp/error/domain_error.html',1,'std']]],
+  ['duration_3115',['duration',['https://en.cppreference.com/w/cpp/chrono/duration.html',1,'std::chrono']]],
+  ['duration_5fvalues_3116',['duration_values',['https://en.cppreference.com/w/cpp/chrono/duration_values.html',1,'std::chrono']]],
+  ['dynamicuidassignmentlist_3117',['DynamicUidAssignmentList',['../classrdmnet_1_1_dynamic_uid_assignment_list.html',1,'rdmnet']]],
+  ['dynamicuidmapping_3118',['DynamicUidMapping',['../structrdmnet_1_1_dynamic_uid_mapping.html',1,'rdmnet']]],
+  ['dynarray_3119',['dynarray',['https://en.cppreference.com/w/cpp/container/dynarray.html',1,'std']]]
 ];

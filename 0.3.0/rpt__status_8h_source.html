@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -229,7 +228,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/cpp_2uid_8h.html">rdm/cpp/uid.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;rdm/cpp/uid.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">rdmnet/common.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="message_8h.html">rdmnet/message.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -243,16 +242,16 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#a0a441bc62942c0f2b541de8b6608417f">   45</a></span>&#160;  <a class="code" href="classrdmnet_1_1_rpt_status.html#a0a441bc62942c0f2b541de8b6608417f">RptStatus</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  constexpr <a class="code" href="classrdmnet_1_1_rpt_status.html#a0a441bc62942c0f2b541de8b6608417f">RptStatus</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a>&amp; c_status);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  constexpr <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> <a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a>() const noexcept;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  constexpr rdm::Uid <a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a>() const noexcept;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  constexpr uint16_t <a class="code" href="classrdmnet_1_1_rpt_status.html#a4f103daf4882d624b48c734bdf3c5c62">source_endpoint</a>() const noexcept;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  constexpr uint32_t <a class="code" href="classrdmnet_1_1_rpt_status.html#a87bb2e53322efe7a63cecee71e419d58">seq_num</a>() const noexcept;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  constexpr <a class="code" href="group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a> <a class="code" href="classrdmnet_1_1_rpt_status.html#a8fd94fd0b170cc6b385b6d2e5720575a">status_code</a>() const noexcept;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  constexpr const <span class="keywordtype">char</span>*       <a class="code" href="classrdmnet_1_1_rpt_status.html#a087aa05e2cb2bb05ae46f6f7f5ada9fa">status_c_str</a>() const noexcept;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::<span class="keywordtype">string</span>                 <a class="code" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a>() const;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>                 <a class="code" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a>() const;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  const <span class="keywordtype">char</span>*    <a class="code" href="classrdmnet_1_1_rpt_status.html#a64d8761bcefafdccf2a6680be9e053a2">CodeToCString</a>() const noexcept;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::<span class="keywordtype">string</span>    <a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a>() const;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>    <a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a>() const;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  constexpr <span class="keywordtype">bool</span> <a class="code" href="classrdmnet_1_1_rpt_status.html#a97d5768ef7da3378ccb1616c0a5dda32">HasStatusString</a>() const noexcept;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  constexpr const <a class="code" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a>&amp; <a class="code" href="classrdmnet_1_1_rpt_status.html#af0e3276c0a11a611e25b978a340a1581">get</a>() const noexcept;</div>
@@ -272,24 +271,24 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a>(<span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rpt_status.html">RptStatus</a>&amp; status);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_rpt_status.html">RptStatus</a>&amp; status);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&amp; <a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a>() const noexcept;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> rdm::Uid&amp; <a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a>() const noexcept;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  uint16_t        <a class="code" href="classrdmnet_1_1_rpt_status.html#a4f103daf4882d624b48c734bdf3c5c62">source_endpoint</a>() const noexcept;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  uint32_t        <a class="code" href="classrdmnet_1_1_rpt_status.html#a87bb2e53322efe7a63cecee71e419d58">seq_num</a>() const noexcept;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a>  <a class="code" href="classrdmnet_1_1_rpt_status.html#a8fd94fd0b170cc6b385b6d2e5720575a">status_code</a>() const noexcept;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  const std::<span class="keywordtype">string</span>&amp; <a class="code" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a>() const noexcept;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  const <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>&amp; <a class="code" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a>() const noexcept;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span>        IsValid() const noexcept;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  const <span class="keywordtype">char</span>* <a class="code" href="classrdmnet_1_1_rpt_status.html#a64d8761bcefafdccf2a6680be9e053a2">CodeToCString</a>() const noexcept;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::<span class="keywordtype">string</span> <a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a>() const;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span> <a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a>() const;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">bool</span>        <a class="code" href="classrdmnet_1_1_rpt_status.html#a97d5768ef7da3378ccb1616c0a5dda32">HasStatusString</a>() const noexcept;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;private:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command.html">rdm</a>::Uid          source_uid_;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  rdm::Uid          source_uid_;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  uint16_t          source_endpoint_{E133_NULL_ENDPOINT};</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  uint32_t          seq_num_{0};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a> status_code_{};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  std::string       status_string_;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>       status_string_;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// RptStatus function definitions</span></div>
@@ -298,7 +297,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">  110</a></span>&#160;constexpr <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> <a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">RptStatus::source_uid</a>() const noexcept</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">  110</a></span>&#160;constexpr rdm::Uid <a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">RptStatus::source_uid</a>() const noexcept</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">return</span> status_.<a class="code" href="struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4">source_uid</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
@@ -323,7 +322,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> status_.<a class="code" href="struct_rdmnet_rpt_status.html#a53ab51517ca9f740f333ea992a1fa412">status_string</a>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">  140</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">RptStatus::status_string</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">  140</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">RptStatus::status_string</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordflow">return</span> status_.<a class="code" href="struct_rdmnet_rpt_status.html#a53ab51517ca9f740f333ea992a1fa412">status_string</a>;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
@@ -333,7 +332,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a>(status_.<a class="code" href="struct_rdmnet_rpt_status.html#a7ee615642619dc3f5fd4f52fdf5205e7">status_code</a>);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">  152</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">RptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">  152</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">RptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a>(status_.<a class="code" href="struct_rdmnet_rpt_status.html#a7ee615642619dc3f5fd4f52fdf5205e7">status_code</a>);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
@@ -362,7 +361,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    , status_code_(c_status.status_code)</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;{</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">if</span> (c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600">status_string</a>)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    status_string_.assign(c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600">status_string</a>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    status_string_.<a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string/assign.html">assign</a>(c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600">status_string</a>);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#a0043304fa336d5f7f5ace1c85bbd0a3e">  192</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classrdmnet_1_1_saved_rpt_status.html">SavedRptStatus</a>&amp; <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#a0043304fa336d5f7f5ace1c85bbd0a3e">SavedRptStatus::operator=</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a>&amp; c_status)</div>
@@ -372,7 +371,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  seq_num_ = c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a16968e004cd51efa08eaeae3f31a2257">seq_num</a>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  status_code_ = c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#afc45700817eb7b771471114c177cfa2e">status_code</a>;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">if</span> (c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600">status_string</a>)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    status_string_.assign(c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600">status_string</a>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    status_string_.<a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string/assign.html">assign</a>(c_status.<a class="code" href="struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600">status_string</a>);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
@@ -395,7 +394,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#aad0f924a96bd819b4ccd723d06d7f094">  225</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&amp; <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#aad0f924a96bd819b4ccd723d06d7f094">SavedRptStatus::source_uid</a>() const noexcept</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#aad0f924a96bd819b4ccd723d06d7f094">  225</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> rdm::Uid&amp; <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#aad0f924a96bd819b4ccd723d06d7f094">SavedRptStatus::source_uid</a>() const noexcept</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">return</span> source_uid_;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
@@ -415,7 +414,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">return</span> status_code_;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#ab339e4f326709407b743477ac680501f">  249</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#ab339e4f326709407b743477ac680501f">SavedRptStatus::status_string</a>() const noexcept</div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#ab339e4f326709407b743477ac680501f">  249</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&amp; <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#ab339e4f326709407b743477ac680501f">SavedRptStatus::status_string</a>() const noexcept</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">return</span> status_string_;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
@@ -430,21 +429,21 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a>(status_code_);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#a7fe8ca06b66ce301c86bcdb671ba0f80">  267</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#a7fe8ca06b66ce301c86bcdb671ba0f80">SavedRptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#a7fe8ca06b66ce301c86bcdb671ba0f80">  267</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#a7fe8ca06b66ce301c86bcdb671ba0f80">SavedRptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a>(status_code_);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_rpt_status.html#a4ce9d8d2c54d446888b8fbd9e7e2d0e7">  273</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classrdmnet_1_1_saved_rpt_status.html#a4ce9d8d2c54d446888b8fbd9e7e2d0e7">SavedRptStatus::HasStatusString</a>() const noexcept</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">return</span> !status_string_.empty();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">return</span> !status_string_.<a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>();</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;};  <span class="comment">// namespace rdmnet</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// RDMNET_CPP_MESSAGE_TYPES_RPT_STATUS_H_</span></div>
-<div class="ttc" id="aclassrdm_1_1_command_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command.html">rdm</a></div></div>
-<div class="ttc" id="aclassrdm_1_1_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a></div></div>
+<div class="ttc" id="aassign_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string/assign.html">std::string::assign</a></div><div class="ttdeci">T assign(T... args)</div></div>
+<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rpt_status_html"><div class="ttname"><a href="classrdmnet_1_1_rpt_status.html">rdmnet::RptStatus</a></div><div class="ttdoc">An RPT status message received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:42</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rpt_status_html_a087aa05e2cb2bb05ae46f6f7f5ada9fa"><div class="ttname"><a href="classrdmnet_1_1_rpt_status.html#a087aa05e2cb2bb05ae46f6f7f5ada9fa">rdmnet::RptStatus::status_c_str</a></div><div class="ttdeci">constexpr const char * status_c_str() const noexcept</div><div class="ttdoc">Get the optional status string accompanying this status message.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:134</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rpt_status_html_a0a441bc62942c0f2b541de8b6608417f"><div class="ttname"><a href="classrdmnet_1_1_rpt_status.html#a0a441bc62942c0f2b541de8b6608417f">rdmnet::RptStatus::RptStatus</a></div><div class="ttdeci">RptStatus()=delete</div><div class="ttdoc">Not default-constructible.</div></div>
@@ -471,11 +470,12 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <div class="ttc" id="aclassrdmnet_1_1_saved_rpt_status_html_ad959c6259e0809486e7ad048d21cccb5"><div class="ttname"><a href="classrdmnet_1_1_saved_rpt_status.html#ad959c6259e0809486e7ad048d21cccb5">rdmnet::SavedRptStatus::status_code</a></div><div class="ttdeci">rpt_status_code_t status_code() const noexcept</div><div class="ttdoc">Get the RPT status code of this status message.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:243</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_saved_rpt_status_html_af8bb79d7d6ddd7a3bd3e681da3d6e6be"><div class="ttname"><a href="classrdmnet_1_1_saved_rpt_status.html#af8bb79d7d6ddd7a3bd3e681da3d6e6be">rdmnet::SavedRptStatus::CodeToCString</a></div><div class="ttdeci">const char * CodeToCString() const noexcept</div><div class="ttdoc">Convert the status message's code to a string representation.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:261</div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">Functions and definitions common to all RDMnet API modules.</div></div>
-<div class="ttc" id="acpp_2uid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/cpp_2uid_8h.html">uid.h</a></div></div>
+<div class="ttc" id="aempty_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string/empty.html">std::string::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga1b678629569257697ec6a7e855c71623"><div class="ttname"><a href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a></div><div class="ttdeci">const char * rdmnet_rpt_status_code_to_string(rpt_status_code_t code)</div><div class="ttdoc">Get a string representation of an RPT status code.</div><div class="ttdef"><b>Definition:</b> common.c:231</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gaa9aca0658bfae057363a520c0d9907c2"><div class="ttname"><a href="group__rdmnet__api__common.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a></div><div class="ttdeci">rpt_status_code_t</div><div class="ttdoc">RPT status code definitions.</div><div class="ttdef"><b>Definition:</b> common.h:53</div></div>
 <div class="ttc" id="amessage_8h_html"><div class="ttname"><a href="message_8h.html">message.h</a></div><div class="ttdoc">Basic types for parsed RDMnet messages.</div></div>
 <div class="ttc" id="anamespacerdmnet_html"><div class="ttname"><a href="namespacerdmnet.html">rdmnet</a></div><div class="ttdoc">A namespace which contains all C++ language definitions in the RDMnet library.</div><div class="ttdef"><b>Definition:</b> broker.h:45</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="https://en.cppreference.com/w/namespacestd.html">std</a></div></div>
 <div class="ttc" id="astruct_rdmnet_rpt_status_html"><div class="ttname"><a href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a></div><div class="ttdoc">An RDMnet RPT status message received by a local component.</div><div class="ttdef"><b>Definition:</b> message.h:193</div></div>
 <div class="ttc" id="astruct_rdmnet_rpt_status_html_a341877f2348eb080feef58049da4d5d4"><div class="ttname"><a href="struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4">RdmnetRptStatus::source_uid</a></div><div class="ttdeci">RdmUid source_uid</div><div class="ttdoc">The UID of the RDMnet component that sent this status message.</div><div class="ttdef"><b>Definition:</b> message.h:195</div></div>
 <div class="ttc" id="astruct_rdmnet_rpt_status_html_a53ab51517ca9f740f333ea992a1fa412"><div class="ttname"><a href="struct_rdmnet_rpt_status.html#a53ab51517ca9f740f333ea992a1fa412">RdmnetRptStatus::status_string</a></div><div class="ttdeci">const char * status_string</div><div class="ttdoc">An optional implementation-defined status string to accompany this status message.</div><div class="ttdef"><b>Definition:</b> message.h:203</div></div>
@@ -493,7 +493,7 @@ $(document).ready(function(){initNavTree('rpt__status_8h_source.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_02a5fb8fc63da27b1563e16cf3c5ea38.html">cpp</a></li><li class="navelem"><a class="el" href="dir_b48a204088b915aab85bb8a1e2744bac.html">message_types</a></li><li class="navelem"><a class="el" href="rpt__status_8h.html">rpt_status.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_476dbcf122891e8399ecd39139c29436.html">cpp</a></li><li class="navelem"><a class="el" href="dir_949e82c3e1194d1b5fce2e51fcccfe03.html">message_types</a></li><li class="navelem"><a class="el" href="rpt__status_8h.html">rpt_status.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -217,13 +217,11 @@ $(document).ready(function(){initNavTree('group__rdmnet__device.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about a device.  <a href="struct_rdmnet_device_callbacks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirtualEndpointConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration information for a virtual endpoint on a device.  <a href="struct_rdmnet_virtual_endpoint_config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifying information for a physical RDM responder connected to an RDMnet gateway.  <a href="struct_rdmnet_physical_endpoint_responder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration information for a physical endpoint on a device.  <a href="struct_rdmnet_physical_endpoint_config.html#details">More...</a><br /></td></tr>
@@ -234,9 +232,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga42be52a101f03361b7db0b29a063516a"><td class="memItemLeft" align="right" valign="top"><a id="ga42be52a101f03361b7db0b29a063516a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga42be52a101f03361b7db0b29a063516a">RDMNET_DEVICE_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="memdesc:ga42be52a101f03361b7db0b29a063516a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet device handle value. <br /></td></tr>
+<tr class="memitem:ga42be52a101f03361b7db0b29a063516a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga42be52a101f03361b7db0b29a063516a">RDMNET_DEVICE_INVALID</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:ga42be52a101f03361b7db0b29a063516a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95829f618daae7db1a9ba04049fc46c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga95829f618daae7db1a9ba04049fc46c6">RDMNET_VIRTUAL_ENDPOINT_INIT</a>(endpoint_num)</td></tr>
 <tr class="memdesc:ga95829f618daae7db1a9ba04049fc46c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An initializer for an <a class="el" href="struct_rdmnet_virtual_endpoint_config.html" title="Configuration information for a virtual endpoint on a device.">RdmnetVirtualEndpointConfig</a> instance.  <a href="group__rdmnet__device.html#ga95829f618daae7db1a9ba04049fc46c6">More...</a><br /></td></tr>
@@ -250,9 +246,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gad17bb8836a86ad4c8a774cd94a01d63c"><td class="memItemLeft" align="right" valign="top"><a id="gad17bb8836a86ad4c8a774cd94a01d63c"></a>
-typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a></td></tr>
-<tr class="memdesc:gad17bb8836a86ad4c8a774cd94a01d63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet device. <br /></td></tr>
+<tr class="memitem:gad17bb8836a86ad4c8a774cd94a01d63c"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a></td></tr>
 <tr class="separator:gad17bb8836a86ad4c8a774cd94a01d63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8f5b31580a4e3a83073663145a21cc1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gac8f5b31580a4e3a83073663145a21cc1">RdmnetDeviceConnectedCallback</a>) (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td></tr>
 <tr class="memdesc:gac8f5b31580a4e3a83073663145a21cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device has successfully connected to a broker.  <a href="group__rdmnet__device.html#gac8f5b31580a4e3a83073663145a21cc1">More...</a><br /></td></tr>
@@ -272,16 +266,12 @@ typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:gada39ef5521e34b3f51d0e43b9e8f29b0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gada39ef5521e34b3f51d0e43b9e8f29b0">RdmnetDeviceDynamicUidStatusCallback</a>) (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> *list, void *context)</td></tr>
 <tr class="memdesc:gada39ef5521e34b3f51d0e43b9e8f29b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dynamic UID assignment status for a set of virtual responders has been received.  <a href="group__rdmnet__device.html#gada39ef5521e34b3f51d0e43b9e8f29b0">More...</a><br /></td></tr>
 <tr class="separator:gada39ef5521e34b3f51d0e43b9e8f29b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5738613e2f4dab6f13417faf15a95be8"><td class="memItemLeft" align="right" valign="top"><a id="ga5738613e2f4dab6f13417faf15a95be8"></a>
-typedef struct <a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga5738613e2f4dab6f13417faf15a95be8">RdmnetDeviceCallbacks</a></td></tr>
-<tr class="memdesc:ga5738613e2f4dab6f13417faf15a95be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about a device. <br /></td></tr>
+<tr class="memitem:ga5738613e2f4dab6f13417faf15a95be8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga5738613e2f4dab6f13417faf15a95be8">RdmnetDeviceCallbacks</a></td></tr>
 <tr class="separator:ga5738613e2f4dab6f13417faf15a95be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17d3405e888a54577332021e4c18e7f5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirtualEndpointConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga17d3405e888a54577332021e4c18e7f5">RdmnetVirtualEndpointConfig</a></td></tr>
 <tr class="memdesc:ga17d3405e888a54577332021e4c18e7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration information for a virtual endpoint on a device.  <a href="group__rdmnet__device.html#ga17d3405e888a54577332021e4c18e7f5">More...</a><br /></td></tr>
 <tr class="separator:ga17d3405e888a54577332021e4c18e7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga96a3427e09f807d485a1297d29af876c"><td class="memItemLeft" align="right" valign="top"><a id="ga96a3427e09f807d485a1297d29af876c"></a>
-typedef struct <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga96a3427e09f807d485a1297d29af876c">RdmnetPhysicalEndpointResponder</a></td></tr>
-<tr class="memdesc:ga96a3427e09f807d485a1297d29af876c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifying information for a physical RDM responder connected to an RDMnet gateway. <br /></td></tr>
+<tr class="memitem:ga96a3427e09f807d485a1297d29af876c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga96a3427e09f807d485a1297d29af876c">RdmnetPhysicalEndpointResponder</a></td></tr>
 <tr class="separator:ga96a3427e09f807d485a1297d29af876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2ced220e3673824c5e0be32ac8ea3814"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga2ced220e3673824c5e0be32ac8ea3814">RdmnetPhysicalEndpointConfig</a></td></tr>
 <tr class="memdesc:ga2ced220e3673824c5e0be32ac8ea3814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration information for a physical endpoint on a device.  <a href="group__rdmnet__device.html#ga2ced220e3673824c5e0be32ac8ea3814">More...</a><br /></td></tr>
@@ -307,7 +297,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gace1ea6c76a6b3f441c1f7ccaa27e9aa6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gace1ea6c76a6b3f441c1f7ccaa27e9aa6">rdmnet_device_send_rdm_ack</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, const uint8_t *response_data, size_t response_data_len)</td></tr>
 <tr class="memdesc:gace1ea6c76a6b3f441c1f7ccaa27e9aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM ACK response from a device.  <a href="group__rdmnet__device.html#gace1ea6c76a6b3f441c1f7ccaa27e9aa6">More...</a><br /></td></tr>
 <tr class="separator:gace1ea6c76a6b3f441c1f7ccaa27e9aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b76b6f44ed938ecbeb8b6edd8d2eea7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga1b76b6f44ed938ecbeb8b6edd8d2eea7">rdmnet_device_send_rdm_nack</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
+<tr class="memitem:ga1b76b6f44ed938ecbeb8b6edd8d2eea7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga1b76b6f44ed938ecbeb8b6edd8d2eea7">rdmnet_device_send_rdm_nack</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, rdm_nack_reason_t nack_reason)</td></tr>
 <tr class="memdesc:ga1b76b6f44ed938ecbeb8b6edd8d2eea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK response from a device.  <a href="group__rdmnet__device.html#ga1b76b6f44ed938ecbeb8b6edd8d2eea7">More...</a><br /></td></tr>
 <tr class="separator:ga1b76b6f44ed938ecbeb8b6edd8d2eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72a289e9c87633805e4c1e9b5dbc3f07"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga72a289e9c87633805e4c1e9b5dbc3f07">rdmnet_device_send_rdm_update</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t subdevice, uint16_t param_id, const uint8_t *data, size_t data_len)</td></tr>
@@ -322,7 +312,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gacb846f916ae63fe3496cc08a498a066c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gacb846f916ae63fe3496cc08a498a066c">rdmnet_device_send_llrp_ack</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, const uint8_t *response_data, uint8_t response_data_len)</td></tr>
 <tr class="memdesc:gacb846f916ae63fe3496cc08a498a066c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an ACK response to an RDM command received over LLRP.  <a href="group__rdmnet__device.html#gacb846f916ae63fe3496cc08a498a066c">More...</a><br /></td></tr>
 <tr class="separator:gacb846f916ae63fe3496cc08a498a066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaec37bb135320e668870154e1efee577"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gaaec37bb135320e668870154e1efee577">rdmnet_device_send_llrp_nack</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
+<tr class="memitem:gaaec37bb135320e668870154e1efee577"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gaaec37bb135320e668870154e1efee577">rdmnet_device_send_llrp_nack</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, rdm_nack_reason_t nack_reason)</td></tr>
 <tr class="memdesc:gaaec37bb135320e668870154e1efee577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an ACK response to an RDM command received over LLRP.  <a href="group__rdmnet__device.html#gaaec37bb135320e668870154e1efee577">More...</a><br /></td></tr>
 <tr class="separator:gaaec37bb135320e668870154e1efee577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga669ad8832cd619410d3baa0b7cdcdee5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga669ad8832cd619410d3baa0b7cdcdee5">rdmnet_device_add_physical_endpoint</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a> *endpoint_config)</td></tr>
@@ -343,7 +333,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gafa8247fec4c7b2289c6775e8a641c076"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gafa8247fec4c7b2289c6775e8a641c076">rdmnet_device_remove_endpoints</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const uint16_t *endpoint_ids, size_t num_endpoints)</td></tr>
 <tr class="memdesc:gafa8247fec4c7b2289c6775e8a641c076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove multiple endpoints from a device.  <a href="group__rdmnet__device.html#gafa8247fec4c7b2289c6775e8a641c076">More...</a><br /></td></tr>
 <tr class="separator:gafa8247fec4c7b2289c6775e8a641c076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1137858602cb0aa4b57ad5c16804225c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga1137858602cb0aa4b57ad5c16804225c">rdmnet_device_add_static_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *responder_uids, size_t num_responders)</td></tr>
+<tr class="memitem:ga1137858602cb0aa4b57ad5c16804225c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga1137858602cb0aa4b57ad5c16804225c">rdmnet_device_add_static_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const RdmUid *responder_uids, size_t num_responders)</td></tr>
 <tr class="memdesc:ga1137858602cb0aa4b57ad5c16804225c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one or more responders with static UIDs to a virtual endpoint.  <a href="group__rdmnet__device.html#ga1137858602cb0aa4b57ad5c16804225c">More...</a><br /></td></tr>
 <tr class="separator:ga1137858602cb0aa4b57ad5c16804225c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaccaa7f6e0c7393243948ae6f84bad518"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gaccaa7f6e0c7393243948ae6f84bad518">rdmnet_device_add_dynamic_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *responder_ids, size_t num_responders)</td></tr>
@@ -352,13 +342,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ga24588d30c5f1613587bf8dc3ecaa5e8c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga24588d30c5f1613587bf8dc3ecaa5e8c">rdmnet_device_add_physical_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a> *responders, size_t num_responders)</td></tr>
 <tr class="memdesc:ga24588d30c5f1613587bf8dc3ecaa5e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one or more responders to a physical endpoint.  <a href="group__rdmnet__device.html#ga24588d30c5f1613587bf8dc3ecaa5e8c">More...</a><br /></td></tr>
 <tr class="separator:ga24588d30c5f1613587bf8dc3ecaa5e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0075ff40f1a681f558e10d586df89e8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gaa0075ff40f1a681f558e10d586df89e8">rdmnet_device_remove_static_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *responder_uids, size_t num_responders)</td></tr>
+<tr class="memitem:gaa0075ff40f1a681f558e10d586df89e8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gaa0075ff40f1a681f558e10d586df89e8">rdmnet_device_remove_static_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const RdmUid *responder_uids, size_t num_responders)</td></tr>
 <tr class="memdesc:gaa0075ff40f1a681f558e10d586df89e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one or more responders with static UIDs from a virtual endpoint.  <a href="group__rdmnet__device.html#gaa0075ff40f1a681f558e10d586df89e8">More...</a><br /></td></tr>
 <tr class="separator:gaa0075ff40f1a681f558e10d586df89e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb80747a8278cc5102a0cf024072a3a1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#gafb80747a8278cc5102a0cf024072a3a1">rdmnet_device_remove_dynamic_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *responder_ids, size_t num_responders)</td></tr>
 <tr class="memdesc:gafb80747a8278cc5102a0cf024072a3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one or more responders with dynamic UIDs from a virtual endpoint.  <a href="group__rdmnet__device.html#gafb80747a8278cc5102a0cf024072a3a1">More...</a><br /></td></tr>
 <tr class="separator:gafb80747a8278cc5102a0cf024072a3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga238895e8a492e4aafcbe544278b144b8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga238895e8a492e4aafcbe544278b144b8">rdmnet_device_remove_physical_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *responder_uids, size_t num_responders)</td></tr>
+<tr class="memitem:ga238895e8a492e4aafcbe544278b144b8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga238895e8a492e4aafcbe544278b144b8">rdmnet_device_remove_physical_responders</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, uint16_t endpoint_id, const RdmUid *responder_uids, size_t num_responders)</td></tr>
 <tr class="memdesc:ga238895e8a492e4aafcbe544278b144b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one or more responders from a physical endpoint.  <a href="group__rdmnet__device.html#ga238895e8a492e4aafcbe544278b144b8">More...</a><br /></td></tr>
 <tr class="separator:ga238895e8a492e4aafcbe544278b144b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga632bb5b71db04e29a77193ecd33b90d5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__device.html#ga632bb5b71db04e29a77193ecd33b90d5">rdmnet_device_change_scope</a> (<a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *new_scope_config, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
@@ -404,6 +394,21 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga42be52a101f03361b7db0b29a063516a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42be52a101f03361b7db0b29a063516a">&#9670;&nbsp;</a></span>RDMNET_DEVICE_INVALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_DEVICE_INVALID&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An invalid RDMnet device handle value. </p>
 
 </div>
 </div>
@@ -476,6 +481,36 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="gad17bb8836a86ad4c8a774cd94a01d63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad17bb8836a86ad4c8a774cd94a01d63c">&#9670;&nbsp;</a></span>rdmnet_device_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A handle to an RDMnet device. </p>
+
+</div>
+</div>
+<a id="ga5738613e2f4dab6f13417faf15a95be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5738613e2f4dab6f13417faf15a95be8">&#9670;&nbsp;</a></span>RdmnetDeviceCallbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a> <a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A set of notification callbacks received about a device. </p>
+
+</div>
+</div>
 <a id="ga2eaeaedc5a3e9602ad836debed4e946e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2eaeaedc5a3e9602ad836debed4e946e">&#9670;&nbsp;</a></span>RdmnetDeviceConfig</h2>
 
@@ -655,6 +690,21 @@ Functions</h2></td></tr>
 
 <p>Configuration information for a physical endpoint on a device. </p>
 <p>See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints. </p>
+
+</div>
+</div>
+<a id="ga96a3427e09f807d485a1297d29af876c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96a3427e09f807d485a1297d29af876c">&#9670;&nbsp;</a></span>RdmnetPhysicalEndpointResponder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a> <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identifying information for a physical RDM responder connected to an RDMnet gateway. </p>
 
 </div>
 </div>
@@ -926,7 +976,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *&#160;</td>
+          <td class="paramtype">const RdmUid *&#160;</td>
           <td class="paramname"><em>responder_uids</em>, </td>
         </tr>
         <tr>
@@ -1547,7 +1597,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *&#160;</td>
+          <td class="paramtype">const RdmUid *&#160;</td>
           <td class="paramname"><em>responder_uids</em>, </td>
         </tr>
         <tr>
@@ -1608,7 +1658,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *&#160;</td>
+          <td class="paramtype">const RdmUid *&#160;</td>
           <td class="paramname"><em>responder_uids</em>, </td>
         </tr>
         <tr>
@@ -1729,7 +1779,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a>&#160;</td>
+          <td class="paramtype">rdm_nack_reason_t&#160;</td>
           <td class="paramname"><em>nack_reason</em>&#160;</td>
         </tr>
         <tr>
@@ -1842,7 +1892,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a>&#160;</td>
+          <td class="paramtype">rdm_nack_reason_t&#160;</td>
           <td class="paramname"><em>nack_reason</em>&#160;</td>
         </tr>
         <tr>

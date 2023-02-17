@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -251,12 +250,12 @@ $(document).ready(function(){initNavTree('discovery_8h_source.html',''); initRes
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html">   84</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a9891833bc86684e7aff6a70a7cee9080">   87</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> <a class="code" href="struct_rdmnet_broker_disc_info.html#a9891833bc86684e7aff6a70a7cee9080">cid</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a7fb56819d9a3493f778e57c385f8c859">   89</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> <a class="code" href="struct_rdmnet_broker_disc_info.html#a7fb56819d9a3493f778e57c385f8c859">uid</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a9891833bc86684e7aff6a70a7cee9080">   87</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> <a class="code" href="struct_rdmnet_broker_disc_info.html#a9891833bc86684e7aff6a70a7cee9080">cid</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a7fb56819d9a3493f778e57c385f8c859">   89</a></span>&#160;  RdmUid <a class="code" href="struct_rdmnet_broker_disc_info.html#a7fb56819d9a3493f778e57c385f8c859">uid</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a7be6ebc05a04a1a35d592d953793c803">   91</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct_rdmnet_broker_disc_info.html#a7be6ebc05a04a1a35d592d953793c803">e133_version</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a6a772228c94095042fd186172d11fce5">   99</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_rdmnet_broker_disc_info.html#a6a772228c94095042fd186172d11fce5">service_instance_name</a>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a2c5d5aaea9e77c5452f904f6f0f0fd8e">  101</a></span>&#160;  uint16_t <a class="code" href="struct_rdmnet_broker_disc_info.html#a2c5d5aaea9e77c5452f904f6f0f0fd8e">port</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#af66604c055013caff26ed5425a2834a8">  103</a></span>&#160;  <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a>* <a class="code" href="struct_rdmnet_broker_disc_info.html#af66604c055013caff26ed5425a2834a8">listen_addrs</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#af66604c055013caff26ed5425a2834a8">  103</a></span>&#160;  <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a>* <a class="code" href="struct_rdmnet_broker_disc_info.html#af66604c055013caff26ed5425a2834a8">listen_addrs</a>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a9e30b641a7d8d8883983f124c8faffb4">  105</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="struct_rdmnet_broker_disc_info.html#a9e30b641a7d8d8883983f124c8faffb4">num_listen_addrs</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a572a29380550d625bd533dbea9a7ffd8">  107</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_rdmnet_broker_disc_info.html#a572a29380550d625bd533dbea9a7ffd8">scope</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_disc_info.html#a51a474c17a6a0130b4b239a2a9fb5948">  109</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_rdmnet_broker_disc_info.html#a51a474c17a6a0130b4b239a2a9fb5948">model</a>;</div>
@@ -298,8 +297,8 @@ $(document).ready(function(){initNavTree('discovery_8h_source.html',''); initRes
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">   * Required Values</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">   ***********************************************************************************************/</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#a21217c047bd861134bf82771cde2f17c">  189</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> <a class="code" href="struct_rdmnet_broker_register_config.html#a21217c047bd861134bf82771cde2f17c">cid</a>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#a8e375a838babc3f3e28f362aa13aef73">  191</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> <a class="code" href="struct_rdmnet_broker_register_config.html#a8e375a838babc3f3e28f362aa13aef73">uid</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#a21217c047bd861134bf82771cde2f17c">  189</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> <a class="code" href="struct_rdmnet_broker_register_config.html#a21217c047bd861134bf82771cde2f17c">cid</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#a8e375a838babc3f3e28f362aa13aef73">  191</a></span>&#160;  RdmUid <a class="code" href="struct_rdmnet_broker_register_config.html#a8e375a838babc3f3e28f362aa13aef73">uid</a>;</div>
 <div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#a979757bea31b6f8c1f31f5382ede2845">  200</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_rdmnet_broker_register_config.html#a979757bea31b6f8c1f31f5382ede2845">service_instance_name</a>;</div>
 <div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#a3cd9831ddc7feef06212e1242956e953">  202</a></span>&#160;  uint16_t <a class="code" href="struct_rdmnet_broker_register_config.html#a3cd9831ddc7feef06212e1242956e953">port</a>;</div>
 <div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="struct_rdmnet_broker_register_config.html#ae4df6a668da2df2f745986fe45d2debe">  207</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* <a class="code" href="struct_rdmnet_broker_register_config.html#ae4df6a668da2df2f745986fe45d2debe">netints</a>;</div>
@@ -379,13 +378,13 @@ $(document).ready(function(){initNavTree('discovery_8h_source.html',''); initRes
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                               <a class="code" href="group__rdmnet__disc.html#ga242b140792d3a4d16312af7b136f127f">RdmnetDiscBrokerLostCallback</a>    broker_lost,</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                               <span class="keywordtype">void</span>*                           context);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">rdmnet_disc_start_monitoring</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a>* config,</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">rdmnet_disc_start_monitoring</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a>* config,</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                                            <a class="code" href="group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8">rdmnet_scope_monitor_t</a>*         handle,</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                                            <span class="keywordtype">int</span>*                            platform_specific_error);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="group__rdmnet__disc.html#ga4633144d80e2e43f3fcc04104e958ef6">rdmnet_disc_stop_monitoring</a>(<a class="code" href="group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8">rdmnet_scope_monitor_t</a> handle);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="group__rdmnet__disc.html#gaca3cf1d904824d84518f1aa9f8c1207b">rdmnet_disc_stop_monitoring_all</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">rdmnet_disc_register_broker</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a>* config,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">rdmnet_disc_register_broker</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a>* config,</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                           <a class="code" href="group__rdmnet__disc.html#gabd41ce451024533d6fed8d04192cb451">rdmnet_registered_broker_t</a>*       handle);</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="group__rdmnet__disc.html#gaba7836f5a2dda01823ed110d9033970d">rdmnet_disc_unregister_broker</a>(<a class="code" href="group__rdmnet__disc.html#gabd41ce451024533d6fed8d04192cb451">rdmnet_registered_broker_t</a> handle);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
@@ -395,7 +394,7 @@ $(document).ready(function(){initNavTree('discovery_8h_source.html',''); initRes
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RDMNET_DISCOVERY_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">Functions and definitions common to all RDMnet API modules.</div></div>
-<div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
+<div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
 <div class="ttc" id="agroup__rdmnet__disc_html_ga04e9844ae14599d7c0598347601ce28a"><div class="ttname"><a href="group__rdmnet__disc.html#ga04e9844ae14599d7c0598347601ce28a">RdmnetDiscBrokerRegisterFailedCallback</a></div><div class="ttdeci">void(* RdmnetDiscBrokerRegisterFailedCallback)(rdmnet_registered_broker_t handle, int platform_error, void *context)</div><div class="ttdoc">Broker registration has failed.</div><div class="ttdef"><b>Definition:</b> discovery.h:141</div></div>
 <div class="ttc" id="agroup__rdmnet__disc_html_ga056b842a9491951d139807482ac643e9"><div class="ttname"><a href="group__rdmnet__disc.html#ga056b842a9491951d139807482ac643e9">RdmnetDiscOtherBrokerLostCallback</a></div><div class="ttdeci">void(* RdmnetDiscOtherBrokerLostCallback)(rdmnet_registered_broker_t handle, const char *scope, const char *service_instance_name, void *context)</div><div class="ttdoc">A broker which was previously detected on the same scope as a registered broker has been lost.</div><div class="ttdef"><b>Definition:</b> discovery.h:162</div></div>
 <div class="ttc" id="agroup__rdmnet__disc_html_ga13626e9cb4668e2c002eba3b3b224bdd"><div class="ttname"><a href="group__rdmnet__disc.html#ga13626e9cb4668e2c002eba3b3b224bdd">RdmnetBrokerDiscInfo</a></div><div class="ttdeci">struct RdmnetBrokerDiscInfo RdmnetBrokerDiscInfo</div><div class="ttdoc">Information about a broker discovered or registered using DNS-SD.</div></div>
@@ -420,9 +419,8 @@ $(document).ready(function(){initNavTree('discovery_8h_source.html',''); initRes
 <div class="ttc" id="agroup__rdmnet__disc_html_gaca3cf1d904824d84518f1aa9f8c1207b"><div class="ttname"><a href="group__rdmnet__disc.html#gaca3cf1d904824d84518f1aa9f8c1207b">rdmnet_disc_stop_monitoring_all</a></div><div class="ttdeci">void rdmnet_disc_stop_monitoring_all(void)</div><div class="ttdoc">Stop monitoring all RDMnet scopes for brokers.</div><div class="ttdef"><b>Definition:</b> common.c:287</div></div>
 <div class="ttc" id="agroup__rdmnet__disc_html_gad49c259d09658510b6cbec73d5efabde"><div class="ttname"><a href="group__rdmnet__disc.html#gad49c259d09658510b6cbec73d5efabde">RdmnetBrokerRegisterConfig</a></div><div class="ttdeci">struct RdmnetBrokerRegisterConfig RdmnetBrokerRegisterConfig</div><div class="ttdoc">A set of information that defines the parameters of an RDMnet broker registered with DNS-SD.</div></div>
 <div class="ttc" id="agroup__rdmnet__disc_html_gaf23b746209600eae870283926e7f7ae1"><div class="ttname"><a href="group__rdmnet__disc.html#gaf23b746209600eae870283926e7f7ae1">rdmnet_broker_register_config_init</a></div><div class="ttdeci">void rdmnet_broker_register_config_init(RdmnetBrokerRegisterConfig *config)</div><div class="ttdoc">Initialize an RdmnetBrokerRegisterConfig with default values for the optional config options.</div><div class="ttdef"><b>Definition:</b> common.c:113</div></div>
-<div class="ttc" id="astruct_etc_pal_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a></div></div>
-<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
-<div class="ttc" id="astruct_rdm_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a></div></div>
+<div class="ttc" id="astruct_etc_pal_ip_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a></div></div>
+<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
 <div class="ttc" id="astruct_rdmnet_broker_disc_info_html"><div class="ttname"><a href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a></div><div class="ttdoc">Information about a broker discovered or registered using DNS-SD.</div><div class="ttdef"><b>Definition:</b> discovery.h:85</div></div>
 <div class="ttc" id="astruct_rdmnet_broker_disc_info_html_a2c5d5aaea9e77c5452f904f6f0f0fd8e"><div class="ttname"><a href="struct_rdmnet_broker_disc_info.html#a2c5d5aaea9e77c5452f904f6f0f0fd8e">RdmnetBrokerDiscInfo::port</a></div><div class="ttdeci">uint16_t port</div><div class="ttdoc">The port on which the broker is listening for RDMnet connections.</div><div class="ttdef"><b>Definition:</b> discovery.h:101</div></div>
 <div class="ttc" id="astruct_rdmnet_broker_disc_info_html_a51a474c17a6a0130b4b239a2a9fb5948"><div class="ttname"><a href="struct_rdmnet_broker_disc_info.html#a51a474c17a6a0130b4b239a2a9fb5948">RdmnetBrokerDiscInfo::model</a></div><div class="ttdeci">const char * model</div><div class="ttdoc">The broker's product model name.</div><div class="ttdef"><b>Definition:</b> discovery.h:109</div></div>
@@ -473,7 +471,7 @@ $(document).ready(function(){initNavTree('discovery_8h_source.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="discovery_8h.html">discovery.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="discovery_8h.html">discovery.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,7 +203,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="title">Using the Controller API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpiqqg2nsy_docs_getting_started_using_controller"></a> The RDMnet Controller API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpfs5jffog_docs_getting_started_using_controller"></a> The RDMnet Controller API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -230,7 +229,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line"><span class="comment">// Each controller is a component that must have a Component ID (CID), which is simply a UUID.</span></div>
 <div class="line"><span class="comment">// Software should generate and save a CID so that the same one is used on each run of the software.</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10">etcpal_generate_os_preferred_uuid</a>(&amp;config.<a class="code" href="struct_rdmnet_controller_config.html#a88afa036a301ef655052aaf77bbe013e">cid</a>);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10">etcpal_generate_os_preferred_uuid</a>(&amp;config.<a class="code" href="struct_rdmnet_controller_config.html#a88afa036a301ef655052aaf77bbe013e">cid</a>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Set the callback functions - defined elsewhere</span></div>
 <div class="line"><span class="comment">// p_some_opaque_data is an opaque data pointer that will be passed back to each callback function</span></div>
@@ -249,20 +248,21 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">config.<a class="code" href="struct_rdmnet_controller_config.html#ae49dce81d475e7a7973c6b7cdee8620e">rdm_data</a>.<a class="code" href="struct_rdmnet_controller_rdm_data.html#abd190d6bf06eb052193fb01f967a032c">device_label_settable</a> = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> my_controller_handle;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a>(&amp;config, &amp;my_controller_handle);</div>
-<div class="line"><span class="keywordflow">if</span> (result == <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a>(&amp;config, &amp;my_controller_handle);</div>
+<div class="line"><span class="keywordflow">if</span> (result == <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Handle is valid and may be referenced in later calls to API functions.</span></div>
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  printf(<span class="stringliteral">&quot;RDMnet controller creation failed with error: %s\n&quot;</span>, <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a>(result));</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;RDMnet controller creation failed with error: %s\n&quot;</span>, <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a>(result));</div>
 <div class="line">}</div>
 <div class="ttc" id="acontroller_8h_html"><div class="ttname"><a href="controller_8h.html">controller.h</a></div><div class="ttdoc">Definitions for the RDMnet Controller API.</div></div>
-<div class="ttc" id="agroup__etcpal__error_html_ga4902a840d9801e02baebd4c70924c4b0"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a></div><div class="ttdeci">const char * etcpal_strerror(etcpal_error_t code)</div></div>
-<div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
-<div class="ttc" id="agroup__etcpal__error_html_gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a></div><div class="ttdeci">kEtcPalErrOk</div></div>
-<div class="ttc" id="agroup__etcpal__uuid_html_gabb977b5a218b4b62224c016bf3932f10"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10">etcpal_generate_os_preferred_uuid</a></div><div class="ttdeci">etcpal_error_t etcpal_generate_os_preferred_uuid(EtcPalUuid *uuid)</div></div>
+<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
+<div class="ttc" id="agroup__etcpal__error_html_ga4902a840d9801e02baebd4c70924c4b0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a></div><div class="ttdeci">const char * etcpal_strerror(etcpal_error_t code)</div></div>
+<div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
+<div class="ttc" id="agroup__etcpal__error_html_gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a></div><div class="ttdeci">kEtcPalErrOk</div></div>
+<div class="ttc" id="agroup__etcpal__uuid_html_gabb977b5a218b4b62224c016bf3932f10"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10">etcpal_generate_os_preferred_uuid</a></div><div class="ttdeci">etcpal_error_t etcpal_generate_os_preferred_uuid(EtcPalUuid *uuid)</div></div>
 <div class="ttc" id="agroup__rdmnet__controller_html_ga1860f48d433795826ce3edc8f6963c51"><div class="ttname"><a href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a></div><div class="ttdeci">etcpal_error_t rdmnet_controller_create(const RdmnetControllerConfig *config, rdmnet_controller_t *handle)</div><div class="ttdoc">Create a new instance of RDMnet controller functionality.</div><div class="ttdef"><b>Definition:</b> controller.c:249</div></div>
 <div class="ttc" id="agroup__rdmnet__controller_html_ga561941b5e39514b8015e936130c6e544"><div class="ttname"><a href="group__rdmnet__controller.html#ga561941b5e39514b8015e936130c6e544">rdmnet_controller_set_callbacks</a></div><div class="ttdeci">void rdmnet_controller_set_callbacks(RdmnetControllerConfig *config, RdmnetControllerConnectedCallback connected, RdmnetControllerConnectFailedCallback connect_failed, RdmnetControllerDisconnectedCallback disconnected, RdmnetControllerClientListUpdateReceivedCallback client_list_update_received, RdmnetControllerRdmResponseReceivedCallback rdm_response_received, RdmnetControllerStatusReceivedCallback status_received, RdmnetControllerResponderIdsReceivedCallback responder_ids_received, void *context)</div><div class="ttdoc">Set the main callbacks in an RDMnet controller configuration structure.</div><div class="ttdef"><b>Definition:</b> controller.c:176</div></div>
 <div class="ttc" id="agroup__rdmnet__controller_html_gab61905ff5228301100c6d70c58e77661"><div class="ttname"><a href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a></div><div class="ttdeci">#define RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT(manu_id)</div><div class="ttdoc">A default-value initializer for an RdmnetControllerConfig struct.</div><div class="ttdef"><b>Definition:</b> controller.h:329</div></div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_2_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cpp_2controller_8h.html">rdmnet/cpp/controller.h</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">class </span>MyControllerNotifyHandler : <span class="keyword">public</span> <a class="code" href="classrdmnet_1_1_controller_1_1_notify_handler.html">rdmnet::Controller::NotifyHandler</a></div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line"><span class="comment">// Each controller is a component that must have a Component ID (CID), which is simply a UUID.</span></div>
 <div class="line"><span class="comment">// Software should generate and save a CID so that the same one is used on each run of the software.</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> my_cid = <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>();</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> my_cid = <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Contains the configuration settings that the controller needs to operate. Some of these are set</span></div>
 <div class="line"><span class="comment">// to default values and can be changed if necessary. Must pass your ESTA manufacturer ID. If you</span></div>
@@ -310,7 +310,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">                                        <span class="stringliteral">&quot;1.0.0&quot;</span>,                  <span class="comment">// Software Version Label</span></div>
 <div class="line">                                        <span class="stringliteral">&quot;My Device Label&quot;</span>);       <span class="comment">// Device Label</span></div>
 <div class="line"><a class="code" href="classrdmnet_1_1_controller.html">rdmnet::Controller</a> controller;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">Startup</a>(my_controller_notify_handler, my_settings, my_rdm_data);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">Startup</a>(my_controller_notify_handler, my_settings, my_rdm_data);</div>
 <div class="line"><span class="keywordflow">if</span> (result)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Controller is valid and running.</span></div>
@@ -319,19 +319,20 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;RDMnet controller startup failed with error: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;RDMnet controller startup failed with error: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
-<div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
-<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
-<div class="ttc" id="aclassetcpal_1_1_uuid_html_ae1ccf480526751a937afb32a2db7346a"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a></div><div class="ttdeci">static Uuid OsPreferred() noexcept</div></div>
+<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
+<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_uuid_html_ae1ccf480526751a937afb32a2db7346a"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a></div><div class="ttdeci">static Uuid OsPreferred() noexcept</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_1_1_notify_handler_html"><div class="ttname"><a href="classrdmnet_1_1_controller_1_1_notify_handler.html">rdmnet::Controller::NotifyHandler</a></div><div class="ttdoc">A base class for a class that receives notification callbacks from a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:71</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html"><div class="ttname"><a href="classrdmnet_1_1_controller.html">rdmnet::Controller</a></div><div class="ttdoc">An instance of RDMnet controller functionality.</div><div class="ttdef"><b>Definition:</b> controller.h:59</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html_a1d0150d73e64cfff241b351f7b8efd55"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">rdmnet::Controller::Startup</a></div><div class="ttdeci">etcpal::Error Startup(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const RdmData &amp;rdm_data)</div><div class="ttdoc">Allocate resources and start up this controller with the given configuration.</div><div class="ttdef"><b>Definition:</b> controller.h:501</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html_a3cd6da9f67ba9e721738b6bc97dc8927"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a3cd6da9f67ba9e721738b6bc97dc8927">rdmnet::Controller::handle</a></div><div class="ttdeci">Handle handle() const</div><div class="ttdoc">Retrieve the handle of a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:1023</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html_a585adefdd50c5a7bc63d3a5625889c7d"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">rdmnet::Controller::Handle</a></div><div class="ttdeci">rdmnet_controller_t Handle</div><div class="ttdoc">A handle type used by the RDMnet library to identify controller instances.</div><div class="ttdef"><b>Definition:</b> controller.h:62</div></div>
 <div class="ttc" id="acpp_2controller_8h_html"><div class="ttname"><a href="cpp_2controller_8h.html">controller.h</a></div><div class="ttdoc">C++ wrapper for the RDMnet Controller API.</div></div>
-<div class="ttc" id="acpp_2uuid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
+<div class="ttc" id="acpp_2uuid_8h.html_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
 <div class="ttc" id="astructrdmnet_1_1_controller_1_1_rdm_data_html"><div class="ttname"><a href="structrdmnet_1_1_controller_1_1_rdm_data.html">rdmnet::Controller::RdmData</a></div><div class="ttdoc">A set of initial identifying RDM data to use for a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:194</div></div>
 <div class="ttc" id="astructrdmnet_1_1_controller_1_1_settings_html"><div class="ttname"><a href="structrdmnet_1_1_controller_1_1_settings.html">rdmnet::Controller::Settings</a></div><div class="ttdoc">A set of configuration settings that a controller needs to initialize.</div><div class="ttdef"><b>Definition:</b> controller.h:171</div></div>
 </div><!-- fragment --><p> 
@@ -365,7 +366,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </p>
 <h1>Managing Scopes</h1>
 <p>A controller instance is initially created without any configured scopes. If the app has not been reconfigured by a user, the E1.33 RDMnet standard requires that the RDMnet default scope be configured automatically. There is a shortcut function for this. Otherwise, you can add a custom scope.</p>
-<p>Per the requirements of RDMnet, a scope string is always UTF-8 and is thus represented by a char[] in C and a std::string in C++.</p>
+<p>Per the requirements of RDMnet, a scope string is always UTF-8 and is thus represented by a char[] in C and a <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> in C++.</p>
 <p>See the "Scopes" section in <a class="el" href="how_it_works.html">How RDMnet Works</a> for more information on scopes.</p>
 <p> 
 <div class="code-tab-selector">
@@ -376,14 +377,14 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Add a default scope</span></div>
 <div class="line"><a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> default_scope_handle;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga95f857453eb6b8da8cadaa373420ab61">rdmnet_controller_add_default_scope</a>(my_controller_handle, &amp;default_scope_handle);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga95f857453eb6b8da8cadaa373420ab61">rdmnet_controller_add_default_scope</a>(my_controller_handle, &amp;default_scope_handle);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add a custom scope</span></div>
 <div class="line"><a class="code" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> scope_config;</div>
 <div class="line"><a class="code" href="group__rdmnet__api__common.html#ga0b906d1d6ed5fcc678e9c530e440b62f">RDMNET_CLIENT_SET_SCOPE</a>(&amp;scope_config, <span class="stringliteral">&quot;custom_scope_name&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> custom_scope_handle;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e">rdmnet_controller_add_scope</a>(my_controller_handle, &amp;scope_config, &amp;custom_scope_handle);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e">rdmnet_controller_add_scope</a>(my_controller_handle, &amp;scope_config, &amp;custom_scope_handle);</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga0b906d1d6ed5fcc678e9c530e440b62f"><div class="ttname"><a href="group__rdmnet__api__common.html#ga0b906d1d6ed5fcc678e9c530e440b62f">RDMNET_CLIENT_SET_SCOPE</a></div><div class="ttdeci">#define RDMNET_CLIENT_SET_SCOPE(configptr, scope_str)</div><div class="ttdoc">Initialize an RdmnetScopeConfig struct with a scope string.</div><div class="ttdef"><b>Definition:</b> client.h:262</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga7244ab5c8edb8bc9c1e4792a6c64f798"><div class="ttname"><a href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a></div><div class="ttdeci">int rdmnet_client_scope_t</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:41</div></div>
 <div class="ttc" id="agroup__rdmnet__controller_html_ga4363e0f31f3f85f5526b55d2c034ed4e"><div class="ttname"><a href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e">rdmnet_controller_add_scope</a></div><div class="ttdeci">etcpal_error_t rdmnet_controller_add_scope(rdmnet_controller_t controller_handle, const RdmnetScopeConfig *scope_config, rdmnet_client_scope_t *scope_handle)</div><div class="ttdoc">Add a new scope to a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.c:321</div></div>
@@ -393,9 +394,9 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 <div id="div_4_cpp" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">AddDefaultScope</a>();</div>
+<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">AddDefaultScope</a>();</div>
 <div class="line"><span class="comment">// Or...</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">AddScope</a>(<span class="stringliteral">&quot;custom_scope_name&quot;</span>);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">AddScope</a>(<span class="stringliteral">&quot;custom_scope_name&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (add_res)</div>
 <div class="line">{</div>
@@ -403,10 +404,10 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Error adding default scope: &#39;&quot;</span> &lt;&lt; add_res.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">error</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span></div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error adding default scope: &#39;&quot;</span> &lt;&lt; add_res.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">error</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassetcpal_1_1_expected_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a></div></div>
-<div class="ttc" id="aclassetcpal_1_1_expected_html_a60850b440a4ff7f769627b46d79043f6"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">etcpal::Expected::error</a></div><div class="ttdeci">constexpr Error error() const noexcept</div></div>
+<div class="ttc" id="aclassetcpal_1_1_expected_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_expected_html_a60850b440a4ff7f769627b46d79043f6"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">etcpal::Expected::error</a></div><div class="ttdeci">constexpr Error error() const noexcept</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html_a747d4c004d271d2b4eff5174489670e3"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">rdmnet::Controller::AddDefaultScope</a></div><div class="ttdeci">etcpal::Expected&lt; ScopeHandle &gt; AddDefaultScope(const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Shortcut to add the default RDMnet scope to a controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:692</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html_a752a7b8897f2ccae3b76c0e36946cf26"><div class="ttname"><a href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">rdmnet::Controller::AddScope</a></div><div class="ttdeci">etcpal::Expected&lt; ScopeHandle &gt; AddScope(const char *id, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</div><div class="ttdoc">Add a new scope to this controller instance.</div><div class="ttdef"><b>Definition:</b> controller.h:641</div></div>
 <div class="ttc" id="agroup__rdmnet__cpp__common_html_gadf5994aa4727265c21622c5a0f997ceb"><div class="ttname"><a href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a></div><div class="ttdeci">rdmnet_client_scope_t ScopeHandle</div><div class="ttdoc">A handle to a scope that an RDMnet client participates in.</div><div class="ttdef"><b>Definition:</b> client.h:447</div></div>
@@ -424,9 +425,9 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div id="div_5_c" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Get configured static broker address</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> static_broker_addr;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">etcpal_string_to_ip</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a>, <span class="stringliteral">&quot;192.168.2.1&quot;</span>, &amp;static_broker_addr.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">ip</a>);</div>
-<div class="line">static_broker_addr.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a> = 8000;</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> static_broker_addr;</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">etcpal_string_to_ip</a>(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a>, <span class="stringliteral">&quot;192.168.2.1&quot;</span>, &amp;static_broker_addr.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">ip</a>);</div>
+<div class="line">static_broker_addr.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a> = 8000;</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> config;</div>
 <div class="line"><a class="code" href="group__rdmnet__api__common.html#ga500c0af02a2db3a6b835f26cf304da85">RDMNET_CLIENT_SET_STATIC_SCOPE</a>(&amp;config, <span class="stringliteral">&quot;my_custom_scope&quot;</span>, static_broker_addr);</div>
@@ -434,24 +435,24 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"><a class="code" href="group__rdmnet__api__common.html#gab2855ff14aba079140f1070f80140247">RDMNET_CLIENT_SET_STATIC_DEFAULT_SCOPE</a>(&amp;config, static_broker_addr);</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e">rdmnet_controller_add_scope</a>(my_controller_handle, &amp;config, &amp;scope_handle);</div>
-<div class="ttc" id="agroup__etcpal__inet_html_ga92ba01cb2c81a8a97b9555ecf0ab2fe5"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">etcpal_string_to_ip</a></div><div class="ttdeci">etcpal_error_t etcpal_string_to_ip(etcpal_iptype_t type, const char *src, EtcPalIpAddr *dest)</div></div>
-<div class="ttc" id="agroup__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a></div><div class="ttdeci">kEtcPalIpTypeV4</div></div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e">rdmnet_controller_add_scope</a>(my_controller_handle, &amp;config, &amp;scope_handle);</div>
+<div class="ttc" id="agroup__etcpal__inet_html_ga92ba01cb2c81a8a97b9555ecf0ab2fe5"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">etcpal_string_to_ip</a></div><div class="ttdeci">etcpal_error_t etcpal_string_to_ip(etcpal_iptype_t type, const char *src, EtcPalIpAddr *dest)</div></div>
+<div class="ttc" id="agroup__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a></div><div class="ttdeci">kEtcPalIpTypeV4</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga500c0af02a2db3a6b835f26cf304da85"><div class="ttname"><a href="group__rdmnet__api__common.html#ga500c0af02a2db3a6b835f26cf304da85">RDMNET_CLIENT_SET_STATIC_SCOPE</a></div><div class="ttdeci">#define RDMNET_CLIENT_SET_STATIC_SCOPE(configptr, scope_str, broker_addr)</div><div class="ttdoc">Initialize an RdmnetScopeConfig struct with a scope string and static broker address.</div><div class="ttdef"><b>Definition:</b> client.h:295</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gab2855ff14aba079140f1070f80140247"><div class="ttname"><a href="group__rdmnet__api__common.html#gab2855ff14aba079140f1070f80140247">RDMNET_CLIENT_SET_STATIC_DEFAULT_SCOPE</a></div><div class="ttdeci">#define RDMNET_CLIENT_SET_STATIC_DEFAULT_SCOPE(configptr, broker_addr)</div><div class="ttdoc">Initialize an RdmnetScopeConfig struct with the default RDMnet scope and a static broker address.</div><div class="ttdef"><b>Definition:</b> client.h:312</div></div>
-<div class="ttc" id="astruct_etc_pal_sock_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a></div></div>
-<div class="ttc" id="astruct_etc_pal_sock_addr_html_a19cc8016f534a565f984438cfe911a9e"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">EtcPalSockAddr::ip</a></div><div class="ttdeci">EtcPalIpAddr ip</div></div>
-<div class="ttc" id="astruct_etc_pal_sock_addr_html_a8e0798404bf2cf5dabb84c5ba9a4f236"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">EtcPalSockAddr::port</a></div><div class="ttdeci">uint16_t port</div></div>
+<div class="ttc" id="astruct_etc_pal_sock_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a></div></div>
+<div class="ttc" id="astruct_etc_pal_sock_addr_html_a19cc8016f534a565f984438cfe911a9e"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">EtcPalSockAddr::ip</a></div><div class="ttdeci">EtcPalIpAddr ip</div></div>
+<div class="ttc" id="astruct_etc_pal_sock_addr_html_a8e0798404bf2cf5dabb84c5ba9a4f236"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">EtcPalSockAddr::port</a></div><div class="ttdeci">uint16_t port</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_5_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Get configured static broker address</span></div>
-<div class="line">etcpal::Sockaddr static_broker_addr(<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a431892e2354d1b617e2dd0278b8a9f30">etcpal::IpAddr::FromString</a>(<span class="stringliteral">&quot;192.168.2.1&quot;</span>), 8000);</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">AddScope</a>(<span class="stringliteral">&quot;my_custom_scope&quot;</span>, static_broker_addr);</div>
+<div class="line">etcpal::Sockaddr static_broker_addr(<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html#a431892e2354d1b617e2dd0278b8a9f30">etcpal::IpAddr::FromString</a>(<span class="stringliteral">&quot;192.168.2.1&quot;</span>), 8000);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a752a7b8897f2ccae3b76c0e36946cf26">AddScope</a>(<span class="stringliteral">&quot;my_custom_scope&quot;</span>, static_broker_addr);</div>
 <div class="line"><span class="comment">// Or:</span></div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">AddDefaultScope</a>(static_broker_addr);</div>
-<div class="ttc" id="aclassetcpal_1_1_ip_addr_html_a431892e2354d1b617e2dd0278b8a9f30"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a431892e2354d1b617e2dd0278b8a9f30">etcpal::IpAddr::FromString</a></div><div class="ttdeci">static IpAddr FromString(const char *ip_str) noexcept</div></div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;rdmnet::ScopeHandle&gt;</a> add_res = controller.<a class="code" href="classrdmnet_1_1_controller.html#a747d4c004d271d2b4eff5174489670e3">AddDefaultScope</a>(static_broker_addr);</div>
+<div class="ttc" id="aclassetcpal_1_1_ip_addr_html_a431892e2354d1b617e2dd0278b8a9f30"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_ip_addr.html#a431892e2354d1b617e2dd0278b8a9f30">etcpal::IpAddr::FromString</a></div><div class="ttdeci">static IpAddr FromString(const char *ip_str) noexcept</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -468,16 +469,16 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> controller_connected_callback(<a class="code" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle,</div>
 <div class="line">                                   <span class="keyword">const</span> <a class="code" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a>* info, <span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">char</span> addr_str[<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a>];</div>
-<div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a>(&amp;info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">ip</a>, addr_str);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;Connected to broker &#39;%s&#39; at address %s:%d\n&quot;</span>, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">broker_name</a>, addr_str, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>);</div>
+<div class="line">  <span class="keywordtype">char</span> addr_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a>];</div>
+<div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a>(&amp;info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">ip</a>, addr_str);</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Connected to broker &#39;%s&#39; at address %s:%d\n&quot;</span>, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">broker_name</a>, addr_str, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Check handles and/or context as necessary...</span></div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="group__rdmnet__controller.html#ga6d30907e6d09ada38a1be228d0f6809c">rdmnet_controller_request_client_list</a>(controller_handle, scope_handle);</div>
 <div class="line">}                                   </div>
-<div class="ttc" id="agroup__etcpal__inet_html_gacd7ec0d81e171166483c7629669bf05d"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a></div><div class="ttdeci">#define ETCPAL_IP_STRING_BYTES</div></div>
-<div class="ttc" id="agroup__etcpal__inet_html_gaf98da0ae21f7960b5e046c55b8d79c4a"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a></div><div class="ttdeci">etcpal_error_t etcpal_ip_to_string(const EtcPalIpAddr *src, char *dest)</div></div>
+<div class="ttc" id="agroup__etcpal__inet_html_gacd7ec0d81e171166483c7629669bf05d"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a></div><div class="ttdeci">#define ETCPAL_IP_STRING_BYTES</div></div>
+<div class="ttc" id="agroup__etcpal__inet_html_gaf98da0ae21f7960b5e046c55b8d79c4a"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a></div><div class="ttdeci">etcpal_error_t etcpal_ip_to_string(const EtcPalIpAddr *src, char *dest)</div></div>
 <div class="ttc" id="agroup__rdmnet__controller_html_ga6d30907e6d09ada38a1be228d0f6809c"><div class="ttname"><a href="group__rdmnet__controller.html#ga6d30907e6d09ada38a1be228d0f6809c">rdmnet_controller_request_client_list</a></div><div class="ttdeci">etcpal_error_t rdmnet_controller_request_client_list(rdmnet_controller_t controller_handle, rdmnet_client_scope_t scope_handle)</div><div class="ttdoc">Request a client list from a broker.</div><div class="ttdef"><b>Definition:</b> controller.c:503</div></div>
 <div class="ttc" id="astruct_rdmnet_client_connected_info_html"><div class="ttname"><a href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a></div><div class="ttdoc">Information provided by the library about a successful RDMnet client connection.</div><div class="ttdef"><b>Definition:</b> client.h:151</div></div>
 <div class="ttc" id="astruct_rdmnet_client_connected_info_html_a09b4687edadab4b4334a33b38d00cf2f"><div class="ttname"><a href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">RdmnetClientConnectedInfo::broker_name</a></div><div class="ttdeci">const char * broker_name</div><div class="ttdoc">The DNS name of the broker, if it was discovered using DNS-SD; otherwise an empty string.</div><div class="ttdef"><b>Definition:</b> client.h:155</div></div>
@@ -490,13 +491,13 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">                                                        <a class="code" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                        <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a>&amp; info)</div>
 <div class="line">{</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a>()</div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&#39; at IP address &quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">broker_addr</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a>()</div>
+<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&#39; at IP address &quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">broker_addr</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Check handles as necessary and get controller instance...</span></div>
 <div class="line">  controller.<a class="code" href="classrdmnet_1_1_controller.html#a31525848734a10e0762b9114a98dcc5b">RequestClientList</a>(scope_handle);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassetcpal_1_1_sock_addr_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::SockAddr::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
+<div class="ttc" id="aclassetcpal_1_1_sock_addr_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::SockAddr::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a></div><div class="ttdoc">Information about a successful connection to a broker delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> client.h:149</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_a751d070cb4c1f89d838955298270b6cf"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">rdmnet::ClientConnectedInfo::broker_name</a></div><div class="ttdeci">std::string broker_name() const</div><div class="ttdoc">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty stri...</div><div class="ttdef"><b>Definition:</b> client.h:184</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_client_connected_info_html_af30653fa66bd5b267c54cf81a8c7eb3d"><div class="ttname"><a href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">rdmnet::ClientConnectedInfo::broker_addr</a></div><div class="ttdeci">constexpr etcpal::SockAddr broker_addr() const noexcept</div><div class="ttdoc">Get the IP address and port of the remote broker to which we have connected.</div><div class="ttdef"><b>Definition:</b> client.h:178</div></div>
@@ -633,9 +634,9 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </p>
 <div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> dest = <a class="code" href="group__rdmnet__api__common.html#ga58f3b5c690b7ebd792e8d2851af95ea0">RDMNET_ADDR_TO_DEFAULT_RESPONDER</a>(0x6574, 0x12345678);</div>
 <div class="line">uint32_t cmd_seq_num;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga872fb3896fb620b339635bd40830e03f">rdmnet_controller_send_get_command</a>(my_controller_handle, my_scope_handle, &amp;dest,</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga872fb3896fb620b339635bd40830e03f">rdmnet_controller_send_get_command</a>(my_controller_handle, my_scope_handle, &amp;dest,</div>
 <div class="line">                                                           E120_DEVICE_LABEL, NULL, 0, &amp;cmd_seq_num);</div>
-<div class="line"><span class="keywordflow">if</span> (result == <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div>
+<div class="line"><span class="keywordflow">if</span> (result == <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// cmd_seq_num identifies this command transaction. Store it for when a response is received.</span></div>
 <div class="line">}</div>
@@ -647,7 +648,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div id="div_8_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> dest_addr = <a class="code" href="classrdmnet_1_1_destination_addr.html#a8c1f337f355371cdb56f19f164cf125b">rdmnet::DestinationAddr::ToDefaultResponder</a>(0x6574, 0x12345678);</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;uint32_t&gt;</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1cbb710605f06cddd4e043ce71653390">SendGetCommand</a>(my_scope_handle, dest_addr, E120_DEVICE_LABEL);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected&lt;uint32_t&gt;</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1cbb710605f06cddd4e043ce71653390">SendGetCommand</a>(my_scope_handle, dest_addr, E120_DEVICE_LABEL);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (result)</div>
 <div class="line">{</div>
@@ -688,7 +689,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line">  <span class="comment">// If RDMNET_RESP_ORIGINAL_COMMAND_INCLUDED(resp) == true, resp-&gt;cmd will contain the original command you sent. </span></div>
 <div class="line"> </div>
-<div class="line">  handle_response_data(resp-&gt;<a class="code" href="struct_rdmnet_rdm_response.html#a7166b29ccdcf9789259f036c6f9c1c96">rdm_header</a>.<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_response_header.html#a43f5e73445b99b42061429682fdc78fc">param_id</a>, resp-&gt;<a class="code" href="struct_rdmnet_rdm_response.html#a757c3836c4ba3194c16a7fdee725478b">rdm_data</a>, resp-&gt;<a class="code" href="struct_rdmnet_rdm_response.html#a40a585bd57aa4b45b518408829a9038f">rdm_data_len</a>);</div>
+<div class="line">  handle_response_data(resp-&gt;<a class="code" href="struct_rdmnet_rdm_response.html#a7166b29ccdcf9789259f036c6f9c1c96">rdm_header</a>.param_id, resp-&gt;<a class="code" href="struct_rdmnet_rdm_response.html#a757c3836c4ba3194c16a7fdee725478b">rdm_data</a>, resp-&gt;<a class="code" href="struct_rdmnet_rdm_response.html#a40a585bd57aa4b45b518408829a9038f">rdm_data_len</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// RdmnetRdmResponse structures do not own their data and the data will be invalid when this callback</span></div>
 <div class="line">  <span class="comment">// returns. To save the data for later processing:</span></div>
@@ -708,7 +709,6 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">}</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga480d58441aecb63a71b68b2fce5ba8b5"><div class="ttname"><a href="group__rdmnet__api__common.html#ga480d58441aecb63a71b68b2fce5ba8b5">rdmnet_append_to_saved_rdm_response</a></div><div class="ttdeci">etcpal_error_t rdmnet_append_to_saved_rdm_response(const RdmnetRdmResponse *new_response, RdmnetSavedRdmResponse *previously_saved_response)</div><div class="ttdoc">Append more data to a SavedRdmResponse's parameter data.</div><div class="ttdef"><b>Definition:</b> message.c:152</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gad5d372571287234f8d82988755a1e967"><div class="ttname"><a href="group__rdmnet__api__common.html#gad5d372571287234f8d82988755a1e967">rdmnet_save_rdm_response</a></div><div class="ttdeci">etcpal_error_t rdmnet_save_rdm_response(const RdmnetRdmResponse *response, RdmnetSavedRdmResponse *saved_response)</div><div class="ttdoc">Save the data in a received RDM response for later use from a different context.</div><div class="ttdef"><b>Definition:</b> message.c:102</div></div>
-<div class="ttc" id="astruct_rdm_response_header_html_a43f5e73445b99b42061429682fdc78fc"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_response_header.html#a43f5e73445b99b42061429682fdc78fc">RdmResponseHeader::param_id</a></div><div class="ttdeci">uint16_t param_id</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_response_html"><div class="ttname"><a href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a></div><div class="ttdoc">An RDMnet RDM response received by a local component.</div><div class="ttdef"><b>Definition:</b> message.h:90</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_response_html_a40a585bd57aa4b45b518408829a9038f"><div class="ttname"><a href="struct_rdmnet_rdm_response.html#a40a585bd57aa4b45b518408829a9038f">RdmnetRdmResponse::rdm_data_len</a></div><div class="ttdeci">size_t rdm_data_len</div><div class="ttdoc">The length of the parameter data associated with the RDM response.</div><div class="ttdef"><b>Definition:</b> message.h:118</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_response_html_a6927eaec013a0e5d6ec7230f46618308"><div class="ttname"><a href="struct_rdmnet_rdm_response.html#a6927eaec013a0e5d6ec7230f46618308">RdmnetRdmResponse::is_response_to_me</a></div><div class="ttdeci">bool is_response_to_me</div><div class="ttdoc">Whether the response was sent in response to a command previously sent by this controller.</div><div class="ttdef"><b>Definition:</b> message.h:101</div></div>
@@ -785,16 +785,14 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Verify status-&gt;seq_num against the cmd_seq_num you stored earlier.</span></div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">char</span> uid_str[<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__uid.html#gaca68c70b4aca047a5b8ff73e9d73b492">RDM_UID_STRING_BYTES</a>];</div>
-<div class="line">  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__uid.html#ga90190789ec0a4c7262c47e2d7a1fdf43">rdm_uid_to_string</a>(&amp;status-&gt;<a class="code" href="struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4">source_uid</a>, uid_str);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;Error sending RDM command to device %s: &#39;%s&#39;\n&quot;</span>, uid_str,</div>
+<div class="line">  <span class="keywordtype">char</span> uid_str[RDM_UID_STRING_BYTES];</div>
+<div class="line">  rdm_uid_to_string(&amp;status-&gt;<a class="code" href="struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4">source_uid</a>, uid_str);</div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Error sending RDM command to device %s: &#39;%s&#39;\n&quot;</span>, uid_str,</div>
 <div class="line">         <a class="code" href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a>(status-&gt;<a class="code" href="struct_rdmnet_rpt_status.html#a7ee615642619dc3f5fd4f52fdf5205e7">status_code</a>));</div>
 <div class="line">  </div>
 <div class="line">  <span class="comment">// Other logic as needed; remove our internal storage of the RDM transaction, etc.</span></div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga1b678629569257697ec6a7e855c71623"><div class="ttname"><a href="group__rdmnet__api__common.html#ga1b678629569257697ec6a7e855c71623">rdmnet_rpt_status_code_to_string</a></div><div class="ttdeci">const char * rdmnet_rpt_status_code_to_string(rpt_status_code_t code)</div><div class="ttdoc">Get a string representation of an RPT status code.</div><div class="ttdef"><b>Definition:</b> common.c:231</div></div>
-<div class="ttc" id="agroup__uid_html_ga90190789ec0a4c7262c47e2d7a1fdf43"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__uid.html#ga90190789ec0a4c7262c47e2d7a1fdf43">rdm_uid_to_string</a></div><div class="ttdeci">bool rdm_uid_to_string(const RdmUid *uid, char *buf)</div></div>
-<div class="ttc" id="agroup__uid_html_gaca68c70b4aca047a5b8ff73e9d73b492"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__uid.html#gaca68c70b4aca047a5b8ff73e9d73b492">RDM_UID_STRING_BYTES</a></div><div class="ttdeci">#define RDM_UID_STRING_BYTES</div></div>
 <div class="ttc" id="astruct_rdmnet_rpt_status_html"><div class="ttname"><a href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a></div><div class="ttdoc">An RDMnet RPT status message received by a local component.</div><div class="ttdef"><b>Definition:</b> message.h:193</div></div>
 <div class="ttc" id="astruct_rdmnet_rpt_status_html_a341877f2348eb080feef58049da4d5d4"><div class="ttname"><a href="struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4">RdmnetRptStatus::source_uid</a></div><div class="ttdeci">RdmUid source_uid</div><div class="ttdoc">The UID of the RDMnet component that sent this status message.</div><div class="ttdef"><b>Definition:</b> message.h:195</div></div>
 <div class="ttc" id="astruct_rdmnet_rpt_status_html_a7ee615642619dc3f5fd4f52fdf5205e7"><div class="ttname"><a href="struct_rdmnet_rpt_status.html#a7ee615642619dc3f5fd4f52fdf5205e7">RdmnetRptStatus::status_code</a></div><div class="ttdeci">rpt_status_code_t status_code</div><div class="ttdoc">A status code that indicates the specific error or status condition.</div><div class="ttdef"><b>Definition:</b> message.h:201</div></div>
@@ -810,12 +808,11 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Verify status.seq_num() against the result of rdmnet::Controller::SendRdmCommand() you stored earlier.</span></div>
 <div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Error sending RDM command to device &quot;</span> &lt;&lt; status.<a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a>().<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
+<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error sending RDM command to device &quot;</span> &lt;&lt; status.<a class="code" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a>().ToString() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
 <div class="line">            &lt;&lt; status.<a class="code" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a>() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Other logic as needed; remove our internal storage of the RDM transaction, etc.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdm_1_1_uid_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a19c380b03cea21d7ac7325136a131ff0">rdm::Uid::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rpt_status_html"><div class="ttname"><a href="classrdmnet_1_1_rpt_status.html">rdmnet::RptStatus</a></div><div class="ttdoc">An RPT status message received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:42</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rpt_status_html_a6507230a0c2c36aa6a55cfb75ab302ed"><div class="ttname"><a href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">rdmnet::RptStatus::source_uid</a></div><div class="ttdeci">constexpr rdm::Uid source_uid() const noexcept</div><div class="ttdoc">Get the UID of the RDMnet component that sent this RPT status message.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:110</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rpt_status_html_abc4ab4b133733568b9488dd986e8751a"><div class="ttname"><a href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">rdmnet::RptStatus::CodeToString</a></div><div class="ttdeci">std::string CodeToString() const</div><div class="ttdoc">Convert the status message's code to a string representation.</div><div class="ttdef"><b>Definition:</b> rpt_status.h:152</div></div>
@@ -823,7 +820,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 </div>
 </p>
 <h1>Getting Responder IDs</h1>
-<p>Controllers may encounter RDMnet responders which have dynamic UIDs. Base RDMnet components such as controllers and devices can have dynamic UIDs, as can virtual responders present on devices. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on virtual responders, and <a class="el" href="roles_and_addressing.html">Roles and Addressing</a> for more information on dynamic UIDs. As a reminder, a dynamic UID is identified by the top bit of the Manufacturer ID portion being set and the UID not being a broadcast UID; this can be tested using the convenience methods in the RDM library: <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__uid.html#ga6513e844d7b58f9cdee40244fe5a682f">RDMNET_UID_IS_DYNAMIC()</a> and/or <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#ab1affd5b2613fc51ad89a38272bff137">rdm::Uid::IsDynamic()</a>.</p>
+<p>Controllers may encounter RDMnet responders which have dynamic UIDs. Base RDMnet components such as controllers and devices can have dynamic UIDs, as can virtual responders present on devices. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on virtual responders, and <a class="el" href="roles_and_addressing.html">Roles and Addressing</a> for more information on dynamic UIDs. As a reminder, a dynamic UID is identified by the top bit of the Manufacturer ID portion being set and the UID not being a broadcast UID; this can be tested using the convenience methods in the RDM library: RDMNET_UID_IS_DYNAMIC() and/or rdm::Uid::IsDynamic().</p>
 <p>A responder using a dynamic UID may get a different UID at any time. For this reason, it is useful for a controller to be able to get a more permanent identifier for an RDMnet responder.</p>
 <p>For controllers, devices and brokers, the permanent identifier is the CID, which is present alongside the UID in an RPT client list entry. If you want to track these components beyond a single RDMnet session, be sure to store the CID.</p>
 <p>Virtual responders present on a device have a similar identifier called a Responder ID (RID) which has the same function as a CID for that virtual responder. The UIDs of a device's virtual responders are obtained using the <code>ENDPOINT_RESPONDERS</code> RDM command; however, this command's data does not include the RID. To obtain RIDs for a set of virtual responders, it is necessary to query the connected broker.</p>
@@ -841,24 +838,25 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">  <span class="keywordflow">if</span> (param_id == E137_7_ENDPOINT_RESPONDERS)</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordtype">size_t</span> num_uids = ((param_data_len - 6) / 6); <span class="comment">// 6 bytes per UID, subtract the other data field sizes</span></div>
-<div class="line">    <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>* responder_uids = (<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>*)calloc(num_uids, <span class="keyword">sizeof</span>(<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>));</div>
+<div class="line">    RdmUid* responder_uids = (RdmUid*)<a class="codeRef" href="https://en.cppreference.com/w/cpp/memory/c/calloc.html">calloc</a>(num_uids, <span class="keyword">sizeof</span>(RdmUid));</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Unpack the response data into the responder_uids array...</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now request the RIDs from the broker for the responder UIDs.</span></div>
-<div class="line">    <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga94cd30fd8391da362ba2331d24ffadae">rdmnet_controller_request_responder_ids</a>(my_controller_handle, my_scope_handle,</div>
+<div class="line">    <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga94cd30fd8391da362ba2331d24ffadae">rdmnet_controller_request_responder_ids</a>(my_controller_handle, my_scope_handle,</div>
 <div class="line">                                                                    responder_uids, num_uids);</div>
-<div class="line">    <span class="keywordflow">if</span> (result == <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div>
+<div class="line">    <span class="keywordflow">if</span> (result == <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// The broker&#39;s response will be forwarded to the RdmnetControllerResponderIdsReceivedCallback,</span></div>
 <div class="line">      <span class="comment">// defined in the next snippet.</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    free(responder_uids);</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/memory/c/free.html">free</a>(responder_uids);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
+<div class="ttc" id="acalloc_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/memory/c/calloc.html">std::calloc</a></div><div class="ttdeci">T calloc(T... args)</div></div>
+<div class="ttc" id="afree_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/memory/c/free.html">std::free</a></div><div class="ttdeci">T free(T... args)</div></div>
 <div class="ttc" id="agroup__rdmnet__controller_html_ga94cd30fd8391da362ba2331d24ffadae"><div class="ttname"><a href="group__rdmnet__controller.html#ga94cd30fd8391da362ba2331d24ffadae">rdmnet_controller_request_responder_ids</a></div><div class="ttdeci">etcpal_error_t rdmnet_controller_request_responder_ids(rdmnet_controller_t controller_handle, rdmnet_client_scope_t scope_handle, const RdmUid *uids, size_t num_uids)</div><div class="ttdoc">Request a set of responder IDs corresponding with dynamic responder UIDs from a broker.</div><div class="ttdef"><b>Definition:</b> controller.c:532</div></div>
-<div class="ttc" id="astruct_rdm_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_11_cpp" class="code-tab-content">
@@ -869,12 +867,12 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">  <span class="comment">// using the ENDPOINT_RESPONDERS command.</span></div>
 <div class="line">  <span class="keywordflow">if</span> (param_id == E137_7_ENDPOINT_RESPONDERS)</div>
 <div class="line">  {</div>
-<div class="line">    std::vector&lt;RdmUid&gt; responder_uids;</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;RdmUid&gt;</a> responder_uids;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Unpack the response data into the responder_uids array...</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now request the RIDs from the broker for the responder UIDs.</span></div>
-<div class="line">    <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#ab9f5541545bf3a35120513286c33d71e">RequestResponderIds</a>(responder_uids);</div>
+<div class="line">    <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#ab9f5541545bf3a35120513286c33d71e">RequestResponderIds</a>(responder_uids);</div>
 <div class="line">    <span class="keywordflow">if</span> (result)</div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// The broker&#39;s response will be forwarded to the MyControllerNotifyHandler::HandleResponderIdsReceived()</span></div>
@@ -883,6 +881,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_html_ab9f5541545bf3a35120513286c33d71e"><div class="ttname"><a href="classrdmnet_1_1_controller.html#ab9f5541545bf3a35120513286c33d71e">rdmnet::Controller::RequestResponderIds</a></div><div class="ttdeci">etcpal::Error RequestResponderIds(ScopeHandle scope_handle, const rdm::Uid *uids, size_t num_uids)</div><div class="ttdoc">Request mappings from dynamic UIDs to Responder IDs (RIDs).</div><div class="ttdef"><b>Definition:</b> controller.h:876</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; RdmUid &gt;</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -909,9 +908,9 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      <span class="keywordtype">char</span> uid_str[<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__uid.html#gaca68c70b4aca047a5b8ff73e9d73b492">RDM_UID_STRING_BYTES</a>];</div>
-<div class="line">      <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__uid.html#ga90190789ec0a4c7262c47e2d7a1fdf43">rdm_uid_to_string</a>(&amp;mapping-&gt;uid, uid_str);</div>
-<div class="line">      printf(<span class="stringliteral">&quot;Error obtaining RID for responder %s: &#39;%s&#39;\n&quot;</span>, uid_str,</div>
+<div class="line">      <span class="keywordtype">char</span> uid_str[RDM_UID_STRING_BYTES];</div>
+<div class="line">      rdm_uid_to_string(&amp;mapping-&gt;uid, uid_str);</div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Error obtaining RID for responder %s: &#39;%s&#39;\n&quot;</span>, uid_str,</div>
 <div class="line">             <a class="code" href="group__rdmnet__api__common.html#ga362e057a96421081d8551d65bf403b6a">rdmnet_dynamic_uid_status_to_string</a>(mapping-&gt;status_code));</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -941,7 +940,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;Error obtaining RID for responder &quot;</span> &lt;&lt; mapping.uid.ToString() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
+<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error obtaining RID for responder &quot;</span> &lt;&lt; mapping.uid.ToString() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
 <div class="line">                &lt;&lt; mapping.CodeToString() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -971,7 +970,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line"><a class="code" href="group__rdmnet__controller.html#ga93c798fdaf4d9fc3f97fab91605db300">rdmnet_controller_set_rdm_cmd_callbacks</a>(&amp;config, my_rdm_command_received_cb, my_llrp_rdm_command_received_cb);</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> my_controller_handle;</div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a>(&amp;config, &amp;my_controller_handle);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a>(&amp;config, &amp;my_controller_handle);</div>
 <div class="ttc" id="agroup__rdmnet__controller_html_ga93c798fdaf4d9fc3f97fab91605db300"><div class="ttname"><a href="group__rdmnet__controller.html#ga93c798fdaf4d9fc3f97fab91605db300">rdmnet_controller_set_rdm_cmd_callbacks</a></div><div class="ttdeci">void rdmnet_controller_set_rdm_cmd_callbacks(RdmnetControllerConfig *config, RdmnetControllerRdmCommandReceivedCallback rdm_command_received, RdmnetControllerLlrpRdmCommandReceivedCallback llrp_rdm_command_received, uint8_t *response_buf, void *context)</div><div class="ttdoc">Set callbacks to handle RDM commands in an RDMnet controller configuration structure.</div><div class="ttdef"><b>Definition:</b> controller.c:219</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -985,7 +984,7 @@ $(document).ready(function(){initNavTree('using_controller.html',''); initResiza
 <div class="line">MyControllerRdmCommandHandler my_rdm_cmd_handler;</div>
 <div class="line"><a class="code" href="structrdmnet_1_1_controller_1_1_settings.html">rdmnet::Controller::Settings</a> my_settings(my_cid, MY_ESTA_MANUFACTURER_ID_VAL);</div>
 <div class="line"> </div>
-<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">Startup</a>(my_controller_notify_handler, my_settings, my_rdm_cmd_handler);</div>
+<div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = controller.<a class="code" href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">Startup</a>(my_controller_notify_handler, my_settings, my_rdm_cmd_handler);</div>
 <div class="ttc" id="aclassrdmnet_1_1_controller_1_1_rdm_command_handler_html"><div class="ttname"><a href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">rdmnet::Controller::RdmCommandHandler</a></div><div class="ttdoc">A base class for a class that receives RDM commands addressed to a controller.</div><div class="ttdef"><b>Definition:</b> controller.h:145</div></div>
 </div><!-- fragment --><p> 
 </div>

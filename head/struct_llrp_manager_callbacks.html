@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,28 +208,79 @@ $(document).ready(function(){initNavTree('struct_llrp_manager_callbacks.html',''
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of notification callbacks received about an LLRP manager. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="llrp__manager_8h_source.html">rdmnet/llrp_manager.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:acffa9ee8ffe2616a54202f0bc91008f4"><td class="memItemLeft" align="right" valign="top"><a id="acffa9ee8ffe2616a54202f0bc91008f4"></a>
-<a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#acffa9ee8ffe2616a54202f0bc91008f4">target_discovered</a></td></tr>
-<tr class="memdesc:acffa9ee8ffe2616a54202f0bc91008f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An LLRP target has been discovered. <br /></td></tr>
-<tr class="separator:acffa9ee8ffe2616a54202f0bc91008f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a547f3bd194490160988dce8c3e937d"><td class="memItemLeft" align="right" valign="top"><a id="a9a547f3bd194490160988dce8c3e937d"></a>
-<a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#a9a547f3bd194490160988dce8c3e937d">rdm_response_received</a></td></tr>
-<tr class="memdesc:a9a547f3bd194490160988dce8c3e937d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An LLRP RDM response has been received. <br /></td></tr>
-<tr class="separator:a9a547f3bd194490160988dce8c3e937d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d90aff8b50d69cf91820cf62bf69e17"><td class="memItemLeft" align="right" valign="top"><a id="a8d90aff8b50d69cf91820cf62bf69e17"></a>
-<a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#a8d90aff8b50d69cf91820cf62bf69e17">discovery_finished</a></td></tr>
-<tr class="memdesc:a8d90aff8b50d69cf91820cf62bf69e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLRP discovery is finished. <br /></td></tr>
-<tr class="separator:a8d90aff8b50d69cf91820cf62bf69e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19c1533fa3da0c037aea35fbd0c7640"><td class="memItemLeft" align="right" valign="top"><a id="af19c1533fa3da0c037aea35fbd0c7640"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#af19c1533fa3da0c037aea35fbd0c7640">context</a></td></tr>
-<tr class="memdesc:af19c1533fa3da0c037aea35fbd0c7640"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Pointer to opaque data passed back with each callback. <br /></td></tr>
-<tr class="separator:af19c1533fa3da0c037aea35fbd0c7640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ddb7e42b0e28f5f545d6f7cb702728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#a73ddb7e42b0e28f5f545d6f7cb702728">target_discovered</a></td></tr>
+<tr class="separator:a73ddb7e42b0e28f5f545d6f7cb702728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096d23b11ed4ac00bbf67d8af49b4962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#a096d23b11ed4ac00bbf67d8af49b4962">rdm_response_received</a></td></tr>
+<tr class="separator:a096d23b11ed4ac00bbf67d8af49b4962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2453bba240275dfe2ec2585d03c74c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#afa2453bba240275dfe2ec2585d03c74c">discovery_finished</a></td></tr>
+<tr class="separator:afa2453bba240275dfe2ec2585d03c74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="afa2453bba240275dfe2ec2585d03c74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2453bba240275dfe2ec2585d03c74c">&#9670;&nbsp;</a></span>discovery_finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a> discovery_finished</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LLRP discovery is finished. </p>
+
+</div>
+</div>
+<a id="a096d23b11ed4ac00bbf67d8af49b4962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096d23b11ed4ac00bbf67d8af49b4962">&#9670;&nbsp;</a></span>rdm_response_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a> rdm_response_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An LLRP RDM response has been received. </p>
+
+</div>
+</div>
+<a id="a73ddb7e42b0e28f5f545d6f7cb702728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ddb7e42b0e28f5f545d6f7cb702728">&#9670;&nbsp;</a></span>target_discovered</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a> target_discovered</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An LLRP target has been discovered. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="llrp__manager_8h_source.html">llrp_manager.h</a></li>
 </ul>

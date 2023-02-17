@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::Controller::Settings Struct Reference</title>
+<title>RDMnet: Controller::Settings Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,54 +204,52 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_controller_1_1_settin
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::Controller::Settings Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__controller__cpp.html">Controller API</a></div></div>  </div>
+<div class="title">Controller::Settings Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__controller__cpp.html">Controller API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of configuration settings that a controller needs to initialize. </p>
 <p>Note that network interfaces that the LLRP target of the controller should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539" title="Initialize the RDMnet library.">rdmnet::Init()</a> is used. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aab2e67a099541123f8896dcacf01ed69"><td class="memItemLeft" align="right" valign="top"><a id="aab2e67a099541123f8896dcacf01ed69"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#aab2e67a099541123f8896dcacf01ed69">Settings</a> ()=default</td></tr>
-<tr class="memdesc:aab2e67a099541123f8896dcacf01ed69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid data structure by default. <br /></td></tr>
-<tr class="separator:aab2e67a099541123f8896dcacf01ed69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9708182dd71e71ac5338aa65aedf146"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#aa9708182dd71e71ac5338aa65aedf146">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;new_uid)</td></tr>
-<tr class="memdesc:aa9708182dd71e71ac5338aa65aedf146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance by passing the required members explicitly.  <a href="structrdmnet_1_1_controller_1_1_settings.html#aa9708182dd71e71ac5338aa65aedf146">More...</a><br /></td></tr>
-<tr class="separator:aa9708182dd71e71ac5338aa65aedf146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f49960e07dae726f4df2b3a4a71b7b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a0f49960e07dae726f4df2b3a4a71b7b2">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, uint16_t manufacturer_id)</td></tr>
-<tr class="memdesc:a0f49960e07dae726f4df2b3a4a71b7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance by passing the required members explicitly.  <a href="structrdmnet_1_1_controller_1_1_settings.html#a0f49960e07dae726f4df2b3a4a71b7b2">More...</a><br /></td></tr>
-<tr class="separator:a0f49960e07dae726f4df2b3a4a71b7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a764762fabc64489376701c0c4281fe93"><td class="memItemLeft" align="right" valign="top"><a id="a764762fabc64489376701c0c4281fe93"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a764762fabc64489376701c0c4281fe93">IsValid</a> () const</td></tr>
-<tr class="memdesc:a764762fabc64489376701c0c4281fe93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance contains valid data for RDMnet operation. <br /></td></tr>
-<tr class="separator:a764762fabc64489376701c0c4281fe93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408c38e2ece7d6a8dda04484f006e8bb"><td class="memItemLeft" align="right" valign="top"><a id="a408c38e2ece7d6a8dda04484f006e8bb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb">Settings</a> ()=default</td></tr>
+<tr class="memdesc:a408c38e2ece7d6a8dda04484f006e8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid data structure by default. <br /></td></tr>
+<tr class="separator:a408c38e2ece7d6a8dda04484f006e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13cbaaafd6eabe15900cf37a2bd52569"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a13cbaaafd6eabe15900cf37a2bd52569">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, const rdm::Uid &amp;new_uid)</td></tr>
+<tr class="memdesc:a13cbaaafd6eabe15900cf37a2bd52569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance by passing the required members explicitly.  <a href="structrdmnet_1_1_controller_1_1_settings.html#a13cbaaafd6eabe15900cf37a2bd52569">More...</a><br /></td></tr>
+<tr class="separator:a13cbaaafd6eabe15900cf37a2bd52569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f7a592e2d2c6cd13983d57269bf81a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a90f7a592e2d2c6cd13983d57269bf81a">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, uint16_t manufacturer_id)</td></tr>
+<tr class="memdesc:a90f7a592e2d2c6cd13983d57269bf81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance by passing the required members explicitly.  <a href="structrdmnet_1_1_controller_1_1_settings.html#a90f7a592e2d2c6cd13983d57269bf81a">More...</a><br /></td></tr>
+<tr class="separator:a90f7a592e2d2c6cd13983d57269bf81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memItemLeft" align="right" valign="top"><a id="ac532c4b500b1a85ea22217f2c65a70ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed">IsValid</a> () const</td></tr>
+<tr class="memdesc:ac532c4b500b1a85ea22217f2c65a70ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a controller <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html" title="A set of configuration settings that a controller needs to initialize.">Settings</a> instance contains valid data for RDMnet operation. <br /></td></tr>
+<tr class="separator:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a24057441a99e645c718af96ce37c2dcd"><td class="memItemLeft" align="right" valign="top"><a id="a24057441a99e645c718af96ce37c2dcd"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a24057441a99e645c718af96ce37c2dcd">cid</a></td></tr>
-<tr class="memdesc:a24057441a99e645c718af96ce37c2dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The controller's Component Identifier (CID). <br /></td></tr>
-<tr class="separator:a24057441a99e645c718af96ce37c2dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5857f58c4a5cb6ac20c09e831590cc18"><td class="memItemLeft" align="right" valign="top"><a id="a5857f58c4a5cb6ac20c09e831590cc18"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a5857f58c4a5cb6ac20c09e831590cc18">uid</a></td></tr>
-<tr class="memdesc:a5857f58c4a5cb6ac20c09e831590cc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">The controller's RDM UID. For a dynamic UID, use <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a79e484fe4ffbb0f40cdb57e62f273f3f">rdm::Uid::DynamicUidRequest()</a>. <br /></td></tr>
-<tr class="separator:a5857f58c4a5cb6ac20c09e831590cc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae162ede266a1d17784a0d057f6c6f74a"><td class="memItemLeft" align="right" valign="top"><a id="ae162ede266a1d17784a0d057f6c6f74a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#ae162ede266a1d17784a0d057f6c6f74a">search_domain</a></td></tr>
-<tr class="memdesc:ae162ede266a1d17784a0d057f6c6f74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The controller's search domain for discovering brokers. <br /></td></tr>
-<tr class="separator:ae162ede266a1d17784a0d057f6c6f74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e92fb9a942c37aec8b7cb94175ab4e1"><td class="memItemLeft" align="right" valign="top"><a id="a1e92fb9a942c37aec8b7cb94175ab4e1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a1e92fb9a942c37aec8b7cb94175ab4e1">create_llrp_target</a> {false}</td></tr>
-<tr class="memdesc:a1e92fb9a942c37aec8b7cb94175ab4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Whether to create an LLRP target associated with this controller. <br /></td></tr>
-<tr class="separator:a1e92fb9a942c37aec8b7cb94175ab4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memItemLeft" align="right" valign="top"><a id="ab74b3ddda3c95279107d0059dd7ee9f3"></a>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3">cid</a></td></tr>
+<tr class="memdesc:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The controller's Component Identifier (CID). <br /></td></tr>
+<tr class="separator:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b7b9dfe0aa5ebbd928817da6444004"><td class="memItemLeft" align="right" valign="top"><a id="a12b7b9dfe0aa5ebbd928817da6444004"></a>
+rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a12b7b9dfe0aa5ebbd928817da6444004">uid</a></td></tr>
+<tr class="memdesc:a12b7b9dfe0aa5ebbd928817da6444004"><td class="mdescLeft">&#160;</td><td class="mdescRight">The controller's RDM UID. For a dynamic UID, use rdm::Uid::DynamicUidRequest(). <br /></td></tr>
+<tr class="separator:a12b7b9dfe0aa5ebbd928817da6444004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c6a609a291e3c94f7094891e6d65e6"><td class="memItemLeft" align="right" valign="top"><a id="a86c6a609a291e3c94f7094891e6d65e6"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#a86c6a609a291e3c94f7094891e6d65e6">search_domain</a></td></tr>
+<tr class="memdesc:a86c6a609a291e3c94f7094891e6d65e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The controller's search domain for discovering brokers. <br /></td></tr>
+<tr class="separator:a86c6a609a291e3c94f7094891e6d65e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf55202489074b1b9e83082c13d691d"><td class="memItemLeft" align="right" valign="top"><a id="acbf55202489074b1b9e83082c13d691d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html#acbf55202489074b1b9e83082c13d691d">create_llrp_target</a> {false}</td></tr>
+<tr class="memdesc:acbf55202489074b1b9e83082c13d691d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Whether to create an LLRP target associated with this controller. <br /></td></tr>
+<tr class="separator:acbf55202489074b1b9e83082c13d691d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa9708182dd71e71ac5338aa65aedf146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9708182dd71e71ac5338aa65aedf146">&#9670;&nbsp;</a></span>Settings() <span class="overload">[1/2]</span></h2>
+<a id="a13cbaaafd6eabe15900cf37a2bd52569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13cbaaafd6eabe15900cf37a2bd52569">&#9670;&nbsp;</a></span>Settings() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +258,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rdmnet::Controller::Settings::Settings </td>
+          <td class="memname"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
           <td class="paramname"><em>new_cid</em>, </td>
@@ -268,7 +266,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;&#160;</td>
+          <td class="paramtype">const rdm::Uid &amp;&#160;</td>
           <td class="paramname"><em>new_uid</em>&#160;</td>
         </tr>
         <tr>
@@ -289,8 +287,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 
 </div>
 </div>
-<a id="a0f49960e07dae726f4df2b3a4a71b7b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f49960e07dae726f4df2b3a4a71b7b2">&#9670;&nbsp;</a></span>Settings() <span class="overload">[2/2]</span></h2>
+<a id="a90f7a592e2d2c6cd13983d57269bf81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f7a592e2d2c6cd13983d57269bf81a">&#9670;&nbsp;</a></span>Settings() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +297,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rdmnet::Controller::Settings::Settings </td>
+          <td class="memname"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
           <td class="paramname"><em>new_cid</em>, </td>

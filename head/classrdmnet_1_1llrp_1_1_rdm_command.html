@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::llrp::RdmCommand Class Reference</title>
+<title>RDMnet: RdmCommand Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,111 +203,109 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1llrp_1_1_rdm_command.ht
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::llrp::RdmCommand Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">RdmCommand Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An RDM command received over LLRP and delivered to an RDMnet callback function. </p>
-<p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a6070d269a6678cfc0a9ecc57fb0f2e27" title="Save the data in this command for later use with API functions from a different context.">RdmCommand::Save()</a> to create a copyable version. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="llrp__rdm__command_8h_source.html">rdmnet/cpp/message_types/llrp_rdm_command.h</a>&gt;</code></p>
-<table class="memberdecls">
+<p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa11a6d7bc7d826b160703f5423cc5b4e" title="Save the data in this command for later use with API functions from a different context.">RdmCommand::Save()</a> to create a copyable version. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f00e264a6be0a17bdfd325b9dfe6b05"><td class="memItemLeft" align="right" valign="top"><a id="a0f00e264a6be0a17bdfd325b9dfe6b05"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a0f00e264a6be0a17bdfd325b9dfe6b05">RdmCommand</a> ()=delete</td></tr>
-<tr class="memdesc:a0f00e264a6be0a17bdfd325b9dfe6b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
-<tr class="separator:a0f00e264a6be0a17bdfd325b9dfe6b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae281778e28fb1d244702c71f0f0cb0c0"><td class="memItemLeft" align="right" valign="top"><a id="ae281778e28fb1d244702c71f0f0cb0c0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ae281778e28fb1d244702c71f0f0cb0c0">RdmCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">RdmCommand</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:ae281778e28fb1d244702c71f0f0cb0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a6070d269a6678cfc0a9ecc57fb0f2e27" title="Save the data in this command for later use with API functions from a different context.">Save()</a> to create a copyable version. <br /></td></tr>
-<tr class="separator:ae281778e28fb1d244702c71f0f0cb0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e18126dafe8b21666b36eff032da902"><td class="memItemLeft" align="right" valign="top"><a id="a2e18126dafe8b21666b36eff032da902"></a>
-<a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">RdmCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a2e18126dafe8b21666b36eff032da902">operator=</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">RdmCommand</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:a2e18126dafe8b21666b36eff032da902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a6070d269a6678cfc0a9ecc57fb0f2e27" title="Save the data in this command for later use with API functions from a different context.">Save()</a> to create a copyable version. <br /></td></tr>
-<tr class="separator:a2e18126dafe8b21666b36eff032da902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07eb7a86f87b1a53bba6906a4efba31"><td class="memItemLeft" align="right" valign="top"><a id="ab07eb7a86f87b1a53bba6906a4efba31"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ab07eb7a86f87b1a53bba6906a4efba31">RdmCommand</a> (const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> &amp;c_cmd) noexcept</td></tr>
-<tr class="memdesc:ab07eb7a86f87b1a53bba6906a4efba31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html" title="An RDM command received over LLRP and delivered to an RDMnet callback function.">RdmCommand</a> which references an instance of the C <a class="el" href="struct_llrp_rdm_command.html" title="An RDM command received from a remote LLRP Manager.">LlrpRdmCommand</a> type. <br /></td></tr>
-<tr class="separator:ab07eb7a86f87b1a53bba6906a4efba31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a402630dbf2ce5dae255afd4ca6c579b5"><td class="memItemLeft" align="right" valign="top"><a id="a402630dbf2ce5dae255afd4ca6c579b5"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a402630dbf2ce5dae255afd4ca6c579b5">source_cid</a> () const noexcept</td></tr>
-<tr class="memdesc:a402630dbf2ce5dae255afd4ca6c579b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the LLRP manager that sent this command. <br /></td></tr>
-<tr class="separator:a402630dbf2ce5dae255afd4ca6c579b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8cde2c7d9bdf26afe9addf1f7a880de"><td class="memItemLeft" align="right" valign="top"><a id="ab8cde2c7d9bdf26afe9addf1f7a880de"></a>
-constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ab8cde2c7d9bdf26afe9addf1f7a880de">seq_num</a> () const noexcept</td></tr>
-<tr class="memdesc:ab8cde2c7d9bdf26afe9addf1f7a880de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LLRP sequence number of this command. <br /></td></tr>
-<tr class="separator:ab8cde2c7d9bdf26afe9addf1f7a880de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c3c1150cb1ded3d85ca9444d34e143e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a9c3c1150cb1ded3d85ca9444d34e143e">netint_id</a> () const noexcept</td></tr>
-<tr class="memdesc:a9c3c1150cb1ded3d85ca9444d34e143e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network interface ID on which this command was received.  <a href="classrdmnet_1_1llrp_1_1_rdm_command.html#a9c3c1150cb1ded3d85ca9444d34e143e">More...</a><br /></td></tr>
-<tr class="separator:a9c3c1150cb1ded3d85ca9444d34e143e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd6fe415e391aee06a3d6cb63730662"><td class="memItemLeft" align="right" valign="top"><a id="a3bd6fe415e391aee06a3d6cb63730662"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a3bd6fe415e391aee06a3d6cb63730662">netint_ip_type</a> () const noexcept</td></tr>
-<tr class="memdesc:a3bd6fe415e391aee06a3d6cb63730662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IP protocol type of the network interface on which this command was received. <br /></td></tr>
-<tr class="separator:a3bd6fe415e391aee06a3d6cb63730662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8574b82f4a8c06d337efc1135af8330e"><td class="memItemLeft" align="right" valign="top"><a id="a8574b82f4a8c06d337efc1135af8330e"></a>
-constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a8574b82f4a8c06d337efc1135af8330e">netint_index</a> () const noexcept</td></tr>
-<tr class="memdesc:a8574b82f4a8c06d337efc1135af8330e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the network interface on which this command was received. <br /></td></tr>
-<tr class="separator:a8574b82f4a8c06d337efc1135af8330e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb6d9c91daa359fb18eb4f25aad5846"><td class="memItemLeft" align="right" valign="top"><a id="a7fb6d9c91daa359fb18eb4f25aad5846"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a7fb6d9c91daa359fb18eb4f25aad5846">source_uid</a> () const noexcept</td></tr>
-<tr class="memdesc:a7fb6d9c91daa359fb18eb4f25aad5846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP manager that sent this command. <br /></td></tr>
-<tr class="separator:a7fb6d9c91daa359fb18eb4f25aad5846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a420474554934cdc89606631e1da9d40e"><td class="memItemLeft" align="right" valign="top"><a id="a420474554934cdc89606631e1da9d40e"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a420474554934cdc89606631e1da9d40e">dest_uid</a> () const noexcept</td></tr>
-<tr class="memdesc:a420474554934cdc89606631e1da9d40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP target to which this command is addressed. <br /></td></tr>
-<tr class="separator:a420474554934cdc89606631e1da9d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a502263cb42667492da1a8af3d3ea1ace"><td class="memItemLeft" align="right" valign="top"><a id="a502263cb42667492da1a8af3d3ea1ace"></a>
-constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a502263cb42667492da1a8af3d3ea1ace">subdevice</a> () const noexcept</td></tr>
-<tr class="memdesc:a502263cb42667492da1a8af3d3ea1ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM subdevice to which this command is addressed (0 means the root device). <br /></td></tr>
-<tr class="separator:a502263cb42667492da1a8af3d3ea1ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a562859214aa6b99c40eb56895ca6ee6f"><td class="memItemLeft" align="right" valign="top"><a id="a562859214aa6b99c40eb56895ca6ee6f"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gafda6b6d4c08788e755cb3cb6c1ca021b">rdm_command_class_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a562859214aa6b99c40eb56895ca6ee6f">command_class</a> () const noexcept</td></tr>
-<tr class="memdesc:a562859214aa6b99c40eb56895ca6ee6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM command class of this command. <br /></td></tr>
-<tr class="separator:a562859214aa6b99c40eb56895ca6ee6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db3f3acf0211b6e14a1abdbbd9509e7"><td class="memItemLeft" align="right" valign="top"><a id="a8db3f3acf0211b6e14a1abdbbd9509e7"></a>
-constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a8db3f3acf0211b6e14a1abdbbd9509e7">param_id</a> () const noexcept</td></tr>
-<tr class="memdesc:a8db3f3acf0211b6e14a1abdbbd9509e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM parameter ID (PID) of this command. <br /></td></tr>
-<tr class="separator:a8db3f3acf0211b6e14a1abdbbd9509e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fc28c42dad5d9f157005b74cfb33a7"><td class="memItemLeft" align="right" valign="top"><a id="aa9fc28c42dad5d9f157005b74cfb33a7"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command_header.html">rdm::CommandHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa9fc28c42dad5d9f157005b74cfb33a7">rdm_header</a> () const noexcept</td></tr>
-<tr class="memdesc:aa9fc28c42dad5d9f157005b74cfb33a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM protocol header contained within this command. <br /></td></tr>
-<tr class="separator:aa9fc28c42dad5d9f157005b74cfb33a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5734c0f1e9d456f5768706125513abeb"><td class="memItemLeft" align="right" valign="top"><a id="a5734c0f1e9d456f5768706125513abeb"></a>
-constexpr const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a5734c0f1e9d456f5768706125513abeb">data</a> () const noexcept</td></tr>
-<tr class="memdesc:a5734c0f1e9d456f5768706125513abeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the RDM parameter data buffer contained within this command. <br /></td></tr>
-<tr class="separator:a5734c0f1e9d456f5768706125513abeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b413ecf09f69db8bca98d6930057ce"><td class="memItemLeft" align="right" valign="top"><a id="ad0b413ecf09f69db8bca98d6930057ce"></a>
-constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ad0b413ecf09f69db8bca98d6930057ce">data_len</a> () const noexcept</td></tr>
-<tr class="memdesc:ad0b413ecf09f69db8bca98d6930057ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the RDM parameter data contained within this command. <br /></td></tr>
-<tr class="separator:ad0b413ecf09f69db8bca98d6930057ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0981652f541b21dd359178dbd7eda11"><td class="memItemLeft" align="right" valign="top"><a id="ac0981652f541b21dd359178dbd7eda11"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ac0981652f541b21dd359178dbd7eda11">HasData</a> () const noexcept</td></tr>
-<tr class="memdesc:ac0981652f541b21dd359178dbd7eda11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command has any associated RDM parameter data. <br /></td></tr>
-<tr class="separator:ac0981652f541b21dd359178dbd7eda11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c20ecfa9c3ef1f63060041e5130e2e2"><td class="memItemLeft" align="right" valign="top"><a id="a6c20ecfa9c3ef1f63060041e5130e2e2"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a6c20ecfa9c3ef1f63060041e5130e2e2">IsGet</a> () const noexcept</td></tr>
-<tr class="memdesc:a6c20ecfa9c3ef1f63060041e5130e2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command is an RDM GET command. <br /></td></tr>
-<tr class="separator:a6c20ecfa9c3ef1f63060041e5130e2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930b88515698cfb5f9383393d6c09409"><td class="memItemLeft" align="right" valign="top"><a id="a930b88515698cfb5f9383393d6c09409"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a930b88515698cfb5f9383393d6c09409">IsSet</a> () const noexcept</td></tr>
-<tr class="memdesc:a930b88515698cfb5f9383393d6c09409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command is an RDM SET command. <br /></td></tr>
-<tr class="separator:a930b88515698cfb5f9383393d6c09409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db88b8dee5604358fb8f59a33ba1df8"><td class="memItemLeft" align="right" valign="top"><a id="a7db88b8dee5604358fb8f59a33ba1df8"></a>
-constexpr const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a7db88b8dee5604358fb8f59a33ba1df8">get</a> () const noexcept</td></tr>
-<tr class="memdesc:a7db88b8dee5604358fb8f59a33ba1df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
-<tr class="separator:a7db88b8dee5604358fb8f59a33ba1df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad508651a8a7bd62dccc8d77e240452ae"><td class="memItemLeft" align="right" valign="top"><a id="ad508651a8a7bd62dccc8d77e240452ae"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_command.html">rdm::Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ad508651a8a7bd62dccc8d77e240452ae">ToRdm</a> () const</td></tr>
-<tr class="memdesc:ad508651a8a7bd62dccc8d77e240452ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the RDM data in this command to an RDM command type. <br /></td></tr>
-<tr class="separator:ad508651a8a7bd62dccc8d77e240452ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6070d269a6678cfc0a9ecc57fb0f2e27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html">SavedRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a6070d269a6678cfc0a9ecc57fb0f2e27">Save</a> () const</td></tr>
-<tr class="memdesc:a6070d269a6678cfc0a9ecc57fb0f2e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in this command for later use with API functions from a different context.  <a href="classrdmnet_1_1llrp_1_1_rdm_command.html#a6070d269a6678cfc0a9ecc57fb0f2e27">More...</a><br /></td></tr>
-<tr class="separator:a6070d269a6678cfc0a9ecc57fb0f2e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afcee217f1cf8b80842864038bbc82d"><td class="memItemLeft" align="right" valign="top"><a id="a3afcee217f1cf8b80842864038bbc82d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a3afcee217f1cf8b80842864038bbc82d">RdmCommand</a> ()=delete</td></tr>
+<tr class="memdesc:a3afcee217f1cf8b80842864038bbc82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
+<tr class="separator:a3afcee217f1cf8b80842864038bbc82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d7eb8565e5cb85523b416f2ea9c61c"><td class="memItemLeft" align="right" valign="top"><a id="ac4d7eb8565e5cb85523b416f2ea9c61c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ac4d7eb8565e5cb85523b416f2ea9c61c">RdmCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">RdmCommand</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:ac4d7eb8565e5cb85523b416f2ea9c61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa11a6d7bc7d826b160703f5423cc5b4e" title="Save the data in this command for later use with API functions from a different context.">Save()</a> to create a copyable version. <br /></td></tr>
+<tr class="separator:ac4d7eb8565e5cb85523b416f2ea9c61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715e5af4d58ec35a61e21f71c31242e7"><td class="memItemLeft" align="right" valign="top"><a id="a715e5af4d58ec35a61e21f71c31242e7"></a>
+<a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">RdmCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a715e5af4d58ec35a61e21f71c31242e7">operator=</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">RdmCommand</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:a715e5af4d58ec35a61e21f71c31242e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa11a6d7bc7d826b160703f5423cc5b4e" title="Save the data in this command for later use with API functions from a different context.">Save()</a> to create a copyable version. <br /></td></tr>
+<tr class="separator:a715e5af4d58ec35a61e21f71c31242e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc74286f1844f3579ccbb25f6cfee83"><td class="memItemLeft" align="right" valign="top"><a id="a8bc74286f1844f3579ccbb25f6cfee83"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a8bc74286f1844f3579ccbb25f6cfee83">RdmCommand</a> (const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> &amp;c_cmd) noexcept</td></tr>
+<tr class="memdesc:a8bc74286f1844f3579ccbb25f6cfee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html" title="An RDM command received over LLRP and delivered to an RDMnet callback function.">RdmCommand</a> which references an instance of the C <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> type. <br /></td></tr>
+<tr class="separator:a8bc74286f1844f3579ccbb25f6cfee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07635554a26c730bad4cbdb81d5293fd"><td class="memItemLeft" align="right" valign="top"><a id="a07635554a26c730bad4cbdb81d5293fd"></a>
+constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a07635554a26c730bad4cbdb81d5293fd">source_cid</a> () const noexcept</td></tr>
+<tr class="memdesc:a07635554a26c730bad4cbdb81d5293fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the LLRP manager that sent this command. <br /></td></tr>
+<tr class="separator:a07635554a26c730bad4cbdb81d5293fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12a10f74bc60c641a11af1f665230d6"><td class="memItemLeft" align="right" valign="top"><a id="ab12a10f74bc60c641a11af1f665230d6"></a>
+constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ab12a10f74bc60c641a11af1f665230d6">seq_num</a> () const noexcept</td></tr>
+<tr class="memdesc:ab12a10f74bc60c641a11af1f665230d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LLRP sequence number of this command. <br /></td></tr>
+<tr class="separator:ab12a10f74bc60c641a11af1f665230d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f34c1503b587946ebfa67c51939fd32"><td class="memItemLeft" align="right" valign="top">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a2f34c1503b587946ebfa67c51939fd32">netint_id</a> () const noexcept</td></tr>
+<tr class="memdesc:a2f34c1503b587946ebfa67c51939fd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network interface ID on which this command was received.  <a href="classrdmnet_1_1llrp_1_1_rdm_command.html#a2f34c1503b587946ebfa67c51939fd32">More...</a><br /></td></tr>
+<tr class="separator:a2f34c1503b587946ebfa67c51939fd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cffb50177ff411256f9008e0d195dd5"><td class="memItemLeft" align="right" valign="top"><a id="a7cffb50177ff411256f9008e0d195dd5"></a>
+constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a7cffb50177ff411256f9008e0d195dd5">netint_ip_type</a> () const noexcept</td></tr>
+<tr class="memdesc:a7cffb50177ff411256f9008e0d195dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IP protocol type of the network interface on which this command was received. <br /></td></tr>
+<tr class="separator:a7cffb50177ff411256f9008e0d195dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1950fc0331342ff609bc2c3e69a2e2"><td class="memItemLeft" align="right" valign="top"><a id="a1a1950fc0331342ff609bc2c3e69a2e2"></a>
+constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a1a1950fc0331342ff609bc2c3e69a2e2">netint_index</a> () const noexcept</td></tr>
+<tr class="memdesc:a1a1950fc0331342ff609bc2c3e69a2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the network interface on which this command was received. <br /></td></tr>
+<tr class="separator:a1a1950fc0331342ff609bc2c3e69a2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0c6f98dd20230051f07f9d43a5f824"><td class="memItemLeft" align="right" valign="top"><a id="a1c0c6f98dd20230051f07f9d43a5f824"></a>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a1c0c6f98dd20230051f07f9d43a5f824">source_uid</a> () const noexcept</td></tr>
+<tr class="memdesc:a1c0c6f98dd20230051f07f9d43a5f824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP manager that sent this command. <br /></td></tr>
+<tr class="separator:a1c0c6f98dd20230051f07f9d43a5f824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91074bb7526a5d255d13d3245a6846a9"><td class="memItemLeft" align="right" valign="top"><a id="a91074bb7526a5d255d13d3245a6846a9"></a>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a91074bb7526a5d255d13d3245a6846a9">dest_uid</a> () const noexcept</td></tr>
+<tr class="memdesc:a91074bb7526a5d255d13d3245a6846a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP target to which this command is addressed. <br /></td></tr>
+<tr class="separator:a91074bb7526a5d255d13d3245a6846a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace76a3360a4ca27564b266d231844fe2"><td class="memItemLeft" align="right" valign="top"><a id="ace76a3360a4ca27564b266d231844fe2"></a>
+constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ace76a3360a4ca27564b266d231844fe2">subdevice</a> () const noexcept</td></tr>
+<tr class="memdesc:ace76a3360a4ca27564b266d231844fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM subdevice to which this command is addressed (0 means the root device). <br /></td></tr>
+<tr class="separator:ace76a3360a4ca27564b266d231844fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f11046e01fbfe627604b2eb966e5d6"><td class="memItemLeft" align="right" valign="top"><a id="a59f11046e01fbfe627604b2eb966e5d6"></a>
+constexpr rdm_command_class_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a59f11046e01fbfe627604b2eb966e5d6">command_class</a> () const noexcept</td></tr>
+<tr class="memdesc:a59f11046e01fbfe627604b2eb966e5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM command class of this command. <br /></td></tr>
+<tr class="separator:a59f11046e01fbfe627604b2eb966e5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb06b87b7d84f9dcb290a7ac38a9f326"><td class="memItemLeft" align="right" valign="top"><a id="aeb06b87b7d84f9dcb290a7ac38a9f326"></a>
+constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aeb06b87b7d84f9dcb290a7ac38a9f326">param_id</a> () const noexcept</td></tr>
+<tr class="memdesc:aeb06b87b7d84f9dcb290a7ac38a9f326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM parameter ID (PID) of this command. <br /></td></tr>
+<tr class="separator:aeb06b87b7d84f9dcb290a7ac38a9f326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb344aeb7ddc0fa4937eb915bbab6ebe"><td class="memItemLeft" align="right" valign="top"><a id="aeb344aeb7ddc0fa4937eb915bbab6ebe"></a>
+constexpr rdm::CommandHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aeb344aeb7ddc0fa4937eb915bbab6ebe">rdm_header</a> () const noexcept</td></tr>
+<tr class="memdesc:aeb344aeb7ddc0fa4937eb915bbab6ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM protocol header contained within this command. <br /></td></tr>
+<tr class="separator:aeb344aeb7ddc0fa4937eb915bbab6ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4c46c5e6a3a561bad84c6a91ecc8f0"><td class="memItemLeft" align="right" valign="top"><a id="a3f4c46c5e6a3a561bad84c6a91ecc8f0"></a>
+constexpr const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a3f4c46c5e6a3a561bad84c6a91ecc8f0">data</a> () const noexcept</td></tr>
+<tr class="memdesc:a3f4c46c5e6a3a561bad84c6a91ecc8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the RDM parameter data buffer contained within this command. <br /></td></tr>
+<tr class="separator:a3f4c46c5e6a3a561bad84c6a91ecc8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa711528b0360e40e670ad60d1eaba0a9"><td class="memItemLeft" align="right" valign="top"><a id="aa711528b0360e40e670ad60d1eaba0a9"></a>
+constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa711528b0360e40e670ad60d1eaba0a9">data_len</a> () const noexcept</td></tr>
+<tr class="memdesc:aa711528b0360e40e670ad60d1eaba0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the RDM parameter data contained within this command. <br /></td></tr>
+<tr class="separator:aa711528b0360e40e670ad60d1eaba0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bbbbbb1a78db54f4020774db97ec79"><td class="memItemLeft" align="right" valign="top"><a id="a57bbbbbb1a78db54f4020774db97ec79"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a57bbbbbb1a78db54f4020774db97ec79">HasData</a> () const noexcept</td></tr>
+<tr class="memdesc:a57bbbbbb1a78db54f4020774db97ec79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command has any associated RDM parameter data. <br /></td></tr>
+<tr class="separator:a57bbbbbb1a78db54f4020774db97ec79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e38683dabb26fcffff5ff569c24451"><td class="memItemLeft" align="right" valign="top"><a id="a24e38683dabb26fcffff5ff569c24451"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a24e38683dabb26fcffff5ff569c24451">IsGet</a> () const noexcept</td></tr>
+<tr class="memdesc:a24e38683dabb26fcffff5ff569c24451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command is an RDM GET command. <br /></td></tr>
+<tr class="separator:a24e38683dabb26fcffff5ff569c24451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07548ce2bdda1e5eaa95c647aadd52f"><td class="memItemLeft" align="right" valign="top"><a id="ac07548ce2bdda1e5eaa95c647aadd52f"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#ac07548ce2bdda1e5eaa95c647aadd52f">IsSet</a> () const noexcept</td></tr>
+<tr class="memdesc:ac07548ce2bdda1e5eaa95c647aadd52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command is an RDM SET command. <br /></td></tr>
+<tr class="separator:ac07548ce2bdda1e5eaa95c647aadd52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5005e19c0b7d77ff5e98dbd8e361df"><td class="memItemLeft" align="right" valign="top"><a id="a8f5005e19c0b7d77ff5e98dbd8e361df"></a>
+constexpr const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a8f5005e19c0b7d77ff5e98dbd8e361df">get</a> () const noexcept</td></tr>
+<tr class="memdesc:a8f5005e19c0b7d77ff5e98dbd8e361df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
+<tr class="separator:a8f5005e19c0b7d77ff5e98dbd8e361df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823c8e5dc54cec37b78af1e4395b4ae1"><td class="memItemLeft" align="right" valign="top"><a id="a823c8e5dc54cec37b78af1e4395b4ae1"></a>
+rdm::Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#a823c8e5dc54cec37b78af1e4395b4ae1">ToRdm</a> () const</td></tr>
+<tr class="memdesc:a823c8e5dc54cec37b78af1e4395b4ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the RDM data in this command to an RDM command type. <br /></td></tr>
+<tr class="separator:a823c8e5dc54cec37b78af1e4395b4ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11a6d7bc7d826b160703f5423cc5b4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html">SavedRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa11a6d7bc7d826b160703f5423cc5b4e">Save</a> () const</td></tr>
+<tr class="memdesc:aa11a6d7bc7d826b160703f5423cc5b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data in this command for later use with API functions from a different context.  <a href="classrdmnet_1_1llrp_1_1_rdm_command.html#aa11a6d7bc7d826b160703f5423cc5b4e">More...</a><br /></td></tr>
+<tr class="separator:aa11a6d7bc7d826b160703f5423cc5b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9c3c1150cb1ded3d85ca9444d34e143e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c3c1150cb1ded3d85ca9444d34e143e">&#9670;&nbsp;</a></span>netint_id()</h2>
+<a id="a2f34c1503b587946ebfa67c51939fd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f34c1503b587946ebfa67c51939fd32">&#9670;&nbsp;</a></span>netint_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +314,7 @@ constexpr const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> rdmnet::llrp::RdmCommand::netint_id </td>
+          <td class="memname">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_mcast_netint_id.html">EtcPalMcastNetintId</a> netint_id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -334,8 +332,8 @@ constexpr const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand
 
 </div>
 </div>
-<a id="a6070d269a6678cfc0a9ecc57fb0f2e27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6070d269a6678cfc0a9ecc57fb0f2e27">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aa11a6d7bc7d826b160703f5423cc5b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11a6d7bc7d826b160703f5423cc5b4e">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +342,7 @@ constexpr const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html">SavedRdmCommand</a> rdmnet::llrp::RdmCommand::Save </td>
+          <td class="memname"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html">SavedRdmCommand</a> Save </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

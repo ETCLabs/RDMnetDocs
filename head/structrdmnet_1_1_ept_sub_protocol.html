@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::EptSubProtocol Struct Reference</title>
+<title>RDMnet: EptSubProtocol Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,48 +204,46 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_ept_sub_protocol.html
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::EptSubProtocol Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">EptSubProtocol Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A description of an EPT sub-protocol. </p>
 <p>EPT clients can implement multiple protocols, each of which is identified by a two-part identifier including an ESTA manufacturer ID and a protocol ID. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2message__types_2ept__client_8h_source.html">rdmnet/cpp/message_types/ept_client.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a73baecccca849ecb0224ea5461a00634"><td class="memItemLeft" align="right" valign="top"><a id="a73baecccca849ecb0224ea5461a00634"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a73baecccca849ecb0224ea5461a00634">EptSubProtocol</a> (uint16_t new_manufacturer_id, uint16_t new_protocol_id, const std::string &amp;new_protocol_string)</td></tr>
-<tr class="memdesc:a73baecccca849ecb0224ea5461a00634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">EptSubProtocol</a> from the required values. <br /></td></tr>
-<tr class="separator:a73baecccca849ecb0224ea5461a00634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4802a4b9c864c78e920eabf8502164"><td class="memItemLeft" align="right" valign="top"><a id="a6d4802a4b9c864c78e920eabf8502164"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a6d4802a4b9c864c78e920eabf8502164">EptSubProtocol</a> (uint16_t new_manufacturer_id, uint16_t new_protocol_id, const char *new_protocol_string)</td></tr>
-<tr class="memdesc:a6d4802a4b9c864c78e920eabf8502164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">EptSubProtocol</a> from the required values. <br /></td></tr>
-<tr class="separator:a6d4802a4b9c864c78e920eabf8502164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7761509b252ee29fca6279b4e31c848"><td class="memItemLeft" align="right" valign="top"><a id="aa7761509b252ee29fca6279b4e31c848"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#aa7761509b252ee29fca6279b4e31c848">EptSubProtocol</a> (const <a class="el" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a> &amp;c_prot)</td></tr>
-<tr class="memdesc:aa7761509b252ee29fca6279b4e31c848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">EptSubProtocol</a> copied from an instance of the C <a class="el" href="struct_rdmnet_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">RdmnetEptSubProtocol</a> type. <br /></td></tr>
-<tr class="separator:aa7761509b252ee29fca6279b4e31c848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58378929d15d50873faf9aec050bdf3b"><td class="memItemLeft" align="right" valign="top"><a id="a58378929d15d50873faf9aec050bdf3b"></a>
-<a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a58378929d15d50873faf9aec050bdf3b">operator=</a> (const <a class="el" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a> &amp;c_prot)</td></tr>
-<tr class="memdesc:a58378929d15d50873faf9aec050bdf3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_rdmnet_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">RdmnetEptSubProtocol</a> type to an instance of this class. <br /></td></tr>
-<tr class="separator:a58378929d15d50873faf9aec050bdf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c66804d6ab102623535f206b6e57101"><td class="memItemLeft" align="right" valign="top"><a id="a8c66804d6ab102623535f206b6e57101"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a8c66804d6ab102623535f206b6e57101">EptSubProtocol</a> (uint16_t new_manufacturer_id, uint16_t new_protocol_id, const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;new_protocol_string)</td></tr>
+<tr class="memdesc:a8c66804d6ab102623535f206b6e57101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">EptSubProtocol</a> from the required values. <br /></td></tr>
+<tr class="separator:a8c66804d6ab102623535f206b6e57101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e0121adfc10850399fa0adaacf896c"><td class="memItemLeft" align="right" valign="top"><a id="a88e0121adfc10850399fa0adaacf896c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a88e0121adfc10850399fa0adaacf896c">EptSubProtocol</a> (uint16_t new_manufacturer_id, uint16_t new_protocol_id, const char *new_protocol_string)</td></tr>
+<tr class="memdesc:a88e0121adfc10850399fa0adaacf896c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">EptSubProtocol</a> from the required values. <br /></td></tr>
+<tr class="separator:a88e0121adfc10850399fa0adaacf896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6d9fbe01d092106e19a75a63b5ce85"><td class="memItemLeft" align="right" valign="top"><a id="aee6d9fbe01d092106e19a75a63b5ce85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#aee6d9fbe01d092106e19a75a63b5ce85">EptSubProtocol</a> (const <a class="el" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a> &amp;c_prot)</td></tr>
+<tr class="memdesc:aee6d9fbe01d092106e19a75a63b5ce85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">EptSubProtocol</a> copied from an instance of the C <a class="el" href="struct_rdmnet_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">RdmnetEptSubProtocol</a> type. <br /></td></tr>
+<tr class="separator:aee6d9fbe01d092106e19a75a63b5ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55981398055a44afdf760caf869e63ae"><td class="memItemLeft" align="right" valign="top"><a id="a55981398055a44afdf760caf869e63ae"></a>
+<a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a55981398055a44afdf760caf869e63ae">operator=</a> (const <a class="el" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a> &amp;c_prot)</td></tr>
+<tr class="memdesc:a55981398055a44afdf760caf869e63ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_rdmnet_ept_sub_protocol.html" title="A description of an EPT sub-protocol.">RdmnetEptSubProtocol</a> type to an instance of this class. <br /></td></tr>
+<tr class="separator:a55981398055a44afdf760caf869e63ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8e197be2be1c8b24be36b22c3fe9ef01"><td class="memItemLeft" align="right" valign="top"><a id="a8e197be2be1c8b24be36b22c3fe9ef01"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a8e197be2be1c8b24be36b22c3fe9ef01">manufacturer_id</a> {0}</td></tr>
-<tr class="memdesc:a8e197be2be1c8b24be36b22c3fe9ef01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ESTA manufacturer ID under which this protocol is namespaced. <br /></td></tr>
-<tr class="separator:a8e197be2be1c8b24be36b22c3fe9ef01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae38ddb0236dc59601ca27c3ad175ba42"><td class="memItemLeft" align="right" valign="top"><a id="ae38ddb0236dc59601ca27c3ad175ba42"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#ae38ddb0236dc59601ca27c3ad175ba42">protocol_id</a> {0}</td></tr>
-<tr class="memdesc:ae38ddb0236dc59601ca27c3ad175ba42"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for this protocol. <br /></td></tr>
-<tr class="separator:ae38ddb0236dc59601ca27c3ad175ba42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4691923c5963bb44251dbd738be0d01b"><td class="memItemLeft" align="right" valign="top"><a id="a4691923c5963bb44251dbd738be0d01b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a4691923c5963bb44251dbd738be0d01b">protocol_string</a></td></tr>
-<tr class="memdesc:a4691923c5963bb44251dbd738be0d01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive string for the protocol. <br /></td></tr>
-<tr class="separator:a4691923c5963bb44251dbd738be0d01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memItemLeft" align="right" valign="top"><a id="a4ad31fcb69f8aaca8f3c1820bb4d8594"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">manufacturer_id</a> {0}</td></tr>
+<tr class="memdesc:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ESTA manufacturer ID under which this protocol is namespaced. <br /></td></tr>
+<tr class="separator:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44950c5a1939c04b9a9337a57828a35"><td class="memItemLeft" align="right" valign="top"><a id="ae44950c5a1939c04b9a9337a57828a35"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#ae44950c5a1939c04b9a9337a57828a35">protocol_id</a> {0}</td></tr>
+<tr class="memdesc:ae44950c5a1939c04b9a9337a57828a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for this protocol. <br /></td></tr>
+<tr class="separator:ae44950c5a1939c04b9a9337a57828a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4406644b2b23c2679034c30beefbeefe"><td class="memItemLeft" align="right" valign="top"><a id="a4406644b2b23c2679034c30beefbeefe"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html#a4406644b2b23c2679034c30beefbeefe">protocol_string</a></td></tr>
+<tr class="memdesc:a4406644b2b23c2679034c30beefbeefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive string for the protocol. <br /></td></tr>
+<tr class="separator:a4406644b2b23c2679034c30beefbeefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/cpp/message_types/<a class="el" href="cpp_2message__types_2ept__client_8h_source.html">ept_client.h</a></li>

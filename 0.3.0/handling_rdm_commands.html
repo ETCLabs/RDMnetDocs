@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,7 +203,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="title">Handling RDM Commands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpiqqg2nsy_docs_getting_started_handling_rdm_commands"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpfs5jffog_docs_getting_started_handling_rdm_commands"></a></p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -287,17 +286,15 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">                          <span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
-<div class="line">  <span class="keywordflow">if</span> (cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a8627e24459da221d560b593ea2d9f5f6">command_class</a> == <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggafda6b6d4c08788e755cb3cb6c1ca021ba434701b28c3c83f9230b5da6d54e26ab">kRdmCCGetCommand</a> &amp;&amp; cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a43f5e73445b99b42061429682fdc78fc">param_id</a> == E120_DEVICE_INFO)</div>
+<div class="line">  <span class="keywordflow">if</span> (cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.command_class == kRdmCCGetCommand &amp;&amp; cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.param_id == E120_DEVICE_INFO)</div>
 <div class="line">  {</div>
-<div class="line">    memcpy(my_rdmnet_response_buf, kMyDeviceInfoData, DEVICE_INFO_DATA_SIZE);</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">memcpy</a>(my_rdmnet_response_buf, kMyDeviceInfoData, DEVICE_INFO_DATA_SIZE);</div>
 <div class="line">    <a class="code" href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188">RDMNET_SYNC_SEND_RDM_ACK</a>(response, DEVICE_INFO_DATA_SIZE);</div>
 <div class="line">    <span class="comment">// ACK will be sent after this function returns.</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__message_html_ggafda6b6d4c08788e755cb3cb6c1ca021ba434701b28c3c83f9230b5da6d54e26ab"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggafda6b6d4c08788e755cb3cb6c1ca021ba434701b28c3c83f9230b5da6d54e26ab">kRdmCCGetCommand</a></div><div class="ttdeci">kRdmCCGetCommand</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gaf4ea2570562bd8f38159f2d7413ca188"><div class="ttname"><a href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188">RDMNET_SYNC_SEND_RDM_ACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_ACK(response_ptr, response_data_len_in)</div><div class="ttdoc">Indicate that an RDM ACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:240</div></div>
-<div class="ttc" id="astruct_rdm_command_header_html_a43f5e73445b99b42061429682fdc78fc"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a43f5e73445b99b42061429682fdc78fc">RdmCommandHeader::param_id</a></div><div class="ttdeci">uint16_t param_id</div></div>
-<div class="ttc" id="astruct_rdm_command_header_html_a8627e24459da221d560b593ea2d9f5f6"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a8627e24459da221d560b593ea2d9f5f6">RdmCommandHeader::command_class</a></div><div class="ttdeci">rdm_command_class_t command_class</div></div>
+<div class="ttc" id="amemcpy_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a></div><div class="ttdeci">T memcpy(T... args)</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_command_html_a5465508fc1c33985e0b9525573644f05"><div class="ttname"><a href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">RdmnetRdmCommand::rdm_header</a></div><div class="ttdeci">RdmCommandHeader rdm_header</div><div class="ttdoc">The header information from the encapsulated RDM command.</div><div class="ttdef"><b>Definition:</b> message.h:61</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -313,7 +310,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
 <div class="line">  <span class="keywordflow">if</span> (cmd.<a class="code" href="classrdmnet_1_1_rdm_command.html#af01ca868e13240d0a4ddb07f82d9907e">IsGet</a>() &amp;&amp; cmd.<a class="code" href="classrdmnet_1_1_rdm_command.html#a63629cb9cb2169388593a9161a32c72f">param_id</a>() == E120_DEVICE_INFO)</div>
 <div class="line">  {</div>
-<div class="line">    std::memcpy(my_rdmnet_response_buf, kMyDeviceInfoData, kDeviceInfoDataSize);</div>
+<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a>(my_rdmnet_response_buf, kMyDeviceInfoData, kDeviceInfoDataSize);</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">rdmnet::RdmResponseAction::SendAck</a>(kDeviceInfoDataSize);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -336,7 +333,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">                          <span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
-<div class="line">  <span class="keywordflow">if</span> (cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a8627e24459da221d560b593ea2d9f5f6">command_class</a> == <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggafda6b6d4c08788e755cb3cb6c1ca021baf16a0108fda7d3470eb281147527ddbf">kRdmCCSetCommand</a> &amp;&amp; cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html#a43f5e73445b99b42061429682fdc78fc">param_id</a> == E120_IDENTIFY_DEVICE)</div>
+<div class="line">  <span class="keywordflow">if</span> (cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.command_class == kRdmCCSetCommand &amp;&amp; cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.param_id == E120_IDENTIFY_DEVICE)</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keywordflow">if</span> (cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#acb25f5e5453fa1cfc61647dcf8fa1d82">data</a>[0] == 0)</div>
 <div class="line">    {</div>
@@ -351,7 +348,6 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">    <span class="comment">// ACK will be sent after this function returns.</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__message_html_ggafda6b6d4c08788e755cb3cb6c1ca021baf16a0108fda7d3470eb281147527ddbf"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggafda6b6d4c08788e755cb3cb6c1ca021baf16a0108fda7d3470eb281147527ddbf">kRdmCCSetCommand</a></div><div class="ttdeci">kRdmCCSetCommand</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_command_html_acb25f5e5453fa1cfc61647dcf8fa1d82"><div class="ttname"><a href="struct_rdmnet_rdm_command.html#acb25f5e5453fa1cfc61647dcf8fa1d82">RdmnetRdmCommand::data</a></div><div class="ttdeci">const uint8_t * data</div><div class="ttdoc">Pointer to buffer containing any associated RDM parameter data.</div><div class="ttdef"><b>Definition:</b> message.h:63</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -383,12 +379,12 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <h3>NACK (Negative ACKnowledge)</h3>
 <p>A NACK response indicates that the RDMnet command was valid, but the RDM transaction cannot be acted upon for some reason. NACK responses contain a reason code that indicates the reason that the command cannot be acted upon. Common reasons to NACK an RDMnet RDM command include:</p>
 <ul>
-<li>The given RDM Parameter ID (PID) is not supported by this responder (<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a9ff3ed335721af7014435875e1e46e95">kRdmNRUnknownPid</a>)</li>
-<li>The PID is supported, but the requested command class is not (<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a119433ed2edf83096329be3d4e87b25f">kRdmNRUnsupportedCommandClass</a>)<ul>
+<li>The given RDM Parameter ID (PID) is not supported by this responder (kRdmNRUnknownPid)</li>
+<li>The PID is supported, but the requested command class is not (kRdmNRUnsupportedCommandClass)<ul>
 <li>Example: a SET was requested on a read-only parameter</li>
 </ul>
 </li>
-<li>Some data present in the command contains an index that is out of range (<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3">kRdmNRDataOutOfRange</a>)<ul>
+<li>Some data present in the command contains an index that is out of range (kRdmNRDataOutOfRange)<ul>
 <li>Example: a device has 3 sensors and a GET:SENSOR_VALUE command was received for sensor number 4</li>
 </ul>
 </li>
@@ -407,7 +403,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  uint8_t sensor_num = data[0];</div>
 <div class="line">  <span class="keywordflow">if</span> (sensor_num &gt;= NUM_SENSORS)</div>
 <div class="line">  {</div>
-<div class="line">    <a class="code" href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">RDMNET_SYNC_SEND_RDM_NACK</a>(response, <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3">kRdmNRDataOutOfRange</a>);</div>
+<div class="line">    <a class="code" href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">RDMNET_SYNC_SEND_RDM_NACK</a>(response, kRdmNRDataOutOfRange);</div>
 <div class="line">    <span class="comment">// NACK will be sent after the RDM command handler callback returns.</span></div>
 <div class="line">  }</div>
 <div class="line">  <span class="keywordflow">else</span></div>
@@ -415,7 +411,6 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">    <span class="comment">// Process data and send ack...</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__message_html_ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3">kRdmNRDataOutOfRange</a></div><div class="ttdeci">kRdmNRDataOutOfRange</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga91e96da81698ff84a605e9c21fdc46b3"><div class="ttname"><a href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3">RDMNET_SYNC_SEND_RDM_NACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_NACK(response_ptr, nack_reason_in)</div><div class="ttdoc">Indicate that an RDM NACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:252</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -427,7 +422,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  uint8_t sensor_num = data[0];</div>
 <div class="line">  <span class="keywordflow">if</span> (sensor_num &gt;= NUM_SENSORS)</div>
 <div class="line">  {</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">rdmnet::RdmResponseAction::SendNack</a>(<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ggaa11fc36923818f02895f40dafd228474a98240ffd8525a507a932d7672bc8d9f3">kRdmNRDataOutOfRange</a>);</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">rdmnet::RdmResponseAction::SendNack</a>(kRdmNRDataOutOfRange);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a0f084460d0d89d9af564dd573720d251"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">rdmnet::RdmResponseAction::SendNack</a></div><div class="ttdeci">static RdmResponseAction SendNack(rdm_nack_reason_t nack_reason)</div><div class="ttdoc">Send an RDM NACK with a reason code.</div><div class="ttdef"><b>Definition:</b> common.h:131</div></div>

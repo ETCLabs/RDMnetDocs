@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::llrp::SavedRdmResponse Class Reference</title>
+<title>RDMnet: SavedRdmResponse Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,113 +203,111 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1llrp_1_1_saved_rdm_resp
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::llrp::SavedRdmResponse Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">SavedRdmResponse Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An RDM response received over LLRP and saved for later processing. </p>
 <p>This type is not used by the library API, but can come in handy if an application wants to queue or copy RDM responses before acting on them. This type does heap allocation to hold the response parameter data. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="llrp__rdm__response_8h_source.html">rdmnet/cpp/message_types/llrp_rdm_response.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aae8ce8fb306413641ee5013d1b49fa8d"><td class="memItemLeft" align="right" valign="top"><a id="aae8ce8fb306413641ee5013d1b49fa8d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aae8ce8fb306413641ee5013d1b49fa8d">SavedRdmResponse</a> ()=default</td></tr>
-<tr class="memdesc:aae8ce8fb306413641ee5013d1b49fa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty, invalid RDM response by default. <br /></td></tr>
-<tr class="separator:aae8ce8fb306413641ee5013d1b49fa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06babbda536f7692e559996212d423f"><td class="memItemLeft" align="right" valign="top"><a id="ab06babbda536f7692e559996212d423f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab06babbda536f7692e559996212d423f">SavedRdmResponse</a> (const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> &amp;c_resp)</td></tr>
-<tr class="memdesc:ab06babbda536f7692e559996212d423f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html" title="An RDM response received over LLRP and saved for later processing.">SavedRdmResponse</a> copied from an instance of the C <a class="el" href="struct_llrp_saved_rdm_response.html" title="An RDM command received from a remote LLRP Manager.">LlrpSavedRdmResponse</a> type. <br /></td></tr>
-<tr class="separator:ab06babbda536f7692e559996212d423f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab66d4e9d32c9f08871236677a18e76"><td class="memItemLeft" align="right" valign="top"><a id="a6ab66d4e9d32c9f08871236677a18e76"></a>
-<a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html">SavedRdmResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a6ab66d4e9d32c9f08871236677a18e76">operator=</a> (const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> &amp;c_resp)</td></tr>
-<tr class="memdesc:a6ab66d4e9d32c9f08871236677a18e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_llrp_saved_rdm_response.html" title="An RDM command received from a remote LLRP Manager.">LlrpSavedRdmResponse</a> type to an instance of this class. <br /></td></tr>
-<tr class="separator:a6ab66d4e9d32c9f08871236677a18e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db3d8a6bada8f6a1211ece28327c77c"><td class="memItemLeft" align="right" valign="top"><a id="a4db3d8a6bada8f6a1211ece28327c77c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a4db3d8a6bada8f6a1211ece28327c77c">SavedRdmResponse</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html">RdmResponse</a> &amp;resp)</td></tr>
-<tr class="memdesc:a4db3d8a6bada8f6a1211ece28327c77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html" title="An RDM response received over LLRP and saved for later processing.">SavedRdmResponse</a> from an <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html" title="An RDM response received over LLRP and delivered to an RDMnet callback function.">RdmResponse</a>. <br /></td></tr>
-<tr class="separator:a4db3d8a6bada8f6a1211ece28327c77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7cb0e38c737d5ecee5411648395b6b"><td class="memItemLeft" align="right" valign="top"><a id="afc7cb0e38c737d5ecee5411648395b6b"></a>
-<a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html">SavedRdmResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#afc7cb0e38c737d5ecee5411648395b6b">operator=</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html">RdmResponse</a> &amp;resp)</td></tr>
-<tr class="memdesc:afc7cb0e38c737d5ecee5411648395b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html" title="An RDM response received over LLRP and delivered to an RDMnet callback function.">RdmResponse</a> to an instance of this class. <br /></td></tr>
-<tr class="separator:afc7cb0e38c737d5ecee5411648395b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149d949abe4c1bd4c2a9340deb61d336"><td class="memItemLeft" align="right" valign="top"><a id="a149d949abe4c1bd4c2a9340deb61d336"></a>
-const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a149d949abe4c1bd4c2a9340deb61d336">source_cid</a> () const noexcept</td></tr>
-<tr class="memdesc:a149d949abe4c1bd4c2a9340deb61d336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the LLRP target that sent this response. <br /></td></tr>
-<tr class="separator:a149d949abe4c1bd4c2a9340deb61d336"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50707cdd88ddb0b583d4d8d541786c1e"><td class="memItemLeft" align="right" valign="top"><a id="a50707cdd88ddb0b583d4d8d541786c1e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a50707cdd88ddb0b583d4d8d541786c1e">seq_num</a> () const noexcept</td></tr>
-<tr class="memdesc:a50707cdd88ddb0b583d4d8d541786c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LLRP sequence number of this response, for matching with a corresponding command. <br /></td></tr>
-<tr class="separator:a50707cdd88ddb0b583d4d8d541786c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6374423355afd289c59d52e9c2fc9c"><td class="memItemLeft" align="right" valign="top"><a id="aaa6374423355afd289c59d52e9c2fc9c"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aaa6374423355afd289c59d52e9c2fc9c">source_uid</a> () const noexcept</td></tr>
-<tr class="memdesc:aaa6374423355afd289c59d52e9c2fc9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP target that sent this response. <br /></td></tr>
-<tr class="separator:aaa6374423355afd289c59d52e9c2fc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a88d93846ee10f645128b8e7c385c8a"><td class="memItemLeft" align="right" valign="top"><a id="a8a88d93846ee10f645128b8e7c385c8a"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a8a88d93846ee10f645128b8e7c385c8a">dest_uid</a> () const noexcept</td></tr>
-<tr class="memdesc:a8a88d93846ee10f645128b8e7c385c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP manager to which this response is addressed. <br /></td></tr>
-<tr class="separator:a8a88d93846ee10f645128b8e7c385c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a755d8be75582029463c9a17513d8d0"><td class="memItemLeft" align="right" valign="top"><a id="a7a755d8be75582029463c9a17513d8d0"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ga6ecebd42ee8d90fe410cc4001a98e7f0">rdm_response_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a7a755d8be75582029463c9a17513d8d0">response_type</a> () const noexcept</td></tr>
-<tr class="memdesc:a7a755d8be75582029463c9a17513d8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM response type of this response. <br /></td></tr>
-<tr class="separator:a7a755d8be75582029463c9a17513d8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3445253ff79b5870fe4b7c2fdf503ead"><td class="memItemLeft" align="right" valign="top"><a id="a3445253ff79b5870fe4b7c2fdf503ead"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a3445253ff79b5870fe4b7c2fdf503ead">subdevice</a> () const noexcept</td></tr>
-<tr class="memdesc:a3445253ff79b5870fe4b7c2fdf503ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM subdevice from which this response originated (0 means the root device). <br /></td></tr>
-<tr class="separator:a3445253ff79b5870fe4b7c2fdf503ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cab080043f81fb740cafce9b4eb7fd9"><td class="memItemLeft" align="right" valign="top"><a id="a9cab080043f81fb740cafce9b4eb7fd9"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gafda6b6d4c08788e755cb3cb6c1ca021b">rdm_command_class_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a9cab080043f81fb740cafce9b4eb7fd9">command_class</a> () const noexcept</td></tr>
-<tr class="memdesc:a9cab080043f81fb740cafce9b4eb7fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM response class of this response. <br /></td></tr>
-<tr class="separator:a9cab080043f81fb740cafce9b4eb7fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa753df9cc31e09d2463f89834047965a"><td class="memItemLeft" align="right" valign="top"><a id="aa753df9cc31e09d2463f89834047965a"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aa753df9cc31e09d2463f89834047965a">param_id</a> () const noexcept</td></tr>
-<tr class="memdesc:aa753df9cc31e09d2463f89834047965a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM parameter ID (PID) of this response. <br /></td></tr>
-<tr class="separator:aa753df9cc31e09d2463f89834047965a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cb6d2949cb0f0a7aa1dc51242160fed"><td class="memItemLeft" align="right" valign="top"><a id="a4cb6d2949cb0f0a7aa1dc51242160fed"></a>
-const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_response_header.html">rdm::ResponseHeader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a4cb6d2949cb0f0a7aa1dc51242160fed">rdm_header</a> () const noexcept</td></tr>
-<tr class="memdesc:a4cb6d2949cb0f0a7aa1dc51242160fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM protocol header contained within this response. <br /></td></tr>
-<tr class="separator:a4cb6d2949cb0f0a7aa1dc51242160fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adacdb08084bb0813132e7612a78551a9"><td class="memItemLeft" align="right" valign="top"><a id="adacdb08084bb0813132e7612a78551a9"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#adacdb08084bb0813132e7612a78551a9">data</a> () const noexcept</td></tr>
-<tr class="memdesc:adacdb08084bb0813132e7612a78551a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the RDM parameter data buffer contained within this response. <br /></td></tr>
-<tr class="separator:adacdb08084bb0813132e7612a78551a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b6d53d23bb6455ee49cc070e16f8b8a"><td class="memItemLeft" align="right" valign="top"><a id="a9b6d53d23bb6455ee49cc070e16f8b8a"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a9b6d53d23bb6455ee49cc070e16f8b8a">data_len</a> () const noexcept</td></tr>
-<tr class="memdesc:a9b6d53d23bb6455ee49cc070e16f8b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the RDM parameter data contained within this response. <br /></td></tr>
-<tr class="separator:a9b6d53d23bb6455ee49cc070e16f8b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b60c338d26852ed1b0889c221d4339"><td class="memItemLeft" align="right" valign="top"><a id="a35b60c338d26852ed1b0889c221d4339"></a>
-const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_response.html">rdm::Response</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a35b60c338d26852ed1b0889c221d4339">rdm</a> () const noexcept</td></tr>
-<tr class="memdesc:a35b60c338d26852ed1b0889c221d4339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM data in this response as an RDM response type. <br /></td></tr>
-<tr class="separator:a35b60c338d26852ed1b0889c221d4339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c843acc24a29fbd5085fa5241a8ca07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a4c843acc24a29fbd5085fa5241a8ca07">IsValid</a> () const noexcept</td></tr>
-<tr class="memdesc:a4c843acc24a29fbd5085fa5241a8ca07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the values contained in this response are valid for an RDM response.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a4c843acc24a29fbd5085fa5241a8ca07">More...</a><br /></td></tr>
-<tr class="separator:a4c843acc24a29fbd5085fa5241a8ca07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c3c88ed6ad53af16efdcf75ce7cac8"><td class="memItemLeft" align="right" valign="top"><a id="a04c3c88ed6ad53af16efdcf75ce7cac8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a04c3c88ed6ad53af16efdcf75ce7cac8">HasData</a> () const noexcept</td></tr>
-<tr class="memdesc:a04c3c88ed6ad53af16efdcf75ce7cac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this RDM response includes any RDM parameter data. <br /></td></tr>
-<tr class="separator:a04c3c88ed6ad53af16efdcf75ce7cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32d71d5ee0a6a42900a05d067826f626"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a32d71d5ee0a6a42900a05d067826f626">IsAck</a> () const noexcept</td></tr>
-<tr class="memdesc:a32d71d5ee0a6a42900a05d067826f626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response has an RDM response type of ACK.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a32d71d5ee0a6a42900a05d067826f626">More...</a><br /></td></tr>
-<tr class="separator:a32d71d5ee0a6a42900a05d067826f626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8696093233b29593d5b373e5945960"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#abb8696093233b29593d5b373e5945960">IsNack</a> () const noexcept</td></tr>
-<tr class="memdesc:abb8696093233b29593d5b373e5945960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response has an RDM response type of NACK_REASON.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#abb8696093233b29593d5b373e5945960">More...</a><br /></td></tr>
-<tr class="separator:abb8696093233b29593d5b373e5945960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d267fc21e17060a5c0e373a1320300"><td class="memItemLeft" align="right" valign="top"><a id="aa0d267fc21e17060a5c0e373a1320300"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aa0d267fc21e17060a5c0e373a1320300">IsGetResponse</a> () const noexcept</td></tr>
-<tr class="memdesc:aa0d267fc21e17060a5c0e373a1320300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response is an RDM GET response. <br /></td></tr>
-<tr class="separator:aa0d267fc21e17060a5c0e373a1320300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23130a1c2e8fa69fe6426bdca25bb1bc"><td class="memItemLeft" align="right" valign="top"><a id="a23130a1c2e8fa69fe6426bdca25bb1bc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a23130a1c2e8fa69fe6426bdca25bb1bc">IsSetResponse</a> () const noexcept</td></tr>
-<tr class="memdesc:a23130a1c2e8fa69fe6426bdca25bb1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response is an RDM SET response. <br /></td></tr>
-<tr class="separator:a23130a1c2e8fa69fe6426bdca25bb1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ed75ac1eff6d7cf3f2014d97523388"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_nack_reason.html">rdm::NackReason</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a34ed75ac1eff6d7cf3f2014d97523388">GetNackReason</a> () const noexcept</td></tr>
-<tr class="memdesc:a34ed75ac1eff6d7cf3f2014d97523388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NACK reason code of this RDM response.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a34ed75ac1eff6d7cf3f2014d97523388">More...</a><br /></td></tr>
-<tr class="separator:a34ed75ac1eff6d7cf3f2014d97523388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adff72d12f62d06832b399c3e4a1ac4"><td class="memItemLeft" align="right" valign="top"><a id="a3adff72d12f62d06832b399c3e4a1ac4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a3adff72d12f62d06832b399c3e4a1ac4">SavedRdmResponse</a> ()=default</td></tr>
+<tr class="memdesc:a3adff72d12f62d06832b399c3e4a1ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty, invalid RDM response by default. <br /></td></tr>
+<tr class="separator:a3adff72d12f62d06832b399c3e4a1ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add215cf9302d245259718ed45d099dcb"><td class="memItemLeft" align="right" valign="top"><a id="add215cf9302d245259718ed45d099dcb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#add215cf9302d245259718ed45d099dcb">SavedRdmResponse</a> (const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> &amp;c_resp)</td></tr>
+<tr class="memdesc:add215cf9302d245259718ed45d099dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html" title="An RDM response received over LLRP and saved for later processing.">SavedRdmResponse</a> copied from an instance of the C <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> type. <br /></td></tr>
+<tr class="separator:add215cf9302d245259718ed45d099dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab7db7b49a06f90b275581a91ba7258"><td class="memItemLeft" align="right" valign="top"><a id="aaab7db7b49a06f90b275581a91ba7258"></a>
+<a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html">SavedRdmResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aaab7db7b49a06f90b275581a91ba7258">operator=</a> (const <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> &amp;c_resp)</td></tr>
+<tr class="memdesc:aaab7db7b49a06f90b275581a91ba7258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an instance of the C <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a> type to an instance of this class. <br /></td></tr>
+<tr class="separator:aaab7db7b49a06f90b275581a91ba7258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f7d0b40131db249951594be184cfc2"><td class="memItemLeft" align="right" valign="top"><a id="a91f7d0b40131db249951594be184cfc2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a91f7d0b40131db249951594be184cfc2">SavedRdmResponse</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html">RdmResponse</a> &amp;resp)</td></tr>
+<tr class="memdesc:a91f7d0b40131db249951594be184cfc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html" title="An RDM response received over LLRP and saved for later processing.">SavedRdmResponse</a> from an <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html" title="An RDM response received over LLRP and delivered to an RDMnet callback function.">RdmResponse</a>. <br /></td></tr>
+<tr class="separator:a91f7d0b40131db249951594be184cfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfccea9babc7cc8fcb3bc14d9b9d70c"><td class="memItemLeft" align="right" valign="top"><a id="a6cfccea9babc7cc8fcb3bc14d9b9d70c"></a>
+<a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html">SavedRdmResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a6cfccea9babc7cc8fcb3bc14d9b9d70c">operator=</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html">RdmResponse</a> &amp;resp)</td></tr>
+<tr class="memdesc:a6cfccea9babc7cc8fcb3bc14d9b9d70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html" title="An RDM response received over LLRP and delivered to an RDMnet callback function.">RdmResponse</a> to an instance of this class. <br /></td></tr>
+<tr class="separator:a6cfccea9babc7cc8fcb3bc14d9b9d70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d284f75ee056ab50b3754e1606d59fd"><td class="memItemLeft" align="right" valign="top"><a id="a6d284f75ee056ab50b3754e1606d59fd"></a>
+const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a6d284f75ee056ab50b3754e1606d59fd">source_cid</a> () const noexcept</td></tr>
+<tr class="memdesc:a6d284f75ee056ab50b3754e1606d59fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the LLRP target that sent this response. <br /></td></tr>
+<tr class="separator:a6d284f75ee056ab50b3754e1606d59fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be541ac7889c5fa8fcc80a07ccaeeca"><td class="memItemLeft" align="right" valign="top"><a id="a4be541ac7889c5fa8fcc80a07ccaeeca"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a4be541ac7889c5fa8fcc80a07ccaeeca">seq_num</a> () const noexcept</td></tr>
+<tr class="memdesc:a4be541ac7889c5fa8fcc80a07ccaeeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LLRP sequence number of this response, for matching with a corresponding command. <br /></td></tr>
+<tr class="separator:a4be541ac7889c5fa8fcc80a07ccaeeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2be43c6b03fa6590fdb1e8fd201a76"><td class="memItemLeft" align="right" valign="top"><a id="a6f2be43c6b03fa6590fdb1e8fd201a76"></a>
+rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a6f2be43c6b03fa6590fdb1e8fd201a76">source_uid</a> () const noexcept</td></tr>
+<tr class="memdesc:a6f2be43c6b03fa6590fdb1e8fd201a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP target that sent this response. <br /></td></tr>
+<tr class="separator:a6f2be43c6b03fa6590fdb1e8fd201a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba5b86b83beca4e4529eb09e15a3751"><td class="memItemLeft" align="right" valign="top"><a id="a5ba5b86b83beca4e4529eb09e15a3751"></a>
+rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a5ba5b86b83beca4e4529eb09e15a3751">dest_uid</a> () const noexcept</td></tr>
+<tr class="memdesc:a5ba5b86b83beca4e4529eb09e15a3751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the LLRP manager to which this response is addressed. <br /></td></tr>
+<tr class="separator:a5ba5b86b83beca4e4529eb09e15a3751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7f1d49ed5bccae7817b782dedc0847"><td class="memItemLeft" align="right" valign="top"><a id="adf7f1d49ed5bccae7817b782dedc0847"></a>
+rdm_response_type_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#adf7f1d49ed5bccae7817b782dedc0847">response_type</a> () const noexcept</td></tr>
+<tr class="memdesc:adf7f1d49ed5bccae7817b782dedc0847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM response type of this response. <br /></td></tr>
+<tr class="separator:adf7f1d49ed5bccae7817b782dedc0847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0ff353a00e0ec26d25092dbf52e5da"><td class="memItemLeft" align="right" valign="top"><a id="a0c0ff353a00e0ec26d25092dbf52e5da"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a0c0ff353a00e0ec26d25092dbf52e5da">subdevice</a> () const noexcept</td></tr>
+<tr class="memdesc:a0c0ff353a00e0ec26d25092dbf52e5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM subdevice from which this response originated (0 means the root device). <br /></td></tr>
+<tr class="separator:a0c0ff353a00e0ec26d25092dbf52e5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148f4a098eec32593023bd987edf09c1"><td class="memItemLeft" align="right" valign="top"><a id="a148f4a098eec32593023bd987edf09c1"></a>
+rdm_command_class_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a148f4a098eec32593023bd987edf09c1">command_class</a> () const noexcept</td></tr>
+<tr class="memdesc:a148f4a098eec32593023bd987edf09c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM response class of this response. <br /></td></tr>
+<tr class="separator:a148f4a098eec32593023bd987edf09c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad467b36ffee9333cfcf3f5ef152d616d"><td class="memItemLeft" align="right" valign="top"><a id="ad467b36ffee9333cfcf3f5ef152d616d"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ad467b36ffee9333cfcf3f5ef152d616d">param_id</a> () const noexcept</td></tr>
+<tr class="memdesc:ad467b36ffee9333cfcf3f5ef152d616d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM parameter ID (PID) of this response. <br /></td></tr>
+<tr class="separator:ad467b36ffee9333cfcf3f5ef152d616d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae8c39544a0aac6f2f5c376196222bd"><td class="memItemLeft" align="right" valign="top"><a id="a1ae8c39544a0aac6f2f5c376196222bd"></a>
+const rdm::ResponseHeader &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a1ae8c39544a0aac6f2f5c376196222bd">rdm_header</a> () const noexcept</td></tr>
+<tr class="memdesc:a1ae8c39544a0aac6f2f5c376196222bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM protocol header contained within this response. <br /></td></tr>
+<tr class="separator:a1ae8c39544a0aac6f2f5c376196222bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memItemLeft" align="right" valign="top"><a id="a21b8e060baa6eeed3e5e45e6d760b54c"></a>
+const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a21b8e060baa6eeed3e5e45e6d760b54c">data</a> () const noexcept</td></tr>
+<tr class="memdesc:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the RDM parameter data buffer contained within this response. <br /></td></tr>
+<tr class="separator:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad489991aea317295384f3621718eeef"><td class="memItemLeft" align="right" valign="top"><a id="aad489991aea317295384f3621718eeef"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aad489991aea317295384f3621718eeef">data_len</a> () const noexcept</td></tr>
+<tr class="memdesc:aad489991aea317295384f3621718eeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the RDM parameter data contained within this response. <br /></td></tr>
+<tr class="separator:aad489991aea317295384f3621718eeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7a7430ec1cd65cbf4356a6eaa17f93"><td class="memItemLeft" align="right" valign="top"><a id="aca7a7430ec1cd65cbf4356a6eaa17f93"></a>
+const rdm::Response &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aca7a7430ec1cd65cbf4356a6eaa17f93">rdm</a> () const noexcept</td></tr>
+<tr class="memdesc:aca7a7430ec1cd65cbf4356a6eaa17f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM data in this response as an RDM response type. <br /></td></tr>
+<tr class="separator:aca7a7430ec1cd65cbf4356a6eaa17f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472f705194218179e9cf26ffb288da6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a472f705194218179e9cf26ffb288da6c">IsValid</a> () const noexcept</td></tr>
+<tr class="memdesc:a472f705194218179e9cf26ffb288da6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the values contained in this response are valid for an RDM response.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a472f705194218179e9cf26ffb288da6c">More...</a><br /></td></tr>
+<tr class="separator:a472f705194218179e9cf26ffb288da6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ba167c70722455066c5750682ac74c"><td class="memItemLeft" align="right" valign="top"><a id="ac6ba167c70722455066c5750682ac74c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ac6ba167c70722455066c5750682ac74c">HasData</a> () const noexcept</td></tr>
+<tr class="memdesc:ac6ba167c70722455066c5750682ac74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this RDM response includes any RDM parameter data. <br /></td></tr>
+<tr class="separator:ac6ba167c70722455066c5750682ac74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee525fd418dd6450116133f03393e503"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aee525fd418dd6450116133f03393e503">IsAck</a> () const noexcept</td></tr>
+<tr class="memdesc:aee525fd418dd6450116133f03393e503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response has an RDM response type of ACK.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aee525fd418dd6450116133f03393e503">More...</a><br /></td></tr>
+<tr class="separator:aee525fd418dd6450116133f03393e503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d643ebfe75aeabd7e56dcd5f3f4de4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab8d643ebfe75aeabd7e56dcd5f3f4de4">IsNack</a> () const noexcept</td></tr>
+<tr class="memdesc:ab8d643ebfe75aeabd7e56dcd5f3f4de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response has an RDM response type of NACK_REASON.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab8d643ebfe75aeabd7e56dcd5f3f4de4">More...</a><br /></td></tr>
+<tr class="separator:ab8d643ebfe75aeabd7e56dcd5f3f4de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f40fbdb3a381a202a64af46273ff2d5"><td class="memItemLeft" align="right" valign="top"><a id="a1f40fbdb3a381a202a64af46273ff2d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a1f40fbdb3a381a202a64af46273ff2d5">IsGetResponse</a> () const noexcept</td></tr>
+<tr class="memdesc:a1f40fbdb3a381a202a64af46273ff2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response is an RDM GET response. <br /></td></tr>
+<tr class="separator:a1f40fbdb3a381a202a64af46273ff2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256a7c1713b23c8e15e7ffd4344c5752"><td class="memItemLeft" align="right" valign="top"><a id="a256a7c1713b23c8e15e7ffd4344c5752"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a256a7c1713b23c8e15e7ffd4344c5752">IsSetResponse</a> () const noexcept</td></tr>
+<tr class="memdesc:a256a7c1713b23c8e15e7ffd4344c5752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response is an RDM SET response. <br /></td></tr>
+<tr class="separator:a256a7c1713b23c8e15e7ffd4344c5752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa775011c9744521de1f33447692963b8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; rdm::NackReason &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aa775011c9744521de1f33447692963b8">GetNackReason</a> () const noexcept</td></tr>
+<tr class="memdesc:aa775011c9744521de1f33447692963b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NACK reason code of this RDM response.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aa775011c9744521de1f33447692963b8">More...</a><br /></td></tr>
+<tr class="separator:aa775011c9744521de1f33447692963b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a34ed75ac1eff6d7cf3f2014d97523388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ed75ac1eff6d7cf3f2014d97523388">&#9670;&nbsp;</a></span>GetNackReason()</h2>
+<a id="aa775011c9744521de1f33447692963b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa775011c9744521de1f33447692963b8">&#9670;&nbsp;</a></span>GetNackReason()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +316,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_nack_reason.html">rdm::NackReason</a> &gt; rdmnet::llrp::SavedRdmResponse::GetNackReason </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; rdm::NackReason &gt; GetNackReason </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -332,14 +330,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Get the NACK reason code of this RDM response. </p>
-<dl class="section return"><dt>Returns</dt><dd>If <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#abb8696093233b29593d5b373e5945960" title="Whether this response has an RDM response type of NACK_REASON.">IsNack()</a>, the valid NackReason instance. </dd>
+<dl class="section return"><dt>Returns</dt><dd>If <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab8d643ebfe75aeabd7e56dcd5f3f4de4" title="Whether this response has an RDM response type of NACK_REASON.">IsNack()</a>, the valid NackReason instance. </dd>
 <dd>
 If !IsNack(), kEtcPalErrInvalid. </dd></dl>
 
 </div>
 </div>
-<a id="a32d71d5ee0a6a42900a05d067826f626"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32d71d5ee0a6a42900a05d067826f626">&#9670;&nbsp;</a></span>IsAck()</h2>
+<a id="aee525fd418dd6450116133f03393e503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee525fd418dd6450116133f03393e503">&#9670;&nbsp;</a></span>IsAck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +346,7 @@ If !IsNack(), kEtcPalErrInvalid. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rdmnet::llrp::SavedRdmResponse::IsAck </td>
+          <td class="memname">bool IsAck </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -362,12 +360,12 @@ If !IsNack(), kEtcPalErrInvalid. </dd></dl>
 </div><div class="memdoc">
 
 <p>Whether this response has an RDM response type of ACK. </p>
-<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#abb8696093233b29593d5b373e5945960" title="Whether this response has an RDM response type of NACK_REASON.">IsNack()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
+<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab8d643ebfe75aeabd7e56dcd5f3f4de4" title="Whether this response has an RDM response type of NACK_REASON.">IsNack()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
 
 </div>
 </div>
-<a id="abb8696093233b29593d5b373e5945960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb8696093233b29593d5b373e5945960">&#9670;&nbsp;</a></span>IsNack()</h2>
+<a id="ab8d643ebfe75aeabd7e56dcd5f3f4de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d643ebfe75aeabd7e56dcd5f3f4de4">&#9670;&nbsp;</a></span>IsNack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +374,7 @@ If !IsNack(), kEtcPalErrInvalid. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rdmnet::llrp::SavedRdmResponse::IsNack </td>
+          <td class="memname">bool IsNack </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -390,12 +388,12 @@ If !IsNack(), kEtcPalErrInvalid. </dd></dl>
 </div><div class="memdoc">
 
 <p>Whether this response has an RDM response type of NACK_REASON. </p>
-<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a32d71d5ee0a6a42900a05d067826f626" title="Whether this response has an RDM response type of ACK.">IsAck()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
+<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#aee525fd418dd6450116133f03393e503" title="Whether this response has an RDM response type of ACK.">IsAck()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
 
 </div>
 </div>
-<a id="a4c843acc24a29fbd5085fa5241a8ca07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c843acc24a29fbd5085fa5241a8ca07">&#9670;&nbsp;</a></span>IsValid()</h2>
+<a id="a472f705194218179e9cf26ffb288da6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472f705194218179e9cf26ffb288da6c">&#9670;&nbsp;</a></span>IsValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +402,7 @@ If !IsNack(), kEtcPalErrInvalid. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool rdmnet::llrp::SavedRdmResponse::IsValid </td>
+          <td class="memname">bool IsValid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

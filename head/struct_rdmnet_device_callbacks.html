@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,40 +208,130 @@ $(document).ready(function(){initNavTree('struct_rdmnet_device_callbacks.html','
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of notification callbacks received about a device. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="device_8h_source.html">rdmnet/device.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af89447bd4fa95c36278bb19ea29622ce"><td class="memItemLeft" align="right" valign="top"><a id="af89447bd4fa95c36278bb19ea29622ce"></a>
-<a class="el" href="group__rdmnet__device.html#gac8f5b31580a4e3a83073663145a21cc1">RdmnetDeviceConnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#af89447bd4fa95c36278bb19ea29622ce">connected</a></td></tr>
-<tr class="memdesc:af89447bd4fa95c36278bb19ea29622ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:af89447bd4fa95c36278bb19ea29622ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e27cadde6c64dabbbdf43837a79beb"><td class="memItemLeft" align="right" valign="top"><a id="ad1e27cadde6c64dabbbdf43837a79beb"></a>
-<a class="el" href="group__rdmnet__device.html#ga084001e5a7ff5e7c36cccfa199016155">RdmnetDeviceConnectFailedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#ad1e27cadde6c64dabbbdf43837a79beb">connect_failed</a></td></tr>
-<tr class="memdesc:ad1e27cadde6c64dabbbdf43837a79beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:ad1e27cadde6c64dabbbdf43837a79beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52edccc7eecd92f7510e2367a98d134e"><td class="memItemLeft" align="right" valign="top"><a id="a52edccc7eecd92f7510e2367a98d134e"></a>
-<a class="el" href="group__rdmnet__device.html#gaced5affc0d338a713b8c45a2ecb3cd98">RdmnetDeviceDisconnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a52edccc7eecd92f7510e2367a98d134e">disconnected</a></td></tr>
-<tr class="memdesc:a52edccc7eecd92f7510e2367a98d134e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a52edccc7eecd92f7510e2367a98d134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f77366a95993235e128e207a0e4a4bb"><td class="memItemLeft" align="right" valign="top"><a id="a5f77366a95993235e128e207a0e4a4bb"></a>
-<a class="el" href="group__rdmnet__device.html#gad0318dc92f521b1a7cf0a00fc86b02ca">RdmnetDeviceRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a5f77366a95993235e128e207a0e4a4bb">rdm_command_received</a></td></tr>
-<tr class="memdesc:a5f77366a95993235e128e207a0e4a4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a5f77366a95993235e128e207a0e4a4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c95049dcd4ba62b613aa16bc4d7c26e"><td class="memItemLeft" align="right" valign="top"><a id="a8c95049dcd4ba62b613aa16bc4d7c26e"></a>
-<a class="el" href="group__rdmnet__device.html#ga6ebefeca2e43484a63caeb3431897e7c">RdmnetDeviceLlrpRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a8c95049dcd4ba62b613aa16bc4d7c26e">llrp_rdm_command_received</a></td></tr>
-<tr class="memdesc:a8c95049dcd4ba62b613aa16bc4d7c26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a8c95049dcd4ba62b613aa16bc4d7c26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c345b7742a777cd9f1ea2aa8b4af186"><td class="memItemLeft" align="right" valign="top"><a id="a5c345b7742a777cd9f1ea2aa8b4af186"></a>
-<a class="el" href="group__rdmnet__device.html#gada39ef5521e34b3f51d0e43b9e8f29b0">RdmnetDeviceDynamicUidStatusCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a5c345b7742a777cd9f1ea2aa8b4af186">dynamic_uid_status_received</a></td></tr>
-<tr class="memdesc:a5c345b7742a777cd9f1ea2aa8b4af186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional. <br /></td></tr>
-<tr class="separator:a5c345b7742a777cd9f1ea2aa8b4af186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea855069f3e85a29407be8a1fa27b2ad"><td class="memItemLeft" align="right" valign="top"><a id="aea855069f3e85a29407be8a1fa27b2ad"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#aea855069f3e85a29407be8a1fa27b2ad">context</a></td></tr>
-<tr class="memdesc:aea855069f3e85a29407be8a1fa27b2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Pointer to opaque data passed back with each callback. <br /></td></tr>
-<tr class="separator:aea855069f3e85a29407be8a1fa27b2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549be00e98b15c79de8c6175ffc54ae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__device.html#gac8f5b31580a4e3a83073663145a21cc1">RdmnetDeviceConnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a549be00e98b15c79de8c6175ffc54ae0">connected</a></td></tr>
+<tr class="separator:a549be00e98b15c79de8c6175ffc54ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2e4ab2af0063d625aa8ed1289911a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__device.html#ga084001e5a7ff5e7c36cccfa199016155">RdmnetDeviceConnectFailedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a7e2e4ab2af0063d625aa8ed1289911a6">connect_failed</a></td></tr>
+<tr class="separator:a7e2e4ab2af0063d625aa8ed1289911a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea134c641a5c1b0f77b93daffe275496"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__device.html#gaced5affc0d338a713b8c45a2ecb3cd98">RdmnetDeviceDisconnectedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#aea134c641a5c1b0f77b93daffe275496">disconnected</a></td></tr>
+<tr class="separator:aea134c641a5c1b0f77b93daffe275496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06e4b4111ad70dfda1dd3a69356e017"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__device.html#gad0318dc92f521b1a7cf0a00fc86b02ca">RdmnetDeviceRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#af06e4b4111ad70dfda1dd3a69356e017">rdm_command_received</a></td></tr>
+<tr class="separator:af06e4b4111ad70dfda1dd3a69356e017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bffe139815ed8f20aeeee234809f379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__device.html#ga6ebefeca2e43484a63caeb3431897e7c">RdmnetDeviceLlrpRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a4bffe139815ed8f20aeeee234809f379">llrp_rdm_command_received</a></td></tr>
+<tr class="separator:a4bffe139815ed8f20aeeee234809f379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dc39ccf26f36eb620f137220015c77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__device.html#gada39ef5521e34b3f51d0e43b9e8f29b0">RdmnetDeviceDynamicUidStatusCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a58dc39ccf26f36eb620f137220015c77">dynamic_uid_status_received</a></td></tr>
+<tr class="separator:a58dc39ccf26f36eb620f137220015c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a7e2e4ab2af0063d625aa8ed1289911a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2e4ab2af0063d625aa8ed1289911a6">&#9670;&nbsp;</a></span>connect_failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__device.html#ga084001e5a7ff5e7c36cccfa199016155">RdmnetDeviceConnectFailedCallback</a> connect_failed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="a549be00e98b15c79de8c6175ffc54ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549be00e98b15c79de8c6175ffc54ae0">&#9670;&nbsp;</a></span>connected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__device.html#gac8f5b31580a4e3a83073663145a21cc1">RdmnetDeviceConnectedCallback</a> connected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="aea134c641a5c1b0f77b93daffe275496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea134c641a5c1b0f77b93daffe275496">&#9670;&nbsp;</a></span>disconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__device.html#gaced5affc0d338a713b8c45a2ecb3cd98">RdmnetDeviceDisconnectedCallback</a> disconnected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="a58dc39ccf26f36eb620f137220015c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58dc39ccf26f36eb620f137220015c77">&#9670;&nbsp;</a></span>dynamic_uid_status_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__device.html#gada39ef5521e34b3f51d0e43b9e8f29b0">RdmnetDeviceDynamicUidStatusCallback</a> dynamic_uid_status_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional. </p>
+
+</div>
+</div>
+<a id="a4bffe139815ed8f20aeeee234809f379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bffe139815ed8f20aeeee234809f379">&#9670;&nbsp;</a></span>llrp_rdm_command_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__device.html#ga6ebefeca2e43484a63caeb3431897e7c">RdmnetDeviceLlrpRdmCommandReceivedCallback</a> llrp_rdm_command_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="af06e4b4111ad70dfda1dd3a69356e017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06e4b4111ad70dfda1dd3a69356e017">&#9670;&nbsp;</a></span>rdm_command_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__device.html#gad0318dc92f521b1a7cf0a00fc86b02ca">RdmnetDeviceRdmCommandReceivedCallback</a> rdm_command_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="device_8h_source.html">device.h</a></li>
 </ul>

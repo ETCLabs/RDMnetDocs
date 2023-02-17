@@ -1,16 +1,16 @@
 var group__llrp__manager =
 [
     [ "LlrpManagerCallbacks", "struct_llrp_manager_callbacks.html", [
-      [ "context", "struct_llrp_manager_callbacks.html#af19c1533fa3da0c037aea35fbd0c7640", null ],
-      [ "discovery_finished", "struct_llrp_manager_callbacks.html#a8d90aff8b50d69cf91820cf62bf69e17", null ],
-      [ "rdm_response_received", "struct_llrp_manager_callbacks.html#a9a547f3bd194490160988dce8c3e937d", null ],
-      [ "target_discovered", "struct_llrp_manager_callbacks.html#acffa9ee8ffe2616a54202f0bc91008f4", null ]
+      [ "context", "struct_llrp_manager_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
+      [ "discovery_finished", "struct_llrp_manager_callbacks.html#afa2453bba240275dfe2ec2585d03c74c", null ],
+      [ "rdm_response_received", "struct_llrp_manager_callbacks.html#a096d23b11ed4ac00bbf67d8af49b4962", null ],
+      [ "target_discovered", "struct_llrp_manager_callbacks.html#a73ddb7e42b0e28f5f545d6f7cb702728", null ]
     ] ],
     [ "LlrpManagerConfig", "struct_llrp_manager_config.html", [
-      [ "callbacks", "struct_llrp_manager_config.html#aacd8c71d1797bfd725d5848dd623000d", null ],
-      [ "cid", "struct_llrp_manager_config.html#a68b1eac8be5285f8cdf20c94caa744ea", null ],
-      [ "manu_id", "struct_llrp_manager_config.html#ab8867871acbf245a931cb57bdd7a6eee", null ],
-      [ "netint", "struct_llrp_manager_config.html#abd8e9d1ed1eaa7a9461cc88858ca093e", null ]
+      [ "callbacks", "struct_llrp_manager_config.html#ad022e2f001237d0e09def3d7ae51eac7", null ],
+      [ "cid", "struct_llrp_manager_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "manu_id", "struct_llrp_manager_config.html#aeae2232974c932b5888ba8a58ab25fa0", null ],
+      [ "netint", "struct_llrp_manager_config.html#a899716aec7b2e11ef8fa384ee1c0e701", null ]
     ] ],
     [ "LLRP_MANAGER_CONFIG_DEFAULT_INIT", "group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702", null ],
     [ "LLRP_MANAGER_INVALID", "group__llrp__manager.html#ga56b417bccb351a737a88b1ee11b4e355", null ],

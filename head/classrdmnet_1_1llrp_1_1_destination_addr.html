@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::llrp::DestinationAddr Class Reference</title>
+<title>RDMnet: DestinationAddr Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,27 +203,24 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1llrp_1_1_destination_ad
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::llrp::DestinationAddr Class Reference</div>  </div>
+<div class="title">DestinationAddr Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A destination address for an LLRP RDM command. </p>
 <p>Represents an LLRP Target to which an RDM command is addressed. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2llrp__manager_8h_source.html">rdmnet/cpp/llrp_manager.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1edec4d1f637e87de8d9b73696125e32"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html#a1edec4d1f637e87de8d9b73696125e32">DestinationAddr</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;uid, uint16_t subdevice=0)</td></tr>
-<tr class="memdesc:a1edec4d1f637e87de8d9b73696125e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a destination address from its component parts.  <a href="classrdmnet_1_1llrp_1_1_destination_addr.html#a1edec4d1f637e87de8d9b73696125e32">More...</a><br /></td></tr>
-<tr class="separator:a1edec4d1f637e87de8d9b73696125e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cdfe5f8e2322672e46c172f86b78d41"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html#a6cdfe5f8e2322672e46c172f86b78d41">get</a> () const noexcept</td></tr>
-<tr class="memdesc:a6cdfe5f8e2322672e46c172f86b78d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type.  <a href="classrdmnet_1_1llrp_1_1_destination_addr.html#a6cdfe5f8e2322672e46c172f86b78d41">More...</a><br /></td></tr>
-<tr class="separator:a6cdfe5f8e2322672e46c172f86b78d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa670ef8cd02a3ba47698e9cddf07d191"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html#aa670ef8cd02a3ba47698e9cddf07d191">DestinationAddr</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid, const rdm::Uid &amp;uid, uint16_t subdevice=0)</td></tr>
+<tr class="separator:aa670ef8cd02a3ba47698e9cddf07d191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04335ec3c171986c3bc711ecf1fccf85"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html#a04335ec3c171986c3bc711ecf1fccf85">get</a> () const noexcept</td></tr>
+<tr class="memdesc:a04335ec3c171986c3bc711ecf1fccf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type.  <a href="classrdmnet_1_1llrp_1_1_destination_addr.html#a04335ec3c171986c3bc711ecf1fccf85">More...</a><br /></td></tr>
+<tr class="separator:a04335ec3c171986c3bc711ecf1fccf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1edec4d1f637e87de8d9b73696125e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1edec4d1f637e87de8d9b73696125e32">&#9670;&nbsp;</a></span>DestinationAddr()</h2>
+<a id="aa670ef8cd02a3ba47698e9cddf07d191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa670ef8cd02a3ba47698e9cddf07d191">&#9670;&nbsp;</a></span>DestinationAddr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +229,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr rdmnet::llrp::DestinationAddr::DestinationAddr </td>
+          <td class="memname">constexpr <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
           <td class="paramname"><em>cid</em>, </td>
@@ -240,7 +237,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &amp;&#160;</td>
+          <td class="paramtype">const rdm::Uid &amp;&#160;</td>
           <td class="paramname"><em>uid</em>, </td>
         </tr>
         <tr>
@@ -261,9 +258,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Construct a destination address from its component parts. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Construct a destination address from its component parts. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cid</td><td>The target's CID. </td></tr>
     <tr><td class="paramname">uid</td><td>The target's RDM UID. </td></tr>
@@ -275,8 +270,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6cdfe5f8e2322672e46c172f86b78d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cdfe5f8e2322672e46c172f86b78d41">&#9670;&nbsp;</a></span>get()</h2>
+<a id="a04335ec3c171986c3bc711ecf1fccf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04335ec3c171986c3bc711ecf1fccf85">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +280,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> &amp; rdmnet::llrp::DestinationAddr::get </td>
+          <td class="memname">constexpr const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> &amp; get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

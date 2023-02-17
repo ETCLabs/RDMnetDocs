@@ -1,210 +1,210 @@
 var group__rdmnet__api__common =
 [
     [ "RdmnetSourceAddr", "struct_rdmnet_source_addr.html", [
-      [ "rdm_source_uid", "struct_rdmnet_source_addr.html#a648494989df71a6e20f4b8d06770530f", null ],
-      [ "source_endpoint", "struct_rdmnet_source_addr.html#a25cf54210ee6c1c58867d08bb3e7609c", null ],
-      [ "subdevice", "struct_rdmnet_source_addr.html#aa834bbfeccaf6cad3cdf02aaf3bab1fd", null ]
+      [ "rdm_source_uid", "struct_rdmnet_source_addr.html#aa1911b80521233222b22bf113cbfba9c", null ],
+      [ "source_endpoint", "struct_rdmnet_source_addr.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f", null ],
+      [ "subdevice", "struct_rdmnet_source_addr.html#a08af6f95b61e2695caf7b11ebb8e0953", null ]
     ] ],
     [ "RdmnetDestinationAddr", "struct_rdmnet_destination_addr.html", [
-      [ "endpoint", "struct_rdmnet_destination_addr.html#af994e8e7dc2374e6eafbf8c29123e7e6", null ],
-      [ "rdm_uid", "struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e", null ],
-      [ "rdmnet_uid", "struct_rdmnet_destination_addr.html#a8e6df84af732e8c8e08a278da3a41716", null ],
-      [ "subdevice", "struct_rdmnet_destination_addr.html#a7e7996349ea8e4be23b48e4ff38ef16e", null ]
+      [ "endpoint", "struct_rdmnet_destination_addr.html#a09294ef650c9488fa9cc94e0704e91b5", null ],
+      [ "rdm_uid", "struct_rdmnet_destination_addr.html#ac130815a3619e163e3de51dc55a9c129", null ],
+      [ "rdmnet_uid", "struct_rdmnet_destination_addr.html#ad20080c565ac846192826c63c3219567", null ],
+      [ "subdevice", "struct_rdmnet_destination_addr.html#a08af6f95b61e2695caf7b11ebb8e0953", null ]
     ] ],
     [ "RdmnetClientConnectedInfo", "struct_rdmnet_client_connected_info.html", [
-      [ "broker_addr", "struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905", null ],
-      [ "broker_cid", "struct_rdmnet_client_connected_info.html#a64d3dcbac0d8bd8a99be7f83ef3b3231", null ],
-      [ "broker_name", "struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f", null ],
-      [ "broker_uid", "struct_rdmnet_client_connected_info.html#a5a5d0a7ff16ab42092e8ad3006c7d89f", null ]
+      [ "broker_addr", "struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd", null ],
+      [ "broker_cid", "struct_rdmnet_client_connected_info.html#a94b7a31ada085ef20d7d2a5e29c85825", null ],
+      [ "broker_name", "struct_rdmnet_client_connected_info.html#acfd73dc5ff0567920ec01970fb41aaba", null ],
+      [ "broker_uid", "struct_rdmnet_client_connected_info.html#adfda61471109f6b785db3e9070b6711b", null ]
     ] ],
     [ "RdmnetClientConnectFailedInfo", "struct_rdmnet_client_connect_failed_info.html", [
-      [ "event", "struct_rdmnet_client_connect_failed_info.html#a938bd74d32cc8d474500e0539656a331", null ],
-      [ "rdmnet_reason", "struct_rdmnet_client_connect_failed_info.html#a17fa3dd1caa79e9181159556f36c35f3", null ],
-      [ "socket_err", "struct_rdmnet_client_connect_failed_info.html#abafda4d6fd88de7d8bf0ea05cfc27518", null ],
-      [ "will_retry", "struct_rdmnet_client_connect_failed_info.html#a883d69b48ad780a607ecbb03d56bf30c", null ]
+      [ "event", "struct_rdmnet_client_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c", null ],
+      [ "rdmnet_reason", "struct_rdmnet_client_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2", null ],
+      [ "socket_err", "struct_rdmnet_client_connect_failed_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817", null ],
+      [ "will_retry", "struct_rdmnet_client_connect_failed_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824", null ]
     ] ],
     [ "RdmnetClientDisconnectedInfo", "struct_rdmnet_client_disconnected_info.html", [
-      [ "event", "struct_rdmnet_client_disconnected_info.html#aa3dcf7b3313619204322747781425a00", null ],
-      [ "rdmnet_reason", "struct_rdmnet_client_disconnected_info.html#ace2ae21ff6cca177faf9b0298d683a70", null ],
-      [ "socket_err", "struct_rdmnet_client_disconnected_info.html#a5b24cee45d829ad748eab8053c211921", null ],
-      [ "will_retry", "struct_rdmnet_client_disconnected_info.html#af867bbd283bede387ec0370b8da9e0c7", null ]
+      [ "event", "struct_rdmnet_client_disconnected_info.html#a12cc294bc1cd6be39934b72d94c96848", null ],
+      [ "rdmnet_reason", "struct_rdmnet_client_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858", null ],
+      [ "socket_err", "struct_rdmnet_client_disconnected_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817", null ],
+      [ "will_retry", "struct_rdmnet_client_disconnected_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824", null ]
     ] ],
     [ "RdmnetScopeConfig", "struct_rdmnet_scope_config.html", [
-      [ "scope", "struct_rdmnet_scope_config.html#a53bf7560015709c0a2ceaf93e094c95b", null ],
-      [ "static_broker_addr", "struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a", null ]
+      [ "scope", "struct_rdmnet_scope_config.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab", null ],
+      [ "static_broker_addr", "struct_rdmnet_scope_config.html#a0c84d65b0bda9438b948ac7a7907da47", null ]
     ] ],
     [ "RdmnetSyncRdmResponse", "struct_rdmnet_sync_rdm_response.html", [
-      [ "nack_reason", "struct_rdmnet_sync_rdm_response.html#accbf8397113f5691656150cd905be73a", null ],
-      [ "response_action", "struct_rdmnet_sync_rdm_response.html#afbbd8c1594fea06d9a9729478a2e5c1b", null ],
-      [ "response_data", "struct_rdmnet_sync_rdm_response.html#a708ae19c3cea0add9e971d0f8ce2e012", null ],
-      [ "response_data_len", "struct_rdmnet_sync_rdm_response.html#ac2940aef7947006e34a18b23c1c3815c", null ]
+      [ "nack_reason", "struct_rdmnet_sync_rdm_response.html#a3fe6e355a6fdbad6b633273648a34ef1", null ],
+      [ "response_action", "struct_rdmnet_sync_rdm_response.html#aa8a9ab1e51c5db8fd1615e13d4e22e8a", null ],
+      [ "response_data", "struct_rdmnet_sync_rdm_response.html#a27968ac73b781a78a839ac2d6d13ab4e", null ],
+      [ "response_data_len", "struct_rdmnet_sync_rdm_response.html#a3990ab9d830c68fd17925a5d1f689f74", null ]
     ] ],
     [ "RdmnetSyncEptResponse", "struct_rdmnet_sync_ept_response.html", [
-      [ "response_action", "struct_rdmnet_sync_ept_response.html#a1dbd4d5ad7fb220f905f00a128fe26a4", null ],
-      [ "response_data", "struct_rdmnet_sync_ept_response.html#a09d0c8296f65b2d96e52c4f729305631", null ],
-      [ "response_data_len", "struct_rdmnet_sync_ept_response.html#a5f715590acfda9084b8e6921a6beefe5", null ],
-      [ "status_code", "struct_rdmnet_sync_ept_response.html#a47005d788d7e5daab00018bdb7574e0e", null ]
+      [ "response_action", "struct_rdmnet_sync_ept_response.html#a339ec93920ecce36ef60046f552b37c9", null ],
+      [ "response_data", "struct_rdmnet_sync_ept_response.html#a1ab171cabfcfe68c6736a329492fd1a0", null ],
+      [ "response_data_len", "struct_rdmnet_sync_ept_response.html#a3990ab9d830c68fd17925a5d1f689f74", null ],
+      [ "status_code", "struct_rdmnet_sync_ept_response.html#a173906502e3b5416044e8545ecfd5541", null ]
     ] ],
     [ "RdmnetNetintConfig", "struct_rdmnet_netint_config.html", [
-      [ "netints", "struct_rdmnet_netint_config.html#afdc860aa58c95fc16c3925d4d3370f06", null ],
-      [ "no_netints", "struct_rdmnet_netint_config.html#a9ea17cdf601d714c01c6d76bc2dddd94", null ],
-      [ "num_netints", "struct_rdmnet_netint_config.html#a4e2166c863a92fa525273a5408c4e1e7", null ]
+      [ "netints", "struct_rdmnet_netint_config.html#ab031e1bdc110045f5760e1f6a86dc59e", null ],
+      [ "no_netints", "struct_rdmnet_netint_config.html#a45fc59834ac15fd6d3c71454af1d247a", null ],
+      [ "num_netints", "struct_rdmnet_netint_config.html#a6ddc029bb8aba3ead075508554592445", null ]
     ] ],
     [ "LlrpDestinationAddr", "struct_llrp_destination_addr.html", [
-      [ "dest_cid", "struct_llrp_destination_addr.html#ae278a51f1e043076640f187c9a9ce88c", null ],
-      [ "dest_uid", "struct_llrp_destination_addr.html#a5376b761b4d63561725f2e44ac8ef363", null ],
-      [ "subdevice", "struct_llrp_destination_addr.html#a171ea239f97a7af54496f10c88855c48", null ]
+      [ "dest_cid", "struct_llrp_destination_addr.html#a3733778b9ab688a586734aafd57671ed", null ],
+      [ "dest_uid", "struct_llrp_destination_addr.html#aa338a4490fb2e2c37a819966f75cc3e9", null ],
+      [ "subdevice", "struct_llrp_destination_addr.html#a08af6f95b61e2695caf7b11ebb8e0953", null ]
     ] ],
     [ "LlrpDiscoveredTarget", "struct_llrp_discovered_target.html", [
-      [ "cid", "struct_llrp_discovered_target.html#ac9def492d345d0f22a59c329f710146f", null ],
-      [ "component_type", "struct_llrp_discovered_target.html#aece7714b9daea51ddb2a14091c3d9ace", null ],
-      [ "hardware_address", "struct_llrp_discovered_target.html#a29ce14286cb41c556483aacecd347391", null ],
-      [ "uid", "struct_llrp_discovered_target.html#a7740f59bfe2b2ad12087d2290f5bdf03", null ]
+      [ "cid", "struct_llrp_discovered_target.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "component_type", "struct_llrp_discovered_target.html#a98b74ef88251de997b90bb399762371a", null ],
+      [ "hardware_address", "struct_llrp_discovered_target.html#ab28774e4bbf90a14c2b192b84751804e", null ],
+      [ "uid", "struct_llrp_discovered_target.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "RdmnetRdmCommand", "struct_rdmnet_rdm_command.html", [
-      [ "data", "struct_rdmnet_rdm_command.html#acb25f5e5453fa1cfc61647dcf8fa1d82", null ],
-      [ "data_len", "struct_rdmnet_rdm_command.html#a3c638e30619bf6ab832c7a4721dfeed8", null ],
-      [ "dest_endpoint", "struct_rdmnet_rdm_command.html#a498925c0421dedb82a63c805206db0c5", null ],
-      [ "rdm_header", "struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05", null ],
-      [ "rdmnet_source_uid", "struct_rdmnet_rdm_command.html#aea3a8317889a6b5d36600cca64e1679d", null ],
-      [ "seq_num", "struct_rdmnet_rdm_command.html#a606bbb7d7f3e2c07e8029a9debe8ff7b", null ]
+      [ "data", "struct_rdmnet_rdm_command.html#a579f5164b5b16e18ddcdb0296ef81799", null ],
+      [ "data_len", "struct_rdmnet_rdm_command.html#ac78cff7af99787faad2a285dffdde08e", null ],
+      [ "dest_endpoint", "struct_rdmnet_rdm_command.html#acdae598ce618f44892eda9b6df13e69d", null ],
+      [ "rdm_header", "struct_rdmnet_rdm_command.html#aaf4d307076636514f7f15661bad41366", null ],
+      [ "rdmnet_source_uid", "struct_rdmnet_rdm_command.html#aab83acb4fdb2727edff16d91a7df5860", null ],
+      [ "seq_num", "struct_rdmnet_rdm_command.html#a90405e49b793dcdfe95b8151b498a763", null ]
     ] ],
     [ "RdmnetSavedRdmCommand", "struct_rdmnet_saved_rdm_command.html", [
-      [ "data", "struct_rdmnet_saved_rdm_command.html#a018f1e651be1de32d84d3ffc9bee1a5d", null ],
-      [ "data_len", "struct_rdmnet_saved_rdm_command.html#a24b7e14caa031f1f49896cd93d6b1ced", null ],
-      [ "dest_endpoint", "struct_rdmnet_saved_rdm_command.html#a0167850f59abc1e038c7a90ee8b8a618", null ],
-      [ "rdm_header", "struct_rdmnet_saved_rdm_command.html#a28bde55e4a60ad10607d44b31d8ab15e", null ],
-      [ "rdmnet_source_uid", "struct_rdmnet_saved_rdm_command.html#aeaec7f640c8ba5499ea390db23d6ac31", null ],
-      [ "seq_num", "struct_rdmnet_saved_rdm_command.html#a7cce60de9a7c1351d7710f9e084e970b", null ]
+      [ "data", "struct_rdmnet_saved_rdm_command.html#a1f9dbe5a4390d94cb28b7b21d2b656d5", null ],
+      [ "data_len", "struct_rdmnet_saved_rdm_command.html#ac78cff7af99787faad2a285dffdde08e", null ],
+      [ "dest_endpoint", "struct_rdmnet_saved_rdm_command.html#acdae598ce618f44892eda9b6df13e69d", null ],
+      [ "rdm_header", "struct_rdmnet_saved_rdm_command.html#aaf4d307076636514f7f15661bad41366", null ],
+      [ "rdmnet_source_uid", "struct_rdmnet_saved_rdm_command.html#aab83acb4fdb2727edff16d91a7df5860", null ],
+      [ "seq_num", "struct_rdmnet_saved_rdm_command.html#a90405e49b793dcdfe95b8151b498a763", null ]
     ] ],
     [ "RdmnetRdmResponse", "struct_rdmnet_rdm_response.html", [
-      [ "is_response_to_me", "struct_rdmnet_rdm_response.html#a6927eaec013a0e5d6ec7230f46618308", null ],
-      [ "more_coming", "struct_rdmnet_rdm_response.html#a7b23c9c9b5ee45b4be800413eb01a6f8", null ],
-      [ "original_cmd_data", "struct_rdmnet_rdm_response.html#a3898faf486e1348c2144b81e17f4deec", null ],
-      [ "original_cmd_data_len", "struct_rdmnet_rdm_response.html#a2cdb32da028efb87cae284839600157e", null ],
-      [ "original_cmd_header", "struct_rdmnet_rdm_response.html#a0ee041c9ff3e5b0504315ee83e7328c3", null ],
-      [ "rdm_data", "struct_rdmnet_rdm_response.html#a757c3836c4ba3194c16a7fdee725478b", null ],
-      [ "rdm_data_len", "struct_rdmnet_rdm_response.html#a40a585bd57aa4b45b518408829a9038f", null ],
-      [ "rdm_header", "struct_rdmnet_rdm_response.html#a7166b29ccdcf9789259f036c6f9c1c96", null ],
-      [ "rdmnet_source_uid", "struct_rdmnet_rdm_response.html#a4492119a63785bbc3314e862419d1285", null ],
-      [ "seq_num", "struct_rdmnet_rdm_response.html#af3f256fb154ce9fd0835cc2f143efd9e", null ],
-      [ "source_endpoint", "struct_rdmnet_rdm_response.html#a57f388c215190fb011fb031cd2a29be6", null ]
+      [ "is_response_to_me", "struct_rdmnet_rdm_response.html#acccd24ff374a39ca8a8b78c631803d60", null ],
+      [ "more_coming", "struct_rdmnet_rdm_response.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "original_cmd_data", "struct_rdmnet_rdm_response.html#ac95e3be87225f42c40dc594db0fabc2b", null ],
+      [ "original_cmd_data_len", "struct_rdmnet_rdm_response.html#a4cb821114cf0dda217405dc156c015a9", null ],
+      [ "original_cmd_header", "struct_rdmnet_rdm_response.html#a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7", null ],
+      [ "rdm_data", "struct_rdmnet_rdm_response.html#a2f507182f83446298f3772477adabddb", null ],
+      [ "rdm_data_len", "struct_rdmnet_rdm_response.html#a5f39c37f64aba9cf21336ba98a66c18f", null ],
+      [ "rdm_header", "struct_rdmnet_rdm_response.html#a8617009d72714a9a5b6a509d520bc81f", null ],
+      [ "rdmnet_source_uid", "struct_rdmnet_rdm_response.html#aab83acb4fdb2727edff16d91a7df5860", null ],
+      [ "seq_num", "struct_rdmnet_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_endpoint", "struct_rdmnet_rdm_response.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f", null ]
     ] ],
     [ "RdmnetSavedRdmResponse", "struct_rdmnet_saved_rdm_response.html", [
-      [ "is_response_to_me", "struct_rdmnet_saved_rdm_response.html#a77996802788a63c21fa6bdbb6663f277", null ],
-      [ "original_cmd_data", "struct_rdmnet_saved_rdm_response.html#ae2dc2a539787dd85d4985718b35c2813", null ],
-      [ "original_cmd_data_len", "struct_rdmnet_saved_rdm_response.html#aeae09591285ec44d306a1c59429fe7bd", null ],
-      [ "original_cmd_header", "struct_rdmnet_saved_rdm_response.html#ae5cdc5587568b1b40ac706156d60c850", null ],
-      [ "rdm_data", "struct_rdmnet_saved_rdm_response.html#a009b5803242968e227e61d9c3905174a", null ],
-      [ "rdm_data_len", "struct_rdmnet_saved_rdm_response.html#a8eb7d36502a3f31d057e7dd28bd13315", null ],
-      [ "rdm_header", "struct_rdmnet_saved_rdm_response.html#a1252b5961c7fdacb8358b561318a116a", null ],
-      [ "rdmnet_source_uid", "struct_rdmnet_saved_rdm_response.html#a4be5c087517d033632f91a4751b16029", null ],
-      [ "seq_num", "struct_rdmnet_saved_rdm_response.html#ae02534d43bb6ef379672a2a7cf775067", null ],
-      [ "source_endpoint", "struct_rdmnet_saved_rdm_response.html#a61b3adab7b79bb2d967f590ad4270643", null ]
+      [ "is_response_to_me", "struct_rdmnet_saved_rdm_response.html#acccd24ff374a39ca8a8b78c631803d60", null ],
+      [ "original_cmd_data", "struct_rdmnet_saved_rdm_response.html#a7cb0bddd5d4f6c7e25f3c70405607535", null ],
+      [ "original_cmd_data_len", "struct_rdmnet_saved_rdm_response.html#a4cb821114cf0dda217405dc156c015a9", null ],
+      [ "original_cmd_header", "struct_rdmnet_saved_rdm_response.html#a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7", null ],
+      [ "rdm_data", "struct_rdmnet_saved_rdm_response.html#aafa40d6fb794175f944464af95e2e1d0", null ],
+      [ "rdm_data_len", "struct_rdmnet_saved_rdm_response.html#a5f39c37f64aba9cf21336ba98a66c18f", null ],
+      [ "rdm_header", "struct_rdmnet_saved_rdm_response.html#a8617009d72714a9a5b6a509d520bc81f", null ],
+      [ "rdmnet_source_uid", "struct_rdmnet_saved_rdm_response.html#aab83acb4fdb2727edff16d91a7df5860", null ],
+      [ "seq_num", "struct_rdmnet_saved_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_endpoint", "struct_rdmnet_saved_rdm_response.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f", null ]
     ] ],
     [ "RdmnetRptStatus", "struct_rdmnet_rpt_status.html", [
-      [ "seq_num", "struct_rdmnet_rpt_status.html#a58db3bafcaf8cb0d2e0f5d6f096034a4", null ],
-      [ "source_endpoint", "struct_rdmnet_rpt_status.html#a6162b62dba179dde3a053d166f4358dd", null ],
-      [ "source_uid", "struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4", null ],
-      [ "status_code", "struct_rdmnet_rpt_status.html#a7ee615642619dc3f5fd4f52fdf5205e7", null ],
-      [ "status_string", "struct_rdmnet_rpt_status.html#a53ab51517ca9f740f333ea992a1fa412", null ]
+      [ "seq_num", "struct_rdmnet_rpt_status.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_endpoint", "struct_rdmnet_rpt_status.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f", null ],
+      [ "source_uid", "struct_rdmnet_rpt_status.html#a40cba7d6d1910fb740982421cf66c5d6", null ],
+      [ "status_code", "struct_rdmnet_rpt_status.html#ad1e92880377c93c4e7a412a5bb57639c", null ],
+      [ "status_string", "struct_rdmnet_rpt_status.html#a01b97f2df3bfb785cec1ae6ad2f4f67b", null ]
     ] ],
     [ "RdmnetSavedRptStatus", "struct_rdmnet_saved_rpt_status.html", [
-      [ "seq_num", "struct_rdmnet_saved_rpt_status.html#a16968e004cd51efa08eaeae3f31a2257", null ],
-      [ "source_endpoint", "struct_rdmnet_saved_rpt_status.html#a13f4822272610830bf0fb03fac03fb8e", null ],
-      [ "source_uid", "struct_rdmnet_saved_rpt_status.html#a868bc28538dde21d981d7360642c9b8b", null ],
-      [ "status_code", "struct_rdmnet_saved_rpt_status.html#afc45700817eb7b771471114c177cfa2e", null ],
-      [ "status_string", "struct_rdmnet_saved_rpt_status.html#a2384794c81f30db15c2402e29608d600", null ]
+      [ "seq_num", "struct_rdmnet_saved_rpt_status.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_endpoint", "struct_rdmnet_saved_rpt_status.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f", null ],
+      [ "source_uid", "struct_rdmnet_saved_rpt_status.html#a40cba7d6d1910fb740982421cf66c5d6", null ],
+      [ "status_code", "struct_rdmnet_saved_rpt_status.html#ad1e92880377c93c4e7a412a5bb57639c", null ],
+      [ "status_string", "struct_rdmnet_saved_rpt_status.html#af64c068bb273aed2340e88f8b22c149b", null ]
     ] ],
     [ "RdmnetDynamicUidMapping", "struct_rdmnet_dynamic_uid_mapping.html", [
-      [ "rid", "struct_rdmnet_dynamic_uid_mapping.html#a842b8d5b7c14f9baeeb27d7cfbbd684e", null ],
-      [ "status_code", "struct_rdmnet_dynamic_uid_mapping.html#af2645638079a999eca4f03dfb6840d8a", null ],
-      [ "uid", "struct_rdmnet_dynamic_uid_mapping.html#adabe0159fa6e26b091c22ba13780361b", null ]
+      [ "rid", "struct_rdmnet_dynamic_uid_mapping.html#a7c1f62fc07bef14989c3780e804412c3", null ],
+      [ "status_code", "struct_rdmnet_dynamic_uid_mapping.html#ab4493b573d26ae9d71aa1e7834f8efec", null ],
+      [ "uid", "struct_rdmnet_dynamic_uid_mapping.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "RdmnetDynamicUidAssignmentList", "struct_rdmnet_dynamic_uid_assignment_list.html", [
-      [ "mappings", "struct_rdmnet_dynamic_uid_assignment_list.html#af8d7a5c73e14c6d2f6aa2619619c6ddb", null ],
-      [ "more_coming", "struct_rdmnet_dynamic_uid_assignment_list.html#a17fffcf92c8c87d0ed09b04f649ba2e8", null ],
-      [ "num_mappings", "struct_rdmnet_dynamic_uid_assignment_list.html#a3725222dfe8114e80a413479ad6e8f1a", null ]
+      [ "mappings", "struct_rdmnet_dynamic_uid_assignment_list.html#a629bce35ca88bc540a9cf08d025e57f0", null ],
+      [ "more_coming", "struct_rdmnet_dynamic_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_mappings", "struct_rdmnet_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2", null ]
     ] ],
     [ "RdmnetEptData", "struct_rdmnet_ept_data.html", [
-      [ "data", "struct_rdmnet_ept_data.html#a824627defb369962db2c499364468a1d", null ],
-      [ "data_len", "struct_rdmnet_ept_data.html#aa975582a0b5a914117ba809e67ee7f89", null ],
-      [ "manufacturer_id", "struct_rdmnet_ept_data.html#a6880f02c4ef621c6f6eff8e549514bb7", null ],
-      [ "protocol_id", "struct_rdmnet_ept_data.html#a5129aa3cbcb00c91df302116d657b465", null ],
-      [ "source_cid", "struct_rdmnet_ept_data.html#a3fe836dace9e08c161884ad21c8f26c6", null ]
+      [ "data", "struct_rdmnet_ept_data.html#a579f5164b5b16e18ddcdb0296ef81799", null ],
+      [ "data_len", "struct_rdmnet_ept_data.html#ace1c2e33b74df8973a7d9a19c935af80", null ],
+      [ "manufacturer_id", "struct_rdmnet_ept_data.html#a4ad31fcb69f8aaca8f3c1820bb4d8594", null ],
+      [ "protocol_id", "struct_rdmnet_ept_data.html#ae44950c5a1939c04b9a9337a57828a35", null ],
+      [ "source_cid", "struct_rdmnet_ept_data.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ]
     ] ],
     [ "RdmnetSavedEptData", "struct_rdmnet_saved_ept_data.html", [
-      [ "data", "struct_rdmnet_saved_ept_data.html#a286f9e2fc721dece18a72d175909f0f3", null ],
-      [ "data_len", "struct_rdmnet_saved_ept_data.html#abab6198e93b9825f1f558db73dabc778", null ],
-      [ "manufacturer_id", "struct_rdmnet_saved_ept_data.html#a6679c1808eaa156a769196638d708cce", null ],
-      [ "protocol_id", "struct_rdmnet_saved_ept_data.html#a12bf8e90533152d32e50da3b678de01c", null ],
-      [ "source_cid", "struct_rdmnet_saved_ept_data.html#a0676c09d97d54854aec72716a964fa3d", null ]
+      [ "data", "struct_rdmnet_saved_ept_data.html#a579f5164b5b16e18ddcdb0296ef81799", null ],
+      [ "data_len", "struct_rdmnet_saved_ept_data.html#ace1c2e33b74df8973a7d9a19c935af80", null ],
+      [ "manufacturer_id", "struct_rdmnet_saved_ept_data.html#a4ad31fcb69f8aaca8f3c1820bb4d8594", null ],
+      [ "protocol_id", "struct_rdmnet_saved_ept_data.html#ae44950c5a1939c04b9a9337a57828a35", null ],
+      [ "source_cid", "struct_rdmnet_saved_ept_data.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ]
     ] ],
     [ "RdmnetEptStatus", "struct_rdmnet_ept_status.html", [
-      [ "source_cid", "struct_rdmnet_ept_status.html#a0393a00733c2f0a144f436dd1fcb8456", null ],
-      [ "status_code", "struct_rdmnet_ept_status.html#ad2e681d1a760b87719d5192727b91e60", null ],
-      [ "status_string", "struct_rdmnet_ept_status.html#a59dd437d99db6b4fdd500fab70bde042", null ]
+      [ "source_cid", "struct_rdmnet_ept_status.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ],
+      [ "status_code", "struct_rdmnet_ept_status.html#a173906502e3b5416044e8545ecfd5541", null ],
+      [ "status_string", "struct_rdmnet_ept_status.html#a01b97f2df3bfb785cec1ae6ad2f4f67b", null ]
     ] ],
     [ "RdmnetSavedEptStatus", "struct_rdmnet_saved_ept_status.html", [
-      [ "source_cid", "struct_rdmnet_saved_ept_status.html#a7865c7dd05e00be6841601e44147a5c6", null ],
-      [ "status_code", "struct_rdmnet_saved_ept_status.html#a02436465747d77507362fbc1eef22fa9", null ],
-      [ "status_string", "struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4", null ]
+      [ "source_cid", "struct_rdmnet_saved_ept_status.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ],
+      [ "status_code", "struct_rdmnet_saved_ept_status.html#a173906502e3b5416044e8545ecfd5541", null ],
+      [ "status_string", "struct_rdmnet_saved_ept_status.html#a01b97f2df3bfb785cec1ae6ad2f4f67b", null ]
     ] ],
     [ "RdmnetRptClientEntry", "struct_rdmnet_rpt_client_entry.html", [
-      [ "binding_cid", "struct_rdmnet_rpt_client_entry.html#ad8287f6a5cbefde06a7e70ff4eee0091", null ],
-      [ "cid", "struct_rdmnet_rpt_client_entry.html#adefb8e2be2ed7250cd5c636d0d396a2d", null ],
-      [ "type", "struct_rdmnet_rpt_client_entry.html#ae47f295713b57d8238f420a70e1b7289", null ],
-      [ "uid", "struct_rdmnet_rpt_client_entry.html#aeedb7a29e8587dc82a1586f72b0afcee", null ]
+      [ "binding_cid", "struct_rdmnet_rpt_client_entry.html#aac401936a538337199a0e25114b017cf", null ],
+      [ "cid", "struct_rdmnet_rpt_client_entry.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "type", "struct_rdmnet_rpt_client_entry.html#a99ea5a63f1a82d7352ad21fc593a21fc", null ],
+      [ "uid", "struct_rdmnet_rpt_client_entry.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "RdmnetEptSubProtocol", "struct_rdmnet_ept_sub_protocol.html", [
-      [ "manufacturer_id", "struct_rdmnet_ept_sub_protocol.html#ac6e49c213c8a7ab24fe8bae4bdfc7f1d", null ],
-      [ "protocol_id", "struct_rdmnet_ept_sub_protocol.html#a15f370cadc5c27278ae79f9edbc2ec2b", null ],
-      [ "protocol_string", "struct_rdmnet_ept_sub_protocol.html#a773bb3d3b22ea01a6bbcdb0bd210fd58", null ]
+      [ "manufacturer_id", "struct_rdmnet_ept_sub_protocol.html#a4ad31fcb69f8aaca8f3c1820bb4d8594", null ],
+      [ "protocol_id", "struct_rdmnet_ept_sub_protocol.html#ae44950c5a1939c04b9a9337a57828a35", null ],
+      [ "protocol_string", "struct_rdmnet_ept_sub_protocol.html#a4baa605d142ce6b73a04a01398662d67", null ]
     ] ],
     [ "RdmnetEptClientEntry", "struct_rdmnet_ept_client_entry.html", [
-      [ "cid", "struct_rdmnet_ept_client_entry.html#a0fc4f36b08efe7fb323753a7a4399227", null ],
-      [ "num_protocols", "struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0", null ],
-      [ "protocols", "struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860", null ]
+      [ "cid", "struct_rdmnet_ept_client_entry.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "num_protocols", "struct_rdmnet_ept_client_entry.html#ac4c5442623e5438a686daf3f26345968", null ],
+      [ "protocols", "struct_rdmnet_ept_client_entry.html#a01897bbacbe36f0b0114787a6f415ce0", null ]
     ] ],
     [ "RdmnetRptClientList", "struct_rdmnet_rpt_client_list.html", [
-      [ "client_entries", "struct_rdmnet_rpt_client_list.html#ab83c415e9196e74a3fa20b73d3407586", null ],
-      [ "more_coming", "struct_rdmnet_rpt_client_list.html#ae47a845eafcc1ead4a2c5e39c9e7ae50", null ],
-      [ "num_client_entries", "struct_rdmnet_rpt_client_list.html#acdd2b6b109461335c356422b1bb15d6c", null ]
+      [ "client_entries", "struct_rdmnet_rpt_client_list.html#a66f28e829e9ff1f5c0ec95a7338e8b85", null ],
+      [ "more_coming", "struct_rdmnet_rpt_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_client_entries", "struct_rdmnet_rpt_client_list.html#afccd922a3754fa31008826b55b692c66", null ]
     ] ],
     [ "RdmnetEptClientList", "struct_rdmnet_ept_client_list.html", [
-      [ "client_entries", "struct_rdmnet_ept_client_list.html#a3c76e64783b650c4253bc90f8c28b090", null ],
-      [ "more_coming", "struct_rdmnet_ept_client_list.html#a431174f9f4f6fd45a4178c5484f12415", null ],
-      [ "num_client_entries", "struct_rdmnet_ept_client_list.html#a4e70cc13f7c860f2f2e47f2d443a9414", null ]
+      [ "client_entries", "struct_rdmnet_ept_client_list.html#afba9308d3f6abd159cb4fc60eaeb0d8c", null ],
+      [ "more_coming", "struct_rdmnet_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_client_entries", "struct_rdmnet_ept_client_list.html#afccd922a3754fa31008826b55b692c66", null ]
     ] ],
     [ "LlrpRdmCommand", "struct_llrp_rdm_command.html", [
-      [ "data", "struct_llrp_rdm_command.html#a60f1091f83ec8393398deed1d2d1a37a", null ],
-      [ "data_len", "struct_llrp_rdm_command.html#a763d1cac0bc8523e476f9ae7b8500ced", null ],
-      [ "netint_id", "struct_llrp_rdm_command.html#a5a3997de8a6704fbb939261246e926dd", null ],
-      [ "rdm_header", "struct_llrp_rdm_command.html#acf33c16492790e3160911c5f99a36e92", null ],
-      [ "seq_num", "struct_llrp_rdm_command.html#a433153fa2fb35528a9f63dd3a48b64f4", null ],
-      [ "source_cid", "struct_llrp_rdm_command.html#aa688f2c0f827d70cb107209af801368f", null ]
+      [ "data", "struct_llrp_rdm_command.html#a579f5164b5b16e18ddcdb0296ef81799", null ],
+      [ "data_len", "struct_llrp_rdm_command.html#ac78cff7af99787faad2a285dffdde08e", null ],
+      [ "netint_id", "struct_llrp_rdm_command.html#a3ff7553e2a77e172059f002457e5b6ab", null ],
+      [ "rdm_header", "struct_llrp_rdm_command.html#aaf4d307076636514f7f15661bad41366", null ],
+      [ "seq_num", "struct_llrp_rdm_command.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_cid", "struct_llrp_rdm_command.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ]
     ] ],
     [ "LlrpSavedRdmCommand", "struct_llrp_saved_rdm_command.html", [
-      [ "data", "struct_llrp_saved_rdm_command.html#a45918b3a17e8ec7749291da088a6f8b3", null ],
-      [ "data_len", "struct_llrp_saved_rdm_command.html#a4937489b97342810f9dfa7f73e4c5f4d", null ],
-      [ "netint_id", "struct_llrp_saved_rdm_command.html#ab309bc4f97e2bb652c088fe88278a5ba", null ],
-      [ "rdm_header", "struct_llrp_saved_rdm_command.html#aa0ba4319bb4c7c569edf61cc5823ec3b", null ],
-      [ "seq_num", "struct_llrp_saved_rdm_command.html#a7a504e2d58f615ef13e9aae517fa71d1", null ],
-      [ "source_cid", "struct_llrp_saved_rdm_command.html#aa43ea8b98025c660bc2c8afe5d004c07", null ]
+      [ "data", "struct_llrp_saved_rdm_command.html#a1f9dbe5a4390d94cb28b7b21d2b656d5", null ],
+      [ "data_len", "struct_llrp_saved_rdm_command.html#ac78cff7af99787faad2a285dffdde08e", null ],
+      [ "netint_id", "struct_llrp_saved_rdm_command.html#a3ff7553e2a77e172059f002457e5b6ab", null ],
+      [ "rdm_header", "struct_llrp_saved_rdm_command.html#aaf4d307076636514f7f15661bad41366", null ],
+      [ "seq_num", "struct_llrp_saved_rdm_command.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_cid", "struct_llrp_saved_rdm_command.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ]
     ] ],
     [ "LlrpRdmResponse", "struct_llrp_rdm_response.html", [
-      [ "rdm_data", "struct_llrp_rdm_response.html#a24ab197a0c24d70c1b190e0457f5ac5a", null ],
-      [ "rdm_data_len", "struct_llrp_rdm_response.html#aa0e01ac95ed5e01c11e36bd97abca7cc", null ],
-      [ "rdm_header", "struct_llrp_rdm_response.html#a862f1a7a0616749399fe262f024764db", null ],
-      [ "seq_num", "struct_llrp_rdm_response.html#a4f18e9a664b388e2e6cc2487bd461445", null ],
-      [ "source_cid", "struct_llrp_rdm_response.html#a30c3476287db62c29b7e205f2f6b3538", null ]
+      [ "rdm_data", "struct_llrp_rdm_response.html#a2f507182f83446298f3772477adabddb", null ],
+      [ "rdm_data_len", "struct_llrp_rdm_response.html#accb2b802793d0f1a3c83bbd7a60d0ae9", null ],
+      [ "rdm_header", "struct_llrp_rdm_response.html#a8617009d72714a9a5b6a509d520bc81f", null ],
+      [ "seq_num", "struct_llrp_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_cid", "struct_llrp_rdm_response.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ]
     ] ],
     [ "LlrpSavedRdmResponse", "struct_llrp_saved_rdm_response.html", [
-      [ "rdm_data", "struct_llrp_saved_rdm_response.html#a51901cc7977cc941d41b37afe52827e1", null ],
-      [ "rdm_data_len", "struct_llrp_saved_rdm_response.html#a4cd494006223ddd78c7420790cb68889", null ],
-      [ "rdm_header", "struct_llrp_saved_rdm_response.html#aef739afbb229e4996d705115609b1d98", null ],
-      [ "seq_num", "struct_llrp_saved_rdm_response.html#a395d4b078b90ef42b6ee45511d92e228", null ],
-      [ "source_cid", "struct_llrp_saved_rdm_response.html#a52e84cd13d7838aefd80fccee889174a", null ]
+      [ "rdm_data", "struct_llrp_saved_rdm_response.html#acc108dfa1b3c51dd118cdb92b58cc60a", null ],
+      [ "rdm_data_len", "struct_llrp_saved_rdm_response.html#accb2b802793d0f1a3c83bbd7a60d0ae9", null ],
+      [ "rdm_header", "struct_llrp_saved_rdm_response.html#a8617009d72714a9a5b6a509d520bc81f", null ],
+      [ "seq_num", "struct_llrp_saved_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "source_cid", "struct_llrp_saved_rdm_response.html#a1e54a6f2928120797e7bcf3031cf9fd1", null ]
     ] ],
     [ "EPT_PROTOCOL_STRING_PADDED_LENGTH", "group__rdmnet__api__common.html#ga8997a1dc8fda4cfd54cc352551231a8d", null ],
     [ "RDMNET_ADDR_TO_DEFAULT_RESPONDER", "group__rdmnet__api__common.html#ga58f3b5c690b7ebd792e8d2851af95ea0", null ],

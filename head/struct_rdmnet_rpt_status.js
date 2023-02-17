@@ -1,8 +1,8 @@
 var struct_rdmnet_rpt_status =
 [
-    [ "seq_num", "struct_rdmnet_rpt_status.html#a58db3bafcaf8cb0d2e0f5d6f096034a4", null ],
-    [ "source_endpoint", "struct_rdmnet_rpt_status.html#a6162b62dba179dde3a053d166f4358dd", null ],
-    [ "source_uid", "struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4", null ],
-    [ "status_code", "struct_rdmnet_rpt_status.html#a7ee615642619dc3f5fd4f52fdf5205e7", null ],
-    [ "status_string", "struct_rdmnet_rpt_status.html#a53ab51517ca9f740f333ea992a1fa412", null ]
+    [ "seq_num", "struct_rdmnet_rpt_status.html#a90405e49b793dcdfe95b8151b498a763", null ],
+    [ "source_endpoint", "struct_rdmnet_rpt_status.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f", null ],
+    [ "source_uid", "struct_rdmnet_rpt_status.html#a40cba7d6d1910fb740982421cf66c5d6", null ],
+    [ "status_code", "struct_rdmnet_rpt_status.html#ad1e92880377c93c4e7a412a5bb57639c", null ],
+    [ "status_string", "struct_rdmnet_rpt_status.html#a01b97f2df3bfb785cec1ae6ad2f4f67b", null ]
 ];

@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -228,7 +227,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define RDMNET_CPP_MESSAGE_TYPES_EPT_STATUS_H_</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">rdmnet/common.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="message_8h.html">rdmnet/message.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -244,13 +243,13 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#a27ce0f8d7d1931831861d3af4005bab7">   48</a></span>&#160;  <a class="code" href="classrdmnet_1_1_ept_status.html">EptStatus</a>&amp; <a class="code" href="classrdmnet_1_1_ept_status.html#a27ce0f8d7d1931831861d3af4005bab7">operator=</a>(<span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_ept_status.html">EptStatus</a>&amp; other) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  constexpr <a class="code" href="classrdmnet_1_1_ept_status.html#a58e361a1a070f2272c3f0d0bba1cf422">EptStatus</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a>&amp; c_status);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  constexpr <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>      <a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">source_cid</a>() const noexcept;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  constexpr <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>      <a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">source_cid</a>() const noexcept;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  constexpr <a class="code" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> <a class="code" href="classrdmnet_1_1_ept_status.html#a31421c227703421f86973fd684566cb2">status_code</a>() const noexcept;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  constexpr const <span class="keywordtype">char</span>*       <a class="code" href="classrdmnet_1_1_ept_status.html#ad7518a9c361b0be0fe5c181e9e876f2b">status_c_str</a>() const noexcept;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::<span class="keywordtype">string</span>                 <a class="code" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">status_string</a>() const;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>                 <a class="code" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">status_string</a>() const;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  const <span class="keywordtype">char</span>*    <a class="code" href="classrdmnet_1_1_ept_status.html#a2e319b9a75e1bb7b22909c190272f7fc">CodeToCString</a>() const noexcept;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::<span class="keywordtype">string</span>    <a class="code" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">CodeToString</a>() const;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>    <a class="code" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">CodeToString</a>() const;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  constexpr <span class="keywordtype">bool</span> <a class="code" href="classrdmnet_1_1_ept_status.html#a3b3c8c0cdef694d8680a3d29bc40aca5">HasStatusString</a>() const noexcept;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  constexpr const <a class="code" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a>&amp; <a class="code" href="classrdmnet_1_1_ept_status.html#a3797a741d76b30fa8dc7f729dadb6f8a">get</a>() const noexcept;</div>
@@ -270,19 +269,19 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classrdmnet_1_1_saved_ept_status.html">SavedEptStatus</a>(<span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_ept_status.html">EptStatus</a>&amp; status);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classrdmnet_1_1_saved_ept_status.html">SavedEptStatus</a>&amp; <a class="code" href="classrdmnet_1_1_ept_status.html#a27ce0f8d7d1931831861d3af4005bab7">operator=</a>(<span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_ept_status.html">EptStatus</a>&amp; status);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&amp; <a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">source_cid</a>() const noexcept;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&amp; <a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">source_cid</a>() const noexcept;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a>   <a class="code" href="classrdmnet_1_1_ept_status.html#a31421c227703421f86973fd684566cb2">status_code</a>() const noexcept;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  const std::<span class="keywordtype">string</span>&amp;  <a class="code" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">status_string</a>() const noexcept;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  const <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>&amp;  <a class="code" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">status_string</a>() const noexcept;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">bool</span>        IsValid() const noexcept;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  const <span class="keywordtype">char</span>* <a class="code" href="classrdmnet_1_1_ept_status.html#a2e319b9a75e1bb7b22909c190272f7fc">CodeToCString</a>() const noexcept;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::<span class="keywordtype">string</span> <a class="code" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">CodeToString</a>() const;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span> <a class="code" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">CodeToString</a>() const;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span>        <a class="code" href="classrdmnet_1_1_ept_status.html#a3b3c8c0cdef694d8680a3d29bc40aca5">HasStatusString</a>() const noexcept;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;private:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html">etcpal</a>::Uuid      source_cid_;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_bad_expected_access.html">etcpal</a>::Uuid      source_cid_;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  std::<span class="keywordtype">string</span>       status_string_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/namespacestd.html">std</a>::<span class="keywordtype">string</span>       status_string_;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// EptStatus function definitions</span></div>
@@ -291,7 +290,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">  105</a></span>&#160;constexpr <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> <a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">EptStatus::source_cid</a>() const noexcept</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">  105</a></span>&#160;constexpr <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> <a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">EptStatus::source_cid</a>() const noexcept</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">return</span> status_.source_cid;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
@@ -306,7 +305,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> status_.status_string;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">  123</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">EptStatus::status_string</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">  123</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">EptStatus::status_string</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">return</span> status_.status_string;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
@@ -316,7 +315,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> status_.status_string;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">  135</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">EptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">  135</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classrdmnet_1_1_ept_status.html#a3c9c36a852d314a02f05d6e98a261c18">EptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">return</span> status_.status_string;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
@@ -342,7 +341,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    : source_cid_(c_status.<a class="code" href="classrdmnet_1_1_ept_status.html#abee5c6ea63d7dc369301cc5dda8393d9">source_cid</a>), status_code_(c_status.<a class="code" href="classrdmnet_1_1_ept_status.html#a31421c227703421f86973fd684566cb2">status_code</a>)</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">if</span> (c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4">status_string</a>)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    status_string_.assign(c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4">status_string</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    status_string_.<a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string/assign.html">assign</a>(c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4">status_string</a>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a63b3c31f31e953afbedcee2e71cbc5f8">  172</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classrdmnet_1_1_saved_ept_status.html">SavedEptStatus</a>&amp; <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a63b3c31f31e953afbedcee2e71cbc5f8">SavedEptStatus::operator=</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a>&amp; c_status)</div>
@@ -350,7 +349,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  source_cid_ = c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a7865c7dd05e00be6841601e44147a5c6">source_cid</a>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  status_code_ = c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a02436465747d77507362fbc1eef22fa9">status_code</a>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">if</span> (c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4">status_string</a>)</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    status_string_.assign(c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4">status_string</a>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    status_string_.<a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string/assign.html">assign</a>(c_status.<a class="code" href="struct_rdmnet_saved_ept_status.html#a13170c2e1d4fded5ab7cd9745bc9b4a4">status_string</a>);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
@@ -367,7 +366,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a13a72d8427a4356abc77907700fd93e5">  197</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&amp; <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a13a72d8427a4356abc77907700fd93e5">SavedEptStatus::source_cid</a>() const noexcept</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a13a72d8427a4356abc77907700fd93e5">  197</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&amp; <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a13a72d8427a4356abc77907700fd93e5">SavedEptStatus::source_cid</a>() const noexcept</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">return</span> source_cid_;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
@@ -377,14 +376,14 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">return</span> status_code_;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a9651039086fb2fe49a6bef91a767a3ea">  209</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a9651039086fb2fe49a6bef91a767a3ea">SavedEptStatus::status_string</a>() const noexcept</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a9651039086fb2fe49a6bef91a767a3ea">  209</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&amp; <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a9651039086fb2fe49a6bef91a767a3ea">SavedEptStatus::status_string</a>() const noexcept</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">return</span> status_string_;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
 <div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a733fb91da18f97ce0f22a33da7b5e391">  215</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a733fb91da18f97ce0f22a33da7b5e391">SavedEptStatus::IsValid</a>() const noexcept</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;{</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordflow">return</span> !source_cid_.<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordflow">return</span> !source_cid_.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a>();</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
 <div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a23b3d130b297927ed06911672a492703">  221</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a23b3d130b297927ed06911672a492703">SavedEptStatus::CodeToCString</a>() const noexcept</div>
@@ -392,21 +391,23 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a>(status_code_);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a14f2e399a54343e674ad3f0ae2f07cf5">  227</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a14f2e399a54343e674ad3f0ae2f07cf5">SavedEptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#a14f2e399a54343e674ad3f0ae2f07cf5">  227</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="classrdmnet_1_1_saved_ept_status.html#a14f2e399a54343e674ad3f0ae2f07cf5">SavedEptStatus::CodeToString</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a>(status_code_);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_saved_ept_status.html#acc383ecb0e001e73f27af11aabc6d77f">  233</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classrdmnet_1_1_saved_ept_status.html#acc383ecb0e001e73f27af11aabc6d77f">SavedEptStatus::HasStatusString</a>() const noexcept</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">return</span> !status_string_.empty();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">return</span> !status_string_.<a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string/empty.html">empty</a>();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};  <span class="comment">// namespace rdmnet</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// RDMNET_CPP_MESSAGE_TYPES_EPT_STATUS_H_</span></div>
-<div class="ttc" id="aclassetcpal_1_1_bad_expected_access_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html">etcpal</a></div></div>
-<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
-<div class="ttc" id="aclassetcpal_1_1_uuid_html_a27909eb1d61b8b261d259be7c70c58dd"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">etcpal::Uuid::IsNull</a></div><div class="ttdeci">bool IsNull() const noexcept</div></div>
+<div class="ttc" id="aassign_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string/assign.html">std::string::assign</a></div><div class="ttdeci">T assign(T... args)</div></div>
+<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_bad_expected_access_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_bad_expected_access.html">etcpal</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_uuid_html_a27909eb1d61b8b261d259be7c70c58dd"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">etcpal::Uuid::IsNull</a></div><div class="ttdeci">bool IsNull() const noexcept</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_status_html"><div class="ttname"><a href="classrdmnet_1_1_ept_status.html">rdmnet::EptStatus</a></div><div class="ttdoc">An EPT status message received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> ept_status.h:41</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_status_html_a217530f9a48d57811a14d6c97e0dba83"><div class="ttname"><a href="classrdmnet_1_1_ept_status.html#a217530f9a48d57811a14d6c97e0dba83">rdmnet::EptStatus::status_string</a></div><div class="ttdeci">std::string status_string() const</div><div class="ttdoc">Get the optional status string accompanying this status message.</div><div class="ttdef"><b>Definition:</b> ept_status.h:123</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_status_html_a27ce0f8d7d1931831861d3af4005bab7"><div class="ttname"><a href="classrdmnet_1_1_ept_status.html#a27ce0f8d7d1931831861d3af4005bab7">rdmnet::EptStatus::operator=</a></div><div class="ttdeci">EptStatus &amp; operator=(const EptStatus &amp;other)=delete</div><div class="ttdoc">Not copyable - use Save() to create a copyable version.</div></div>
@@ -431,11 +432,13 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <div class="ttc" id="aclassrdmnet_1_1_saved_ept_status_html_aa590ca92c2f2eec5997f2e248b4a31be"><div class="ttname"><a href="classrdmnet_1_1_saved_ept_status.html#aa590ca92c2f2eec5997f2e248b4a31be">rdmnet::SavedEptStatus::status_code</a></div><div class="ttdeci">ept_status_code_t status_code() const noexcept</div><div class="ttdoc">Get the EPT status code of this status message.</div><div class="ttdef"><b>Definition:</b> ept_status.h:203</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_saved_ept_status_html_acc383ecb0e001e73f27af11aabc6d77f"><div class="ttname"><a href="classrdmnet_1_1_saved_ept_status.html#acc383ecb0e001e73f27af11aabc6d77f">rdmnet::SavedEptStatus::HasStatusString</a></div><div class="ttdeci">bool HasStatusString() const noexcept</div><div class="ttdoc">Determine whether the optional EPT status string is present.</div><div class="ttdef"><b>Definition:</b> ept_status.h:233</div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">Functions and definitions common to all RDMnet API modules.</div></div>
-<div class="ttc" id="acpp_2uuid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
+<div class="ttc" id="acpp_2uuid_8h.html_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
+<div class="ttc" id="aempty_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string/empty.html">std::string::empty</a></div><div class="ttdeci">T empty(T... args)</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga1d378dff587acdfa8306c1075e316f4a"><div class="ttname"><a href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a></div><div class="ttdeci">const char * rdmnet_ept_status_code_to_string(ept_status_code_t code)</div><div class="ttdoc">Get a string representation of an EPT status code.</div><div class="ttdef"><b>Definition:</b> common.c:250</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga32d742eda6003b7ca62688f6f0bfac9d"><div class="ttname"><a href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a></div><div class="ttdeci">ept_status_code_t</div><div class="ttdoc">EPT status code definitions.</div><div class="ttdef"><b>Definition:</b> common.h:76</div></div>
 <div class="ttc" id="amessage_8h_html"><div class="ttname"><a href="message_8h.html">message.h</a></div><div class="ttdoc">Basic types for parsed RDMnet messages.</div></div>
 <div class="ttc" id="anamespacerdmnet_html"><div class="ttname"><a href="namespacerdmnet.html">rdmnet</a></div><div class="ttdoc">A namespace which contains all C++ language definitions in the RDMnet library.</div><div class="ttdef"><b>Definition:</b> broker.h:45</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="https://en.cppreference.com/w/namespacestd.html">std</a></div></div>
 <div class="ttc" id="astruct_rdmnet_ept_status_html"><div class="ttname"><a href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a></div><div class="ttdoc">An RDMnet EPT status message received by a local component.</div><div class="ttdef"><b>Definition:</b> message.h:309</div></div>
 <div class="ttc" id="astruct_rdmnet_saved_ept_status_html"><div class="ttname"><a href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a></div><div class="ttdoc">An EPT status received over RDMnet and saved for later processing.</div><div class="ttdef"><b>Definition:</b> message.h:327</div></div>
 <div class="ttc" id="astruct_rdmnet_saved_ept_status_html_a02436465747d77507362fbc1eef22fa9"><div class="ttname"><a href="struct_rdmnet_saved_ept_status.html#a02436465747d77507362fbc1eef22fa9">RdmnetSavedEptStatus::status_code</a></div><div class="ttdeci">ept_status_code_t status_code</div><div class="ttdoc">A status code that indicates the specific error or status condition.</div><div class="ttdef"><b>Definition:</b> message.h:331</div></div>
@@ -446,7 +449,7 @@ $(document).ready(function(){initNavTree('ept__status_8h_source.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_02a5fb8fc63da27b1563e16cf3c5ea38.html">cpp</a></li><li class="navelem"><a class="el" href="dir_b48a204088b915aab85bb8a1e2744bac.html">message_types</a></li><li class="navelem"><a class="el" href="ept__status_8h.html">ept_status.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_476dbcf122891e8399ecd39139c29436.html">cpp</a></li><li class="navelem"><a class="el" href="dir_949e82c3e1194d1b5fce2e51fcccfe03.html">message_types</a></li><li class="navelem"><a class="el" href="ept__status_8h.html">ept_status.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

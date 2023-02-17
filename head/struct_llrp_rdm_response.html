@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,32 +208,96 @@ $(document).ready(function(){initNavTree('struct_llrp_rdm_response.html',''); in
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An RDM response received from a remote LLRP Target. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a30c3476287db62c29b7e205f2f6b3538"><td class="memItemLeft" align="right" valign="top"><a id="a30c3476287db62c29b7e205f2f6b3538"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a30c3476287db62c29b7e205f2f6b3538">source_cid</a></td></tr>
-<tr class="memdesc:a30c3476287db62c29b7e205f2f6b3538"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CID of the LLRP Target from which this command was received. <br /></td></tr>
-<tr class="separator:a30c3476287db62c29b7e205f2f6b3538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f18e9a664b388e2e6cc2487bd461445"><td class="memItemLeft" align="right" valign="top"><a id="a4f18e9a664b388e2e6cc2487bd461445"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a4f18e9a664b388e2e6cc2487bd461445">seq_num</a></td></tr>
-<tr class="memdesc:a4f18e9a664b388e2e6cc2487bd461445"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sequence number of this response (to be associated with a previously-sent command). <br /></td></tr>
-<tr class="separator:a4f18e9a664b388e2e6cc2487bd461445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a862f1a7a0616749399fe262f024764db"><td class="memItemLeft" align="right" valign="top"><a id="a862f1a7a0616749399fe262f024764db"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_response_header.html">RdmResponseHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a862f1a7a0616749399fe262f024764db">rdm_header</a></td></tr>
-<tr class="memdesc:a862f1a7a0616749399fe262f024764db"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header information from the encapsulated RDM response. <br /></td></tr>
-<tr class="separator:a862f1a7a0616749399fe262f024764db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ab197a0c24d70c1b190e0457f5ac5a"><td class="memItemLeft" align="right" valign="top"><a id="a24ab197a0c24d70c1b190e0457f5ac5a"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a24ab197a0c24d70c1b190e0457f5ac5a">rdm_data</a></td></tr>
-<tr class="memdesc:a24ab197a0c24d70c1b190e0457f5ac5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any parameter data associated with the RDM response. <br /></td></tr>
-<tr class="separator:a24ab197a0c24d70c1b190e0457f5ac5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e01ac95ed5e01c11e36bd97abca7cc"><td class="memItemLeft" align="right" valign="top"><a id="aa0e01ac95ed5e01c11e36bd97abca7cc"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#aa0e01ac95ed5e01c11e36bd97abca7cc">rdm_data_len</a></td></tr>
-<tr class="memdesc:aa0e01ac95ed5e01c11e36bd97abca7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the parameter data associated with the RDM response. <br /></td></tr>
-<tr class="separator:aa0e01ac95ed5e01c11e36bd97abca7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e54a6f2928120797e7bcf3031cf9fd1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a1e54a6f2928120797e7bcf3031cf9fd1">source_cid</a></td></tr>
+<tr class="separator:a1e54a6f2928120797e7bcf3031cf9fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90405e49b793dcdfe95b8151b498a763"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a90405e49b793dcdfe95b8151b498a763">seq_num</a></td></tr>
+<tr class="separator:a90405e49b793dcdfe95b8151b498a763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8617009d72714a9a5b6a509d520bc81f"><td class="memItemLeft" align="right" valign="top">RdmResponseHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a8617009d72714a9a5b6a509d520bc81f">rdm_header</a></td></tr>
+<tr class="separator:a8617009d72714a9a5b6a509d520bc81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f507182f83446298f3772477adabddb"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#a2f507182f83446298f3772477adabddb">rdm_data</a></td></tr>
+<tr class="separator:a2f507182f83446298f3772477adabddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb2b802793d0f1a3c83bbd7a60d0ae9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html#accb2b802793d0f1a3c83bbd7a60d0ae9">rdm_data_len</a></td></tr>
+<tr class="separator:accb2b802793d0f1a3c83bbd7a60d0ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a2f507182f83446298f3772477adabddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f507182f83446298f3772477adabddb">&#9670;&nbsp;</a></span>rdm_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* rdm_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Any parameter data associated with the RDM response. </p>
+
+</div>
+</div>
+<a id="accb2b802793d0f1a3c83bbd7a60d0ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb2b802793d0f1a3c83bbd7a60d0ae9">&#9670;&nbsp;</a></span>rdm_data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t rdm_data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the parameter data associated with the RDM response. </p>
+
+</div>
+</div>
+<a id="a8617009d72714a9a5b6a509d520bc81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8617009d72714a9a5b6a509d520bc81f">&#9670;&nbsp;</a></span>rdm_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmResponseHeader rdm_header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The header information from the encapsulated RDM response. </p>
+
+</div>
+</div>
+<a id="a90405e49b793dcdfe95b8151b498a763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90405e49b793dcdfe95b8151b498a763">&#9670;&nbsp;</a></span>seq_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t seq_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The sequence number of this response (to be associated with a previously-sent command). </p>
+
+</div>
+</div>
+<a id="a1e54a6f2928120797e7bcf3031cf9fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e54a6f2928120797e7bcf3031cf9fd1">&#9670;&nbsp;</a></span>source_cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> source_cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The CID of the LLRP Target from which this command was received. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="message_8h_source.html">message.h</a></li>
 </ul>

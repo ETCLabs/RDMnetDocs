@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -211,39 +211,27 @@ $(document).ready(function(){initNavTree('llrp__manager_8h.html',''); initResiza
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Functions for implementing LLRP Manager functionality. </p>
-</div><div class="textblock"><code>#include &quot;etcpal/uuid.h&quot;</code><br />
-<code>#include &quot;etcpal/inet.h&quot;</code><br />
-<code>#include &quot;<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/message_8h.html">rdm/message.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="llrp_8h_source.html">rdmnet/llrp.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&quot;</code><br />
 </div>
 <p><a href="llrp__manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about an LLRP manager.  <a href="struct_llrp_manager_callbacks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an LLRP Manager.  <a href="struct_llrp_manager_config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga56b417bccb351a737a88b1ee11b4e355"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga56b417bccb351a737a88b1ee11b4e355">LLRP_MANAGER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="memdesc:ga56b417bccb351a737a88b1ee11b4e355"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid LLRP manager handle value. <br /></td></tr>
+<tr class="memitem:ga56b417bccb351a737a88b1ee11b4e355"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga56b417bccb351a737a88b1ee11b4e355">LLRP_MANAGER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:ga56b417bccb351a737a88b1ee11b4e355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga463839b4dde4a691b121a41c4bf4a702"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702">LLRP_MANAGER_CONFIG_DEFAULT_INIT</a></td></tr>
-<tr class="memdesc:ga463839b4dde4a691b121a41c4bf4a702"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager.">LlrpManagerConfig</a> struct.  <a href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702">More...</a><br /></td></tr>
+<tr class="memdesc:ga463839b4dde4a691b121a41c4bf4a702"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> struct.  <a href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702">More...</a><br /></td></tr>
 <tr class="separator:ga463839b4dde4a691b121a41c4bf4a702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga16b293cf63d5672e5f4652722b43c017"><td class="memItemLeft" align="right" valign="top">
-typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a></td></tr>
-<tr class="memdesc:ga16b293cf63d5672e5f4652722b43c017"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle for an instance of LLRP Manager functionality. <br /></td></tr>
+<tr class="memitem:ga16b293cf63d5672e5f4652722b43c017"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a></td></tr>
 <tr class="separator:ga16b293cf63d5672e5f4652722b43c017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa740f322dd645e81d989dd662c60b57b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a>) (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a> *target, void *context)</td></tr>
 <tr class="memdesc:gaa740f322dd645e81d989dd662c60b57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An LLRP target has been discovered.  <a href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">More...</a><br /></td></tr>
@@ -254,19 +242,15 @@ typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:ga7542a9794266896cec2d1847f799f7a0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a>) (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, void *context)</td></tr>
 <tr class="memdesc:ga7542a9794266896cec2d1847f799f7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The previously-started LLRP discovery process has finished.  <a href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">More...</a><br /></td></tr>
 <tr class="separator:ga7542a9794266896cec2d1847f799f7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c615852aaa19fdc0d3913732cb84afe"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga5c615852aaa19fdc0d3913732cb84afe">LlrpManagerCallbacks</a></td></tr>
-<tr class="memdesc:ga5c615852aaa19fdc0d3913732cb84afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about an LLRP manager. <br /></td></tr>
+<tr class="memitem:ga5c615852aaa19fdc0d3913732cb84afe"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_llrp_manager_callbacks.html">LlrpManagerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga5c615852aaa19fdc0d3913732cb84afe">LlrpManagerCallbacks</a></td></tr>
 <tr class="separator:ga5c615852aaa19fdc0d3913732cb84afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18771ae58019b96a019f26b3fd7257b2"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga18771ae58019b96a019f26b3fd7257b2">LlrpManagerConfig</a></td></tr>
-<tr class="memdesc:ga18771ae58019b96a019f26b3fd7257b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an LLRP Manager. <br /></td></tr>
+<tr class="memitem:ga18771ae58019b96a019f26b3fd7257b2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga18771ae58019b96a019f26b3fd7257b2">LlrpManagerConfig</a></td></tr>
 <tr class="separator:ga18771ae58019b96a019f26b3fd7257b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae46dd5b4eee480647197e124b7677933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gae46dd5b4eee480647197e124b7677933">llrp_manager_config_init</a> (<a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, uint16_t manufacturer_id)</td></tr>
-<tr class="memdesc:gae46dd5b4eee480647197e124b7677933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager.">LlrpManagerConfig</a> with default values for the optional config options.  <a href="group__llrp__manager.html#gae46dd5b4eee480647197e124b7677933">More...</a><br /></td></tr>
+<tr class="memdesc:gae46dd5b4eee480647197e124b7677933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> with default values for the optional config options.  <a href="group__llrp__manager.html#gae46dd5b4eee480647197e124b7677933">More...</a><br /></td></tr>
 <tr class="separator:gae46dd5b4eee480647197e124b7677933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga600905110d762ef671afd9de99a59ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9">llrp_manager_config_set_callbacks</a> (<a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a> target_discovered, <a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a> discovery_finished, void *context)</td></tr>
 <tr class="memdesc:ga600905110d762ef671afd9de99a59ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks in an LLRP manager configuration structure.  <a href="group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9">More...</a><br /></td></tr>

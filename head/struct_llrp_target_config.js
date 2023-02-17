@@ -1,7 +1,7 @@
 var struct_llrp_target_config =
 [
-    [ "callbacks", "struct_llrp_target_config.html#a57316fbd4380729877e8fa60f4c1fd29", null ],
-    [ "cid", "struct_llrp_target_config.html#afbe7039278c67df56d21ff4fe348988b", null ],
-    [ "response_buf", "struct_llrp_target_config.html#a3dde4bd62f2cc08040f2cd12f4bdf08b", null ],
-    [ "uid", "struct_llrp_target_config.html#a45e18ecd63ce4b6376c9f1288a3f45dd", null ]
+    [ "callbacks", "struct_llrp_target_config.html#ad886e877c031d9e240bde1e7137eaef1", null ],
+    [ "cid", "struct_llrp_target_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+    [ "response_buf", "struct_llrp_target_config.html#aa99184bd7c6729427838d2fc31612fea", null ],
+    [ "uid", "struct_llrp_target_config.html#ad908bad751766196cc2334b0f8579a5c", null ]
 ];

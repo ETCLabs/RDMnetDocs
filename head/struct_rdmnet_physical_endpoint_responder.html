@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,38 +208,62 @@ $(document).ready(function(){initNavTree('struct_rdmnet_physical_endpoint_respon
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Identifying information for a physical RDM responder connected to an RDMnet gateway. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="device_8h_source.html">rdmnet/device.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a4733eb56264b07b7459b7f9d8002cd94"><td class="memItemLeft" align="right" valign="top"><a id="a4733eb56264b07b7459b7f9d8002cd94"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html#a4733eb56264b07b7459b7f9d8002cd94">uid</a></td></tr>
-<tr class="memdesc:a4733eb56264b07b7459b7f9d8002cd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">The responder's UID. <br /></td></tr>
-<tr class="separator:a4733eb56264b07b7459b7f9d8002cd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf409850ecf2ca32dd2d999c602f00af"><td class="memItemLeft" align="right" valign="top"><a id="acf409850ecf2ca32dd2d999c602f00af"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html#acf409850ecf2ca32dd2d999c602f00af">control_field</a></td></tr>
-<tr class="memdesc:acf409850ecf2ca32dd2d999c602f00af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The control field received in the DISC_MUTE message from this responder. <br /></td></tr>
-<tr class="separator:acf409850ecf2ca32dd2d999c602f00af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4dd027426319d8717649c4aa0dd1bbf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html#aa4dd027426319d8717649c4aa0dd1bbf">binding_uid</a></td></tr>
-<tr class="memdesc:aa4dd027426319d8717649c4aa0dd1bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The binding UID received in the DISC_MUTE message from this responder.  <a href="struct_rdmnet_physical_endpoint_responder.html#aa4dd027426319d8717649c4aa0dd1bbf">More...</a><br /></td></tr>
-<tr class="separator:aa4dd027426319d8717649c4aa0dd1bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad908bad751766196cc2334b0f8579a5c"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html#ad908bad751766196cc2334b0f8579a5c">uid</a></td></tr>
+<tr class="separator:ad908bad751766196cc2334b0f8579a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa00abfbafa7d6dc376c83462e646f52"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html#afa00abfbafa7d6dc376c83462e646f52">control_field</a></td></tr>
+<tr class="separator:afa00abfbafa7d6dc376c83462e646f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad539b8a0998270c4b389bcba3b0f3da8"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_responder.html#ad539b8a0998270c4b389bcba3b0f3da8">binding_uid</a></td></tr>
+<tr class="memdesc:ad539b8a0998270c4b389bcba3b0f3da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The binding UID received in the DISC_MUTE message from this responder.  <a href="struct_rdmnet_physical_endpoint_responder.html#ad539b8a0998270c4b389bcba3b0f3da8">More...</a><br /></td></tr>
+<tr class="separator:ad539b8a0998270c4b389bcba3b0f3da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="aa4dd027426319d8717649c4aa0dd1bbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4dd027426319d8717649c4aa0dd1bbf">&#9670;&nbsp;</a></span>binding_uid</h2>
+<a id="ad539b8a0998270c4b389bcba3b0f3da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad539b8a0998270c4b389bcba3b0f3da8">&#9670;&nbsp;</a></span>binding_uid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> RdmnetPhysicalEndpointResponder::binding_uid</td>
+          <td class="memname">RdmUid binding_uid</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The binding UID received in the DISC_MUTE message from this responder. </p>
 <p>Set to all 0's if no binding UID was received. </p>
+
+</div>
+</div>
+<a id="afa00abfbafa7d6dc376c83462e646f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa00abfbafa7d6dc376c83462e646f52">&#9670;&nbsp;</a></span>control_field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t control_field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The control field received in the DISC_MUTE message from this responder. </p>
+
+</div>
+</div>
+<a id="ad908bad751766196cc2334b0f8579a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad908bad751766196cc2334b0f8579a5c">&#9670;&nbsp;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The responder's UID. </p>
 
 </div>
 </div>

@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,24 +208,62 @@ $(document).ready(function(){initNavTree('struct_rdmnet_dynamic_uid_mapping.html
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A mapping from a dynamic UID to a responder ID (RID). </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af2645638079a999eca4f03dfb6840d8a"><td class="memItemLeft" align="right" valign="top"><a id="af2645638079a999eca4f03dfb6840d8a"></a>
-<a class="el" href="group__rdmnet__api__common.html#gafc5c9ee7dffbca259051716bacea9620">rdmnet_dynamic_uid_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html#af2645638079a999eca4f03dfb6840d8a">status_code</a></td></tr>
-<tr class="memdesc:af2645638079a999eca4f03dfb6840d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The response code - indicates whether the broker was able to assign or look up dynamic UID. <br /></td></tr>
-<tr class="separator:af2645638079a999eca4f03dfb6840d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adabe0159fa6e26b091c22ba13780361b"><td class="memItemLeft" align="right" valign="top"><a id="adabe0159fa6e26b091c22ba13780361b"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html#adabe0159fa6e26b091c22ba13780361b">uid</a></td></tr>
-<tr class="memdesc:adabe0159fa6e26b091c22ba13780361b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dynamic UID. <br /></td></tr>
-<tr class="separator:adabe0159fa6e26b091c22ba13780361b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842b8d5b7c14f9baeeb27d7cfbbd684e"><td class="memItemLeft" align="right" valign="top"><a id="a842b8d5b7c14f9baeeb27d7cfbbd684e"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html#a842b8d5b7c14f9baeeb27d7cfbbd684e">rid</a></td></tr>
-<tr class="memdesc:a842b8d5b7c14f9baeeb27d7cfbbd684e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The corresponding RID to which the dynamic UID is mapped. <br /></td></tr>
-<tr class="separator:a842b8d5b7c14f9baeeb27d7cfbbd684e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4493b573d26ae9d71aa1e7834f8efec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__api__common.html#gafc5c9ee7dffbca259051716bacea9620">rdmnet_dynamic_uid_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html#ab4493b573d26ae9d71aa1e7834f8efec">status_code</a></td></tr>
+<tr class="separator:ab4493b573d26ae9d71aa1e7834f8efec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad908bad751766196cc2334b0f8579a5c"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html#ad908bad751766196cc2334b0f8579a5c">uid</a></td></tr>
+<tr class="separator:ad908bad751766196cc2334b0f8579a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1f62fc07bef14989c3780e804412c3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html#a7c1f62fc07bef14989c3780e804412c3">rid</a></td></tr>
+<tr class="separator:a7c1f62fc07bef14989c3780e804412c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a7c1f62fc07bef14989c3780e804412c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1f62fc07bef14989c3780e804412c3">&#9670;&nbsp;</a></span>rid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> rid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The corresponding RID to which the dynamic UID is mapped. </p>
+
+</div>
+</div>
+<a id="ab4493b573d26ae9d71aa1e7834f8efec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4493b573d26ae9d71aa1e7834f8efec">&#9670;&nbsp;</a></span>status_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__api__common.html#gafc5c9ee7dffbca259051716bacea9620">rdmnet_dynamic_uid_status_t</a> status_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The response code - indicates whether the broker was able to assign or look up dynamic UID. </p>
+
+</div>
+</div>
+<a id="ad908bad751766196cc2334b0f8579a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad908bad751766196cc2334b0f8579a5c">&#9670;&nbsp;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The dynamic UID. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="message_8h_source.html">message.h</a></li>
 </ul>

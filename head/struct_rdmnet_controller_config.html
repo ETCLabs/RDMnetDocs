@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,118 +209,127 @@ $(document).ready(function(){initNavTree('struct_rdmnet_controller_config.html',
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of information that defines the startup parameters of an RDMnet Controller. </p>
 <p>Note that network interfaces that the LLRP target of the controller should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> is used. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="controller_8h_source.html">rdmnet/controller.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a88afa036a301ef655052aaf77bbe013e"><td class="memItemLeft" align="right" valign="top"><a id="a88afa036a301ef655052aaf77bbe013e"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a88afa036a301ef655052aaf77bbe013e">cid</a></td></tr>
-<tr class="memdesc:a88afa036a301ef655052aaf77bbe013e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The controller's CID. <br /></td></tr>
-<tr class="separator:a88afa036a301ef655052aaf77bbe013e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e405aed6445b0d35fe6910ea2c155f"><td class="memItemLeft" align="right" valign="top"><a id="a65e405aed6445b0d35fe6910ea2c155f"></a>
-<a class="el" href="struct_rdmnet_controller_callbacks.html">RdmnetControllerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a65e405aed6445b0d35fe6910ea2c155f">callbacks</a></td></tr>
-<tr class="memdesc:a65e405aed6445b0d35fe6910ea2c155f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks for the controller to receive RDMnet notifications. <br /></td></tr>
-<tr class="separator:a65e405aed6445b0d35fe6910ea2c155f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40e414575c0f9622c096ba816dd3a8b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html">RdmnetControllerRdmCmdHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a40e414575c0f9622c096ba816dd3a8b2">rdm_handler</a></td></tr>
-<tr class="memdesc:a40e414575c0f9622c096ba816dd3a8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks and a buffer for the controller to receive RDM commands over RDMnet.  <a href="struct_rdmnet_controller_config.html#a40e414575c0f9622c096ba816dd3a8b2">More...</a><br /></td></tr>
-<tr class="separator:a40e414575c0f9622c096ba816dd3a8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49dce81d475e7a7973c6b7cdee8620e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#ae49dce81d475e7a7973c6b7cdee8620e">rdm_data</a></td></tr>
-<tr class="memdesc:ae49dce81d475e7a7973c6b7cdee8620e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for the library to use for handling RDM commands internally.  <a href="struct_rdmnet_controller_config.html#ae49dce81d475e7a7973c6b7cdee8620e">More...</a><br /></td></tr>
-<tr class="separator:ae49dce81d475e7a7973c6b7cdee8620e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af56b3c2e7928ec0bdff9274cc5da2902"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#af56b3c2e7928ec0bdff9274cc5da2902">uid</a></td></tr>
-<tr class="memdesc:af56b3c2e7928ec0bdff9274cc5da2902"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The controller's UID.  <a href="struct_rdmnet_controller_config.html#af56b3c2e7928ec0bdff9274cc5da2902">More...</a><br /></td></tr>
-<tr class="separator:af56b3c2e7928ec0bdff9274cc5da2902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a16320a90915549cb44f71e46134b81"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a0a16320a90915549cb44f71e46134b81">search_domain</a></td></tr>
-<tr class="memdesc:a0a16320a90915549cb44f71e46134b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The controller's configured search domain for discovery.  <a href="struct_rdmnet_controller_config.html#a0a16320a90915549cb44f71e46134b81">More...</a><br /></td></tr>
-<tr class="separator:a0a16320a90915549cb44f71e46134b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad1507118f9a56d6ed29a9feb6582f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#aaad1507118f9a56d6ed29a9feb6582f3">create_llrp_target</a></td></tr>
-<tr class="memdesc:aaad1507118f9a56d6ed29a9feb6582f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Whether to create an LLRP target associated with this controller.  <a href="struct_rdmnet_controller_config.html#aaad1507118f9a56d6ed29a9feb6582f3">More...</a><br /></td></tr>
-<tr class="separator:aaad1507118f9a56d6ed29a9feb6582f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a></td></tr>
+<tr class="separator:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0731346d087ba17557ab7b95a6aeb534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_callbacks.html">RdmnetControllerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534">callbacks</a></td></tr>
+<tr class="separator:a0731346d087ba17557ab7b95a6aeb534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05c6aefb51339c070df68de0f5f371e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html">RdmnetControllerRdmCmdHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#af05c6aefb51339c070df68de0f5f371e">rdm_handler</a></td></tr>
+<tr class="separator:af05c6aefb51339c070df68de0f5f371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16d3df6d2791f5c6dd480b459ed72c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5">rdm_data</a></td></tr>
+<tr class="separator:ad16d3df6d2791f5c6dd480b459ed72c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad908bad751766196cc2334b0f8579a5c"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#ad908bad751766196cc2334b0f8579a5c">uid</a></td></tr>
+<tr class="separator:ad908bad751766196cc2334b0f8579a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f5a8d120934e4d1fb7ba53b0489c62"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62">search_domain</a></td></tr>
+<tr class="separator:aa7f5a8d120934e4d1fb7ba53b0489c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf55202489074b1b9e83082c13d691d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#acbf55202489074b1b9e83082c13d691d">create_llrp_target</a></td></tr>
+<tr class="separator:acbf55202489074b1b9e83082c13d691d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="aaad1507118f9a56d6ed29a9feb6582f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaad1507118f9a56d6ed29a9feb6582f3">&#9670;&nbsp;</a></span>create_llrp_target</h2>
+<a id="a0731346d087ba17557ab7b95a6aeb534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0731346d087ba17557ab7b95a6aeb534">&#9670;&nbsp;</a></span>callbacks</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RdmnetControllerConfig::create_llrp_target</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_controller_callbacks.html">RdmnetControllerCallbacks</a> callbacks</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>(optional) Whether to create an LLRP target associated with this controller. </p>
-<p>Default is false. </p>
+<p>A set of callbacks for the controller to receive RDMnet notifications. </p>
 
 </div>
 </div>
-<a id="ae49dce81d475e7a7973c6b7cdee8620e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae49dce81d475e7a7973c6b7cdee8620e">&#9670;&nbsp;</a></span>rdm_data</h2>
+<a id="a4c3f7d9a58af5033f9acd8c942bf81d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3f7d9a58af5033f9acd8c942bf81d9">&#9670;&nbsp;</a></span>cid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a> RdmnetControllerConfig::rdm_data</td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> cid</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Data for the library to use for handling RDM commands internally. </p>
-<p>Either this or rdm_handler must be provided; see <a class="el" href="using_controller.html">Using the Controller API</a> for more information. </p>
+<p>The controller's CID. </p>
 
 </div>
 </div>
-<a id="a40e414575c0f9622c096ba816dd3a8b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40e414575c0f9622c096ba816dd3a8b2">&#9670;&nbsp;</a></span>rdm_handler</h2>
+<a id="acbf55202489074b1b9e83082c13d691d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf55202489074b1b9e83082c13d691d">&#9670;&nbsp;</a></span>create_llrp_target</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html">RdmnetControllerRdmCmdHandler</a> RdmnetControllerConfig::rdm_handler</td>
+          <td class="memname">bool create_llrp_target</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Callbacks and a buffer for the controller to receive RDM commands over RDMnet. </p>
-<p>Either this or rdm_data must be provided; see <a class="el" href="using_controller.html">Using the Controller API</a> for more information. </p>
+<p>(optional) Whether to create an LLRP target associated with this controller. Default is false. </p>
 
 </div>
 </div>
-<a id="a0a16320a90915549cb44f71e46134b81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a16320a90915549cb44f71e46134b81">&#9670;&nbsp;</a></span>search_domain</h2>
+<a id="ad16d3df6d2791f5c6dd480b459ed72c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16d3df6d2791f5c6dd480b459ed72c5">&#9670;&nbsp;</a></span>rdm_data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* RdmnetControllerConfig::search_domain</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a> rdm_data</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>(optional) The controller's configured search domain for discovery. </p>
-<p>NULL to use the default search domain(s). </p>
+<p>Data for the library to use for handling RDM commands internally. Either this or rdm_handler must be provided; see <a class="el" href="using_controller.html">Using the Controller API</a> for more information. </p>
 
 </div>
 </div>
-<a id="af56b3c2e7928ec0bdff9274cc5da2902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af56b3c2e7928ec0bdff9274cc5da2902">&#9670;&nbsp;</a></span>uid</h2>
+<a id="af05c6aefb51339c070df68de0f5f371e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05c6aefb51339c070df68de0f5f371e">&#9670;&nbsp;</a></span>rdm_handler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> RdmnetControllerConfig::uid</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html">RdmnetControllerRdmCmdHandler</a> rdm_handler</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Callbacks and a buffer for the controller to receive RDM commands over RDMnet. Either this or rdm_data must be provided; see <a class="el" href="using_controller.html">Using the Controller API</a> for more information. </p>
 
-<p>(optional) The controller's UID. </p>
-<p>This will be initialized with a Dynamic UID request using the initialization functions/macros for this structure. If you want to use a static UID instead, just fill this in with the static UID after initializing. </p>
+</div>
+</div>
+<a id="aa7f5a8d120934e4d1fb7ba53b0489c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f5a8d120934e4d1fb7ba53b0489c62">&#9670;&nbsp;</a></span>search_domain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* search_domain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The controller's configured search domain for discovery. NULL to use the default search domain(s). </p>
+
+</div>
+</div>
+<a id="ad908bad751766196cc2334b0f8579a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad908bad751766196cc2334b0f8579a5c">&#9670;&nbsp;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The controller's UID. This will be initialized with a Dynamic UID request using the initialization functions/macros for this structure. If you want to use a static UID instead, just fill this in with the static UID after initializing. </p>
 
 </div>
 </div>

@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['sem_20_28counting_20semaphores_29_3111',['sem (Counting Semaphores)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__sem.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__sem.html',1,'(Global Namespace)']]],
-  ['signal_20_28signal_20objects_29_3112',['signal (Signal Objects)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__signal.html',1,'']]],
-  ['signal_20_28signals_29_3113',['signal (Signals)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__signal.html',1,'']]],
-  ['socket_20_28network_20socket_20interface_29_3114',['socket (Network Socket Interface)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__socket.html',1,'']]]
+  ['rbtree_20_28red_2dblack_20trees_29_6146',['rbtree (Red-Black Trees)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__rbtree.html',1,'']]],
+  ['rdmnet_20c_20language_20apis_6147',['RDMnet C Language APIs',['../group__rdmnet__api.html',1,'']]],
+  ['rdmnet_20c_2b_2b_20language_20apis_6148',['RDMnet C++ Language APIs',['../group__rdmnet__cpp__api.html',1,'']]],
+  ['rdmnet_20configuration_20options_6149',['RDMnet Configuration Options',['../group__rdmnetopts.html',1,'']]],
+  ['recursive_5fmutex_20_28recursive_20mutexes_29_6150',['recursive_mutex (Recursive Mutexes)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__recursive__mutex.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__recursive__mutex.html',1,'(Global Namespace)']]],
+  ['rwlock_20_28read_2dwrite_20locks_29_6151',['rwlock (Read-Write Locks)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__rwlock.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__rwlock.html',1,'(Global Namespace)']]]
 ];

@@ -1,6 +1,6 @@
 var struct_rdmnet_rpt_client_list =
 [
-    [ "client_entries", "struct_rdmnet_rpt_client_list.html#ab83c415e9196e74a3fa20b73d3407586", null ],
-    [ "more_coming", "struct_rdmnet_rpt_client_list.html#ae47a845eafcc1ead4a2c5e39c9e7ae50", null ],
-    [ "num_client_entries", "struct_rdmnet_rpt_client_list.html#acdd2b6b109461335c356422b1bb15d6c", null ]
+    [ "client_entries", "struct_rdmnet_rpt_client_list.html#a66f28e829e9ff1f5c0ec95a7338e8b85", null ],
+    [ "more_coming", "struct_rdmnet_rpt_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+    [ "num_client_entries", "struct_rdmnet_rpt_client_list.html#afccd922a3754fa31008826b55b692c66", null ]
 ];

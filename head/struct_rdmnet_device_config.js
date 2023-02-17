@@ -1,13 +1,13 @@
 var struct_rdmnet_device_config =
 [
-    [ "callbacks", "struct_rdmnet_device_config.html#abc6d70dbf56e1ddc2c7e4bafa71db8c1", null ],
-    [ "cid", "struct_rdmnet_device_config.html#ae68596928501f9b5f49882a35470d6dc", null ],
-    [ "num_physical_endpoints", "struct_rdmnet_device_config.html#ac4577e78a0af247b77bc02bbbe63fa4f", null ],
-    [ "num_virtual_endpoints", "struct_rdmnet_device_config.html#aa72098b0a6479ed77f1371a8c1e04b03", null ],
-    [ "physical_endpoints", "struct_rdmnet_device_config.html#a468036d6a69b2e6247df1cf458635d29", null ],
-    [ "response_buf", "struct_rdmnet_device_config.html#aa087a3c2489b51ff355bc017d0cf89f0", null ],
-    [ "scope_config", "struct_rdmnet_device_config.html#a4e5acc99018738e60e1de429f581cdf7", null ],
-    [ "search_domain", "struct_rdmnet_device_config.html#a47b61799a52cea3074c57933d8181667", null ],
-    [ "uid", "struct_rdmnet_device_config.html#ae51f9c3e56fdd51709788f014236c4a0", null ],
-    [ "virtual_endpoints", "struct_rdmnet_device_config.html#a6ce37537401ab63957d2884f22980727", null ]
+    [ "callbacks", "struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629", null ],
+    [ "cid", "struct_rdmnet_device_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+    [ "num_physical_endpoints", "struct_rdmnet_device_config.html#a0309db5341399c37db7a2bb7a9ba4c6a", null ],
+    [ "num_virtual_endpoints", "struct_rdmnet_device_config.html#a15213c1baa1cbf253f1c66f517f08fd9", null ],
+    [ "physical_endpoints", "struct_rdmnet_device_config.html#aa348191ff39a94ca9a240f5fc0fc9baa", null ],
+    [ "response_buf", "struct_rdmnet_device_config.html#aa99184bd7c6729427838d2fc31612fea", null ],
+    [ "scope_config", "struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd", null ],
+    [ "search_domain", "struct_rdmnet_device_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ],
+    [ "uid", "struct_rdmnet_device_config.html#ad908bad751766196cc2334b0f8579a5c", null ],
+    [ "virtual_endpoints", "struct_rdmnet_device_config.html#a4143dc0917af2b7523bbcd575d6da4b5", null ]
 ];

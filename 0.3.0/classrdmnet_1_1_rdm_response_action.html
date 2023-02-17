@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -224,7 +223,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a66301810814d353b92754a177d92dcaa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">SendAck</a> (size_t response_data_len=0)</td></tr>
 <tr class="memdesc:a66301810814d353b92754a177d92dcaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM ACK, optionally including some response data.  <a href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">More...</a><br /></td></tr>
 <tr class="separator:a66301810814d353b92754a177d92dcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f084460d0d89d9af564dd573720d251"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">SendNack</a> (<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
+<tr class="memitem:a0f084460d0d89d9af564dd573720d251"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">SendNack</a> (rdm_nack_reason_t nack_reason)</td></tr>
 <tr class="memdesc:a0f084460d0d89d9af564dd573720d251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK with a reason code.  <a href="classrdmnet_1_1_rdm_response_action.html#a0f084460d0d89d9af564dd573720d251">More...</a><br /></td></tr>
 <tr class="separator:a0f084460d0d89d9af564dd573720d251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e99340678bb7b99f7e909173f0d214d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response_action.html#a6e99340678bb7b99f7e909173f0d214d">SendNack</a> (uint16_t raw_nack_reason)</td></tr>
@@ -310,7 +309,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::RdmResponseAction::SendNack </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a>&#160;</td>
+          <td class="paramtype">rdm_nack_reason_t&#160;</td>
           <td class="paramname"><em>nack_reason</em></td><td>)</td>
           <td></td>
         </tr>

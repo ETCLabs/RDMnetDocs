@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,49 +208,54 @@ $(document).ready(function(){initNavTree('struct_rdmnet_controller_rdm_data.html
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of data for the controller library to use for handling RDM commands internally. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="controller_8h_source.html">rdmnet/controller.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a048ff60c5a015b110638ee4216c55f1d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a048ff60c5a015b110638ee4216c55f1d">model_id</a></td></tr>
-<tr class="memdesc:a048ff60c5a015b110638ee4216c55f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number representing the product model which implements the controller.  <a href="struct_rdmnet_controller_rdm_data.html#a048ff60c5a015b110638ee4216c55f1d">More...</a><br /></td></tr>
-<tr class="separator:a048ff60c5a015b110638ee4216c55f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a392e2e74f0f0dd4d51739249ac7b1a37"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a392e2e74f0f0dd4d51739249ac7b1a37">software_version_id</a></td></tr>
-<tr class="memdesc:a392e2e74f0f0dd4d51739249ac7b1a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number representing the version of the controller software.  <a href="struct_rdmnet_controller_rdm_data.html#a392e2e74f0f0dd4d51739249ac7b1a37">More...</a><br /></td></tr>
-<tr class="separator:a392e2e74f0f0dd4d51739249ac7b1a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c190d8bd7cdb6e9897d92b2b0fb078"><td class="memItemLeft" align="right" valign="top"><a id="a44c190d8bd7cdb6e9897d92b2b0fb078"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a44c190d8bd7cdb6e9897d92b2b0fb078">manufacturer_label</a></td></tr>
-<tr class="memdesc:a44c190d8bd7cdb6e9897d92b2b0fb078"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string representing the manufacturer of the controller. <br /></td></tr>
-<tr class="separator:a44c190d8bd7cdb6e9897d92b2b0fb078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30be11bc9197a1208664129eeb745d38"><td class="memItemLeft" align="right" valign="top"><a id="a30be11bc9197a1208664129eeb745d38"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a30be11bc9197a1208664129eeb745d38">device_model_description</a></td></tr>
-<tr class="memdesc:a30be11bc9197a1208664129eeb745d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string representing the name of the product model which implements the controller. <br /></td></tr>
-<tr class="separator:a30be11bc9197a1208664129eeb745d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b3495d707f7a33dcc979f3d51ed0d5"><td class="memItemLeft" align="right" valign="top"><a id="a58b3495d707f7a33dcc979f3d51ed0d5"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a58b3495d707f7a33dcc979f3d51ed0d5">software_version_label</a></td></tr>
-<tr class="memdesc:a58b3495d707f7a33dcc979f3d51ed0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string representing the software version of the controller. <br /></td></tr>
-<tr class="separator:a58b3495d707f7a33dcc979f3d51ed0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa454ff7d5ea46f7a5369e237b272e95a"><td class="memItemLeft" align="right" valign="top"><a id="aa454ff7d5ea46f7a5369e237b272e95a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#aa454ff7d5ea46f7a5369e237b272e95a">device_label</a></td></tr>
-<tr class="memdesc:aa454ff7d5ea46f7a5369e237b272e95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-settable string representing a name for this particular controller instance. <br /></td></tr>
-<tr class="separator:aa454ff7d5ea46f7a5369e237b272e95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fb0cfad6b20eae0040d05c3a41f9301"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a0fb0cfad6b20eae0040d05c3a41f9301">product_category</a></td></tr>
-<tr class="memdesc:a0fb0cfad6b20eae0040d05c3a41f9301"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number representing the product's primary function.  <a href="struct_rdmnet_controller_rdm_data.html#a0fb0cfad6b20eae0040d05c3a41f9301">More...</a><br /></td></tr>
-<tr class="separator:a0fb0cfad6b20eae0040d05c3a41f9301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd190d6bf06eb052193fb01f967a032c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#abd190d6bf06eb052193fb01f967a032c">device_label_settable</a></td></tr>
-<tr class="memdesc:abd190d6bf06eb052193fb01f967a032c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the library should allow the device_label to be changed remotely.  <a href="struct_rdmnet_controller_rdm_data.html#abd190d6bf06eb052193fb01f967a032c">More...</a><br /></td></tr>
-<tr class="separator:abd190d6bf06eb052193fb01f967a032c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345b5a533872a471f810a988b331f60c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a345b5a533872a471f810a988b331f60c">model_id</a></td></tr>
+<tr class="memdesc:a345b5a533872a471f810a988b331f60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number representing the product model which implements the controller.  <a href="struct_rdmnet_controller_rdm_data.html#a345b5a533872a471f810a988b331f60c">More...</a><br /></td></tr>
+<tr class="separator:a345b5a533872a471f810a988b331f60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b317a8c21931281b402432d70e5efdf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a0b317a8c21931281b402432d70e5efdf">software_version_id</a></td></tr>
+<tr class="memdesc:a0b317a8c21931281b402432d70e5efdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number representing the version of the controller software.  <a href="struct_rdmnet_controller_rdm_data.html#a0b317a8c21931281b402432d70e5efdf">More...</a><br /></td></tr>
+<tr class="separator:a0b317a8c21931281b402432d70e5efdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644a70763eb3ec31cdaff458d7a76223"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a644a70763eb3ec31cdaff458d7a76223">manufacturer_label</a></td></tr>
+<tr class="separator:a644a70763eb3ec31cdaff458d7a76223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd939edd5efb1239669389a426914ae"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a3fd939edd5efb1239669389a426914ae">device_model_description</a></td></tr>
+<tr class="separator:a3fd939edd5efb1239669389a426914ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0779453a5c8485f8a9fb34e2282cba60"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a0779453a5c8485f8a9fb34e2282cba60">software_version_label</a></td></tr>
+<tr class="separator:a0779453a5c8485f8a9fb34e2282cba60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9efd75b914c36bf2e5e768b0f31702"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#abc9efd75b914c36bf2e5e768b0f31702">device_label</a></td></tr>
+<tr class="separator:abc9efd75b914c36bf2e5e768b0f31702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bdaf7560c2c0fc7eca4908e94d606d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#ad0bdaf7560c2c0fc7eca4908e94d606d">product_category</a></td></tr>
+<tr class="memdesc:ad0bdaf7560c2c0fc7eca4908e94d606d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number representing the product's primary function.  <a href="struct_rdmnet_controller_rdm_data.html#ad0bdaf7560c2c0fc7eca4908e94d606d">More...</a><br /></td></tr>
+<tr class="separator:ad0bdaf7560c2c0fc7eca4908e94d606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8a4a4a490229d0d3923d0c5f809c99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_data.html#a5f8a4a4a490229d0d3923d0c5f809c99">device_label_settable</a></td></tr>
+<tr class="memdesc:a5f8a4a4a490229d0d3923d0c5f809c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the library should allow the device_label to be changed remotely.  <a href="struct_rdmnet_controller_rdm_data.html#a5f8a4a4a490229d0d3923d0c5f809c99">More...</a><br /></td></tr>
+<tr class="separator:a5f8a4a4a490229d0d3923d0c5f809c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="abd190d6bf06eb052193fb01f967a032c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd190d6bf06eb052193fb01f967a032c">&#9670;&nbsp;</a></span>device_label_settable</h2>
+<a id="abc9efd75b914c36bf2e5e768b0f31702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9efd75b914c36bf2e5e768b0f31702">&#9670;&nbsp;</a></span>device_label</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RdmnetControllerRdmData::device_label_settable</td>
+          <td class="memname">const char* device_label</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A user-settable string representing a name for this particular controller instance. </p>
+
+</div>
+</div>
+<a id="a5f8a4a4a490229d0d3923d0c5f809c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f8a4a4a490229d0d3923d0c5f809c99">&#9670;&nbsp;</a></span>device_label_settable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool device_label_settable</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,14 +265,44 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a048ff60c5a015b110638ee4216c55f1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a048ff60c5a015b110638ee4216c55f1d">&#9670;&nbsp;</a></span>model_id</h2>
+<a id="a3fd939edd5efb1239669389a426914ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd939edd5efb1239669389a426914ae">&#9670;&nbsp;</a></span>device_model_description</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t RdmnetControllerRdmData::model_id</td>
+          <td class="memname">const char* device_model_description</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A string representing the name of the product model which implements the controller. </p>
+
+</div>
+</div>
+<a id="a644a70763eb3ec31cdaff458d7a76223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644a70763eb3ec31cdaff458d7a76223">&#9670;&nbsp;</a></span>manufacturer_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* manufacturer_label</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A string representing the manufacturer of the controller. </p>
+
+</div>
+</div>
+<a id="a345b5a533872a471f810a988b331f60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345b5a533872a471f810a988b331f60c">&#9670;&nbsp;</a></span>model_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t model_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -277,14 +312,14 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a0fb0cfad6b20eae0040d05c3a41f9301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fb0cfad6b20eae0040d05c3a41f9301">&#9670;&nbsp;</a></span>product_category</h2>
+<a id="ad0bdaf7560c2c0fc7eca4908e94d606d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bdaf7560c2c0fc7eca4908e94d606d">&#9670;&nbsp;</a></span>product_category</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t RdmnetControllerRdmData::product_category</td>
+          <td class="memname">uint16_t product_category</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,20 +329,35 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a392e2e74f0f0dd4d51739249ac7b1a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a392e2e74f0f0dd4d51739249ac7b1a37">&#9670;&nbsp;</a></span>software_version_id</h2>
+<a id="a0b317a8c21931281b402432d70e5efdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b317a8c21931281b402432d70e5efdf">&#9670;&nbsp;</a></span>software_version_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t RdmnetControllerRdmData::software_version_id</td>
+          <td class="memname">uint32_t software_version_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>A number representing the version of the controller software. </p>
 <p>Should be unique per version of a given controller's application. </p>
+
+</div>
+</div>
+<a id="a0779453a5c8485f8a9fb34e2282cba60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0779453a5c8485f8a9fb34e2282cba60">&#9670;&nbsp;</a></span>software_version_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* software_version_label</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A string representing the software version of the controller. </p>
 
 </div>
 </div>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['opaque_5fid_20_28strongly_20typed_20handles_29_3085',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__cpp__opaque__id.html',1,'']]],
-  ['os_20abstraction_20modules_3086',['OS Abstraction Modules',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__os.html',1,'']]]
+  ['netint_20_28network_20interfaces_29_6122',['netint (Network Interfaces)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__netint.html',1,'']]],
+  ['network_20abstraction_20modules_6123',['Network Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__net.html',1,'']]]
 ];

@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,38 +209,59 @@ $(document).ready(function(){initNavTree('struct_rdmnet_physical_endpoint_config
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Configuration information for a physical endpoint on a device. </p>
 <p>See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="device_8h_source.html">rdmnet/device.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa3f8182a6de08e3d350968ae504f9c71"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html#aa3f8182a6de08e3d350968ae504f9c71">endpoint_id</a></td></tr>
-<tr class="memdesc:aa3f8182a6de08e3d350968ae504f9c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endpoint identifier for this endpoint.  <a href="struct_rdmnet_physical_endpoint_config.html#aa3f8182a6de08e3d350968ae504f9c71">More...</a><br /></td></tr>
-<tr class="separator:aa3f8182a6de08e3d350968ae504f9c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affdd1b20ea4fe23f6c7ecca7dcf85960"><td class="memItemLeft" align="right" valign="top"><a id="affdd1b20ea4fe23f6c7ecca7dcf85960"></a>
-const <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html#affdd1b20ea4fe23f6c7ecca7dcf85960">responders</a></td></tr>
-<tr class="memdesc:affdd1b20ea4fe23f6c7ecca7dcf85960"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of initial physical RDM responders on this endpoint, identified by static UID. <br /></td></tr>
-<tr class="separator:affdd1b20ea4fe23f6c7ecca7dcf85960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03e7714ab2513f42f6576df7da65738"><td class="memItemLeft" align="right" valign="top"><a id="ae03e7714ab2513f42f6576df7da65738"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html#ae03e7714ab2513f42f6576df7da65738">num_responders</a></td></tr>
-<tr class="memdesc:ae03e7714ab2513f42f6576df7da65738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the responders array. <br /></td></tr>
-<tr class="separator:ae03e7714ab2513f42f6576df7da65738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af702743398c1c2c0fd52ca40504cf1f4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html#af702743398c1c2c0fd52ca40504cf1f4">endpoint_id</a></td></tr>
+<tr class="separator:af702743398c1c2c0fd52ca40504cf1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32e7ac8b86139fd0a79d1d9b2f76840"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html#aa32e7ac8b86139fd0a79d1d9b2f76840">responders</a></td></tr>
+<tr class="separator:aa32e7ac8b86139fd0a79d1d9b2f76840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198b576d97381a141652d54b3f90f681"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_physical_endpoint_config.html#a198b576d97381a141652d54b3f90f681">num_responders</a></td></tr>
+<tr class="separator:a198b576d97381a141652d54b3f90f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="aa3f8182a6de08e3d350968ae504f9c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3f8182a6de08e3d350968ae504f9c71">&#9670;&nbsp;</a></span>endpoint_id</h2>
+<a id="af702743398c1c2c0fd52ca40504cf1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af702743398c1c2c0fd52ca40504cf1f4">&#9670;&nbsp;</a></span>endpoint_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t RdmnetPhysicalEndpointConfig::endpoint_id</td>
+          <td class="memname">uint16_t endpoint_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The endpoint identifier for this endpoint. Valid values are between 1 and 63,999 inclusive. </p>
 
-<p>The endpoint identifier for this endpoint. </p>
-<p>Valid values are between 1 and 63,999 inclusive. </p>
+</div>
+</div>
+<a id="a198b576d97381a141652d54b3f90f681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198b576d97381a141652d54b3f90f681">&#9670;&nbsp;</a></span>num_responders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_responders</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of the responders array. </p>
+
+</div>
+</div>
+<a id="aa32e7ac8b86139fd0a79d1d9b2f76840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32e7ac8b86139fd0a79d1d9b2f76840">&#9670;&nbsp;</a></span>responders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_rdmnet_physical_endpoint_responder.html">RdmnetPhysicalEndpointResponder</a>* responders</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An array of initial physical RDM responders on this endpoint, identified by static UID. </p>
 
 </div>
 </div>

@@ -1,10 +1,10 @@
 var struct_rdmnet_device_callbacks =
 [
-    [ "connect_failed", "struct_rdmnet_device_callbacks.html#ad1e27cadde6c64dabbbdf43837a79beb", null ],
-    [ "connected", "struct_rdmnet_device_callbacks.html#af89447bd4fa95c36278bb19ea29622ce", null ],
-    [ "context", "struct_rdmnet_device_callbacks.html#aea855069f3e85a29407be8a1fa27b2ad", null ],
-    [ "disconnected", "struct_rdmnet_device_callbacks.html#a52edccc7eecd92f7510e2367a98d134e", null ],
-    [ "dynamic_uid_status_received", "struct_rdmnet_device_callbacks.html#a5c345b7742a777cd9f1ea2aa8b4af186", null ],
-    [ "llrp_rdm_command_received", "struct_rdmnet_device_callbacks.html#a8c95049dcd4ba62b613aa16bc4d7c26e", null ],
-    [ "rdm_command_received", "struct_rdmnet_device_callbacks.html#a5f77366a95993235e128e207a0e4a4bb", null ]
+    [ "connect_failed", "struct_rdmnet_device_callbacks.html#a7e2e4ab2af0063d625aa8ed1289911a6", null ],
+    [ "connected", "struct_rdmnet_device_callbacks.html#a549be00e98b15c79de8c6175ffc54ae0", null ],
+    [ "context", "struct_rdmnet_device_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
+    [ "disconnected", "struct_rdmnet_device_callbacks.html#aea134c641a5c1b0f77b93daffe275496", null ],
+    [ "dynamic_uid_status_received", "struct_rdmnet_device_callbacks.html#a58dc39ccf26f36eb620f137220015c77", null ],
+    [ "llrp_rdm_command_received", "struct_rdmnet_device_callbacks.html#a4bffe139815ed8f20aeeee234809f379", null ],
+    [ "rdm_command_received", "struct_rdmnet_device_callbacks.html#af06e4b4111ad70dfda1dd3a69356e017", null ]
 ];

@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,50 +208,42 @@ $(document).ready(function(){initNavTree('struct_rdmnet_scope_config.html',''); 
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of configuration information for a single scope in which an RDMnet client is participating. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="client_8h_source.html">rdmnet/client.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a53bf7560015709c0a2ceaf93e094c95b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_config.html#a53bf7560015709c0a2ceaf93e094c95b">scope</a></td></tr>
-<tr class="memdesc:a53bf7560015709c0a2ceaf93e094c95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scope string.  <a href="struct_rdmnet_scope_config.html#a53bf7560015709c0a2ceaf93e094c95b">More...</a><br /></td></tr>
-<tr class="separator:a53bf7560015709c0a2ceaf93e094c95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22321adf396e6dccedba36de29f3bb8a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a">static_broker_addr</a></td></tr>
-<tr class="memdesc:a22321adf396e6dccedba36de29f3bb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker address to which to connect, if a static broker has been configured.  <a href="struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a">More...</a><br /></td></tr>
-<tr class="separator:a22321adf396e6dccedba36de29f3bb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_config.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab">scope</a></td></tr>
+<tr class="separator:aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c84d65b0bda9438b948ac7a7907da47"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_config.html#a0c84d65b0bda9438b948ac7a7907da47">static_broker_addr</a></td></tr>
+<tr class="separator:a0c84d65b0bda9438b948ac7a7907da47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a53bf7560015709c0a2ceaf93e094c95b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53bf7560015709c0a2ceaf93e094c95b">&#9670;&nbsp;</a></span>scope</h2>
+<a id="aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab">&#9670;&nbsp;</a></span>scope</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* RdmnetScopeConfig::scope</td>
+          <td class="memname">const char* scope</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The scope string. </p>
-<p>Scope strings are UTF-8, and their maximum length including NULL terminator is E133_SCOPE_STRING_PADDED_LENGTH, which is derived from the requirements of DNS and DNS-SD. </p>
+<p>The scope string. Scope strings are UTF-8, and their maximum length including NULL terminator is E133_SCOPE_STRING_PADDED_LENGTH, which is derived from the requirements of DNS and DNS-SD. </p>
 
 </div>
 </div>
-<a id="a22321adf396e6dccedba36de29f3bb8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22321adf396e6dccedba36de29f3bb8a">&#9670;&nbsp;</a></span>static_broker_addr</h2>
+<a id="a0c84d65b0bda9438b948ac7a7907da47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c84d65b0bda9438b948ac7a7907da47">&#9670;&nbsp;</a></span>static_broker_addr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> RdmnetScopeConfig::static_broker_addr</td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> static_broker_addr</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The broker address to which to connect, if a static broker has been configured. </p>
-<p>If this member contains a valid <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> and port, discovery using DNS-SD will be bypassed and a connection will be attempted directly to the address given. </p>
+<p>The broker address to which to connect, if a static broker has been configured. If this member contains a valid <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> and port, discovery using DNS-SD will be bypassed and a connection will be attempted directly to the address given. </p>
 
 </div>
 </div>

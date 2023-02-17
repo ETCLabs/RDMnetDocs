@@ -179,14 +179,14 @@
       <type>etcpal::OpaqueId&lt; detail::ScopeHandleType, rdmnet_client_scope_t, RDMNET_CLIENT_SCOPE_INVALID &gt;</type>
       <name>ScopeHandle</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gaa772f132fb4c3e567e6a4610eb7d8220</anchor>
+      <anchor>ga949cd3b533bd716f81d44c623cb18896</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>constexpr uint16_t</type>
       <name>kNullEndpoint</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gab66ff85b4e9f9a9221f3c31ff62d0c65</anchor>
+      <anchor>gac4ab6502f8edc4f19b0886f658d3f7b9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2934,70 +2934,70 @@
       <type></type>
       <name>Broker</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a7182f467e41b6e2dc2d5d36244bcb8e9</anchor>
+      <anchor>a8feb0416288de31cab0b728fba769733</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Broker</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a1a00404584141e06f14f209686b068dd</anchor>
+      <anchor>abc1adba214950b09ce390630040113cc</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Broker</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>aaba2b0ccce7d1e7003f9531bdab47b34</anchor>
+      <anchor>ab1abb638725891a8e0ec7661b1781243</anchor>
       <arglist>(const Broker &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>Broker &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a5d9159edb20786025c0c0d57229666a1</anchor>
+      <anchor>a366a7ffff1a05a3dea287c4f7523ec37</anchor>
       <arglist>(const Broker &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Broker</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a60520a7afe827db03b2c50a48450a39f</anchor>
+      <anchor>a62ff98e43be36173a40d5d34b905d2bf</anchor>
       <arglist>(Broker &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>Broker &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a40351514e8282f6c2f08f0f3577bd68d</anchor>
+      <anchor>a4710d951bb651fdd75a86fc57da8c588</anchor>
       <arglist>(Broker &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a84c82ebc558d7c67473fdd52944d4d67</anchor>
+      <anchor>aa4c662c462250b0111c66a2769aea5e9</anchor>
       <arglist>(const Settings &amp;settings, etcpal::Logger *logger=nullptr, NotifyHandler *notify=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a4e19a613a75c27cf09fd60446433ca5b</anchor>
+      <anchor>a911f52326aceb684a3dc4e3029785812</anchor>
       <arglist>(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeScope</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>ab54f8c7ed4dfd4a314a824b89e0f5a5b</anchor>
+      <anchor>a2a1f240c70a743bf9d278029694728a3</anchor>
       <arglist>(const std::string &amp;new_scope, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>const Settings &amp;</type>
       <name>settings</name>
       <anchorfile>classrdmnet_1_1_broker.html</anchorfile>
-      <anchor>a62359c965edaa83bc90528abd7ce6f5b</anchor>
+      <anchor>a197d3b8a2b8f26e3fd66dbe735a8143d</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -3008,70 +3008,70 @@
       <type></type>
       <name>ClientConnectedInfo</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>aa1393d2bfb383da274c99e8176b8fade</anchor>
+      <anchor>ab60e4954f4d08ad443e460b6b24a98dd</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>ClientConnectedInfo</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a29d61c31f3aa1382473933205385172c</anchor>
+      <anchor>a4024cb68e33718afd36056d74e770d72</anchor>
       <arglist>(const ClientConnectedInfo &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>ClientConnectedInfo &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a94bcbaff80d374adb0daa4a718191ff1</anchor>
+      <anchor>a83d4d67df634056fe5725a02ad6a66a2</anchor>
       <arglist>(const ClientConnectedInfo &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>ClientConnectedInfo</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a110b3c2916dfe108d151b1bd358b9c5c</anchor>
+      <anchor>ad6ebc63c8045ee50a84092ad039b5cf3</anchor>
       <arglist>(const RdmnetClientConnectedInfo &amp;c_info) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::SockAddr</type>
       <name>broker_addr</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>af30653fa66bd5b267c54cf81a8c7eb3d</anchor>
+      <anchor>aece06f4235f21c75c4ff690b5885e004</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>broker_name</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a751d070cb4c1f89d838955298270b6cf</anchor>
+      <anchor>a3a8402ac03dfec3f25f97fe97d518700</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr const char *</type>
       <name>broker_name_c_str</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>ae9c33598a50d33d89a23b58d3ce4399b</anchor>
+      <anchor>a7a438f0d4afe8a443761b40810cac430</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Uuid</type>
       <name>broker_cid</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a85d098c69879069fcdcb1de7fcf34b69</anchor>
+      <anchor>a701f128ce0ae76afb91892baff42df40</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>broker_uid</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a31f543df72c656579ea9ee8d82896929</anchor>
+      <anchor>a6c82d8a8de4471c9e50c4ab504fdde6a</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetClientConnectedInfo &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_client_connected_info.html</anchorfile>
-      <anchor>a51c2357d5d4bfd07d36c18f02854d38c</anchor>
+      <anchor>abe175b6969a82743bb3d3a5ef50431f6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -3082,105 +3082,105 @@
       <type></type>
       <name>ClientConnectFailedInfo</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>ad56ecf1f4eaaaa25405daa057bba7306</anchor>
+      <anchor>aec2fa7dc4bf5d3a5a2f14883490fdb00</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>ClientConnectFailedInfo</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>aa0d0b40f0ae2769c6ec7a98709dd12c6</anchor>
+      <anchor>a81eb877bb8aedb963272f64bbace3f5b</anchor>
       <arglist>(const ClientConnectFailedInfo &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>ClientConnectFailedInfo &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>aed5584f3cefdc4ff4bb0a6838124f6a9</anchor>
+      <anchor>ad5afbebb3a65cec7a8ce7b229c7a6509</anchor>
       <arglist>(const ClientConnectFailedInfo &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>ClientConnectFailedInfo</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>ae14195622902ec107f389ce58f3b11e9</anchor>
+      <anchor>a9da888ef6081e1278235a9b6ffaef0c8</anchor>
       <arglist>(const RdmnetClientConnectFailedInfo &amp;c_info) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdmnet_connect_fail_event_t</type>
       <name>event</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>ac17da13519cd10509006f8002740fb56</anchor>
+      <anchor>aee583348d06680fbc733e75a68ed2cb0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Error</type>
       <name>socket_err</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>acce32f5cff2a9b2a0e56991019ca3bd9</anchor>
+      <anchor>aa23cc6d514a9af4e01091c366f188ee0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdmnet_connect_status_t</type>
       <name>rdmnet_reason</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a9c413de2583bde83f42b4a110474503e</anchor>
+      <anchor>a57733bd20e7fc847191387ce73405fe8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>will_retry</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a6e41ddd3cccb4e828de173954e123878</anchor>
+      <anchor>a5df354b806358c5f61541f96b68142e4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasSocketErr</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>afceca7697b907771e59dc50f9bf977e2</anchor>
+      <anchor>a6be07ba7f22920a6254ad49e1da9b54d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasRdmnetReason</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a4fd6bddd56fb57cb79168031d48f833f</anchor>
+      <anchor>ad404f1b1561a7c6ee466b5203e294363</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>EventToCString</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a354b7856ffae874fe1178a2d3e2b5644</anchor>
+      <anchor>a2c7c5e71ca0564685ef3dce374792fb8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>EventToString</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>af25821d006fbb7ad0f5ba6124ec50a85</anchor>
+      <anchor>a9f8606295d85c6cc7860119d5880d22a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>RdmnetReasonToCString</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a8ba2d4bdd5188584e58850f5ccd16fa5</anchor>
+      <anchor>a45767e9511c1eca0f5072c7ce49afc1c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>RdmnetReasonToString</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a728993f1eaf943b81f1e2ad3cd46ae3d</anchor>
+      <anchor>ac2b5e9c100dd6f12e2cc542f2beed9af</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetClientConnectFailedInfo &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_client_connect_failed_info.html</anchorfile>
-      <anchor>a4a98baff78c5293caec3311f70cbfb8e</anchor>
+      <anchor>af814c61ed930a15095f9b41e3882585c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -3191,105 +3191,105 @@
       <type></type>
       <name>ClientDisconnectedInfo</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a7b65e39bde3b14a7e99334ff3f2dbafc</anchor>
+      <anchor>a61d50df4125e2e29e2bd288fd5698995</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>ClientDisconnectedInfo</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>ab0c643d72936d4a0c8dcef84a09f138c</anchor>
+      <anchor>ade2077c3076cf2b73c712cfec8624d36</anchor>
       <arglist>(const ClientDisconnectedInfo &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>ClientDisconnectedInfo &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>ad5a664ecb5779120be9a6f9e7edb1494</anchor>
+      <anchor>a27e8db43f5e518a485b6f4ce037b2f27</anchor>
       <arglist>(const ClientDisconnectedInfo &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>ClientDisconnectedInfo</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>ab0a41a03919e848e5e045abf09735d23</anchor>
+      <anchor>a24deb9c2ba0d0f33067479c8f29364b0</anchor>
       <arglist>(const RdmnetClientDisconnectedInfo &amp;c_info) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdmnet_disconnect_event_t</type>
       <name>event</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a4ea59d1218f976a89e65d760d9148ee0</anchor>
+      <anchor>a441853b37712a9e44ea5e676bff68693</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Error</type>
       <name>socket_err</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a1e297f825a0089fe3451c48a53ea9c8f</anchor>
+      <anchor>aa23cc6d514a9af4e01091c366f188ee0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdmnet_disconnect_reason_t</type>
       <name>rdmnet_reason</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a6edcd1311a602e45f49559ac97b5f03a</anchor>
+      <anchor>a8fa3e26fb7c47e63b3c635d82e1e0bc4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>will_retry</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a0465f281cbd8d2f9d1049bf6e0205fbd</anchor>
+      <anchor>a5df354b806358c5f61541f96b68142e4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasSocketErr</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>af2918a16b23733087e8d8641d08320d4</anchor>
+      <anchor>a6be07ba7f22920a6254ad49e1da9b54d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasRdmnetReason</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a7d00b13ae362f559d96dc7a16a84d187</anchor>
+      <anchor>ad404f1b1561a7c6ee466b5203e294363</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>EventToCString</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a28c46690251e4e8d09e470524d4ec80f</anchor>
+      <anchor>a2c7c5e71ca0564685ef3dce374792fb8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>EventToString</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a89755f47edbe57148d02675c6f4d6ead</anchor>
+      <anchor>a9f8606295d85c6cc7860119d5880d22a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>RdmnetReasonToCString</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a7f17424ad148a2d0919230d7ac971fa1</anchor>
+      <anchor>a45767e9511c1eca0f5072c7ce49afc1c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>RdmnetReasonToString</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a551111bee52b971073b373e9be4d454f</anchor>
+      <anchor>ac2b5e9c100dd6f12e2cc542f2beed9af</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetClientDisconnectedInfo &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_client_disconnected_info.html</anchorfile>
-      <anchor>a6d9f47fefe0c6b67a13a3ee5d20384c9</anchor>
+      <anchor>af31f69b12e0805f05b676f1fd03c683c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -3304,231 +3304,231 @@
       <type>etcpal::OpaqueId&lt; detail::ControllerHandleType, rdmnet_controller_t, RDMNET_CONTROLLER_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a69cd4c66d7d3974557f4c6049bd57a9b</anchor>
+      <anchor>ad1bafb2705dc03704bc95f827c02a954</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Controller</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>acd1093ddaaae5d48a7facbdd8ac43275</anchor>
+      <anchor>a16499df7a544543d272e3b7c722c1beb</anchor>
       <arglist>(Controller &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>Controller &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a72de95587872a83e9121bf9783b73f7c</anchor>
+      <anchor>a585129561cdfa9efe6ef399747656db3</anchor>
       <arglist>(Controller &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a1d0150d73e64cfff241b351f7b8efd55</anchor>
+      <anchor>a25e1aa54e8c33ac84c6346bdd4faf36a</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const RdmData &amp;rdm_data)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>af58dad40d2f89f39817a6b9cadb34847</anchor>
+      <anchor>a16bf7daa0f6d0f74378111f7c7615fac</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, const Settings &amp;settings, RdmCommandHandler &amp;rdm_handler, uint8_t *rdm_response_buf=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a05affd966d0250020eaba3ceb39bbd8d</anchor>
+      <anchor>a911f52326aceb684a3dc4e3029785812</anchor>
       <arglist>(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a752a7b8897f2ccae3b76c0e36946cf26</anchor>
+      <anchor>ad37920af8aba6ad63aed43982579a429</anchor>
       <arglist>(const char *id, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a645812ec00ce2c17b132f6b7b7fe982f</anchor>
+      <anchor>a3821766d7f06e5ea64b6aa6a39b4e214</anchor>
       <arglist>(const std::string &amp;id, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a7887142644d663d421f839ee2cac20f3</anchor>
+      <anchor>a2601a07e139b22433b56eac69414ee81</anchor>
       <arglist>(const Scope &amp;scope_config)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddDefaultScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a747d4c004d271d2b4eff5174489670e3</anchor>
+      <anchor>a2be4963fd7e6bc670f03415f45dc88aa</anchor>
       <arglist>(const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a7806197a0bb38ef5c9a95047485e05a6</anchor>
+      <anchor>aba9e02967af379c40fb9bfa096be17a6</anchor>
       <arglist>(ScopeHandle scope_handle, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>acacbc873e58b7b2ca1fc2079b6edb6c6</anchor>
+      <anchor>a9294e5d49288b31aba448510eca858b8</anchor>
       <arglist>(ScopeHandle scope_handle, const char *new_scope_id_str, rdmnet_disconnect_reason_t disconnect_reason, const etcpal::SockAddr &amp;new_static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeScope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a78eb60d275c02ecc613cd4f4b6d6d126</anchor>
+      <anchor>aa40ed407df20ae8d5338528b9212fe22</anchor>
       <arglist>(ScopeHandle scope_handle, const Scope &amp;new_scope_config, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeSearchDomain</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a22a5ea456ab042160fa7f91a3d1efe39</anchor>
+      <anchor>aa2aa92bd6f6df88cd0cc3da1237c46ca</anchor>
       <arglist>(const char *new_search_domain, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint32_t &gt;</type>
       <name>SendRdmCommand</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>aec1f580278dd1703dfeb7e1030413a90</anchor>
+      <anchor>a234b5deffd6530f03159f4be8b667321</anchor>
       <arglist>(ScopeHandle scope_handle, const DestinationAddr &amp;destination, rdmnet_command_class_t command_class, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint32_t &gt;</type>
       <name>SendGetCommand</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a1cbb710605f06cddd4e043ce71653390</anchor>
+      <anchor>a40b043dd06f47a40fc991f95f73229ae</anchor>
       <arglist>(ScopeHandle scope_handle, const DestinationAddr &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint32_t &gt;</type>
       <name>SendSetCommand</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a7bfc2c6acd240a4200c2ee77d5a31e9e</anchor>
+      <anchor>aee2d8b5f1a5056c880a9d3b6e60e08f6</anchor>
       <arglist>(ScopeHandle scope_handle, const DestinationAddr &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RequestClientList</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a31525848734a10e0762b9114a98dcc5b</anchor>
+      <anchor>a8adfcc838c7de3215b396dc9de0ef668</anchor>
       <arglist>(ScopeHandle scope_handle)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RequestResponderIds</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>ab9f5541545bf3a35120513286c33d71e</anchor>
+      <anchor>a3cd650d20751f2943214e70e65e96693</anchor>
       <arglist>(ScopeHandle scope_handle, const rdm::Uid *uids, size_t num_uids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RequestResponderIds</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a607c16e570c1e119e5344924aa7a83aa</anchor>
+      <anchor>ad43e63c543e84ce0501d08a12e351a29</anchor>
       <arglist>(ScopeHandle scope_handle, const std::vector&lt; rdm::Uid &gt; &amp;uids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmAck</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a018ee22d658081c4c7f38e5b0eaaeb83</anchor>
+      <anchor>ad81b5d98311bc53942cb19a56a717042</anchor>
       <arglist>(ScopeHandle scope_handle, const SavedRdmCommand &amp;received_cmd, const uint8_t *response_data=nullptr, size_t response_data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmNack</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a3c83896568e8827df9550bc946fa266e</anchor>
+      <anchor>a3c1695c759095c5136038e4642487cc8</anchor>
       <arglist>(ScopeHandle scope_handle, const SavedRdmCommand &amp;received_cmd, rdm_nack_reason_t nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmNack</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a04377129ab15f68369e2b1b7f4023c0e</anchor>
+      <anchor>a7100e23fc24db34113dad26e5ad59668</anchor>
       <arglist>(ScopeHandle scope_handle, const SavedRdmCommand &amp;received_cmd, uint16_t raw_nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmUpdate</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a2950696b66420a00fc29de75167b9d36</anchor>
+      <anchor>a16a034a197a52815d20a98b834f67532</anchor>
       <arglist>(ScopeHandle scope_handle, uint16_t param_id, const uint8_t *data=nullptr, size_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendLlrpAck</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>aa8895c75dc3f9da25ef4072294810183</anchor>
+      <anchor>a350cf979bed9e0f540e97d9cf5255e31</anchor>
       <arglist>(const llrp::SavedRdmCommand &amp;received_cmd, const uint8_t *response_data=nullptr, uint8_t response_data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendLlrpNack</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a2c27dc33ed9bcb1963c2c15e6c43cdbd</anchor>
+      <anchor>a21979124f4cf493bb90b568b1f2e4e84</anchor>
       <arglist>(const llrp::SavedRdmCommand &amp;received_cmd, rdm_nack_reason_t nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendLlrpNack</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a54ff20d18131edb6f4049febe6058315</anchor>
+      <anchor>a5c1b572fa8a639e17d69c6e9aa2e9883</anchor>
       <arglist>(const llrp::SavedRdmCommand &amp;received_cmd, uint16_t raw_nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>Handle</type>
       <name>handle</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a3cd6da9f67ba9e721738b6bc97dc8927</anchor>
+      <anchor>a6781072c11eeb54c1c235c6d5f36e1a4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const RdmData &amp;</type>
       <name>rdm_data</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a82d0c37478861d986ced228872c43618</anchor>
+      <anchor>a180a7baccb7ebd6fa07150c1d84d2a54</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>Controller::NotifyHandler *</type>
       <name>notify_handler</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a8bf4ac5e07c9289095ee7f5faeafffad</anchor>
+      <anchor>a9cf2bac646d210d174872eddf63071cc</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>Controller::RdmCommandHandler *</type>
       <name>rdm_command_handler</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>aea0125055ef6176901f5b151012f6899</anchor>
+      <anchor>a38c296400a218ec0bdc738bcb9be847f</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; Scope &gt;</type>
       <name>scope</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>ad79553c8d464a3831557e0dd99329189</anchor>
+      <anchor>a994c4de8157ab27dbfe090729ad5100b</anchor>
       <arglist>(ScopeHandle scope_handle) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>UpdateRdmData</name>
       <anchorfile>classrdmnet_1_1_controller.html</anchorfile>
-      <anchor>a8b207dba47b05c6d5d5cddfef7c91d1b</anchor>
+      <anchor>a7b8bf0ce4cc1eaa5c3c094b3e6ef91e1</anchor>
       <arglist>(const RdmData &amp;new_data)</arglist>
     </member>
   </compound>
@@ -3543,28 +3543,28 @@
       <type>constexpr const RdmnetDestinationAddr &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_destination_addr.html</anchorfile>
-      <anchor>a7a38c980daec9669ee4c8f33a072c2bc</anchor>
+      <anchor>afc2d84ced4c82701c17926b0518ee0c0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static constexpr DestinationAddr</type>
       <name>ToDefaultResponder</name>
       <anchorfile>classrdmnet_1_1_destination_addr.html</anchorfile>
-      <anchor>a8c1f337f355371cdb56f19f164cf125b</anchor>
+      <anchor>a7bc53b1eb1a6563b1d1b8f2cfbd6d29f</anchor>
       <arglist>(const rdm::Uid &amp;rdmnet_uid, uint16_t subdevice=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static constexpr DestinationAddr</type>
       <name>ToDefaultResponder</name>
       <anchorfile>classrdmnet_1_1_destination_addr.html</anchorfile>
-      <anchor>a45f050b3bcdb1eafa4acbb292ccd04f0</anchor>
+      <anchor>a055951677c276ede24088d91ed5d6802</anchor>
       <arglist>(uint16_t manufacturer_id, uint32_t device_id, uint16_t subdevice=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static constexpr DestinationAddr</type>
       <name>ToSubResponder</name>
       <anchorfile>classrdmnet_1_1_destination_addr.html</anchorfile>
-      <anchor>a7c7746701f2ad6f1143918158f0b7e64</anchor>
+      <anchor>ae5bc682afe4c848d3d965a343099123f</anchor>
       <arglist>(const rdm::Uid &amp;rdmnet_uid, uint16_t endpoint, const rdm::Uid &amp;rdm_uid, uint16_t subdevice=0)</arglist>
     </member>
   </compound>
@@ -3575,14 +3575,14 @@
       <type>constexpr</type>
       <name>DestinationAddr</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_destination_addr.html</anchorfile>
-      <anchor>a1edec4d1f637e87de8d9b73696125e32</anchor>
+      <anchor>aa670ef8cd02a3ba47698e9cddf07d191</anchor>
       <arglist>(const etcpal::Uuid &amp;cid, const rdm::Uid &amp;uid, uint16_t subdevice=0)</arglist>
     </member>
     <member kind="function">
       <type>constexpr const LlrpDestinationAddr &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_destination_addr.html</anchorfile>
-      <anchor>a6cdfe5f8e2322672e46c172f86b78d41</anchor>
+      <anchor>a04335ec3c171986c3bc711ecf1fccf85</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -3595,294 +3595,294 @@
       <type>etcpal::OpaqueId&lt; detail::DeviceHandleType, rdmnet_device_t, RDMNET_DEVICE_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a8aceb3d8870acdc9c349c624f0e45bc1</anchor>
+      <anchor>a6a600f0b3eac02ad65fe4ac28f16ef3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Device</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a238cd08406976efabb25d28c075049d2</anchor>
+      <anchor>aa4dbce63d87dbb05fbf6c0b503d4800f</anchor>
       <arglist>(Device &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>Device &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a3e314dd90c2021ab5d4c3352d030e6da</anchor>
+      <anchor>abeeca49636a067c8cb5c2e02a3136380</anchor>
       <arglist>(Device &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>StartupWithDefaultScope</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>afe17981d3035416d657b269ad2034960</anchor>
+      <anchor>ae6721000f31d82041cc7e710ea0672df</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>ab4573244d38d30c40900484f53b9fbe7</anchor>
+      <anchor>aacd2f932c57555d012a7142c4dff3b03</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const char *scope_id_str, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a32723797de36ba15ef1b8b6497090f1e</anchor>
+      <anchor>a7f201c3f535a4d3fb6e0110e699a9db8</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, const Settings &amp;settings, const Scope &amp;scope_config)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a84538ed8fcb63d968c760649df74c61c</anchor>
+      <anchor>a911f52326aceb684a3dc4e3029785812</anchor>
       <arglist>(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeScope</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a9f0e9d76c4ce0487b0fd38edec014fe4</anchor>
+      <anchor>ad5ff632417f01ac5c972e7c84b638eda</anchor>
       <arglist>(const char *new_scope_id_str, rdmnet_disconnect_reason_t disconnect_reason, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeScope</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>aa6f14e00577959677d438a293c6c8032</anchor>
+      <anchor>afa305dba6909f007eab48402af13fad7</anchor>
       <arglist>(const Scope &amp;new_scope_config, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>ChangeSearchDomain</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a81178d9ad914cda39d999779162955cc</anchor>
+      <anchor>aa2aa92bd6f6df88cd0cc3da1237c46ca</anchor>
       <arglist>(const char *new_search_domain, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmAck</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a5795a6031e8903bc294f0afa4a224472</anchor>
+      <anchor>a6fa6e8f9487334921cd292a2b21399b5</anchor>
       <arglist>(const SavedRdmCommand &amp;received_cmd, const uint8_t *response_data=nullptr, size_t response_data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmNack</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>ae7675ffb54dda6f55c0eb2f54da65c24</anchor>
+      <anchor>adbd7405a912bfc60084108b31d0477a3</anchor>
       <arglist>(const SavedRdmCommand &amp;received_cmd, rdm_nack_reason_t nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmNack</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a61c71ff57e48534819eb51aa7b2d21d1</anchor>
+      <anchor>af596201959f4daca3190813ba3e1c196</anchor>
       <arglist>(const SavedRdmCommand &amp;received_cmd, uint16_t raw_nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmUpdate</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>aeb4d4b1e2f5867bd99387fbc76d01aa2</anchor>
+      <anchor>a007614b333cb50d4009782639e44ff1e</anchor>
       <arglist>(uint16_t param_id, const uint8_t *data=nullptr, size_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmUpdate</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>af6126e13c9c64c3758f229cc973d8221</anchor>
+      <anchor>a468b72faeead88baaa5920883c3f0d89</anchor>
       <arglist>(uint16_t subdevice, uint16_t param_id, const uint8_t *data=nullptr, size_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRdmUpdate</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a5c58f5eb5b3aa1b09a5fd2242d5e420b</anchor>
+      <anchor>a25f287ea24d62c28219db8b9fc1de98f</anchor>
       <arglist>(const SourceAddr &amp;source_addr, uint16_t param_id, const uint8_t *data=nullptr, size_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendRptStatus</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>ad2f2a87844ed172ccc142792b03053f8</anchor>
+      <anchor>a450d63bca5e888038e477cd7d15543cc</anchor>
       <arglist>(const SavedRdmCommand &amp;received_cmd, rpt_status_code_t status_code, const char *status_string=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendLlrpAck</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>aaf4491f3d76f1d0092cc94f28ecc31b8</anchor>
+      <anchor>a350cf979bed9e0f540e97d9cf5255e31</anchor>
       <arglist>(const llrp::SavedRdmCommand &amp;received_cmd, const uint8_t *response_data=nullptr, uint8_t response_data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendLlrpNack</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a5121e1897edbcb40d9a078723a9cd21f</anchor>
+      <anchor>a21979124f4cf493bb90b568b1f2e4e84</anchor>
       <arglist>(const llrp::SavedRdmCommand &amp;received_cmd, rdm_nack_reason_t nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendLlrpNack</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a44fdd13593b0edc5e211fe87e954b5fc</anchor>
+      <anchor>a5c1b572fa8a639e17d69c6e9aa2e9883</anchor>
       <arglist>(const llrp::SavedRdmCommand &amp;received_cmd, uint16_t raw_nack_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddVirtualEndpoint</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a99f7314c8662242597afe5c54b4800d7</anchor>
+      <anchor>aa02422a3abfae1dd953485b781f5bc3e</anchor>
       <arglist>(const VirtualEndpointConfig &amp;endpoint_config)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddVirtualEndpoints</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>aa3f32fc44e4daf227f30f88e2b63debe</anchor>
+      <anchor>a63bc4be4947e247db0368ba1af55a7fb</anchor>
       <arglist>(const std::vector&lt; VirtualEndpointConfig &gt; &amp;endpoint_configs)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddPhysicalEndpoint</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a875fae87db81a2fe2236566e45892f1b</anchor>
+      <anchor>a996fbdeea7421008811ab9bc3c1e4297</anchor>
       <arglist>(const PhysicalEndpointConfig &amp;physical_config)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddPhysicalEndpoints</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a23a6155274bbee85098edd578cfa9e39</anchor>
+      <anchor>a4e70959bb76652451bd30bb1551d2a45</anchor>
       <arglist>(const std::vector&lt; PhysicalEndpointConfig &gt; &amp;endpoint_configs)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveEndpoint</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a07e0aced596e0f67936b1e544f592c1f</anchor>
+      <anchor>a733490b9edf1fe28e5b9f699ca4ea050</anchor>
       <arglist>(uint16_t endpoint_id)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveEndpoints</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a06beb4f58f364c6917711f7362a919eb</anchor>
+      <anchor>a132ab25880f39704c19a605966727584</anchor>
       <arglist>(const std::vector&lt; uint16_t &gt; &amp;endpoint_ids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddVirtualResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a5e0bde652783c4be56d6d96789c6b77a</anchor>
+      <anchor>a4843f95506c22f103ef45f3fb93605ff</anchor>
       <arglist>(uint16_t endpoint_id, const etcpal::Uuid &amp;responder_id)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddVirtualResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a64dcf8e2f82f2fd72897b35c43bc3cd5</anchor>
+      <anchor>ae47bfc4d7cae933e2890f494b36ba2b0</anchor>
       <arglist>(uint16_t endpoint_id, const rdm::Uid &amp;responder_static_uid)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddVirtualResponders</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>ace9161e9472e747f488271f2f61c8284</anchor>
+      <anchor>a566053deba10559610683b52a0f1839d</anchor>
       <arglist>(uint16_t endpoint_id, const std::vector&lt; etcpal::Uuid &gt; &amp;responder_ids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddVirtualResponders</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a1f9a953b5dfe60d16f3af293400c9eb5</anchor>
+      <anchor>ad2f6e1e8dcf0a997e535f395a6519f96</anchor>
       <arglist>(uint16_t endpoint_id, const std::vector&lt; rdm::Uid &gt; &amp;responder_static_uids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddPhysicalResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>aa55f54189e6601365456952655cc1c4f</anchor>
+      <anchor>aa844b7daebfebb966671a03af69c05c1</anchor>
       <arglist>(uint16_t endpoint_id, const rdm::Uid &amp;responder_uid, uint16_t control_field, const rdm::Uid &amp;binding_uid=rdm::Uid{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddPhysicalResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>acff56b89306a8af9bb7ef156dd317adc</anchor>
+      <anchor>a77b43cdc03fdefe4113adaf9cd9265a3</anchor>
       <arglist>(uint16_t endpoint_id, const PhysicalEndpointResponder &amp;responder)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>AddPhysicalResponders</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a1b4a5d60f2814627c22ac02c47ac2e7f</anchor>
+      <anchor>a6264c4b5ef427f46297dcc1e1b897174</anchor>
       <arglist>(uint16_t endpoint_id, const std::vector&lt; PhysicalEndpointResponder &gt; &amp;responders)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveVirtualResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a313ee7f3528e61f6f564e8a1ba255edb</anchor>
+      <anchor>a47a8340c1a145c83f41a34e0dfb6a321</anchor>
       <arglist>(uint16_t endpoint_id, const etcpal::Uuid &amp;responder_id)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveVirtualResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>af4684778a6ef320365b8a707709774f4</anchor>
+      <anchor>aea437e289bf0ae48d8e9daf71271055a</anchor>
       <arglist>(uint16_t endpoint_id, const rdm::Uid &amp;responder_static_uid)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveVirtualResponders</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>aa44a3a6e5fe462073de21798ca3ed479</anchor>
+      <anchor>a9f0817e274cd565c15eec29f1c6dc22f</anchor>
       <arglist>(uint16_t endpoint_id, const std::vector&lt; etcpal::Uuid &gt; &amp;responder_ids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveVirtualResponders</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>ae9fda389c24c0e7fb16fa599ac11bf0a</anchor>
+      <anchor>acfee2d4f296ac7dc3cf24b9a2dd76a10</anchor>
       <arglist>(uint16_t endpoint_id, const std::vector&lt; rdm::Uid &gt; &amp;responder_static_uids)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemovePhysicalResponder</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a3e35f9850d125d12036ec75b9ddfcb97</anchor>
+      <anchor>a1da5859807001e8882d0b6e55670b7e2</anchor>
       <arglist>(uint16_t endpoint_id, const rdm::Uid &amp;responder_uid)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemovePhysicalResponders</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a1bf9f11a6cb5b5b773063d44e5cd081b</anchor>
+      <anchor>a2da8bdc0cb78a8641b8dc92e6a1f99ae</anchor>
       <arglist>(uint16_t endpoint_id, const std::vector&lt; rdm::Uid &gt; &amp;responder_uids)</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
       <name>handle</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a92857222f73fbda03c2bf6ba5d95edc3</anchor>
+      <anchor>a3a687dc70a6e5a15c01d66776c0ed205</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr NotifyHandler *</type>
       <name>notify_handler</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a646ed4c0fac6dc42ddd0737c8376d543</anchor>
+      <anchor>ab91ec1e534adb0b8d73bc921d304202e</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; Scope &gt;</type>
       <name>scope</name>
       <anchorfile>classrdmnet_1_1_device.html</anchorfile>
-      <anchor>a3f46dd4c3976eff06bfb157008fcf9b9</anchor>
+      <anchor>ae8a5ae6a957ea1e4dac51b6dd6d9d4b7</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -3897,70 +3897,70 @@
       <type></type>
       <name>DiscoveredTarget</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a7e2f0b1218b078bbb152cd3133e95bbf</anchor>
+      <anchor>ac917c28cc851304ac9aecef39b982cb8</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>DiscoveredTarget</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a555f29086daef2ba21012a5dd04795a9</anchor>
+      <anchor>abe9cb2a1c3a99088a6a196cdf51fc759</anchor>
       <arglist>(const LlrpDiscoveredTarget &amp;c_target) noexcept</arglist>
     </member>
     <member kind="function">
       <type>DiscoveredTarget &amp;</type>
       <name>operator=</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a9dd307961ba55558d5cc4c55a1a61caa</anchor>
+      <anchor>a7b52c5310b60066472b705521696ecc7</anchor>
       <arglist>(const LlrpDiscoveredTarget &amp;c_target) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr DestinationAddr</type>
       <name>address</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>ac236cbba799dea7bf6fe6b228d5f3289</anchor>
+      <anchor>aa4cc860d18a90b8614d8dd7e3e61e812</anchor>
       <arglist>(uint16_t subdevice=0) const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>ComponentTypeToCString</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a1090b5a008a60ec77d122820f96278f7</anchor>
+      <anchor>a89dbc05e8ca32cdd5515f8a0631e00e7</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>ComponentTypeToString</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a165eb56b86346e1ef25b6c9ba3de78a6</anchor>
+      <anchor>ad81ece33718c011ec148c88f465a3f09</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a43b92fed06bf3ebf36ac27dec5575381</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm::Uid</type>
       <name>uid</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a562c7ecd3879cdaa21e0d38511dd64e1</anchor>
+      <anchor>a12b7b9dfe0aa5ebbd928817da6444004</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal::MacAddr</type>
       <name>hardware_address</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a0b87a22860fffd00650ff5ac764554c8</anchor>
+      <anchor>a0011e5a6491b454068482387e61891b3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>llrp_component_t</type>
       <name>component_type</name>
       <anchorfile>structrdmnet_1_1llrp_1_1_discovered_target.html</anchorfile>
-      <anchor>a0e8f36f0e67eec79e77d13a110279279</anchor>
+      <anchor>a98b74ef88251de997b90bb399762371a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3971,28 +3971,28 @@
       <type>std::string</type>
       <name>service_instance_name</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_dns_attributes.html</anchorfile>
-      <anchor>a77262da9a4f054ec8a2e2fcce3907f7a</anchor>
+      <anchor>abea60185b243edc4ebfe85c944185853</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>manufacturer</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_dns_attributes.html</anchorfile>
-      <anchor>aa15a3e80b991cd7a6808152aeba7d24e</anchor>
+      <anchor>ad6df93e83fc92f0657b916c0a4ad5069</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>model</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_dns_attributes.html</anchorfile>
-      <anchor>acb93125c91d4139e0739e7a91f57c539</anchor>
+      <anchor>a2e5f0c4b01fa6a42a6a2215b44a116d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; DnsTxtRecordItem &gt;</type>
       <name>additional_txt_record_items</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_dns_attributes.html</anchorfile>
-      <anchor>aeea368e3ff7100702ee90cae8e9c91ee</anchor>
+      <anchor>a3c9addeb17e6391105c826003a3fc57a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4003,49 +4003,49 @@
       <type></type>
       <name>DnsTxtRecordItem</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>a0c0dbce7ad13e649c66bd4c06d0d48d6</anchor>
+      <anchor>a6a271ec2dd74bad3939eec86ea492d35</anchor>
       <arglist>(const char *new_key, const char *new_value)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DnsTxtRecordItem</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>a38f97f390d1dd575f38807c98efb9899</anchor>
+      <anchor>ab7ffa81f18c2a0cc0294e68c35fd41e4</anchor>
       <arglist>(const char *new_key, const uint8_t *new_value, size_t new_value_len)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DnsTxtRecordItem</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>a73cd7cb57bca2a790aa716cbdfc83443</anchor>
+      <anchor>acdb086cd8f22a1b5e5d391f20457ba41</anchor>
       <arglist>(const std::string &amp;new_key, const std::string &amp;new_value)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DnsTxtRecordItem</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>a441da4ff6c5d929dbdaadd89408e7435</anchor>
+      <anchor>aea5dfbfba10de1f5e220e16844bad3e1</anchor>
       <arglist>(const std::string &amp;new_key, const uint8_t *new_value, size_t new_value_len)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DnsTxtRecordItem</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>a34cf63a11abeeb85be04cf8f7cccd996</anchor>
+      <anchor>a0e88e72a5975e4348a1b5840aa420d51</anchor>
       <arglist>(const std::string &amp;new_key, const std::vector&lt; uint8_t &gt; &amp;new_value)</arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>key</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>aac2597d0f31617a30eb7e665189558f0</anchor>
+      <anchor>aa4cdb693ee7f3d1d131bb328468184b7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; uint8_t &gt;</type>
       <name>value</name>
       <anchorfile>structrdmnet_1_1_dns_txt_record_item.html</anchorfile>
-      <anchor>a86f391737959f5d1b6456d659e6ebbfa</anchor>
+      <anchor>ae675fc884d19a43ad5f4ae02c7021bf1</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4056,56 +4056,56 @@
       <type></type>
       <name>DynamicUidAssignmentList</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>abebb29670ea280331207c25b332c4796</anchor>
+      <anchor>a0fc32c4dab1ea4e783435b02c33370b4</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DynamicUidAssignmentList</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>ad476c07a135a73f11f8eadb3efb328d7</anchor>
+      <anchor>ae245262e1727e89af0584214f0e7f66b</anchor>
       <arglist>(const DynamicUidAssignmentList &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>DynamicUidAssignmentList &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>af726bb2a4fef23f807e76b177efbe513</anchor>
+      <anchor>a9e714e82beaddac600e2205b1801c805</anchor>
       <arglist>(const DynamicUidAssignmentList &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>DynamicUidAssignmentList</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>a740d8ff4569b02b124996163d618fb3d</anchor>
+      <anchor>af4519a8fe8ae2454796896feb46e98c7</anchor>
       <arglist>(const RdmnetDynamicUidAssignmentList &amp;c_list) noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; DynamicUidMapping &gt;</type>
       <name>GetMappings</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>adcbcc8c9912e129b23d55e15565433d6</anchor>
+      <anchor>a7624de9f796db1f4487a2aa79507f99a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>more_coming</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>adff532e4725c29014aee40357b65835b</anchor>
+      <anchor>a4dc9106ad47f1f076eb8195dbba22d24</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetDynamicUidMapping *</type>
       <name>raw_mapping_array</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>ae80068d5e188d5f3103b0991c96da1c1</anchor>
+      <anchor>a170e11992e2c1cb5506df45a734321a3</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr size_t</type>
       <name>raw_mapping_array_size</name>
       <anchorfile>classrdmnet_1_1_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>a616f3290cb58265062ae5dc54de72a14</anchor>
+      <anchor>a3a17ae68405e81a59b66a89c6238e9ff</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -4116,56 +4116,56 @@
       <type></type>
       <name>DynamicUidMapping</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a309fac9a97ffee890c9691b9605fb0d3</anchor>
+      <anchor>a5d032d87cdd8f634f9941d343263fcab</anchor>
       <arglist>(const RdmnetDynamicUidMapping &amp;c_mapping)</arglist>
     </member>
     <member kind="function">
       <type>DynamicUidMapping &amp;</type>
       <name>operator=</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>af306da9231eea81a1e6a9db91c1197c1</anchor>
+      <anchor>a9d6e8458116b10d8e6ad09069fea7245</anchor>
       <arglist>(const RdmnetDynamicUidMapping &amp;c_mapping)</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsOk</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a8c114a0e535ddc97ce2b1d137b9759cf</anchor>
+      <anchor>a030d244ccd9a40a9f9ac813ea912a639</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>CodeToCString</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a7895cab9e1e3c3d7950e92e78de07b52</anchor>
+      <anchor>ae9a752267bd9197f2a21a4be91966636</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>CodeToString</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a28c97cc786e6748c76d254101830223f</anchor>
+      <anchor>a6d5108147af76197fe672d5355221e0a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>rdmnet_dynamic_uid_status_t</type>
       <name>status_code</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>adadb5a6110adb6f767e7ea9290373fc0</anchor>
+      <anchor>ab4493b573d26ae9d71aa1e7834f8efec</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm::Uid</type>
       <name>uid</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a509a253579f657a800a6107ceac0825d</anchor>
+      <anchor>a12b7b9dfe0aa5ebbd928817da6444004</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>rid</name>
       <anchorfile>structrdmnet_1_1_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a107d58039f8f84d91d1bdafcd39c1213</anchor>
+      <anchor>a204a23dd5a6d42252c6c346ab81921b8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4178,105 +4178,105 @@
       <type>etcpal::OpaqueId&lt; detail::EptClientHandleType, rdmnet_ept_client_t, RDMNET_EPT_CLIENT_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a00e2bfa4e5e7831a83a5dceb71098444</anchor>
+      <anchor>ad053a02db5356d95cbbfbc798d376730</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>EptClient</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>af04289046ceafea47a4f7ba7a757d390</anchor>
+      <anchor>a7b7f1df0be66fd1684aa30d6ff3e1d42</anchor>
       <arglist>(EptClient &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>EptClient &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a97783d2813d5a4a99b78ea7a6eedc37f</anchor>
+      <anchor>a41187744277aac38eeb55c54b4c45175</anchor>
       <arglist>(EptClient &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>ae338508e79fbeb7183e396ac9efbd951</anchor>
+      <anchor>a1e4aabbe8c61d456f74af11452a9eac7</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, const Settings &amp;settings)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a4590d3e0925a92a92c028661a8415c36</anchor>
+      <anchor>a911f52326aceb684a3dc4e3029785812</anchor>
       <arglist>(rdmnet_disconnect_reason_t disconnect_reason=kRdmnetDisconnectShutdown)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddScope</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>aebcb6c7c8d9b16280766525ca25b524b</anchor>
+      <anchor>ad37920af8aba6ad63aed43982579a429</anchor>
       <arglist>(const char *id, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddScope</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>af8da7313bdd0a83c53fa1d1612bd9e91</anchor>
+      <anchor>a2601a07e139b22433b56eac69414ee81</anchor>
       <arglist>(const Scope &amp;scope_config)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; ScopeHandle &gt;</type>
       <name>AddDefaultScope</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a555b53b301e2b732058df8c0e805dc62</anchor>
+      <anchor>a2be4963fd7e6bc670f03415f45dc88aa</anchor>
       <arglist>(const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RemoveScope</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a09364fb774865ba61cf0e4748af73444</anchor>
+      <anchor>aba9e02967af379c40fb9bfa096be17a6</anchor>
       <arglist>(ScopeHandle scope_handle, rdmnet_disconnect_reason_t disconnect_reason)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>RequestClientList</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a6afbaee81d5049431a8a6e0747c27b93</anchor>
+      <anchor>a8adfcc838c7de3215b396dc9de0ef668</anchor>
       <arglist>(ScopeHandle scope_handle)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendData</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>ab64b62efe1efb21827dcc87d1059ceed</anchor>
+      <anchor>ac75bff3ba01944973ed944a8a43946ea</anchor>
       <arglist>(ScopeHandle scope_handle, const etcpal::Uuid &amp;dest_cid, uint16_t manufacturer_id, uint16_t protocol_id, const uint8_t *data, size_t data_len)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>SendStatus</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>ac82d42bd0424940331b7e72ea79687dd</anchor>
+      <anchor>a5779891889e8c3e54258bb654bef8d4e</anchor>
       <arglist>(ScopeHandle scope_handle, const etcpal::Uuid &amp;dest_cid, ept_status_code_t status_code, const char *status_string=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>Handle</type>
       <name>handle</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>adf5e53f23d12edf16c30a1ef2f9b1fc8</anchor>
+      <anchor>a621c302402e64b9facadd7bfdcb2afbd</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>NotifyHandler *</type>
       <name>notify_handler</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>aa92f068e21c3f781a6fb9488191790f3</anchor>
+      <anchor>a8e9bb32536031eefbc9695f9b4a4e5bc</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; Scope &gt;</type>
       <name>scope</name>
       <anchorfile>classrdmnet_1_1_ept_client.html</anchorfile>
-      <anchor>a4936281394e537dc67da1c9545dafea5</anchor>
+      <anchor>a994c4de8157ab27dbfe090729ad5100b</anchor>
       <arglist>(ScopeHandle scope_handle) const</arglist>
     </member>
   </compound>
@@ -4287,28 +4287,28 @@
       <type></type>
       <name>EptClientEntry</name>
       <anchorfile>structrdmnet_1_1_ept_client_entry.html</anchorfile>
-      <anchor>ac6b7904c50b9ab4207c5b917462693f7</anchor>
+      <anchor>a90a737e43a343318d7d7b50a70268d3e</anchor>
       <arglist>(const RdmnetEptClientEntry &amp;c_entry)</arglist>
     </member>
     <member kind="function">
       <type>EptClientEntry &amp;</type>
       <name>operator=</name>
       <anchorfile>structrdmnet_1_1_ept_client_entry.html</anchorfile>
-      <anchor>aea8fa11d1699ec5bd2d31206877b4203</anchor>
+      <anchor>a33dc239b2363a1456593790496036b64</anchor>
       <arglist>(const RdmnetEptClientEntry &amp;c_entry)</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1_ept_client_entry.html</anchorfile>
-      <anchor>aaf41185c54c83b1bc3aef791482a360c</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; EptSubProtocol &gt;</type>
       <name>protocols</name>
       <anchorfile>structrdmnet_1_1_ept_client_entry.html</anchorfile>
-      <anchor>a152346969f158ad6106e77a05ee05664</anchor>
+      <anchor>a7ed38b6d6d163918a6c406f65085b18b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4323,56 +4323,56 @@
       <type></type>
       <name>EptClientList</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>ad56cc1b2777b6f8e41d38f825938b67a</anchor>
+      <anchor>ae6555465a3b3b5c773df7e2689cf9308</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>EptClientList</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>a01bf82054c57f192c3e6990ea3e4873c</anchor>
+      <anchor>ab770c640b9b24ad468d1d24d010cb211</anchor>
       <arglist>(const EptClientList &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>EptClientList &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>ab7cfb741957c2339b2a27300c3e4f9fa</anchor>
+      <anchor>ae38ea7899c549ae6b9c07b2f890b7fde</anchor>
       <arglist>(const EptClientList &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>EptClientList</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>a41c090d5b8140d9d16c9fcdd49921f59</anchor>
+      <anchor>a1c713f63cc36408c06ce5d9ee99f37ca</anchor>
       <arglist>(const RdmnetEptClientList &amp;c_list) noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; EptClientEntry &gt;</type>
       <name>GetClientEntries</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>a4a3dac5970f7c74e42009f8ef14b6de2</anchor>
+      <anchor>a2ee3397aa5ecee93d072bc533e649e8a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>more_coming</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>a4fab208b004476e6474cf439f668c3ae</anchor>
+      <anchor>a4dc9106ad47f1f076eb8195dbba22d24</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetEptClientEntry *</type>
       <name>raw_entry_array</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>ad2238de45102b20e19d27048d9f8da06</anchor>
+      <anchor>aa6ae587c35271991d78b99b4dce3a144</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr size_t</type>
       <name>raw_entry_array_size</name>
       <anchorfile>classrdmnet_1_1_ept_client_list.html</anchorfile>
-      <anchor>ad024e3e4e8d3a11e7edf87c7e24f1827</anchor>
+      <anchor>a0e4739dc0b762cd3dfe72e139e098095</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -4383,91 +4383,91 @@
       <type></type>
       <name>EptData</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a868390a3811651c482582aefa1106280</anchor>
+      <anchor>a5707671e348cc3a90f1cbbceab879689</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>EptData</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a3be2be123c2c5d04d4c8324129aac16b</anchor>
+      <anchor>aae5e1d467a644822d31dd2e90613a460</anchor>
       <arglist>(const EptData &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>EptData &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a86b5393217cedaa5e7e9f7f7bba286bd</anchor>
+      <anchor>a08b8cb171b5f59f4a26f6a8060aa1942</anchor>
       <arglist>(const EptData &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>EptData</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a9853dc8059513c64cf29d6ed7752d8f3</anchor>
+      <anchor>a0aae75c762d0acac8451f329d7b6b3e2</anchor>
       <arglist>(const RdmnetEptData &amp;c_data) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Uuid</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a953220dfdd8a88b3275b73ed2e8d03bb</anchor>
+      <anchor>a07635554a26c730bad4cbdb81d5293fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>manufacturer_id</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a8d7fa5dee2b4e5c2a27bf9fca7cc200f</anchor>
+      <anchor>ad82230ded92e64886e7a5b2ca8f11fca</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>protocol_id</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>af663a739f8d7204b92c6627aac770c34</anchor>
+      <anchor>a73e5f1fcbd4400bdb49b626db158b934</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>sub_protocol</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>ae44461e570c83f79b7401624ace8eed7</anchor>
+      <anchor>a4ec70f1e31dfd0728f8e26e11b468fc5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a59e9cee5b29581377560faf169a7cf6a</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr size_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a95720074c77f0f91a69c402baafccfb4</anchor>
+      <anchor>a8d204c73ea8d56026afee5ffc33837d4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; uint8_t &gt;</type>
       <name>CopyData</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a0ad6e38f7e2047f51194be39eccb7056</anchor>
+      <anchor>ac7bf30921bde749ae3f729e64bc2612c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetEptData &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>a125f5284ffea464376e8f0802810febf</anchor>
+      <anchor>a5c45028def01dccc0061a94d6d1b7bbd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedEptData</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1_ept_data.html</anchorfile>
-      <anchor>ac6016bf32c210897a6a47f0262152e9c</anchor>
+      <anchor>a3ac1dbf1462d63dd4786183b2e515237</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -4478,28 +4478,28 @@
       <type>constexpr const RdmnetSyncEptResponse &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_ept_response_action.html</anchorfile>
-      <anchor>a8f9fc22ec2d160b819e339d22792c843</anchor>
+      <anchor>ab422058ad5e8a4d9c01e8a1a4c2eb1c4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static EptResponseAction</type>
       <name>SendData</name>
       <anchorfile>classrdmnet_1_1_ept_response_action.html</anchorfile>
-      <anchor>ac648b8c90bc48b9d7982b5daee8e2b60</anchor>
+      <anchor>a1fcc67717e1fef1438da2cded45a631c</anchor>
       <arglist>(size_t response_data_len)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static EptResponseAction</type>
       <name>SendStatus</name>
       <anchorfile>classrdmnet_1_1_ept_response_action.html</anchorfile>
-      <anchor>a38c5fb57a5485e33d2565655ab636f19</anchor>
+      <anchor>a15265b500f98e3c739de35f903313425</anchor>
       <arglist>(ept_status_code_t status_code)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static EptResponseAction</type>
       <name>DeferResponse</name>
       <anchorfile>classrdmnet_1_1_ept_response_action.html</anchorfile>
-      <anchor>a549151dc877bdd04a443a5016fd25a13</anchor>
+      <anchor>abb876c19423878ded5f6e4b26b339b4c</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -4510,91 +4510,91 @@
       <type></type>
       <name>EptStatus</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a58e361a1a070f2272c3f0d0bba1cf422</anchor>
+      <anchor>a659f12a83bb9362cb898b1edaa0e6cf9</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>EptStatus</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>ae6330cbba71db7535d4095df65abef61</anchor>
+      <anchor>ae3490bff0e253cc62e67d2725e98070c</anchor>
       <arglist>(const EptStatus &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>EptStatus &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a27ce0f8d7d1931831861d3af4005bab7</anchor>
+      <anchor>a094d10de5d32d942449c7d91f15e3f96</anchor>
       <arglist>(const EptStatus &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>EptStatus</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a37bbba8d7bf34145b23e8d98c58232c7</anchor>
+      <anchor>affcf4fb706b616f89d122daa155c3cf1</anchor>
       <arglist>(const RdmnetEptStatus &amp;c_status)</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Uuid</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>abee5c6ea63d7dc369301cc5dda8393d9</anchor>
+      <anchor>a07635554a26c730bad4cbdb81d5293fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr ept_status_code_t</type>
       <name>status_code</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a31421c227703421f86973fd684566cb2</anchor>
+      <anchor>ab8862ebd2750d9dc5dec53b6a4043408</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const char *</type>
       <name>status_c_str</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>ad7518a9c361b0be0fe5c181e9e876f2b</anchor>
+      <anchor>af501a785b6225c80768c14bb31357c20</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>status_string</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a217530f9a48d57811a14d6c97e0dba83</anchor>
+      <anchor>a8de517cddeb4e6a5225015dd50acba34</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>CodeToCString</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a2e319b9a75e1bb7b22909c190272f7fc</anchor>
+      <anchor>ae9a752267bd9197f2a21a4be91966636</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>CodeToString</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a3c9c36a852d314a02f05d6e98a261c18</anchor>
+      <anchor>a6d5108147af76197fe672d5355221e0a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasStatusString</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a3b3c8c0cdef694d8680a3d29bc40aca5</anchor>
+      <anchor>a4080c22f81c0fc469f0b847f390f9d01</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetEptStatus &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a3797a741d76b30fa8dc7f729dadb6f8a</anchor>
+      <anchor>a287c2d909696a55c4afa9e12302e4a20</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedEptStatus</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1_ept_status.html</anchorfile>
-      <anchor>a3f9f6dc6b4fb61595617affcb781b169</anchor>
+      <anchor>a3502a641d7c694b659dd843b41b65168</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -4605,49 +4605,49 @@
       <type></type>
       <name>EptSubProtocol</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>a73baecccca849ecb0224ea5461a00634</anchor>
+      <anchor>a8c66804d6ab102623535f206b6e57101</anchor>
       <arglist>(uint16_t new_manufacturer_id, uint16_t new_protocol_id, const std::string &amp;new_protocol_string)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>EptSubProtocol</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>a6d4802a4b9c864c78e920eabf8502164</anchor>
+      <anchor>a88e0121adfc10850399fa0adaacf896c</anchor>
       <arglist>(uint16_t new_manufacturer_id, uint16_t new_protocol_id, const char *new_protocol_string)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>EptSubProtocol</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>aa7761509b252ee29fca6279b4e31c848</anchor>
+      <anchor>aee6d9fbe01d092106e19a75a63b5ce85</anchor>
       <arglist>(const RdmnetEptSubProtocol &amp;c_prot)</arglist>
     </member>
     <member kind="function">
       <type>EptSubProtocol &amp;</type>
       <name>operator=</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>a58378929d15d50873faf9aec050bdf3b</anchor>
+      <anchor>a55981398055a44afdf760caf869e63ae</anchor>
       <arglist>(const RdmnetEptSubProtocol &amp;c_prot)</arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>manufacturer_id</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>a8e197be2be1c8b24be36b22c3fe9ef01</anchor>
+      <anchor>a4ad31fcb69f8aaca8f3c1820bb4d8594</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>protocol_id</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>ae38ddb0236dc59601ca27c3ad175ba42</anchor>
+      <anchor>ae44950c5a1939c04b9a9337a57828a35</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>protocol_string</name>
       <anchorfile>structrdmnet_1_1_ept_sub_protocol.html</anchorfile>
-      <anchor>a4691923c5963bb44251dbd738be0d01b</anchor>
+      <anchor>a4406644b2b23c2679034c30beefbeefe</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4658,42 +4658,42 @@
       <type>unsigned int</type>
       <name>connections</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_limits.html</anchorfile>
-      <anchor>a041ab4ddfc9e0a89ed168aeedf7c0784</anchor>
+      <anchor>a004883be9f53b0bc17f2f8d0b246b99e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>controllers</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_limits.html</anchorfile>
-      <anchor>abc3a7d5b02fd63dc6b009f22d60fecdc</anchor>
+      <anchor>a3340c0e792ae44d0af90dcad0a47fcf2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>controller_messages</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_limits.html</anchorfile>
-      <anchor>a8cf2788e87261ff7648bed8e4999efe5</anchor>
+      <anchor>a76c43af297a5490458ae59bb0944d18a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>devices</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_limits.html</anchorfile>
-      <anchor>aa57fd4c4bbab59fd8a2a0201f0d8de49</anchor>
+      <anchor>a44b6b294128c5b1175d57b57f479d478</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>device_messages</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_limits.html</anchorfile>
-      <anchor>ae9d419c316b08eb103edc37bdc186661</anchor>
+      <anchor>afb7fffbddc60ac5c714d5369a3be4e61</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>reject_connections</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_limits.html</anchorfile>
-      <anchor>a97154684dffc3902577b1bfd09fe48e9</anchor>
+      <anchor>a47bfe9f26268bb49c52b21e496d00eb9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4704,21 +4704,21 @@
       <type>EtcPalUuid</type>
       <name>dest_cid</name>
       <anchorfile>struct_llrp_destination_addr.html</anchorfile>
-      <anchor>ae278a51f1e043076640f187c9a9ce88c</anchor>
+      <anchor>a3733778b9ab688a586734aafd57671ed</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>dest_uid</name>
       <anchorfile>struct_llrp_destination_addr.html</anchorfile>
-      <anchor>a5376b761b4d63561725f2e44ac8ef363</anchor>
+      <anchor>aa338a4490fb2e2c37a819966f75cc3e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>subdevice</name>
       <anchorfile>struct_llrp_destination_addr.html</anchorfile>
-      <anchor>a171ea239f97a7af54496f10c88855c48</anchor>
+      <anchor>a08af6f95b61e2695caf7b11ebb8e0953</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4729,28 +4729,28 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_llrp_discovered_target.html</anchorfile>
-      <anchor>ac9def492d345d0f22a59c329f710146f</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_llrp_discovered_target.html</anchorfile>
-      <anchor>a7740f59bfe2b2ad12087d2290f5bdf03</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalMacAddr</type>
       <name>hardware_address</name>
       <anchorfile>struct_llrp_discovered_target.html</anchorfile>
-      <anchor>a29ce14286cb41c556483aacecd347391</anchor>
+      <anchor>ab28774e4bbf90a14c2b192b84751804e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>llrp_component_t</type>
       <name>component_type</name>
       <anchorfile>struct_llrp_discovered_target.html</anchorfile>
-      <anchor>aece7714b9daea51ddb2a14091c3d9ace</anchor>
+      <anchor>a98b74ef88251de997b90bb399762371a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4761,28 +4761,28 @@
       <type>LlrpManagerTargetDiscoveredCallback</type>
       <name>target_discovered</name>
       <anchorfile>struct_llrp_manager_callbacks.html</anchorfile>
-      <anchor>acffa9ee8ffe2616a54202f0bc91008f4</anchor>
+      <anchor>a73ddb7e42b0e28f5f545d6f7cb702728</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>LlrpManagerRdmResponseReceivedCallback</type>
       <name>rdm_response_received</name>
       <anchorfile>struct_llrp_manager_callbacks.html</anchorfile>
-      <anchor>a9a547f3bd194490160988dce8c3e937d</anchor>
+      <anchor>a096d23b11ed4ac00bbf67d8af49b4962</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>LlrpManagerDiscoveryFinishedCallback</type>
       <name>discovery_finished</name>
       <anchorfile>struct_llrp_manager_callbacks.html</anchorfile>
-      <anchor>a8d90aff8b50d69cf91820cf62bf69e17</anchor>
+      <anchor>afa2453bba240275dfe2ec2585d03c74c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_llrp_manager_callbacks.html</anchorfile>
-      <anchor>af19c1533fa3da0c037aea35fbd0c7640</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4793,28 +4793,28 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_llrp_manager_config.html</anchorfile>
-      <anchor>a68b1eac8be5285f8cdf20c94caa744ea</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalMcastNetintId</type>
       <name>netint</name>
       <anchorfile>struct_llrp_manager_config.html</anchorfile>
-      <anchor>abd8e9d1ed1eaa7a9461cc88858ca093e</anchor>
+      <anchor>a899716aec7b2e11ef8fa384ee1c0e701</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>manu_id</name>
       <anchorfile>struct_llrp_manager_config.html</anchorfile>
-      <anchor>ab8867871acbf245a931cb57bdd7a6eee</anchor>
+      <anchor>aeae2232974c932b5888ba8a58ab25fa0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>LlrpManagerCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_llrp_manager_config.html</anchorfile>
-      <anchor>aacd8c71d1797bfd725d5848dd623000d</anchor>
+      <anchor>ad022e2f001237d0e09def3d7ae51eac7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4829,42 +4829,42 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_llrp_rdm_command.html</anchorfile>
-      <anchor>aa688f2c0f827d70cb107209af801368f</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_llrp_rdm_command.html</anchorfile>
-      <anchor>a433153fa2fb35528a9f63dd3a48b64f4</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalMcastNetintId</type>
       <name>netint_id</name>
       <anchorfile>struct_llrp_rdm_command.html</anchorfile>
-      <anchor>a5a3997de8a6704fbb939261246e926dd</anchor>
+      <anchor>a3ff7553e2a77e172059f002457e5b6ab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmCommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_llrp_rdm_command.html</anchorfile>
-      <anchor>acf33c16492790e3160911c5f99a36e92</anchor>
+      <anchor>aaf4d307076636514f7f15661bad41366</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>struct_llrp_rdm_command.html</anchorfile>
-      <anchor>a60f1091f83ec8393398deed1d2d1a37a</anchor>
+      <anchor>a579f5164b5b16e18ddcdb0296ef81799</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>data_len</name>
       <anchorfile>struct_llrp_rdm_command.html</anchorfile>
-      <anchor>a763d1cac0bc8523e476f9ae7b8500ced</anchor>
+      <anchor>ac78cff7af99787faad2a285dffdde08e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4875,35 +4875,35 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_llrp_rdm_response.html</anchorfile>
-      <anchor>a30c3476287db62c29b7e205f2f6b3538</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_llrp_rdm_response.html</anchorfile>
-      <anchor>a4f18e9a664b388e2e6cc2487bd461445</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmResponseHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_llrp_rdm_response.html</anchorfile>
-      <anchor>a862f1a7a0616749399fe262f024764db</anchor>
+      <anchor>a8617009d72714a9a5b6a509d520bc81f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>rdm_data</name>
       <anchorfile>struct_llrp_rdm_response.html</anchorfile>
-      <anchor>a24ab197a0c24d70c1b190e0457f5ac5a</anchor>
+      <anchor>a2f507182f83446298f3772477adabddb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>rdm_data_len</name>
       <anchorfile>struct_llrp_rdm_response.html</anchorfile>
-      <anchor>aa0e01ac95ed5e01c11e36bd97abca7cc</anchor>
+      <anchor>accb2b802793d0f1a3c83bbd7a60d0ae9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4914,42 +4914,42 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_llrp_saved_rdm_command.html</anchorfile>
-      <anchor>aa43ea8b98025c660bc2c8afe5d004c07</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_llrp_saved_rdm_command.html</anchorfile>
-      <anchor>a7a504e2d58f615ef13e9aae517fa71d1</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalMcastNetintId</type>
       <name>netint_id</name>
       <anchorfile>struct_llrp_saved_rdm_command.html</anchorfile>
-      <anchor>ab309bc4f97e2bb652c088fe88278a5ba</anchor>
+      <anchor>a3ff7553e2a77e172059f002457e5b6ab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmCommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_llrp_saved_rdm_command.html</anchorfile>
-      <anchor>aa0ba4319bb4c7c569edf61cc5823ec3b</anchor>
+      <anchor>aaf4d307076636514f7f15661bad41366</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>data</name>
       <anchorfile>struct_llrp_saved_rdm_command.html</anchorfile>
-      <anchor>a45918b3a17e8ec7749291da088a6f8b3</anchor>
+      <anchor>a1f9dbe5a4390d94cb28b7b21d2b656d5</anchor>
       <arglist>[RDM_MAX_PDL]</arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>data_len</name>
       <anchorfile>struct_llrp_saved_rdm_command.html</anchorfile>
-      <anchor>a4937489b97342810f9dfa7f73e4c5f4d</anchor>
+      <anchor>ac78cff7af99787faad2a285dffdde08e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4960,35 +4960,35 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_llrp_saved_rdm_response.html</anchorfile>
-      <anchor>a52e84cd13d7838aefd80fccee889174a</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_llrp_saved_rdm_response.html</anchorfile>
-      <anchor>a395d4b078b90ef42b6ee45511d92e228</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmResponseHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_llrp_saved_rdm_response.html</anchorfile>
-      <anchor>aef739afbb229e4996d705115609b1d98</anchor>
+      <anchor>a8617009d72714a9a5b6a509d520bc81f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>rdm_data</name>
       <anchorfile>struct_llrp_saved_rdm_response.html</anchorfile>
-      <anchor>a51901cc7977cc941d41b37afe52827e1</anchor>
+      <anchor>acc108dfa1b3c51dd118cdb92b58cc60a</anchor>
       <arglist>[RDM_MAX_PDL]</arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>rdm_data_len</name>
       <anchorfile>struct_llrp_saved_rdm_response.html</anchorfile>
-      <anchor>a4cd494006223ddd78c7420790cb68889</anchor>
+      <anchor>accb2b802793d0f1a3c83bbd7a60d0ae9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4999,14 +4999,14 @@
       <type>LlrpTargetRdmCommandReceivedCallback</type>
       <name>rdm_command_received</name>
       <anchorfile>struct_llrp_target_callbacks.html</anchorfile>
-      <anchor>a9c916ba64d15d1d496f8994c4e4cba45</anchor>
+      <anchor>a3fc6b376d1ef1958fb8e43f4f658b452</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_llrp_target_callbacks.html</anchorfile>
-      <anchor>ae45836c7388e621658bc9a7555556a47</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5017,28 +5017,28 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_llrp_target_config.html</anchorfile>
-      <anchor>afbe7039278c67df56d21ff4fe348988b</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>LlrpTargetCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_llrp_target_config.html</anchorfile>
-      <anchor>a57316fbd4380729877e8fa60f4c1fd29</anchor>
+      <anchor>ad886e877c031d9e240bde1e7137eaef1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>response_buf</name>
       <anchorfile>struct_llrp_target_config.html</anchorfile>
-      <anchor>a3dde4bd62f2cc08040f2cd12f4bdf08b</anchor>
+      <anchor>aa99184bd7c6729427838d2fc31612fea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_llrp_target_config.html</anchorfile>
-      <anchor>a45e18ecd63ce4b6376c9f1288a3f45dd</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5050,84 +5050,84 @@
       <type>etcpal::OpaqueId&lt; detail::LlrpManagerHandleType, llrp_manager_t, LLRP_MANAGER_INVALID &gt;</type>
       <name>Handle</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a6c5520438db5b6fa9ac1ba30ba09455c</anchor>
+      <anchor>a6d9a90fc13eac04f0aa03fbf781fe9d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Manager</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a5735be1b670012d7daf37590d51a7e44</anchor>
+      <anchor>a298a3cd9431ca6a33e6784948587ffc7</anchor>
       <arglist>(Manager &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>Manager &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a870fa780bd25f7af1e3229f9aa117ac4</anchor>
+      <anchor>a3044215d39d70e1b0d2f7f6570b86429</anchor>
       <arglist>(Manager &amp;&amp;other)=default</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>Startup</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>ac766b4067688119fbc78d32bb7f0f75a</anchor>
+      <anchor>a5797abf2fd3453cd34859e8158dda8fa</anchor>
       <arglist>(NotifyHandler &amp;notify_handler, uint16_t manufacturer_id, unsigned int netint_index, etcpal_iptype_t ip_type=kEtcPalIpTypeV4, const etcpal::Uuid &amp;cid=etcpal::Uuid::OsPreferred())</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>Shutdown</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a2e909cab686137f8d61c581c6a4906af</anchor>
+      <anchor>ac5f038c2b480cf9ef5e19e3eba8dbaf9</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>StartDiscovery</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>aa734622721edcdad5ce323398b0b977c</anchor>
+      <anchor>a1997d94599c5dc4e0a4d78a9ba2ecec3</anchor>
       <arglist>(uint16_t filter=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Error</type>
       <name>StopDiscovery</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a8d46615ee9fc87bc07b9da606e406788</anchor>
+      <anchor>a0f8d7be80adf91e90eccaff595245c2d</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint32_t &gt;</type>
       <name>SendRdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>ac9182889f3f01eaca26dbadf6742dfdb</anchor>
+      <anchor>aa25ab249d17dbb935756fcd772f932bd</anchor>
       <arglist>(const DestinationAddr &amp;destination, rdmnet_command_class_t command_class, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint32_t &gt;</type>
       <name>SendGetCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a02a5129770ac898eceb3d9b1c909ef2c</anchor>
+      <anchor>a41d9d00ed38e7919ce05b88d2ebb88fb</anchor>
       <arglist>(const DestinationAddr &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; uint32_t &gt;</type>
       <name>SendSetCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>acd8fb27ed33618db7f9322ccedbed550</anchor>
+      <anchor>ac14829c38ffa699fec24149d0fe312fc</anchor>
       <arglist>(const DestinationAddr &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</arglist>
     </member>
     <member kind="function">
       <type>constexpr Handle</type>
       <name>handle</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a9f79abe8b3b819f725abbd09240fb8a9</anchor>
+      <anchor>aaf3dfa261ab1bc143d90da4d78d96ca1</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr NotifyHandler *</type>
       <name>notify_handler</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager.html</anchorfile>
-      <anchor>a4fb7d30129774502f657cabf6b9223fb</anchor>
+      <anchor>ae35d4ed27d0a5c8ce6799d3185638ceb</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -5138,7 +5138,7 @@
       <type>virtual void</type>
       <name>HandleScopeChanged</name>
       <anchorfile>classrdmnet_1_1_broker_1_1_notify_handler.html</anchorfile>
-      <anchor>a9cd9acff94735df721d260c73d066127</anchor>
+      <anchor>ab1bc87a21597ad622fc12ac0593518df</anchor>
       <arglist>(const std::string &amp;new_scope)</arglist>
     </member>
   </compound>
@@ -5149,49 +5149,49 @@
       <type>virtual void</type>
       <name>HandleConnectedToBroker</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>aab7d17d4235d613ea1da37ac3804ce56</anchor>
+      <anchor>a481af3bb3b01782e3b084a91035713a7</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const ClientConnectedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleBrokerConnectFailed</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>a3198440906bc47375ed3ee1ed50ef500</anchor>
+      <anchor>a16ec2e28d4d6533f0ce3bd8d0bb8e425</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const ClientConnectFailedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleDisconnectedFromBroker</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>ab8c0c86829e8bf710feedff5be3d2b22</anchor>
+      <anchor>a580fe43f7de1326f6bf7c34bbc7d731b</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const ClientDisconnectedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleClientListUpdate</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>a6d6a6f0fba6fbd878cc69a7609f09748</anchor>
+      <anchor>a6361c06185ae97717cb6484122ba8c0d</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, client_list_action_t list_action, const RptClientList &amp;list)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>HandleRdmResponse</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>ad05f2f78ec366a6ef2a5466b1cb7e482</anchor>
+      <anchor>a9c2960ad2101070918aca5f59df31ad0</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const RdmResponse &amp;resp)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleRptStatus</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>a7030c5573ce3aec234ffe027639d5e54</anchor>
+      <anchor>a10d31e335252b57ab978812e861d852e</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const RptStatus &amp;status)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleResponderIdsReceived</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_notify_handler.html</anchorfile>
-      <anchor>adf7409ba82776523a28e282ca10d2e9c</anchor>
+      <anchor>a4f3cd80cca0de09a0a0340c3fe848049</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const DynamicUidAssignmentList &amp;list)</arglist>
     </member>
   </compound>
@@ -5202,42 +5202,42 @@
       <type>virtual void</type>
       <name>HandleConnectedToBroker</name>
       <anchorfile>classrdmnet_1_1_device_1_1_notify_handler.html</anchorfile>
-      <anchor>a304d6c141b50577e81b53ed55518e003</anchor>
+      <anchor>ada016c498e2f60ccc03d18a95cc1b244</anchor>
       <arglist>(Handle handle, const ClientConnectedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleBrokerConnectFailed</name>
       <anchorfile>classrdmnet_1_1_device_1_1_notify_handler.html</anchorfile>
-      <anchor>a20a9ad0af303a7a7fbca3aa7c1551c70</anchor>
+      <anchor>aa7ae2e51760f78d601557600bfc2540e</anchor>
       <arglist>(Handle handle, const ClientConnectFailedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleDisconnectedFromBroker</name>
       <anchorfile>classrdmnet_1_1_device_1_1_notify_handler.html</anchorfile>
-      <anchor>a489cdca3808b58a6420516d8f3a01c6f</anchor>
+      <anchor>a6273abe28ccf151383a2df6e46815aee</anchor>
       <arglist>(Handle handle, const ClientDisconnectedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual RdmResponseAction</type>
       <name>HandleRdmCommand</name>
       <anchorfile>classrdmnet_1_1_device_1_1_notify_handler.html</anchorfile>
-      <anchor>ad6b12b981d6f6664eba437bad431f1e9</anchor>
+      <anchor>a26c65f645dceda8052eae3e69fb09a99</anchor>
       <arglist>(Handle handle, const RdmCommand &amp;cmd)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual RdmResponseAction</type>
       <name>HandleLlrpRdmCommand</name>
       <anchorfile>classrdmnet_1_1_device_1_1_notify_handler.html</anchorfile>
-      <anchor>a9b8ec2bd2104aeadf771c5bcd6865fa5</anchor>
+      <anchor>af6e1cc42399790a59c5fb29adb398855</anchor>
       <arglist>(Handle handle, const llrp::RdmCommand &amp;cmd)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleDynamicUidStatus</name>
       <anchorfile>classrdmnet_1_1_device_1_1_notify_handler.html</anchorfile>
-      <anchor>a4d4c808de576d3c9e241edc2a897a0f7</anchor>
+      <anchor>a1593f9eb7d540e3335b63b923f4d09ca</anchor>
       <arglist>(Handle handle, const DynamicUidAssignmentList &amp;list)</arglist>
     </member>
   </compound>
@@ -5248,42 +5248,42 @@
       <type>virtual void</type>
       <name>HandleConnectedToBroker</name>
       <anchorfile>classrdmnet_1_1_ept_client_1_1_notify_handler.html</anchorfile>
-      <anchor>a6777fd51906f44b422349c82d573a085</anchor>
+      <anchor>abadfbd8c820f8ac9e0a01fa5282b01d3</anchor>
       <arglist>(Handle client_handle, ScopeHandle scope_handle, const ClientConnectedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleBrokerConnectFailed</name>
       <anchorfile>classrdmnet_1_1_ept_client_1_1_notify_handler.html</anchorfile>
-      <anchor>a434776d19607efa287c544b8591db228</anchor>
+      <anchor>a17e9aa6ff41c58f48d5225d8dec16c8b</anchor>
       <arglist>(Handle client_handle, ScopeHandle scope_handle, const ClientConnectFailedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleDisconnectedFromBroker</name>
       <anchorfile>classrdmnet_1_1_ept_client_1_1_notify_handler.html</anchorfile>
-      <anchor>aec53fbba4aa80fc9225034fcf41b5a73</anchor>
+      <anchor>a6ac132b81e34e103925f01d3aa90846f</anchor>
       <arglist>(Handle client_handle, ScopeHandle scope_handle, const ClientDisconnectedInfo &amp;info)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleClientListUpdate</name>
       <anchorfile>classrdmnet_1_1_ept_client_1_1_notify_handler.html</anchorfile>
-      <anchor>adb0d6750850c903dff25a88104a2b2c4</anchor>
+      <anchor>a4b24c3c8d0d6a1b5f77d3ca4a7d94e70</anchor>
       <arglist>(Handle client_handle, ScopeHandle scope_handle, client_list_action_t list_action, const EptClientList &amp;list)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual EptResponseAction</type>
       <name>HandleEptData</name>
       <anchorfile>classrdmnet_1_1_ept_client_1_1_notify_handler.html</anchorfile>
-      <anchor>a52965ee1193ca9681f8d058ff930d4a5</anchor>
+      <anchor>a8880001ddf13dd7a2c3ad645e67b97e9</anchor>
       <arglist>(Handle client_handle, ScopeHandle scope_handle, const EptData &amp;data)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleEptStatus</name>
       <anchorfile>classrdmnet_1_1_ept_client_1_1_notify_handler.html</anchorfile>
-      <anchor>ad0d400084adc71981a1845b1830bb482</anchor>
+      <anchor>a6e19ab4f38979bed4cd4435cd1a8a79a</anchor>
       <arglist>(Handle client_handle, ScopeHandle scope_handle, const EptStatus &amp;status)=0</arglist>
     </member>
   </compound>
@@ -5294,21 +5294,21 @@
       <type>virtual void</type>
       <name>HandleLlrpTargetDiscovered</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html</anchorfile>
-      <anchor>a5a0f226efba2695aac7a9004492b0d04</anchor>
+      <anchor>a128688a84fa0c5802ed8a92d7f6e6b7a</anchor>
       <arglist>(Handle handle, const DiscoveredTarget &amp;target)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>HandleLlrpRdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html</anchorfile>
-      <anchor>a41222ff109e5dc730536e0b470e83228</anchor>
+      <anchor>a4a82f65074202b44a701287797d69f10</anchor>
       <arglist>(Handle handle, const RdmResponse &amp;resp)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>HandleLlrpDiscoveryFinished</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html</anchorfile>
-      <anchor>a3b33f536aea2d023d351e86baaec1f23</anchor>
+      <anchor>ac6daa54c220272b8a2db19ad22daf67e</anchor>
       <arglist>(Handle handle)</arglist>
     </member>
   </compound>
@@ -5319,21 +5319,21 @@
       <type></type>
       <name>PhysicalEndpointConfig</name>
       <anchorfile>classrdmnet_1_1_physical_endpoint_config.html</anchorfile>
-      <anchor>ab91b9577c703195ac23884d5569bb9fa</anchor>
+      <anchor>a6e172f061f061ce9a6bb09225f7659d0</anchor>
       <arglist>(uint16_t id, const PhysicalEndpointResponder *responders=nullptr, size_t num_responders=0)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>PhysicalEndpointConfig</name>
       <anchorfile>classrdmnet_1_1_physical_endpoint_config.html</anchorfile>
-      <anchor>a18902f4771423fdd932bc42ba417f6c7</anchor>
+      <anchor>a07137cc985b4ce7eda5fc3face78b4ed</anchor>
       <arglist>(uint16_t id, const std::vector&lt; PhysicalEndpointResponder &gt; &amp;responders)</arglist>
     </member>
     <member kind="function">
       <type>const RdmnetPhysicalEndpointConfig &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_physical_endpoint_config.html</anchorfile>
-      <anchor>a6defbbaf9dfa5f326372e9fef8e139f0</anchor>
+      <anchor>a3874a01c193edcc0f84630dc4498b717</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -5344,14 +5344,14 @@
       <type>ETCPAL_CONSTEXPR_14</type>
       <name>PhysicalEndpointResponder</name>
       <anchorfile>classrdmnet_1_1_physical_endpoint_responder.html</anchorfile>
-      <anchor>a8116c4879a0e18fec96308cf90a16eee</anchor>
+      <anchor>acb9fef21dcf01fae9262e87c26e2e0cc</anchor>
       <arglist>(rdm::Uid uid, uint16_t control_field, rdm::Uid binding_uid=rdm::Uid{})</arglist>
     </member>
     <member kind="function">
       <type>ETCPAL_CONSTEXPR_14 const RdmnetPhysicalEndpointResponder &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_physical_endpoint_responder.html</anchorfile>
-      <anchor>ac89bd1a476e261075f41a0b56ece4c4c</anchor>
+      <anchor>a8b34d9da20a7828861d509ed80c6bd42</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -5362,161 +5362,161 @@
       <type></type>
       <name>RdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a0f00e264a6be0a17bdfd325b9dfe6b05</anchor>
+      <anchor>a3afcee217f1cf8b80842864038bbc82d</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>ae281778e28fb1d244702c71f0f0cb0c0</anchor>
+      <anchor>ac4d7eb8565e5cb85523b416f2ea9c61c</anchor>
       <arglist>(const RdmCommand &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>RdmCommand &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a2e18126dafe8b21666b36eff032da902</anchor>
+      <anchor>a715e5af4d58ec35a61e21f71c31242e7</anchor>
       <arglist>(const RdmCommand &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>RdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>ab07eb7a86f87b1a53bba6906a4efba31</anchor>
+      <anchor>a8bc74286f1844f3579ccbb25f6cfee83</anchor>
       <arglist>(const LlrpRdmCommand &amp;c_cmd) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Uuid</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a402630dbf2ce5dae255afd4ca6c579b5</anchor>
+      <anchor>a07635554a26c730bad4cbdb81d5293fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>ab8cde2c7d9bdf26afe9addf1f7a880de</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr EtcPalMcastNetintId</type>
       <name>netint_id</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a9c3c1150cb1ded3d85ca9444d34e143e</anchor>
+      <anchor>a2f34c1503b587946ebfa67c51939fd32</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal_iptype_t</type>
       <name>netint_ip_type</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a3bd6fe415e391aee06a3d6cb63730662</anchor>
+      <anchor>a7cffb50177ff411256f9008e0d195dd5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr unsigned int</type>
       <name>netint_index</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a8574b82f4a8c06d337efc1135af8330e</anchor>
+      <anchor>a1a1950fc0331342ff609bc2c3e69a2e2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>source_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a7fb6d9c91daa359fb18eb4f25aad5846</anchor>
+      <anchor>a1c0c6f98dd20230051f07f9d43a5f824</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>dest_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a420474554934cdc89606631e1da9d40e</anchor>
+      <anchor>a91074bb7526a5d255d13d3245a6846a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a502263cb42667492da1a8af3d3ea1ace</anchor>
+      <anchor>ace76a3360a4ca27564b266d231844fe2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a562859214aa6b99c40eb56895ca6ee6f</anchor>
+      <anchor>a59f11046e01fbfe627604b2eb966e5d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a8db3f3acf0211b6e14a1abdbbd9509e7</anchor>
+      <anchor>aeb06b87b7d84f9dcb290a7ac38a9f326</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::CommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>aa9fc28c42dad5d9f157005b74cfb33a7</anchor>
+      <anchor>aeb344aeb7ddc0fa4937eb915bbab6ebe</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a5734c0f1e9d456f5768706125513abeb</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint8_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>ad0b413ecf09f69db8bca98d6930057ce</anchor>
+      <anchor>aa711528b0360e40e670ad60d1eaba0a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>ac0981652f541b21dd359178dbd7eda11</anchor>
+      <anchor>a57bbbbbb1a78db54f4020774db97ec79</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsGet</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a6c20ecfa9c3ef1f63060041e5130e2e2</anchor>
+      <anchor>a24e38683dabb26fcffff5ff569c24451</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsSet</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a930b88515698cfb5f9383393d6c09409</anchor>
+      <anchor>ac07548ce2bdda1e5eaa95c647aadd52f</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const LlrpRdmCommand &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a7db88b8dee5604358fb8f59a33ba1df8</anchor>
+      <anchor>a8f5005e19c0b7d77ff5e98dbd8e361df</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Command</type>
       <name>ToRdm</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>ad508651a8a7bd62dccc8d77e240452ae</anchor>
+      <anchor>a823c8e5dc54cec37b78af1e4395b4ae1</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmCommand</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_command.html</anchorfile>
-      <anchor>a6070d269a6678cfc0a9ecc57fb0f2e27</anchor>
+      <anchor>aa11a6d7bc7d826b160703f5423cc5b4e</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -5527,154 +5527,154 @@
       <type></type>
       <name>RdmCommand</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a3299b654e3bbd47e543b81bae118bdac</anchor>
+      <anchor>a3afcee217f1cf8b80842864038bbc82d</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RdmCommand</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a050574a4910350565f3c2a3109aa7090</anchor>
+      <anchor>ac4d7eb8565e5cb85523b416f2ea9c61c</anchor>
       <arglist>(const RdmCommand &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>RdmCommand &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a0c71296cfa540195b8e82fe27b70e35d</anchor>
+      <anchor>a715e5af4d58ec35a61e21f71c31242e7</anchor>
       <arglist>(const RdmCommand &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>RdmCommand</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a1ac399d190d331ffd8780f269607cd2c</anchor>
+      <anchor>a23b924262d3515e8460d31c8c3c7ebb5</anchor>
       <arglist>(const RdmnetRdmCommand &amp;c_cmd) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>afe1148cd27d694b5abe4a625a51d7df7</anchor>
+      <anchor>abad62a4aefb949a89c601b0417af988c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>dest_endpoint</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>ac03f08627a9806c1efc51d8f5a554d7e</anchor>
+      <anchor>a85844074e066a414add94a2890957add</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a54c733bba0391a83d2e434b023035028</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdm_source_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a8ce57f42fdb337f67e7a08d047e2a4ec</anchor>
+      <anchor>af79aa2f05d84f88ac7a8da7e46074a20</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdm_dest_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a70c668b4816e0ff4a32ecfe02b9a4eaa</anchor>
+      <anchor>a923581c60152e26e59d7c21de1b9581d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a080360a8192893acfc1d76f729063157</anchor>
+      <anchor>ace76a3360a4ca27564b266d231844fe2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>af7e9f1d440d9f1f181017987c1c791d3</anchor>
+      <anchor>a59f11046e01fbfe627604b2eb966e5d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a63629cb9cb2169388593a9161a32c72f</anchor>
+      <anchor>aeb06b87b7d84f9dcb290a7ac38a9f326</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::CommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>aec10eb40a1f23431f3ca1aef566a0dcc</anchor>
+      <anchor>aeb344aeb7ddc0fa4937eb915bbab6ebe</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>af91050edbb54819c0cefa6a5483a3e00</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint8_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a028cfb7b0a4a762dea6b5b0144639bee</anchor>
+      <anchor>aa711528b0360e40e670ad60d1eaba0a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a640263cede1cafe23b486a6ff033eb84</anchor>
+      <anchor>a57bbbbbb1a78db54f4020774db97ec79</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsToDefaultResponder</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a18ab3142115df0d52a43673c8af4527e</anchor>
+      <anchor>a6901d34e37e3c399e127ba4c254d479c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsGet</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>af01ca868e13240d0a4ddb07f82d9907e</anchor>
+      <anchor>a24e38683dabb26fcffff5ff569c24451</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsSet</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a1ba8dc7d0870637e96d7d2882305cc83</anchor>
+      <anchor>ac07548ce2bdda1e5eaa95c647aadd52f</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetRdmCommand &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>af03918b2f66a2cc408850e98a74b8a33</anchor>
+      <anchor>ae2933badfdcdb82d35b0fe1fd7aca083</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Command</type>
       <name>ToRdm</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a8313285ec0254faef5f534daa9d33d62</anchor>
+      <anchor>a823c8e5dc54cec37b78af1e4395b4ae1</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmCommand</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1_rdm_command.html</anchorfile>
-      <anchor>a78e3d10f3f539e2314643d7017a6beb7</anchor>
+      <anchor>aa11a6d7bc7d826b160703f5423cc5b4e</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -5685,14 +5685,14 @@
       <type>virtual RdmResponseAction</type>
       <name>HandleRdmCommand</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_rdm_command_handler.html</anchorfile>
-      <anchor>a059a481216c098434cb3642ef48a3f81</anchor>
+      <anchor>a633c27df7ebf7139cef8cd1519ca84a5</anchor>
       <arglist>(Handle controller_handle, ScopeHandle scope_handle, const RdmCommand &amp;cmd)=0</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RdmResponseAction</type>
       <name>HandleLlrpRdmCommand</name>
       <anchorfile>classrdmnet_1_1_controller_1_1_rdm_command_handler.html</anchorfile>
-      <anchor>a91bf7b8888771d35f32d96262184c3fa</anchor>
+      <anchor>a45d591f7734cb33fbc133cfb7fe7715b</anchor>
       <arglist>(Handle controller_handle, const llrp::RdmCommand &amp;cmd)</arglist>
     </member>
   </compound>
@@ -5703,84 +5703,84 @@
       <type></type>
       <name>RdmData</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>ae5f04e4163189d7d3f4ee097630d2288</anchor>
+      <anchor>a4840d32e89b4075de198c28dac94d474</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RdmData</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a5316dd6ce6587d1f3b8aa2e624ca7b51</anchor>
+      <anchor>a5b4aad2c4a8b8160cfa5a0dc64130ef7</anchor>
       <arglist>(uint16_t new_model_id, uint32_t new_software_version_id, const char *new_manufacturer_label, const char *new_device_model_description, const char *new_software_version_label, const char *new_device_label)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RdmData</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>af00529ba252be1766e3088321969697c</anchor>
+      <anchor>a2a94a61ee91e0aae4e63f858a331668a</anchor>
       <arglist>(uint16_t new_model_id, uint32_t new_software_version_id, const std::string &amp;new_manufacturer_label, const std::string &amp;new_device_model_description, const std::string &amp;new_software_version_label, const std::string &amp;new_device_label)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a09dc4e3dc50098b9dfb702bf0dabf1b7</anchor>
+      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>model_id</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a18f0d7c2678139bf9f306aae84cae700</anchor>
+      <anchor>a345b5a533872a471f810a988b331f60c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>software_version_id</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a3ed75c9f52becb20a0433b250662d4f2</anchor>
+      <anchor>a0b317a8c21931281b402432d70e5efdf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>product_category</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a1596625c00ce7175d1a607c91677eabd</anchor>
+      <anchor>ad0bdaf7560c2c0fc7eca4908e94d606d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>manufacturer_label</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a4edb9f0d1df0f094d07b4d685f8fa9ad</anchor>
+      <anchor>a6549fca47a6a1fbf3bf72b4919a13186</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>device_model_description</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a3095b010e417121b3dad3a24734a3afe</anchor>
+      <anchor>a8a8570bc84de6539632398c6afd183d0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>software_version_label</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>aa1394a3aa76801eed0cf27deb285de86</anchor>
+      <anchor>a668eaaae6557e58863ccb701a3f9dbcc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>device_label</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a7548054844af12de9d046f3710e90eab</anchor>
+      <anchor>a7ee120210e8a3b9bde9aaa3704d36d41</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>device_label_settable</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_rdm_data.html</anchorfile>
-      <anchor>a2f5e79ecb43b741c26df8b199f93f05d</anchor>
+      <anchor>a5f8a4a4a490229d0d3923d0c5f809c99</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5791,91 +5791,91 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a9891833bc86684e7aff6a70a7cee9080</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a7fb56819d9a3493f778e57c385f8c859</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>e133_version</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a7be6ebc05a04a1a35d592d953793c803</anchor>
+      <anchor>a022634c5f7624379b08111f1a0c8d6c7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>service_instance_name</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a6a772228c94095042fd186172d11fce5</anchor>
+      <anchor>afdf02cd0ff95b90c4588002535a50440</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>port</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a2c5d5aaea9e77c5452f904f6f0f0fd8e</anchor>
+      <anchor>a8e0798404bf2cf5dabb84c5ba9a4f236</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const EtcPalIpAddr *</type>
       <name>listen_addrs</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>af66604c055013caff26ed5425a2834a8</anchor>
+      <anchor>ae23e4ac3e79c69795a69afa2d06004cc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int *</type>
       <name>listen_addr_netints</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a2a753f47526e6fbc38099d6966727e59</anchor>
+      <anchor>a1b9db01549cd891c29a85b21e36a5526</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_listen_addrs</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a9e30b641a7d8d8883983f124c8faffb4</anchor>
+      <anchor>af3837524eb4b81df6ed4c50b5b7badf7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>scope</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a572a29380550d625bd533dbea9a7ffd8</anchor>
+      <anchor>aaa3f7f51e16b6fa08e2bc1e0d7eb6bab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>model</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a51a474c17a6a0130b4b239a2a9fb5948</anchor>
+      <anchor>aedac94690dae483bee8b0dd9d3ead21a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>manufacturer</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a5a3251c4d2656a765e7582e76377cad9</anchor>
+      <anchor>a84875663cfc7f10e83b39e143e4d6ca2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmnetDnsTxtRecordItem *</type>
       <name>additional_txt_items</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>a5d1e15016f7b4012511074bc89f0a318</anchor>
+      <anchor>a5434ec3d1480e8c6b0ab4d899ec28bf1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_additional_txt_items</name>
       <anchorfile>struct_rdmnet_broker_disc_info.html</anchorfile>
-      <anchor>acf93a120ca0267a52471081b813fd608</anchor>
+      <anchor>a174b4b1ee87fd017eaace1c1fc6bfc74</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5886,84 +5886,84 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a21217c047bd861134bf82771cde2f17c</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a8e375a838babc3f3e28f362aa13aef73</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>service_instance_name</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a979757bea31b6f8c1f31f5382ede2845</anchor>
+      <anchor>afdf02cd0ff95b90c4588002535a50440</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>port</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a3cd9831ddc7feef06212e1242956e953</anchor>
+      <anchor>a8e0798404bf2cf5dabb84c5ba9a4f236</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int *</type>
       <name>netints</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>ae4df6a668da2df2f745986fe45d2debe</anchor>
+      <anchor>a902e9eb3ce5b8c73a39330fa9bbbdc49</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_netints</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>adbbd0e743ea089270f2aeb340b680931</anchor>
+      <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>scope</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a3ce417178756dc76d9dc6e3edf0767cd</anchor>
+      <anchor>aaa3f7f51e16b6fa08e2bc1e0d7eb6bab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>model</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a15686266ad329adfa10f9b4a68d4ef58</anchor>
+      <anchor>aedac94690dae483bee8b0dd9d3ead21a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>manufacturer</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>a9d7d9ede076985f3d07ce50290fcfaed</anchor>
+      <anchor>a84875663cfc7f10e83b39e143e4d6ca2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmnetDnsTxtRecordItem *</type>
       <name>additional_txt_items</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>ab6f6d3fa4f4e0f64d25d6a65b074af4e</anchor>
+      <anchor>a5434ec3d1480e8c6b0ab4d899ec28bf1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_additional_txt_items</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>aa77c1a3413913f7d0453ac8cd5b693ff</anchor>
+      <anchor>a174b4b1ee87fd017eaace1c1fc6bfc74</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDiscBrokerCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_rdmnet_broker_register_config.html</anchorfile>
-      <anchor>adde95071364c9aa4d98d77e7d697d520</anchor>
+      <anchor>aa0307d040617c0e74f5bc3b5a317979c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5974,28 +5974,28 @@
       <type>EtcPalSockAddr</type>
       <name>broker_addr</name>
       <anchorfile>struct_rdmnet_client_connected_info.html</anchorfile>
-      <anchor>a39d671dfd8919b93fe23dba6dbfba905</anchor>
+      <anchor>a1c91e6a2d74ad074f828527c7f3b4ecd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>broker_name</name>
       <anchorfile>struct_rdmnet_client_connected_info.html</anchorfile>
-      <anchor>a09b4687edadab4b4334a33b38d00cf2f</anchor>
+      <anchor>acfd73dc5ff0567920ec01970fb41aaba</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalUuid</type>
       <name>broker_cid</name>
       <anchorfile>struct_rdmnet_client_connected_info.html</anchorfile>
-      <anchor>a64d3dcbac0d8bd8a99be7f83ef3b3231</anchor>
+      <anchor>a94b7a31ada085ef20d7d2a5e29c85825</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>broker_uid</name>
       <anchorfile>struct_rdmnet_client_connected_info.html</anchorfile>
-      <anchor>a5a5d0a7ff16ab42092e8ad3006c7d89f</anchor>
+      <anchor>adfda61471109f6b785db3e9070b6711b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6006,28 +6006,28 @@
       <type>rdmnet_connect_fail_event_t</type>
       <name>event</name>
       <anchorfile>struct_rdmnet_client_connect_failed_info.html</anchorfile>
-      <anchor>a938bd74d32cc8d474500e0539656a331</anchor>
+      <anchor>af39c9f66fed4ca0cfa60d85fe113912c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal_error_t</type>
       <name>socket_err</name>
       <anchorfile>struct_rdmnet_client_connect_failed_info.html</anchorfile>
-      <anchor>abafda4d6fd88de7d8bf0ea05cfc27518</anchor>
+      <anchor>a5e6e5b1257eb22d4e3a02a3ed475a817</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdmnet_connect_status_t</type>
       <name>rdmnet_reason</name>
       <anchorfile>struct_rdmnet_client_connect_failed_info.html</anchorfile>
-      <anchor>a17fa3dd1caa79e9181159556f36c35f3</anchor>
+      <anchor>a5b18697adc2f956cb17081c8ec41a6b2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>will_retry</name>
       <anchorfile>struct_rdmnet_client_connect_failed_info.html</anchorfile>
-      <anchor>a883d69b48ad780a607ecbb03d56bf30c</anchor>
+      <anchor>ac5e79a77b6b7fa79f438ae3b3b9dc824</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6038,28 +6038,28 @@
       <type>rdmnet_disconnect_event_t</type>
       <name>event</name>
       <anchorfile>struct_rdmnet_client_disconnected_info.html</anchorfile>
-      <anchor>aa3dcf7b3313619204322747781425a00</anchor>
+      <anchor>a12cc294bc1cd6be39934b72d94c96848</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal_error_t</type>
       <name>socket_err</name>
       <anchorfile>struct_rdmnet_client_disconnected_info.html</anchorfile>
-      <anchor>a5b24cee45d829ad748eab8053c211921</anchor>
+      <anchor>a5e6e5b1257eb22d4e3a02a3ed475a817</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdmnet_disconnect_reason_t</type>
       <name>rdmnet_reason</name>
       <anchorfile>struct_rdmnet_client_disconnected_info.html</anchorfile>
-      <anchor>ace2ae21ff6cca177faf9b0298d683a70</anchor>
+      <anchor>a88c5bb705c185425b4b891b99dcfe858</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>will_retry</name>
       <anchorfile>struct_rdmnet_client_disconnected_info.html</anchorfile>
-      <anchor>af867bbd283bede387ec0370b8da9e0c7</anchor>
+      <anchor>ac5e79a77b6b7fa79f438ae3b3b9dc824</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6070,56 +6070,56 @@
       <type>RdmnetControllerConnectedCallback</type>
       <name>connected</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>aa049d14bc899f39c8206df41918f2873</anchor>
+      <anchor>aac8219d693567d7b6498bff55899d9da</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerConnectFailedCallback</type>
       <name>connect_failed</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>aa6431e285774c0fa74e5c3327ebc3d01</anchor>
+      <anchor>aee640c0a567ffdc78275d4f74acf35d1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerDisconnectedCallback</type>
       <name>disconnected</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>a4307e7b3f04926772c74a27cae890a3f</anchor>
+      <anchor>a6551b086e419a976a23023f9e6413e1d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerClientListUpdateReceivedCallback</type>
       <name>client_list_update_received</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>a7cee8891f9af4e34f3b44f8fdc0bf419</anchor>
+      <anchor>a5e3adfd6aeb58eff685b339eae8bd538</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerRdmResponseReceivedCallback</type>
       <name>rdm_response_received</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>ac1eb20fa6a8d9dac6ea10649ba3a06ba</anchor>
+      <anchor>aeff7f630d1357e2d0e96ae88828e05a6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerStatusReceivedCallback</type>
       <name>status_received</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>a2c605d0196b94746f688cbdf98284387</anchor>
+      <anchor>a3ada0ef8aed5fe06f593fac27eb15e63</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerResponderIdsReceivedCallback</type>
       <name>responder_ids_received</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>abb12bf77447029861e4dfb57838e0a5b</anchor>
+      <anchor>a1034561e91a63517367922b84e388f67</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_rdmnet_controller_callbacks.html</anchorfile>
-      <anchor>a51c335237aff6c8f80caacd8584f35cf</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6130,49 +6130,49 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>a88afa036a301ef655052aaf77bbe013e</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>a65e405aed6445b0d35fe6910ea2c155f</anchor>
+      <anchor>a0731346d087ba17557ab7b95a6aeb534</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerRdmCmdHandler</type>
       <name>rdm_handler</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>a40e414575c0f9622c096ba816dd3a8b2</anchor>
+      <anchor>af05c6aefb51339c070df68de0f5f371e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerRdmData</type>
       <name>rdm_data</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>ae49dce81d475e7a7973c6b7cdee8620e</anchor>
+      <anchor>ad16d3df6d2791f5c6dd480b459ed72c5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>af56b3c2e7928ec0bdff9274cc5da2902</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>search_domain</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>a0a16320a90915549cb44f71e46134b81</anchor>
+      <anchor>aa7f5a8d120934e4d1fb7ba53b0489c62</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>create_llrp_target</name>
       <anchorfile>struct_rdmnet_controller_config.html</anchorfile>
-      <anchor>aaad1507118f9a56d6ed29a9feb6582f3</anchor>
+      <anchor>acbf55202489074b1b9e83082c13d691d</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6183,28 +6183,28 @@
       <type>RdmnetControllerRdmCommandReceivedCallback</type>
       <name>rdm_command_received</name>
       <anchorfile>struct_rdmnet_controller_rdm_cmd_handler.html</anchorfile>
-      <anchor>a0fd9d14c69abf4fe2d37b3226d188837</anchor>
+      <anchor>ac1983bae05b79298dec544fb22fbbc2a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetControllerLlrpRdmCommandReceivedCallback</type>
       <name>llrp_rdm_command_received</name>
       <anchorfile>struct_rdmnet_controller_rdm_cmd_handler.html</anchorfile>
-      <anchor>a96c3c2b2115cf0e44a9887968bf6381c</anchor>
+      <anchor>a8af75d113e2e22155c23f776ed0e40fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>response_buf</name>
       <anchorfile>struct_rdmnet_controller_rdm_cmd_handler.html</anchorfile>
-      <anchor>a65c562df58411327ebfac21055746fcb</anchor>
+      <anchor>aa99184bd7c6729427838d2fc31612fea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_rdmnet_controller_rdm_cmd_handler.html</anchorfile>
-      <anchor>aee5bd4c2691db4ee3df5e233bfac7035</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6215,56 +6215,56 @@
       <type>uint16_t</type>
       <name>model_id</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>a048ff60c5a015b110638ee4216c55f1d</anchor>
+      <anchor>a345b5a533872a471f810a988b331f60c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>software_version_id</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>a392e2e74f0f0dd4d51739249ac7b1a37</anchor>
+      <anchor>a0b317a8c21931281b402432d70e5efdf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>manufacturer_label</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>a44c190d8bd7cdb6e9897d92b2b0fb078</anchor>
+      <anchor>a644a70763eb3ec31cdaff458d7a76223</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>device_model_description</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>a30be11bc9197a1208664129eeb745d38</anchor>
+      <anchor>a3fd939edd5efb1239669389a426914ae</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>software_version_label</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>a58b3495d707f7a33dcc979f3d51ed0d5</anchor>
+      <anchor>a0779453a5c8485f8a9fb34e2282cba60</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>device_label</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>aa454ff7d5ea46f7a5369e237b272e95a</anchor>
+      <anchor>abc9efd75b914c36bf2e5e768b0f31702</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>product_category</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>a0fb0cfad6b20eae0040d05c3a41f9301</anchor>
+      <anchor>ad0bdaf7560c2c0fc7eca4908e94d606d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>device_label_settable</name>
       <anchorfile>struct_rdmnet_controller_rdm_data.html</anchorfile>
-      <anchor>abd190d6bf06eb052193fb01f967a032c</anchor>
+      <anchor>a5f8a4a4a490229d0d3923d0c5f809c99</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6275,28 +6275,28 @@
       <type>RdmUid</type>
       <name>rdmnet_uid</name>
       <anchorfile>struct_rdmnet_destination_addr.html</anchorfile>
-      <anchor>a8e6df84af732e8c8e08a278da3a41716</anchor>
+      <anchor>ad20080c565ac846192826c63c3219567</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>endpoint</name>
       <anchorfile>struct_rdmnet_destination_addr.html</anchorfile>
-      <anchor>af994e8e7dc2374e6eafbf8c29123e7e6</anchor>
+      <anchor>a09294ef650c9488fa9cc94e0704e91b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>rdm_uid</name>
       <anchorfile>struct_rdmnet_destination_addr.html</anchorfile>
-      <anchor>a6dad6b36ac6a598b384253050b36e59e</anchor>
+      <anchor>ac130815a3619e163e3de51dc55a9c129</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>subdevice</name>
       <anchorfile>struct_rdmnet_destination_addr.html</anchorfile>
-      <anchor>a7e7996349ea8e4be23b48e4ff38ef16e</anchor>
+      <anchor>a08af6f95b61e2695caf7b11ebb8e0953</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6307,49 +6307,49 @@
       <type>RdmnetDeviceConnectedCallback</type>
       <name>connected</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>af89447bd4fa95c36278bb19ea29622ce</anchor>
+      <anchor>a549be00e98b15c79de8c6175ffc54ae0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDeviceConnectFailedCallback</type>
       <name>connect_failed</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>ad1e27cadde6c64dabbbdf43837a79beb</anchor>
+      <anchor>a7e2e4ab2af0063d625aa8ed1289911a6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDeviceDisconnectedCallback</type>
       <name>disconnected</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>a52edccc7eecd92f7510e2367a98d134e</anchor>
+      <anchor>aea134c641a5c1b0f77b93daffe275496</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDeviceRdmCommandReceivedCallback</type>
       <name>rdm_command_received</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>a5f77366a95993235e128e207a0e4a4bb</anchor>
+      <anchor>af06e4b4111ad70dfda1dd3a69356e017</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDeviceLlrpRdmCommandReceivedCallback</type>
       <name>llrp_rdm_command_received</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>a8c95049dcd4ba62b613aa16bc4d7c26e</anchor>
+      <anchor>a4bffe139815ed8f20aeeee234809f379</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDeviceDynamicUidStatusCallback</type>
       <name>dynamic_uid_status_received</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>a5c345b7742a777cd9f1ea2aa8b4af186</anchor>
+      <anchor>a58dc39ccf26f36eb620f137220015c77</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_rdmnet_device_callbacks.html</anchorfile>
-      <anchor>aea855069f3e85a29407be8a1fa27b2ad</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6360,70 +6360,70 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>ae68596928501f9b5f49882a35470d6dc</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDeviceCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>abc6d70dbf56e1ddc2c7e4bafa71db8c1</anchor>
+      <anchor>ace3f65822dee624392213739e126f629</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>response_buf</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>aa087a3c2489b51ff355bc017d0cf89f0</anchor>
+      <anchor>aa99184bd7c6729427838d2fc31612fea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetScopeConfig</type>
       <name>scope_config</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>a4e5acc99018738e60e1de429f581cdf7</anchor>
+      <anchor>a8181a6388e95cc06f242df6aa54013cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>ae51f9c3e56fdd51709788f014236c4a0</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>search_domain</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>a47b61799a52cea3074c57933d8181667</anchor>
+      <anchor>aa7f5a8d120934e4d1fb7ba53b0489c62</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmnetPhysicalEndpointConfig *</type>
       <name>physical_endpoints</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>a468036d6a69b2e6247df1cf458635d29</anchor>
+      <anchor>aa348191ff39a94ca9a240f5fc0fc9baa</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_physical_endpoints</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>ac4577e78a0af247b77bc02bbbe63fa4f</anchor>
+      <anchor>a0309db5341399c37db7a2bb7a9ba4c6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmnetVirtualEndpointConfig *</type>
       <name>virtual_endpoints</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>a6ce37537401ab63957d2884f22980727</anchor>
+      <anchor>a4143dc0917af2b7523bbcd575d6da4b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_virtual_endpoints</name>
       <anchorfile>struct_rdmnet_device_config.html</anchorfile>
-      <anchor>aa72098b0a6479ed77f1371a8c1e04b03</anchor>
+      <anchor>a15213c1baa1cbf253f1c66f517f08fd9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6434,35 +6434,35 @@
       <type>RdmnetDiscBrokerRegisteredCallback</type>
       <name>broker_registered</name>
       <anchorfile>struct_rdmnet_disc_broker_callbacks.html</anchorfile>
-      <anchor>a7aaaa778f130b2f2ebe32c539719e480</anchor>
+      <anchor>a3fa6331714dba563775ba8aa8fe5e75e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDiscBrokerRegisterFailedCallback</type>
       <name>broker_register_failed</name>
       <anchorfile>struct_rdmnet_disc_broker_callbacks.html</anchorfile>
-      <anchor>afe3899b4062afa34d2f54c65826ab9e1</anchor>
+      <anchor>a846b5071c735f95f17935071094d775c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDiscOtherBrokerFoundCallback</type>
       <name>other_broker_found</name>
       <anchorfile>struct_rdmnet_disc_broker_callbacks.html</anchorfile>
-      <anchor>a9c980361b6dd9c092c4a8a8b76097c74</anchor>
+      <anchor>af3c67296a44578d9fc055bd482ff3a06</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDiscOtherBrokerLostCallback</type>
       <name>other_broker_lost</name>
       <anchorfile>struct_rdmnet_disc_broker_callbacks.html</anchorfile>
-      <anchor>a0a2db9e94545297efdd62ecb2ce5b002</anchor>
+      <anchor>a150c1c734e72bac86e7d485e18294da7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_rdmnet_disc_broker_callbacks.html</anchorfile>
-      <anchor>af19ce77a037bc7c16d7abbb6680eb3d8</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6473,21 +6473,21 @@
       <type>const char *</type>
       <name>key</name>
       <anchorfile>struct_rdmnet_dns_txt_record_item.html</anchorfile>
-      <anchor>a1f90ff3c8c6e66108e3c800b51e7382d</anchor>
+      <anchor>acd3d88da3c0e0313c3645ff34f62f542</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>value</name>
       <anchorfile>struct_rdmnet_dns_txt_record_item.html</anchorfile>
-      <anchor>ac36f37595b2a6de5cf0e805438b89f58</anchor>
+      <anchor>a3b453099a540c13329a7fa7d45579d4e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>value_len</name>
       <anchorfile>struct_rdmnet_dns_txt_record_item.html</anchorfile>
-      <anchor>a5645aa4fa2a853ce21a1ad85ccebba79</anchor>
+      <anchor>ae02b3e5d161799d5639f0f0b9877997c</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6498,21 +6498,21 @@
       <type>RdmnetDynamicUidMapping *</type>
       <name>mappings</name>
       <anchorfile>struct_rdmnet_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>af8d7a5c73e14c6d2f6aa2619619c6ddb</anchor>
+      <anchor>a629bce35ca88bc540a9cf08d025e57f0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_mappings</name>
       <anchorfile>struct_rdmnet_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>a3725222dfe8114e80a413479ad6e8f1a</anchor>
+      <anchor>ab8ad4a3f70ee274d6b08420f50d706a2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>more_coming</name>
       <anchorfile>struct_rdmnet_dynamic_uid_assignment_list.html</anchorfile>
-      <anchor>a17fffcf92c8c87d0ed09b04f649ba2e8</anchor>
+      <anchor>ab5dd6470d680d9c5f2237907d37ef69b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6523,21 +6523,21 @@
       <type>rdmnet_dynamic_uid_status_t</type>
       <name>status_code</name>
       <anchorfile>struct_rdmnet_dynamic_uid_mapping.html</anchorfile>
-      <anchor>af2645638079a999eca4f03dfb6840d8a</anchor>
+      <anchor>ab4493b573d26ae9d71aa1e7834f8efec</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_dynamic_uid_mapping.html</anchorfile>
-      <anchor>adabe0159fa6e26b091c22ba13780361b</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalUuid</type>
       <name>rid</name>
       <anchorfile>struct_rdmnet_dynamic_uid_mapping.html</anchorfile>
-      <anchor>a842b8d5b7c14f9baeeb27d7cfbbd684e</anchor>
+      <anchor>a7c1f62fc07bef14989c3780e804412c3</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6548,49 +6548,49 @@
       <type>RdmnetEptClientConnectedCallback</type>
       <name>connected</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>a636810b26dd423b2389f5627bd62f06b</anchor>
+      <anchor>afb912d74536602744374850f1cdabe94</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptClientConnectFailedCallback</type>
       <name>connect_failed</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>a2b148a13f8d6b5a32c9e7922a542a28f</anchor>
+      <anchor>acdc02f86425f77e9751e82d5ba39a6cf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptClientDisconnectedCallback</type>
       <name>disconnected</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>aa9c296203dc983959c34858f75fa0fd5</anchor>
+      <anchor>a721fac09c6f6091b2fba3a3354ed559c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptClientClientListUpdateReceivedCallback</type>
       <name>client_list_update_received</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>ae8fc20722ac48324c79eb14a95302f6d</anchor>
+      <anchor>a4f370bbac3d11a0f14de6985d96b9232</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptClientDataReceivedCallback</type>
       <name>data_received</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>a8309a8bd3b9094e15e4e67d15e44e54c</anchor>
+      <anchor>a6c40045ea6ffded25d7062d2a441157c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptClientStatusReceivedCallback</type>
       <name>status_received</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>a7fd5ac82408e58a96910f3353190f5b3</anchor>
+      <anchor>ae2d92fc3a19aff83da49ce95cee34cba</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_rdmnet_ept_client_callbacks.html</anchorfile>
-      <anchor>a426437829d4f26053b0ee9353a575283</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6601,42 +6601,42 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_ept_client_config.html</anchorfile>
-      <anchor>ae618cb974a2e9b1250a78d572a6a3094</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptClientCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_rdmnet_ept_client_config.html</anchorfile>
-      <anchor>a23e0cb48e4773b03e46cdd05f1d191ed</anchor>
+      <anchor>ad2e0f268b1b3e390b54ff7ca59a21fb6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmnetEptSubProtocol *</type>
       <name>protocols</name>
       <anchorfile>struct_rdmnet_ept_client_config.html</anchorfile>
-      <anchor>a04d0c31184e6bc3c9818bcd27f390626</anchor>
+      <anchor>adf8254424d3d9256e2f9abf86dc34440</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_protocols</name>
       <anchorfile>struct_rdmnet_ept_client_config.html</anchorfile>
-      <anchor>adc7213b80e2fb086ec1ed3d8bea7d531</anchor>
+      <anchor>ac4c5442623e5438a686daf3f26345968</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>response_buf</name>
       <anchorfile>struct_rdmnet_ept_client_config.html</anchorfile>
-      <anchor>ad2e5342ac6de1fb551e426fbb4629094</anchor>
+      <anchor>aa99184bd7c6729427838d2fc31612fea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>search_domain</name>
       <anchorfile>struct_rdmnet_ept_client_config.html</anchorfile>
-      <anchor>a0be032d7a29a5eccf46a8e235e152b6d</anchor>
+      <anchor>aa7f5a8d120934e4d1fb7ba53b0489c62</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6647,21 +6647,21 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_ept_client_entry.html</anchorfile>
-      <anchor>a0fc4f36b08efe7fb323753a7a4399227</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetEptSubProtocol *</type>
       <name>protocols</name>
       <anchorfile>struct_rdmnet_ept_client_entry.html</anchorfile>
-      <anchor>af6d7da9fbe52f48b740c334a74d93860</anchor>
+      <anchor>a01897bbacbe36f0b0114787a6f415ce0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_protocols</name>
       <anchorfile>struct_rdmnet_ept_client_entry.html</anchorfile>
-      <anchor>acea1fae33616d2dfd9750b8f823e56f0</anchor>
+      <anchor>ac4c5442623e5438a686daf3f26345968</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6672,21 +6672,21 @@
       <type>RdmnetEptClientEntry *</type>
       <name>client_entries</name>
       <anchorfile>struct_rdmnet_ept_client_list.html</anchorfile>
-      <anchor>a3c76e64783b650c4253bc90f8c28b090</anchor>
+      <anchor>afba9308d3f6abd159cb4fc60eaeb0d8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_client_entries</name>
       <anchorfile>struct_rdmnet_ept_client_list.html</anchorfile>
-      <anchor>a4e70cc13f7c860f2f2e47f2d443a9414</anchor>
+      <anchor>afccd922a3754fa31008826b55b692c66</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>more_coming</name>
       <anchorfile>struct_rdmnet_ept_client_list.html</anchorfile>
-      <anchor>a431174f9f4f6fd45a4178c5484f12415</anchor>
+      <anchor>ab5dd6470d680d9c5f2237907d37ef69b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6697,35 +6697,35 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_rdmnet_ept_data.html</anchorfile>
-      <anchor>a3fe836dace9e08c161884ad21c8f26c6</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>manufacturer_id</name>
       <anchorfile>struct_rdmnet_ept_data.html</anchorfile>
-      <anchor>a6880f02c4ef621c6f6eff8e549514bb7</anchor>
+      <anchor>a4ad31fcb69f8aaca8f3c1820bb4d8594</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>protocol_id</name>
       <anchorfile>struct_rdmnet_ept_data.html</anchorfile>
-      <anchor>a5129aa3cbcb00c91df302116d657b465</anchor>
+      <anchor>ae44950c5a1939c04b9a9337a57828a35</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>struct_rdmnet_ept_data.html</anchorfile>
-      <anchor>a824627defb369962db2c499364468a1d</anchor>
+      <anchor>a579f5164b5b16e18ddcdb0296ef81799</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>data_len</name>
       <anchorfile>struct_rdmnet_ept_data.html</anchorfile>
-      <anchor>aa975582a0b5a914117ba809e67ee7f89</anchor>
+      <anchor>ace1c2e33b74df8973a7d9a19c935af80</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6736,21 +6736,21 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_rdmnet_ept_status.html</anchorfile>
-      <anchor>a0393a00733c2f0a144f436dd1fcb8456</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>ept_status_code_t</type>
       <name>status_code</name>
       <anchorfile>struct_rdmnet_ept_status.html</anchorfile>
-      <anchor>ad2e681d1a760b87719d5192727b91e60</anchor>
+      <anchor>a173906502e3b5416044e8545ecfd5541</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>status_string</name>
       <anchorfile>struct_rdmnet_ept_status.html</anchorfile>
-      <anchor>a59dd437d99db6b4fdd500fab70bde042</anchor>
+      <anchor>a01b97f2df3bfb785cec1ae6ad2f4f67b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6761,21 +6761,21 @@
       <type>uint16_t</type>
       <name>manufacturer_id</name>
       <anchorfile>struct_rdmnet_ept_sub_protocol.html</anchorfile>
-      <anchor>ac6e49c213c8a7ab24fe8bae4bdfc7f1d</anchor>
+      <anchor>a4ad31fcb69f8aaca8f3c1820bb4d8594</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>protocol_id</name>
       <anchorfile>struct_rdmnet_ept_sub_protocol.html</anchorfile>
-      <anchor>a15f370cadc5c27278ae79f9edbc2ec2b</anchor>
+      <anchor>ae44950c5a1939c04b9a9337a57828a35</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>protocol_string</name>
       <anchorfile>struct_rdmnet_ept_sub_protocol.html</anchorfile>
-      <anchor>a773bb3d3b22ea01a6bbcdb0bd210fd58</anchor>
+      <anchor>a4baa605d142ce6b73a04a01398662d67</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6786,21 +6786,21 @@
       <type>const EtcPalMcastNetintId *</type>
       <name>netints</name>
       <anchorfile>struct_rdmnet_netint_config.html</anchorfile>
-      <anchor>afdc860aa58c95fc16c3925d4d3370f06</anchor>
+      <anchor>ab031e1bdc110045f5760e1f6a86dc59e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_netints</name>
       <anchorfile>struct_rdmnet_netint_config.html</anchorfile>
-      <anchor>a4e2166c863a92fa525273a5408c4e1e7</anchor>
+      <anchor>a6ddc029bb8aba3ead075508554592445</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>no_netints</name>
       <anchorfile>struct_rdmnet_netint_config.html</anchorfile>
-      <anchor>a9ea17cdf601d714c01c6d76bc2dddd94</anchor>
+      <anchor>a45fc59834ac15fd6d3c71454af1d247a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6811,21 +6811,21 @@
       <type>uint16_t</type>
       <name>endpoint_id</name>
       <anchorfile>struct_rdmnet_physical_endpoint_config.html</anchorfile>
-      <anchor>aa3f8182a6de08e3d350968ae504f9c71</anchor>
+      <anchor>af702743398c1c2c0fd52ca40504cf1f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmnetPhysicalEndpointResponder *</type>
       <name>responders</name>
       <anchorfile>struct_rdmnet_physical_endpoint_config.html</anchorfile>
-      <anchor>affdd1b20ea4fe23f6c7ecca7dcf85960</anchor>
+      <anchor>aa32e7ac8b86139fd0a79d1d9b2f76840</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_responders</name>
       <anchorfile>struct_rdmnet_physical_endpoint_config.html</anchorfile>
-      <anchor>ae03e7714ab2513f42f6576df7da65738</anchor>
+      <anchor>a198b576d97381a141652d54b3f90f681</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6836,21 +6836,21 @@
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_physical_endpoint_responder.html</anchorfile>
-      <anchor>a4733eb56264b07b7459b7f9d8002cd94</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>control_field</name>
       <anchorfile>struct_rdmnet_physical_endpoint_responder.html</anchorfile>
-      <anchor>acf409850ecf2ca32dd2d999c602f00af</anchor>
+      <anchor>afa00abfbafa7d6dc376c83462e646f52</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>binding_uid</name>
       <anchorfile>struct_rdmnet_physical_endpoint_responder.html</anchorfile>
-      <anchor>aa4dd027426319d8717649c4aa0dd1bbf</anchor>
+      <anchor>ad539b8a0998270c4b389bcba3b0f3da8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6861,42 +6861,42 @@
       <type>RdmUid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>struct_rdmnet_rdm_command.html</anchorfile>
-      <anchor>aea3a8317889a6b5d36600cca64e1679d</anchor>
+      <anchor>aab83acb4fdb2727edff16d91a7df5860</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>dest_endpoint</name>
       <anchorfile>struct_rdmnet_rdm_command.html</anchorfile>
-      <anchor>a498925c0421dedb82a63c805206db0c5</anchor>
+      <anchor>acdae598ce618f44892eda9b6df13e69d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_rdmnet_rdm_command.html</anchorfile>
-      <anchor>a606bbb7d7f3e2c07e8029a9debe8ff7b</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmCommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_rdmnet_rdm_command.html</anchorfile>
-      <anchor>a5465508fc1c33985e0b9525573644f05</anchor>
+      <anchor>aaf4d307076636514f7f15661bad41366</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>struct_rdmnet_rdm_command.html</anchorfile>
-      <anchor>acb25f5e5453fa1cfc61647dcf8fa1d82</anchor>
+      <anchor>a579f5164b5b16e18ddcdb0296ef81799</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>data_len</name>
       <anchorfile>struct_rdmnet_rdm_command.html</anchorfile>
-      <anchor>a3c638e30619bf6ab832c7a4721dfeed8</anchor>
+      <anchor>ac78cff7af99787faad2a285dffdde08e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6907,77 +6907,77 @@
       <type>RdmUid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a4492119a63785bbc3314e862419d1285</anchor>
+      <anchor>aab83acb4fdb2727edff16d91a7df5860</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a57f388c215190fb011fb031cd2a29be6</anchor>
+      <anchor>a4ce8c40ba849ffa506cf6a8b16ca5d7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>af3f256fb154ce9fd0835cc2f143efd9e</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>is_response_to_me</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a6927eaec013a0e5d6ec7230f46618308</anchor>
+      <anchor>acccd24ff374a39ca8a8b78c631803d60</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmCommandHeader</type>
       <name>original_cmd_header</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a0ee041c9ff3e5b0504315ee83e7328c3</anchor>
+      <anchor>a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>original_cmd_data</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a3898faf486e1348c2144b81e17f4deec</anchor>
+      <anchor>ac95e3be87225f42c40dc594db0fabc2b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>original_cmd_data_len</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a2cdb32da028efb87cae284839600157e</anchor>
+      <anchor>a4cb821114cf0dda217405dc156c015a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmResponseHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a7166b29ccdcf9789259f036c6f9c1c96</anchor>
+      <anchor>a8617009d72714a9a5b6a509d520bc81f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>rdm_data</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a757c3836c4ba3194c16a7fdee725478b</anchor>
+      <anchor>a2f507182f83446298f3772477adabddb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>rdm_data_len</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a40a585bd57aa4b45b518408829a9038f</anchor>
+      <anchor>a5f39c37f64aba9cf21336ba98a66c18f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>more_coming</name>
       <anchorfile>struct_rdmnet_rdm_response.html</anchorfile>
-      <anchor>a7b23c9c9b5ee45b4be800413eb01a6f8</anchor>
+      <anchor>ab5dd6470d680d9c5f2237907d37ef69b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6988,28 +6988,28 @@
       <type>EtcPalUuid</type>
       <name>cid</name>
       <anchorfile>struct_rdmnet_rpt_client_entry.html</anchorfile>
-      <anchor>adefb8e2be2ed7250cd5c636d0d396a2d</anchor>
+      <anchor>a4c3f7d9a58af5033f9acd8c942bf81d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>uid</name>
       <anchorfile>struct_rdmnet_rpt_client_entry.html</anchorfile>
-      <anchor>aeedb7a29e8587dc82a1586f72b0afcee</anchor>
+      <anchor>ad908bad751766196cc2334b0f8579a5c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rpt_client_type_t</type>
       <name>type</name>
       <anchorfile>struct_rdmnet_rpt_client_entry.html</anchorfile>
-      <anchor>ae47f295713b57d8238f420a70e1b7289</anchor>
+      <anchor>a99ea5a63f1a82d7352ad21fc593a21fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalUuid</type>
       <name>binding_cid</name>
       <anchorfile>struct_rdmnet_rpt_client_entry.html</anchorfile>
-      <anchor>ad8287f6a5cbefde06a7e70ff4eee0091</anchor>
+      <anchor>aac401936a538337199a0e25114b017cf</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7020,21 +7020,21 @@
       <type>RdmnetRptClientEntry *</type>
       <name>client_entries</name>
       <anchorfile>struct_rdmnet_rpt_client_list.html</anchorfile>
-      <anchor>ab83c415e9196e74a3fa20b73d3407586</anchor>
+      <anchor>a66f28e829e9ff1f5c0ec95a7338e8b85</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_client_entries</name>
       <anchorfile>struct_rdmnet_rpt_client_list.html</anchorfile>
-      <anchor>acdd2b6b109461335c356422b1bb15d6c</anchor>
+      <anchor>afccd922a3754fa31008826b55b692c66</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>more_coming</name>
       <anchorfile>struct_rdmnet_rpt_client_list.html</anchorfile>
-      <anchor>ae47a845eafcc1ead4a2c5e39c9e7ae50</anchor>
+      <anchor>ab5dd6470d680d9c5f2237907d37ef69b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7045,35 +7045,35 @@
       <type>RdmUid</type>
       <name>source_uid</name>
       <anchorfile>struct_rdmnet_rpt_status.html</anchorfile>
-      <anchor>a341877f2348eb080feef58049da4d5d4</anchor>
+      <anchor>a40cba7d6d1910fb740982421cf66c5d6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>struct_rdmnet_rpt_status.html</anchorfile>
-      <anchor>a6162b62dba179dde3a053d166f4358dd</anchor>
+      <anchor>a4ce8c40ba849ffa506cf6a8b16ca5d7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_rdmnet_rpt_status.html</anchorfile>
-      <anchor>a58db3bafcaf8cb0d2e0f5d6f096034a4</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rpt_status_code_t</type>
       <name>status_code</name>
       <anchorfile>struct_rdmnet_rpt_status.html</anchorfile>
-      <anchor>a7ee615642619dc3f5fd4f52fdf5205e7</anchor>
+      <anchor>ad1e92880377c93c4e7a412a5bb57639c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>status_string</name>
       <anchorfile>struct_rdmnet_rpt_status.html</anchorfile>
-      <anchor>a53ab51517ca9f740f333ea992a1fa412</anchor>
+      <anchor>a01b97f2df3bfb785cec1ae6ad2f4f67b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7084,35 +7084,35 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_rdmnet_saved_ept_data.html</anchorfile>
-      <anchor>a0676c09d97d54854aec72716a964fa3d</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>manufacturer_id</name>
       <anchorfile>struct_rdmnet_saved_ept_data.html</anchorfile>
-      <anchor>a6679c1808eaa156a769196638d708cce</anchor>
+      <anchor>a4ad31fcb69f8aaca8f3c1820bb4d8594</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>protocol_id</name>
       <anchorfile>struct_rdmnet_saved_ept_data.html</anchorfile>
-      <anchor>a12bf8e90533152d32e50da3b678de01c</anchor>
+      <anchor>ae44950c5a1939c04b9a9337a57828a35</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>struct_rdmnet_saved_ept_data.html</anchorfile>
-      <anchor>a286f9e2fc721dece18a72d175909f0f3</anchor>
+      <anchor>a579f5164b5b16e18ddcdb0296ef81799</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>data_len</name>
       <anchorfile>struct_rdmnet_saved_ept_data.html</anchorfile>
-      <anchor>abab6198e93b9825f1f558db73dabc778</anchor>
+      <anchor>ace1c2e33b74df8973a7d9a19c935af80</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7123,21 +7123,21 @@
       <type>EtcPalUuid</type>
       <name>source_cid</name>
       <anchorfile>struct_rdmnet_saved_ept_status.html</anchorfile>
-      <anchor>a7865c7dd05e00be6841601e44147a5c6</anchor>
+      <anchor>a1e54a6f2928120797e7bcf3031cf9fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>ept_status_code_t</type>
       <name>status_code</name>
       <anchorfile>struct_rdmnet_saved_ept_status.html</anchorfile>
-      <anchor>a02436465747d77507362fbc1eef22fa9</anchor>
+      <anchor>a173906502e3b5416044e8545ecfd5541</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>status_string</name>
       <anchorfile>struct_rdmnet_saved_ept_status.html</anchorfile>
-      <anchor>a13170c2e1d4fded5ab7cd9745bc9b4a4</anchor>
+      <anchor>a01b97f2df3bfb785cec1ae6ad2f4f67b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7148,42 +7148,42 @@
       <type>RdmUid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>struct_rdmnet_saved_rdm_command.html</anchorfile>
-      <anchor>aeaec7f640c8ba5499ea390db23d6ac31</anchor>
+      <anchor>aab83acb4fdb2727edff16d91a7df5860</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>dest_endpoint</name>
       <anchorfile>struct_rdmnet_saved_rdm_command.html</anchorfile>
-      <anchor>a0167850f59abc1e038c7a90ee8b8a618</anchor>
+      <anchor>acdae598ce618f44892eda9b6df13e69d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_rdmnet_saved_rdm_command.html</anchorfile>
-      <anchor>a7cce60de9a7c1351d7710f9e084e970b</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmCommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_rdmnet_saved_rdm_command.html</anchorfile>
-      <anchor>a28bde55e4a60ad10607d44b31d8ab15e</anchor>
+      <anchor>aaf4d307076636514f7f15661bad41366</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>data</name>
       <anchorfile>struct_rdmnet_saved_rdm_command.html</anchorfile>
-      <anchor>a018f1e651be1de32d84d3ffc9bee1a5d</anchor>
+      <anchor>a1f9dbe5a4390d94cb28b7b21d2b656d5</anchor>
       <arglist>[RDM_MAX_PDL]</arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>data_len</name>
       <anchorfile>struct_rdmnet_saved_rdm_command.html</anchorfile>
-      <anchor>a24b7e14caa031f1f49896cd93d6b1ced</anchor>
+      <anchor>ac78cff7af99787faad2a285dffdde08e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7194,70 +7194,70 @@
       <type>RdmUid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>a4be5c087517d033632f91a4751b16029</anchor>
+      <anchor>aab83acb4fdb2727edff16d91a7df5860</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>a61b3adab7b79bb2d967f590ad4270643</anchor>
+      <anchor>a4ce8c40ba849ffa506cf6a8b16ca5d7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>ae02534d43bb6ef379672a2a7cf775067</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>is_response_to_me</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>a77996802788a63c21fa6bdbb6663f277</anchor>
+      <anchor>acccd24ff374a39ca8a8b78c631803d60</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmCommandHeader</type>
       <name>original_cmd_header</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>ae5cdc5587568b1b40ac706156d60c850</anchor>
+      <anchor>a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>original_cmd_data</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>ae2dc2a539787dd85d4985718b35c2813</anchor>
+      <anchor>a7cb0bddd5d4f6c7e25f3c70405607535</anchor>
       <arglist>[RDM_MAX_PDL]</arglist>
     </member>
     <member kind="variable">
       <type>uint8_t</type>
       <name>original_cmd_data_len</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>aeae09591285ec44d306a1c59429fe7bd</anchor>
+      <anchor>a4cb821114cf0dda217405dc156c015a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmResponseHeader</type>
       <name>rdm_header</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>a1252b5961c7fdacb8358b561318a116a</anchor>
+      <anchor>a8617009d72714a9a5b6a509d520bc81f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>rdm_data</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>a009b5803242968e227e61d9c3905174a</anchor>
+      <anchor>aafa40d6fb794175f944464af95e2e1d0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>rdm_data_len</name>
       <anchorfile>struct_rdmnet_saved_rdm_response.html</anchorfile>
-      <anchor>a8eb7d36502a3f31d057e7dd28bd13315</anchor>
+      <anchor>a5f39c37f64aba9cf21336ba98a66c18f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7268,35 +7268,35 @@
       <type>RdmUid</type>
       <name>source_uid</name>
       <anchorfile>struct_rdmnet_saved_rpt_status.html</anchorfile>
-      <anchor>a868bc28538dde21d981d7360642c9b8b</anchor>
+      <anchor>a40cba7d6d1910fb740982421cf66c5d6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>struct_rdmnet_saved_rpt_status.html</anchorfile>
-      <anchor>a13f4822272610830bf0fb03fac03fb8e</anchor>
+      <anchor>a4ce8c40ba849ffa506cf6a8b16ca5d7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>struct_rdmnet_saved_rpt_status.html</anchorfile>
-      <anchor>a16968e004cd51efa08eaeae3f31a2257</anchor>
+      <anchor>a90405e49b793dcdfe95b8151b498a763</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rpt_status_code_t</type>
       <name>status_code</name>
       <anchorfile>struct_rdmnet_saved_rpt_status.html</anchorfile>
-      <anchor>afc45700817eb7b771471114c177cfa2e</anchor>
+      <anchor>ad1e92880377c93c4e7a412a5bb57639c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>char *</type>
       <name>status_string</name>
       <anchorfile>struct_rdmnet_saved_rpt_status.html</anchorfile>
-      <anchor>a2384794c81f30db15c2402e29608d600</anchor>
+      <anchor>af64c068bb273aed2340e88f8b22c149b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7307,14 +7307,14 @@
       <type>const char *</type>
       <name>scope</name>
       <anchorfile>struct_rdmnet_scope_config.html</anchorfile>
-      <anchor>a53bf7560015709c0a2ceaf93e094c95b</anchor>
+      <anchor>aaa3f7f51e16b6fa08e2bc1e0d7eb6bab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>EtcPalSockAddr</type>
       <name>static_broker_addr</name>
       <anchorfile>struct_rdmnet_scope_config.html</anchorfile>
-      <anchor>a22321adf396e6dccedba36de29f3bb8a</anchor>
+      <anchor>a0c84d65b0bda9438b948ac7a7907da47</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7325,28 +7325,28 @@
       <type>RdmnetDiscBrokerFoundCallback</type>
       <name>broker_found</name>
       <anchorfile>struct_rdmnet_scope_monitor_callbacks.html</anchorfile>
-      <anchor>a37ad28dadfcd6c6d0b97e63187c966d0</anchor>
+      <anchor>af243f7a79d1f406c632fb2a04d7aea3a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDiscBrokerUpdatedCallback</type>
       <name>broker_updated</name>
       <anchorfile>struct_rdmnet_scope_monitor_callbacks.html</anchorfile>
-      <anchor>a209df32d2083a44373343948e492cd05</anchor>
+      <anchor>a7ef4879be84036b0874a9bd515285996</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetDiscBrokerLostCallback</type>
       <name>broker_lost</name>
       <anchorfile>struct_rdmnet_scope_monitor_callbacks.html</anchorfile>
-      <anchor>a43d40fdc954f7c2a73317686a8d83ef1</anchor>
+      <anchor>a44c0d9d7ead9afb90d4308137d5435d1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>void *</type>
       <name>context</name>
       <anchorfile>struct_rdmnet_scope_monitor_callbacks.html</anchorfile>
-      <anchor>acd8ca85db8de30d5798bcd33070883cc</anchor>
+      <anchor>ae376f130b17d169ee51be68077a89ed0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7357,21 +7357,21 @@
       <type>const char *</type>
       <name>scope</name>
       <anchorfile>struct_rdmnet_scope_monitor_config.html</anchorfile>
-      <anchor>a315ab62d1de9a05a86a1257877c64b72</anchor>
+      <anchor>aaa3f7f51e16b6fa08e2bc1e0d7eb6bab</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmnetScopeMonitorCallbacks</type>
       <name>callbacks</name>
       <anchorfile>struct_rdmnet_scope_monitor_config.html</anchorfile>
-      <anchor>aee5f4f7db4785e3fc34e399ebc82bf5c</anchor>
+      <anchor>ad73a9eff5287bc33ff2519ef0dfb88a2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
       <name>domain</name>
       <anchorfile>struct_rdmnet_scope_monitor_config.html</anchorfile>
-      <anchor>a45fe31f0dd02ab70d7b82f4519958c5b</anchor>
+      <anchor>a52e31162553211bc239fae1a464d7751</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7382,21 +7382,21 @@
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>struct_rdmnet_source_addr.html</anchorfile>
-      <anchor>a25cf54210ee6c1c58867d08bb3e7609c</anchor>
+      <anchor>a4ce8c40ba849ffa506cf6a8b16ca5d7f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>RdmUid</type>
       <name>rdm_source_uid</name>
       <anchorfile>struct_rdmnet_source_addr.html</anchorfile>
-      <anchor>a648494989df71a6e20f4b8d06770530f</anchor>
+      <anchor>aa1911b80521233222b22bf113cbfba9c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>subdevice</name>
       <anchorfile>struct_rdmnet_source_addr.html</anchorfile>
-      <anchor>aa834bbfeccaf6cad3cdf02aaf3bab1fd</anchor>
+      <anchor>a08af6f95b61e2695caf7b11ebb8e0953</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7407,28 +7407,28 @@
       <type>rdmnet_ept_response_action_t</type>
       <name>response_action</name>
       <anchorfile>struct_rdmnet_sync_ept_response.html</anchorfile>
-      <anchor>a1dbd4d5ad7fb220f905f00a128fe26a4</anchor>
+      <anchor>a339ec93920ecce36ef60046f552b37c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>response_data_len</name>
       <anchorfile>struct_rdmnet_sync_ept_response.html</anchorfile>
-      <anchor>a5f715590acfda9084b8e6921a6beefe5</anchor>
+      <anchor>a3990ab9d830c68fd17925a5d1f689f74</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>ept_status_code_t</type>
       <name>status_code</name>
       <anchorfile>struct_rdmnet_sync_ept_response.html</anchorfile>
-      <anchor>a47005d788d7e5daab00018bdb7574e0e</anchor>
+      <anchor>a173906502e3b5416044e8545ecfd5541</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>union RdmnetSyncEptResponse::@1</type>
       <name>response_data</name>
       <anchorfile>struct_rdmnet_sync_ept_response.html</anchorfile>
-      <anchor>a09d0c8296f65b2d96e52c4f729305631</anchor>
+      <anchor>a1ab171cabfcfe68c6736a329492fd1a0</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7439,28 +7439,28 @@
       <type>rdmnet_rdm_response_action_t</type>
       <name>response_action</name>
       <anchorfile>struct_rdmnet_sync_rdm_response.html</anchorfile>
-      <anchor>afbbd8c1594fea06d9a9729478a2e5c1b</anchor>
+      <anchor>aa8a9ab1e51c5db8fd1615e13d4e22e8a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>response_data_len</name>
       <anchorfile>struct_rdmnet_sync_rdm_response.html</anchorfile>
-      <anchor>ac2940aef7947006e34a18b23c1c3815c</anchor>
+      <anchor>a3990ab9d830c68fd17925a5d1f689f74</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm_nack_reason_t</type>
       <name>nack_reason</name>
       <anchorfile>struct_rdmnet_sync_rdm_response.html</anchorfile>
-      <anchor>accbf8397113f5691656150cd905be73a</anchor>
+      <anchor>a3fe6e355a6fdbad6b633273648a34ef1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>union RdmnetSyncRdmResponse::@0</type>
       <name>response_data</name>
       <anchorfile>struct_rdmnet_sync_rdm_response.html</anchorfile>
-      <anchor>a708ae19c3cea0add9e971d0f8ce2e012</anchor>
+      <anchor>a27968ac73b781a78a839ac2d6d13ab4e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7471,35 +7471,35 @@
       <type>uint16_t</type>
       <name>endpoint_id</name>
       <anchorfile>struct_rdmnet_virtual_endpoint_config.html</anchorfile>
-      <anchor>ac27f6f1619485d14e1880735cb81c72f</anchor>
+      <anchor>af702743398c1c2c0fd52ca40504cf1f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const EtcPalUuid *</type>
       <name>dynamic_responders</name>
       <anchorfile>struct_rdmnet_virtual_endpoint_config.html</anchorfile>
-      <anchor>a1ffc5cad463b0ecb1cbfcf73b7b939ca</anchor>
+      <anchor>a038ae9f89c4f1ee616359d4cb0f4b0bf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_dynamic_responders</name>
       <anchorfile>struct_rdmnet_virtual_endpoint_config.html</anchorfile>
-      <anchor>a4fd8e58c72865cbad3db8627aadb3f6f</anchor>
+      <anchor>ab98a0c9bba3086a4e9711e77dc3916dc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const RdmUid *</type>
       <name>static_responders</name>
       <anchorfile>struct_rdmnet_virtual_endpoint_config.html</anchorfile>
-      <anchor>a9297c6417d008e13be0f64f8e5dd81e0</anchor>
+      <anchor>a20c3d037e8a546f97941951363153387</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>size_t</type>
       <name>num_static_responders</name>
       <anchorfile>struct_rdmnet_virtual_endpoint_config.html</anchorfile>
-      <anchor>a4a32978e00d6c1a5765c3d0073bcca37</anchor>
+      <anchor>a5093215d5eb866e3535424a1c4ea44e5</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7510,168 +7510,168 @@
       <type></type>
       <name>RdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>abdadd96aadd421bbec30c049b9a9ab75</anchor>
+      <anchor>a9640b71f383c959e0124b05c64c5fcbd</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>ad389aae85a6f86bac627fa74df3c5a04</anchor>
+      <anchor>ae7440afdda1d5b33418850dd3e7c0493</anchor>
       <arglist>(const RdmResponse &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>RdmResponse &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a1606ced446aec28334c010108b60f95e</anchor>
+      <anchor>a75217b3f910b319af575b5b3ffa27f11</anchor>
       <arglist>(const RdmResponse &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>RdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>aaa3e058c3ab5209b1cd95177b296054b</anchor>
+      <anchor>a9f130a7bbceb59f94ccf451e416f4001</anchor>
       <arglist>(const LlrpRdmResponse &amp;c_resp) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Uuid</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a4f3ec92ee33199c02959f829f183f74a</anchor>
+      <anchor>a07635554a26c730bad4cbdb81d5293fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>ac330c2970b7a9c554c33f64fc7888189</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>source_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a98bab5de06b1da481642bba4f99980d2</anchor>
+      <anchor>a1c0c6f98dd20230051f07f9d43a5f824</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>dest_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>ac4a0d544a1a067d95082e610e0872c2a</anchor>
+      <anchor>a91074bb7526a5d255d13d3245a6846a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_response_type_t</type>
       <name>response_type</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>aac6603ecc082058d0270cfab37c086de</anchor>
+      <anchor>ae9f6a7406164ccb9de417e5076acd282</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>ab11193c3281e8c6aebd9223205886bb6</anchor>
+      <anchor>ace76a3360a4ca27564b266d231844fe2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a8005ef34f8e6215927ddf2f20d62dce7</anchor>
+      <anchor>a59f11046e01fbfe627604b2eb966e5d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a356c69129ef042b8756fd584bddbb306</anchor>
+      <anchor>aeb06b87b7d84f9dcb290a7ac38a9f326</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::ResponseHeader</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a351478b1f836edd1aceb7e79f9ccbd68</anchor>
+      <anchor>a963e29c26fd2aa64831ef6ad9e434dd4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a849dfcdd43ecaca542b441895c841b1d</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint8_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a59d725759a6c5dc2fdabd5bfa98a356c</anchor>
+      <anchor>aa711528b0360e40e670ad60d1eaba0a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>adac2761887e295070974ec4b2681d453</anchor>
+      <anchor>a57bbbbbb1a78db54f4020774db97ec79</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsAck</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a7fd843f6d50ee5b55b2ddc6c5bad1366</anchor>
+      <anchor>ad5e6bce9eb1450e7ec0362515cf3f784</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsNack</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a4ef74ae45e24e557a19b5419ace2a4b9</anchor>
+      <anchor>a3d45f293500f5fa046a60eaf157de6a3</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsGetResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>af93b9286120d87bd28536a7ec19afa7f</anchor>
+      <anchor>aa276224c97735e6a4f04dc94934c5084</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsSetResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>ad03b438ced8643a11cee7605facc0302</anchor>
+      <anchor>ac6d444f5f4aafdf6e55e791da7268cd5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const LlrpRdmResponse &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>ade7422e08ae5c88ab94f056c25b3d39f</anchor>
+      <anchor>a57f972139f117623106c7d0708c10123</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; rdm::NackReason &gt;</type>
       <name>GetNackReason</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>af64faaa83f84bf8b54a117b6f0619a34</anchor>
+      <anchor>aa775011c9744521de1f33447692963b8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Response</type>
       <name>ToRdm</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>a703394eaceec826b49b88973a2294958</anchor>
+      <anchor>ac6dd1c34a9472190c6a444ce24f7c967</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmResponse</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_rdm_response.html</anchorfile>
-      <anchor>aabcd92291398a8386d843a92e9368c97</anchor>
+      <anchor>a0335b1755b8460984334d4f02317c999</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -7682,259 +7682,259 @@
       <type></type>
       <name>RdmResponse</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a47aeb48b69e0ca45968ea5dd3e59d47f</anchor>
+      <anchor>a9640b71f383c959e0124b05c64c5fcbd</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RdmResponse</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a02202052c76e9299b28961bd6e967d01</anchor>
+      <anchor>ae7440afdda1d5b33418850dd3e7c0493</anchor>
       <arglist>(const RdmResponse &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>RdmResponse &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>abdbe49b9764d5c37044453d68a66aa58</anchor>
+      <anchor>a75217b3f910b319af575b5b3ffa27f11</anchor>
       <arglist>(const RdmResponse &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>RdmResponse</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a4c4539f5fb16d7e33899bb3149af3ffa</anchor>
+      <anchor>af34b893f884e91b10a8ae6cdf68e3ba6</anchor>
       <arglist>(const RdmnetRdmResponse &amp;c_resp) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a9a3f1302d3be00b7247d5113277a21cc</anchor>
+      <anchor>abad62a4aefb949a89c601b0417af988c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>abe1f725094eb7788d03ff97b8654849d</anchor>
+      <anchor>a19091558ff754f1cd870f1c4f0c43e14</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>aa638c83f8599f07968c6a26de2d5a0b1</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>original_cmd_source_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a9cb9b3fd9f1cc1f9d40cb92bd92d24a4</anchor>
+      <anchor>a9afeb3e59679534f42ba2687f209bc9b</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>original_cmd_dest_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>ad70e09ddbfb1335ed34d1cef99671637</anchor>
+      <anchor>a76ae5e41fbd727730a07a1bcb9d8a115</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::CommandHeader</type>
       <name>original_cmd_header</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a4bd3a5ee7b95f3ccc928c0e07fa0538a</anchor>
+      <anchor>aba1e33ddb84377d0b20f58f89b498731</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>original_cmd_data</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>aaa7bd40550d610bb8ad9a3cab8f7b7f5</anchor>
+      <anchor>a023ce1d3b1d33128ae9decc026fedbc6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint8_t</type>
       <name>original_cmd_data_len</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a405e20b6a330a32c616d138eb7a04e03</anchor>
+      <anchor>a5b6a9535804044292335b52aa5d88be6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdm_source_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a79ebae05c01ead37b0ebb8373b6a5908</anchor>
+      <anchor>af79aa2f05d84f88ac7a8da7e46074a20</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdm_dest_uid</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a09b3bd25afb0ae9d4d5ba0063df30af8</anchor>
+      <anchor>a923581c60152e26e59d7c21de1b9581d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_response_type_t</type>
       <name>response_type</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a6c49956378ed9dc70092507b1778b62a</anchor>
+      <anchor>ae9f6a7406164ccb9de417e5076acd282</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>ae5da507e3dc32f1892ec360a637955ae</anchor>
+      <anchor>ace76a3360a4ca27564b266d231844fe2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a4b60a153e99add1df739d5070330e62c</anchor>
+      <anchor>a59f11046e01fbfe627604b2eb966e5d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>af9e3f18e08eff4dca2fc18f035903695</anchor>
+      <anchor>aeb06b87b7d84f9dcb290a7ac38a9f326</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::ResponseHeader</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a0fdb8438ea924cbdb76eddd3c91ce4a5</anchor>
+      <anchor>a963e29c26fd2aa64831ef6ad9e434dd4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a223becaa3360fc6cb5d1fa84a86a32ad</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr size_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>af8f2d231fa209babefdaec4a5748a788</anchor>
+      <anchor>a8d204c73ea8d56026afee5ffc33837d4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>more_coming</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a56483ae1ffd2ee5127b3f4555b941a83</anchor>
+      <anchor>a4dc9106ad47f1f076eb8195dbba22d24</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>OriginalCommandIncluded</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>ae23099b7a79c09dab1b3ca98ff5c80f2</anchor>
+      <anchor>a9a0280b1d4cdb52a17c71a8e8b1dea06</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>ab857891c432e5a6e7e60393a6ad4bc23</anchor>
+      <anchor>a57bbbbbb1a78db54f4020774db97ec79</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsFromDefaultResponder</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>add4f5251f523a631d07bad7303077eba</anchor>
+      <anchor>af0f3cadc55b99481a39055c079f12563</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsResponseToMe</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a0d8ad1a2a8f36cf67442811eb223a917</anchor>
+      <anchor>a34bb8b720b37f1e4dd89b41883967c1d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsAck</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a2a9203ec70d4d6fe8a5ab9cb920fd862</anchor>
+      <anchor>ad5e6bce9eb1450e7ec0362515cf3f784</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsNack</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a68792b47c7459f86546746e5089513b4</anchor>
+      <anchor>a3d45f293500f5fa046a60eaf157de6a3</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsGetResponse</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>aa9d430a34081c22e49eb2b450e7d38bf</anchor>
+      <anchor>aa276224c97735e6a4f04dc94934c5084</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsSetResponse</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a1d69d2ce0693cf96ef0301e05e47e648</anchor>
+      <anchor>ac6d444f5f4aafdf6e55e791da7268cd5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; rdm::NackReason &gt;</type>
       <name>GetNackReason</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>aeba83b185c5748ce9bd6d5dfd5dbf9a7</anchor>
+      <anchor>aa775011c9744521de1f33447692963b8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; uint8_t &gt;</type>
       <name>GetData</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>ac03a6034914006c9d1ec0b4cea65590c</anchor>
+      <anchor>a0496c8a4f879ccf6f31f79c901deefe5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; uint8_t &gt;</type>
       <name>GetOriginalCmdData</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a6d28786366e6bb07e1e904f1d741c2e3</anchor>
+      <anchor>a9ad1b6aa09821ff4028c2e517c080be9</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetRdmResponse &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a16ae1814b2aa43f20b698daec7e14b6d</anchor>
+      <anchor>afbd7d8cfbb9bd21bc2fbb834333153e0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Command</type>
       <name>OriginalCommandToRdm</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>af3f0a9c5f195dad3dd194e2a66a28bed</anchor>
+      <anchor>a7473708fa352e6609e5045b67f32df22</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>rdm::Response</type>
       <name>ToRdm</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>aae607c38f3194a9e85efdd651a5123cc</anchor>
+      <anchor>ac6dd1c34a9472190c6a444ce24f7c967</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmResponse</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1_rdm_response.html</anchorfile>
-      <anchor>a910a0f0e0e0127452911439cde553974</anchor>
+      <anchor>a0335b1755b8460984334d4f02317c999</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -7945,42 +7945,42 @@
       <type>constexpr const RdmnetSyncRdmResponse &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
-      <anchor>a7c541d55c17afb5ac264f3e2b0dd1ef9</anchor>
+      <anchor>abe22631b8692fae38c2ac18b4f4211cd</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static RdmResponseAction</type>
       <name>SendAck</name>
       <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
-      <anchor>a66301810814d353b92754a177d92dcaa</anchor>
+      <anchor>a31ddf153fa96dc16e1fd6fcf92382f55</anchor>
       <arglist>(size_t response_data_len=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static RdmResponseAction</type>
       <name>SendNack</name>
       <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
-      <anchor>a0f084460d0d89d9af564dd573720d251</anchor>
+      <anchor>a0286cbe7b1f91734d7b516c1c66e127c</anchor>
       <arglist>(rdm_nack_reason_t nack_reason)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static RdmResponseAction</type>
       <name>SendNack</name>
       <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
-      <anchor>a6e99340678bb7b99f7e909173f0d214d</anchor>
+      <anchor>aa17a62ef0814317de6583204e893aa36</anchor>
       <arglist>(uint16_t raw_nack_reason)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static RdmResponseAction</type>
       <name>DeferResponse</name>
       <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
-      <anchor>ae84cb7af11813b1ccadd00b167ceff62</anchor>
+      <anchor>a8b5be1265ac841e5f5678027950a2cea</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static RdmResponseAction</type>
       <name>RetryLater</name>
       <anchorfile>classrdmnet_1_1_rdm_response_action.html</anchorfile>
-      <anchor>a9d119d1d362acb263c3f45860a50978f</anchor>
+      <anchor>a32c17df80bf39478406048e5da5ecef5</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -7991,56 +7991,56 @@
       <type></type>
       <name>RptClientEntry</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a83b049a0d407fa389c7180a2c23a1b15</anchor>
+      <anchor>adda73f791e29b87bca1c75e412142e14</anchor>
       <arglist>(const RdmnetRptClientEntry &amp;c_entry)</arglist>
     </member>
     <member kind="function">
       <type>RptClientEntry &amp;</type>
       <name>operator=</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a0f3401294300ed88e95f82f6b6a2f1f6</anchor>
+      <anchor>a101e71eb01bbc647e6577819114ed85b</anchor>
       <arglist>(const RdmnetRptClientEntry &amp;c_entry)</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>TypeToCString</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a2fdeba03048dd553c70bcc0d3dc820d5</anchor>
+      <anchor>a543e78d38c59c82adb9a0cdd804d5ba2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>TypeToString</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a13df7611b02b3dd53b3926ae82b4196e</anchor>
+      <anchor>a6b8d7efd0512bea995cf47f2035110fc</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a8d8bccf2f634d2f57dd5efd8943e3d86</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm::Uid</type>
       <name>uid</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a90a315be27a6ec997d2e6b76b87efd75</anchor>
+      <anchor>a12b7b9dfe0aa5ebbd928817da6444004</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rpt_client_type_t</type>
       <name>type</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>aafc3334adff830cb86c3398ebfb4f9f4</anchor>
+      <anchor>a99ea5a63f1a82d7352ad21fc593a21fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>binding_cid</name>
       <anchorfile>structrdmnet_1_1_rpt_client_entry.html</anchorfile>
-      <anchor>a6eb6fd6a6ed190500e119be751d0efc3</anchor>
+      <anchor>a88a3d4dec9a764b7402b797590be754f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8051,56 +8051,56 @@
       <type></type>
       <name>RptClientList</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>a2744dc9ee79db88b1bfb368a61249f3c</anchor>
+      <anchor>ac0d9c228fdc81d65d6d953c716ba03b9</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RptClientList</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>aeff442c1fe423934c59aea7e1d8dd298</anchor>
+      <anchor>a0bc90119dd2ade891460dcb52afa1e4a</anchor>
       <arglist>(const RptClientList &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>RptClientList &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>a75372b0ec35bdf27954411de4735beb7</anchor>
+      <anchor>a5d36b79c738398228a9966ad7926af11</anchor>
       <arglist>(const RptClientList &amp;other)=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>RptClientList</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>a38c9e74442e769d2d5b4dfaebff77f34</anchor>
+      <anchor>a962fa8e4e4876db8e5a460bb6dffecf6</anchor>
       <arglist>(const RdmnetRptClientList &amp;c_list) noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; RptClientEntry &gt;</type>
       <name>GetClientEntries</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>a0899bb62646ac3b9220986a144219917</anchor>
+      <anchor>aaf81641004fcb987a9dee6f2cf39cf1c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>more_coming</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>aab88e3093b96c76a3e9fbe99a67968e7</anchor>
+      <anchor>a4dc9106ad47f1f076eb8195dbba22d24</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetRptClientEntry *</type>
       <name>raw_entry_array</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>a7da28fd5933191a6e3df8c0a32376947</anchor>
+      <anchor>a6c6acda046324e7d15bb166aa0e49ace</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr size_t</type>
       <name>raw_entry_array_size</name>
       <anchorfile>classrdmnet_1_1_rpt_client_list.html</anchorfile>
-      <anchor>a9b9eada5fff8ccdfda5a1f0542510b8b</anchor>
+      <anchor>a0e4739dc0b762cd3dfe72e139e098095</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -8111,91 +8111,91 @@
       <type></type>
       <name>RptStatus</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a0a441bc62942c0f2b541de8b6608417f</anchor>
+      <anchor>a0f0b9556c5ef326171195dc63153ce77</anchor>
       <arglist>()=delete</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>RptStatus</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a83df8942f5ecb1f6290ff221894bb4d5</anchor>
+      <anchor>a352f10a1a81a457abcf1560309402385</anchor>
       <arglist>(const RdmnetRptStatus &amp;c_status)</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>source_uid</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a6507230a0c2c36aa6a55cfb75ab302ed</anchor>
+      <anchor>a1c0c6f98dd20230051f07f9d43a5f824</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a4f103daf4882d624b48c734bdf3c5c62</anchor>
+      <anchor>a19091558ff754f1cd870f1c4f0c43e14</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a87bb2e53322efe7a63cecee71e419d58</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rpt_status_code_t</type>
       <name>status_code</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a8fd94fd0b170cc6b385b6d2e5720575a</anchor>
+      <anchor>a16f1798dd51edaa7d8e6a43f8013a653</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const char *</type>
       <name>status_c_str</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a087aa05e2cb2bb05ae46f6f7f5ada9fa</anchor>
+      <anchor>af501a785b6225c80768c14bb31357c20</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>status_string</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>ab3ded5af40ea10f2351aeadb87ec64cb</anchor>
+      <anchor>a8de517cddeb4e6a5225015dd50acba34</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>CodeToCString</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a64d8761bcefafdccf2a6680be9e053a2</anchor>
+      <anchor>ae9a752267bd9197f2a21a4be91966636</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>CodeToString</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>abc4ab4b133733568b9488dd986e8751a</anchor>
+      <anchor>a6d5108147af76197fe672d5355221e0a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasStatusString</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a97d5768ef7da3378ccb1616c0a5dda32</anchor>
+      <anchor>a4080c22f81c0fc469f0b847f390f9d01</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetRptStatus &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>af0e3276c0a11a611e25b978a340a1581</anchor>
+      <anchor>a90ccaf1d2ecc222d873e74e695371c16</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedRptStatus</type>
       <name>Save</name>
       <anchorfile>classrdmnet_1_1_rpt_status.html</anchorfile>
-      <anchor>a401bcd20f188e7582b6421a3a0c9be0f</anchor>
+      <anchor>ac79122c5e87c0e38937e089a43e13751</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -8206,84 +8206,84 @@
       <type></type>
       <name>SavedEptData</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a9e7fcbf62ae348239369ab62716094f7</anchor>
+      <anchor>ae5f518cc5fe1325568e4f57078a08503</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedEptData</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a7992f765578803e0686a427c775a30f3</anchor>
+      <anchor>a8f696219e3307d9752dec5de47742c27</anchor>
       <arglist>(const RdmnetSavedEptData &amp;c_data)</arglist>
     </member>
     <member kind="function">
       <type>SavedEptData &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a6ab721c20b87bee342c3bda917fc7a64</anchor>
+      <anchor>ace521cdf211b2a384cc1b6a6bc838aff</anchor>
       <arglist>(const RdmnetSavedEptData &amp;c_data)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedEptData</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>abb8d9ccd4231631c346607615c607e51</anchor>
+      <anchor>a646fb8b8ab0fdb579ae8fc7fd60f65f5</anchor>
       <arglist>(const EptData &amp;resp)</arglist>
     </member>
     <member kind="function">
       <type>SavedEptData &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>af2dbfd7ef4f55b1f64d24b5b43cfe4cf</anchor>
+      <anchor>af757abbfa9dc710b5455dae61b681c14</anchor>
       <arglist>(const EptData &amp;resp)</arglist>
     </member>
     <member kind="function">
       <type>const etcpal::Uuid &amp;</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a868d475f94cb3f675502442427213e66</anchor>
+      <anchor>a6d284f75ee056ab50b3754e1606d59fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>manufacturer_id</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a3109d3920aaa5fd81199fe0f2b3ad52f</anchor>
+      <anchor>aea8a5d6741267d6e5d59233d0e839bf5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>protocol_id</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>abcf23604efbc128ee6beba429a6d08d6</anchor>
+      <anchor>a3001e20bdaffd3486d5a28db1cd3e254</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint32_t</type>
       <name>sub_protocol</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a25b518e4d2f56dc997fbda113ea49034</anchor>
+      <anchor>a2a490c72d0ae244ce21e8b750463ee4b</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a325c105852ded5f39ece3b0994ca20bb</anchor>
+      <anchor>a21b8e060baa6eeed3e5e45e6d760b54c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a18d8fa3acad322482f9838b845e29e46</anchor>
+      <anchor>a8e9724702c800f9afa146ab4cf598332</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1_saved_ept_data.html</anchorfile>
-      <anchor>a6cdf4430e86f7c7955874f5ef31221df</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -8294,84 +8294,84 @@
       <type></type>
       <name>SavedEptStatus</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a48de1b73d7f9045f8549b66eb977b97e</anchor>
+      <anchor>ad3a09c686c30c9ee1dca7528360a2933</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedEptStatus</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>aa69ab0bc3700818725f1f84b6f764c7e</anchor>
+      <anchor>a59f697e0187ee35fe9ee9f807d5468f9</anchor>
       <arglist>(const RdmnetSavedEptStatus &amp;c_resp)</arglist>
     </member>
     <member kind="function">
       <type>SavedEptStatus &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a63b3c31f31e953afbedcee2e71cbc5f8</anchor>
+      <anchor>aaf48a74daa5ab5340222c5f96e20d5ee</anchor>
       <arglist>(const RdmnetSavedEptStatus &amp;c_resp)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedEptStatus</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a6ce7e7d46d211277ffd332956762e50e</anchor>
+      <anchor>a83425b8edd9277420457c723a9fe7f79</anchor>
       <arglist>(const EptStatus &amp;status)</arglist>
     </member>
     <member kind="function">
       <type>SavedEptStatus &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a49a45ccae259ba14f750805da9dc42d8</anchor>
+      <anchor>a26ce7a14d6d17fd9ac2b8b0f6bcad1c9</anchor>
       <arglist>(const EptStatus &amp;status)</arglist>
     </member>
     <member kind="function">
       <type>const etcpal::Uuid &amp;</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a13a72d8427a4356abc77907700fd93e5</anchor>
+      <anchor>a6d284f75ee056ab50b3754e1606d59fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>ept_status_code_t</type>
       <name>status_code</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>aa590ca92c2f2eec5997f2e248b4a31be</anchor>
+      <anchor>adc3b218511d74a8f2f6855bb5b3b0a5d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const std::string &amp;</type>
       <name>status_string</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a9651039086fb2fe49a6bef91a767a3ea</anchor>
+      <anchor>ad66d9a6e9d36a5b9013d4e0c518add13</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a733fb91da18f97ce0f22a33da7b5e391</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>CodeToCString</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a23b3d130b297927ed06911672a492703</anchor>
+      <anchor>ae9a752267bd9197f2a21a4be91966636</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>CodeToString</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>a14f2e399a54343e674ad3f0ae2f07cf5</anchor>
+      <anchor>a6d5108147af76197fe672d5355221e0a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>HasStatusString</name>
       <anchorfile>classrdmnet_1_1_saved_ept_status.html</anchorfile>
-      <anchor>acc383ecb0e001e73f27af11aabc6d77f</anchor>
+      <anchor>ae8df1aa8253c686b9bffc3de71f5a6c1</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -8382,175 +8382,175 @@
       <type></type>
       <name>SavedRdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>ab983af0dc902d09b55b26e86c18c7df1</anchor>
+      <anchor>a796d6c26e677071457da64c0f7714cfd</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>SavedRdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a2ef4d967c856b0e8f1adaec80e53a8be</anchor>
+      <anchor>a40096dffe8ea7f71cbc753cbb46d026e</anchor>
       <arglist>(const LlrpSavedRdmCommand &amp;c_cmd) noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmCommand &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a0640effd439a873445a8f9a49f8960e6</anchor>
+      <anchor>af2dd9f99deaf0938f35ed4df26b30e77</anchor>
       <arglist>(const LlrpSavedRdmCommand &amp;c_cmd) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRdmCommand</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>aad282d458c06854d43c40790da3eef65</anchor>
+      <anchor>ab088b1d9f777198ba255a7d95846a961</anchor>
       <arglist>(const RdmCommand &amp;command) noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmCommand &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a74ec2a8b12cbbafdd310940c3f624671</anchor>
+      <anchor>a573241ed75faef31b0ef25a6e721a5aa</anchor>
       <arglist>(const RdmCommand &amp;command) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal::Uuid</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a81a7a903a5cbf39cefce19285add3cdc</anchor>
+      <anchor>a07635554a26c730bad4cbdb81d5293fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>adb251237bd18655c3ef175c5a5d21b0f</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr EtcPalMcastNetintId</type>
       <name>netint_id</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>aa159a33fa7c14bcd5275161d68a7c847</anchor>
+      <anchor>a2f34c1503b587946ebfa67c51939fd32</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr etcpal_iptype_t</type>
       <name>netint_ip_type</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>ab04dc028992c2bab1fd7f26f1b0ee06d</anchor>
+      <anchor>a7cffb50177ff411256f9008e0d195dd5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr unsigned int</type>
       <name>netint_index</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a6991ba43c1e1b4b9c5ee8b617677d88a</anchor>
+      <anchor>a1a1950fc0331342ff609bc2c3e69a2e2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>source_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a5b34effa344a02712aa6e79cd0a3940c</anchor>
+      <anchor>a1c0c6f98dd20230051f07f9d43a5f824</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>dest_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a6959aabcf8268fd2d45afde7e7d3dbcb</anchor>
+      <anchor>a91074bb7526a5d255d13d3245a6846a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>aa457ee8940ba23311ae64ed719311d9e</anchor>
+      <anchor>ace76a3360a4ca27564b266d231844fe2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a752922fd7ac7ce1b841365e12c597294</anchor>
+      <anchor>a59f11046e01fbfe627604b2eb966e5d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>aac80414031f1334c63ce88cecdf0c6ea</anchor>
+      <anchor>aeb06b87b7d84f9dcb290a7ac38a9f326</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::CommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a67b621ac17639201f16301dbba2da263</anchor>
+      <anchor>aeb344aeb7ddc0fa4937eb915bbab6ebe</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a2ccdfa80ac9e62861109b948dd38e82a</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint8_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a7773aa090efdac8d98cd72228845438f</anchor>
+      <anchor>aa711528b0360e40e670ad60d1eaba0a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>af93d597d960ba7268fb2620d4a7af9b2</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a71b75bf1a69fff3dd9194277f4734e9e</anchor>
+      <anchor>a57bbbbbb1a78db54f4020774db97ec79</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsGet</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>ab5942a6954aaaaaac0f242a2e357d596</anchor>
+      <anchor>a24e38683dabb26fcffff5ff569c24451</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsSet</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>adeb8e3b5b96ece397a8cb9a644e875cf</anchor>
+      <anchor>ac07548ce2bdda1e5eaa95c647aadd52f</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>ETCPAL_CONSTEXPR_14 LlrpSavedRdmCommand &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a009cfe0a58c107831669500b3eb3542a</anchor>
+      <anchor>a1a2e1e4f7f019274c2f5847729615d41</anchor>
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const LlrpSavedRdmCommand &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a9e0f310d335d0c98dc87d67c5606ae2e</anchor>
+      <anchor>a649093760fe8024c91dadc659e7bbf08</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Command</type>
       <name>ToRdm</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>afb7e2874e1e918a6086d4e9cb7cda26d</anchor>
+      <anchor>a823c8e5dc54cec37b78af1e4395b4ae1</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -8561,168 +8561,168 @@
       <type></type>
       <name>SavedRdmCommand</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>ab2022d4e403aae9bcf52a5409e0a0c5a</anchor>
+      <anchor>a796d6c26e677071457da64c0f7714cfd</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>constexpr</type>
       <name>SavedRdmCommand</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a4772fd3c2d22d336ca643cb79a6a947b</anchor>
+      <anchor>a381bd6b35b3e58052981d57a5e452b00</anchor>
       <arglist>(const RdmnetSavedRdmCommand &amp;c_cmd) noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmCommand &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a1a0f3dc5ba7c4b7a458bd9492bff587c</anchor>
+      <anchor>a32b5cd94758c64b46d2fed9bfaf74261</anchor>
       <arglist>(const RdmnetSavedRdmCommand &amp;c_cmd) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRdmCommand</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>ac9d005ca4412d4f2c19dcf6190bda245</anchor>
+      <anchor>ab088b1d9f777198ba255a7d95846a961</anchor>
       <arglist>(const RdmCommand &amp;command) noexcept</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmCommand &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>afd0fb795778d3bb5b16083a27446dbdc</anchor>
+      <anchor>a573241ed75faef31b0ef25a6e721a5aa</anchor>
       <arglist>(const RdmCommand &amp;command) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a71098fea089577a71ca3c35226ec3617</anchor>
+      <anchor>abad62a4aefb949a89c601b0417af988c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>dest_endpoint</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>af121ba9f857b4fd8cfccb05104769064</anchor>
+      <anchor>a85844074e066a414add94a2890957add</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a8d832053aa92b9072bfb14b0c8c8963b</anchor>
+      <anchor>ab12a10f74bc60c641a11af1f665230d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdm_source_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a51b1a0b2b4a103401ac461d048e2e32c</anchor>
+      <anchor>af79aa2f05d84f88ac7a8da7e46074a20</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::Uid</type>
       <name>rdm_dest_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a8302a85dc4d6e38a4c19e56834dc21cc</anchor>
+      <anchor>a923581c60152e26e59d7c21de1b9581d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a090fb7c94f2225f56956e0e84b24dc0e</anchor>
+      <anchor>ace76a3360a4ca27564b266d231844fe2</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a355515fc831f8dadb835b9cd55ce5e1c</anchor>
+      <anchor>a59f11046e01fbfe627604b2eb966e5d6</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a2815346e2109fbde79590d14a2e32275</anchor>
+      <anchor>aeb06b87b7d84f9dcb290a7ac38a9f326</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr rdm::CommandHeader</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a418a1a69079ad57223bd29fd0860d187</anchor>
+      <anchor>aeb344aeb7ddc0fa4937eb915bbab6ebe</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a0dc8692bc54e516d2213509da27593e7</anchor>
+      <anchor>a3f4c46c5e6a3a561bad84c6a91ecc8f0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr uint8_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a01928e48620350240b517038a2a26cab</anchor>
+      <anchor>aa711528b0360e40e670ad60d1eaba0a9</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>ac7819c68ba84563ae84c6c5794c345be</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a59cc58980cc04930e24ad090a62a61c8</anchor>
+      <anchor>a57bbbbbb1a78db54f4020774db97ec79</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsToDefaultResponder</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a02bc24d7a0dd1d6e97d32c60c2d12ae5</anchor>
+      <anchor>a6901d34e37e3c399e127ba4c254d479c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsGet</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a6410f1af0d1d73ed7fb51b7684bc20b6</anchor>
+      <anchor>a24e38683dabb26fcffff5ff569c24451</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
       <name>IsSet</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a84bc5c3c4d44b98c502aacc5fd3b79f9</anchor>
+      <anchor>ac07548ce2bdda1e5eaa95c647aadd52f</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>ETCPAL_CONSTEXPR_14 RdmnetSavedRdmCommand &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a8f34bea9e393f9eebd033c7cb4579842</anchor>
+      <anchor>a452b39a41e0d6587f42b45c636c89578</anchor>
       <arglist>() noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetSavedRdmCommand &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a4dd58b1c0dd9ab25df8427a6b5f2e901</anchor>
+      <anchor>a112770b39ed62ce842646d2cdf5f9bb8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Command</type>
       <name>ToRdm</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_command.html</anchorfile>
-      <anchor>a5ce2e273a01f37ce06424ae1ad03a5b4</anchor>
+      <anchor>a823c8e5dc54cec37b78af1e4395b4ae1</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -8733,168 +8733,168 @@
       <type></type>
       <name>SavedRdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>aae8ce8fb306413641ee5013d1b49fa8d</anchor>
+      <anchor>a3adff72d12f62d06832b399c3e4a1ac4</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ab06babbda536f7692e559996212d423f</anchor>
+      <anchor>add215cf9302d245259718ed45d099dcb</anchor>
       <arglist>(const LlrpSavedRdmResponse &amp;c_resp)</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmResponse &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a6ab66d4e9d32c9f08871236677a18e76</anchor>
+      <anchor>aaab7db7b49a06f90b275581a91ba7258</anchor>
       <arglist>(const LlrpSavedRdmResponse &amp;c_resp)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRdmResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a4db3d8a6bada8f6a1211ece28327c77c</anchor>
+      <anchor>a91f7d0b40131db249951594be184cfc2</anchor>
       <arglist>(const RdmResponse &amp;resp)</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmResponse &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>afc7cb0e38c737d5ecee5411648395b6b</anchor>
+      <anchor>a6cfccea9babc7cc8fcb3bc14d9b9d70c</anchor>
       <arglist>(const RdmResponse &amp;resp)</arglist>
     </member>
     <member kind="function">
       <type>const etcpal::Uuid &amp;</type>
       <name>source_cid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a149d949abe4c1bd4c2a9340deb61d336</anchor>
+      <anchor>a6d284f75ee056ab50b3754e1606d59fd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a50707cdd88ddb0b583d4d8d541786c1e</anchor>
+      <anchor>a4be541ac7889c5fa8fcc80a07ccaeeca</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Uid</type>
       <name>source_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>aaa6374423355afd289c59d52e9c2fc9c</anchor>
+      <anchor>a6f2be43c6b03fa6590fdb1e8fd201a76</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Uid</type>
       <name>dest_uid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a8a88d93846ee10f645128b8e7c385c8a</anchor>
+      <anchor>a5ba5b86b83beca4e4529eb09e15a3751</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm_response_type_t</type>
       <name>response_type</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a7a755d8be75582029463c9a17513d8d0</anchor>
+      <anchor>adf7f1d49ed5bccae7817b782dedc0847</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a3445253ff79b5870fe4b7c2fdf503ead</anchor>
+      <anchor>a0c0ff353a00e0ec26d25092dbf52e5da</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a9cab080043f81fb740cafce9b4eb7fd9</anchor>
+      <anchor>a148f4a098eec32593023bd987edf09c1</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>aa753df9cc31e09d2463f89834047965a</anchor>
+      <anchor>ad467b36ffee9333cfcf3f5ef152d616d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const rdm::ResponseHeader &amp;</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a4cb6d2949cb0f0a7aa1dc51242160fed</anchor>
+      <anchor>a1ae8c39544a0aac6f2f5c376196222bd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>adacdb08084bb0813132e7612a78551a9</anchor>
+      <anchor>a21b8e060baa6eeed3e5e45e6d760b54c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint8_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a9b6d53d23bb6455ee49cc070e16f8b8a</anchor>
+      <anchor>aad489991aea317295384f3621718eeef</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const rdm::Response &amp;</type>
       <name>rdm</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a35b60c338d26852ed1b0889c221d4339</anchor>
+      <anchor>aca7a7430ec1cd65cbf4356a6eaa17f93</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a4c843acc24a29fbd5085fa5241a8ca07</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a04c3c88ed6ad53af16efdcf75ce7cac8</anchor>
+      <anchor>ac6ba167c70722455066c5750682ac74c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsAck</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a32d71d5ee0a6a42900a05d067826f626</anchor>
+      <anchor>aee525fd418dd6450116133f03393e503</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsNack</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>abb8696093233b29593d5b373e5945960</anchor>
+      <anchor>ab8d643ebfe75aeabd7e56dcd5f3f4de4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsGetResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>aa0d267fc21e17060a5c0e373a1320300</anchor>
+      <anchor>a1f40fbdb3a381a202a64af46273ff2d5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsSetResponse</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a23130a1c2e8fa69fe6426bdca25bb1bc</anchor>
+      <anchor>a256a7c1713b23c8e15e7ffd4344c5752</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; rdm::NackReason &gt;</type>
       <name>GetNackReason</name>
       <anchorfile>classrdmnet_1_1llrp_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a34ed75ac1eff6d7cf3f2014d97523388</anchor>
+      <anchor>aa775011c9744521de1f33447692963b8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -8905,259 +8905,259 @@
       <type></type>
       <name>SavedRdmResponse</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ae11c6a941dee2e5eb963f836d22b9cae</anchor>
+      <anchor>a3adff72d12f62d06832b399c3e4a1ac4</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRdmResponse</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>abc05f08bb8a21ac02a5ea3a62a806580</anchor>
+      <anchor>ac5493a8d1b452556cb94eb8b499b2ae5</anchor>
       <arglist>(const RdmnetSavedRdmResponse &amp;c_resp)</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmResponse &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a03df233d6621b60ec0b992e56fb65ab7</anchor>
+      <anchor>a366625bad6027eac65eb45c1692b17cd</anchor>
       <arglist>(const RdmnetSavedRdmResponse &amp;c_resp)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRdmResponse</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a05e2ee5e06119209e5fbea320df75579</anchor>
+      <anchor>a91f7d0b40131db249951594be184cfc2</anchor>
       <arglist>(const RdmResponse &amp;resp)</arglist>
     </member>
     <member kind="function">
       <type>SavedRdmResponse &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a241acfc7fd88301c4e90c363af0fd688</anchor>
+      <anchor>a6cfccea9babc7cc8fcb3bc14d9b9d70c</anchor>
       <arglist>(const RdmResponse &amp;resp)</arglist>
     </member>
     <member kind="function">
       <type>const rdm::Uid &amp;</type>
       <name>rdmnet_source_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ae5d774d6f830000431455e38c35923b8</anchor>
+      <anchor>ae253219bf9a13a68a4321f18a91fc47d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a29ef58b15ce1c5409f9be111085fc7d5</anchor>
+      <anchor>a1d29161436450310154512c64a107784</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>adb430bae13348aec3a8fd86fcae94d14</anchor>
+      <anchor>a4be541ac7889c5fa8fcc80a07ccaeeca</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Uid</type>
       <name>original_cmd_source_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ab37d401017711a9fbf20bf3ecc9ab5f5</anchor>
+      <anchor>a3b56deafac12578c60e5490cf6787689</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Uid</type>
       <name>original_cmd_dest_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>afe152f82d811ef603beb4607437b6d78</anchor>
+      <anchor>a27e13c4e4e860f0f6f95931b5f0c69fb</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const rdm::CommandHeader &amp;</type>
       <name>original_cmd_header</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a6e9dc3602f17017e6bc564e8aaf59867</anchor>
+      <anchor>a918519fb76b0369ccbb807aee6dd1785</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const uint8_t *</type>
       <name>original_cmd_data</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a493b644d9950fcd3735d1e2bd1fc09b7</anchor>
+      <anchor>a7ea4524186e96dfefc9ce345f0690308</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint8_t</type>
       <name>original_cmd_data_len</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a63103789d6c66bfd0147a9a1733eb696</anchor>
+      <anchor>a88c4ea3bde468591a0b879b6a2a1e8ef</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const rdm::Command &amp;</type>
       <name>original_cmd</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>aace4a9e1415bda7785e1a92d4fbf75ae</anchor>
+      <anchor>a2472e206737b98daa22791b8be13acef</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Uid</type>
       <name>rdm_source_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a6369add77767bd71406c09f261a89901</anchor>
+      <anchor>adf0dd84838ed9b322562a31b73fb288e</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm::Uid</type>
       <name>rdm_dest_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a09af76e3b97f24543233b0d5f7d2674b</anchor>
+      <anchor>a385b1b76b8e2db880e20ea297dbb5302</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm_response_type_t</type>
       <name>response_type</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ad763b748d380116d833c5f3bb2ab4d6b</anchor>
+      <anchor>adf7f1d49ed5bccae7817b782dedc0847</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>subdevice</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ae4c544e6f1e2cb3045ba4259fc66ffba</anchor>
+      <anchor>a0c0ff353a00e0ec26d25092dbf52e5da</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rdm_command_class_t</type>
       <name>command_class</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>adfc68b8c0cdacb3defa5c51012d2971e</anchor>
+      <anchor>a148f4a098eec32593023bd987edf09c1</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>param_id</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ad3d6b601c1253007836c73af74225354</anchor>
+      <anchor>ad467b36ffee9333cfcf3f5ef152d616d</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const rdm::ResponseHeader &amp;</type>
       <name>rdm_header</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ab0efff189dbeafe1474d5217d1a74b71</anchor>
+      <anchor>a1ae8c39544a0aac6f2f5c376196222bd</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const uint8_t *</type>
       <name>data</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>afe3952d2f9a249ded72f9ccd1cdcba7b</anchor>
+      <anchor>a21b8e060baa6eeed3e5e45e6d760b54c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
       <name>data_len</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a1a6daa6088a5dd1e0c538eb887c850ce</anchor>
+      <anchor>a8e9724702c800f9afa146ab4cf598332</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const rdm::Response &amp;</type>
       <name>rdm</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a4e393dab268c9d14282ceb74b3363827</anchor>
+      <anchor>aca7a7430ec1cd65cbf4356a6eaa17f93</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a5ae6852658c0414f2d0a0dd58ad543fa</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>OriginalCommandIncluded</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a082e016f190645dc81020cd8ba4253af</anchor>
+      <anchor>a98062835f7ff3e85762486269d156989</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>HasData</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ad9d28a56675c1b5e12882b1930bbcfce</anchor>
+      <anchor>ac6ba167c70722455066c5750682ac74c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsFromDefaultResponder</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a74d9049c1eb30a8ba7349d076f897452</anchor>
+      <anchor>aab1d53af0928291f80f9cb541e33b138</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsResponseToMe</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a9f13d04536a073076ba946d88089bc89</anchor>
+      <anchor>ac447bcedfd18adc981d537311c7b67ba</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsAck</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>aa53186655a7596e2dd8c92b250a643d9</anchor>
+      <anchor>aee525fd418dd6450116133f03393e503</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsNack</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a95205858f4f6bd4a2c6c4e0f0e6d416a</anchor>
+      <anchor>ab8d643ebfe75aeabd7e56dcd5f3f4de4</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsGetResponse</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>abeb4956e12e031619e78179bc3573769</anchor>
+      <anchor>a1f40fbdb3a381a202a64af46273ff2d5</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsSetResponse</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a10392161e129cc3168f2057dc75b2736</anchor>
+      <anchor>a256a7c1713b23c8e15e7ffd4344c5752</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>etcpal::Expected&lt; rdm::NackReason &gt;</type>
       <name>GetNackReason</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>ae4133e68352488f71de39163b7ed7159</anchor>
+      <anchor>aa775011c9744521de1f33447692963b8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; uint8_t &gt;</type>
       <name>GetData</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a2700f85b27d5d013cb45b22882434022</anchor>
+      <anchor>a0496c8a4f879ccf6f31f79c901deefe5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>AppendData</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a7b17bc392be713e83bdb34d7926e3568</anchor>
+      <anchor>aa1f1176d89981ff7018955a238d9c05c</anchor>
       <arglist>(const RdmResponse &amp;new_resp)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>AppendData</name>
       <anchorfile>classrdmnet_1_1_saved_rdm_response.html</anchorfile>
-      <anchor>a63347daecf61b23c1da531d8eff8838b</anchor>
+      <anchor>a5d47360e1553e69ce4d112d0640e1e29</anchor>
       <arglist>(const uint8_t *data, size_t size)</arglist>
     </member>
   </compound>
@@ -9168,98 +9168,98 @@
       <type></type>
       <name>SavedRptStatus</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a4d437a3afc1067655ce88cefb7f21cb8</anchor>
+      <anchor>aca2406b72f12e713ec8ed835580575ba</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRptStatus</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a0d1b9fcd548efd4f70925e61dd427aae</anchor>
+      <anchor>a47abc8c9c6f53ce4b279f024f738de32</anchor>
       <arglist>(const RdmnetSavedRptStatus &amp;c_status)</arglist>
     </member>
     <member kind="function">
       <type>SavedRptStatus &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a0043304fa336d5f7f5ace1c85bbd0a3e</anchor>
+      <anchor>a485c5fa9c8758b6a1c14952274fb97ab</anchor>
       <arglist>(const RdmnetSavedRptStatus &amp;c_status)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SavedRptStatus</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a39a53524aefd929e873880efaab95f7e</anchor>
+      <anchor>a273dd824a3dbbb8a70c8eace86535fcd</anchor>
       <arglist>(const RptStatus &amp;status)</arglist>
     </member>
     <member kind="function">
       <type>SavedRptStatus &amp;</type>
       <name>operator=</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a481fce60ca89a66af9115b786e4d6ca3</anchor>
+      <anchor>a735eb45623ccad5357527a50afe26654</anchor>
       <arglist>(const RptStatus &amp;status)</arglist>
     </member>
     <member kind="function">
       <type>const rdm::Uid &amp;</type>
       <name>source_uid</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>aad0f924a96bd819b4ccd723d06d7f094</anchor>
+      <anchor>a186df44538b2f6e6955e26f628fac171</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint16_t</type>
       <name>source_endpoint</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>ad3714ad4014b0edbc4ef2e323174a394</anchor>
+      <anchor>a1d29161436450310154512c64a107784</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>uint32_t</type>
       <name>seq_num</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>ab565b2f4b4df4ce40d52cfb3f0601974</anchor>
+      <anchor>a4be541ac7889c5fa8fcc80a07ccaeeca</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>rpt_status_code_t</type>
       <name>status_code</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>ad959c6259e0809486e7ad048d21cccb5</anchor>
+      <anchor>aa2aa47c671fb7064bd62ebc79edaf8cf</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const std::string &amp;</type>
       <name>status_string</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>ab339e4f326709407b743477ac680501f</anchor>
+      <anchor>ad66d9a6e9d36a5b9013d4e0c518add13</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a5307cdc09f12e0e967ab6056e0591e34</anchor>
+      <anchor>a472f705194218179e9cf26ffb288da6c</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const char *</type>
       <name>CodeToCString</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>af8bb79d7d6ddd7a3bd3e681da3d6e6be</anchor>
+      <anchor>ae9a752267bd9197f2a21a4be91966636</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
       <name>CodeToString</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a7fe8ca06b66ce301c86bcdb671ba0f80</anchor>
+      <anchor>a6d5108147af76197fe672d5355221e0a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>HasStatusString</name>
       <anchorfile>classrdmnet_1_1_saved_rpt_status.html</anchorfile>
-      <anchor>a4ce9d8d2c54d446888b8fbd9e7e2d0e7</anchor>
+      <anchor>ae8df1aa8253c686b9bffc3de71f5a6c1</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -9270,63 +9270,63 @@
       <type></type>
       <name>Scope</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>a4a6d3e3e408e84d37c7afd04119d267d</anchor>
+      <anchor>a04945db9b60d2fd9816d1057a845afe1</anchor>
       <arglist>(const std::string &amp;scope_str, const etcpal::SockAddr &amp;static_broker_addr=etcpal::SockAddr{})</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Scope</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>a65f05425544e171910d7632f3b05b163</anchor>
+      <anchor>afb41e58a0107d9485f4a8ef1d9edd81d</anchor>
       <arglist>(const RdmnetScopeConfig &amp;scope_config)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsStatic</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>a47d5576a2525cea25d5a6364803971c2</anchor>
+      <anchor>abefa34d4ff03ff18fa98ee42c1f7dfd0</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsDefault</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>a98b37657d0b18d751fb21a6de9b8d982</anchor>
+      <anchor>a74b32cc738848847f6e14646d7fb035b</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const std::string &amp;</type>
       <name>id_string</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>ac4a0c42c9eb71cd7c217c43fd7a092a9</anchor>
+      <anchor>aa8d051d5f70de6f4083ac350065c65c8</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>const etcpal::SockAddr &amp;</type>
       <name>static_broker_addr</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>a0527cf3d942eca70a1f28c44575ee255</anchor>
+      <anchor>a0c79f6ef855260a4bc179c90c82bbb42</anchor>
       <arglist>() const noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>SetIdString</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>ae060068e376a8874fea43a1f1384f903</anchor>
+      <anchor>a8c302f3019a6ba0944c15f9ce082b12e</anchor>
       <arglist>(const std::string &amp;id)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>SetIdString</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>a4063dd58e4c52fe20dbfe964cc671991</anchor>
+      <anchor>aa6c5d7086c410fb32183600a03083c0c</anchor>
       <arglist>(const char *id)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>SetStaticBrokerAddr</name>
       <anchorfile>classrdmnet_1_1_scope.html</anchorfile>
-      <anchor>acd3b0ada9c266938d142d1d9bed35d4c</anchor>
+      <anchor>ada251ee49053331efa1b5942692bf33b</anchor>
       <arglist>(const etcpal::SockAddr &amp;static_broker_addr)</arglist>
     </member>
   </compound>
@@ -9341,77 +9341,77 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a5fdc96845a1512c36876a363c04daf7a</anchor>
+      <anchor>ae28a8b65522db789f7e80d57e60f86f0</anchor>
       <arglist>(const etcpal::Uuid &amp;cid_in, const rdm::Uid &amp;static_uid_in)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a449fe98a8a6da9f92ca1c472b10987ee</anchor>
+      <anchor>a081af1fd932dc415a57d97f17eafbd23</anchor>
       <arglist>(const etcpal::Uuid &amp;cid_in, uint16_t rdm_manu_id_in)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>SetDefaultServiceInstanceName</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a27eeb33182c3a9dcda479f0de628ea06</anchor>
+      <anchor>ada15adb0b94d51adcb542928e126975d</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a8f6fb7968b5871d2b41ed72dd5d048fe</anchor>
+      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a2f144da96f88502384709ba8a9397daa</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm::Uid</type>
       <name>uid</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a984b211df565e4e224614d5a3a5aa2d0</anchor>
+      <anchor>a12b7b9dfe0aa5ebbd928817da6444004</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>DnsAttributes</type>
       <name>dns</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>afff292ebd552dc37f7fdd94f9e46ed69</anchor>
+      <anchor>ac38c5ddec0d357a3ea2e2d20ad13369c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Limits</type>
       <name>limits</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a0179281be8c14cf532d7895c42f46a64</anchor>
+      <anchor>a07250abde3c98eb79149ed84e4a6bc88</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>scope</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a5215b30e498502b452a102cf8ffbc7a5</anchor>
+      <anchor>a28325318ffba73a50a21416f839f9f2f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint16_t</type>
       <name>listen_port</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a0622f9c6f92665091b6d1df4b8190383</anchor>
+      <anchor>a122db9a14b0b635141b81b7b05a3ff40</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; std::string &gt;</type>
       <name>listen_interfaces</name>
       <anchorfile>structrdmnet_1_1_broker_1_1_settings.html</anchorfile>
-      <anchor>a14cfd1ae1e44f96e6cc95e90cfda1e8e</anchor>
+      <anchor>a9cc686e40efede241f13baa7b5ba3c10</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9422,56 +9422,56 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>aab2e67a099541123f8896dcacf01ed69</anchor>
+      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>aa9708182dd71e71ac5338aa65aedf146</anchor>
+      <anchor>a13cbaaafd6eabe15900cf37a2bd52569</anchor>
       <arglist>(const etcpal::Uuid &amp;new_cid, const rdm::Uid &amp;new_uid)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>a0f49960e07dae726f4df2b3a4a71b7b2</anchor>
+      <anchor>a90f7a592e2d2c6cd13983d57269bf81a</anchor>
       <arglist>(const etcpal::Uuid &amp;new_cid, uint16_t manufacturer_id)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>a764762fabc64489376701c0c4281fe93</anchor>
+      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>a24057441a99e645c718af96ce37c2dcd</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm::Uid</type>
       <name>uid</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>a5857f58c4a5cb6ac20c09e831590cc18</anchor>
+      <anchor>a12b7b9dfe0aa5ebbd928817da6444004</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>search_domain</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>ae162ede266a1d17784a0d057f6c6f74a</anchor>
+      <anchor>a86c6a609a291e3c94f7094891e6d65e6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>create_llrp_target</name>
       <anchorfile>structrdmnet_1_1_controller_1_1_settings.html</anchorfile>
-      <anchor>a1e92fb9a942c37aec8b7cb94175ab4e1</anchor>
+      <anchor>acbf55202489074b1b9e83082c13d691d</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9482,70 +9482,70 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>ab9449fc03b71cecd1479551b25725483</anchor>
+      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>abc518bf17e5f4dd6d9931793e7992d91</anchor>
+      <anchor>a13cbaaafd6eabe15900cf37a2bd52569</anchor>
       <arglist>(const etcpal::Uuid &amp;new_cid, const rdm::Uid &amp;new_uid)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>a63b83cc3b3483ba66c76a02d145403da</anchor>
+      <anchor>a90f7a592e2d2c6cd13983d57269bf81a</anchor>
       <arglist>(const etcpal::Uuid &amp;new_cid, uint16_t manufacturer_id)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>a3cc9ba9c04d477c53c9374a9d0405571</anchor>
+      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>ab0c9382f704d9aa093d957c3ca7351bd</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>rdm::Uid</type>
       <name>uid</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>a8048332a3c3f54caa67d428d3429286e</anchor>
+      <anchor>a12b7b9dfe0aa5ebbd928817da6444004</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>search_domain</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>a9be26a4d820a603f6391f0712341adf1</anchor>
+      <anchor>a86c6a609a291e3c94f7094891e6d65e6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>uint8_t *</type>
       <name>response_buf</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>a302ef2e81eed8a3821484836529f7748</anchor>
+      <anchor>aa99184bd7c6729427838d2fc31612fea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; VirtualEndpointConfig &gt;</type>
       <name>virtual_endpoints</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>ac899ff2d4dd27fc17b4c165e4b54590a</anchor>
+      <anchor>af7bcafd5f798f30a77a055943c0205a6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; PhysicalEndpointConfig &gt;</type>
       <name>physical_endpoints</name>
       <anchorfile>structrdmnet_1_1_device_1_1_settings.html</anchorfile>
-      <anchor>ad7b27ae126eab0e247113434862f728c</anchor>
+      <anchor>a68b99e71c0b1a7bcb7757943e3c5b7a2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9556,49 +9556,49 @@
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>abd6a888a265c283eb34c50903ce6d8ac</anchor>
+      <anchor>a408c38e2ece7d6a8dda04484f006e8bb</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Settings</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>aae06aa7f6241b1adf3d29a087f7e7c10</anchor>
+      <anchor>a929dfde5a4d590055c11c33855293395</anchor>
       <arglist>(const etcpal::Uuid &amp;new_cid, const std::vector&lt; EptSubProtocol &gt; &amp;new_protocols)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>IsValid</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>a556e79457e424d92a5e08fd9fc457296</anchor>
+      <anchor>ac532c4b500b1a85ea22217f2c65a70ed</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>etcpal::Uuid</type>
       <name>cid</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>a6671ba5fc1e7952086e23f1b19fd20be</anchor>
+      <anchor>ab74b3ddda3c95279107d0059dd7ee9f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; EptSubProtocol &gt;</type>
       <name>protocols</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>aa065a48f6576f62fd0789505a434cc48</anchor>
+      <anchor>a7ed38b6d6d163918a6c406f65085b18b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::string</type>
       <name>search_domain</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>a7116b48fd3653ea290db4f49e5a01470</anchor>
+      <anchor>a86c6a609a291e3c94f7094891e6d65e6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const uint8_t *</type>
       <name>response_buf</name>
       <anchorfile>structrdmnet_1_1_ept_client_1_1_settings.html</anchorfile>
-      <anchor>ab085d13fd2a143962ce8d2c67a1e7059</anchor>
+      <anchor>a6c6b83acc05eef81905d6b87e28131ce</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9609,14 +9609,14 @@
       <type>constexpr</type>
       <name>SourceAddr</name>
       <anchorfile>classrdmnet_1_1_source_addr.html</anchorfile>
-      <anchor>ab88fee9a38030a445e9b04bce5dbbbb1</anchor>
+      <anchor>afda47ae515a2ca2a5181f3e40c83eded</anchor>
       <arglist>(uint16_t source_endpoint, const rdm::Uid &amp;rdm_source_uid, uint16_t subdevice=0) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr const RdmnetSourceAddr &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_source_addr.html</anchorfile>
-      <anchor>a24f6c3b1d5afe47f54a264720a76e2b7</anchor>
+      <anchor>a5fa11dee22e0474065d4e9efa92c74a1</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -9627,35 +9627,35 @@
       <type></type>
       <name>VirtualEndpointConfig</name>
       <anchorfile>classrdmnet_1_1_virtual_endpoint_config.html</anchorfile>
-      <anchor>a3782269d48a334fab4027c4fa0c315ad</anchor>
+      <anchor>a4c5fc5cecfa10ed0b8e8e4f14348534c</anchor>
       <arglist>(uint16_t id, const etcpal::Uuid *dynamic_responders=nullptr, size_t num_dynamic_responders=0)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>VirtualEndpointConfig</name>
       <anchorfile>classrdmnet_1_1_virtual_endpoint_config.html</anchorfile>
-      <anchor>a40bd7d58009aa763a5a8b8df565ac676</anchor>
+      <anchor>ae74c3e88380eddab7071a8a215b5c336</anchor>
       <arglist>(uint16_t id, const std::vector&lt; etcpal::Uuid &gt; &amp;dynamic_responders)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>VirtualEndpointConfig</name>
       <anchorfile>classrdmnet_1_1_virtual_endpoint_config.html</anchorfile>
-      <anchor>a10829bea24b2d318fd1ce85a6a570161</anchor>
+      <anchor>aee358a49e1099797213da27581c5a979</anchor>
       <arglist>(uint16_t id, const rdm::Uid *static_responders, size_t num_static_responders, const etcpal::Uuid *dynamic_responders=nullptr, size_t num_dynamic_responders=0)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>VirtualEndpointConfig</name>
       <anchorfile>classrdmnet_1_1_virtual_endpoint_config.html</anchorfile>
-      <anchor>addd22b010bc81f28a7dcd0e2a808020c</anchor>
+      <anchor>acca9c06e7637003d49cc63dcdb10e4cf</anchor>
       <arglist>(uint16_t id, const std::vector&lt; rdm::Uid &gt; &amp;static_responders, const std::vector&lt; etcpal::Uuid &gt; &amp;dynamic_responders=std::vector&lt; etcpal::Uuid &gt;{})</arglist>
     </member>
     <member kind="function">
       <type>const RdmnetVirtualEndpointConfig &amp;</type>
       <name>get</name>
       <anchorfile>classrdmnet_1_1_virtual_endpoint_config.html</anchorfile>
-      <anchor>a1f44f6d4acf21d309564a53befc0f656</anchor>
+      <anchor>a90f68458602363119cc6a3766822b209</anchor>
       <arglist>() const noexcept</arglist>
     </member>
   </compound>
@@ -9700,7 +9700,7 @@
       <type>etcpal::OpaqueId&lt; detail::ScopeHandleType, rdmnet_client_scope_t, RDMNET_CLIENT_SCOPE_INVALID &gt;</type>
       <name>ScopeHandle</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gaa772f132fb4c3e567e6a4610eb7d8220</anchor>
+      <anchor>ga949cd3b533bd716f81d44c623cb18896</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -9728,7 +9728,7 @@
       <type>constexpr uint16_t</type>
       <name>kNullEndpoint</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gab66ff85b4e9f9a9221f3c31ff62d0c65</anchor>
+      <anchor>gac4ab6502f8edc4f19b0886f658d3f7b9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12096,7 +12096,7 @@
       <type>etcpal::OpaqueId&lt; detail::ScopeHandleType, rdmnet_client_scope_t, RDMNET_CLIENT_SCOPE_INVALID &gt;</type>
       <name>ScopeHandle</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gaa772f132fb4c3e567e6a4610eb7d8220</anchor>
+      <anchor>ga949cd3b533bd716f81d44c623cb18896</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -12124,7 +12124,7 @@
       <type>constexpr uint16_t</type>
       <name>kNullEndpoint</name>
       <anchorfile>group__rdmnet__cpp__common.html</anchorfile>
-      <anchor>gab66ff85b4e9f9a9221f3c31ff62d0c65</anchor>
+      <anchor>gac4ab6502f8edc4f19b0886f658d3f7b9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12386,102 +12386,101 @@
     <name>building_and_integrating</name>
     <title>Building and Integrating the RDMnet Library into Your Project</title>
     <filename>building_and_integrating.html</filename>
-    <docanchor file="building_and_integrating.html">md__tmp_tmpd11zk1fy_docs_getting_started_building_and_integrating</docanchor>
+    <docanchor file="building_and_integrating.html">md__tmp_tmpglu2neiy_docs_getting_started_building_and_integrating</docanchor>
   </compound>
   <compound kind="page">
     <name>data_ownership</name>
     <title>Data Ownership Paradigms in the RDMnet Library</title>
     <filename>data_ownership.html</filename>
-    <docanchor file="data_ownership.html">md__tmp_tmpd11zk1fy_docs_getting_started_data_ownership</docanchor>
+    <docanchor file="data_ownership.html">md__tmp_tmpglu2neiy_docs_getting_started_data_ownership</docanchor>
   </compound>
   <compound kind="page">
     <name>getting_started</name>
     <title>Getting Started</title>
     <filename>getting_started.html</filename>
-    <docanchor file="getting_started.html">md__tmp_tmpd11zk1fy_docs_getting_started_getting_started</docanchor>
+    <docanchor file="getting_started.html">md__tmp_tmpglu2neiy_docs_getting_started_getting_started</docanchor>
   </compound>
   <compound kind="page">
     <name>global_init_and_destroy</name>
     <title>Global Initialization and Destruction</title>
     <filename>global_init_and_destroy.html</filename>
-    <docanchor file="global_init_and_destroy.html">md__tmp_tmpd11zk1fy_docs_getting_started_global_init_and_destroy</docanchor>
+    <docanchor file="global_init_and_destroy.html">md__tmp_tmpglu2neiy_docs_getting_started_global_init_and_destroy</docanchor>
   </compound>
   <compound kind="page">
     <name>handling_rdm_commands</name>
     <title>Handling RDM Commands</title>
     <filename>handling_rdm_commands.html</filename>
-    <docanchor file="handling_rdm_commands.html">md__tmp_tmpd11zk1fy_docs_getting_started_handling_rdm_commands</docanchor>
+    <docanchor file="handling_rdm_commands.html">md__tmp_tmpglu2neiy_docs_getting_started_handling_rdm_commands</docanchor>
   </compound>
   <compound kind="page">
     <name>using_broker</name>
     <title>Using the Broker API</title>
     <filename>using_broker.html</filename>
-    <docanchor file="using_broker.html">md__tmp_tmpd11zk1fy_docs_getting_started_using_broker</docanchor>
+    <docanchor file="using_broker.html">md__tmp_tmpglu2neiy_docs_getting_started_using_broker</docanchor>
   </compound>
   <compound kind="page">
     <name>using_controller</name>
     <title>Using the Controller API</title>
     <filename>using_controller.html</filename>
-    <docanchor file="using_controller.html">md__tmp_tmpd11zk1fy_docs_getting_started_using_controller</docanchor>
+    <docanchor file="using_controller.html">md__tmp_tmpglu2neiy_docs_getting_started_using_controller</docanchor>
   </compound>
   <compound kind="page">
     <name>using_device</name>
     <title>Using the Device API</title>
     <filename>using_device.html</filename>
-    <docanchor file="using_device.html">md__tmp_tmpd11zk1fy_docs_getting_started_using_device</docanchor>
+    <docanchor file="using_device.html">md__tmp_tmpglu2neiy_docs_getting_started_using_device</docanchor>
   </compound>
   <compound kind="page">
     <name>using_ept_client</name>
     <title>Using the EPT Client API</title>
     <filename>using_ept_client.html</filename>
-    <docanchor file="using_ept_client.html">md__tmp_tmpd11zk1fy_docs_getting_started_using_ept_client</docanchor>
+    <docanchor file="using_ept_client.html">md__tmp_tmpglu2neiy_docs_getting_started_using_ept_client</docanchor>
   </compound>
   <compound kind="page">
     <name>using_llrp_manager</name>
     <title>Using the LLRP Manager API</title>
     <filename>using_llrp_manager.html</filename>
-    <docanchor file="using_llrp_manager.html">md__tmp_tmpd11zk1fy_docs_getting_started_using_llrp_manager</docanchor>
+    <docanchor file="using_llrp_manager.html">md__tmp_tmpglu2neiy_docs_getting_started_using_llrp_manager</docanchor>
   </compound>
   <compound kind="page">
     <name>devices_and_gateways</name>
     <title>Devices and Gateways</title>
     <filename>devices_and_gateways.html</filename>
-    <docanchor file="devices_and_gateways.html">md__tmp_tmpd11zk1fy_docs_how_rdmnet_works_devices_and_gateways</docanchor>
+    <docanchor file="devices_and_gateways.html">md__tmp_tmpglu2neiy_docs_how_rdmnet_works_devices_and_gateways</docanchor>
   </compound>
   <compound kind="page">
     <name>discovery</name>
     <title>Discovery</title>
     <filename>discovery.html</filename>
-    <docanchor file="discovery.html">md__tmp_tmpd11zk1fy_docs_how_rdmnet_works_discovery</docanchor>
+    <docanchor file="discovery.html">md__tmp_tmpglu2neiy_docs_how_rdmnet_works_discovery</docanchor>
   </compound>
   <compound kind="page">
     <name>ept</name>
     <title>Extensible Packet Transport (EPT)</title>
     <filename>ept.html</filename>
-    <docanchor file="ept.html">md__tmp_tmpd11zk1fy_docs_how_rdmnet_works_ept</docanchor>
+    <docanchor file="ept.html">md__tmp_tmpglu2neiy_docs_how_rdmnet_works_ept</docanchor>
   </compound>
   <compound kind="page">
     <name>how_it_works</name>
     <title>How RDMnet Works</title>
     <filename>how_it_works.html</filename>
-    <docanchor file="how_it_works.html">md__tmp_tmpd11zk1fy_docs_how_rdmnet_works_how_it_works</docanchor>
+    <docanchor file="how_it_works.html">md__tmp_tmpglu2neiy_docs_how_rdmnet_works_how_it_works</docanchor>
   </compound>
   <compound kind="page">
     <name>llrp</name>
     <title>Low-Level Recovery Protocol (LLRP)</title>
     <filename>llrp.html</filename>
-    <docanchor file="llrp.html">md__tmp_tmpd11zk1fy_docs_how_rdmnet_works_llrp</docanchor>
+    <docanchor file="llrp.html">md__tmp_tmpglu2neiy_docs_how_rdmnet_works_llrp</docanchor>
   </compound>
   <compound kind="page">
     <name>roles_and_addressing</name>
     <title>Roles and Addressing</title>
     <filename>roles_and_addressing.html</filename>
-    <docanchor file="roles_and_addressing.html">md__tmp_tmpd11zk1fy_docs_how_rdmnet_works_roles_and_addressing</docanchor>
+    <docanchor file="roles_and_addressing.html">md__tmp_tmpglu2neiy_docs_how_rdmnet_works_roles_and_addressing</docanchor>
   </compound>
   <compound kind="page">
     <name>index</name>
     <title>RDMnet</title>
     <filename>index.html</filename>
-    <docanchor file="index.html">mainpage</docanchor>
   </compound>
 </tagfile>

@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,7 +203,7 @@ $(document).ready(function(){initNavTree('devices_and_gateways.html',''); initRe
 <div class="title">Devices and Gateways </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpiqqg2nsy_docs_how_rdmnet_works_devices_and_gateways"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpfs5jffog_docs_how_rdmnet_works_devices_and_gateways"></a></p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -259,7 +258,7 @@ $(document).ready(function(){initNavTree('devices_and_gateways.html',''); initRe
 </div>
 <div id="div_3_c" class="code-tab-content">
 </p>
-<div class="fragment"><div class="line"><a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> responder_uid = {0x0000, 0x00000012};</div>
+<div class="fragment"><div class="line">RdmUid responder_uid = {0x0000, 0x00000012};</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> to_responder = <a class="code" href="group__rdmnet__api__common.html#ga72d760619ede4c36a44fc4a0fd6913e5">RDMNET_ADDR_TO_SUB_RESPONDER</a>(0x0000, 0x00000001, 1, 0x0000, 0x00000012);</div>
 <div class="line"> </div>
@@ -269,17 +268,15 @@ $(document).ready(function(){initNavTree('devices_and_gateways.html',''); initRe
 <div class="line">to_responder.<a class="code" href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">rdm_uid</a> = responder_uid; <span class="comment">// { 0x0000, 0x00000012 }</span></div>
 <div class="line">to_responder.<a class="code" href="struct_rdmnet_destination_addr.html#a7e7996349ea8e4be23b48e4ff38ef16e">subdevice</a> = 0;</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga72d760619ede4c36a44fc4a0fd6913e5"><div class="ttname"><a href="group__rdmnet__api__common.html#ga72d760619ede4c36a44fc4a0fd6913e5">RDMNET_ADDR_TO_SUB_RESPONDER</a></div><div class="ttdeci">#define RDMNET_ADDR_TO_SUB_RESPONDER(rdmnet_manu, rdmnet_dev, endpoint, rdm_manu, rdm_dev)</div><div class="ttdoc">Initialize an RdmnetDestinationAddr with the address of a sub-responder on a component.</div><div class="ttdef"><b>Definition:</b> client.h:130</div></div>
-<div class="ttc" id="astruct_rdm_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_3_cpp" class="code-tab-content">
 </p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> to_responder = <a class="code" href="classrdmnet_1_1_destination_addr.html#a7c7746701f2ad6f1143918158f0b7e64">rdmnet::DestinationAddr::ToSubResponder</a>(</div>
-<div class="line">    <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>(0x0000, 0x00000001), <span class="comment">// The gateway&#39;s UID</span></div>
+<div class="line">    rdm::Uid(0x0000, 0x00000001), <span class="comment">// The gateway&#39;s UID</span></div>
 <div class="line">    1,                            <span class="comment">// The endpoint</span></div>
-<div class="line">    <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>(0x0000, 0x00000012)  <span class="comment">// The RDM responder&#39;s UID</span></div>
+<div class="line">    rdm::Uid(0x0000, 0x00000012)  <span class="comment">// The RDM responder&#39;s UID</span></div>
 <div class="line">);</div>
-<div class="ttc" id="aclassrdm_1_1_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a></div></div>
 <div class="ttc" id="aclassrdmnet_1_1_destination_addr_html_a7c7746701f2ad6f1143918158f0b7e64"><div class="ttname"><a href="classrdmnet_1_1_destination_addr.html#a7c7746701f2ad6f1143918158f0b7e64">rdmnet::DestinationAddr::ToSubResponder</a></div><div class="ttdeci">static constexpr DestinationAddr ToSubResponder(const rdm::Uid &amp;rdmnet_uid, uint16_t endpoint, const rdm::Uid &amp;rdm_uid, uint16_t subdevice=0)</div><div class="ttdoc">Get a DestinationAddr representing a message addressed to a sub-responder on a component.</div><div class="ttdef"><b>Definition:</b> client.h:120</div></div>
 </div><!-- fragment --><p> 
 </div>

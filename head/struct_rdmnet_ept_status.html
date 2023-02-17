@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,24 +208,62 @@ $(document).ready(function(){initNavTree('struct_rdmnet_ept_status.html',''); in
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An RDMnet EPT status message received by a local component. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0393a00733c2f0a144f436dd1fcb8456"><td class="memItemLeft" align="right" valign="top"><a id="a0393a00733c2f0a144f436dd1fcb8456"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html#a0393a00733c2f0a144f436dd1fcb8456">source_cid</a></td></tr>
-<tr class="memdesc:a0393a00733c2f0a144f436dd1fcb8456"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CID of the EPT client that sent this status message. <br /></td></tr>
-<tr class="separator:a0393a00733c2f0a144f436dd1fcb8456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e681d1a760b87719d5192727b91e60"><td class="memItemLeft" align="right" valign="top"><a id="ad2e681d1a760b87719d5192727b91e60"></a>
-<a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html#ad2e681d1a760b87719d5192727b91e60">status_code</a></td></tr>
-<tr class="memdesc:ad2e681d1a760b87719d5192727b91e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">A status code that indicates the specific error or status condition. <br /></td></tr>
-<tr class="separator:ad2e681d1a760b87719d5192727b91e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59dd437d99db6b4fdd500fab70bde042"><td class="memItemLeft" align="right" valign="top"><a id="a59dd437d99db6b4fdd500fab70bde042"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html#a59dd437d99db6b4fdd500fab70bde042">status_string</a></td></tr>
-<tr class="memdesc:a59dd437d99db6b4fdd500fab70bde042"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional implementation-defined status string to accompany this status message. <br /></td></tr>
-<tr class="separator:a59dd437d99db6b4fdd500fab70bde042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e54a6f2928120797e7bcf3031cf9fd1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html#a1e54a6f2928120797e7bcf3031cf9fd1">source_cid</a></td></tr>
+<tr class="separator:a1e54a6f2928120797e7bcf3031cf9fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173906502e3b5416044e8545ecfd5541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html#a173906502e3b5416044e8545ecfd5541">status_code</a></td></tr>
+<tr class="separator:a173906502e3b5416044e8545ecfd5541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b97f2df3bfb785cec1ae6ad2f4f67b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html#a01b97f2df3bfb785cec1ae6ad2f4f67b">status_string</a></td></tr>
+<tr class="separator:a01b97f2df3bfb785cec1ae6ad2f4f67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a1e54a6f2928120797e7bcf3031cf9fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e54a6f2928120797e7bcf3031cf9fd1">&#9670;&nbsp;</a></span>source_cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> source_cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The CID of the EPT client that sent this status message. </p>
+
+</div>
+</div>
+<a id="a173906502e3b5416044e8545ecfd5541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173906502e3b5416044e8545ecfd5541">&#9670;&nbsp;</a></span>status_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A status code that indicates the specific error or status condition. </p>
+
+</div>
+</div>
+<a id="a01b97f2df3bfb785cec1ae6ad2f4f67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b97f2df3bfb785cec1ae6ad2f4f67b">&#9670;&nbsp;</a></span>status_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* status_string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An optional implementation-defined status string to accompany this status message. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="message_8h_source.html">message.h</a></li>
 </ul>

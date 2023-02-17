@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('struct_rdmnet_sync_rdm_response.html',
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<div class="textblock"><p>This structure should not be manipulated directly - use the macros to access it: </p>
+<div class="textblock"><p>This structure should not be manipulated directly - use the macros to access it:</p>
 <ul>
 <li><a class="el" href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188" title="Indicate that an RDM ACK should be sent when this callback returns.">RDMNET_SYNC_SEND_RDM_ACK()</a></li>
 <li><a class="el" href="group__rdmnet__api__common.html#ga91e96da81698ff84a605e9c21fdc46b3" title="Indicate that an RDM NACK should be sent when this callback returns.">RDMNET_SYNC_SEND_RDM_NACK()</a></li>
@@ -215,59 +215,77 @@ $(document).ready(function(){initNavTree('struct_rdmnet_sync_rdm_response.html',
 <li><a class="el" href="group__rdmnet__api__common.html#gabd9314ec325c7f2bd666866b54c9e82c" title="Trigger another notification for the (non-LLRP) RDM command on the next tick.">RDMNET_SYNC_RETRY_LATER()</a></li>
 </ul>
 <p>Contains information about an RDMnet RDM response to be sent synchronously from an RDMnet callback, or the notification that the (non-LLRP) command notification must be retried later. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afbbd8c1594fea06d9a9729478a2e5c1b"><td class="memItemLeft" align="right" valign="top"><a id="afbbd8c1594fea06d9a9729478a2e5c1b"></a>
-<a class="el" href="group__rdmnet__api__common.html#gabef0caf0d0a3748a4dd53b2af3b0896a">rdmnet_rdm_response_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_rdm_response.html#afbbd8c1594fea06d9a9729478a2e5c1b">response_action</a></td></tr>
-<tr class="memdesc:afbbd8c1594fea06d9a9729478a2e5c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the response action to take. <br /></td></tr>
-<tr class="separator:afbbd8c1594fea06d9a9729478a2e5c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708ae19c3cea0add9e971d0f8ce2e012"><td class="memItemLeft" ><a id="a708ae19c3cea0add9e971d0f8ce2e012"></a>
-union {</td></tr>
-<tr class="memitem:a7eab7a8d66278314486532070b419e52"><td class="memItemLeft" >&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_rdm_response.html#ac2940aef7947006e34a18b23c1c3815c">response_data_len</a></td></tr>
-<tr class="memdesc:a7eab7a8d66278314486532070b419e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the response data which has been copied into the buffer given at initialization time.  <a href="union_rdmnet_sync_rdm_response_1_1_0d0.html#a7eab7a8d66278314486532070b419e52">More...</a><br /></td></tr>
-<tr class="separator:a7eab7a8d66278314486532070b419e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a174dfd545ba5a2265b019a19dc236"><td class="memItemLeft" >&#160;&#160;&#160;<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a>&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_rdm_response.html#accbf8397113f5691656150cd905be73a">nack_reason</a></td></tr>
-<tr class="memdesc:a34a174dfd545ba5a2265b019a19dc236"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NACK reason code.  <a href="union_rdmnet_sync_rdm_response_1_1_0d0.html#a34a174dfd545ba5a2265b019a19dc236">More...</a><br /></td></tr>
-<tr class="separator:a34a174dfd545ba5a2265b019a19dc236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708ae19c3cea0add9e971d0f8ce2e012"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_rdm_response.html#a708ae19c3cea0add9e971d0f8ce2e012">response_data</a></td></tr>
-<tr class="memdesc:a708ae19c3cea0add9e971d0f8ce2e012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data associated with certain response actions (use the macros to access). <br /></td></tr>
-<tr class="separator:a708ae19c3cea0add9e971d0f8ce2e012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a9ab1e51c5db8fd1615e13d4e22e8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__api__common.html#gabef0caf0d0a3748a4dd53b2af3b0896a">rdmnet_rdm_response_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_rdm_response.html#aa8a9ab1e51c5db8fd1615e13d4e22e8a">response_action</a></td></tr>
+<tr class="separator:aa8a9ab1e51c5db8fd1615e13d4e22e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27968ac73b781a78a839ac2d6d13ab4e"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a3990ab9d830c68fd17925a5d1f689f74"><td class="memItemLeft" >&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_rdm_response.html#a3990ab9d830c68fd17925a5d1f689f74">response_data_len</a></td></tr>
+<tr class="separator:a3990ab9d830c68fd17925a5d1f689f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe6e355a6fdbad6b633273648a34ef1"><td class="memItemLeft" >&#160;&#160;&#160;rdm_nack_reason_t&#160;&#160;&#160;<a class="el" href="struct_rdmnet_sync_rdm_response.html#a3fe6e355a6fdbad6b633273648a34ef1">nack_reason</a></td></tr>
+<tr class="separator:a3fe6e355a6fdbad6b633273648a34ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27968ac73b781a78a839ac2d6d13ab4e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_sync_rdm_response.html#a27968ac73b781a78a839ac2d6d13ab4e">response_data</a></td></tr>
+<tr class="separator:a27968ac73b781a78a839ac2d6d13ab4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="accbf8397113f5691656150cd905be73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accbf8397113f5691656150cd905be73a">&#9670;&nbsp;</a></span>nack_reason</h2>
+<a id="a3fe6e355a6fdbad6b633273648a34ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe6e355a6fdbad6b633273648a34ef1">&#9670;&nbsp;</a></span>nack_reason</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> RdmnetSyncRdmResponse::nack_reason</td>
+          <td class="memname">rdm_nack_reason_t nack_reason</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The NACK reason code. </p>
-<p>Valid if response_action is <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a" title="Send an RDM NACK with reason to the originating controller.">kRdmnetRdmResponseActionSendNack</a>. </p>
+<p>The NACK reason code. Valid if response_action is <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aa61888ac5fad6e0bb0c0d93536c34a42a">kRdmnetRdmResponseActionSendNack</a>. </p>
 
 </div>
 </div>
-<a id="ac2940aef7947006e34a18b23c1c3815c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2940aef7947006e34a18b23c1c3815c">&#9670;&nbsp;</a></span>response_data_len</h2>
+<a id="aa8a9ab1e51c5db8fd1615e13d4e22e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a9ab1e51c5db8fd1615e13d4e22e8a">&#9670;&nbsp;</a></span>response_action</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t RdmnetSyncRdmResponse::response_data_len</td>
+          <td class="memname"><a class="el" href="group__rdmnet__api__common.html#gabef0caf0d0a3748a4dd53b2af3b0896a">rdmnet_rdm_response_action_t</a> response_action</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Represents the response action to take. </p>
 
-<p>The length of the response data which has been copied into the buffer given at initialization time. </p>
-<p>Set to 0 for no data. Valid if response_action is <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aaecf57cdc3719865e3ca28d882952db1f" title="Send an RDM ACK to the originating controller.">kRdmnetRdmResponseActionSendAck</a>. </p>
+</div>
+</div>
+<a id="a27968ac73b781a78a839ac2d6d13ab4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27968ac73b781a78a839ac2d6d13ab4e">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }  response_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Data associated with certain response actions (use the macros to access). </p>
+
+</div>
+</div>
+<a id="a3990ab9d830c68fd17925a5d1f689f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3990ab9d830c68fd17925a5d1f689f74">&#9670;&nbsp;</a></span>response_data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t response_data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the response data which has been copied into the buffer given at initialization time. Set to 0 for no data. Valid if response_action is <a class="el" href="group__rdmnet__api__common.html#ggabef0caf0d0a3748a4dd53b2af3b0896aaecf57cdc3719865e3ca28d882952db1f">kRdmnetRdmResponseActionSendAck</a>. </p>
 
 </div>
 </div>

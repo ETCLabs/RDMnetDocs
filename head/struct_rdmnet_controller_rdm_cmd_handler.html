@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -207,44 +207,77 @@ $(document).ready(function(){initNavTree('struct_rdmnet_controller_rdm_cmd_handl
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<div class="textblock"><p>A buffer and set of callbacks which can be optionally provided to handle RDM commands addressed to a controller. </p>
-<p>See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="controller_8h_source.html">rdmnet/controller.h</a>&gt;</code></p>
-<table class="memberdecls">
+<div class="textblock"><p>A buffer and set of callbacks which can be optionally provided to handle RDM commands addressed to a controller. See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0fd9d14c69abf4fe2d37b3226d188837"><td class="memItemLeft" align="right" valign="top"><a id="a0fd9d14c69abf4fe2d37b3226d188837"></a>
-<a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#a0fd9d14c69abf4fe2d37b3226d188837">rdm_command_received</a></td></tr>
-<tr class="memdesc:a0fd9d14c69abf4fe2d37b3226d188837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called when an RDM command is received from a controller. <br /></td></tr>
-<tr class="separator:a0fd9d14c69abf4fe2d37b3226d188837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c3c2b2115cf0e44a9887968bf6381c"><td class="memItemLeft" align="right" valign="top"><a id="a96c3c2b2115cf0e44a9887968bf6381c"></a>
-<a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#a96c3c2b2115cf0e44a9887968bf6381c">llrp_rdm_command_received</a></td></tr>
-<tr class="memdesc:a96c3c2b2115cf0e44a9887968bf6381c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called when an RDM command is received over LLRP. <br /></td></tr>
-<tr class="separator:a96c3c2b2115cf0e44a9887968bf6381c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c562df58411327ebfac21055746fcb"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#a65c562df58411327ebfac21055746fcb">response_buf</a></td></tr>
-<tr class="memdesc:a65c562df58411327ebfac21055746fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A data buffer used to respond synchronously to RDM commands.  <a href="struct_rdmnet_controller_rdm_cmd_handler.html#a65c562df58411327ebfac21055746fcb">More...</a><br /></td></tr>
-<tr class="separator:a65c562df58411327ebfac21055746fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5bd4c2691db4ee3df5e233bfac7035"><td class="memItemLeft" align="right" valign="top"><a id="aee5bd4c2691db4ee3df5e233bfac7035"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#aee5bd4c2691db4ee3df5e233bfac7035">context</a></td></tr>
-<tr class="memdesc:aee5bd4c2691db4ee3df5e233bfac7035"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Pointer to opaque data passed back with each callback. <br /></td></tr>
-<tr class="separator:aee5bd4c2691db4ee3df5e233bfac7035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1983bae05b79298dec544fb22fbbc2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#ac1983bae05b79298dec544fb22fbbc2a">rdm_command_received</a></td></tr>
+<tr class="separator:ac1983bae05b79298dec544fb22fbbc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af75d113e2e22155c23f776ed0e40fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#a8af75d113e2e22155c23f776ed0e40fc">llrp_rdm_command_received</a></td></tr>
+<tr class="separator:a8af75d113e2e22155c23f776ed0e40fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99184bd7c6729427838d2fc31612fea"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#aa99184bd7c6729427838d2fc31612fea">response_buf</a></td></tr>
+<tr class="separator:aa99184bd7c6729427838d2fc31612fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a65c562df58411327ebfac21055746fcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65c562df58411327ebfac21055746fcb">&#9670;&nbsp;</a></span>response_buf</h2>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* RdmnetControllerRdmCmdHandler::response_buf</td>
+          <td class="memname">void* context</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
 
-<p>(optional) A data buffer used to respond synchronously to RDM commands. </p>
-<p>See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </p>
+</div>
+</div>
+<a id="a8af75d113e2e22155c23f776ed0e40fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af75d113e2e22155c23f776ed0e40fc">&#9670;&nbsp;</a></span>llrp_rdm_command_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a> llrp_rdm_command_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback called when an RDM command is received over LLRP. </p>
+
+</div>
+</div>
+<a id="ac1983bae05b79298dec544fb22fbbc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1983bae05b79298dec544fb22fbbc2a">&#9670;&nbsp;</a></span>rdm_command_received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a> rdm_command_received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback called when an RDM command is received from a controller. </p>
+
+</div>
+</div>
+<a id="aa99184bd7c6729427838d2fc31612fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99184bd7c6729427838d2fc31612fea">&#9670;&nbsp;</a></span>response_buf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* response_buf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) A data buffer used to respond synchronously to RDM commands. See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </p>
 
 </div>
 </div>

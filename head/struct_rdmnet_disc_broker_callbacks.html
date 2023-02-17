@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,32 +208,96 @@ $(document).ready(function(){initNavTree('struct_rdmnet_disc_broker_callbacks.ht
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of notification callbacks received by a registered broker instance. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="discovery_8h_source.html">rdmnet/discovery.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7aaaa778f130b2f2ebe32c539719e480"><td class="memItemLeft" align="right" valign="top"><a id="a7aaaa778f130b2f2ebe32c539719e480"></a>
-<a class="el" href="group__rdmnet__disc.html#ga9adf69f1f9bad6706d034c49d72218d5">RdmnetDiscBrokerRegisteredCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#a7aaaa778f130b2f2ebe32c539719e480">broker_registered</a></td></tr>
-<tr class="memdesc:a7aaaa778f130b2f2ebe32c539719e480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a7aaaa778f130b2f2ebe32c539719e480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3899b4062afa34d2f54c65826ab9e1"><td class="memItemLeft" align="right" valign="top"><a id="afe3899b4062afa34d2f54c65826ab9e1"></a>
-<a class="el" href="group__rdmnet__disc.html#ga04e9844ae14599d7c0598347601ce28a">RdmnetDiscBrokerRegisterFailedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#afe3899b4062afa34d2f54c65826ab9e1">broker_register_failed</a></td></tr>
-<tr class="memdesc:afe3899b4062afa34d2f54c65826ab9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:afe3899b4062afa34d2f54c65826ab9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c980361b6dd9c092c4a8a8b76097c74"><td class="memItemLeft" align="right" valign="top"><a id="a9c980361b6dd9c092c4a8a8b76097c74"></a>
-<a class="el" href="group__rdmnet__disc.html#ga4bcbc84743b2c73d65e42eb0f5c7d928">RdmnetDiscOtherBrokerFoundCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#a9c980361b6dd9c092c4a8a8b76097c74">other_broker_found</a></td></tr>
-<tr class="memdesc:a9c980361b6dd9c092c4a8a8b76097c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a9c980361b6dd9c092c4a8a8b76097c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2db9e94545297efdd62ecb2ce5b002"><td class="memItemLeft" align="right" valign="top"><a id="a0a2db9e94545297efdd62ecb2ce5b002"></a>
-<a class="el" href="group__rdmnet__disc.html#ga056b842a9491951d139807482ac643e9">RdmnetDiscOtherBrokerLostCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#a0a2db9e94545297efdd62ecb2ce5b002">other_broker_lost</a></td></tr>
-<tr class="memdesc:a0a2db9e94545297efdd62ecb2ce5b002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required. <br /></td></tr>
-<tr class="separator:a0a2db9e94545297efdd62ecb2ce5b002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19ce77a037bc7c16d7abbb6680eb3d8"><td class="memItemLeft" align="right" valign="top"><a id="af19ce77a037bc7c16d7abbb6680eb3d8"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#af19ce77a037bc7c16d7abbb6680eb3d8">context</a></td></tr>
-<tr class="memdesc:af19ce77a037bc7c16d7abbb6680eb3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) Pointer to opaque data passed back with each callback. <br /></td></tr>
-<tr class="separator:af19ce77a037bc7c16d7abbb6680eb3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa6331714dba563775ba8aa8fe5e75e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__disc.html#ga9adf69f1f9bad6706d034c49d72218d5">RdmnetDiscBrokerRegisteredCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#a3fa6331714dba563775ba8aa8fe5e75e">broker_registered</a></td></tr>
+<tr class="separator:a3fa6331714dba563775ba8aa8fe5e75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846b5071c735f95f17935071094d775c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__disc.html#ga04e9844ae14599d7c0598347601ce28a">RdmnetDiscBrokerRegisterFailedCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#a846b5071c735f95f17935071094d775c">broker_register_failed</a></td></tr>
+<tr class="separator:a846b5071c735f95f17935071094d775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c67296a44578d9fc055bd482ff3a06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__disc.html#ga4bcbc84743b2c73d65e42eb0f5c7d928">RdmnetDiscOtherBrokerFoundCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#af3c67296a44578d9fc055bd482ff3a06">other_broker_found</a></td></tr>
+<tr class="separator:af3c67296a44578d9fc055bd482ff3a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150c1c734e72bac86e7d485e18294da7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__disc.html#ga056b842a9491951d139807482ac643e9">RdmnetDiscOtherBrokerLostCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#a150c1c734e72bac86e7d485e18294da7">other_broker_lost</a></td></tr>
+<tr class="separator:a150c1c734e72bac86e7d485e18294da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disc_broker_callbacks.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
+<tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a846b5071c735f95f17935071094d775c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846b5071c735f95f17935071094d775c">&#9670;&nbsp;</a></span>broker_register_failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__disc.html#ga04e9844ae14599d7c0598347601ce28a">RdmnetDiscBrokerRegisterFailedCallback</a> broker_register_failed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="a3fa6331714dba563775ba8aa8fe5e75e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa6331714dba563775ba8aa8fe5e75e">&#9670;&nbsp;</a></span>broker_registered</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__disc.html#ga9adf69f1f9bad6706d034c49d72218d5">RdmnetDiscBrokerRegisteredCallback</a> broker_registered</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="ae376f130b17d169ee51be68077a89ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae376f130b17d169ee51be68077a89ed0">&#9670;&nbsp;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a id="af3c67296a44578d9fc055bd482ff3a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c67296a44578d9fc055bd482ff3a06">&#9670;&nbsp;</a></span>other_broker_found</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__disc.html#ga4bcbc84743b2c73d65e42eb0f5c7d928">RdmnetDiscOtherBrokerFoundCallback</a> other_broker_found</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
+<a id="a150c1c734e72bac86e7d485e18294da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150c1c734e72bac86e7d485e18294da7">&#9670;&nbsp;</a></span>other_broker_lost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__disc.html#ga056b842a9491951d139807482ac643e9">RdmnetDiscOtherBrokerLostCallback</a> other_broker_lost</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="discovery_8h_source.html">discovery.h</a></li>
 </ul>

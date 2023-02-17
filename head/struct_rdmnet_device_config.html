@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,114 +209,178 @@ $(document).ready(function(){initNavTree('struct_rdmnet_device_config.html','');
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of information that defines the startup parameters of an RDMnet Device. </p>
 <p>Note that network interfaces that the LLRP target of the device should use are no longer specified here. Instead, the set of interfaces passed to <a class="el" href="group__rdmnet__api__common.html#gac35e678c3cc099a73e9314614215e1d8" title="Initialize the RDMnet library.">rdmnet_init()</a> is used. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="device_8h_source.html">rdmnet/device.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae68596928501f9b5f49882a35470d6dc"><td class="memItemLeft" align="right" valign="top"><a id="ae68596928501f9b5f49882a35470d6dc"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#ae68596928501f9b5f49882a35470d6dc">cid</a></td></tr>
-<tr class="memdesc:ae68596928501f9b5f49882a35470d6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device's CID. <br /></td></tr>
-<tr class="separator:ae68596928501f9b5f49882a35470d6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc6d70dbf56e1ddc2c7e4bafa71db8c1"><td class="memItemLeft" align="right" valign="top"><a id="abc6d70dbf56e1ddc2c7e4bafa71db8c1"></a>
-<a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#abc6d70dbf56e1ddc2c7e4bafa71db8c1">callbacks</a></td></tr>
-<tr class="memdesc:abc6d70dbf56e1ddc2c7e4bafa71db8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks for the device to receive RDMnet notifications. <br /></td></tr>
-<tr class="separator:abc6d70dbf56e1ddc2c7e4bafa71db8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa087a3c2489b51ff355bc017d0cf89f0"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#aa087a3c2489b51ff355bc017d0cf89f0">response_buf</a></td></tr>
-<tr class="memdesc:aa087a3c2489b51ff355bc017d0cf89f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A data buffer to be used to respond synchronously to RDM commands.  <a href="struct_rdmnet_device_config.html#aa087a3c2489b51ff355bc017d0cf89f0">More...</a><br /></td></tr>
-<tr class="separator:aa087a3c2489b51ff355bc017d0cf89f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e5acc99018738e60e1de429f581cdf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a4e5acc99018738e60e1de429f581cdf7">scope_config</a></td></tr>
-<tr class="memdesc:a4e5acc99018738e60e1de429f581cdf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The device's configured RDMnet scope.  <a href="struct_rdmnet_device_config.html#a4e5acc99018738e60e1de429f581cdf7">More...</a><br /></td></tr>
-<tr class="separator:a4e5acc99018738e60e1de429f581cdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae51f9c3e56fdd51709788f014236c4a0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#ae51f9c3e56fdd51709788f014236c4a0">uid</a></td></tr>
-<tr class="memdesc:ae51f9c3e56fdd51709788f014236c4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The device's UID.  <a href="struct_rdmnet_device_config.html#ae51f9c3e56fdd51709788f014236c4a0">More...</a><br /></td></tr>
-<tr class="separator:ae51f9c3e56fdd51709788f014236c4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b61799a52cea3074c57933d8181667"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a47b61799a52cea3074c57933d8181667">search_domain</a></td></tr>
-<tr class="memdesc:a47b61799a52cea3074c57933d8181667"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The device's configured search domain for discovery.  <a href="struct_rdmnet_device_config.html#a47b61799a52cea3074c57933d8181667">More...</a><br /></td></tr>
-<tr class="separator:a47b61799a52cea3074c57933d8181667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a468036d6a69b2e6247df1cf458635d29"><td class="memItemLeft" align="right" valign="top"><a id="a468036d6a69b2e6247df1cf458635d29"></a>
-const <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a468036d6a69b2e6247df1cf458635d29">physical_endpoints</a></td></tr>
-<tr class="memdesc:a468036d6a69b2e6247df1cf458635d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of initial physical endpoints that the device uses. <br /></td></tr>
-<tr class="separator:a468036d6a69b2e6247df1cf458635d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4577e78a0af247b77bc02bbbe63fa4f"><td class="memItemLeft" align="right" valign="top"><a id="ac4577e78a0af247b77bc02bbbe63fa4f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#ac4577e78a0af247b77bc02bbbe63fa4f">num_physical_endpoints</a></td></tr>
-<tr class="memdesc:ac4577e78a0af247b77bc02bbbe63fa4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the physical_endpoints array. <br /></td></tr>
-<tr class="separator:ac4577e78a0af247b77bc02bbbe63fa4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce37537401ab63957d2884f22980727"><td class="memItemLeft" align="right" valign="top"><a id="a6ce37537401ab63957d2884f22980727"></a>
-const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirtualEndpointConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a6ce37537401ab63957d2884f22980727">virtual_endpoints</a></td></tr>
-<tr class="memdesc:a6ce37537401ab63957d2884f22980727"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of initial virtual endpoints that the device uses. <br /></td></tr>
-<tr class="separator:a6ce37537401ab63957d2884f22980727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72098b0a6479ed77f1371a8c1e04b03"><td class="memItemLeft" align="right" valign="top"><a id="aa72098b0a6479ed77f1371a8c1e04b03"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#aa72098b0a6479ed77f1371a8c1e04b03">num_virtual_endpoints</a></td></tr>
-<tr class="memdesc:aa72098b0a6479ed77f1371a8c1e04b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the virtual_endpoints array. <br /></td></tr>
-<tr class="separator:aa72098b0a6479ed77f1371a8c1e04b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a></td></tr>
+<tr class="separator:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3f65822dee624392213739e126f629"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629">callbacks</a></td></tr>
+<tr class="separator:ace3f65822dee624392213739e126f629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99184bd7c6729427838d2fc31612fea"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#aa99184bd7c6729427838d2fc31612fea">response_buf</a></td></tr>
+<tr class="separator:aa99184bd7c6729427838d2fc31612fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8181a6388e95cc06f242df6aa54013cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd">scope_config</a></td></tr>
+<tr class="separator:a8181a6388e95cc06f242df6aa54013cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad908bad751766196cc2334b0f8579a5c"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#ad908bad751766196cc2334b0f8579a5c">uid</a></td></tr>
+<tr class="separator:ad908bad751766196cc2334b0f8579a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f5a8d120934e4d1fb7ba53b0489c62"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62">search_domain</a></td></tr>
+<tr class="separator:aa7f5a8d120934e4d1fb7ba53b0489c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa348191ff39a94ca9a240f5fc0fc9baa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#aa348191ff39a94ca9a240f5fc0fc9baa">physical_endpoints</a></td></tr>
+<tr class="separator:aa348191ff39a94ca9a240f5fc0fc9baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0309db5341399c37db7a2bb7a9ba4c6a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a0309db5341399c37db7a2bb7a9ba4c6a">num_physical_endpoints</a></td></tr>
+<tr class="separator:a0309db5341399c37db7a2bb7a9ba4c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4143dc0917af2b7523bbcd575d6da4b5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirtualEndpointConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a4143dc0917af2b7523bbcd575d6da4b5">virtual_endpoints</a></td></tr>
+<tr class="separator:a4143dc0917af2b7523bbcd575d6da4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15213c1baa1cbf253f1c66f517f08fd9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_config.html#a15213c1baa1cbf253f1c66f517f08fd9">num_virtual_endpoints</a></td></tr>
+<tr class="separator:a15213c1baa1cbf253f1c66f517f08fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="aa087a3c2489b51ff355bc017d0cf89f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa087a3c2489b51ff355bc017d0cf89f0">&#9670;&nbsp;</a></span>response_buf</h2>
+<a id="ace3f65822dee624392213739e126f629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace3f65822dee624392213739e126f629">&#9670;&nbsp;</a></span>callbacks</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* RdmnetDeviceConfig::response_buf</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_device_callbacks.html">RdmnetDeviceCallbacks</a> callbacks</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>(optional) A data buffer to be used to respond synchronously to RDM commands. </p>
-<p>See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </p>
+<p>A set of callbacks for the device to receive RDMnet notifications. </p>
 
 </div>
 </div>
-<a id="a4e5acc99018738e60e1de429f581cdf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e5acc99018738e60e1de429f581cdf7">&#9670;&nbsp;</a></span>scope_config</h2>
+<a id="a4c3f7d9a58af5033f9acd8c942bf81d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3f7d9a58af5033f9acd8c942bf81d9">&#9670;&nbsp;</a></span>cid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> RdmnetDeviceConfig::scope_config</td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> cid</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>(optional) The device's configured RDMnet scope. </p>
-<p>Will be initialized to the RDMnet default scope using the initialization functions/macros for this structure. </p>
+<p>The device's CID. </p>
 
 </div>
 </div>
-<a id="a47b61799a52cea3074c57933d8181667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47b61799a52cea3074c57933d8181667">&#9670;&nbsp;</a></span>search_domain</h2>
+<a id="a0309db5341399c37db7a2bb7a9ba4c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0309db5341399c37db7a2bb7a9ba4c6a">&#9670;&nbsp;</a></span>num_physical_endpoints</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* RdmnetDeviceConfig::search_domain</td>
+          <td class="memname">size_t num_physical_endpoints</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>(optional) The device's configured search domain for discovery. </p>
-<p>NULL to use the default search domain(s). </p>
+<p>Size of the physical_endpoints array. </p>
 
 </div>
 </div>
-<a id="ae51f9c3e56fdd51709788f014236c4a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae51f9c3e56fdd51709788f014236c4a0">&#9670;&nbsp;</a></span>uid</h2>
+<a id="a15213c1baa1cbf253f1c66f517f08fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15213c1baa1cbf253f1c66f517f08fd9">&#9670;&nbsp;</a></span>num_virtual_endpoints</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> RdmnetDeviceConfig::uid</td>
+          <td class="memname">size_t num_virtual_endpoints</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Size of the virtual_endpoints array. </p>
 
-<p>(optional) The device's UID. </p>
-<p>This will be intialized with a Dynamic UID request value using the initialization functions/macros for this structure. If you want a static UID instead, just fill this in with the static UID after initializing. </p>
+</div>
+</div>
+<a id="aa348191ff39a94ca9a240f5fc0fc9baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa348191ff39a94ca9a240f5fc0fc9baa">&#9670;&nbsp;</a></span>physical_endpoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhysicalEndpointConfig</a>* physical_endpoints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An array of initial physical endpoints that the device uses. </p>
+
+</div>
+</div>
+<a id="aa99184bd7c6729427838d2fc31612fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99184bd7c6729427838d2fc31612fea">&#9670;&nbsp;</a></span>response_buf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* response_buf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) A data buffer to be used to respond synchronously to RDM commands. See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </p>
+
+</div>
+</div>
+<a id="a8181a6388e95cc06f242df6aa54013cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8181a6388e95cc06f242df6aa54013cd">&#9670;&nbsp;</a></span>scope_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> scope_config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The device's configured RDMnet scope. Will be initialized to the RDMnet default scope using the initialization functions/macros for this structure. </p>
+
+</div>
+</div>
+<a id="aa7f5a8d120934e4d1fb7ba53b0489c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f5a8d120934e4d1fb7ba53b0489c62">&#9670;&nbsp;</a></span>search_domain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* search_domain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The device's configured search domain for discovery. NULL to use the default search domain(s). </p>
+
+</div>
+</div>
+<a id="ad908bad751766196cc2334b0f8579a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad908bad751766196cc2334b0f8579a5c">&#9670;&nbsp;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The device's UID. This will be intialized with a Dynamic UID request value using the initialization functions/macros for this structure. If you want a static UID instead, just fill this in with the static UID after initializing. </p>
+
+</div>
+</div>
+<a id="a4143dc0917af2b7523bbcd575d6da4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4143dc0917af2b7523bbcd575d6da4b5">&#9670;&nbsp;</a></span>virtual_endpoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirtualEndpointConfig</a>* virtual_endpoints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An array of initial virtual endpoints that the device uses. </p>
 
 </div>
 </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::ClientConnectFailedInfo Class Reference</title>
+<title>RDMnet: ClientConnectFailedInfo Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -203,78 +203,76 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_client_connect_failed_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::ClientConnectFailedInfo Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
+<div class="title">ClientConnectFailedInfo Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__cpp__common.html">Common Definitions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Information about a failed connection to a broker delivered to an RDMnet callback function. </p>
 <p>Not valid for use other than as a parameter to an RDMnet callback function. Extract the members to save them for later use. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2client_8h_source.html">rdmnet/cpp/client.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad56ecf1f4eaaaa25405daa057bba7306"><td class="memItemLeft" align="right" valign="top"><a id="ad56ecf1f4eaaaa25405daa057bba7306"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ad56ecf1f4eaaaa25405daa057bba7306">ClientConnectFailedInfo</a> ()=delete</td></tr>
-<tr class="memdesc:ad56ecf1f4eaaaa25405daa057bba7306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
-<tr class="separator:ad56ecf1f4eaaaa25405daa057bba7306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d0b40f0ae2769c6ec7a98709dd12c6"><td class="memItemLeft" align="right" valign="top"><a id="aa0d0b40f0ae2769c6ec7a98709dd12c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#aa0d0b40f0ae2769c6ec7a98709dd12c6">ClientConnectFailedInfo</a> (const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:aa0d0b40f0ae2769c6ec7a98709dd12c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable. <br /></td></tr>
-<tr class="separator:aa0d0b40f0ae2769c6ec7a98709dd12c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5584f3cefdc4ff4bb0a6838124f6a9"><td class="memItemLeft" align="right" valign="top"><a id="aed5584f3cefdc4ff4bb0a6838124f6a9"></a>
-<a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#aed5584f3cefdc4ff4bb0a6838124f6a9">operator=</a> (const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:aed5584f3cefdc4ff4bb0a6838124f6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable. <br /></td></tr>
-<tr class="separator:aed5584f3cefdc4ff4bb0a6838124f6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae14195622902ec107f389ce58f3b11e9"><td class="memItemLeft" align="right" valign="top"><a id="ae14195622902ec107f389ce58f3b11e9"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ae14195622902ec107f389ce58f3b11e9">ClientConnectFailedInfo</a> (const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;c_info) noexcept</td></tr>
-<tr class="memdesc:ae14195622902ec107f389ce58f3b11e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html" title="Information about a failed connection to a broker delivered to an RDMnet callback function.">ClientConnectFailedInfo</a> which references an instance of the C <a class="el" href="struct_rdmnet_client_connect_failed_info.html" title="Information provided by the library about an unsuccessful RDMnet client connection.">RdmnetClientConnectFailedInfo</a> type. <br /></td></tr>
-<tr class="separator:ae14195622902ec107f389ce58f3b11e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac17da13519cd10509006f8002740fb56"><td class="memItemLeft" align="right" valign="top"><a id="ac17da13519cd10509006f8002740fb56"></a>
-constexpr <a class="el" href="group__rdmnet__api__common.html#ga496e65ee0af4670795917a7ba2436fd5">rdmnet_connect_fail_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ac17da13519cd10509006f8002740fb56">event</a> () const noexcept</td></tr>
-<tr class="memdesc:ac17da13519cd10509006f8002740fb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-level reason that this connection failed. <br /></td></tr>
-<tr class="separator:ac17da13519cd10509006f8002740fb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce32f5cff2a9b2a0e56991019ca3bd9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#acce32f5cff2a9b2a0e56991019ca3bd9">socket_err</a> () const noexcept</td></tr>
-<tr class="memdesc:acce32f5cff2a9b2a0e56991019ca3bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system error code associated with the failure.  <a href="classrdmnet_1_1_client_connect_failed_info.html#acce32f5cff2a9b2a0e56991019ca3bd9">More...</a><br /></td></tr>
-<tr class="separator:acce32f5cff2a9b2a0e56991019ca3bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c413de2583bde83f42b4a110474503e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group__rdmnet__api__common.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a9c413de2583bde83f42b4a110474503e">rdmnet_reason</a> () const noexcept</td></tr>
-<tr class="memdesc:a9c413de2583bde83f42b4a110474503e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reason given in the RDMnet-level connection refuse message.  <a href="classrdmnet_1_1_client_connect_failed_info.html#a9c413de2583bde83f42b4a110474503e">More...</a><br /></td></tr>
-<tr class="separator:a9c413de2583bde83f42b4a110474503e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e41ddd3cccb4e828de173954e123878"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a6e41ddd3cccb4e828de173954e123878">will_retry</a> () const noexcept</td></tr>
-<tr class="memdesc:a6e41ddd3cccb4e828de173954e123878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the connection will be retried automatically.  <a href="classrdmnet_1_1_client_connect_failed_info.html#a6e41ddd3cccb4e828de173954e123878">More...</a><br /></td></tr>
-<tr class="separator:a6e41ddd3cccb4e828de173954e123878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afceca7697b907771e59dc50f9bf977e2"><td class="memItemLeft" align="right" valign="top"><a id="afceca7697b907771e59dc50f9bf977e2"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#afceca7697b907771e59dc50f9bf977e2">HasSocketErr</a> () const noexcept</td></tr>
-<tr class="memdesc:afceca7697b907771e59dc50f9bf977e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the value returned from <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#acce32f5cff2a9b2a0e56991019ca3bd9" title="Get the system error code associated with the failure.">socket_err()</a> is valid. <br /></td></tr>
-<tr class="separator:afceca7697b907771e59dc50f9bf977e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd6bddd56fb57cb79168031d48f833f"><td class="memItemLeft" align="right" valign="top"><a id="a4fd6bddd56fb57cb79168031d48f833f"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a4fd6bddd56fb57cb79168031d48f833f">HasRdmnetReason</a> () const noexcept</td></tr>
-<tr class="memdesc:a4fd6bddd56fb57cb79168031d48f833f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the value returned from <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a9c413de2583bde83f42b4a110474503e" title="Get the reason given in the RDMnet-level connection refuse message.">rdmnet_reason()</a> is valid. <br /></td></tr>
-<tr class="separator:a4fd6bddd56fb57cb79168031d48f833f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a354b7856ffae874fe1178a2d3e2b5644"><td class="memItemLeft" align="right" valign="top"><a id="a354b7856ffae874fe1178a2d3e2b5644"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a354b7856ffae874fe1178a2d3e2b5644">EventToCString</a> () const noexcept</td></tr>
-<tr class="memdesc:a354b7856ffae874fe1178a2d3e2b5644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-level reason that this connection failed as a C-style string. <br /></td></tr>
-<tr class="separator:a354b7856ffae874fe1178a2d3e2b5644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25821d006fbb7ad0f5ba6124ec50a85"><td class="memItemLeft" align="right" valign="top"><a id="af25821d006fbb7ad0f5ba6124ec50a85"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#af25821d006fbb7ad0f5ba6124ec50a85">EventToString</a> () const</td></tr>
-<tr class="memdesc:af25821d006fbb7ad0f5ba6124ec50a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-level reason that this connection failed as a string. <br /></td></tr>
-<tr class="separator:af25821d006fbb7ad0f5ba6124ec50a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba2d4bdd5188584e58850f5ccd16fa5"><td class="memItemLeft" align="right" valign="top"><a id="a8ba2d4bdd5188584e58850f5ccd16fa5"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a8ba2d4bdd5188584e58850f5ccd16fa5">RdmnetReasonToCString</a> () const noexcept</td></tr>
-<tr class="memdesc:a8ba2d4bdd5188584e58850f5ccd16fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reason given in the RDMnet-level connection refuse message as a C-style string. <br /></td></tr>
-<tr class="separator:a8ba2d4bdd5188584e58850f5ccd16fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a728993f1eaf943b81f1e2ad3cd46ae3d"><td class="memItemLeft" align="right" valign="top"><a id="a728993f1eaf943b81f1e2ad3cd46ae3d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a728993f1eaf943b81f1e2ad3cd46ae3d">RdmnetReasonToString</a> () const</td></tr>
-<tr class="memdesc:a728993f1eaf943b81f1e2ad3cd46ae3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reason given in the RDMnet-level connection refuse message as a string. <br /></td></tr>
-<tr class="separator:a728993f1eaf943b81f1e2ad3cd46ae3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a98baff78c5293caec3311f70cbfb8e"><td class="memItemLeft" align="right" valign="top"><a id="a4a98baff78c5293caec3311f70cbfb8e"></a>
-constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a4a98baff78c5293caec3311f70cbfb8e">get</a> () const noexcept</td></tr>
-<tr class="memdesc:a4a98baff78c5293caec3311f70cbfb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
-<tr class="separator:a4a98baff78c5293caec3311f70cbfb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2fa7dc4bf5d3a5a2f14883490fdb00"><td class="memItemLeft" align="right" valign="top"><a id="aec2fa7dc4bf5d3a5a2f14883490fdb00"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#aec2fa7dc4bf5d3a5a2f14883490fdb00">ClientConnectFailedInfo</a> ()=delete</td></tr>
+<tr class="memdesc:aec2fa7dc4bf5d3a5a2f14883490fdb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not default-constructible. <br /></td></tr>
+<tr class="separator:aec2fa7dc4bf5d3a5a2f14883490fdb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81eb877bb8aedb963272f64bbace3f5b"><td class="memItemLeft" align="right" valign="top"><a id="a81eb877bb8aedb963272f64bbace3f5b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a81eb877bb8aedb963272f64bbace3f5b">ClientConnectFailedInfo</a> (const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:a81eb877bb8aedb963272f64bbace3f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable. <br /></td></tr>
+<tr class="separator:a81eb877bb8aedb963272f64bbace3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5afbebb3a65cec7a8ce7b229c7a6509"><td class="memItemLeft" align="right" valign="top"><a id="ad5afbebb3a65cec7a8ce7b229c7a6509"></a>
+<a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ad5afbebb3a65cec7a8ce7b229c7a6509">operator=</a> (const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:ad5afbebb3a65cec7a8ce7b229c7a6509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable. <br /></td></tr>
+<tr class="separator:ad5afbebb3a65cec7a8ce7b229c7a6509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da888ef6081e1278235a9b6ffaef0c8"><td class="memItemLeft" align="right" valign="top"><a id="a9da888ef6081e1278235a9b6ffaef0c8"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a9da888ef6081e1278235a9b6ffaef0c8">ClientConnectFailedInfo</a> (const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;c_info) noexcept</td></tr>
+<tr class="memdesc:a9da888ef6081e1278235a9b6ffaef0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html" title="Information about a failed connection to a broker delivered to an RDMnet callback function.">ClientConnectFailedInfo</a> which references an instance of the C <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> type. <br /></td></tr>
+<tr class="separator:a9da888ef6081e1278235a9b6ffaef0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee583348d06680fbc733e75a68ed2cb0"><td class="memItemLeft" align="right" valign="top"><a id="aee583348d06680fbc733e75a68ed2cb0"></a>
+constexpr <a class="el" href="group__rdmnet__api__common.html#ga496e65ee0af4670795917a7ba2436fd5">rdmnet_connect_fail_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#aee583348d06680fbc733e75a68ed2cb0">event</a> () const noexcept</td></tr>
+<tr class="memdesc:aee583348d06680fbc733e75a68ed2cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-level reason that this connection failed. <br /></td></tr>
+<tr class="separator:aee583348d06680fbc733e75a68ed2cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23cc6d514a9af4e01091c366f188ee0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#aa23cc6d514a9af4e01091c366f188ee0">socket_err</a> () const noexcept</td></tr>
+<tr class="memdesc:aa23cc6d514a9af4e01091c366f188ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system error code associated with the failure.  <a href="classrdmnet_1_1_client_connect_failed_info.html#aa23cc6d514a9af4e01091c366f188ee0">More...</a><br /></td></tr>
+<tr class="separator:aa23cc6d514a9af4e01091c366f188ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57733bd20e7fc847191387ce73405fe8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group__rdmnet__api__common.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a57733bd20e7fc847191387ce73405fe8">rdmnet_reason</a> () const noexcept</td></tr>
+<tr class="memdesc:a57733bd20e7fc847191387ce73405fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reason given in the RDMnet-level connection refuse message.  <a href="classrdmnet_1_1_client_connect_failed_info.html#a57733bd20e7fc847191387ce73405fe8">More...</a><br /></td></tr>
+<tr class="separator:a57733bd20e7fc847191387ce73405fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df354b806358c5f61541f96b68142e4"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a5df354b806358c5f61541f96b68142e4">will_retry</a> () const noexcept</td></tr>
+<tr class="memdesc:a5df354b806358c5f61541f96b68142e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the connection will be retried automatically.  <a href="classrdmnet_1_1_client_connect_failed_info.html#a5df354b806358c5f61541f96b68142e4">More...</a><br /></td></tr>
+<tr class="separator:a5df354b806358c5f61541f96b68142e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be07ba7f22920a6254ad49e1da9b54d"><td class="memItemLeft" align="right" valign="top"><a id="a6be07ba7f22920a6254ad49e1da9b54d"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a6be07ba7f22920a6254ad49e1da9b54d">HasSocketErr</a> () const noexcept</td></tr>
+<tr class="memdesc:a6be07ba7f22920a6254ad49e1da9b54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the value returned from <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#aa23cc6d514a9af4e01091c366f188ee0" title="Get the system error code associated with the failure.">socket_err()</a> is valid. <br /></td></tr>
+<tr class="separator:a6be07ba7f22920a6254ad49e1da9b54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad404f1b1561a7c6ee466b5203e294363"><td class="memItemLeft" align="right" valign="top"><a id="ad404f1b1561a7c6ee466b5203e294363"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ad404f1b1561a7c6ee466b5203e294363">HasRdmnetReason</a> () const noexcept</td></tr>
+<tr class="memdesc:ad404f1b1561a7c6ee466b5203e294363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the value returned from <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a57733bd20e7fc847191387ce73405fe8" title="Get the reason given in the RDMnet-level connection refuse message.">rdmnet_reason()</a> is valid. <br /></td></tr>
+<tr class="separator:ad404f1b1561a7c6ee466b5203e294363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7c5e71ca0564685ef3dce374792fb8"><td class="memItemLeft" align="right" valign="top"><a id="a2c7c5e71ca0564685ef3dce374792fb8"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a2c7c5e71ca0564685ef3dce374792fb8">EventToCString</a> () const noexcept</td></tr>
+<tr class="memdesc:a2c7c5e71ca0564685ef3dce374792fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-level reason that this connection failed as a C-style string. <br /></td></tr>
+<tr class="separator:a2c7c5e71ca0564685ef3dce374792fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8606295d85c6cc7860119d5880d22a"><td class="memItemLeft" align="right" valign="top"><a id="a9f8606295d85c6cc7860119d5880d22a"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a9f8606295d85c6cc7860119d5880d22a">EventToString</a> () const</td></tr>
+<tr class="memdesc:a9f8606295d85c6cc7860119d5880d22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high-level reason that this connection failed as a string. <br /></td></tr>
+<tr class="separator:a9f8606295d85c6cc7860119d5880d22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45767e9511c1eca0f5072c7ce49afc1c"><td class="memItemLeft" align="right" valign="top"><a id="a45767e9511c1eca0f5072c7ce49afc1c"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a45767e9511c1eca0f5072c7ce49afc1c">RdmnetReasonToCString</a> () const noexcept</td></tr>
+<tr class="memdesc:a45767e9511c1eca0f5072c7ce49afc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reason given in the RDMnet-level connection refuse message as a C-style string. <br /></td></tr>
+<tr class="separator:a45767e9511c1eca0f5072c7ce49afc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b5e9c100dd6f12e2cc542f2beed9af"><td class="memItemLeft" align="right" valign="top"><a id="ac2b5e9c100dd6f12e2cc542f2beed9af"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ac2b5e9c100dd6f12e2cc542f2beed9af">RdmnetReasonToString</a> () const</td></tr>
+<tr class="memdesc:ac2b5e9c100dd6f12e2cc542f2beed9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reason given in the RDMnet-level connection refuse message as a string. <br /></td></tr>
+<tr class="separator:ac2b5e9c100dd6f12e2cc542f2beed9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af814c61ed930a15095f9b41e3882585c"><td class="memItemLeft" align="right" valign="top"><a id="af814c61ed930a15095f9b41e3882585c"></a>
+constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#af814c61ed930a15095f9b41e3882585c">get</a> () const noexcept</td></tr>
+<tr class="memdesc:af814c61ed930a15095f9b41e3882585c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
+<tr class="separator:af814c61ed930a15095f9b41e3882585c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9c413de2583bde83f42b4a110474503e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c413de2583bde83f42b4a110474503e">&#9670;&nbsp;</a></span>rdmnet_reason()</h2>
+<a id="a57733bd20e7fc847191387ce73405fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57733bd20e7fc847191387ce73405fe8">&#9670;&nbsp;</a></span>rdmnet_reason()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +281,7 @@ constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__rdmnet__api__common.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a> rdmnet::ClientConnectFailedInfo::rdmnet_reason </td>
+          <td class="memname">constexpr <a class="el" href="group__rdmnet__api__common.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a> rdmnet_reason </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -297,12 +295,12 @@ constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.htm
 </div><div class="memdoc">
 
 <p>Get the reason given in the RDMnet-level connection refuse message. </p>
-<p>Valid if <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a4fd6bddd56fb57cb79168031d48f833f" title="Whether the value returned from rdmnet_reason() is valid.">HasRdmnetReason()</a> == true. </p>
+<p>Valid if <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#ad404f1b1561a7c6ee466b5203e294363" title="Whether the value returned from rdmnet_reason() is valid.">HasRdmnetReason()</a> == true. </p>
 
 </div>
 </div>
-<a id="acce32f5cff2a9b2a0e56991019ca3bd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acce32f5cff2a9b2a0e56991019ca3bd9">&#9670;&nbsp;</a></span>socket_err()</h2>
+<a id="aa23cc6d514a9af4e01091c366f188ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23cc6d514a9af4e01091c366f188ee0">&#9670;&nbsp;</a></span>socket_err()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +309,7 @@ constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::ClientConnectFailedInfo::socket_err </td>
+          <td class="memname">constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> socket_err </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -325,12 +323,12 @@ constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.htm
 </div><div class="memdoc">
 
 <p>Get the system error code associated with the failure. </p>
-<p>Valid if <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#afceca7697b907771e59dc50f9bf977e2" title="Whether the value returned from socket_err() is valid.">HasSocketErr()</a> == true. </p>
+<p>Valid if <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html#a6be07ba7f22920a6254ad49e1da9b54d" title="Whether the value returned from socket_err() is valid.">HasSocketErr()</a> == true. </p>
 
 </div>
 </div>
-<a id="a6e41ddd3cccb4e828de173954e123878"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e41ddd3cccb4e828de173954e123878">&#9670;&nbsp;</a></span>will_retry()</h2>
+<a id="a5df354b806358c5f61541f96b68142e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df354b806358c5f61541f96b68142e4">&#9670;&nbsp;</a></span>will_retry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +337,7 @@ constexpr const <a class="el" href="struct_rdmnet_client_connect_failed_info.htm
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool rdmnet::ClientConnectFailedInfo::will_retry </td>
+          <td class="memname">constexpr bool will_retry </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

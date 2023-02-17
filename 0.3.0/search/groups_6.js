@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['inet_20_28internet_20addressing_29_3075',['inet (Internet Addressing)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__cpp__inet.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html',1,'(Global Namespace)']]]
+  ['handle_5fmanager_6113',['handle_manager',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__handle__manager.html',1,'']]],
+  ['hash_20_28hashing_20utilities_29_6114',['hash (Hashing Utilities)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__hash.html',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var struct_rdmnet_physical_endpoint_config =
 [
-    [ "endpoint_id", "struct_rdmnet_physical_endpoint_config.html#aa3f8182a6de08e3d350968ae504f9c71", null ],
-    [ "num_responders", "struct_rdmnet_physical_endpoint_config.html#ae03e7714ab2513f42f6576df7da65738", null ],
-    [ "responders", "struct_rdmnet_physical_endpoint_config.html#affdd1b20ea4fe23f6c7ecca7dcf85960", null ]
+    [ "endpoint_id", "struct_rdmnet_physical_endpoint_config.html#af702743398c1c2c0fd52ca40504cf1f4", null ],
+    [ "num_responders", "struct_rdmnet_physical_endpoint_config.html#a198b576d97381a141652d54b3f90f681", null ],
+    [ "responders", "struct_rdmnet_physical_endpoint_config.html#aa32e7ac8b86139fd0a79d1d9b2f76840", null ]
 ];

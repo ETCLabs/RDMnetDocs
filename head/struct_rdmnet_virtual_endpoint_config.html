@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,39 +209,30 @@ $(document).ready(function(){initNavTree('struct_rdmnet_virtual_endpoint_config.
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Configuration information for a virtual endpoint on a device. </p>
 <p>See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="device_8h_source.html">rdmnet/device.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac27f6f1619485d14e1880735cb81c72f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#ac27f6f1619485d14e1880735cb81c72f">endpoint_id</a></td></tr>
-<tr class="memdesc:ac27f6f1619485d14e1880735cb81c72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endpoint identifier for this endpoint.  <a href="struct_rdmnet_virtual_endpoint_config.html#ac27f6f1619485d14e1880735cb81c72f">More...</a><br /></td></tr>
-<tr class="separator:ac27f6f1619485d14e1880735cb81c72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ffc5cad463b0ecb1cbfcf73b7b939ca"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a1ffc5cad463b0ecb1cbfcf73b7b939ca">dynamic_responders</a></td></tr>
-<tr class="memdesc:a1ffc5cad463b0ecb1cbfcf73b7b939ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of initial virtual RDM responders on this endpoint, identified by RID.  <a href="struct_rdmnet_virtual_endpoint_config.html#a1ffc5cad463b0ecb1cbfcf73b7b939ca">More...</a><br /></td></tr>
-<tr class="separator:a1ffc5cad463b0ecb1cbfcf73b7b939ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd8e58c72865cbad3db8627aadb3f6f"><td class="memItemLeft" align="right" valign="top"><a id="a4fd8e58c72865cbad3db8627aadb3f6f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a4fd8e58c72865cbad3db8627aadb3f6f">num_dynamic_responders</a></td></tr>
-<tr class="memdesc:a4fd8e58c72865cbad3db8627aadb3f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the dynamic_responders array. <br /></td></tr>
-<tr class="separator:a4fd8e58c72865cbad3db8627aadb3f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9297c6417d008e13be0f64f8e5dd81e0"><td class="memItemLeft" align="right" valign="top"><a id="a9297c6417d008e13be0f64f8e5dd81e0"></a>
-const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a9297c6417d008e13be0f64f8e5dd81e0">static_responders</a></td></tr>
-<tr class="memdesc:a9297c6417d008e13be0f64f8e5dd81e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of initial virtual RDM responders on this endpoint, identified by static UID. <br /></td></tr>
-<tr class="separator:a9297c6417d008e13be0f64f8e5dd81e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a32978e00d6c1a5765c3d0073bcca37"><td class="memItemLeft" align="right" valign="top"><a id="a4a32978e00d6c1a5765c3d0073bcca37"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a4a32978e00d6c1a5765c3d0073bcca37">num_static_responders</a></td></tr>
-<tr class="memdesc:a4a32978e00d6c1a5765c3d0073bcca37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the static_responders array. <br /></td></tr>
-<tr class="separator:a4a32978e00d6c1a5765c3d0073bcca37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af702743398c1c2c0fd52ca40504cf1f4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#af702743398c1c2c0fd52ca40504cf1f4">endpoint_id</a></td></tr>
+<tr class="separator:af702743398c1c2c0fd52ca40504cf1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038ae9f89c4f1ee616359d4cb0f4b0bf"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a038ae9f89c4f1ee616359d4cb0f4b0bf">dynamic_responders</a></td></tr>
+<tr class="memdesc:a038ae9f89c4f1ee616359d4cb0f4b0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of initial virtual RDM responders on this endpoint, identified by RID.  <a href="struct_rdmnet_virtual_endpoint_config.html#a038ae9f89c4f1ee616359d4cb0f4b0bf">More...</a><br /></td></tr>
+<tr class="separator:a038ae9f89c4f1ee616359d4cb0f4b0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98a0c9bba3086a4e9711e77dc3916dc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#ab98a0c9bba3086a4e9711e77dc3916dc">num_dynamic_responders</a></td></tr>
+<tr class="separator:ab98a0c9bba3086a4e9711e77dc3916dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c3d037e8a546f97941951363153387"><td class="memItemLeft" align="right" valign="top">const RdmUid *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a20c3d037e8a546f97941951363153387">static_responders</a></td></tr>
+<tr class="separator:a20c3d037e8a546f97941951363153387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5093215d5eb866e3535424a1c4ea44e5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_virtual_endpoint_config.html#a5093215d5eb866e3535424a1c4ea44e5">num_static_responders</a></td></tr>
+<tr class="separator:a5093215d5eb866e3535424a1c4ea44e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a1ffc5cad463b0ecb1cbfcf73b7b939ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ffc5cad463b0ecb1cbfcf73b7b939ca">&#9670;&nbsp;</a></span>dynamic_responders</h2>
+<a id="a038ae9f89c4f1ee616359d4cb0f4b0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038ae9f89c4f1ee616359d4cb0f4b0bf">&#9670;&nbsp;</a></span>dynamic_responders</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* RdmnetVirtualEndpointConfig::dynamic_responders</td>
+          <td class="memname">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>* dynamic_responders</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,20 +242,63 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="ac27f6f1619485d14e1880735cb81c72f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac27f6f1619485d14e1880735cb81c72f">&#9670;&nbsp;</a></span>endpoint_id</h2>
+<a id="af702743398c1c2c0fd52ca40504cf1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af702743398c1c2c0fd52ca40504cf1f4">&#9670;&nbsp;</a></span>endpoint_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t RdmnetVirtualEndpointConfig::endpoint_id</td>
+          <td class="memname">uint16_t endpoint_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The endpoint identifier for this endpoint. Valid values are between 1 and 63,999 inclusive. </p>
 
-<p>The endpoint identifier for this endpoint. </p>
-<p>Valid values are between 1 and 63,999 inclusive. </p>
+</div>
+</div>
+<a id="ab98a0c9bba3086a4e9711e77dc3916dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98a0c9bba3086a4e9711e77dc3916dc">&#9670;&nbsp;</a></span>num_dynamic_responders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_dynamic_responders</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of the dynamic_responders array. </p>
+
+</div>
+</div>
+<a id="a5093215d5eb866e3535424a1c4ea44e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5093215d5eb866e3535424a1c4ea44e5">&#9670;&nbsp;</a></span>num_static_responders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_static_responders</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size of the static_responders array. </p>
+
+</div>
+</div>
+<a id="a20c3d037e8a546f97941951363153387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c3d037e8a546f97941951363153387">&#9670;&nbsp;</a></span>static_responders</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RdmUid* static_responders</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An array of initial virtual RDM responders on this endpoint, identified by static UID. </p>
 
 </div>
 </div>

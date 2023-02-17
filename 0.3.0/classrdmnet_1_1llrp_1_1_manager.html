@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -244,26 +243,26 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classrdmnet_1_1llrp_1_1_manager.html">Manager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a870fa780bd25f7af1e3229f9aa117ac4">operator=</a> (<a class="el" href="classrdmnet_1_1llrp_1_1_manager.html">Manager</a> &amp;&amp;other)=default</td></tr>
 <tr class="memdesc:a870fa780bd25f7af1e3229f9aa117ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a manager instance. <br /></td></tr>
 <tr class="separator:a870fa780bd25f7af1e3229f9aa117ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac766b4067688119fbc78d32bb7f0f75a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#ac766b4067688119fbc78d32bb7f0f75a">Startup</a> (<a class="el" href="classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a4fb7d30129774502f657cabf6b9223fb">notify_handler</a>, uint16_t manufacturer_id, unsigned int netint_index, <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> ip_type=<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a>, const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid=<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>())</td></tr>
+<tr class="memitem:ac766b4067688119fbc78d32bb7f0f75a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#ac766b4067688119fbc78d32bb7f0f75a">Startup</a> (<a class="el" href="classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a4fb7d30129774502f657cabf6b9223fb">notify_handler</a>, uint16_t manufacturer_id, unsigned int netint_index, <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> ip_type=<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a>, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;cid=<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>())</td></tr>
 <tr class="memdesc:ac766b4067688119fbc78d32bb7f0f75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and startup this LLRP manager with the given configuration.  <a href="classrdmnet_1_1llrp_1_1_manager.html#ac766b4067688119fbc78d32bb7f0f75a">More...</a><br /></td></tr>
 <tr class="separator:ac766b4067688119fbc78d32bb7f0f75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e909cab686137f8d61c581c6a4906af"><td class="memItemLeft" align="right" valign="top"><a id="a2e909cab686137f8d61c581c6a4906af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a2e909cab686137f8d61c581c6a4906af">Shutdown</a> ()</td></tr>
 <tr class="memdesc:a2e909cab686137f8d61c581c6a4906af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down this LLRP manager and deallocate resources. <br /></td></tr>
 <tr class="separator:a2e909cab686137f8d61c581c6a4906af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa734622721edcdad5ce323398b0b977c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#aa734622721edcdad5ce323398b0b977c">StartDiscovery</a> (uint16_t filter=0)</td></tr>
+<tr class="memitem:aa734622721edcdad5ce323398b0b977c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#aa734622721edcdad5ce323398b0b977c">StartDiscovery</a> (uint16_t filter=0)</td></tr>
 <tr class="memdesc:aa734622721edcdad5ce323398b0b977c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start LLRP discovery.  <a href="classrdmnet_1_1llrp_1_1_manager.html#aa734622721edcdad5ce323398b0b977c">More...</a><br /></td></tr>
 <tr class="separator:aa734622721edcdad5ce323398b0b977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d46615ee9fc87bc07b9da606e406788"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a8d46615ee9fc87bc07b9da606e406788">StopDiscovery</a> ()</td></tr>
+<tr class="memitem:a8d46615ee9fc87bc07b9da606e406788"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a8d46615ee9fc87bc07b9da606e406788">StopDiscovery</a> ()</td></tr>
 <tr class="memdesc:a8d46615ee9fc87bc07b9da606e406788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop LLRP discovery.  <a href="classrdmnet_1_1llrp_1_1_manager.html#a8d46615ee9fc87bc07b9da606e406788">More...</a><br /></td></tr>
 <tr class="separator:a8d46615ee9fc87bc07b9da606e406788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9182889f3f01eaca26dbadf6742dfdb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#ac9182889f3f01eaca26dbadf6742dfdb">SendRdmCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;destination, <a class="el" href="group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24">rdmnet_command_class_t</a> command_class, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</td></tr>
+<tr class="memitem:ac9182889f3f01eaca26dbadf6742dfdb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#ac9182889f3f01eaca26dbadf6742dfdb">SendRdmCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;destination, <a class="el" href="group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24">rdmnet_command_class_t</a> command_class, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</td></tr>
 <tr class="memdesc:ac9182889f3f01eaca26dbadf6742dfdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM command from an LLRP manager.  <a href="classrdmnet_1_1llrp_1_1_manager.html#ac9182889f3f01eaca26dbadf6742dfdb">More...</a><br /></td></tr>
 <tr class="separator:ac9182889f3f01eaca26dbadf6742dfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a5129770ac898eceb3d9b1c909ef2c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a02a5129770ac898eceb3d9b1c909ef2c">SendGetCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</td></tr>
+<tr class="memitem:a02a5129770ac898eceb3d9b1c909ef2c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a02a5129770ac898eceb3d9b1c909ef2c">SendGetCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</td></tr>
 <tr class="memdesc:a02a5129770ac898eceb3d9b1c909ef2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM GET command from an LLRP manager.  <a href="classrdmnet_1_1llrp_1_1_manager.html#a02a5129770ac898eceb3d9b1c909ef2c">More...</a><br /></td></tr>
 <tr class="separator:a02a5129770ac898eceb3d9b1c909ef2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8fb27ed33618db7f9322ccedbed550"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#acd8fb27ed33618db7f9322ccedbed550">SendSetCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</td></tr>
+<tr class="memitem:acd8fb27ed33618db7f9322ccedbed550"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#acd8fb27ed33618db7f9322ccedbed550">SendSetCommand</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;destination, uint16_t param_id, const uint8_t *data=nullptr, uint8_t data_len=0)</td></tr>
 <tr class="memdesc:acd8fb27ed33618db7f9322ccedbed550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM SET command from an LLRP manager.  <a href="classrdmnet_1_1llrp_1_1_manager.html#acd8fb27ed33618db7f9322ccedbed550">More...</a><br /></td></tr>
 <tr class="separator:acd8fb27ed33618db7f9322ccedbed550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f79abe8b3b819f725abbd09240fb8a9"><td class="memItemLeft" align="right" valign="top"><a id="a9f79abe8b3b819f725abbd09240fb8a9"></a>
@@ -293,7 +292,7 @@ static constexpr <a class="el" href="classrdmnet_1_1llrp_1_1_manager.html#a6c304
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt; rdmnet::llrp::Manager::SendGetCommand </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt; rdmnet::llrp::Manager::SendGetCommand </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
@@ -356,7 +355,7 @@ On failure, error codes from <a class="el" href="group__llrp__manager.html#ga717
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt; rdmnet::llrp::Manager::SendRdmCommand </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt; rdmnet::llrp::Manager::SendRdmCommand </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
@@ -426,7 +425,7 @@ On failure, error codes from <a class="el" href="group__llrp__manager.html#ga717
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt; rdmnet::llrp::Manager::SendSetCommand </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; uint32_t &gt; rdmnet::llrp::Manager::SendSetCommand </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classrdmnet_1_1llrp_1_1_destination_addr.html">DestinationAddr</a> &amp;&#160;</td>
           <td class="paramname"><em>destination</em>, </td>
@@ -489,7 +488,7 @@ On failure, error codes from <a class="el" href="group__llrp__manager.html#ga717
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::llrp::Manager::StartDiscovery </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::llrp::Manager::StartDiscovery </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>filter</em> = <code>0</code></td><td>)</td>
@@ -511,7 +510,7 @@ On failure, error codes from <a class="el" href="group__llrp__manager.html#ga717
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: Discovery started successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: Discovery started successfully. </dd>
 <dd>
 Errors from <a class="el" href="group__llrp__manager.html#gaf767011a6d96b6a2692e313865a9b29d" title="Start discovery on an LLRP manager.">llrp_manager_start_discovery()</a>. </dd></dl>
 
@@ -527,7 +526,7 @@ Errors from <a class="el" href="group__llrp__manager.html#gaf767011a6d96b6a2692e
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::llrp::Manager::Startup </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::llrp::Manager::Startup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
@@ -547,14 +546,14 @@ Errors from <a class="el" href="group__llrp__manager.html#gaf767011a6d96b6a2692e
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td>
-          <td class="paramname"><em>ip_type</em> = <code><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a></code>, </td>
+          <td class="paramtype"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td>
+          <td class="paramname"><em>ip_type</em> = <code><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
-          <td class="paramname"><em>cid</em> = <code><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>cid</em> = <code><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -580,7 +579,7 @@ Errors from <a class="el" href="group__llrp__manager.html#gaf767011a6d96b6a2692e
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: LLRP manager started successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: LLRP manager started successfully. </dd>
 <dd>
 Errors forwarded from <a class="el" href="group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e" title="Create a new LLRP manager instance.">llrp_manager_create()</a>. </dd></dl>
 
@@ -596,7 +595,7 @@ Errors forwarded from <a class="el" href="group__llrp__manager.html#gae5acadeaef
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::llrp::Manager::StopDiscovery </td>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::llrp::Manager::StopDiscovery </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -611,7 +610,7 @@ Errors forwarded from <a class="el" href="group__llrp__manager.html#gae5acadeaef
 
 <p>Stop LLRP discovery. </p>
 <p>Clears all discovery state and known discovered targets.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: Discovery stopped successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: Discovery stopped successfully. </dd>
 <dd>
 Errors from <a class="el" href="group__llrp__manager.html#gadbc400a21df76a82f733b2ecad44225a" title="Stop discovery on an LLRP manager.">llrp_manager_stop_discovery()</a>. </dd></dl>
 

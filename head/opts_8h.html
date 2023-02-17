@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -210,8 +210,6 @@ $(document).ready(function(){initNavTree('opts_8h.html',''); initResizable(); })
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>RDMnet configuration options. </p>
 <p>Default values for all of RDMnet's <a class="el" href="group__rdmnetopts.html">compile-time configuration options</a>. </p>
-</div><div class="textblock"><code>#include &quot;etcpal/thread.h&quot;</code><br />
-<code>#include &lt;assert.h&gt;</code><br />
 </div>
 <p><a href="opts_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -264,7 +262,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:gae5f0432bbffcd8774fae6aae0a17ca5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of Dynamic-UID-related structures that can be returned with a parsed message.  <a href="group__rdmnetopts__core.html#gae5f0432bbffcd8774fae6aae0a17ca5e">More...</a><br /></td></tr>
 <tr class="separator:gae5f0432bbffcd8774fae6aae0a17ca5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39d8d2e6c1e0310c65ded1b6141d72f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#ga39d8d2e6c1e0310c65ded1b6141d72f4">RDMNET_PARSER_MAX_ACK_OVERFLOW_RESPONSES</a>&#160;&#160;&#160;5</td></tr>
-<tr class="memdesc:ga39d8d2e6c1e0310c65ded1b6141d72f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of RdmCmdListEntry structures that can be returned with a parsed ACK_OVERFLOW response (e.g.  <a href="group__rdmnetopts__core.html#ga39d8d2e6c1e0310c65ded1b6141d72f4">More...</a><br /></td></tr>
+<tr class="memdesc:ga39d8d2e6c1e0310c65ded1b6141d72f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of RdmCmdListEntry structures that can be returned with a parsed ACK_OVERFLOW response (e.g. from an RPT Notification message).  <a href="group__rdmnetopts__core.html#ga39d8d2e6c1e0310c65ded1b6141d72f4">More...</a><br /></td></tr>
 <tr class="separator:ga39d8d2e6c1e0310c65ded1b6141d72f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac78f794414f9c445454ba9bfd8ddbcd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#gac78f794414f9c445454ba9bfd8ddbcd4">RDMNET_MAX_MCAST_NETINTS</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memdesc:gac78f794414f9c445454ba9bfd8ddbcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces usable for RDMnet's multicast protocols.  <a href="group__rdmnetopts__core.html#gac78f794414f9c445454ba9bfd8ddbcd4">More...</a><br /></td></tr>

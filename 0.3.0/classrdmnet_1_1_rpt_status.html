@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -223,7 +222,7 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a83df8942f5ecb1f6290ff221894bb4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1_rpt_status.html" title="An RPT status message received over RDMnet and delivered to an RDMnet callback function.">RptStatus</a> from an instance of the C <a class="el" href="struct_rdmnet_rpt_status.html" title="An RDMnet RPT status message received by a local component.">RdmnetRptStatus</a> type. <br /></td></tr>
 <tr class="separator:a83df8942f5ecb1f6290ff221894bb4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6507230a0c2c36aa6a55cfb75ab302ed"><td class="memItemLeft" align="right" valign="top"><a id="a6507230a0c2c36aa6a55cfb75ab302ed"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a> () const noexcept</td></tr>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#a6507230a0c2c36aa6a55cfb75ab302ed">source_uid</a> () const noexcept</td></tr>
 <tr class="memdesc:a6507230a0c2c36aa6a55cfb75ab302ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UID of the RDMnet component that sent this RPT status message. <br /></td></tr>
 <tr class="separator:a6507230a0c2c36aa6a55cfb75ab302ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f103daf4882d624b48c734bdf3c5c62"><td class="memItemLeft" align="right" valign="top"><a id="a4f103daf4882d624b48c734bdf3c5c62"></a>
@@ -243,7 +242,7 @@ constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memdesc:a087aa05e2cb2bb05ae46f6f7f5ada9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
 <tr class="separator:a087aa05e2cb2bb05ae46f6f7f5ada9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ded5af40ea10f2351aeadb87ec64cb"><td class="memItemLeft" align="right" valign="top"><a id="ab3ded5af40ea10f2351aeadb87ec64cb"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a> () const</td></tr>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#ab3ded5af40ea10f2351aeadb87ec64cb">status_string</a> () const</td></tr>
 <tr class="memdesc:ab3ded5af40ea10f2351aeadb87ec64cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
 <tr class="separator:ab3ded5af40ea10f2351aeadb87ec64cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d8761bcefafdccf2a6680be9e053a2"><td class="memItemLeft" align="right" valign="top"><a id="a64d8761bcefafdccf2a6680be9e053a2"></a>
@@ -251,7 +250,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a64d8761bcefafdccf2a6680be9e053a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
 <tr class="separator:a64d8761bcefafdccf2a6680be9e053a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4ab4b133733568b9488dd986e8751a"><td class="memItemLeft" align="right" valign="top"><a id="abc4ab4b133733568b9488dd986e8751a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a> () const</td></tr>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html#abc4ab4b133733568b9488dd986e8751a">CodeToString</a> () const</td></tr>
 <tr class="memdesc:abc4ab4b133733568b9488dd986e8751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
 <tr class="separator:abc4ab4b133733568b9488dd986e8751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d5768ef7da3378ccb1616c0a5dda32"><td class="memItemLeft" align="right" valign="top"><a id="a97d5768ef7da3378ccb1616c0a5dda32"></a>

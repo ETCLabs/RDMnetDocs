@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,46 +209,93 @@ $(document).ready(function(){initNavTree('struct_rdmnet_saved_ept_data.html','')
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An EPT data message received over RDMnet and saved for later processing. </p>
 <p>This type is not used by the library API, but can come in handy if an application wants to queue or copy EPT data messages before acting on them. The data member is heap-allocated and owned; be sure to call <a class="el" href="group__rdmnet__api__common.html#gab0ef2d0dace2d4047327c3a6f1d33baf" title="Free the memory owned by a saved EPT data message.">rdmnet_free_saved_ept_data()</a> to free this data before disposing of an instance. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0676c09d97d54854aec72716a964fa3d"><td class="memItemLeft" align="right" valign="top"><a id="a0676c09d97d54854aec72716a964fa3d"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a0676c09d97d54854aec72716a964fa3d">source_cid</a></td></tr>
-<tr class="memdesc:a0676c09d97d54854aec72716a964fa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CID of the EPT client that sent this data. <br /></td></tr>
-<tr class="separator:a0676c09d97d54854aec72716a964fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6679c1808eaa156a769196638d708cce"><td class="memItemLeft" align="right" valign="top"><a id="a6679c1808eaa156a769196638d708cce"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a6679c1808eaa156a769196638d708cce">manufacturer_id</a></td></tr>
-<tr class="memdesc:a6679c1808eaa156a769196638d708cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ESTA manufacturer ID that identifies the EPT sub-protocol. <br /></td></tr>
-<tr class="separator:a6679c1808eaa156a769196638d708cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12bf8e90533152d32e50da3b678de01c"><td class="memItemLeft" align="right" valign="top"><a id="a12bf8e90533152d32e50da3b678de01c"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a12bf8e90533152d32e50da3b678de01c">protocol_id</a></td></tr>
-<tr class="memdesc:a12bf8e90533152d32e50da3b678de01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The protocol ID that identifies the EPT sub-protocol. <br /></td></tr>
-<tr class="separator:a12bf8e90533152d32e50da3b678de01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286f9e2fc721dece18a72d175909f0f3"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a286f9e2fc721dece18a72d175909f0f3">data</a></td></tr>
-<tr class="memdesc:a286f9e2fc721dece18a72d175909f0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data associated with this EPT message.  <a href="struct_rdmnet_saved_ept_data.html#a286f9e2fc721dece18a72d175909f0f3">More...</a><br /></td></tr>
-<tr class="separator:a286f9e2fc721dece18a72d175909f0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab6198e93b9825f1f558db73dabc778"><td class="memItemLeft" align="right" valign="top"><a id="abab6198e93b9825f1f558db73dabc778"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#abab6198e93b9825f1f558db73dabc778">data_len</a></td></tr>
-<tr class="memdesc:abab6198e93b9825f1f558db73dabc778"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the data associated with this EPT message. <br /></td></tr>
-<tr class="separator:abab6198e93b9825f1f558db73dabc778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e54a6f2928120797e7bcf3031cf9fd1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a1e54a6f2928120797e7bcf3031cf9fd1">source_cid</a></td></tr>
+<tr class="separator:a1e54a6f2928120797e7bcf3031cf9fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">manufacturer_id</a></td></tr>
+<tr class="separator:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44950c5a1939c04b9a9337a57828a35"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#ae44950c5a1939c04b9a9337a57828a35">protocol_id</a></td></tr>
+<tr class="separator:ae44950c5a1939c04b9a9337a57828a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579f5164b5b16e18ddcdb0296ef81799"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#a579f5164b5b16e18ddcdb0296ef81799">data</a></td></tr>
+<tr class="separator:a579f5164b5b16e18ddcdb0296ef81799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1c2e33b74df8973a7d9a19c935af80"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html#ace1c2e33b74df8973a7d9a19c935af80">data_len</a></td></tr>
+<tr class="separator:ace1c2e33b74df8973a7d9a19c935af80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a286f9e2fc721dece18a72d175909f0f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286f9e2fc721dece18a72d175909f0f3">&#9670;&nbsp;</a></span>data</h2>
+<a id="a579f5164b5b16e18ddcdb0296ef81799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579f5164b5b16e18ddcdb0296ef81799">&#9670;&nbsp;</a></span>data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t* RdmnetSavedEptData::data</td>
+          <td class="memname">const uint8_t* data</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The data associated with this EPT message. This pointer is owned and must be freed before this type goes out of scope using <a class="el" href="group__rdmnet__api__common.html#gab0ef2d0dace2d4047327c3a6f1d33baf" title="Free the memory owned by a saved EPT data message.">rdmnet_free_saved_ept_data()</a>. </p>
 
-<p>The data associated with this EPT message. </p>
-<p>This pointer is owned and must be freed before this type goes out of scope using <a class="el" href="group__rdmnet__api__common.html#gab0ef2d0dace2d4047327c3a6f1d33baf" title="Free the memory owned by a saved EPT data message.">rdmnet_free_saved_ept_data()</a>. </p>
+</div>
+</div>
+<a id="ace1c2e33b74df8973a7d9a19c935af80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1c2e33b74df8973a7d9a19c935af80">&#9670;&nbsp;</a></span>data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the data associated with this EPT message. </p>
+
+</div>
+</div>
+<a id="a4ad31fcb69f8aaca8f3c1820bb4d8594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad31fcb69f8aaca8f3c1820bb4d8594">&#9670;&nbsp;</a></span>manufacturer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t manufacturer_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ESTA manufacturer ID that identifies the EPT sub-protocol. </p>
+
+</div>
+</div>
+<a id="ae44950c5a1939c04b9a9337a57828a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44950c5a1939c04b9a9337a57828a35">&#9670;&nbsp;</a></span>protocol_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t protocol_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The protocol ID that identifies the EPT sub-protocol. </p>
+
+</div>
+</div>
+<a id="a1e54a6f2928120797e7bcf3031cf9fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e54a6f2928120797e7bcf3031cf9fd1">&#9670;&nbsp;</a></span>source_cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> source_cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The CID of the EPT client that sent this data. </p>
 
 </div>
 </div>

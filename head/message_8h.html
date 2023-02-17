@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,133 +209,90 @@ $(document).ready(function(){initNavTree('message_8h.html',''); initResizable();
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>Basic types for parsed RDMnet messages. </p>
-</div><div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;etcpal/acn_rlp.h&quot;</code><br />
-<code>#include &quot;etcpal/inet.h&quot;</code><br />
-<code>#include &quot;etcpal/uuid.h&quot;</code><br />
-<code>#include &quot;<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/message_8h.html">rdm/message.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/uid_8h.html">rdm/uid.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&quot;</code><br />
 </div>
 <p><a href="message_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet RDM command received by this component.  <a href="struct_rdmnet_rdm_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received by this component and saved for a later response.  <a href="struct_rdmnet_saved_rdm_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet RDM response received by a local component.  <a href="struct_rdmnet_rdm_response.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over RDMnet and saved for later processing.  <a href="struct_rdmnet_saved_rdm_response.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet RPT status message received by a local component.  <a href="struct_rdmnet_rpt_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status received over RDMnet and saved for later processing.  <a href="struct_rdmnet_saved_rpt_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mapping from a dynamic UID to a responder ID (RID).  <a href="struct_rdmnet_dynamic_uid_mapping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker.  <a href="struct_rdmnet_dynamic_uid_assignment_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet EPT data message received by a local component.  <a href="struct_rdmnet_ept_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT data message received over RDMnet and saved for later processing.  <a href="struct_rdmnet_saved_ept_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet EPT status message received by a local component.  <a href="struct_rdmnet_ept_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status received over RDMnet and saved for later processing.  <a href="struct_rdmnet_saved_ept_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rpt_client_entry.html">RdmnetRptClientEntry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an RPT client.  <a href="struct_rdmnet_rpt_client_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an EPT sub-protocol.  <a href="struct_rdmnet_ept_sub_protocol.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an EPT client.  <a href="struct_rdmnet_ept_client_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that represents a list of RPT Client Entries.  <a href="struct_rdmnet_rpt_client_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html">RdmnetEptClientList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that represents a list of EPT Client Entries.  <a href="struct_rdmnet_ept_client_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager.  <a href="struct_llrp_rdm_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager.  <a href="struct_llrp_saved_rdm_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_rdm_response.html">LlrpRdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received from a remote LLRP Target.  <a href="struct_llrp_rdm_response.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager.  <a href="struct_llrp_saved_rdm_response.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Other RPT messages</div></td></tr>
-<tr class="memitem:gaf21a4227cbeac8ff8b6abe923d831263"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaf21a4227cbeac8ff8b6abe923d831263">RdmnetRptStatus</a></td></tr>
-<tr class="memdesc:gaf21a4227cbeac8ff8b6abe923d831263"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet RPT status message received by a local component. <br /></td></tr>
+<tr class="memitem:gaf21a4227cbeac8ff8b6abe923d831263"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaf21a4227cbeac8ff8b6abe923d831263">RdmnetRptStatus</a></td></tr>
 <tr class="separator:gaf21a4227cbeac8ff8b6abe923d831263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf5b3915e081b09f4a757cc578f085a7c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_saved_rpt_status.html">RdmnetSavedRptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaf5b3915e081b09f4a757cc578f085a7c">RdmnetSavedRptStatus</a></td></tr>
 <tr class="memdesc:gaf5b3915e081b09f4a757cc578f085a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status received over RDMnet and saved for later processing.  <a href="group__rdmnet__api__common.html#gaf5b3915e081b09f4a757cc578f085a7c">More...</a><br /></td></tr>
 <tr class="separator:gaf5b3915e081b09f4a757cc578f085a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8fcbb823b116d65353659406f2e7a387"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga8fcbb823b116d65353659406f2e7a387">RdmnetDynamicUidMapping</a></td></tr>
-<tr class="memdesc:ga8fcbb823b116d65353659406f2e7a387"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mapping from a dynamic UID to a responder ID (RID). <br /></td></tr>
+<tr class="memitem:ga8fcbb823b116d65353659406f2e7a387"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga8fcbb823b116d65353659406f2e7a387">RdmnetDynamicUidMapping</a></td></tr>
 <tr class="separator:ga8fcbb823b116d65353659406f2e7a387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56135346a2eb4058f9087febe5aacfb5"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga56135346a2eb4058f9087febe5aacfb5">RdmnetDynamicUidAssignmentList</a></td></tr>
-<tr class="memdesc:ga56135346a2eb4058f9087febe5aacfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. <br /></td></tr>
+<tr class="memitem:ga56135346a2eb4058f9087febe5aacfb5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga56135346a2eb4058f9087febe5aacfb5">RdmnetDynamicUidAssignmentList</a></td></tr>
 <tr class="separator:ga56135346a2eb4058f9087febe5aacfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">EPT messages</div></td></tr>
-<tr class="memitem:gae36dbfc8cfae7f69a83492d792c524ba"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae36dbfc8cfae7f69a83492d792c524ba">RdmnetEptData</a></td></tr>
-<tr class="memdesc:gae36dbfc8cfae7f69a83492d792c524ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet EPT data message received by a local component. <br /></td></tr>
+<tr class="memitem:gae36dbfc8cfae7f69a83492d792c524ba"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae36dbfc8cfae7f69a83492d792c524ba">RdmnetEptData</a></td></tr>
 <tr class="separator:gae36dbfc8cfae7f69a83492d792c524ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga07d1193208fd35103c8a7326ff49ec93"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_saved_ept_data.html">RdmnetSavedEptData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga07d1193208fd35103c8a7326ff49ec93">RdmnetSavedEptData</a></td></tr>
 <tr class="memdesc:ga07d1193208fd35103c8a7326ff49ec93"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT data message received over RDMnet and saved for later processing.  <a href="group__rdmnet__api__common.html#ga07d1193208fd35103c8a7326ff49ec93">More...</a><br /></td></tr>
 <tr class="separator:ga07d1193208fd35103c8a7326ff49ec93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29178fd935bf981b694a20012042ca8a"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga29178fd935bf981b694a20012042ca8a">RdmnetEptStatus</a></td></tr>
-<tr class="memdesc:ga29178fd935bf981b694a20012042ca8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet EPT status message received by a local component. <br /></td></tr>
+<tr class="memitem:ga29178fd935bf981b694a20012042ca8a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga29178fd935bf981b694a20012042ca8a">RdmnetEptStatus</a></td></tr>
 <tr class="separator:ga29178fd935bf981b694a20012042ca8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46065918939772f9cd40f464d80c71ec"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_saved_ept_status.html">RdmnetSavedEptStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga46065918939772f9cd40f464d80c71ec">RdmnetSavedEptStatus</a></td></tr>
 <tr class="memdesc:ga46065918939772f9cd40f464d80c71ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status received over RDMnet and saved for later processing.  <a href="group__rdmnet__api__common.html#ga46065918939772f9cd40f464d80c71ec">More...</a><br /></td></tr>
 <tr class="separator:ga46065918939772f9cd40f464d80c71ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">LLRP messages</div></td></tr>
-<tr class="memitem:ga6cc9fbac4053f85c5f0091f8ca74e0e2"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga6cc9fbac4053f85c5f0091f8ca74e0e2">LlrpRdmCommand</a></td></tr>
-<tr class="memdesc:ga6cc9fbac4053f85c5f0091f8ca74e0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager. <br /></td></tr>
+<tr class="memitem:ga6cc9fbac4053f85c5f0091f8ca74e0e2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga6cc9fbac4053f85c5f0091f8ca74e0e2">LlrpRdmCommand</a></td></tr>
 <tr class="separator:ga6cc9fbac4053f85c5f0091f8ca74e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf3ad332af67c229dad354e0e162f707"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gacf3ad332af67c229dad354e0e162f707">LlrpSavedRdmCommand</a></td></tr>
-<tr class="memdesc:gacf3ad332af67c229dad354e0e162f707"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager. <br /></td></tr>
+<tr class="memitem:gacf3ad332af67c229dad354e0e162f707"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gacf3ad332af67c229dad354e0e162f707">LlrpSavedRdmCommand</a></td></tr>
 <tr class="separator:gacf3ad332af67c229dad354e0e162f707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f199913657b23c6f14fd076868d81ac"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_llrp_rdm_response.html">LlrpRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga9f199913657b23c6f14fd076868d81ac">LlrpRdmResponse</a></td></tr>
-<tr class="memdesc:ga9f199913657b23c6f14fd076868d81ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received from a remote LLRP Target. <br /></td></tr>
+<tr class="memitem:ga9f199913657b23c6f14fd076868d81ac"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_llrp_rdm_response.html">LlrpRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga9f199913657b23c6f14fd076868d81ac">LlrpRdmResponse</a></td></tr>
 <tr class="separator:ga9f199913657b23c6f14fd076868d81ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec696b9c475894f6b57791f39fe53003"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaec696b9c475894f6b57791f39fe53003">LlrpSavedRdmResponse</a></td></tr>
-<tr class="memdesc:gaec696b9c475894f6b57791f39fe53003"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received from a remote LLRP Manager. <br /></td></tr>
+<tr class="memitem:gaec696b9c475894f6b57791f39fe53003"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_llrp_saved_rdm_response.html">LlrpSavedRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaec696b9c475894f6b57791f39fe53003">LlrpSavedRdmResponse</a></td></tr>
 <tr class="separator:gaec696b9c475894f6b57791f39fe53003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -396,62 +353,39 @@ Functions</h2></td></tr>
 <tr class="separator:ga3f9e20a7230b89ba6a9c99bafb3ff60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">RDM commands and responses</h2></td></tr>
-<tr class="memitem:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaacb0f33f5d6610d7ce65b7debccfccd0">RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER</a>(cmd_ptr)&#160;&#160;&#160;((cmd_ptr) &amp;&amp; ((cmd_ptr)-&gt;dest_endpoint == E133_NULL_ENDPOINT))</td></tr>
-<tr class="memdesc:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="struct_rdmnet_rdm_command.html" title="An RDMnet RDM command received by this component.">RdmnetRdmCommand</a> is addressed to the default responder. <br /></td></tr>
+<tr class="memitem:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaacb0f33f5d6610d7ce65b7debccfccd0">RDMNET_COMMAND_IS_TO_DEFAULT_RESPONDER</a>(cmd_ptr)&#160;&#160;&#160;((cmd_ptr) &amp;&amp; ((cmd_ptr)-&gt;dest_endpoint == E133_NULL_ENDPOINT))</td></tr>
 <tr class="separator:gaacb0f33f5d6610d7ce65b7debccfccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae3d2636f051536b2224118cdac2b5770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770">RDMNET_RESP_ORIGINAL_COMMAND_INCLUDED</a>(resp)&#160;&#160;&#160;((resp) &amp;&amp; ((resp)-&gt;seq_num == 0))</td></tr>
-<tr class="memdesc:gae3d2636f051536b2224118cdac2b5770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the original command is included in an <a class="el" href="struct_rdmnet_rdm_response.html" title="An RDMnet RDM response received by a local component.">RdmnetRdmResponse</a> or <a class="el" href="struct_rdmnet_saved_rdm_response.html" title="An RDM response received over RDMnet and saved for later processing.">RdmnetSavedRdmResponse</a>.  <a href="group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770">More...</a><br /></td></tr>
+<tr class="memdesc:gae3d2636f051536b2224118cdac2b5770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the original command is included in an <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> or <a class="el" href="struct_rdmnet_saved_rdm_response.html" title="An RDM response received over RDMnet and saved for later processing.">RdmnetSavedRdmResponse</a>.  <a href="group__rdmnet__api__common.html#gae3d2636f051536b2224118cdac2b5770">More...</a><br /></td></tr>
 <tr class="separator:gae3d2636f051536b2224118cdac2b5770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6cff88004f43f9110c3576454b7a638a"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga6cff88004f43f9110c3576454b7a638a">RdmnetRdmCommand</a></td></tr>
-<tr class="memdesc:ga6cff88004f43f9110c3576454b7a638a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet RDM command received by this component. <br /></td></tr>
+<tr class="memitem:ga6cff88004f43f9110c3576454b7a638a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga6cff88004f43f9110c3576454b7a638a">RdmnetRdmCommand</a></td></tr>
 <tr class="separator:ga6cff88004f43f9110c3576454b7a638a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga244a4a225b7450000341ce3a1334b08a"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga244a4a225b7450000341ce3a1334b08a">RdmnetSavedRdmCommand</a></td></tr>
-<tr class="memdesc:ga244a4a225b7450000341ce3a1334b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received by this component and saved for a later response. <br /></td></tr>
+<tr class="memitem:ga244a4a225b7450000341ce3a1334b08a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga244a4a225b7450000341ce3a1334b08a">RdmnetSavedRdmCommand</a></td></tr>
 <tr class="separator:ga244a4a225b7450000341ce3a1334b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5fc69a03c8bd1524d2d111545a97d17"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa5fc69a03c8bd1524d2d111545a97d17">RdmnetRdmResponse</a></td></tr>
-<tr class="memdesc:gaa5fc69a03c8bd1524d2d111545a97d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet RDM response received by a local component. <br /></td></tr>
+<tr class="memitem:gaa5fc69a03c8bd1524d2d111545a97d17"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa5fc69a03c8bd1524d2d111545a97d17">RdmnetRdmResponse</a></td></tr>
 <tr class="separator:gaa5fc69a03c8bd1524d2d111545a97d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9bd44fb94a6332fab339fdc46271deb5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_saved_rdm_response.html">RdmnetSavedRdmResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga9bd44fb94a6332fab339fdc46271deb5">RdmnetSavedRdmResponse</a></td></tr>
 <tr class="memdesc:ga9bd44fb94a6332fab339fdc46271deb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over RDMnet and saved for later processing.  <a href="group__rdmnet__api__common.html#ga9bd44fb94a6332fab339fdc46271deb5">More...</a><br /></td></tr>
 <tr class="separator:ga9bd44fb94a6332fab339fdc46271deb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Client list messages</h2></td></tr>
-<tr class="memitem:ga8997a1dc8fda4cfd54cc352551231a8d"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga8997a1dc8fda4cfd54cc352551231a8d">EPT_PROTOCOL_STRING_PADDED_LENGTH</a>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:ga8997a1dc8fda4cfd54cc352551231a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of an EPT sub-protocol string, including the null terminator. <br /></td></tr>
+<tr class="memitem:ga8997a1dc8fda4cfd54cc352551231a8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga8997a1dc8fda4cfd54cc352551231a8d">EPT_PROTOCOL_STRING_PADDED_LENGTH</a>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:ga8997a1dc8fda4cfd54cc352551231a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa736f925394f04b673b5070a6b4203b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa736f925394f04b673b5070a6b4203b1">rpt_client_type_t</a> { <br />
-&#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ggaa736f925394f04b673b5070a6b4203b1a65e0433aec9c2db7d0a6dc7bacec25a7">kRPTClientTypeDevice</a> = E133_RPT_CLIENT_TYPE_DEVICE
-, <br />
-&#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ggaa736f925394f04b673b5070a6b4203b1aca6917213fec028673e5af79e094defa">kRPTClientTypeController</a> = E133_RPT_CLIENT_TYPE_CONTROLLER
-, <br />
-&#160;&#160;<a class="el" href="group__rdmnet__api__common.html#ggaa736f925394f04b673b5070a6b4203b1a979e09996088b4eadd49b344ce145fa6">kRPTClientTypeUnknown</a> = 0xffffffff
-<br />
+<tr class="memitem:gaa736f925394f04b673b5070a6b4203b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaa736f925394f04b673b5070a6b4203b1">rpt_client_type_t</a> { <a class="el" href="group__rdmnet__api__common.html#ggaa736f925394f04b673b5070a6b4203b1a65e0433aec9c2db7d0a6dc7bacec25a7">kRPTClientTypeDevice</a> = E133_RPT_CLIENT_TYPE_DEVICE
+, <a class="el" href="group__rdmnet__api__common.html#ggaa736f925394f04b673b5070a6b4203b1aca6917213fec028673e5af79e094defa">kRPTClientTypeController</a> = E133_RPT_CLIENT_TYPE_CONTROLLER
+, <a class="el" href="group__rdmnet__api__common.html#ggaa736f925394f04b673b5070a6b4203b1a979e09996088b4eadd49b344ce145fa6">kRPTClientTypeUnknown</a> = 0xffffffff
  }</td></tr>
-<tr class="memdesc:gaa736f925394f04b673b5070a6b4203b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT client type.  <a href="group__rdmnet__api__common.html#gaa736f925394f04b673b5070a6b4203b1">More...</a><br /></td></tr>
 <tr class="separator:gaa736f925394f04b673b5070a6b4203b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafebb53b325390c19fcccda330544ae49"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_rpt_client_entry.html">RdmnetRptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gafebb53b325390c19fcccda330544ae49">RdmnetRptClientEntry</a></td></tr>
-<tr class="memdesc:gafebb53b325390c19fcccda330544ae49"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an RPT client. <br /></td></tr>
+<tr class="memitem:gafebb53b325390c19fcccda330544ae49"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_rpt_client_entry.html">RdmnetRptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gafebb53b325390c19fcccda330544ae49">RdmnetRptClientEntry</a></td></tr>
 <tr class="separator:gafebb53b325390c19fcccda330544ae49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8db505bd0b0a65567b0975a563439706"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#ga8db505bd0b0a65567b0975a563439706">RdmnetEptSubProtocol</a></td></tr>
 <tr class="memdesc:ga8db505bd0b0a65567b0975a563439706"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an EPT sub-protocol.  <a href="group__rdmnet__api__common.html#ga8db505bd0b0a65567b0975a563439706">More...</a><br /></td></tr>
 <tr class="separator:ga8db505bd0b0a65567b0975a563439706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3a8ffb49eb6456f9cef49d2b047be3a"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae3a8ffb49eb6456f9cef49d2b047be3a">RdmnetEptClientEntry</a></td></tr>
-<tr class="memdesc:gae3a8ffb49eb6456f9cef49d2b047be3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an EPT client. <br /></td></tr>
+<tr class="memitem:gae3a8ffb49eb6456f9cef49d2b047be3a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gae3a8ffb49eb6456f9cef49d2b047be3a">RdmnetEptClientEntry</a></td></tr>
 <tr class="separator:gae3a8ffb49eb6456f9cef49d2b047be3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5fd2b53f7b14d2ded15be076f5b8f8b"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaf5fd2b53f7b14d2ded15be076f5b8f8b">RdmnetRptClientList</a></td></tr>
-<tr class="memdesc:gaf5fd2b53f7b14d2ded15be076f5b8f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that represents a list of RPT Client Entries. <br /></td></tr>
+<tr class="memitem:gaf5fd2b53f7b14d2ded15be076f5b8f8b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaf5fd2b53f7b14d2ded15be076f5b8f8b">RdmnetRptClientList</a></td></tr>
 <tr class="separator:gaf5fd2b53f7b14d2ded15be076f5b8f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaead0571e191b40969b27a809b9617696"><td class="memItemLeft" align="right" valign="top">
-typedef struct <a class="el" href="struct_rdmnet_ept_client_list.html">RdmnetEptClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaead0571e191b40969b27a809b9617696">RdmnetEptClientList</a></td></tr>
-<tr class="memdesc:gaead0571e191b40969b27a809b9617696"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that represents a list of EPT Client Entries. <br /></td></tr>
+<tr class="memitem:gaead0571e191b40969b27a809b9617696"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_client_list.html">RdmnetEptClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__api__common.html#gaead0571e191b40969b27a809b9617696">RdmnetEptClientList</a></td></tr>
 <tr class="separator:gaead0571e191b40969b27a809b9617696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

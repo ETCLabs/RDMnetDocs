@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -215,58 +215,76 @@ $(document).ready(function(){initNavTree('struct_rdmnet_destination_addr.html','
 <a class="el" href="group__rdmnet__api__common.html#ga72d760619ede4c36a44fc4a0fd6913e5" title="Initialize an RdmnetDestinationAddr with the address of a sub-responder on a component.">RDMNET_ADDR_TO_SUB_RESPONDER()</a> </dd>
 <dd>
 <a class="el" href="group__rdmnet__api__common.html#gae9f53dd59d67caf9d97adfd8778191ce" title="Initialize an RdmnetDestinationAddr with the address of a subdevice on a sub-responder.">RDMNET_ADDR_TO_SUB_RESPONDER_SUBDEV()</a> </dd></dl>
-</div>
-<p><code>#include &lt;<a class="el" href="client_8h_source.html">rdmnet/client.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8e6df84af732e8c8e08a278da3a41716"><td class="memItemLeft" align="right" valign="top"><a id="a8e6df84af732e8c8e08a278da3a41716"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#a8e6df84af732e8c8e08a278da3a41716">rdmnet_uid</a></td></tr>
-<tr class="memdesc:a8e6df84af732e8c8e08a278da3a41716"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RDMnet component to which this command is addressed. <br /></td></tr>
-<tr class="separator:a8e6df84af732e8c8e08a278da3a41716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af994e8e7dc2374e6eafbf8c29123e7e6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#af994e8e7dc2374e6eafbf8c29123e7e6">endpoint</a></td></tr>
-<tr class="memdesc:af994e8e7dc2374e6eafbf8c29123e7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endpoint on the RDMnet component to which this message is addressed.  <a href="struct_rdmnet_destination_addr.html#af994e8e7dc2374e6eafbf8c29123e7e6">More...</a><br /></td></tr>
-<tr class="separator:af994e8e7dc2374e6eafbf8c29123e7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dad6b36ac6a598b384253050b36e59e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">rdm_uid</a></td></tr>
-<tr class="memdesc:a6dad6b36ac6a598b384253050b36e59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RDM responder to which this message is addressed.  <a href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">More...</a><br /></td></tr>
-<tr class="separator:a6dad6b36ac6a598b384253050b36e59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7996349ea8e4be23b48e4ff38ef16e"><td class="memItemLeft" align="right" valign="top"><a id="a7e7996349ea8e4be23b48e4ff38ef16e"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#a7e7996349ea8e4be23b48e4ff38ef16e">subdevice</a></td></tr>
-<tr class="memdesc:a7e7996349ea8e4be23b48e4ff38ef16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sub-device to which this command is addressed, or 0 for the root device. <br /></td></tr>
-<tr class="separator:a7e7996349ea8e4be23b48e4ff38ef16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20080c565ac846192826c63c3219567"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#ad20080c565ac846192826c63c3219567">rdmnet_uid</a></td></tr>
+<tr class="separator:ad20080c565ac846192826c63c3219567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09294ef650c9488fa9cc94e0704e91b5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#a09294ef650c9488fa9cc94e0704e91b5">endpoint</a></td></tr>
+<tr class="separator:a09294ef650c9488fa9cc94e0704e91b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac130815a3619e163e3de51dc55a9c129"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#ac130815a3619e163e3de51dc55a9c129">rdm_uid</a></td></tr>
+<tr class="separator:ac130815a3619e163e3de51dc55a9c129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08af6f95b61e2695caf7b11ebb8e0953"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_destination_addr.html#a08af6f95b61e2695caf7b11ebb8e0953">subdevice</a></td></tr>
+<tr class="separator:a08af6f95b61e2695caf7b11ebb8e0953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="af994e8e7dc2374e6eafbf8c29123e7e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af994e8e7dc2374e6eafbf8c29123e7e6">&#9670;&nbsp;</a></span>endpoint</h2>
+<a id="a09294ef650c9488fa9cc94e0704e91b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09294ef650c9488fa9cc94e0704e91b5">&#9670;&nbsp;</a></span>endpoint</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t RdmnetDestinationAddr::endpoint</td>
+          <td class="memname">uint16_t endpoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The endpoint on the RDMnet component to which this message is addressed. </p>
-<p>If addressing the default (root) responder of an RDMnet device, set this to E133_NULL_ENDPOINT. </p>
+<p>The endpoint on the RDMnet component to which this message is addressed. If addressing the default (root) responder of an RDMnet device, set this to E133_NULL_ENDPOINT. </p>
 
 </div>
 </div>
-<a id="a6dad6b36ac6a598b384253050b36e59e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dad6b36ac6a598b384253050b36e59e">&#9670;&nbsp;</a></span>rdm_uid</h2>
+<a id="ac130815a3619e163e3de51dc55a9c129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac130815a3619e163e3de51dc55a9c129">&#9670;&nbsp;</a></span>rdm_uid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> RdmnetDestinationAddr::rdm_uid</td>
+          <td class="memname">RdmUid rdm_uid</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The UID of the RDM responder to which this message is addressed. If addressing the default (root) responder of an RDMnet device, this should be the same as rdmnet_uid. </p>
 
-<p>The UID of the RDM responder to which this message is addressed. </p>
-<p>If addressing the default (root) responder of an RDMnet device, this should be the same as rdmnet_uid. </p>
+</div>
+</div>
+<a id="ad20080c565ac846192826c63c3219567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20080c565ac846192826c63c3219567">&#9670;&nbsp;</a></span>rdmnet_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid rdmnet_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The UID of the RDMnet component to which this command is addressed. </p>
+
+</div>
+</div>
+<a id="a08af6f95b61e2695caf7b11ebb8e0953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08af6f95b61e2695caf7b11ebb8e0953">&#9670;&nbsp;</a></span>subdevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t subdevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The sub-device to which this command is addressed, or 0 for the root device. </p>
 
 </div>
 </div>

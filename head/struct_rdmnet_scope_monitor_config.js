@@ -1,6 +1,6 @@
 var struct_rdmnet_scope_monitor_config =
 [
-    [ "callbacks", "struct_rdmnet_scope_monitor_config.html#aee5f4f7db4785e3fc34e399ebc82bf5c", null ],
-    [ "domain", "struct_rdmnet_scope_monitor_config.html#a45fe31f0dd02ab70d7b82f4519958c5b", null ],
-    [ "scope", "struct_rdmnet_scope_monitor_config.html#a315ab62d1de9a05a86a1257877c64b72", null ]
+    [ "callbacks", "struct_rdmnet_scope_monitor_config.html#ad73a9eff5287bc33ff2519ef0dfb88a2", null ],
+    [ "domain", "struct_rdmnet_scope_monitor_config.html#a52e31162553211bc239fae1a464d7751", null ],
+    [ "scope", "struct_rdmnet_scope_monitor_config.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab", null ]
 ];

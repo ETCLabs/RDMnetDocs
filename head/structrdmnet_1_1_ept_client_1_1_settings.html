@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RDMnet: rdmnet::EptClient::Settings Struct Reference</title>
+<title>RDMnet: EptClient::Settings Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -204,48 +204,60 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_ept_client_1_1_settin
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::EptClient::Settings Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__ept__client__cpp.html">EPT Client API</a></div></div>  </div>
+<div class="title">EptClient::Settings Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__ept__client__cpp.html">EPT Client API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of configuration settings that an EPT client needs to initialize. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="cpp_2ept__client_8h_source.html">rdmnet/cpp/ept_client.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abd6a888a265c283eb34c50903ce6d8ac"><td class="memItemLeft" align="right" valign="top"><a id="abd6a888a265c283eb34c50903ce6d8ac"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#abd6a888a265c283eb34c50903ce6d8ac">Settings</a> ()=default</td></tr>
-<tr class="memdesc:abd6a888a265c283eb34c50903ce6d8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid data structure by default. <br /></td></tr>
-<tr class="separator:abd6a888a265c283eb34c50903ce6d8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae06aa7f6241b1adf3d29a087f7e7c10"><td class="memItemLeft" align="right" valign="top"><a id="aae06aa7f6241b1adf3d29a087f7e7c10"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#aae06aa7f6241b1adf3d29a087f7e7c10">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, const std::vector&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt; &amp;new_protocols)</td></tr>
-<tr class="memdesc:aae06aa7f6241b1adf3d29a087f7e7c10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an EPT client <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html" title="A set of configuration settings that an EPT client needs to initialize.">Settings</a> instance by passing the required members explicitly. <br /></td></tr>
-<tr class="separator:aae06aa7f6241b1adf3d29a087f7e7c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a556e79457e424d92a5e08fd9fc457296"><td class="memItemLeft" align="right" valign="top"><a id="a556e79457e424d92a5e08fd9fc457296"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a556e79457e424d92a5e08fd9fc457296">IsValid</a> () const</td></tr>
-<tr class="memdesc:a556e79457e424d92a5e08fd9fc457296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an EPT client <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html" title="A set of configuration settings that an EPT client needs to initialize.">Settings</a> instance contains valid data for RDMnet operation. <br /></td></tr>
-<tr class="separator:a556e79457e424d92a5e08fd9fc457296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408c38e2ece7d6a8dda04484f006e8bb"><td class="memItemLeft" align="right" valign="top"><a id="a408c38e2ece7d6a8dda04484f006e8bb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a408c38e2ece7d6a8dda04484f006e8bb">Settings</a> ()=default</td></tr>
+<tr class="memdesc:a408c38e2ece7d6a8dda04484f006e8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid data structure by default. <br /></td></tr>
+<tr class="separator:a408c38e2ece7d6a8dda04484f006e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929dfde5a4d590055c11c33855293395"><td class="memItemLeft" align="right" valign="top"><a id="a929dfde5a4d590055c11c33855293395"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a929dfde5a4d590055c11c33855293395">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt; &amp;new_protocols)</td></tr>
+<tr class="memdesc:a929dfde5a4d590055c11c33855293395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an EPT client <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html" title="A set of configuration settings that an EPT client needs to initialize.">Settings</a> instance by passing the required members explicitly. <br /></td></tr>
+<tr class="separator:a929dfde5a4d590055c11c33855293395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memItemLeft" align="right" valign="top"><a id="ac532c4b500b1a85ea22217f2c65a70ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#ac532c4b500b1a85ea22217f2c65a70ed">IsValid</a> () const</td></tr>
+<tr class="memdesc:ac532c4b500b1a85ea22217f2c65a70ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an EPT client <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html" title="A set of configuration settings that an EPT client needs to initialize.">Settings</a> instance contains valid data for RDMnet operation. <br /></td></tr>
+<tr class="separator:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a6671ba5fc1e7952086e23f1b19fd20be"><td class="memItemLeft" align="right" valign="top"><a id="a6671ba5fc1e7952086e23f1b19fd20be"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a6671ba5fc1e7952086e23f1b19fd20be">cid</a></td></tr>
-<tr class="memdesc:a6671ba5fc1e7952086e23f1b19fd20be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The EPT client's CID. <br /></td></tr>
-<tr class="separator:a6671ba5fc1e7952086e23f1b19fd20be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa065a48f6576f62fd0789505a434cc48"><td class="memItemLeft" align="right" valign="top"><a id="aa065a48f6576f62fd0789505a434cc48"></a>
-std::vector&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#aa065a48f6576f62fd0789505a434cc48">protocols</a></td></tr>
-<tr class="memdesc:aa065a48f6576f62fd0789505a434cc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of EPT sub-protocols that this EPT client supports. <br /></td></tr>
-<tr class="separator:aa065a48f6576f62fd0789505a434cc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7116b48fd3653ea290db4f49e5a01470"><td class="memItemLeft" align="right" valign="top"><a id="a7116b48fd3653ea290db4f49e5a01470"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a7116b48fd3653ea290db4f49e5a01470">search_domain</a></td></tr>
-<tr class="memdesc:a7116b48fd3653ea290db4f49e5a01470"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The EPT client's search domain for discovering brokers. <br /></td></tr>
-<tr class="separator:a7116b48fd3653ea290db4f49e5a01470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab085d13fd2a143962ce8d2c67a1e7059"><td class="memItemLeft" align="right" valign="top"><a id="ab085d13fd2a143962ce8d2c67a1e7059"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#ab085d13fd2a143962ce8d2c67a1e7059">response_buf</a> {nullptr}</td></tr>
-<tr class="memdesc:ab085d13fd2a143962ce8d2c67a1e7059"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A data buffer to be used to respond synchronously to EPT data noficiations. <br /></td></tr>
-<tr class="separator:ab085d13fd2a143962ce8d2c67a1e7059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memItemLeft" align="right" valign="top"><a id="ab74b3ddda3c95279107d0059dd7ee9f3"></a>
+<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3">cid</a></td></tr>
+<tr class="memdesc:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The EPT client's CID. <br /></td></tr>
+<tr class="separator:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed38b6d6d163918a6c406f65085b18b"><td class="memItemLeft" align="right" valign="top"><a id="a7ed38b6d6d163918a6c406f65085b18b"></a>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a7ed38b6d6d163918a6c406f65085b18b">protocols</a></td></tr>
+<tr class="memdesc:a7ed38b6d6d163918a6c406f65085b18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of EPT sub-protocols that this EPT client supports. <br /></td></tr>
+<tr class="separator:a7ed38b6d6d163918a6c406f65085b18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c6a609a291e3c94f7094891e6d65e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a86c6a609a291e3c94f7094891e6d65e6">search_domain</a></td></tr>
+<tr class="separator:a86c6a609a291e3c94f7094891e6d65e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6b83acc05eef81905d6b87e28131ce"><td class="memItemLeft" align="right" valign="top"><a id="a6c6b83acc05eef81905d6b87e28131ce"></a>
+const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a6c6b83acc05eef81905d6b87e28131ce">response_buf</a> {nullptr}</td></tr>
+<tr class="memdesc:a6c6b83acc05eef81905d6b87e28131ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) A data buffer to be used to respond synchronously to EPT data noficiations. <br /></td></tr>
+<tr class="separator:a6c6b83acc05eef81905d6b87e28131ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a86c6a609a291e3c94f7094891e6d65e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c6a609a291e3c94f7094891e6d65e6">&#9670;&nbsp;</a></span>search_domain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> search_domain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The EPT client's search domain for discovering brokers. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2ept__client_8h_source.html">ept_client.h</a></li>
 </ul>

@@ -41,9 +41,9 @@ var namespacerdmnet =
     [ "RptClientList", "classrdmnet_1_1_rpt_client_list.html", "classrdmnet_1_1_rpt_client_list" ],
     [ "RptStatus", "classrdmnet_1_1_rpt_status.html", "classrdmnet_1_1_rpt_status" ],
     [ "SavedRptStatus", "classrdmnet_1_1_saved_rpt_status.html", "classrdmnet_1_1_saved_rpt_status" ],
-    [ "ScopeHandle", "group__rdmnet__cpp__common.html#gaa772f132fb4c3e567e6a4610eb7d8220", null ],
+    [ "ScopeHandle", "group__rdmnet__cpp__common.html#ga949cd3b533bd716f81d44c623cb18896", null ],
     [ "Deinit", "group__rdmnet__cpp__common.html#ga630a9b2c8c84ea45bc9c2aa4672055fb", null ],
     [ "Init", "group__rdmnet__cpp__common.html#ga33143f39de2d03ca97b963db7df4dbf1", null ],
     [ "Init", "group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539", null ],
-    [ "kNullEndpoint", "group__rdmnet__cpp__common.html#gab66ff85b4e9f9a9221f3c31ff62d0c65", null ]
+    [ "kNullEndpoint", "group__rdmnet__cpp__common.html#gac4ab6502f8edc4f19b0886f658d3f7b9", null ]
 ];

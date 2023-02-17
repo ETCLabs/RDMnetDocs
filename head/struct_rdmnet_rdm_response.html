@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,63 +208,42 @@ $(document).ready(function(){initNavTree('struct_rdmnet_rdm_response.html',''); 
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An RDMnet RDM response received by a local component. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a4492119a63785bbc3314e862419d1285"><td class="memItemLeft" align="right" valign="top"><a id="a4492119a63785bbc3314e862419d1285"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a4492119a63785bbc3314e862419d1285">rdmnet_source_uid</a></td></tr>
-<tr class="memdesc:a4492119a63785bbc3314e862419d1285"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RDMnet component that sent this response. <br /></td></tr>
-<tr class="separator:a4492119a63785bbc3314e862419d1285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57f388c215190fb011fb031cd2a29be6"><td class="memItemLeft" align="right" valign="top"><a id="a57f388c215190fb011fb031cd2a29be6"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a57f388c215190fb011fb031cd2a29be6">source_endpoint</a></td></tr>
-<tr class="memdesc:a57f388c215190fb011fb031cd2a29be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endpoint from which the response was sent. <br /></td></tr>
-<tr class="separator:a57f388c215190fb011fb031cd2a29be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f256fb154ce9fd0835cc2f143efd9e"><td class="memItemLeft" align="right" valign="top"><a id="af3f256fb154ce9fd0835cc2f143efd9e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#af3f256fb154ce9fd0835cc2f143efd9e">seq_num</a></td></tr>
-<tr class="memdesc:af3f256fb154ce9fd0835cc2f143efd9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sequence number of the response, for matching with a corresponding command. <br /></td></tr>
-<tr class="separator:af3f256fb154ce9fd0835cc2f143efd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6927eaec013a0e5d6ec7230f46618308"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a6927eaec013a0e5d6ec7230f46618308">is_response_to_me</a></td></tr>
-<tr class="memdesc:a6927eaec013a0e5d6ec7230f46618308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the response was sent in response to a command previously sent by this controller.  <a href="struct_rdmnet_rdm_response.html#a6927eaec013a0e5d6ec7230f46618308">More...</a><br /></td></tr>
-<tr class="separator:a6927eaec013a0e5d6ec7230f46618308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="memItemLeft" align="right" valign="top"><a id="a0ee041c9ff3e5b0504315ee83e7328c3"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html">RdmCommandHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a0ee041c9ff3e5b0504315ee83e7328c3">original_cmd_header</a></td></tr>
-<tr class="memdesc:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header of the original command associated with this response; valid if seq_num != 0. <br /></td></tr>
-<tr class="separator:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3898faf486e1348c2144b81e17f4deec"><td class="memItemLeft" align="right" valign="top"><a id="a3898faf486e1348c2144b81e17f4deec"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a3898faf486e1348c2144b81e17f4deec">original_cmd_data</a></td></tr>
-<tr class="memdesc:a3898faf486e1348c2144b81e17f4deec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any parameter data associated with the original RDM command; valid if seq_num != 0. <br /></td></tr>
-<tr class="separator:a3898faf486e1348c2144b81e17f4deec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cdb32da028efb87cae284839600157e"><td class="memItemLeft" align="right" valign="top"><a id="a2cdb32da028efb87cae284839600157e"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a2cdb32da028efb87cae284839600157e">original_cmd_data_len</a></td></tr>
-<tr class="memdesc:a2cdb32da028efb87cae284839600157e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the parameter data associated with the original RDM command; valid if seq_num != 0. <br /></td></tr>
-<tr class="separator:a2cdb32da028efb87cae284839600157e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7166b29ccdcf9789259f036c6f9c1c96"><td class="memItemLeft" align="right" valign="top"><a id="a7166b29ccdcf9789259f036c6f9c1c96"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_response_header.html">RdmResponseHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a7166b29ccdcf9789259f036c6f9c1c96">rdm_header</a></td></tr>
-<tr class="memdesc:a7166b29ccdcf9789259f036c6f9c1c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header information from the encapsulated RDM response. <br /></td></tr>
-<tr class="separator:a7166b29ccdcf9789259f036c6f9c1c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757c3836c4ba3194c16a7fdee725478b"><td class="memItemLeft" align="right" valign="top"><a id="a757c3836c4ba3194c16a7fdee725478b"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a757c3836c4ba3194c16a7fdee725478b">rdm_data</a></td></tr>
-<tr class="memdesc:a757c3836c4ba3194c16a7fdee725478b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any parameter data associated with the RDM response. <br /></td></tr>
-<tr class="separator:a757c3836c4ba3194c16a7fdee725478b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a585bd57aa4b45b518408829a9038f"><td class="memItemLeft" align="right" valign="top"><a id="a40a585bd57aa4b45b518408829a9038f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a40a585bd57aa4b45b518408829a9038f">rdm_data_len</a></td></tr>
-<tr class="memdesc:a40a585bd57aa4b45b518408829a9038f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the parameter data associated with the RDM response. <br /></td></tr>
-<tr class="separator:a40a585bd57aa4b45b518408829a9038f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b23c9c9b5ee45b4be800413eb01a6f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a7b23c9c9b5ee45b4be800413eb01a6f8">more_coming</a></td></tr>
-<tr class="memdesc:a7b23c9c9b5ee45b4be800413eb01a6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains partial RDM data.  <a href="struct_rdmnet_rdm_response.html#a7b23c9c9b5ee45b4be800413eb01a6f8">More...</a><br /></td></tr>
-<tr class="separator:a7b23c9c9b5ee45b4be800413eb01a6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab83acb4fdb2727edff16d91a7df5860"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#aab83acb4fdb2727edff16d91a7df5860">rdmnet_source_uid</a></td></tr>
+<tr class="separator:aab83acb4fdb2727edff16d91a7df5860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce8c40ba849ffa506cf6a8b16ca5d7f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f">source_endpoint</a></td></tr>
+<tr class="separator:a4ce8c40ba849ffa506cf6a8b16ca5d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90405e49b793dcdfe95b8151b498a763"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a90405e49b793dcdfe95b8151b498a763">seq_num</a></td></tr>
+<tr class="separator:a90405e49b793dcdfe95b8151b498a763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccd24ff374a39ca8a8b78c631803d60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#acccd24ff374a39ca8a8b78c631803d60">is_response_to_me</a></td></tr>
+<tr class="memdesc:acccd24ff374a39ca8a8b78c631803d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the response was sent in response to a command previously sent by this controller.  <a href="struct_rdmnet_rdm_response.html#acccd24ff374a39ca8a8b78c631803d60">More...</a><br /></td></tr>
+<tr class="separator:acccd24ff374a39ca8a8b78c631803d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7"><td class="memItemLeft" align="right" valign="top">RdmCommandHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7">original_cmd_header</a></td></tr>
+<tr class="separator:a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95e3be87225f42c40dc594db0fabc2b"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#ac95e3be87225f42c40dc594db0fabc2b">original_cmd_data</a></td></tr>
+<tr class="separator:ac95e3be87225f42c40dc594db0fabc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb821114cf0dda217405dc156c015a9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a4cb821114cf0dda217405dc156c015a9">original_cmd_data_len</a></td></tr>
+<tr class="separator:a4cb821114cf0dda217405dc156c015a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8617009d72714a9a5b6a509d520bc81f"><td class="memItemLeft" align="right" valign="top">RdmResponseHeader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a8617009d72714a9a5b6a509d520bc81f">rdm_header</a></td></tr>
+<tr class="separator:a8617009d72714a9a5b6a509d520bc81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f507182f83446298f3772477adabddb"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a2f507182f83446298f3772477adabddb">rdm_data</a></td></tr>
+<tr class="separator:a2f507182f83446298f3772477adabddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f39c37f64aba9cf21336ba98a66c18f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a5f39c37f64aba9cf21336ba98a66c18f">rdm_data_len</a></td></tr>
+<tr class="separator:a5f39c37f64aba9cf21336ba98a66c18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
+<tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a6927eaec013a0e5d6ec7230f46618308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6927eaec013a0e5d6ec7230f46618308">&#9670;&nbsp;</a></span>is_response_to_me</h2>
+<a id="acccd24ff374a39ca8a8b78c631803d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccd24ff374a39ca8a8b78c631803d60">&#9670;&nbsp;</a></span>is_response_to_me</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RdmnetRdmResponse::is_response_to_me</td>
+          <td class="memname">bool is_response_to_me</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -274,20 +253,153 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="a7b23c9c9b5ee45b4be800413eb01a6f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b23c9c9b5ee45b4be800413eb01a6f8">&#9670;&nbsp;</a></span>more_coming</h2>
+<a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RdmnetRdmResponse::more_coming</td>
+          <td class="memname">bool more_coming</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This message contains partial RDM data. This can be set when the library runs out of static memory in which to store RDM response data and must deliver a partial data buffer before continuing (this only applies to the data buffer within the RDM response). The application should store the partial data but should not act on it until another <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> is received with more_coming set to false. </p>
 
-<p>This message contains partial RDM data. </p>
-<p>This can be set when the library runs out of static memory in which to store RDM response data and must deliver a partial data buffer before continuing (this only applies to the data buffer within the RDM response). The application should store the partial data but should not act on it until another <a class="el" href="struct_rdmnet_rdm_response.html" title="An RDMnet RDM response received by a local component.">RdmnetRdmResponse</a> is received with more_coming set to false. </p>
+</div>
+</div>
+<a id="ac95e3be87225f42c40dc594db0fabc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95e3be87225f42c40dc594db0fabc2b">&#9670;&nbsp;</a></span>original_cmd_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* original_cmd_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Any parameter data associated with the original RDM command; valid if seq_num != 0. </p>
+
+</div>
+</div>
+<a id="a4cb821114cf0dda217405dc156c015a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb821114cf0dda217405dc156c015a9">&#9670;&nbsp;</a></span>original_cmd_data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t original_cmd_data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the parameter data associated with the original RDM command; valid if seq_num != 0. </p>
+
+</div>
+</div>
+<a id="a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfd4f1eb2bf4ddb2aa17b7bdf055ee7">&#9670;&nbsp;</a></span>original_cmd_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmCommandHeader original_cmd_header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The header of the original command associated with this response; valid if seq_num != 0. </p>
+
+</div>
+</div>
+<a id="a2f507182f83446298f3772477adabddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f507182f83446298f3772477adabddb">&#9670;&nbsp;</a></span>rdm_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* rdm_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Any parameter data associated with the RDM response. </p>
+
+</div>
+</div>
+<a id="a5f39c37f64aba9cf21336ba98a66c18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f39c37f64aba9cf21336ba98a66c18f">&#9670;&nbsp;</a></span>rdm_data_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rdm_data_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the parameter data associated with the RDM response. </p>
+
+</div>
+</div>
+<a id="a8617009d72714a9a5b6a509d520bc81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8617009d72714a9a5b6a509d520bc81f">&#9670;&nbsp;</a></span>rdm_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmResponseHeader rdm_header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The header information from the encapsulated RDM response. </p>
+
+</div>
+</div>
+<a id="aab83acb4fdb2727edff16d91a7df5860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab83acb4fdb2727edff16d91a7df5860">&#9670;&nbsp;</a></span>rdmnet_source_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid rdmnet_source_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The UID of the RDMnet component that sent this response. </p>
+
+</div>
+</div>
+<a id="a90405e49b793dcdfe95b8151b498a763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90405e49b793dcdfe95b8151b498a763">&#9670;&nbsp;</a></span>seq_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t seq_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The sequence number of the response, for matching with a corresponding command. </p>
+
+</div>
+</div>
+<a id="a4ce8c40ba849ffa506cf6a8b16ca5d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce8c40ba849ffa506cf6a8b16ca5d7f">&#9670;&nbsp;</a></span>source_endpoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t source_endpoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The endpoint from which the response was sent. </p>
 
 </div>
 </div>

@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -210,10 +209,12 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_physical_endpoint_conf
 <div class="textblock"><p>Configuration information for a physical endpoint on a device. </p>
 <p>Can be implicitly converted from a simple endpoint number to create an endpoint configuration with no initial responders, e.g.: </p><div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a> endpoint_config = 1;</div>
 <div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a></div><div class="ttdoc">Configuration information for a physical endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:251</div></div>
-</div><!-- fragment --><p>Or use the constructors to create an endpoint with responders: </p><div class="fragment"><div class="line">std::vector&lt;rdm::Uid&gt; physical_responders;</div>
-<div class="line">physical_responders.push_back(uid_1);</div>
-<div class="line">physical_responders.push_back(uid_2);</div>
+</div><!-- fragment --><p>Or use the constructors to create an endpoint with responders: </p><div class="fragment"><div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;rdm::Uid&gt;</a> physical_responders;</div>
+<div class="line">physical_responders.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(uid_1);</div>
+<div class="line">physical_responders.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(uid_2);</div>
 <div class="line"><a class="code" href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a> endpoint_config(2, physical_responders);</div>
+<div class="ttc" id="apush_back_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p>See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information about endpoints. </p>
 </div>
 <p><code>#include &lt;<a class="el" href="cpp_2device_8h_source.html">rdmnet/cpp/device.h</a>&gt;</code></p>
@@ -223,7 +224,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab91b9577c703195ac23884d5569bb9fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_physical_endpoint_config.html#ab91b9577c703195ac23884d5569bb9fa">PhysicalEndpointConfig</a> (uint16_t id, const <a class="el" href="classrdmnet_1_1_physical_endpoint_responder.html">PhysicalEndpointResponder</a> *responders=nullptr, size_t num_responders=0)</td></tr>
 <tr class="memdesc:ab91b9577c703195ac23884d5569bb9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a physical endpoint configuration with an optional set of RDM responders.  <a href="classrdmnet_1_1_physical_endpoint_config.html#ab91b9577c703195ac23884d5569bb9fa">More...</a><br /></td></tr>
 <tr class="separator:ab91b9577c703195ac23884d5569bb9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18902f4771423fdd932bc42ba417f6c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_physical_endpoint_config.html#a18902f4771423fdd932bc42ba417f6c7">PhysicalEndpointConfig</a> (uint16_t id, const std::vector&lt; <a class="el" href="classrdmnet_1_1_physical_endpoint_responder.html">PhysicalEndpointResponder</a> &gt; &amp;responders)</td></tr>
+<tr class="memitem:a18902f4771423fdd932bc42ba417f6c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_physical_endpoint_config.html#a18902f4771423fdd932bc42ba417f6c7">PhysicalEndpointConfig</a> (uint16_t id, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="classrdmnet_1_1_physical_endpoint_responder.html">PhysicalEndpointResponder</a> &gt; &amp;responders)</td></tr>
 <tr class="memdesc:a18902f4771423fdd932bc42ba417f6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a physical endpoint configuration with a set of RDM responders.  <a href="classrdmnet_1_1_physical_endpoint_config.html#a18902f4771423fdd932bc42ba417f6c7">More...</a><br /></td></tr>
 <tr class="separator:a18902f4771423fdd932bc42ba417f6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6defbbaf9dfa5f326372e9fef8e139f0"><td class="memItemLeft" align="right" valign="top"><a id="a6defbbaf9dfa5f326372e9fef8e139f0"></a>
@@ -302,7 +303,7 @@ const <a class="el" href="struct_rdmnet_physical_endpoint_config.html">RdmnetPhy
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classrdmnet_1_1_physical_endpoint_responder.html">PhysicalEndpointResponder</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="classrdmnet_1_1_physical_endpoint_responder.html">PhysicalEndpointResponder</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>responders</em>&#160;</td>
         </tr>
         <tr>

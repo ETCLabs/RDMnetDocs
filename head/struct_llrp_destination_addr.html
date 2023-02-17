@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,24 +209,62 @@ $(document).ready(function(){initNavTree('struct_llrp_destination_addr.html','')
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A destination address for an RDM command in LLRP. </p>
 <p>See <a class="el" href="llrp.html">Low-Level Recovery Protocol (LLRP)</a> for more information. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="llrp_8h_source.html">rdmnet/llrp.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae278a51f1e043076640f187c9a9ce88c"><td class="memItemLeft" align="right" valign="top"><a id="ae278a51f1e043076640f187c9a9ce88c"></a>
-<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_destination_addr.html#ae278a51f1e043076640f187c9a9ce88c">dest_cid</a></td></tr>
-<tr class="memdesc:ae278a51f1e043076640f187c9a9ce88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CID of the LLRP Target to which this command is addressed. <br /></td></tr>
-<tr class="separator:ae278a51f1e043076640f187c9a9ce88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5376b761b4d63561725f2e44ac8ef363"><td class="memItemLeft" align="right" valign="top"><a id="a5376b761b4d63561725f2e44ac8ef363"></a>
-<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_destination_addr.html#a5376b761b4d63561725f2e44ac8ef363">dest_uid</a></td></tr>
-<tr class="memdesc:a5376b761b4d63561725f2e44ac8ef363"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the LLRP Target to which this command is addressed. <br /></td></tr>
-<tr class="separator:a5376b761b4d63561725f2e44ac8ef363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171ea239f97a7af54496f10c88855c48"><td class="memItemLeft" align="right" valign="top"><a id="a171ea239f97a7af54496f10c88855c48"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_destination_addr.html#a171ea239f97a7af54496f10c88855c48">subdevice</a></td></tr>
-<tr class="memdesc:a171ea239f97a7af54496f10c88855c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sub-device to which this command is addressed, or 0 for the root device. <br /></td></tr>
-<tr class="separator:a171ea239f97a7af54496f10c88855c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3733778b9ab688a586734aafd57671ed"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_destination_addr.html#a3733778b9ab688a586734aafd57671ed">dest_cid</a></td></tr>
+<tr class="separator:a3733778b9ab688a586734aafd57671ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa338a4490fb2e2c37a819966f75cc3e9"><td class="memItemLeft" align="right" valign="top">RdmUid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_destination_addr.html#aa338a4490fb2e2c37a819966f75cc3e9">dest_uid</a></td></tr>
+<tr class="separator:aa338a4490fb2e2c37a819966f75cc3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08af6f95b61e2695caf7b11ebb8e0953"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_destination_addr.html#a08af6f95b61e2695caf7b11ebb8e0953">subdevice</a></td></tr>
+<tr class="separator:a08af6f95b61e2695caf7b11ebb8e0953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a3733778b9ab688a586734aafd57671ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3733778b9ab688a586734aafd57671ed">&#9670;&nbsp;</a></span>dest_cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> dest_cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The CID of the LLRP Target to which this command is addressed. </p>
+
+</div>
+</div>
+<a id="aa338a4490fb2e2c37a819966f75cc3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa338a4490fb2e2c37a819966f75cc3e9">&#9670;&nbsp;</a></span>dest_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RdmUid dest_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The UID of the LLRP Target to which this command is addressed. </p>
+
+</div>
+</div>
+<a id="a08af6f95b61e2695caf7b11ebb8e0953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08af6f95b61e2695caf7b11ebb8e0953">&#9670;&nbsp;</a></span>subdevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t subdevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The sub-device to which this command is addressed, or 0 for the root device. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="llrp_8h_source.html">llrp.h</a></li>
 </ul>

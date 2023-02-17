@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valuetype_2983',['ValueType',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#aecaeabaa9da616ae42bb20787878260d',1,'etcpal::Expected']]]
+  ['scopehandle_6030',['ScopeHandle',['../group__rdmnet__cpp__common.html#ga949cd3b533bd716f81d44c623cb18896',1,'rdmnet']]]
 ];

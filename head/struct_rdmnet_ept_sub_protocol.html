@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,24 +209,62 @@ $(document).ready(function(){initNavTree('struct_rdmnet_ept_sub_protocol.html','
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A description of an EPT sub-protocol. </p>
 <p>EPT clients can implement multiple protocols, each of which is identified by a two-part identifier including an ESTA manufacturer ID and a protocol ID. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac6e49c213c8a7ab24fe8bae4bdfc7f1d"><td class="memItemLeft" align="right" valign="top"><a id="ac6e49c213c8a7ab24fe8bae4bdfc7f1d"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html#ac6e49c213c8a7ab24fe8bae4bdfc7f1d">manufacturer_id</a></td></tr>
-<tr class="memdesc:ac6e49c213c8a7ab24fe8bae4bdfc7f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ESTA manufacturer ID under which this protocol is namespaced. <br /></td></tr>
-<tr class="separator:ac6e49c213c8a7ab24fe8bae4bdfc7f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f370cadc5c27278ae79f9edbc2ec2b"><td class="memItemLeft" align="right" valign="top"><a id="a15f370cadc5c27278ae79f9edbc2ec2b"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html#a15f370cadc5c27278ae79f9edbc2ec2b">protocol_id</a></td></tr>
-<tr class="memdesc:a15f370cadc5c27278ae79f9edbc2ec2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for this protocol. <br /></td></tr>
-<tr class="separator:a15f370cadc5c27278ae79f9edbc2ec2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a773bb3d3b22ea01a6bbcdb0bd210fd58"><td class="memItemLeft" align="right" valign="top"><a id="a773bb3d3b22ea01a6bbcdb0bd210fd58"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html#a773bb3d3b22ea01a6bbcdb0bd210fd58">protocol_string</a></td></tr>
-<tr class="memdesc:a773bb3d3b22ea01a6bbcdb0bd210fd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive string for the protocol. <br /></td></tr>
-<tr class="separator:a773bb3d3b22ea01a6bbcdb0bd210fd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">manufacturer_id</a></td></tr>
+<tr class="separator:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44950c5a1939c04b9a9337a57828a35"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html#ae44950c5a1939c04b9a9337a57828a35">protocol_id</a></td></tr>
+<tr class="separator:ae44950c5a1939c04b9a9337a57828a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baa605d142ce6b73a04a01398662d67"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_sub_protocol.html#a4baa605d142ce6b73a04a01398662d67">protocol_string</a></td></tr>
+<tr class="separator:a4baa605d142ce6b73a04a01398662d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a4ad31fcb69f8aaca8f3c1820bb4d8594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad31fcb69f8aaca8f3c1820bb4d8594">&#9670;&nbsp;</a></span>manufacturer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t manufacturer_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ESTA manufacturer ID under which this protocol is namespaced. </p>
+
+</div>
+</div>
+<a id="ae44950c5a1939c04b9a9337a57828a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44950c5a1939c04b9a9337a57828a35">&#9670;&nbsp;</a></span>protocol_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t protocol_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The identifier for this protocol. </p>
+
+</div>
+</div>
+<a id="a4baa605d142ce6b73a04a01398662d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baa605d142ce6b73a04a01398662d67">&#9670;&nbsp;</a></span>protocol_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* protocol_string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A descriptive string for the protocol. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="message_8h_source.html">message.h</a></li>
 </ul>

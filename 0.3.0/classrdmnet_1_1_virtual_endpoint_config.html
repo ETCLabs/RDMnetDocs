@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -210,26 +209,28 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_virtual_endpoint_confi
 <div class="textblock"><p>Configuration information for a virtual endpoint on a device. </p>
 <p>Can be implicitly converted from a simple endpoint number to create an endpoint configuration with no initial responders, e.g.: </p><div class="fragment"><div class="line"><a class="code" href="classrdmnet_1_1_virtual_endpoint_config.html">rdmnet::VirtualEndpointConfig</a> endpoint_config = 1;</div>
 <div class="ttc" id="aclassrdmnet_1_1_virtual_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_virtual_endpoint_config.html">rdmnet::VirtualEndpointConfig</a></div><div class="ttdoc">Configuration information for a virtual endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:71</div></div>
-</div><!-- fragment --><p>Or use the constructors to create an endpoint with responders: </p><div class="fragment"><div class="line">std::vector&lt;etcpal::Uuid&gt; dynamic_responders;</div>
-<div class="line">dynamic_responders.push_back(responder_id_1);</div>
-<div class="line">dynamic_responders.push_back(responder_id_2);</div>
+</div><!-- fragment --><p>Or use the constructors to create an endpoint with responders: </p><div class="fragment"><div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;etcpal::Uuid&gt;</a> dynamic_responders;</div>
+<div class="line">dynamic_responders.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(responder_id_1);</div>
+<div class="line">dynamic_responders.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(responder_id_2);</div>
 <div class="line"><a class="code" href="classrdmnet_1_1_virtual_endpoint_config.html">rdmnet::VirtualEndpointConfig</a> endpoint_config(2, dynamic_responders);</div>
+<div class="ttc" id="apush_back_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector/push_back.html">std::vector::push_back</a></div><div class="ttdeci">T push_back(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p>See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information about endpoints. </p>
 </div>
 <p><code>#include &lt;<a class="el" href="cpp_2device_8h_source.html">rdmnet/cpp/device.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3782269d48a334fab4027c4fa0c315ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#a3782269d48a334fab4027c4fa0c315ad">VirtualEndpointConfig</a> (uint16_t id, const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *dynamic_responders=nullptr, size_t num_dynamic_responders=0)</td></tr>
+<tr class="memitem:a3782269d48a334fab4027c4fa0c315ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#a3782269d48a334fab4027c4fa0c315ad">VirtualEndpointConfig</a> (uint16_t id, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *dynamic_responders=nullptr, size_t num_dynamic_responders=0)</td></tr>
 <tr class="memdesc:a3782269d48a334fab4027c4fa0c315ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual endpoint configuration with an optional set of virtual responders with dynamic UIDs.  <a href="classrdmnet_1_1_virtual_endpoint_config.html#a3782269d48a334fab4027c4fa0c315ad">More...</a><br /></td></tr>
 <tr class="separator:a3782269d48a334fab4027c4fa0c315ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40bd7d58009aa763a5a8b8df565ac676"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#a40bd7d58009aa763a5a8b8df565ac676">VirtualEndpointConfig</a> (uint16_t id, const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;dynamic_responders)</td></tr>
+<tr class="memitem:a40bd7d58009aa763a5a8b8df565ac676"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#a40bd7d58009aa763a5a8b8df565ac676">VirtualEndpointConfig</a> (uint16_t id, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;dynamic_responders)</td></tr>
 <tr class="memdesc:a40bd7d58009aa763a5a8b8df565ac676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual endpoint configuration with a set of virtual responders with dynamic UIDs.  <a href="classrdmnet_1_1_virtual_endpoint_config.html#a40bd7d58009aa763a5a8b8df565ac676">More...</a><br /></td></tr>
 <tr class="separator:a40bd7d58009aa763a5a8b8df565ac676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10829bea24b2d318fd1ce85a6a570161"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#a10829bea24b2d318fd1ce85a6a570161">VirtualEndpointConfig</a> (uint16_t id, const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> *static_responders, size_t num_static_responders, const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *dynamic_responders=nullptr, size_t num_dynamic_responders=0)</td></tr>
+<tr class="memitem:a10829bea24b2d318fd1ce85a6a570161"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#a10829bea24b2d318fd1ce85a6a570161">VirtualEndpointConfig</a> (uint16_t id, const rdm::Uid *static_responders, size_t num_static_responders, const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *dynamic_responders=nullptr, size_t num_dynamic_responders=0)</td></tr>
 <tr class="memdesc:a10829bea24b2d318fd1ce85a6a570161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual endpoint configuration with a set of virtual responders.  <a href="classrdmnet_1_1_virtual_endpoint_config.html#a10829bea24b2d318fd1ce85a6a570161">More...</a><br /></td></tr>
 <tr class="separator:a10829bea24b2d318fd1ce85a6a570161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd22b010bc81f28a7dcd0e2a808020c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#addd22b010bc81f28a7dcd0e2a808020c">VirtualEndpointConfig</a> (uint16_t id, const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &gt; &amp;static_responders, const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;dynamic_responders=std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt;{})</td></tr>
+<tr class="memitem:addd22b010bc81f28a7dcd0e2a808020c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_virtual_endpoint_config.html#addd22b010bc81f28a7dcd0e2a808020c">VirtualEndpointConfig</a> (uint16_t id, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; rdm::Uid &gt; &amp;static_responders, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;dynamic_responders=<a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt;{})</td></tr>
 <tr class="memdesc:addd22b010bc81f28a7dcd0e2a808020c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual endpoint configuration with a set of virtual responders.  <a href="classrdmnet_1_1_virtual_endpoint_config.html#addd22b010bc81f28a7dcd0e2a808020c">More...</a><br /></td></tr>
 <tr class="separator:addd22b010bc81f28a7dcd0e2a808020c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f44f6d4acf21d309564a53befc0f656"><td class="memItemLeft" align="right" valign="top"><a id="a1f44f6d4acf21d309564a53befc0f656"></a>
@@ -256,7 +257,7 @@ const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *&#160;</td>
           <td class="paramname"><em>dynamic_responders</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
@@ -308,7 +309,7 @@ const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>dynamic_responders</em>&#160;</td>
         </tr>
         <tr>
@@ -353,7 +354,7 @@ const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> *&#160;</td>
+          <td class="paramtype">const rdm::Uid *&#160;</td>
           <td class="paramname"><em>static_responders</em>, </td>
         </tr>
         <tr>
@@ -365,7 +366,7 @@ const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> *&#160;</td>
           <td class="paramname"><em>dynamic_responders</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
@@ -419,14 +420,14 @@ const <a class="el" href="struct_rdmnet_virtual_endpoint_config.html">RdmnetVirt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; rdm::Uid &gt; &amp;&#160;</td>
           <td class="paramname"><em>static_responders</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dynamic_responders</em> = <code>std::vector&lt;<a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&gt;{}</code>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dynamic_responders</em> = <code><a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&gt;{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

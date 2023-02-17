@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,38 +208,59 @@ $(document).ready(function(){initNavTree('struct_rdmnet_scope_monitor_config.htm
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of information that defines the parameters of an RDMnet scope to be monitored using DNS-SD. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="discovery_8h_source.html">rdmnet/discovery.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a315ab62d1de9a05a86a1257877c64b72"><td class="memItemLeft" align="right" valign="top"><a id="a315ab62d1de9a05a86a1257877c64b72"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_config.html#a315ab62d1de9a05a86a1257877c64b72">scope</a></td></tr>
-<tr class="memdesc:a315ab62d1de9a05a86a1257877c64b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scope string of the scope to be monitored. <br /></td></tr>
-<tr class="separator:a315ab62d1de9a05a86a1257877c64b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5f4f7db4785e3fc34e399ebc82bf5c"><td class="memItemLeft" align="right" valign="top"><a id="aee5f4f7db4785e3fc34e399ebc82bf5c"></a>
-<a class="el" href="struct_rdmnet_scope_monitor_callbacks.html">RdmnetScopeMonitorCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_config.html#aee5f4f7db4785e3fc34e399ebc82bf5c">callbacks</a></td></tr>
-<tr class="memdesc:aee5f4f7db4785e3fc34e399ebc82bf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks to receive notifications about the monitored scope. <br /></td></tr>
-<tr class="separator:aee5f4f7db4785e3fc34e399ebc82bf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45fe31f0dd02ab70d7b82f4519958c5b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_config.html#a45fe31f0dd02ab70d7b82f4519958c5b">domain</a></td></tr>
-<tr class="memdesc:a45fe31f0dd02ab70d7b82f4519958c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(optional) The search domain to use for DNS discovery.  <a href="struct_rdmnet_scope_monitor_config.html#a45fe31f0dd02ab70d7b82f4519958c5b">More...</a><br /></td></tr>
-<tr class="separator:a45fe31f0dd02ab70d7b82f4519958c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_config.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab">scope</a></td></tr>
+<tr class="separator:aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73a9eff5287bc33ff2519ef0dfb88a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_scope_monitor_callbacks.html">RdmnetScopeMonitorCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_config.html#ad73a9eff5287bc33ff2519ef0dfb88a2">callbacks</a></td></tr>
+<tr class="separator:ad73a9eff5287bc33ff2519ef0dfb88a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e31162553211bc239fae1a464d7751"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_config.html#a52e31162553211bc239fae1a464d7751">domain</a></td></tr>
+<tr class="separator:a52e31162553211bc239fae1a464d7751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a45fe31f0dd02ab70d7b82f4519958c5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45fe31f0dd02ab70d7b82f4519958c5b">&#9670;&nbsp;</a></span>domain</h2>
+<a id="ad73a9eff5287bc33ff2519ef0dfb88a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73a9eff5287bc33ff2519ef0dfb88a2">&#9670;&nbsp;</a></span>callbacks</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* RdmnetScopeMonitorConfig::domain</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_scope_monitor_callbacks.html">RdmnetScopeMonitorCallbacks</a> callbacks</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A set of callbacks to receive notifications about the monitored scope. </p>
 
-<p>(optional) The search domain to use for DNS discovery. </p>
-<p>NULL to use the default search domain(s). </p>
+</div>
+</div>
+<a id="a52e31162553211bc239fae1a464d7751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e31162553211bc239fae1a464d7751">&#9670;&nbsp;</a></span>domain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* domain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(optional) The search domain to use for DNS discovery. NULL to use the default search domain(s). </p>
+
+</div>
+</div>
+<a id="aaa3f7f51e16b6fa08e2bc1e0d7eb6bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab">&#9670;&nbsp;</a></span>scope</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* scope</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scope string of the scope to be monitored. </p>
 
 </div>
 </div>

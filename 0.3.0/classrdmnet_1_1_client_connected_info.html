@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -231,11 +230,11 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a110b3c2916dfe108d151b1bd358b9c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_client_connected_info.html" title="Information about a successful connection to a broker delivered to an RDMnet callback function.">ClientConnectedInfo</a> which references an instance of the C <a class="el" href="struct_rdmnet_client_connected_info.html" title="Information provided by the library about a successful RDMnet client connection.">RdmnetClientConnectedInfo</a> type. <br /></td></tr>
 <tr class="separator:a110b3c2916dfe108d151b1bd358b9c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30653fa66bd5b267c54cf81a8c7eb3d"><td class="memItemLeft" align="right" valign="top"><a id="af30653fa66bd5b267c54cf81a8c7eb3d"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">broker_addr</a> () const noexcept</td></tr>
+constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">broker_addr</a> () const noexcept</td></tr>
 <tr class="memdesc:af30653fa66bd5b267c54cf81a8c7eb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IP address and port of the remote broker to which we have connected. <br /></td></tr>
 <tr class="separator:af30653fa66bd5b267c54cf81a8c7eb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751d070cb4c1f89d838955298270b6cf"><td class="memItemLeft" align="right" valign="top"><a id="a751d070cb4c1f89d838955298270b6cf"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a> () const</td></tr>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a> () const</td></tr>
 <tr class="memdesc:a751d070cb4c1f89d838955298270b6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty string) <br /></td></tr>
 <tr class="separator:a751d070cb4c1f89d838955298270b6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c33598a50d33d89a23b58d3ce4399b"><td class="memItemLeft" align="right" valign="top"><a id="ae9c33598a50d33d89a23b58d3ce4399b"></a>
@@ -243,11 +242,11 @@ constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memdesc:ae9c33598a50d33d89a23b58d3ce4399b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the DNS name of the broker (if it was discovered via DNS-SD; otherwise this will be an empty string) <br /></td></tr>
 <tr class="separator:ae9c33598a50d33d89a23b58d3ce4399b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d098c69879069fcdcb1de7fcf34b69"><td class="memItemLeft" align="right" valign="top"><a id="a85d098c69879069fcdcb1de7fcf34b69"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#a85d098c69879069fcdcb1de7fcf34b69">broker_cid</a> () const noexcept</td></tr>
+constexpr <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#a85d098c69879069fcdcb1de7fcf34b69">broker_cid</a> () const noexcept</td></tr>
 <tr class="memdesc:a85d098c69879069fcdcb1de7fcf34b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the connected broker. <br /></td></tr>
 <tr class="separator:a85d098c69879069fcdcb1de7fcf34b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f543df72c656579ea9ee8d82896929"><td class="memItemLeft" align="right" valign="top"><a id="a31f543df72c656579ea9ee8d82896929"></a>
-constexpr <a class="elRef" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#a31f543df72c656579ea9ee8d82896929">broker_uid</a> () const noexcept</td></tr>
+constexpr rdm::Uid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_client_connected_info.html#a31f543df72c656579ea9ee8d82896929">broker_uid</a> () const noexcept</td></tr>
 <tr class="memdesc:a31f543df72c656579ea9ee8d82896929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RDM UID of the connected broker. <br /></td></tr>
 <tr class="separator:a31f543df72c656579ea9ee8d82896929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c2357d5d4bfd07d36c18f02854d38c"><td class="memItemLeft" align="right" valign="top"><a id="a51c2357d5d4bfd07d36c18f02854d38c"></a>

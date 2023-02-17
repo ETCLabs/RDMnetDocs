@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -230,7 +229,7 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;etcpal/inet.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;etcpal/uuid.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/uid_8h.html">rdm/uid.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;rdm/uid.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">rdmnet/common.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a>;</div>
@@ -247,15 +246,15 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_rdmnet_source_addr.html">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_source_addr.html">RdmnetSourceAddr</a></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="struct_rdmnet_source_addr.html#a25cf54210ee6c1c58867d08bb3e7609c">   68</a></span>&#160;  uint16_t <a class="code" href="struct_rdmnet_source_addr.html#a25cf54210ee6c1c58867d08bb3e7609c">source_endpoint</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct_rdmnet_source_addr.html#a648494989df71a6e20f4b8d06770530f">   70</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> <a class="code" href="struct_rdmnet_source_addr.html#a648494989df71a6e20f4b8d06770530f">rdm_source_uid</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct_rdmnet_source_addr.html#a648494989df71a6e20f4b8d06770530f">   70</a></span>&#160;  RdmUid <a class="code" href="struct_rdmnet_source_addr.html#a648494989df71a6e20f4b8d06770530f">rdm_source_uid</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct_rdmnet_source_addr.html#aa834bbfeccaf6cad3cdf02aaf3bab1fd">   72</a></span>&#160;  uint16_t <a class="code" href="struct_rdmnet_source_addr.html#aa834bbfeccaf6cad3cdf02aaf3bab1fd">subdevice</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#gacedea0d14c252b421201adea89e205ad">   73</a></span>&#160;} <a class="code" href="group__rdmnet__api__common.html#gacedea0d14c252b421201adea89e205ad">RdmnetSourceAddr</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html">   83</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html#a8e6df84af732e8c8e08a278da3a41716">   86</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> <a class="code" href="struct_rdmnet_destination_addr.html#a8e6df84af732e8c8e08a278da3a41716">rdmnet_uid</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html#a8e6df84af732e8c8e08a278da3a41716">   86</a></span>&#160;  RdmUid <a class="code" href="struct_rdmnet_destination_addr.html#a8e6df84af732e8c8e08a278da3a41716">rdmnet_uid</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html#af994e8e7dc2374e6eafbf8c29123e7e6">   91</a></span>&#160;  uint16_t <a class="code" href="struct_rdmnet_destination_addr.html#af994e8e7dc2374e6eafbf8c29123e7e6">endpoint</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">   96</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> <a class="code" href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">rdm_uid</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">   96</a></span>&#160;  RdmUid <a class="code" href="struct_rdmnet_destination_addr.html#a6dad6b36ac6a598b384253050b36e59e">rdm_uid</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="struct_rdmnet_destination_addr.html#a7e7996349ea8e4be23b48e4ff38ef16e">   98</a></span>&#160;  uint16_t <a class="code" href="struct_rdmnet_destination_addr.html#a7e7996349ea8e4be23b48e4ff38ef16e">subdevice</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#ga9069edff255fc09542433b6349712bd9">   99</a></span>&#160;} <a class="code" href="group__rdmnet__api__common.html#ga9069edff255fc09542433b6349712bd9">RdmnetDestinationAddr</a>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
@@ -281,16 +280,16 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html">  150</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">  153</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> <a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">  153</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> <a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">  155</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">broker_name</a>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a64d3dcbac0d8bd8a99be7f83ef3b3231">  157</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> <a class="code" href="struct_rdmnet_client_connected_info.html#a64d3dcbac0d8bd8a99be7f83ef3b3231">broker_cid</a>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a5a5d0a7ff16ab42092e8ad3006c7d89f">  159</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> <a class="code" href="struct_rdmnet_client_connected_info.html#a5a5d0a7ff16ab42092e8ad3006c7d89f">broker_uid</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a64d3dcbac0d8bd8a99be7f83ef3b3231">  157</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> <a class="code" href="struct_rdmnet_client_connected_info.html#a64d3dcbac0d8bd8a99be7f83ef3b3231">broker_cid</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connected_info.html#a5a5d0a7ff16ab42092e8ad3006c7d89f">  159</a></span>&#160;  RdmUid <a class="code" href="struct_rdmnet_client_connected_info.html#a5a5d0a7ff16ab42092e8ad3006c7d89f">broker_uid</a>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#ga592e9abeb4d3cf0f20298a9e0f6e914c">  160</a></span>&#160;} <a class="code" href="group__rdmnet__api__common.html#ga592e9abeb4d3cf0f20298a9e0f6e914c">RdmnetClientConnectedInfo</a>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connect_failed_info.html">  163</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connect_failed_info.html#a938bd74d32cc8d474500e0539656a331">  166</a></span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga496e65ee0af4670795917a7ba2436fd5">rdmnet_connect_fail_event_t</a> <a class="code" href="struct_rdmnet_client_connect_failed_info.html#a938bd74d32cc8d474500e0539656a331">event</a>;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connect_failed_info.html#abafda4d6fd88de7d8bf0ea05cfc27518">  171</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="struct_rdmnet_client_connect_failed_info.html#abafda4d6fd88de7d8bf0ea05cfc27518">socket_err</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connect_failed_info.html#abafda4d6fd88de7d8bf0ea05cfc27518">  171</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="struct_rdmnet_client_connect_failed_info.html#abafda4d6fd88de7d8bf0ea05cfc27518">socket_err</a>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connect_failed_info.html#a17fa3dd1caa79e9181159556f36c35f3">  176</a></span>&#160;  <a class="code" href="group__rdmnet__api__common.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a> <a class="code" href="struct_rdmnet_client_connect_failed_info.html#a17fa3dd1caa79e9181159556f36c35f3">rdmnet_reason</a>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_connect_failed_info.html#a883d69b48ad780a607ecbb03d56bf30c">  188</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="struct_rdmnet_client_connect_failed_info.html#a883d69b48ad780a607ecbb03d56bf30c">will_retry</a>;</div>
 <div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#ga0b53c4b791d15af8191e47f854aa7a46">  189</a></span>&#160;} <a class="code" href="group__rdmnet__api__common.html#ga0b53c4b791d15af8191e47f854aa7a46">RdmnetClientConnectFailedInfo</a>;</div>
@@ -298,7 +297,7 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_disconnected_info.html">  195</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
 <div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_disconnected_info.html#aa3dcf7b3313619204322747781425a00">  198</a></span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a> <a class="code" href="struct_rdmnet_client_disconnected_info.html#aa3dcf7b3313619204322747781425a00">event</a>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_disconnected_info.html#a5b24cee45d829ad748eab8053c211921">  203</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="struct_rdmnet_client_disconnected_info.html#a5b24cee45d829ad748eab8053c211921">socket_err</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_disconnected_info.html#a5b24cee45d829ad748eab8053c211921">  203</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="code" href="struct_rdmnet_client_disconnected_info.html#a5b24cee45d829ad748eab8053c211921">socket_err</a>;</div>
 <div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_disconnected_info.html#ace2ae21ff6cca177faf9b0298d683a70">  208</a></span>&#160;  <a class="code" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> <a class="code" href="struct_rdmnet_client_disconnected_info.html#ace2ae21ff6cca177faf9b0298d683a70">rdmnet_reason</a>;</div>
 <div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="struct_rdmnet_client_disconnected_info.html#af867bbd283bede387ec0370b8da9e0c7">  216</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="struct_rdmnet_client_disconnected_info.html#af867bbd283bede387ec0370b8da9e0c7">will_retry</a>;</div>
 <div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#gabe1f2bd72cff94f3c16cdaf15bf59cab">  217</a></span>&#160;} <a class="code" href="group__rdmnet__api__common.html#gabe1f2bd72cff94f3c16cdaf15bf59cab">RdmnetClientDisconnectedInfo</a>;</div>
@@ -306,7 +305,7 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="struct_rdmnet_scope_config.html">  223</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
 <div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="struct_rdmnet_scope_config.html#a53bf7560015709c0a2ceaf93e094c95b">  229</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_rdmnet_scope_config.html#a53bf7560015709c0a2ceaf93e094c95b">scope</a>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a">  235</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> <a class="code" href="struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a">static_broker_addr</a>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a">  235</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> <a class="code" href="struct_rdmnet_scope_config.html#a22321adf396e6dccedba36de29f3bb8a">static_broker_addr</a>;</div>
 <div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#ga3a071739780f6fb93ea7840a5dabcbb5">  236</a></span>&#160;} <a class="code" href="group__rdmnet__api__common.html#ga3a071739780f6fb93ea7840a5dabcbb5">RdmnetScopeConfig</a>;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="group__rdmnet__api__common.html#gac8a93b214f8dc87d944bc1d6e3e216f4">  247</a></span>&#160;<span class="preprocessor">#define RDMNET_SCOPE_CONFIG_DEFAULT_INIT              \</span></div>
@@ -344,7 +343,7 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RDMNET_CLIENT_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">Functions and definitions common to all RDMnet API modules.</div></div>
-<div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
+<div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga0b53c4b791d15af8191e47f854aa7a46"><div class="ttname"><a href="group__rdmnet__api__common.html#ga0b53c4b791d15af8191e47f854aa7a46">RdmnetClientConnectFailedInfo</a></div><div class="ttdeci">struct RdmnetClientConnectFailedInfo RdmnetClientConnectFailedInfo</div><div class="ttdoc">Information provided by the library about an unsuccessful RDMnet client connection.</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga3a071739780f6fb93ea7840a5dabcbb5"><div class="ttname"><a href="group__rdmnet__api__common.html#ga3a071739780f6fb93ea7840a5dabcbb5">RdmnetScopeConfig</a></div><div class="ttdeci">struct RdmnetScopeConfig RdmnetScopeConfig</div><div class="ttdoc">A set of configuration information for a single scope in which an RDMnet client is participating.</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga3eb1adaf6e830a807d1dcfbc64197222"><div class="ttname"><a href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a></div><div class="ttdeci">rdmnet_disconnect_reason_t</div><div class="ttdoc">Disconnect reason defines for the BrokerDisconnectMsg.</div><div class="ttdef"><b>Definition:</b> common.h:85</div></div>
@@ -361,9 +360,8 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="ttc" id="agroup__rdmnet__api__common_html_gga47e9b8ab4e35d074085d3d9a91f77ac2a62a9556be67db06e0fd26dbd5a20ff45"><div class="ttname"><a href="group__rdmnet__api__common.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a62a9556be67db06e0fd26dbd5a20ff45">kRdmnetClientListRemove</a></div><div class="ttdeci">@ kRdmnetClientListRemove</div><div class="ttdoc">The client entries should be removed from the existing client list.</div><div class="ttdef"><b>Definition:</b> client.h:54</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gga47e9b8ab4e35d074085d3d9a91f77ac2a8401f8f58863ec76c40f9f1fd84d3440"><div class="ttname"><a href="group__rdmnet__api__common.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a8401f8f58863ec76c40f9f1fd84d3440">kRdmnetClientListUpdate</a></div><div class="ttdeci">@ kRdmnetClientListUpdate</div><div class="ttdoc">The client entries should be updated in the existing client list.</div><div class="ttdef"><b>Definition:</b> client.h:56</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gga47e9b8ab4e35d074085d3d9a91f77ac2a93835bbdfa444ea89287ecb5416b1704"><div class="ttname"><a href="group__rdmnet__api__common.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a93835bbdfa444ea89287ecb5416b1704">kRdmnetClientListReplace</a></div><div class="ttdeci">@ kRdmnetClientListReplace</div><div class="ttdoc">The existing client list should be replaced wholesale with this one.</div><div class="ttdef"><b>Definition:</b> client.h:58</div></div>
-<div class="ttc" id="astruct_etc_pal_sock_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a></div></div>
-<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
-<div class="ttc" id="astruct_rdm_uid_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a></div></div>
+<div class="ttc" id="astruct_etc_pal_sock_addr_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a></div></div>
+<div class="ttc" id="astruct_etc_pal_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_uuid.html">EtcPalUuid</a></div></div>
 <div class="ttc" id="astruct_rdmnet_client_connect_failed_info_html"><div class="ttname"><a href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a></div><div class="ttdoc">Information provided by the library about an unsuccessful RDMnet client connection.</div><div class="ttdef"><b>Definition:</b> client.h:164</div></div>
 <div class="ttc" id="astruct_rdmnet_client_connect_failed_info_html_a17fa3dd1caa79e9181159556f36c35f3"><div class="ttname"><a href="struct_rdmnet_client_connect_failed_info.html#a17fa3dd1caa79e9181159556f36c35f3">RdmnetClientConnectFailedInfo::rdmnet_reason</a></div><div class="ttdeci">rdmnet_connect_status_t rdmnet_reason</div><div class="ttdoc">The reason given in the RDMnet-level connection refuse message.</div><div class="ttdef"><b>Definition:</b> client.h:176</div></div>
 <div class="ttc" id="astruct_rdmnet_client_connect_failed_info_html_a883d69b48ad780a607ecbb03d56bf30c"><div class="ttname"><a href="struct_rdmnet_client_connect_failed_info.html#a883d69b48ad780a607ecbb03d56bf30c">RdmnetClientConnectFailedInfo::will_retry</a></div><div class="ttdeci">bool will_retry</div><div class="ttdoc">Whether the connection will be retried automatically.</div><div class="ttdef"><b>Definition:</b> client.h:188</div></div>
@@ -391,13 +389,12 @@ $(document).ready(function(){initNavTree('client_8h_source.html',''); initResiza
 <div class="ttc" id="astruct_rdmnet_source_addr_html_a25cf54210ee6c1c58867d08bb3e7609c"><div class="ttname"><a href="struct_rdmnet_source_addr.html#a25cf54210ee6c1c58867d08bb3e7609c">RdmnetSourceAddr::source_endpoint</a></div><div class="ttdeci">uint16_t source_endpoint</div><div class="ttdoc">The endpoint from which this response is being sent.</div><div class="ttdef"><b>Definition:</b> client.h:68</div></div>
 <div class="ttc" id="astruct_rdmnet_source_addr_html_a648494989df71a6e20f4b8d06770530f"><div class="ttname"><a href="struct_rdmnet_source_addr.html#a648494989df71a6e20f4b8d06770530f">RdmnetSourceAddr::rdm_source_uid</a></div><div class="ttdeci">RdmUid rdm_source_uid</div><div class="ttdoc">The UID of the RDM responder from which this response is being sent.</div><div class="ttdef"><b>Definition:</b> client.h:70</div></div>
 <div class="ttc" id="astruct_rdmnet_source_addr_html_aa834bbfeccaf6cad3cdf02aaf3bab1fd"><div class="ttname"><a href="struct_rdmnet_source_addr.html#aa834bbfeccaf6cad3cdf02aaf3bab1fd">RdmnetSourceAddr::subdevice</a></div><div class="ttdeci">uint16_t subdevice</div><div class="ttdoc">The sub-device from which this response is being sent, or 0 for the root device.</div><div class="ttdef"><b>Definition:</b> client.h:72</div></div>
-<div class="ttc" id="auid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/RDM/docs/head/uid_8h.html">uid.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="client_8h.html">client.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="client_8h.html">client.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

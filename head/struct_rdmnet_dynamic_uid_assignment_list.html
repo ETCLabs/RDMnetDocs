@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,38 +208,59 @@ $(document).ready(function(){initNavTree('struct_rdmnet_dynamic_uid_assignment_l
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af8d7a5c73e14c6d2f6aa2619619c6ddb"><td class="memItemLeft" align="right" valign="top"><a id="af8d7a5c73e14c6d2f6aa2619619c6ddb"></a>
-<a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html#af8d7a5c73e14c6d2f6aa2619619c6ddb">mappings</a></td></tr>
-<tr class="memdesc:af8d7a5c73e14c6d2f6aa2619619c6ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of dynamic UID mappings. <br /></td></tr>
-<tr class="separator:af8d7a5c73e14c6d2f6aa2619619c6ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3725222dfe8114e80a413479ad6e8f1a"><td class="memItemLeft" align="right" valign="top"><a id="a3725222dfe8114e80a413479ad6e8f1a"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html#a3725222dfe8114e80a413479ad6e8f1a">num_mappings</a></td></tr>
-<tr class="memdesc:a3725222dfe8114e80a413479ad6e8f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the mappings array. <br /></td></tr>
-<tr class="separator:a3725222dfe8114e80a413479ad6e8f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17fffcf92c8c87d0ed09b04f649ba2e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html#a17fffcf92c8c87d0ed09b04f649ba2e8">more_coming</a></td></tr>
-<tr class="memdesc:a17fffcf92c8c87d0ed09b04f649ba2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="struct_rdmnet_dynamic_uid_assignment_list.html#a17fffcf92c8c87d0ed09b04f649ba2e8">More...</a><br /></td></tr>
-<tr class="separator:a17fffcf92c8c87d0ed09b04f649ba2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629bce35ca88bc540a9cf08d025e57f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html#a629bce35ca88bc540a9cf08d025e57f0">mappings</a></td></tr>
+<tr class="separator:a629bce35ca88bc540a9cf08d025e57f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ad4a3f70ee274d6b08420f50d706a2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2">num_mappings</a></td></tr>
+<tr class="separator:ab8ad4a3f70ee274d6b08420f50d706a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
+<tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a17fffcf92c8c87d0ed09b04f649ba2e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17fffcf92c8c87d0ed09b04f649ba2e8">&#9670;&nbsp;</a></span>more_coming</h2>
+<a id="a629bce35ca88bc540a9cf08d025e57f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a629bce35ca88bc540a9cf08d025e57f0">&#9670;&nbsp;</a></span>mappings</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RdmnetDynamicUidAssignmentList::more_coming</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a>* mappings</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>An array of dynamic UID mappings. </p>
 
-<p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store RdmnetDynamicUidMappings and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html" title="A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker.">RdmnetDynamicUidAssignmentList</a> is received with more_coming set to false. </p>
+</div>
+</div>
+<a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool more_coming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This message contains a partial list. This can be set when the library runs out of static memory in which to store RdmnetDynamicUidMappings and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> is received with more_coming set to false. </p>
+
+</div>
+</div>
+<a id="ab8ad4a3f70ee274d6b08420f50d706a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ad4a3f70ee274d6b08420f50d706a2">&#9670;&nbsp;</a></span>num_mappings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_mappings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The size of the mappings array. </p>
 
 </div>
 </div>

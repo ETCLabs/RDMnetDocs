@@ -1,56 +1,56 @@
 var group__rdmnet__disc =
 [
     [ "RdmnetDnsTxtRecordItem", "struct_rdmnet_dns_txt_record_item.html", [
-      [ "key", "struct_rdmnet_dns_txt_record_item.html#a1f90ff3c8c6e66108e3c800b51e7382d", null ],
-      [ "value", "struct_rdmnet_dns_txt_record_item.html#ac36f37595b2a6de5cf0e805438b89f58", null ],
-      [ "value_len", "struct_rdmnet_dns_txt_record_item.html#a5645aa4fa2a853ce21a1ad85ccebba79", null ]
+      [ "key", "struct_rdmnet_dns_txt_record_item.html#acd3d88da3c0e0313c3645ff34f62f542", null ],
+      [ "value", "struct_rdmnet_dns_txt_record_item.html#a3b453099a540c13329a7fa7d45579d4e", null ],
+      [ "value_len", "struct_rdmnet_dns_txt_record_item.html#ae02b3e5d161799d5639f0f0b9877997c", null ]
     ] ],
     [ "RdmnetBrokerDiscInfo", "struct_rdmnet_broker_disc_info.html", [
-      [ "additional_txt_items", "struct_rdmnet_broker_disc_info.html#a5d1e15016f7b4012511074bc89f0a318", null ],
-      [ "cid", "struct_rdmnet_broker_disc_info.html#a9891833bc86684e7aff6a70a7cee9080", null ],
-      [ "e133_version", "struct_rdmnet_broker_disc_info.html#a7be6ebc05a04a1a35d592d953793c803", null ],
-      [ "listen_addr_netints", "struct_rdmnet_broker_disc_info.html#a2a753f47526e6fbc38099d6966727e59", null ],
-      [ "listen_addrs", "struct_rdmnet_broker_disc_info.html#af66604c055013caff26ed5425a2834a8", null ],
-      [ "manufacturer", "struct_rdmnet_broker_disc_info.html#a5a3251c4d2656a765e7582e76377cad9", null ],
-      [ "model", "struct_rdmnet_broker_disc_info.html#a51a474c17a6a0130b4b239a2a9fb5948", null ],
-      [ "num_additional_txt_items", "struct_rdmnet_broker_disc_info.html#acf93a120ca0267a52471081b813fd608", null ],
-      [ "num_listen_addrs", "struct_rdmnet_broker_disc_info.html#a9e30b641a7d8d8883983f124c8faffb4", null ],
-      [ "port", "struct_rdmnet_broker_disc_info.html#a2c5d5aaea9e77c5452f904f6f0f0fd8e", null ],
-      [ "scope", "struct_rdmnet_broker_disc_info.html#a572a29380550d625bd533dbea9a7ffd8", null ],
-      [ "service_instance_name", "struct_rdmnet_broker_disc_info.html#a6a772228c94095042fd186172d11fce5", null ],
-      [ "uid", "struct_rdmnet_broker_disc_info.html#a7fb56819d9a3493f778e57c385f8c859", null ]
+      [ "additional_txt_items", "struct_rdmnet_broker_disc_info.html#a5434ec3d1480e8c6b0ab4d899ec28bf1", null ],
+      [ "cid", "struct_rdmnet_broker_disc_info.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "e133_version", "struct_rdmnet_broker_disc_info.html#a022634c5f7624379b08111f1a0c8d6c7", null ],
+      [ "listen_addr_netints", "struct_rdmnet_broker_disc_info.html#a1b9db01549cd891c29a85b21e36a5526", null ],
+      [ "listen_addrs", "struct_rdmnet_broker_disc_info.html#ae23e4ac3e79c69795a69afa2d06004cc", null ],
+      [ "manufacturer", "struct_rdmnet_broker_disc_info.html#a84875663cfc7f10e83b39e143e4d6ca2", null ],
+      [ "model", "struct_rdmnet_broker_disc_info.html#aedac94690dae483bee8b0dd9d3ead21a", null ],
+      [ "num_additional_txt_items", "struct_rdmnet_broker_disc_info.html#a174b4b1ee87fd017eaace1c1fc6bfc74", null ],
+      [ "num_listen_addrs", "struct_rdmnet_broker_disc_info.html#af3837524eb4b81df6ed4c50b5b7badf7", null ],
+      [ "port", "struct_rdmnet_broker_disc_info.html#a8e0798404bf2cf5dabb84c5ba9a4f236", null ],
+      [ "scope", "struct_rdmnet_broker_disc_info.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab", null ],
+      [ "service_instance_name", "struct_rdmnet_broker_disc_info.html#afdf02cd0ff95b90c4588002535a50440", null ],
+      [ "uid", "struct_rdmnet_broker_disc_info.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "RdmnetDiscBrokerCallbacks", "struct_rdmnet_disc_broker_callbacks.html", [
-      [ "broker_register_failed", "struct_rdmnet_disc_broker_callbacks.html#afe3899b4062afa34d2f54c65826ab9e1", null ],
-      [ "broker_registered", "struct_rdmnet_disc_broker_callbacks.html#a7aaaa778f130b2f2ebe32c539719e480", null ],
-      [ "context", "struct_rdmnet_disc_broker_callbacks.html#af19ce77a037bc7c16d7abbb6680eb3d8", null ],
-      [ "other_broker_found", "struct_rdmnet_disc_broker_callbacks.html#a9c980361b6dd9c092c4a8a8b76097c74", null ],
-      [ "other_broker_lost", "struct_rdmnet_disc_broker_callbacks.html#a0a2db9e94545297efdd62ecb2ce5b002", null ]
+      [ "broker_register_failed", "struct_rdmnet_disc_broker_callbacks.html#a846b5071c735f95f17935071094d775c", null ],
+      [ "broker_registered", "struct_rdmnet_disc_broker_callbacks.html#a3fa6331714dba563775ba8aa8fe5e75e", null ],
+      [ "context", "struct_rdmnet_disc_broker_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ],
+      [ "other_broker_found", "struct_rdmnet_disc_broker_callbacks.html#af3c67296a44578d9fc055bd482ff3a06", null ],
+      [ "other_broker_lost", "struct_rdmnet_disc_broker_callbacks.html#a150c1c734e72bac86e7d485e18294da7", null ]
     ] ],
     [ "RdmnetBrokerRegisterConfig", "struct_rdmnet_broker_register_config.html", [
-      [ "additional_txt_items", "struct_rdmnet_broker_register_config.html#ab6f6d3fa4f4e0f64d25d6a65b074af4e", null ],
-      [ "callbacks", "struct_rdmnet_broker_register_config.html#adde95071364c9aa4d98d77e7d697d520", null ],
-      [ "cid", "struct_rdmnet_broker_register_config.html#a21217c047bd861134bf82771cde2f17c", null ],
-      [ "manufacturer", "struct_rdmnet_broker_register_config.html#a9d7d9ede076985f3d07ce50290fcfaed", null ],
-      [ "model", "struct_rdmnet_broker_register_config.html#a15686266ad329adfa10f9b4a68d4ef58", null ],
-      [ "netints", "struct_rdmnet_broker_register_config.html#ae4df6a668da2df2f745986fe45d2debe", null ],
-      [ "num_additional_txt_items", "struct_rdmnet_broker_register_config.html#aa77c1a3413913f7d0453ac8cd5b693ff", null ],
-      [ "num_netints", "struct_rdmnet_broker_register_config.html#adbbd0e743ea089270f2aeb340b680931", null ],
-      [ "port", "struct_rdmnet_broker_register_config.html#a3cd9831ddc7feef06212e1242956e953", null ],
-      [ "scope", "struct_rdmnet_broker_register_config.html#a3ce417178756dc76d9dc6e3edf0767cd", null ],
-      [ "service_instance_name", "struct_rdmnet_broker_register_config.html#a979757bea31b6f8c1f31f5382ede2845", null ],
-      [ "uid", "struct_rdmnet_broker_register_config.html#a8e375a838babc3f3e28f362aa13aef73", null ]
+      [ "additional_txt_items", "struct_rdmnet_broker_register_config.html#a5434ec3d1480e8c6b0ab4d899ec28bf1", null ],
+      [ "callbacks", "struct_rdmnet_broker_register_config.html#aa0307d040617c0e74f5bc3b5a317979c", null ],
+      [ "cid", "struct_rdmnet_broker_register_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
+      [ "manufacturer", "struct_rdmnet_broker_register_config.html#a84875663cfc7f10e83b39e143e4d6ca2", null ],
+      [ "model", "struct_rdmnet_broker_register_config.html#aedac94690dae483bee8b0dd9d3ead21a", null ],
+      [ "netints", "struct_rdmnet_broker_register_config.html#a902e9eb3ce5b8c73a39330fa9bbbdc49", null ],
+      [ "num_additional_txt_items", "struct_rdmnet_broker_register_config.html#a174b4b1ee87fd017eaace1c1fc6bfc74", null ],
+      [ "num_netints", "struct_rdmnet_broker_register_config.html#a6ddc029bb8aba3ead075508554592445", null ],
+      [ "port", "struct_rdmnet_broker_register_config.html#a8e0798404bf2cf5dabb84c5ba9a4f236", null ],
+      [ "scope", "struct_rdmnet_broker_register_config.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab", null ],
+      [ "service_instance_name", "struct_rdmnet_broker_register_config.html#afdf02cd0ff95b90c4588002535a50440", null ],
+      [ "uid", "struct_rdmnet_broker_register_config.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "RdmnetScopeMonitorCallbacks", "struct_rdmnet_scope_monitor_callbacks.html", [
-      [ "broker_found", "struct_rdmnet_scope_monitor_callbacks.html#a37ad28dadfcd6c6d0b97e63187c966d0", null ],
-      [ "broker_lost", "struct_rdmnet_scope_monitor_callbacks.html#a43d40fdc954f7c2a73317686a8d83ef1", null ],
-      [ "broker_updated", "struct_rdmnet_scope_monitor_callbacks.html#a209df32d2083a44373343948e492cd05", null ],
-      [ "context", "struct_rdmnet_scope_monitor_callbacks.html#acd8ca85db8de30d5798bcd33070883cc", null ]
+      [ "broker_found", "struct_rdmnet_scope_monitor_callbacks.html#af243f7a79d1f406c632fb2a04d7aea3a", null ],
+      [ "broker_lost", "struct_rdmnet_scope_monitor_callbacks.html#a44c0d9d7ead9afb90d4308137d5435d1", null ],
+      [ "broker_updated", "struct_rdmnet_scope_monitor_callbacks.html#a7ef4879be84036b0874a9bd515285996", null ],
+      [ "context", "struct_rdmnet_scope_monitor_callbacks.html#ae376f130b17d169ee51be68077a89ed0", null ]
     ] ],
     [ "RdmnetScopeMonitorConfig", "struct_rdmnet_scope_monitor_config.html", [
-      [ "callbacks", "struct_rdmnet_scope_monitor_config.html#aee5f4f7db4785e3fc34e399ebc82bf5c", null ],
-      [ "domain", "struct_rdmnet_scope_monitor_config.html#a45fe31f0dd02ab70d7b82f4519958c5b", null ],
-      [ "scope", "struct_rdmnet_scope_monitor_config.html#a315ab62d1de9a05a86a1257877c64b72", null ]
+      [ "callbacks", "struct_rdmnet_scope_monitor_config.html#ad73a9eff5287bc33ff2519ef0dfb88a2", null ],
+      [ "domain", "struct_rdmnet_scope_monitor_config.html#a52e31162553211bc239fae1a464d7751", null ],
+      [ "scope", "struct_rdmnet_scope_monitor_config.html#aaa3f7f51e16b6fa08e2bc1e0d7eb6bab", null ]
     ] ],
     [ "RDMNET_BROKER_REGISTER_CONFIG_DEFAULT_INIT", "group__rdmnet__disc.html#ga235693e0cee6703b1698639bf1a8505d", null ],
     [ "RDMNET_REGISTERED_BROKER_INVALID", "group__rdmnet__disc.html#gabe9e133bbe5780a6938b2b7000b36519", null ],

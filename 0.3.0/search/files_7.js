@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nack_5freason_2eh_1773',['nack_reason.h',['https://etclabs.github.io/RDM/docs/head/nack__reason_8h.html',1,'']]]
+  ['opaque_5fid_2eh_3686',['opaque_id.h',['https://etclabs.github.io/EtcPalDocs/head/opaque__id_8h.html',1,'']]],
+  ['opts_2eh_3687',['opts.h',['../opts_8h.html',1,'']]]
 ];

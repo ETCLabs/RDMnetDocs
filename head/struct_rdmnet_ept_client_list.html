@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -208,38 +208,59 @@ $(document).ready(function(){initNavTree('struct_rdmnet_ept_client_list.html',''
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A structure that represents a list of EPT Client Entries. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a3c76e64783b650c4253bc90f8c28b090"><td class="memItemLeft" align="right" valign="top"><a id="a3c76e64783b650c4253bc90f8c28b090"></a>
-<a class="el" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html#a3c76e64783b650c4253bc90f8c28b090">client_entries</a></td></tr>
-<tr class="memdesc:a3c76e64783b650c4253bc90f8c28b090"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of EPT Client Entries. <br /></td></tr>
-<tr class="separator:a3c76e64783b650c4253bc90f8c28b090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e70cc13f7c860f2f2e47f2d443a9414"><td class="memItemLeft" align="right" valign="top"><a id="a4e70cc13f7c860f2f2e47f2d443a9414"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html#a4e70cc13f7c860f2f2e47f2d443a9414">num_client_entries</a></td></tr>
-<tr class="memdesc:a4e70cc13f7c860f2f2e47f2d443a9414"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the client_entries array. <br /></td></tr>
-<tr class="separator:a4e70cc13f7c860f2f2e47f2d443a9414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431174f9f4f6fd45a4178c5484f12415"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html#a431174f9f4f6fd45a4178c5484f12415">more_coming</a></td></tr>
-<tr class="memdesc:a431174f9f4f6fd45a4178c5484f12415"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="struct_rdmnet_ept_client_list.html#a431174f9f4f6fd45a4178c5484f12415">More...</a><br /></td></tr>
-<tr class="separator:a431174f9f4f6fd45a4178c5484f12415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba9308d3f6abd159cb4fc60eaeb0d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html#afba9308d3f6abd159cb4fc60eaeb0d8c">client_entries</a></td></tr>
+<tr class="separator:afba9308d3f6abd159cb4fc60eaeb0d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccd922a3754fa31008826b55b692c66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html#afccd922a3754fa31008826b55b692c66">num_client_entries</a></td></tr>
+<tr class="separator:afccd922a3754fa31008826b55b692c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
+<tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a431174f9f4f6fd45a4178c5484f12415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a431174f9f4f6fd45a4178c5484f12415">&#9670;&nbsp;</a></span>more_coming</h2>
+<a id="afba9308d3f6abd159cb4fc60eaeb0d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba9308d3f6abd159cb4fc60eaeb0d8c">&#9670;&nbsp;</a></span>client_entries</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RdmnetEptClientList::more_coming</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>* client_entries</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>An array of EPT Client Entries. </p>
 
-<p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdmnet_ept_client_list.html" title="A structure that represents a list of EPT Client Entries.">RdmnetEptClientList</a> is received with more_coming set to false. </p>
+</div>
+</div>
+<a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool more_coming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This message contains a partial list. This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdmnet_ept_client_list.html">RdmnetEptClientList</a> is received with more_coming set to false. </p>
+
+</div>
+</div>
+<a id="afccd922a3754fa31008826b55b692c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccd922a3754fa31008826b55b692c66">&#9670;&nbsp;</a></span>num_client_entries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_client_entries</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The size of the client_entries array. </p>
 
 </div>
 </div>

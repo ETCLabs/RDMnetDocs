@@ -19,10 +19,10 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +53,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +138,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +146,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -209,24 +209,62 @@ $(document).ready(function(){initNavTree('struct_rdmnet_dns_txt_record_item.html
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>An extra key/value pair in a broker's DNS TXT record that does not have a standard RDMnet use. </p>
 <p>DNS-SD TXT records are key/value pairs where the key is printable ASCII and the value is opaque binary data. The total length of the key plus the value cannot exceed 255 bytes. </p>
-</div>
-<p><code>#include &lt;<a class="el" href="discovery_8h_source.html">rdmnet/discovery.h</a>&gt;</code></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1f90ff3c8c6e66108e3c800b51e7382d"><td class="memItemLeft" align="right" valign="top"><a id="a1f90ff3c8c6e66108e3c800b51e7382d"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dns_txt_record_item.html#a1f90ff3c8c6e66108e3c800b51e7382d">key</a></td></tr>
-<tr class="memdesc:a1f90ff3c8c6e66108e3c800b51e7382d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key for this item. <br /></td></tr>
-<tr class="separator:a1f90ff3c8c6e66108e3c800b51e7382d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36f37595b2a6de5cf0e805438b89f58"><td class="memItemLeft" align="right" valign="top"><a id="ac36f37595b2a6de5cf0e805438b89f58"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dns_txt_record_item.html#ac36f37595b2a6de5cf0e805438b89f58">value</a></td></tr>
-<tr class="memdesc:ac36f37595b2a6de5cf0e805438b89f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value data for this item. <br /></td></tr>
-<tr class="separator:ac36f37595b2a6de5cf0e805438b89f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5645aa4fa2a853ce21a1ad85ccebba79"><td class="memItemLeft" align="right" valign="top"><a id="a5645aa4fa2a853ce21a1ad85ccebba79"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dns_txt_record_item.html#a5645aa4fa2a853ce21a1ad85ccebba79">value_len</a></td></tr>
-<tr class="memdesc:a5645aa4fa2a853ce21a1ad85ccebba79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the value data. <br /></td></tr>
-<tr class="separator:a5645aa4fa2a853ce21a1ad85ccebba79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3d88da3c0e0313c3645ff34f62f542"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dns_txt_record_item.html#acd3d88da3c0e0313c3645ff34f62f542">key</a></td></tr>
+<tr class="separator:acd3d88da3c0e0313c3645ff34f62f542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b453099a540c13329a7fa7d45579d4e"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dns_txt_record_item.html#a3b453099a540c13329a7fa7d45579d4e">value</a></td></tr>
+<tr class="separator:a3b453099a540c13329a7fa7d45579d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02b3e5d161799d5639f0f0b9877997c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_dns_txt_record_item.html#ae02b3e5d161799d5639f0f0b9877997c">value_len</a></td></tr>
+<tr class="separator:ae02b3e5d161799d5639f0f0b9877997c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="acd3d88da3c0e0313c3645ff34f62f542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3d88da3c0e0313c3645ff34f62f542">&#9670;&nbsp;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The key for this item. </p>
+
+</div>
+</div>
+<a id="a3b453099a540c13329a7fa7d45579d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b453099a540c13329a7fa7d45579d4e">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The value data for this item. </p>
+
+</div>
+</div>
+<a id="ae02b3e5d161799d5639f0f0b9877997c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02b3e5d161799d5639f0f0b9877997c">&#9670;&nbsp;</a></span>value_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t value_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The length of the value data. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="discovery_8h_source.html">discovery.h</a></li>
 </ul>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['facility_2603',['facility',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f',1,'EtcPalSyslogParams']]],
-  ['friendly_5fname_2604',['friendly_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd',1,'EtcPalNetintInfo']]]
+  ['facility_5676',['facility',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f',1,'EtcPalSyslogParams']]],
+  ['flags_5677',['flags',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_msg_hdr.html#ac8bf36fe0577cba66bccda3a6f7e80a4',1,'EtcPalMsgHdr']]],
+  ['friendly_5fname_5678',['friendly_name',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd',1,'EtcPalNetintInfo']]]
 ];

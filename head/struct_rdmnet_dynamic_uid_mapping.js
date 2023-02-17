@@ -1,6 +1,6 @@
 var struct_rdmnet_dynamic_uid_mapping =
 [
-    [ "rid", "struct_rdmnet_dynamic_uid_mapping.html#a842b8d5b7c14f9baeeb27d7cfbbd684e", null ],
-    [ "status_code", "struct_rdmnet_dynamic_uid_mapping.html#af2645638079a999eca4f03dfb6840d8a", null ],
-    [ "uid", "struct_rdmnet_dynamic_uid_mapping.html#adabe0159fa6e26b091c22ba13780361b", null ]
+    [ "rid", "struct_rdmnet_dynamic_uid_mapping.html#a7c1f62fc07bef14989c3780e804412c3", null ],
+    [ "status_code", "struct_rdmnet_dynamic_uid_mapping.html#ab4493b573d26ae9d71aa1e7834f8efec", null ],
+    [ "uid", "struct_rdmnet_dynamic_uid_mapping.html#ad908bad751766196cc2334b0f8579a5c", null ]
 ];

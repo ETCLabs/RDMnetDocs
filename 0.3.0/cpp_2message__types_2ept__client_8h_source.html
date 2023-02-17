@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -232,7 +231,7 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="message_8h.html">rdmnet/message.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerdmnet.html">rdmnet</a></div>
@@ -240,19 +239,19 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_sub_protocol.html">   41</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a>(uint16_t new_manufacturer_id, uint16_t new_protocol_id, <span class="keyword">const</span> std::string&amp; new_protocol_string);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a>(uint16_t new_manufacturer_id, uint16_t new_protocol_id, <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&amp; new_protocol_string);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a>(uint16_t new_manufacturer_id, uint16_t new_protocol_id, <span class="keyword">const</span> <span class="keywordtype">char</span>* new_protocol_string);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a>&amp; c_prot);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a>&amp; <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html#a58378929d15d50873faf9aec050bdf3b">operator=</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a>&amp; c_prot);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_sub_protocol.html#a8e197be2be1c8b24be36b22c3fe9ef01">   49</a></span>&#160;  uint16_t    <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html#a8e197be2be1c8b24be36b22c3fe9ef01">manufacturer_id</a>{0};  </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_sub_protocol.html#ae38ddb0236dc59601ca27c3ad175ba42">   50</a></span>&#160;  uint16_t    <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html#ae38ddb0236dc59601ca27c3ad175ba42">protocol_id</a>{0};      </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_sub_protocol.html#a4691923c5963bb44251dbd738be0d01b">   51</a></span>&#160;  std::string <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html#a4691923c5963bb44251dbd738be0d01b">protocol_string</a>;     </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_sub_protocol.html#a4691923c5963bb44251dbd738be0d01b">   51</a></span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="structrdmnet_1_1_ept_sub_protocol.html#a4691923c5963bb44251dbd738be0d01b">protocol_string</a>;     </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_sub_protocol.html#a73baecccca849ecb0224ea5461a00634">   55</a></span>&#160;<span class="keyword">inline</span> EptSubProtocol::EptSubProtocol(uint16_t           new_manufacturer_id,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                      uint16_t           new_protocol_id,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                      <span class="keyword">const</span> std::string&amp; new_protocol_string)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                      <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&amp; new_protocol_string)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    : manufacturer_id(new_manufacturer_id), protocol_id(new_protocol_id), protocol_string(new_protocol_string)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
@@ -283,14 +282,14 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_client_entry.html">EptClientEntry</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>&amp; c_entry);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_client_entry.html">EptClientEntry</a>&amp; <a class="code" href="structrdmnet_1_1_ept_client_entry.html#aea8fa11d1699ec5bd2d31206877b4203">operator=</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>&amp; c_entry);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_client_entry.html#aaf41185c54c83b1bc3aef791482a360c">   93</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>                <a class="code" href="structrdmnet_1_1_ept_client_entry.html#aaf41185c54c83b1bc3aef791482a360c">cid</a>;        </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">   94</a></span>&#160;  std::vector&lt;EptSubProtocol&gt; <a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>;  </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_client_entry.html#aaf41185c54c83b1bc3aef791482a360c">   93</a></span>&#160;  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a>                <a class="code" href="structrdmnet_1_1_ept_client_entry.html#aaf41185c54c83b1bc3aef791482a360c">cid</a>;        </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">   94</a></span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EptSubProtocol&gt;</a> <a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>;  </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structrdmnet_1_1_ept_client_entry.html#ac6b7904c50b9ab4207c5b917462693f7">   98</a></span>&#160;<span class="keyword">inline</span> EptClientEntry::EptClientEntry(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>&amp; c_entry) : cid(c_entry.cid)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>.reserve(c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">num_protocols</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::transform(c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a>, c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a> + c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">num_protocols</a>, std::back_inserter(<a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>),</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/algorithm/transform.html">std::transform</a>(c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a>, c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a> + c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">num_protocols</a>, <a class="codeRef" href="https://en.cppreference.com/w/cpp/iterator/back_inserter.html">std::back_inserter</a>(<a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>),</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                 [](<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a>&amp; protocol) { return EptSubProtocol(protocol); });</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
@@ -299,7 +298,7 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_client_entry.html#aaf41185c54c83b1bc3aef791482a360c">cid</a> = c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#a0fc4f36b08efe7fb323753a7a4399227">cid</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>.clear();</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>.reserve(c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">num_protocols</a>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  std::transform(c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a>, c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a> + c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">num_protocols</a>, std::back_inserter(<a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/algorithm/transform.html">std::transform</a>(c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a>, c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#af6d7da9fbe52f48b740c334a74d93860">protocols</a> + c_entry.<a class="code" href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">num_protocols</a>, <a class="codeRef" href="https://en.cppreference.com/w/cpp/iterator/back_inserter.html">std::back_inserter</a>(<a class="code" href="structrdmnet_1_1_ept_client_entry.html#a152346969f158ad6106e77a05ee05664">protocols</a>),</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                 [](<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_sub_protocol.html">RdmnetEptSubProtocol</a>&amp; protocol) { return EptSubProtocol(protocol); });</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
@@ -313,7 +312,7 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  constexpr <a class="code" href="classrdmnet_1_1_ept_client_list.html#ad56cc1b2777b6f8e41d38f825938b67a">EptClientList</a>(<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_client_list.html">RdmnetEptClientList</a>&amp; c_list) noexcept;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  std::vector&lt;EptClientEntry&gt; <a class="code" href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">GetClientEntries</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EptClientEntry&gt;</a> <a class="code" href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">GetClientEntries</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  constexpr <span class="keywordtype">bool</span>                        <a class="code" href="classrdmnet_1_1_ept_client_list.html#a4fab208b004476e6474cf439f668c3ae">more_coming</a>() const noexcept;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  constexpr const <a class="code" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>* <a class="code" href="classrdmnet_1_1_ept_client_list.html#ad2238de45102b20e19d27048d9f8da06">raw_entry_array</a>() const noexcept;</div>
@@ -327,11 +326,11 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">  153</a></span>&#160;<span class="keyword">inline</span> std::vector&lt;EptClientEntry&gt; <a class="code" href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">EptClientList::GetClientEntries</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">  153</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EptClientEntry&gt;</a> <a class="code" href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">EptClientList::GetClientEntries</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  std::vector&lt;EptClientEntry&gt; to_return;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  to_return.reserve(list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a4e70cc13f7c860f2f2e47f2d443a9414">num_client_entries</a>);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  std::transform(list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a3c76e64783b650c4253bc90f8c28b090">client_entries</a>, list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a3c76e64783b650c4253bc90f8c28b090">client_entries</a> + list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a4e70cc13f7c860f2f2e47f2d443a9414">num_client_entries</a>, std::back_inserter(to_return),</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;EptClientEntry&gt;</a> to_return;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  to_return.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector/reserve.html">reserve</a>(list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a4e70cc13f7c860f2f2e47f2d443a9414">num_client_entries</a>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="codeRef" href="https://en.cppreference.com/w/cpp/algorithm/transform.html">std::transform</a>(list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a3c76e64783b650c4253bc90f8c28b090">client_entries</a>, list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a3c76e64783b650c4253bc90f8c28b090">client_entries</a> + list_.<a class="code" href="struct_rdmnet_ept_client_list.html#a4e70cc13f7c860f2f2e47f2d443a9414">num_client_entries</a>, <a class="codeRef" href="https://en.cppreference.com/w/cpp/iterator/back_inserter.html">std::back_inserter</a>(to_return),</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                 [](<span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a>&amp; entry) { return EptClientEntry(entry); });</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">return</span> to_return;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
@@ -353,7 +352,9 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;};  <span class="comment">// namespace rdmnet</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// RDMNET_CPP_MESSAGE_TYPES_EPT_CLIENT_H_</span></div>
-<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
+<div class="ttc" id="aback_inserter_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/iterator/back_inserter.html">std::back_inserter</a></div><div class="ttdeci">T back_inserter(T... args)</div></div>
+<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
+<div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_list_html"><div class="ttname"><a href="classrdmnet_1_1_ept_client_list.html">rdmnet::EptClientList</a></div><div class="ttdoc">A list of EPT client entries.</div><div class="ttdef"><b>Definition:</b> ept_client.h:122</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_list_html_a01bf82054c57f192c3e6990ea3e4873c"><div class="ttname"><a href="classrdmnet_1_1_ept_client_list.html#a01bf82054c57f192c3e6990ea3e4873c">rdmnet::EptClientList::EptClientList</a></div><div class="ttdeci">EptClientList(const EptClientList &amp;other)=delete</div><div class="ttdoc">Not copyable - use GetClientEntries() to copy out the data.</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_list_html_a4a3dac5970f7c74e42009f8ef14b6de2"><div class="ttname"><a href="classrdmnet_1_1_ept_client_list.html#a4a3dac5970f7c74e42009f8ef14b6de2">rdmnet::EptClientList::GetClientEntries</a></div><div class="ttdeci">std::vector&lt; EptClientEntry &gt; GetClientEntries() const</div><div class="ttdoc">Copy out the list of client entries.</div><div class="ttdef"><b>Definition:</b> ept_client.h:153</div></div>
@@ -362,9 +363,10 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_list_html_ad024e3e4e8d3a11e7edf87c7e24f1827"><div class="ttname"><a href="classrdmnet_1_1_ept_client_list.html#ad024e3e4e8d3a11e7edf87c7e24f1827">rdmnet::EptClientList::raw_entry_array_size</a></div><div class="ttdeci">constexpr size_t raw_entry_array_size() const noexcept</div><div class="ttdoc">Get the size of the raw array of client entry C structures.</div><div class="ttdef"><b>Definition:</b> ept_client.h:180</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_list_html_ad2238de45102b20e19d27048d9f8da06"><div class="ttname"><a href="classrdmnet_1_1_ept_client_list.html#ad2238de45102b20e19d27048d9f8da06">rdmnet::EptClientList::raw_entry_array</a></div><div class="ttdeci">constexpr const RdmnetEptClientEntry * raw_entry_array() const noexcept</div><div class="ttdoc">Get a pointer to the raw array of client entry C structures.</div><div class="ttdef"><b>Definition:</b> ept_client.h:174</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_list_html_ad56cc1b2777b6f8e41d38f825938b67a"><div class="ttname"><a href="classrdmnet_1_1_ept_client_list.html#ad56cc1b2777b6f8e41d38f825938b67a">rdmnet::EptClientList::EptClientList</a></div><div class="ttdeci">EptClientList()=delete</div><div class="ttdoc">Not default-constructible.</div></div>
-<div class="ttc" id="acpp_2uuid_8h_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
+<div class="ttc" id="acpp_2uuid_8h.html_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/cpp_2uuid_8h.html">uuid.h</a></div></div>
 <div class="ttc" id="amessage_8h_html"><div class="ttname"><a href="message_8h.html">message.h</a></div><div class="ttdoc">Basic types for parsed RDMnet messages.</div></div>
 <div class="ttc" id="anamespacerdmnet_html"><div class="ttname"><a href="namespacerdmnet.html">rdmnet</a></div><div class="ttdoc">A namespace which contains all C++ language definitions in the RDMnet library.</div><div class="ttdef"><b>Definition:</b> broker.h:45</div></div>
+<div class="ttc" id="areserve_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector/reserve.html">std::vector::reserve</a></div><div class="ttdeci">T reserve(T... args)</div></div>
 <div class="ttc" id="astruct_rdmnet_ept_client_entry_html"><div class="ttname"><a href="struct_rdmnet_ept_client_entry.html">RdmnetEptClientEntry</a></div><div class="ttdoc">A descriptive structure for an EPT client.</div><div class="ttdef"><b>Definition:</b> message.h:390</div></div>
 <div class="ttc" id="astruct_rdmnet_ept_client_entry_html_a0fc4f36b08efe7fb323753a7a4399227"><div class="ttname"><a href="struct_rdmnet_ept_client_entry.html#a0fc4f36b08efe7fb323753a7a4399227">RdmnetEptClientEntry::cid</a></div><div class="ttdeci">EtcPalUuid cid</div><div class="ttdoc">The client's Component Identifier (CID).</div><div class="ttdef"><b>Definition:</b> message.h:391</div></div>
 <div class="ttc" id="astruct_rdmnet_ept_client_entry_html_acea1fae33616d2dfd9750b8f823e56f0"><div class="ttname"><a href="struct_rdmnet_ept_client_entry.html#acea1fae33616d2dfd9750b8f823e56f0">RdmnetEptClientEntry::num_protocols</a></div><div class="ttdeci">size_t num_protocols</div><div class="ttdoc">The size of the protocols array.</div><div class="ttdef"><b>Definition:</b> message.h:393</div></div>
@@ -386,12 +388,14 @@ $(document).ready(function(){initNavTree('cpp_2message__types_2ept__client_8h_so
 <div class="ttc" id="astructrdmnet_1_1_ept_sub_protocol_html_a58378929d15d50873faf9aec050bdf3b"><div class="ttname"><a href="structrdmnet_1_1_ept_sub_protocol.html#a58378929d15d50873faf9aec050bdf3b">rdmnet::EptSubProtocol::operator=</a></div><div class="ttdeci">EptSubProtocol &amp; operator=(const RdmnetEptSubProtocol &amp;c_prot)</div><div class="ttdoc">Assign an instance of the C RdmnetEptSubProtocol type to an instance of this class.</div><div class="ttdef"><b>Definition:</b> ept_client.h:77</div></div>
 <div class="ttc" id="astructrdmnet_1_1_ept_sub_protocol_html_a8e197be2be1c8b24be36b22c3fe9ef01"><div class="ttname"><a href="structrdmnet_1_1_ept_sub_protocol.html#a8e197be2be1c8b24be36b22c3fe9ef01">rdmnet::EptSubProtocol::manufacturer_id</a></div><div class="ttdeci">uint16_t manufacturer_id</div><div class="ttdoc">The ESTA manufacturer ID under which this protocol is namespaced.</div><div class="ttdef"><b>Definition:</b> ept_client.h:49</div></div>
 <div class="ttc" id="astructrdmnet_1_1_ept_sub_protocol_html_ae38ddb0236dc59601ca27c3ad175ba42"><div class="ttname"><a href="structrdmnet_1_1_ept_sub_protocol.html#ae38ddb0236dc59601ca27c3ad175ba42">rdmnet::EptSubProtocol::protocol_id</a></div><div class="ttdeci">uint16_t protocol_id</div><div class="ttdoc">The identifier for this protocol.</div><div class="ttdef"><b>Definition:</b> ept_client.h:50</div></div>
+<div class="ttc" id="atransform_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/transform.html">std::transform</a></div><div class="ttdeci">T transform(T... args)</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_02a5fb8fc63da27b1563e16cf3c5ea38.html">cpp</a></li><li class="navelem"><a class="el" href="dir_b48a204088b915aab85bb8a1e2744bac.html">message_types</a></li><li class="navelem"><a class="el" href="cpp_2message__types_2ept__client_8h.html">ept_client.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_476dbcf122891e8399ecd39139c29436.html">cpp</a></li><li class="navelem"><a class="el" href="dir_949e82c3e1194d1b5fce2e51fcccfe03.html">message_types</a></li><li class="navelem"><a class="el" href="cpp_2message__types_2ept__client_8h.html">ept_client.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

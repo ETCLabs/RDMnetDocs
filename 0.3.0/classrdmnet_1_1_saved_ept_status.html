@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -234,7 +233,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a49a45ccae259ba14f750805da9dc42d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign an <a class="el" href="classrdmnet_1_1_ept_status.html" title="An EPT status message received over RDMnet and delivered to an RDMnet callback function.">EptStatus</a> to an instance of this class. <br /></td></tr>
 <tr class="separator:a49a45ccae259ba14f750805da9dc42d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13a72d8427a4356abc77907700fd93e5"><td class="memItemLeft" align="right" valign="top"><a id="a13a72d8427a4356abc77907700fd93e5"></a>
-const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html#a13a72d8427a4356abc77907700fd93e5">source_cid</a> () const noexcept</td></tr>
+const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html#a13a72d8427a4356abc77907700fd93e5">source_cid</a> () const noexcept</td></tr>
 <tr class="memdesc:a13a72d8427a4356abc77907700fd93e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CID of the EPT client that sent this EPT status message. <br /></td></tr>
 <tr class="separator:a13a72d8427a4356abc77907700fd93e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa590ca92c2f2eec5997f2e248b4a31be"><td class="memItemLeft" align="right" valign="top"><a id="aa590ca92c2f2eec5997f2e248b4a31be"></a>
@@ -242,7 +241,7 @@ const <a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/classetc
 <tr class="memdesc:aa590ca92c2f2eec5997f2e248b4a31be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the EPT status code of this status message. <br /></td></tr>
 <tr class="separator:aa590ca92c2f2eec5997f2e248b4a31be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9651039086fb2fe49a6bef91a767a3ea"><td class="memItemLeft" align="right" valign="top"><a id="a9651039086fb2fe49a6bef91a767a3ea"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html#a9651039086fb2fe49a6bef91a767a3ea">status_string</a> () const noexcept</td></tr>
+const <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html#a9651039086fb2fe49a6bef91a767a3ea">status_string</a> () const noexcept</td></tr>
 <tr class="memdesc:a9651039086fb2fe49a6bef91a767a3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional status string accompanying this status message. <br /></td></tr>
 <tr class="separator:a9651039086fb2fe49a6bef91a767a3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a733fb91da18f97ce0f22a33da7b5e391"><td class="memItemLeft" align="right" valign="top"><a id="a733fb91da18f97ce0f22a33da7b5e391"></a>
@@ -254,7 +253,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a23b3d130b297927ed06911672a492703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
 <tr class="separator:a23b3d130b297927ed06911672a492703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f2e399a54343e674ad3f0ae2f07cf5"><td class="memItemLeft" align="right" valign="top"><a id="a14f2e399a54343e674ad3f0ae2f07cf5"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html#a14f2e399a54343e674ad3f0ae2f07cf5">CodeToString</a> () const</td></tr>
+<a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html#a14f2e399a54343e674ad3f0ae2f07cf5">CodeToString</a> () const</td></tr>
 <tr class="memdesc:a14f2e399a54343e674ad3f0ae2f07cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status message's code to a string representation. <br /></td></tr>
 <tr class="separator:a14f2e399a54343e674ad3f0ae2f07cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc383ecb0e001e73f27af11aabc6d77f"><td class="memItemLeft" align="right" valign="top"><a id="acc383ecb0e001e73f27af11aabc6d77f"></a>

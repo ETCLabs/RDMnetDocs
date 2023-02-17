@@ -19,10 +19,9 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="etclibtool.css" rel="stylesheet" type="text/css"/>
-<link href="rdmnet_dox_styles.css" rel="stylesheet" type="text/css"/>
+<link href="etcdevtool.css" rel="stylesheet" type="text/css"/>
 <!-- BEGIN CUSTOM SCRIPTS -->
-<!-- BEGIN ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- BEGIN ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () {
     $.get('/RDMnetDocs/versions.txt', function (data) {
@@ -53,7 +52,7 @@
     }, 'text');
   });
 </script>
-<!-- END ETCLIBTOOL VERSION SELECTOR SCRIPT -->
+<!-- END ETCDEVTOOL VERSION SELECTOR SCRIPT -->
 <script type="text/javascript">
   $(function () { selectAllC() });
 </script>
@@ -138,7 +137,7 @@
    </div>
    <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
   </td>
-  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- BEGIN VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
   <td style="text-align: right; padding-right: 0.5em">
     <div id="otherversions">
       View other versions:
@@ -146,7 +145,7 @@
       </select>
     </div>
   </td>
-  <!-- END VERSION SELECTOR INSERTED BY ETCLIBTOOL -->
+  <!-- END VERSION SELECTOR INSERTED BY ETCDEVTOOL -->
  </tr>
  </tbody>
 </table>
@@ -213,7 +212,7 @@ $(document).ready(function(){initNavTree('llrp__manager_8h.html',''); initResiza
 <div class="textblock"><p>Functions for implementing LLRP Manager functionality. </p>
 </div><div class="textblock"><code>#include &quot;etcpal/uuid.h&quot;</code><br />
 <code>#include &quot;etcpal/inet.h&quot;</code><br />
-<code>#include &quot;<a class="elRef" href="https://etclabs.github.io/RDM/docs/head/message_8h.html">rdm/message.h</a>&quot;</code><br />
+<code>#include &quot;rdm/message.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="llrp_8h_source.html">rdmnet/llrp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&quot;</code><br />
@@ -271,25 +270,25 @@ Functions</h2></td></tr>
 <tr class="memitem:ga600905110d762ef671afd9de99a59ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9">llrp_manager_config_set_callbacks</a> (<a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a> target_discovered, <a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a> discovery_finished, void *context)</td></tr>
 <tr class="memdesc:ga600905110d762ef671afd9de99a59ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks in an LLRP manager configuration structure.  <a href="group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9">More...</a><br /></td></tr>
 <tr class="separator:ga600905110d762ef671afd9de99a59ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e">llrp_manager_create</a> (const <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> *handle)</td></tr>
+<tr class="memitem:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e">llrp_manager_create</a> (const <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> *handle)</td></tr>
 <tr class="memdesc:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new LLRP manager instance.  <a href="group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e">More...</a><br /></td></tr>
 <tr class="separator:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6946507c85bee886873330625f8f9d1d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga6946507c85bee886873330625f8f9d1d">llrp_manager_destroy</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle)</td></tr>
+<tr class="memitem:ga6946507c85bee886873330625f8f9d1d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga6946507c85bee886873330625f8f9d1d">llrp_manager_destroy</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle)</td></tr>
 <tr class="memdesc:ga6946507c85bee886873330625f8f9d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an LLRP manager instance.  <a href="group__llrp__manager.html#ga6946507c85bee886873330625f8f9d1d">More...</a><br /></td></tr>
 <tr class="separator:ga6946507c85bee886873330625f8f9d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf767011a6d96b6a2692e313865a9b29d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gaf767011a6d96b6a2692e313865a9b29d">llrp_manager_start_discovery</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, uint16_t filter)</td></tr>
+<tr class="memitem:gaf767011a6d96b6a2692e313865a9b29d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gaf767011a6d96b6a2692e313865a9b29d">llrp_manager_start_discovery</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, uint16_t filter)</td></tr>
 <tr class="memdesc:gaf767011a6d96b6a2692e313865a9b29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start discovery on an LLRP manager.  <a href="group__llrp__manager.html#gaf767011a6d96b6a2692e313865a9b29d">More...</a><br /></td></tr>
 <tr class="separator:gaf767011a6d96b6a2692e313865a9b29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbc400a21df76a82f733b2ecad44225a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gadbc400a21df76a82f733b2ecad44225a">llrp_manager_stop_discovery</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle)</td></tr>
+<tr class="memitem:gadbc400a21df76a82f733b2ecad44225a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gadbc400a21df76a82f733b2ecad44225a">llrp_manager_stop_discovery</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle)</td></tr>
 <tr class="memdesc:gadbc400a21df76a82f733b2ecad44225a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop discovery on an LLRP manager.  <a href="group__llrp__manager.html#gadbc400a21df76a82f733b2ecad44225a">More...</a><br /></td></tr>
 <tr class="separator:gadbc400a21df76a82f733b2ecad44225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga717f270f5fcdbf53f1a75bb4da336507"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga717f270f5fcdbf53f1a75bb4da336507">llrp_manager_send_rdm_command</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> *destination, <a class="el" href="group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24">rdmnet_command_class_t</a> command_class, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
+<tr class="memitem:ga717f270f5fcdbf53f1a75bb4da336507"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga717f270f5fcdbf53f1a75bb4da336507">llrp_manager_send_rdm_command</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> *destination, <a class="el" href="group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24">rdmnet_command_class_t</a> command_class, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
 <tr class="memdesc:ga717f270f5fcdbf53f1a75bb4da336507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM command from an LLRP manager.  <a href="group__llrp__manager.html#ga717f270f5fcdbf53f1a75bb4da336507">More...</a><br /></td></tr>
 <tr class="separator:ga717f270f5fcdbf53f1a75bb4da336507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b0abe1eb48a9b17e321be18e88e5316"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga6b0abe1eb48a9b17e321be18e88e5316">llrp_manager_send_get_command</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
+<tr class="memitem:ga6b0abe1eb48a9b17e321be18e88e5316"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga6b0abe1eb48a9b17e321be18e88e5316">llrp_manager_send_get_command</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
 <tr class="memdesc:ga6b0abe1eb48a9b17e321be18e88e5316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM GET command from an LLRP manager.  <a href="group__llrp__manager.html#ga6b0abe1eb48a9b17e321be18e88e5316">More...</a><br /></td></tr>
 <tr class="separator:ga6b0abe1eb48a9b17e321be18e88e5316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga06ca44f9911d1ba7e49969af52f179f4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga06ca44f9911d1ba7e49969af52f179f4">llrp_manager_send_set_command</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
+<tr class="memitem:ga06ca44f9911d1ba7e49969af52f179f4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga06ca44f9911d1ba7e49969af52f179f4">llrp_manager_send_set_command</a> (<a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> handle, const <a class="el" href="struct_llrp_destination_addr.html">LlrpDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
 <tr class="memdesc:ga06ca44f9911d1ba7e49969af52f179f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM SET command from an LLRP manager.  <a href="group__llrp__manager.html#ga06ca44f9911d1ba7e49969af52f179f4">More...</a><br /></td></tr>
 <tr class="separator:ga06ca44f9911d1ba7e49969af52f179f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -298,7 +297,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c1195f86621e33ed43eded9aafd49d7.html">include</a></li><li class="navelem"><a class="el" href="dir_046b102fd3c85361cbf0dc0d65cecbfd.html">rdmnet</a></li><li class="navelem"><a class="el" href="llrp__manager_8h.html">llrp_manager.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b251054f776731e7471574c30f2d9f6a.html">include</a></li><li class="navelem"><a class="el" href="dir_fbdc2d1f3ed8e2aeb880f82654eef491.html">rdmnet</a></li><li class="navelem"><a class="el" href="llrp__manager_8h.html">llrp_manager.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
