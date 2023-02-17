@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="title">Handling RDM Commands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpglu2neiy_docs_getting_started_handling_rdm_commands"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpnr4gbpfo_docs_getting_started_handling_rdm_commands"></a></p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -317,8 +317,8 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_a24e38683dabb26fcffff5ff569c24451"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#a24e38683dabb26fcffff5ff569c24451">rdmnet::RdmCommand::IsGet</a></div><div class="ttdeci">constexpr bool IsGet() const noexcept</div><div class="ttdoc">Whether this command is an RDM GET command.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:209</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_aeb06b87b7d84f9dcb290a7ac38a9f326"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#aeb06b87b7d84f9dcb290a7ac38a9f326">rdmnet::RdmCommand::param_id</a></div><div class="ttdeci">constexpr uint16_t param_id() const noexcept</div><div class="ttdoc">Get the RDM parameter ID (PID) of this command.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:179</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a></div><div class="ttdoc">A class representing a synchronous action to take in response to a received RDM command.</div><div class="ttdef"><b>Definition:</b> common.h:106</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a31ddf153fa96dc16e1fd6fcf92382f55"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a31ddf153fa96dc16e1fd6fcf92382f55">rdmnet::RdmResponseAction::SendAck</a></div><div class="ttdeci">static RdmResponseAction SendAck(size_t response_data_len=0)</div><div class="ttdoc">Send an RDM ACK, optionally including some response data.</div><div class="ttdef"><b>Definition:</b> common.h:123</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html">rdmnet::RdmResponseAction</a></div><div class="ttdoc">A class representing a synchronous action to take in response to a received RDM command.</div><div class="ttdef"><b>Definition:</b> common.h:146</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a31ddf153fa96dc16e1fd6fcf92382f55"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a31ddf153fa96dc16e1fd6fcf92382f55">rdmnet::RdmResponseAction::SendAck</a></div><div class="ttdeci">static RdmResponseAction SendAck(size_t response_data_len=0)</div><div class="ttdoc">Send an RDM ACK, optionally including some response data.</div><div class="ttdef"><b>Definition:</b> common.h:163</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -426,7 +426,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a0286cbe7b1f91734d7b516c1c66e127c">rdmnet::RdmResponseAction::SendNack</a>(kRdmNRDataOutOfRange);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a0286cbe7b1f91734d7b516c1c66e127c"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a0286cbe7b1f91734d7b516c1c66e127c">rdmnet::RdmResponseAction::SendNack</a></div><div class="ttdeci">static RdmResponseAction SendNack(rdm_nack_reason_t nack_reason)</div><div class="ttdoc">Send an RDM NACK with a reason code.</div><div class="ttdef"><b>Definition:</b> common.h:132</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a0286cbe7b1f91734d7b516c1c66e127c"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a0286cbe7b1f91734d7b516c1c66e127c">rdmnet::RdmResponseAction::SendNack</a></div><div class="ttdeci">static RdmResponseAction SendNack(rdm_nack_reason_t nack_reason)</div><div class="ttdoc">Send an RDM NACK with a reason code.</div><div class="ttdef"><b>Definition:</b> common.h:172</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -488,7 +488,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line"><span class="comment">// Later, when the response is available...</span></div>
 <div class="line">my_device.SendRdmAck(saved_cmd, response_data, response_data_len);</div>
 <div class="ttc" id="aclassrdmnet_1_1_rdm_command_html_aa11a6d7bc7d826b160703f5423cc5b4e"><div class="ttname"><a href="classrdmnet_1_1_rdm_command.html#aa11a6d7bc7d826b160703f5423cc5b4e">rdmnet::RdmCommand::Save</a></div><div class="ttdeci">SavedRdmCommand Save() const</div><div class="ttdoc">Save the data in this command for later use with API functions from a different context.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:241</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a8b5be1265ac841e5f5678027950a2cea"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a8b5be1265ac841e5f5678027950a2cea">rdmnet::RdmResponseAction::DeferResponse</a></div><div class="ttdeci">static RdmResponseAction DeferResponse()</div><div class="ttdoc">Defer the RDM response to be sent later from another context.</div><div class="ttdef"><b>Definition:</b> common.h:151</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a8b5be1265ac841e5f5678027950a2cea"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a8b5be1265ac841e5f5678027950a2cea">rdmnet::RdmResponseAction::DeferResponse</a></div><div class="ttdeci">static RdmResponseAction DeferResponse()</div><div class="ttdoc">Defer the RDM response to be sent later from another context.</div><div class="ttdef"><b>Definition:</b> common.h:191</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_saved_rdm_command_html"><div class="ttname"><a href="classrdmnet_1_1_saved_rdm_command.html">rdmnet::SavedRdmCommand</a></div><div class="ttdoc">An RDM command received over RDMnet by a local component and saved for a later response.</div><div class="ttdef"><b>Definition:</b> rdm_command.h:87</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -537,7 +537,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  <span class="comment">// There&#39;s no room to save the command, so retry this notification later.</span></div>
 <div class="line">  <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a32c17df80bf39478406048e5da5ecef5">rdmnet::RdmResponseAction::RetryLater</a>();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a32c17df80bf39478406048e5da5ecef5"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a32c17df80bf39478406048e5da5ecef5">rdmnet::RdmResponseAction::RetryLater</a></div><div class="ttdeci">static RdmResponseAction RetryLater()</div><div class="ttdoc">Trigger another notification for the (non-LLRP) RDM command on the next tick.</div><div class="ttdef"><b>Definition:</b> common.h:159</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_rdm_response_action_html_a32c17df80bf39478406048e5da5ecef5"><div class="ttname"><a href="classrdmnet_1_1_rdm_response_action.html#a32c17df80bf39478406048e5da5ecef5">rdmnet::RdmResponseAction::RetryLater</a></div><div class="ttdeci">static RdmResponseAction RetryLater()</div><div class="ttdoc">Trigger another notification for the (non-LLRP) RDM command on the next tick.</div><div class="ttdef"><b>Definition:</b> common.h:199</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>

@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="title">Using the EPT Client API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpglu2neiy_docs_getting_started_using_ept_client"></a> The EPT Client API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmpnr4gbpfo_docs_getting_started_using_ept_client"></a> The EPT Client API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -720,8 +720,8 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="ttc" id="aclassrdmnet_1_1_ept_data_html_a07635554a26c730bad4cbdb81d5293fd"><div class="ttname"><a href="classrdmnet_1_1_ept_data.html#a07635554a26c730bad4cbdb81d5293fd">rdmnet::EptData::source_cid</a></div><div class="ttdeci">constexpr etcpal::Uuid source_cid() const noexcept</div><div class="ttdoc">Get the CID of the EPT client that sent this data.</div><div class="ttdef"><b>Definition:</b> ept_data.h:111</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_data_html_a73e5f1fcbd4400bdb49b626db158b934"><div class="ttname"><a href="classrdmnet_1_1_ept_data.html#a73e5f1fcbd4400bdb49b626db158b934">rdmnet::EptData::protocol_id</a></div><div class="ttdeci">constexpr uint16_t protocol_id() const noexcept</div><div class="ttdoc">Get the protocol ID that identifies the EPT sub-protocol.</div><div class="ttdef"><b>Definition:</b> ept_data.h:123</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_data_html_ad82230ded92e64886e7a5b2ca8f11fca"><div class="ttname"><a href="classrdmnet_1_1_ept_data.html#ad82230ded92e64886e7a5b2ca8f11fca">rdmnet::EptData::manufacturer_id</a></div><div class="ttdeci">constexpr uint16_t manufacturer_id() const noexcept</div><div class="ttdoc">Get the ESTA manufacturer ID that identifies the EPT sub-protocol.</div><div class="ttdef"><b>Definition:</b> ept_data.h:117</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html">rdmnet::EptResponseAction</a></div><div class="ttdoc">A class representing a synchronous action to take in response to a received EPT data message.</div><div class="ttdef"><b>Definition:</b> common.h:175</div></div>
-<div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html_abb876c19423878ded5f6e4b26b339b4c"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html#abb876c19423878ded5f6e4b26b339b4c">rdmnet::EptResponseAction::DeferResponse</a></div><div class="ttdeci">static EptResponseAction DeferResponse()</div><div class="ttdoc">Defer the response to the EPT message, either to be sent later or because no response is necessary.</div><div class="ttdef"><b>Definition:</b> common.h:207</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html">rdmnet::EptResponseAction</a></div><div class="ttdoc">A class representing a synchronous action to take in response to a received EPT data message.</div><div class="ttdef"><b>Definition:</b> common.h:215</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html_abb876c19423878ded5f6e4b26b339b4c"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html#abb876c19423878ded5f6e4b26b339b4c">rdmnet::EptResponseAction::DeferResponse</a></div><div class="ttdeci">static EptResponseAction DeferResponse()</div><div class="ttdoc">Defer the response to the EPT message, either to be sent later or because no response is necessary.</div><div class="ttdef"><b>Definition:</b> common.h:247</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -765,7 +765,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a>(my_ept_response_buf, my_response_data, kResponseDataSize);</div>
 <div class="line">  <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">rdmnet::EptResponseAction::SendData</a>(kResponseDataSize);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html_a1fcc67717e1fef1438da2cded45a631c"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">rdmnet::EptResponseAction::SendData</a></div><div class="ttdeci">static EptResponseAction SendData(size_t response_data_len)</div><div class="ttdoc">Send an EPT data message in response.</div><div class="ttdef"><b>Definition:</b> common.h:190</div></div>
+<div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html_a1fcc67717e1fef1438da2cded45a631c"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">rdmnet::EptResponseAction::SendData</a></div><div class="ttdeci">static EptResponseAction SendData(size_t response_data_len)</div><div class="ttdoc">Send an EPT data message in response.</div><div class="ttdef"><b>Definition:</b> common.h:230</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>

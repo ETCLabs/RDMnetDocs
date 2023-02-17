@@ -466,6 +466,8 @@ var group__rdmnet__cpp__common =
     [ "ScopeHandle", "group__rdmnet__cpp__common.html#ga949cd3b533bd716f81d44c623cb18896", null ],
     [ "Deinit", "group__rdmnet__cpp__common.html#ga630a9b2c8c84ea45bc9c2aa4672055fb", null ],
     [ "Init", "group__rdmnet__cpp__common.html#ga33143f39de2d03ca97b963db7df4dbf1", null ],
+    [ "Init", "group__rdmnet__cpp__common.html#ga69c57b58b584849ce83622d049c514b2", null ],
+    [ "Init", "group__rdmnet__cpp__common.html#gafe4e9eae20759a888903057b30154ecd", null ],
     [ "Init", "group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539", null ],
     [ "kNullEndpoint", "group__rdmnet__cpp__common.html#gac4ab6502f8edc4f19b0886f658d3f7b9", null ]
 ];

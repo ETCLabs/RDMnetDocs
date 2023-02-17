@@ -32,7 +32,8 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Data Structures", "annotated.html", [
@@ -68,11 +69,11 @@ var NAVTREEINDEX =
 "classrdmnet_1_1llrp_1_1_rdm_command.html#a715e5af4d58ec35a61e21f71c31242e7",
 "cpp/io/c/fgetws.html",
 "cpp/string/byte/strchr.html",
-"globals_r.html",
-"group__rdmnet__api__common.html#gaead0571e191b40969b27a809b9617696",
-"group__rdmnet__device.html#ga2eaeaedc5a3e9602ad836debed4e946e",
-"namespacerdmnet.html",
-"struct_rdmnet_rdm_response.html#acccd24ff374a39ca8a8b78c631803d60"
+"globals_enum.html",
+"group__rdmnet__api__common.html#gae68df9ba6d5fde047e082925b6a05956",
+"group__rdmnet__device.html#ga1b76b6f44ed938ecbeb8b6edd8d2eea7",
+"llrp__target_8h.html",
+"struct_rdmnet_rdm_command.html#ac78cff7af99787faad2a285dffdde08e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

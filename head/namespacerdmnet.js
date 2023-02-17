@@ -42,8 +42,14 @@ var namespacerdmnet =
     [ "RptStatus", "classrdmnet_1_1_rpt_status.html", "classrdmnet_1_1_rpt_status" ],
     [ "SavedRptStatus", "classrdmnet_1_1_saved_rpt_status.html", "classrdmnet_1_1_saved_rpt_status" ],
     [ "ScopeHandle", "group__rdmnet__cpp__common.html#ga949cd3b533bd716f81d44c623cb18896", null ],
+    [ "McastMode", "namespacerdmnet.html#af874a6c4f11432c529c4068e745889b5", [
+      [ "kEnabledOnAllInterfaces", "namespacerdmnet.html#af874a6c4f11432c529c4068e745889b5ad1989e9a06422a85d3d6d2ecf25a50cf", null ],
+      [ "kDisabledOnAllInterfaces", "namespacerdmnet.html#af874a6c4f11432c529c4068e745889b5a42f053f48441c9286254c451c8bea6a2", null ]
+    ] ],
     [ "Deinit", "group__rdmnet__cpp__common.html#ga630a9b2c8c84ea45bc9c2aa4672055fb", null ],
     [ "Init", "group__rdmnet__cpp__common.html#ga33143f39de2d03ca97b963db7df4dbf1", null ],
+    [ "Init", "group__rdmnet__cpp__common.html#ga69c57b58b584849ce83622d049c514b2", null ],
+    [ "Init", "group__rdmnet__cpp__common.html#gafe4e9eae20759a888903057b30154ecd", null ],
     [ "Init", "group__rdmnet__cpp__common.html#gaf67a5727b5378a590e097df2dd9b0539", null ],
     [ "kNullEndpoint", "group__rdmnet__cpp__common.html#gac4ab6502f8edc4f19b0886f658d3f7b9", null ]
 ];
