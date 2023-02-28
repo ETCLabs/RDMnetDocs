@@ -1,5 +1,10 @@
 var NAVTREEINDEX9 =
 {
+"struct_rdmnet_rpt_client_entry.html#aeedb7a29e8587dc82a1586f72b0afcee":[0,0,0,24,3],
+"struct_rdmnet_rpt_client_list.html":[0,0,0,27],
+"struct_rdmnet_rpt_client_list.html#ab83c415e9196e74a3fa20b73d3407586":[0,0,0,27,0],
+"struct_rdmnet_rpt_client_list.html#acdd2b6b109461335c356422b1bb15d6c":[0,0,0,27,2],
+"struct_rdmnet_rpt_client_list.html#ae47a845eafcc1ead4a2c5e39c9e7ae50":[0,0,0,27,1],
 "struct_rdmnet_rpt_status.html":[0,0,0,16],
 "struct_rdmnet_rpt_status.html#a341877f2348eb080feef58049da4d5d4":[0,0,0,16,2],
 "struct_rdmnet_rpt_status.html#a53ab51517ca9f740f333ea992a1fa412":[0,0,0,16,4],
@@ -203,10 +208,5 @@ var NAVTREEINDEX9 =
 "using_ept_client.html":[4,5],
 "using_llrp_manager.html":[4,4],
 "version_8h.html":[3,0,0,0,12],
-"version_8h_source.html":[3,0,0,0,12],
-"":[1,0,1,3],
-"":[1,0,1,1],
-"":[1,0,1],
-"":[1,0,1,2],
-"":[1,0,1,0]
+"version_8h_source.html":[3,0,0,0,12]
 };
