@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['year_2908',['year',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_timestamp.html#a9c83bbc97dcf2390b043382b4dfe3c98',1,'EtcPalLogTimestamp']]],
-  ['yield_2909',['yield',['https://en.cppreference.com/w/cpp/thread/yield.html',1,'std::this_thread']]],
-  ['yocto_2910',['yocto',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
-  ['yotta_2911',['yotta',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]]
+  ['year_2915',['year',['https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_timestamp.html#a9c83bbc97dcf2390b043382b4dfe3c98',1,'EtcPalLogTimestamp']]],
+  ['yield_2916',['yield',['https://en.cppreference.com/w/cpp/thread/yield.html',1,'std::this_thread']]],
+  ['yocto_2917',['yocto',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['yotta_2918',['yotta',['https://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]]
 ];
