@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"cpp/string/byte/strchr.html":[1,0,1,406],
+"cpp/string/byte/strcmp.html":[1,0,1,407],
+"cpp/string/byte/strcoll.html":[1,0,1,408],
+"cpp/string/byte/strcpy.html":[1,0,1,409],
+"cpp/string/byte/strcspn.html":[1,0,1,410],
 "cpp/string/byte/strerror.html":[1,0,1,411],
 "cpp/string/byte/strlen.html":[1,0,1,413],
 "cpp/string/byte/strncat.html":[1,0,1,414],
@@ -151,13 +156,13 @@ var NAVTREEINDEX4 =
 "device_8h.html":[3,0,0,0,5],
 "device_8h_source.html":[3,0,0,0,5],
 "devices_and_gateways.html":[5,1],
-"dir_00e41c2b041a3f3c539b464d0791cbe5.html":[3,0,1,0],
-"dir_118a5fc8ac9017f99018809dbe871cfd.html":[3,0,1],
-"dir_1b1c8d057b820a8f104eed4dd9104783.html":[3,0,0,0,0,0],
-"dir_32d8f02df01bc03b2e9200491f4d519d.html":[3,0,0],
-"dir_547126825010a1ce5423b7b4821c78b0.html":[3,0,1,0,0],
-"dir_a842a23ef5ee9c6069ec6b17b6125366.html":[3,0,0,0],
-"dir_b5c042bd65085f8fc864662c74a32221.html":[3,0,0,0,0],
+"dir_0ea75cc670741c11b10ed4ed0bff7fd8.html":[3,0,0,0,0],
+"dir_2c0ec13eb54c162add36fc0f14b5dade.html":[3,0,1],
+"dir_88995c499035394c2295d13377ed7cc8.html":[3,0,0,0,0,0],
+"dir_8fc319c0f89651e54cbba9ab53604d58.html":[3,0,0],
+"dir_c2ad8a2591051adf84deade48cb991a4.html":[3,0,1,0],
+"dir_d70d933fdad49a05561108f9326f744a.html":[3,0,1,0,0],
+"dir_ffec5297a767c7218cac4888edea38b0.html":[3,0,0,0],
 "discovery.html":[5,2],
 "discovery_8h.html":[3,0,0,0,6],
 "discovery_8h_source.html":[3,0,0,0,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "globals_eval.html":[3,1,4],
 "globals_func.html":[3,1,1],
 "globals_k.html":[3,1,0,2],
-"globals_l.html":[3,1,0,3],
-"globals_r.html":[3,1,0,4],
-"globals_type.html":[3,1,2],
-"group__llrp__manager.html":[0,0,5],
-"group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061":[3,0,0,0,9,6],
-"group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061":[0,0,5,8]
+"globals_l.html":[3,1,0,3]
 };
