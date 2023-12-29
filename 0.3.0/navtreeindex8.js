@@ -1,10 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"rpt__client_8h_source.html":[3,0,0,0,0,0,8],
-"rpt__status_8h.html":[3,0,0,0,0,0,9],
-"rpt__status_8h_source.html":[3,0,0,0,0,0,9],
-"struct_llrp_destination_addr.html":[0,0,0,10],
-"struct_llrp_destination_addr.html#a171ea239f97a7af54496f10c88855c48":[0,0,0,10,2],
 "struct_llrp_destination_addr.html#a5376b761b4d63561725f2e44ac8ef363":[0,0,0,10,1],
 "struct_llrp_destination_addr.html#ae278a51f1e043076640f187c9a9ce88c":[0,0,0,10,0],
 "struct_llrp_discovered_target.html":[0,0,0,11],
@@ -249,5 +244,10 @@ var NAVTREEINDEX8 =
 "struct_rdmnet_rpt_client_entry.html":[0,0,0,24],
 "struct_rdmnet_rpt_client_entry.html#ad8287f6a5cbefde06a7e70ff4eee0091":[0,0,0,24,0],
 "struct_rdmnet_rpt_client_entry.html#adefb8e2be2ed7250cd5c636d0d396a2d":[0,0,0,24,1],
-"struct_rdmnet_rpt_client_entry.html#ae47f295713b57d8238f420a70e1b7289":[0,0,0,24,2]
+"struct_rdmnet_rpt_client_entry.html#ae47f295713b57d8238f420a70e1b7289":[0,0,0,24,2],
+"struct_rdmnet_rpt_client_entry.html#aeedb7a29e8587dc82a1586f72b0afcee":[0,0,0,24,3],
+"struct_rdmnet_rpt_client_list.html":[0,0,0,27],
+"struct_rdmnet_rpt_client_list.html#ab83c415e9196e74a3fa20b73d3407586":[0,0,0,27,0],
+"struct_rdmnet_rpt_client_list.html#acdd2b6b109461335c356422b1bb15d6c":[0,0,0,27,2],
+"struct_rdmnet_rpt_client_list.html#ae47a845eafcc1ead4a2c5e39c9e7ae50":[0,0,0,27,1]
 };

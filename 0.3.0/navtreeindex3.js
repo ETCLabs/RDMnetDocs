@@ -1,10 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"cpp/io/c/fgetws.html":[1,0,1,125],
-"cpp/io/c/fopen.html":[1,0,1,140],
-"cpp/io/c/fprintf.html":[1,0,1,145],
-"cpp/io/c/fprintf.html":[1,0,1,316],
-"cpp/io/c/fprintf.html":[1,0,1,387],
 "cpp/io/c/fprintf.html":[1,0,1,390],
 "cpp/io/c/fputc.html":[1,0,1,146],
 "cpp/io/c/fputc.html":[1,0,1,320],
@@ -51,8 +46,8 @@ var NAVTREEINDEX3 =
 "cpp/io/c/vfwprintf.html":[1,0,1,476],
 "cpp/io/c/vfwprintf.html":[1,0,1,483],
 "cpp/io/c/vfwprintf.html":[1,0,1,485],
-"cpp/io/c/vfwscanf.html":[1,0,1,486],
 "cpp/io/c/vfwscanf.html":[1,0,1,477],
+"cpp/io/c/vfwscanf.html":[1,0,1,486],
 "cpp/io/c/vfwscanf.html":[1,0,1,484],
 "cpp/io/manip/boolalpha.html":[1,0,1,60],
 "cpp/io/manip/boolalpha.html":[1,0,1,292],
@@ -249,5 +244,10 @@ var NAVTREEINDEX3 =
 "cpp/string/byte/memcpy.html":[1,0,1,270],
 "cpp/string/byte/memmove.html":[1,0,1,271],
 "cpp/string/byte/memset.html":[1,0,1,272],
-"cpp/string/byte/strcat.html":[1,0,1,405]
+"cpp/string/byte/strcat.html":[1,0,1,405],
+"cpp/string/byte/strchr.html":[1,0,1,406],
+"cpp/string/byte/strcmp.html":[1,0,1,407],
+"cpp/string/byte/strcoll.html":[1,0,1,408],
+"cpp/string/byte/strcpy.html":[1,0,1,409],
+"cpp/string/byte/strcspn.html":[1,0,1,410]
 };
