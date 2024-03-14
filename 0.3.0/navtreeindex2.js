@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a6c20ecfa9c3ef1f63060041e5130e2e2":[0,1,1,17,9],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a7db88b8dee5604358fb8f59a33ba1df8":[0,1,1,17,7],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a7fb6d9c91daa359fb18eb4f25aad5846":[0,1,1,17,20],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a8574b82f4a8c06d337efc1135af8330e":[0,1,1,17,12],
-"classrdmnet_1_1llrp_1_1_rdm_command.html#a8db3f3acf0211b6e14a1abdbbd9509e7":[0,1,1,17,15],
 "classrdmnet_1_1llrp_1_1_rdm_command.html#a930b88515698cfb5f9383393d6c09409":[0,1,1,17,10],
 "classrdmnet_1_1llrp_1_1_rdm_command.html#aa9fc28c42dad5d9f157005b74cfb33a7":[0,1,1,17,16],
 "classrdmnet_1_1llrp_1_1_rdm_command.html#ab07eb7a86f87b1a53bba6906a4efba31":[0,1,1,17,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX2 =
 "cpp/io/c/fgetc.html":[1,0,1,174],
 "cpp/io/c/fgetpos.html":[1,0,1,122],
 "cpp/io/c/fgets.html":[1,0,1,123],
-"cpp/io/c/fgetwc.html":[1,0,1,124]
+"cpp/io/c/fgetwc.html":[1,0,1,124],
+"cpp/io/c/fgetws.html":[1,0,1,125],
+"cpp/io/c/fopen.html":[1,0,1,140],
+"cpp/io/c/fprintf.html":[1,0,1,145],
+"cpp/io/c/fprintf.html":[1,0,1,316],
+"cpp/io/c/fprintf.html":[1,0,1,387]
 };
