@@ -1,11 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"cpp/string/byte/memchr.html":[1,0,1,268],
-"cpp/string/byte/memcmp.html":[1,0,1,269],
-"cpp/string/byte/memcpy.html":[1,0,1,270],
-"cpp/string/byte/memmove.html":[1,0,1,271],
-"cpp/string/byte/memset.html":[1,0,1,272],
-"cpp/string/byte/strcat.html":[1,0,1,405],
 "cpp/string/byte/strchr.html":[1,0,1,406],
 "cpp/string/byte/strcmp.html":[1,0,1,407],
 "cpp/string/byte/strcoll.html":[1,0,1,408],
@@ -249,5 +243,11 @@ var NAVTREEINDEX4 =
 "functions_vars_v.html":[2,2,2,17],
 "functions_vars_w.html":[2,2,2,18],
 "functions_w.html":[2,2,0,19],
-"functions_~.html":[2,2,0,20]
+"functions_~.html":[2,2,0,20],
+"getting_started.html":[4],
+"global_init_and_destroy.html":[4,7],
+"globals.html":[3,1,0],
+"globals.html":[3,1,0,0],
+"globals_defs.html":[3,1,5],
+"globals_e.html":[3,1,0,1]
 };
