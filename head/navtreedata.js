@@ -67,13 +67,11 @@ var NAVTREEINDEX =
 "annotated.html",
 "classrdmnet_1_1_rdm_command.html",
 "classrdmnet_1_1llrp_1_1_rdm_command.html#a715e5af4d58ec35a61e21f71c31242e7",
-"cpp/io/c/fgetws.html",
-"cpp/string/byte/strchr.html",
-"globals_enum.html",
-"group__rdmnet__api__common.html#gae68df9ba6d5fde047e082925b6a05956",
-"group__rdmnet__device.html#ga1b76b6f44ed938ecbeb8b6edd8d2eea7",
-"llrp__target_8h.html",
-"struct_rdmnet_rdm_command.html#ac78cff7af99787faad2a285dffdde08e"
+"group__llrp__manager.html#gadbc400a21df76a82f733b2ecad44225a",
+"group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a0f4c75a40aa7b19814286f5cda780f00",
+"group__rdmnet__device.html#gaa07ae1f6ddeb9c25ed4b4317dbc3cac3",
+"struct_llrp_discovered_target.html#a98b74ef88251de997b90bb399762371a",
+"struct_rdmnet_saved_ept_data.html#ae44950c5a1939c04b9a9337a57828a35"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

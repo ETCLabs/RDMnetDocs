@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html',''); initResi
 <div class="title">Using the LLRP Manager API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpmcb6_4_5_docs_getting_started_using_llrp_manager"></a> The LLRP Manager API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp4mq4344d_docs_getting_started_using_llrp_manager"></a> The LLRP Manager API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -393,7 +393,7 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html',''); initResi
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">char</span> uid_str[RDM_UID_STRING_BYTES];</div>
 <div class="line">  rdm_uid_to_string(&amp;target-&gt;<a class="code" href="struct_llrp_discovered_target.html#ad908bad751766196cc2334b0f8579a5c">uid</a>, uid_str);</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Discovered new LLRP target with UID %s, target type %s\n&quot;</span>, uid_str,</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Discovered new LLRP target with UID %s, target type %s\n&quot;</span>, uid_str,</div>
 <div class="line">         <a class="code" href="group__rdmnet__api__common.html#ga953e59c75bae61dcd3f38fbc9227e888">llrp_component_type_to_string</a>(target-&gt;<a class="code" href="struct_llrp_discovered_target.html#a98b74ef88251de997b90bb399762371a">component_type</a>));</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -401,9 +401,8 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html',''); initResi
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handle and/or context as necessary...</span></div>
 <div class="line"> </div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;LLRP discovery finished.\n&quot;</span>);</div>
+<div class="line">  printf(<span class="stringliteral">&quot;LLRP discovery finished.\n&quot;</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga953e59c75bae61dcd3f38fbc9227e888"><div class="ttname"><a href="group__rdmnet__api__common.html#ga953e59c75bae61dcd3f38fbc9227e888">llrp_component_type_to_string</a></div><div class="ttdeci">const char * llrp_component_type_to_string(llrp_component_t type)</div><div class="ttdoc">Get a string description of an LLRP component type.</div><div class="ttdef"><b>Definition:</b> llrp.c:46</div></div>
 <div class="ttc" id="astruct_llrp_discovered_target_html"><div class="ttname"><a href="struct_llrp_discovered_target.html">LlrpDiscoveredTarget</a></div><div class="ttdef"><b>Definition:</b> llrp.h:72</div></div>
 <div class="ttc" id="astruct_llrp_discovered_target_html_a98b74ef88251de997b90bb399762371a"><div class="ttname"><a href="struct_llrp_discovered_target.html#a98b74ef88251de997b90bb399762371a">LlrpDiscoveredTarget::component_type</a></div><div class="ttdeci">llrp_component_t component_type</div><div class="ttdef"><b>Definition:</b> llrp.h:80</div></div>
@@ -419,7 +418,7 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html',''); initResi
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handle as necessary...</span></div>
 <div class="line"> </div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Discovered new LLRP target with UID &quot;</span> &lt;&lt; target.uid.ToString()</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Discovered new LLRP target with UID &quot;</span> &lt;&lt; target.uid.ToString()</div>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot;, target type &quot;</span> &lt;&lt; target.ComponentTypeToString() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -427,9 +426,8 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html',''); initResi
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handle as necessary...</span></div>
 <div class="line"> </div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;LLRP discovery finished.\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;LLRP discovery finished.\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>

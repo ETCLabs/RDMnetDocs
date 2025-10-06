@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a408c38e2ece7d6a8dda04484f006e8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid data structure by default. <br /></td></tr>
 <tr class="separator:a408c38e2ece7d6a8dda04484f006e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929dfde5a4d590055c11c33855293395"><td class="memItemLeft" align="right" valign="top"><a id="a929dfde5a4d590055c11c33855293395"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a929dfde5a4d590055c11c33855293395">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, const <a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt; &amp;new_protocols)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a929dfde5a4d590055c11c33855293395">Settings</a> (const <a class="elRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;new_cid, const std::vector&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt; &amp;new_protocols)</td></tr>
 <tr class="memdesc:a929dfde5a4d590055c11c33855293395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an EPT client <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html" title="A set of configuration settings that an EPT client needs to initialize.">Settings</a> instance by passing the required members explicitly. <br /></td></tr>
 <tr class="separator:a929dfde5a4d590055c11c33855293395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memItemLeft" align="right" valign="top"><a id="ac532c4b500b1a85ea22217f2c65a70ed"></a>
@@ -232,10 +232,10 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The EPT client's CID. <br /></td></tr>
 <tr class="separator:ab74b3ddda3c95279107d0059dd7ee9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed38b6d6d163918a6c406f65085b18b"><td class="memItemLeft" align="right" valign="top"><a id="a7ed38b6d6d163918a6c406f65085b18b"></a>
-<a class="elRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a7ed38b6d6d163918a6c406f65085b18b">protocols</a></td></tr>
+std::vector&lt; <a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">EptSubProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a7ed38b6d6d163918a6c406f65085b18b">protocols</a></td></tr>
 <tr class="memdesc:a7ed38b6d6d163918a6c406f65085b18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of EPT sub-protocols that this EPT client supports. <br /></td></tr>
 <tr class="separator:a7ed38b6d6d163918a6c406f65085b18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c6a609a291e3c94f7094891e6d65e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a86c6a609a291e3c94f7094891e6d65e6">search_domain</a></td></tr>
+<tr class="memitem:a86c6a609a291e3c94f7094891e6d65e6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a86c6a609a291e3c94f7094891e6d65e6">search_domain</a></td></tr>
 <tr class="separator:a86c6a609a291e3c94f7094891e6d65e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c6b83acc05eef81905d6b87e28131ce"><td class="memItemLeft" align="right" valign="top"><a id="a6c6b83acc05eef81905d6b87e28131ce"></a>
 const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html#a6c6b83acc05eef81905d6b87e28131ce">response_buf</a> {nullptr}</td></tr>
@@ -250,7 +250,7 @@ const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> search_domain</td>
+          <td class="memname">std::string search_domain</td>
         </tr>
       </table>
 </div><div class="memdoc">

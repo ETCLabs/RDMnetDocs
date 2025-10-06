@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_broker.html',''); initResizable(
 <div class="title">Using the Broker API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpmcb6_4_5_docs_getting_started_using_broker"></a> The RDMnet broker API exposes a C++11 interface for creating instances of RDMnet broker functionality.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp4mq4344d_docs_getting_started_using_broker"></a> The RDMnet broker API exposes a C++11 interface for creating instances of RDMnet broker functionality.</p>
 <p><b>NOTE:</b> Typically, RDMnet broker functionality should have its own dedicated service, and not be included directly in applications. This API is useful for building an RDMnet broker service, or for applications where background services are not available, such as mobile platforms.</p>
 <h1>Initialization</h1>
 <p>The RDMnet library must be globally initialized before using the RDMnet broker API. See <a class="el" href="global_init_and_destroy.html">Global Initialization and Destruction</a>.</p>
@@ -230,9 +230,8 @@ $(document).ready(function(){initNavTree('using_broker.html',''); initResizable(
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error starting broker: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Error starting broker: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abroker_8h_html"><div class="ttname"><a href="broker_8h.html">broker.h</a></div><div class="ttdoc">A platform-neutral RDMnet Broker implementation.</div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
@@ -259,7 +258,7 @@ $(document).ready(function(){initNavTree('using_broker.html',''); initResizable(
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error changing broker&#39;s scope: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Error changing broker&#39;s scope: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_broker_html_a2a1f240c70a743bf9d278029694728a3"><div class="ttname"><a href="classrdmnet_1_1_broker.html#a2a1f240c70a743bf9d278029694728a3">rdmnet::Broker::ChangeScope</a></div><div class="ttdeci">etcpal::Error ChangeScope(const std::string &amp;new_scope, rdmnet_disconnect_reason_t disconnect_reason)</div><div class="ttdoc">Change the scope on which a broker operates.</div><div class="ttdef"><b>Definition:</b> broker_api.cpp:88</div></div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gga3eb1adaf6e830a807d1dcfbc64197222a25de5a2953a7a4ae379975bb300d8165"><div class="ttname"><a href="group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a25de5a2953a7a4ae379975bb300d8165">kRdmnetDisconnectUserReconfigure</a></div><div class="ttdeci">@ kRdmnetDisconnectUserReconfigure</div><div class="ttdef"><b>Definition:</b> common.h:112</div></div>
@@ -288,11 +287,10 @@ $(document).ready(function(){initNavTree('using_broker.html',''); initResizable(
 <div class="ttc" id="aclassrdmnet_1_1_broker_1_1_notify_handler_html"><div class="ttname"><a href="classrdmnet_1_1_broker_1_1_notify_handler.html">rdmnet::Broker::NotifyHandler</a></div><div class="ttdoc">A callback interface for notifications from the broker.</div><div class="ttdef"><b>Definition:</b> broker.h:205</div></div>
 </div><!-- fragment --><h2>Scope Changed</h2>
 <p>If Broker::Settings::allow_rdm_scope_change was set to true at the initialization of a broker instance, the broker will accept RDM commands which change its scope. When this happens, it will also deliver a scope changed notification to the notification handler.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyBrokerNotifyHandler::HandleScopeChanged(<span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&amp; new_scope)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyBrokerNotifyHandler::HandleScopeChanged(<span class="keyword">const</span> std::string&amp; new_scope)</div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Broker&#39;s scope changed to &#39;&quot;</span> &lt;&lt; new_scope &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Broker&#39;s scope changed to &#39;&quot;</span> &lt;&lt; new_scope &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

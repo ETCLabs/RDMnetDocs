@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="title">Handling RDM Commands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp5pti0kq2_docs_getting_started_handling_rdm_commands"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp03h0dsld_docs_getting_started_handling_rdm_commands"></a></p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -288,13 +288,12 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
 <div class="line">  <span class="keywordflow">if</span> (cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.command_class == kRdmCCGetCommand &amp;&amp; cmd-&gt;<a class="code" href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">rdm_header</a>.param_id == E120_DEVICE_INFO)</div>
 <div class="line">  {</div>
-<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">memcpy</a>(my_rdmnet_response_buf, kMyDeviceInfoData, DEVICE_INFO_DATA_SIZE);</div>
+<div class="line">    memcpy(my_rdmnet_response_buf, kMyDeviceInfoData, DEVICE_INFO_DATA_SIZE);</div>
 <div class="line">    <a class="code" href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188">RDMNET_SYNC_SEND_RDM_ACK</a>(response, DEVICE_INFO_DATA_SIZE);</div>
 <div class="line">    <span class="comment">// ACK will be sent after this function returns.</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_gaf4ea2570562bd8f38159f2d7413ca188"><div class="ttname"><a href="group__rdmnet__api__common.html#gaf4ea2570562bd8f38159f2d7413ca188">RDMNET_SYNC_SEND_RDM_ACK</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_RDM_ACK(response_ptr, response_data_len_in)</div><div class="ttdoc">Indicate that an RDM ACK should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:240</div></div>
-<div class="ttc" id="amemcpy_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a></div><div class="ttdeci">T memcpy(T... args)</div></div>
 <div class="ttc" id="astruct_rdmnet_rdm_command_html_a5465508fc1c33985e0b9525573644f05"><div class="ttname"><a href="struct_rdmnet_rdm_command.html#a5465508fc1c33985e0b9525573644f05">RdmnetRdmCommand::rdm_header</a></div><div class="ttdeci">RdmCommandHeader rdm_header</div><div class="ttdoc">The header information from the encapsulated RDM command.</div><div class="ttdef"><b>Definition:</b> message.h:61</div></div>
 </div><!-- fragment --><p> 
 </div>
@@ -310,7 +309,7 @@ $(document).ready(function(){initNavTree('handling_rdm_commands.html',''); initR
 <div class="line">  <span class="comment">// Very simplified example...</span></div>
 <div class="line">  <span class="keywordflow">if</span> (cmd.<a class="code" href="classrdmnet_1_1_rdm_command.html#af01ca868e13240d0a4ddb07f82d9907e">IsGet</a>() &amp;&amp; cmd.<a class="code" href="classrdmnet_1_1_rdm_command.html#a63629cb9cb2169388593a9161a32c72f">param_id</a>() == E120_DEVICE_INFO)</div>
 <div class="line">  {</div>
-<div class="line">    <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a>(my_rdmnet_response_buf, kMyDeviceInfoData, kDeviceInfoDataSize);</div>
+<div class="line">    std::memcpy(my_rdmnet_response_buf, kMyDeviceInfoData, kDeviceInfoDataSize);</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_rdm_response_action.html#a66301810814d353b92754a177d92dcaa">rdmnet::RdmResponseAction::SendAck</a>(kDeviceInfoDataSize);</div>
 <div class="line">  }</div>
 <div class="line">}</div>

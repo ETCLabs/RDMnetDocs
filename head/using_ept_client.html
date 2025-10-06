@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="title">Using the EPT Client API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmpmcb6_4_5_docs_getting_started_using_ept_client"></a> The EPT Client API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp4mq4344d_docs_getting_started_using_ept_client"></a> The EPT Client API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -263,10 +263,9 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;RDMnet EPT client creation failed with error: %s\n&quot;</span>, <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a>(result));</div>
+<div class="line">  printf(<span class="stringliteral">&quot;RDMnet EPT client creation failed with error: %s\n&quot;</span>, <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a>(result));</div>
 <div class="line">}</div>
 <div class="ttc" id="aept__client_8h_html"><div class="ttname"><a href="ept__client_8h.html">ept_client.h</a></div><div class="ttdoc">Definitions for the RDMnet EPT Client API.</div></div>
-<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__etcpal__error_html_ga4902a840d9801e02baebd4c70924c4b0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a></div><div class="ttdeci">const char * etcpal_strerror(etcpal_error_t code)</div></div>
 <div class="ttc" id="agroup__etcpal__error_html_ga743b0648f0ca798ef29c9f69c6e255af"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a></div><div class="ttdeci">etcpal_error_t</div></div>
 <div class="ttc" id="agroup__etcpal__error_html_gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a></div><div class="ttdeci">kEtcPalErrOk</div></div>
@@ -300,7 +299,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line"><span class="comment">// Provide information about the EPT sub-protocols we support. Protocols are namespaced under your</span></div>
 <div class="line"><span class="comment">// ESTA manufacturer ID. If you have not yet requested an ESTA manufacturer ID, the range 0x7ff0 to</span></div>
 <div class="line"><span class="comment">// 0x7fff can be used for prototyping.</span></div>
-<div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;rdmnet::EptSubProtocol&gt;</a> my_protocols = {</div>
+<div class="line">std::vector&lt;rdmnet::EptSubProtocol&gt; my_protocols = {</div>
 <div class="line">  {</div>
 <div class="line">    MY_ESTA_MANUFACTURER_ID, <span class="comment">// Our ESTA manufacturer ID.</span></div>
 <div class="line">    1,                       <span class="comment">// The protocol number.</span></div>
@@ -327,9 +326,8 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;RDMnet EPT client startup failed with error: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;RDMnet EPT client startup failed with error: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <div class="ttc" id="aclassetcpal_1_1_opaque_id_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">etcpal::OpaqueId&lt; detail::EptClientHandleType, rdmnet_ept_client_t, RDMNET_EPT_CLIENT_INVALID &gt;</a></div></div>
@@ -341,7 +339,6 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_html_a621c302402e64b9facadd7bfdcb2afbd"><div class="ttname"><a href="classrdmnet_1_1_ept_client.html#a621c302402e64b9facadd7bfdcb2afbd">rdmnet::EptClient::handle</a></div><div class="ttdeci">Handle handle() const</div><div class="ttdoc">Retrieve the handle of an EPT client instance.</div><div class="ttdef"><b>Definition:</b> ept_client.h:341</div></div>
 <div class="ttc" id="acpp_2ept__client_8h_html"><div class="ttname"><a href="cpp_2ept__client_8h.html">ept_client.h</a></div><div class="ttdoc">C++ wrapper for the RDMnet EPT Client API.</div></div>
 <div class="ttc" id="astructrdmnet_1_1_ept_client_1_1_settings_html"><div class="ttname"><a href="structrdmnet_1_1_ept_client_1_1_settings.html">rdmnet::EptClient::Settings</a></div><div class="ttdoc">A set of configuration settings that an EPT client needs to initialize.</div><div class="ttdef"><b>Definition:</b> ept_client.h:124</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; rdmnet::EptSubProtocol &gt;</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -373,7 +370,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 </p>
 <h1>Managing Scopes</h1>
 <p>An EPT client instance is initially created without any configured scopes. If the app has not been reconfigured by a user, the E1.33 RDMnet standard requires that the RDMnet default scope be configured automatically. There is a shortcut function for this. Otherwise, you can add a custom scope.</p>
-<p>Per the requirements of RDMnet, a scope string is always UTF-8 and is thus represented by a char[] in C and a <a class="elRef" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> in C++.</p>
+<p>Per the requirements of RDMnet, a scope string is always UTF-8 and is thus represented by a char[] in C and a std::string in C++.</p>
 <p>See the "Scopes" section in <a class="el" href="how_it_works.html">How RDMnet Works</a> for more information on scopes.</p>
 <p> 
 <div class="code-tab-selector">
@@ -411,7 +408,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error adding default scope: &#39;&quot;</span> &lt;&lt; add_res.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">error</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span></div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Error adding default scope: &#39;&quot;</span> &lt;&lt; add_res.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">error</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_expected_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html">etcpal::Expected</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_expected_html_a60850b440a4ff7f769627b46d79043f6"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6">etcpal::Expected::error</a></div><div class="ttdeci">constexpr Error error() const noexcept</div></div>
@@ -478,7 +475,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> addr_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a>];</div>
 <div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a>(&amp;info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">ip</a>, addr_str);</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Connected to broker &#39;%s&#39; at address %s:%d\n&quot;</span>, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#acfd73dc5ff0567920ec01970fb41aaba">broker_name</a>, addr_str, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>);</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Connected to broker &#39;%s&#39; at address %s:%d\n&quot;</span>, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#acfd73dc5ff0567920ec01970fb41aaba">broker_name</a>, addr_str, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Check handles and/or context as necessary...</span></div>
 <div class="line"> </div>
@@ -498,7 +495,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">                                                 <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                 <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a>&amp; info)</div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a3a8402ac03dfec3f25f97fe97d518700">broker_name</a>()</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a3a8402ac03dfec3f25f97fe97d518700">broker_name</a>()</div>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot;&#39; at IP address &quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#aece06f4235f21c75c4ff690b5885e004">broker_addr</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Check handles as necessary and get EPT client instance...</span></div>
@@ -655,17 +652,14 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="fragment"><div class="line"><span class="comment">// The CID of the client we are sending the data to</span></div>
 <div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> dest_cid = <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ab017791f5f66829527591d8bd6bd840f">etcpal::Uuid::FromString</a>(<span class="stringliteral">&quot;7f0bb8b0-fead-40c0-b657-d92d39e57586&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;uint8_t, 20&gt;</a> data; <span class="comment">// An arbitrary data buffer of arbitrary size</span></div>
+<div class="line">std::array&lt;uint8_t, 20&gt; data; <span class="comment">// An arbitrary data buffer of arbitrary size</span></div>
 <div class="line"><span class="comment">// Fill in data with some protocol-specific opaque data to send...</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Send data for sub-protocol 1 to the client indicated by dest_cid</span></div>
 <div class="line"><a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> result = ept_client.<a class="code" href="classrdmnet_1_1_ept_client.html#ac75bff3ba01944973ed944a8a43946ea">SendData</a>(my_scope_handle, dest_cid, MY_ESTA_MANUFACTURER_ID, 1,</div>
-<div class="line">                                           data.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/array/data.html">data</a>(), data.<a class="codeRef" href="https://en.cppreference.com/w/cpp/container/array/size.html">size</a>());</div>
-<div class="ttc" id="aarray_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
+<div class="line">                                           data.data(), data.size());</div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html_ab017791f5f66829527591d8bd6bd840f"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ab017791f5f66829527591d8bd6bd840f">etcpal::Uuid::FromString</a></div><div class="ttdeci">static Uuid FromString(const char *uuid_str) noexcept</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_client_html_ac75bff3ba01944973ed944a8a43946ea"><div class="ttname"><a href="classrdmnet_1_1_ept_client.html#ac75bff3ba01944973ed944a8a43946ea">rdmnet::EptClient::SendData</a></div><div class="ttdeci">etcpal::Error SendData(ScopeHandle scope_handle, const etcpal::Uuid &amp;dest_cid, uint16_t manufacturer_id, uint16_t protocol_id, const uint8_t *data, size_t data_len)</div><div class="ttdoc">Send data from an EPT client on a scope.</div><div class="ttdef"><b>Definition:</b> ept_client.h:300</div></div>
-<div class="ttc" id="adata_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/array/data.html">std::array::data</a></div><div class="ttdeci">T data(T... args)</div></div>
-<div class="ttc" id="asize_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/array/size.html">std::array::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -686,7 +680,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">char</span> cid_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div>
 <div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(&amp;data-&gt;<a class="code" href="struct_rdmnet_ept_data.html#a1e54a6f2928120797e7bcf3031cf9fd1">source_cid</a>, cid_str);</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Got data from client %s for protocol %04x:%04x...\n&quot;</span>, cid_str, data-&gt;<a class="code" href="struct_rdmnet_ept_data.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">manufacturer_id</a>, data-&gt;<a class="code" href="struct_rdmnet_ept_data.html#ae44950c5a1939c04b9a9337a57828a35">protocol_id</a>);</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Got data from client %s for protocol %04x:%04x...\n&quot;</span>, cid_str, data-&gt;<a class="code" href="struct_rdmnet_ept_data.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">manufacturer_id</a>, data-&gt;<a class="code" href="struct_rdmnet_ept_data.html#ae44950c5a1939c04b9a9337a57828a35">protocol_id</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// data-&gt;data and data-&gt;data_len will point to the actual protocol-specific opaque-data.</span></div>
 <div class="line">}</div>
@@ -707,7 +701,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handles as necessary...</span></div>
 <div class="line"> </div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Got data from client &quot;</span> &lt;&lt; data.<a class="code" href="classrdmnet_1_1_ept_data.html#a07635554a26c730bad4cbdb81d5293fd">source_cid</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>()</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Got data from client &quot;</span> &lt;&lt; data.<a class="code" href="classrdmnet_1_1_ept_data.html#a07635554a26c730bad4cbdb81d5293fd">source_cid</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>()</div>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot; for protocol &quot;</span> &lt;&lt; data.<a class="code" href="classrdmnet_1_1_ept_data.html#ad82230ded92e64886e7a5b2ca8f11fca">manufacturer_id</a>() &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; data.<a class="code" href="classrdmnet_1_1_ept_data.html#a73e5f1fcbd4400bdb49b626db158b934">protocol_id</a>() &lt;&lt; <span class="stringliteral">&quot;...\n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// data.data() and data.data_len() will point to the actual protocol-specific opaque data.</span></div>
@@ -744,12 +738,11 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">                                <span class="keyword">const</span> <a class="code" href="struct_rdmnet_ept_data.html">RdmnetEptData</a>* data, <a class="code" href="struct_rdmnet_sync_ept_response.html">RdmnetSyncEptResponse</a>* response, <span class="keywordtype">void</span>* context)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// After determining that the message requires a response...</span></div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">memcpy</a>(my_ept_response_buf, my_response_data, RESPONSE_DATA_SIZE);</div>
+<div class="line">  memcpy(my_ept_response_buf, my_response_data, RESPONSE_DATA_SIZE);</div>
 <div class="line">  <a class="code" href="group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9">RDMNET_SYNC_SEND_EPT_DATA</a>(response, RESPONSE_DATA_SIZE);</div>
 <div class="line">  <span class="comment">// Data will be sent after this function returns.</span></div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga5075bf8b8590d72ad8f2626eb4b19bb9"><div class="ttname"><a href="group__rdmnet__api__common.html#ga5075bf8b8590d72ad8f2626eb4b19bb9">RDMNET_SYNC_SEND_EPT_DATA</a></div><div class="ttdeci">#define RDMNET_SYNC_SEND_EPT_DATA(response_ptr, response_data_len_in)</div><div class="ttdoc">Indicate that an EPT data message should be sent when this callback returns.</div><div class="ttdef"><b>Definition:</b> common.h:335</div></div>
-<div class="ttc" id="amemcpy_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a></div><div class="ttdeci">T memcpy(T... args)</div></div>
 </div><!-- fragment --><p> 
 </div>
 <div id="div_10_cpp" class="code-tab-content">
@@ -762,7 +755,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">                                                           <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html">rdmnet::ScopeHandle</a> scope_handle,</div>
 <div class="line">                                                           <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_ept_data.html">rdmnet::EptData</a>&amp; data)</div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/string/byte/memcpy.html">std::memcpy</a>(my_ept_response_buf, my_response_data, kResponseDataSize);</div>
+<div class="line">  std::memcpy(my_ept_response_buf, my_response_data, kResponseDataSize);</div>
 <div class="line">  <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">rdmnet::EptResponseAction::SendData</a>(kResponseDataSize);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_response_action_html_a1fcc67717e1fef1438da2cded45a631c"><div class="ttname"><a href="classrdmnet_1_1_ept_response_action.html#a1fcc67717e1fef1438da2cded45a631c">rdmnet::EptResponseAction::SendData</a></div><div class="ttdeci">static EptResponseAction SendData(size_t response_data_len)</div><div class="ttdoc">Send an EPT data message in response.</div><div class="ttdef"><b>Definition:</b> common.h:230</div></div>
@@ -807,7 +800,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">  <a class="code" href="classrdmnet_1_1_saved_ept_data.html">rdmnet::SavedEptData</a> saved_data = data.<a class="code" href="classrdmnet_1_1_ept_data.html#a3ac1dbf1462d63dd4786183b2e515237">Save</a>();</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Or to just save the opaque data:</span></div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint8_t&gt;</a> saved_data = data.<a class="code" href="classrdmnet_1_1_ept_data.html#ac7bf30921bde749ae3f729e64bc2612c">CopyData</a>();</div>
+<div class="line">  std::vector&lt;uint8_t&gt; saved_data = data.<a class="code" href="classrdmnet_1_1_ept_data.html#ac7bf30921bde749ae3f729e64bc2612c">CopyData</a>();</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Indicate that we will take no response action directly from this callback.</span></div>
 <div class="line">  <span class="keywordflow">return</span> <a class="code" href="classrdmnet_1_1_ept_response_action.html#abb876c19423878ded5f6e4b26b339b4c">rdmnet::EptResponseAction::DeferResponse</a>();</div>
@@ -834,7 +827,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">char</span> cid_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div>
 <div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(&amp;status-&gt;<a class="code" href="struct_rdmnet_ept_status.html#a1e54a6f2928120797e7bcf3031cf9fd1">source_cid</a>, cid_str);</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Error sending EPT data to component %s: &#39;%s&#39;\n&quot;</span>, cid_str,</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Error sending EPT data to component %s: &#39;%s&#39;\n&quot;</span>, cid_str,</div>
 <div class="line">         <a class="code" href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a>(status-&gt;<a class="code" href="struct_rdmnet_ept_status.html#a173906502e3b5416044e8545ecfd5541">status_code</a>));</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__rdmnet__api__common_html_ga1d378dff587acdfa8306c1075e316f4a"><div class="ttname"><a href="group__rdmnet__api__common.html#ga1d378dff587acdfa8306c1075e316f4a">rdmnet_ept_status_code_to_string</a></div><div class="ttdeci">const char * rdmnet_ept_status_code_to_string(ept_status_code_t code)</div><div class="ttdoc">Get a string representation of an EPT status code.</div><div class="ttdef"><b>Definition:</b> common.c:324</div></div>
@@ -851,7 +844,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html',''); initResiza
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Check handles as necessary...</span></div>
 <div class="line"> </div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error sending EPT data to component &quot;</span> &lt;&lt; status.<a class="code" href="classrdmnet_1_1_ept_status.html#a07635554a26c730bad4cbdb81d5293fd">source_cid</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Error sending EPT data to component &quot;</span> &lt;&lt; status.<a class="code" href="classrdmnet_1_1_ept_status.html#a07635554a26c730bad4cbdb81d5293fd">source_cid</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
 <div class="line">            &lt;&lt; status.<a class="code" href="classrdmnet_1_1_ept_status.html#a6d5108147af76197fe672d5355221e0a">CodeToString</a>() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_ept_status_html"><div class="ttname"><a href="classrdmnet_1_1_ept_status.html">rdmnet::EptStatus</a></div><div class="ttdoc">An EPT status message received over RDMnet and delivered to an RDMnet callback function.</div><div class="ttdef"><b>Definition:</b> ept_status.h:41</div></div>

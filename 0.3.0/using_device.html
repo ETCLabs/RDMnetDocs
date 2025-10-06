@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="title">Using the Device API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__tmp_tmp5pti0kq2_docs_getting_started_using_device"></a> The RDMnet Device API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<div class="textblock"><p><a class="anchor" id="md__tmp_tmp03h0dsld_docs_getting_started_using_device"></a> The RDMnet Device API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
 <p> 
 <div class="code-tab-page-selector">
   <button id="button_1_c" class="code-tab-links" onclick="selectAllC()">Show All C Snippets</button>
@@ -286,9 +286,8 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">else</span></div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;RDMnet device startup failed with error: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;RDMnet device startup failed with error: &quot;</span> &lt;&lt; result.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a></div></div>
 <div class="ttc" id="aclassetcpal_1_1_error_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::Error::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
 <div class="ttc" id="aclassetcpal_1_1_uuid_html"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a></div></div>
@@ -404,9 +403,8 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> addr_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a>];</div>
 <div class="line">  <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a>(&amp;info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">ip</a>, addr_str);</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Connected to broker &#39;%s&#39; at address %s:%d\n&quot;</span>, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">broker_name</a>, addr_str, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>);</div>
+<div class="line">  printf(<span class="stringliteral">&quot;Connected to broker &#39;%s&#39; at address %s:%d\n&quot;</span>, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a09b4687edadab4b4334a33b38d00cf2f">broker_name</a>, addr_str, info-&gt;<a class="code" href="struct_rdmnet_client_connected_info.html#a39d671dfd8919b93fe23dba6dbfba905">broker_addr</a>.<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>);</div>
 <div class="line">}</div>
-<div class="ttc" id="afprintf_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">std::printf</a></div><div class="ttdeci">T printf(T... args)</div></div>
 <div class="ttc" id="agroup__etcpal__inet_html_gacd7ec0d81e171166483c7629669bf05d"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a></div><div class="ttdeci">#define ETCPAL_IP_STRING_BYTES</div></div>
 <div class="ttc" id="agroup__etcpal__inet_html_gaf98da0ae21f7960b5e046c55b8d79c4a"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a></div><div class="ttdeci">etcpal_error_t etcpal_ip_to_string(const EtcPalIpAddr *src, char *dest)</div></div>
 <div class="ttc" id="astruct_etc_pal_sock_addr_html_a19cc8016f534a565f984438cfe911a9e"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e">EtcPalSockAddr::ip</a></div><div class="ttdeci">EtcPalIpAddr ip</div></div>
@@ -421,7 +419,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> MyDeviceNotifyHandler::HandleConnectedToBroker(<a class="code" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">rdmnet::Device::Handle</a> handle,</div>
 <div class="line">                                                    <span class="keyword">const</span> <a class="code" href="classrdmnet_1_1_client_connected_info.html">rdmnet::ClientConnectedInfo</a>&amp; info)</div>
 <div class="line">{</div>
-<div class="line">  <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a>()</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Connected to broker &#39;&quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf">broker_name</a>()</div>
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot;&#39; at IP address &quot;</span> &lt;&lt; info.<a class="code" href="classrdmnet_1_1_client_connected_info.html#af30653fa66bd5b267c54cf81a8c7eb3d">broker_addr</a>().<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassetcpal_1_1_sock_addr_html_a19c380b03cea21d7ac7325136a131ff0"><div class="ttname"><a href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">etcpal::SockAddr::ToString</a></div><div class="ttdeci">std::string ToString() const</div></div>
@@ -563,7 +561,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 </p>
 <div class="fragment"><div class="line"><span class="comment">// Create a physical endpoint numbered 2 with the UIDs and control fields of 3</span></div>
 <div class="line"><span class="comment">// previously-discovered physical responders.</span></div>
-<div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;rdmnet::PhysicalEndpointResponder&gt;</a> responders = {</div>
+<div class="line">std::vector&lt;rdmnet::PhysicalEndpointResponder&gt; responders = {</div>
 <div class="line">  <a class="code" href="classrdmnet_1_1_physical_endpoint_responder.html">rdmnet::PhysicalEndpointResponder</a>({0x6574, 0x00000001}, 0),</div>
 <div class="line">  <a class="code" href="classrdmnet_1_1_physical_endpoint_responder.html">rdmnet::PhysicalEndpointResponder</a>({0x6574, 0x00000002}, 0),</div>
 <div class="line">  <a class="code" href="classrdmnet_1_1_physical_endpoint_responder.html">rdmnet::PhysicalEndpointResponder</a>({0x6574, 0x00000003}, 0),</div>
@@ -580,7 +578,6 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">}</div>
 <div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_config_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_config.html">rdmnet::PhysicalEndpointConfig</a></div><div class="ttdoc">Configuration information for a physical endpoint on a device.</div><div class="ttdef"><b>Definition:</b> device.h:251</div></div>
 <div class="ttc" id="aclassrdmnet_1_1_physical_endpoint_responder_html"><div class="ttname"><a href="classrdmnet_1_1_physical_endpoint_responder.html">rdmnet::PhysicalEndpointResponder</a></div><div class="ttdoc">Identifying information for a physical RDM responder connected to an RDMnet gateway.</div><div class="ttdef"><b>Definition:</b> device.h:203</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p> 
 </div>
 </p>
@@ -627,7 +624,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="fragment"><div class="line"><span class="comment">// Create a virtual endpoint numbered 3, which has a single responder that needs a dynamic UID. The</span></div>
 <div class="line"><span class="comment">// responder needs a permanent Responder ID (RID), which is a UUID that should not change over the</span></div>
 <div class="line"><span class="comment">// lifetime of the responder.</span></div>
-<div class="line"><a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;etcpal::Uuid&gt;</a> responders = { <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ab017791f5f66829527591d8bd6bd840f">etcpal::Uuid::FromString</a>(<span class="stringliteral">&quot;f7c58fe2-d380-4367-91d1-b148eade448d&quot;</span>) };</div>
+<div class="line">std::vector&lt;etcpal::Uuid&gt; responders = { <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html#ab017791f5f66829527591d8bd6bd840f">etcpal::Uuid::FromString</a>(<span class="stringliteral">&quot;f7c58fe2-d380-4367-91d1-b148eade448d&quot;</span>) };</div>
 <div class="line"><a class="code" href="classrdmnet_1_1_virtual_endpoint_config.html">rdmnet::VirtualEndpointConfig</a> endpoint_config(3, responders);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add the endpoint</span></div>
@@ -671,7 +668,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">    {</div>
 <div class="line">      <span class="keywordtype">char</span> rid_str[<a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div>
 <div class="line">      <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(&amp;mapping-&gt;rid, rid_str);</div>
-<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/c/fprintf.html">printf</a>(<span class="stringliteral">&quot;Error obtaining dynamic UID for responder %s: &#39;%s&#39;\n&quot;</span>, rid_str,</div>
+<div class="line">      printf(<span class="stringliteral">&quot;Error obtaining dynamic UID for responder %s: &#39;%s&#39;\n&quot;</span>, rid_str,</div>
 <div class="line">             <a class="code" href="group__rdmnet__api__common.html#ga362e057a96421081d8551d65bf403b6a">rdmnet_dynamic_uid_status_to_string</a>(mapping-&gt;status_code));</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -704,7 +701,7 @@ $(document).ready(function(){initNavTree('using_device.html',''); initResizable(
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      <a class="codeRef" href="https://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Error obtaining dynamic UID for responder &quot;</span> &lt;&lt; mapping.rid.ToString() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
+<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;Error obtaining dynamic UID for responder &quot;</span> &lt;&lt; mapping.rid.ToString() &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span></div>
 <div class="line">                &lt;&lt; mapping.CodeToString() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>

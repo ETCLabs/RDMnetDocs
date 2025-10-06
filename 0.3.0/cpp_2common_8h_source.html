@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('cpp_2common_8h_source.html',''); initR
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerdmnet.html">rdmnet</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__rdmnet__cpp__common.html#ga29e1f681524b195a8b5767061960d8b7">   54</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code" href="group__rdmnet__cpp__common.html#ga29e1f681524b195a8b5767061960d8b7">Init</a>(<span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a>*                  log_params = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                          <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;RdmnetMcastNetintId&gt;</a>&amp; mcast_netints = <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;RdmnetMcastNetintId&gt;</a>{})</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                          <span class="keyword">const</span> std::vector&lt;RdmnetMcastNetintId&gt;&amp; mcast_netints = std::vector&lt;RdmnetMcastNetintId&gt;{})</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (mcast_netints.empty())</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('cpp_2common_8h_source.html',''); initR
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group__rdmnet__cpp__common.html#ga5938f415824a82d7789389b01345abd4">   79</a></span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_error.html">etcpal::Error</a> <a class="code" href="group__rdmnet__cpp__common.html#ga29e1f681524b195a8b5767061960d8b7">Init</a>(<span class="keyword">const</span> <a class="codeRef" href="https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_logger.html">etcpal::Logger</a>&amp;                   logger,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                          <span class="keyword">const</span> <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;RdmnetMcastNetintId&gt;</a>&amp; mcast_netints = <a class="codeRef" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;RdmnetMcastNetintId&gt;</a>{})</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                          <span class="keyword">const</span> std::vector&lt;RdmnetMcastNetintId&gt;&amp; mcast_netints = std::vector&lt;RdmnetMcastNetintId&gt;{})</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">if</span> (mcast_netints.empty())</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
@@ -388,13 +388,12 @@ $(document).ready(function(){initNavTree('cpp_2common_8h_source.html',''); initR
 <div class="ttc" id="astruct_rdmnet_netint_config_html"><div class="ttname"><a href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a></div><div class="ttdoc">Network interface configuration information to give the RDMnet library at initialization.</div><div class="ttdef"><b>Definition:</b> common.h:376</div></div>
 <div class="ttc" id="astruct_rdmnet_sync_ept_response_html"><div class="ttname"><a href="struct_rdmnet_sync_ept_response.html">RdmnetSyncEptResponse</a></div><div class="ttdoc">This structure should not be manipulated directly - use the macros to access it:</div><div class="ttdef"><b>Definition:</b> common.h:293</div></div>
 <div class="ttc" id="astruct_rdmnet_sync_rdm_response_html"><div class="ttname"><a href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a></div><div class="ttdoc">This structure should not be manipulated directly - use the macros to access it:</div><div class="ttdef"><b>Definition:</b> common.h:214</div></div>
-<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; RdmnetMcastNetintId &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2f0572d3b38066464698631c11bf4e92.html">include</a></li><li class="navelem"><a class="el" href="dir_5e65bf39a128b86276c4cbd7ba71e285.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_a0373ef9b80bf6142b0c3d9dd31f81a0.html">cpp</a></li><li class="navelem"><a class="el" href="cpp_2common_8h.html">common.h</a></li>
+    <li class="navelem"><a class="el" href="dir_e6bc1d93bc97421faa3b6a0406c19e44.html">include</a></li><li class="navelem"><a class="el" href="dir_4568d766f494339923feadfddaa45870.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_a30fc92b056b95d2351882693146f410.html">cpp</a></li><li class="navelem"><a class="el" href="cpp_2common_8h.html">common.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
