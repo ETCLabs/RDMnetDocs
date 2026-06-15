@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['etcpal_1721',['etcpal',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_bad_expected_access.html',1,'']]]
+  ['detail_1762',['detail',['https://etclabs.github.io/EtcPalDocs/head/structetcpal_1_1detail_1_1_first_type.html',1,'etcpal']]],
+  ['etcpal_1763',['etcpal',['https://etclabs.github.io/EtcPalDocs/head/structetcpal_1_1_adopt_lock_tag.html',1,'']]]
 ];

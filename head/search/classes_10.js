@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['virtualendpointconfig_1719',['VirtualEndpointConfig',['../classrdmnet_1_1_virtual_endpoint_config.html',1,'rdmnet']]]
+  ['uniquelockptr_1758',['UniqueLockPtr',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_unique_lock_ptr.html',1,'etcpal']]],
+  ['uuid_1759',['Uuid',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_uuid.html',1,'etcpal']]]
 ];

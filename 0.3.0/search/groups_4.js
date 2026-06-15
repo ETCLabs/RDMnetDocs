@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['ept_20client_20api_2952',['EPT Client API',['../group__rdmnet__ept__client.html',1,'(Global Namespace)'],['../group__rdmnet__ept__client__cpp.html',1,'(Global Namespace)']]],
-  ['error_20_28error_20handling_29_2953',['error (Error Handling)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__error.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html',1,'(Global Namespace)']]],
-  ['etcpal_2954',['EtcPal',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal.html',1,'']]],
-  ['etcpal_20config_20options_2955',['EtcPal config options',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__opts.html',1,'']]],
-  ['event_5fgroup_20_28event_20groups_29_2956',['event_group (Event Groups)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__event__group.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__event__group.html',1,'(Global Namespace)']]]
+  ['ept_20client_20api_3007',['EPT Client API',['../group__rdmnet__ept__client.html',1,'(Global Namespace)'],['../group__rdmnet__ept__client__cpp.html',1,'(Global Namespace)']]],
+  ['error_20_28error_20handling_29_3008',['error (Error Handling)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__error.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__error.html',1,'(Global Namespace)']]],
+  ['etcpal_3009',['EtcPal',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal.html',1,'']]],
+  ['etcpal_20config_20options_3010',['EtcPal config options',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__opts.html',1,'']]],
+  ['event_5fgroup_20_28event_20groups_29_3011',['event_group (Event Groups)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__event__group.html',1,'(Global Namespace)'],['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__event__group.html',1,'(Global Namespace)']]]
 ];

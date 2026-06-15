@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['opaque_5fid_20_28strongly_20typed_20handles_29_2993',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__opaque__id.html',1,'']]],
-  ['os_20abstraction_20modules_2994',['OS Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__os.html',1,'']]]
+  ['opaque_5fid_20_28strongly_20typed_20handles_29_3048',['opaque_id (Strongly typed handles)',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__cpp__opaque__id.html',1,'']]],
+  ['os_20abstraction_20modules_3049',['OS Abstraction Modules',['https://etclabs.github.io/EtcPalDocs/head/group__etcpal__os.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['queue_1622',['Queue',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_queue.html',1,'etcpal']]]
+  ['physicalendpointconfig_1652',['PhysicalEndpointConfig',['../classrdmnet_1_1_physical_endpoint_config.html',1,'rdmnet']]],
+  ['physicalendpointresponder_1653',['PhysicalEndpointResponder',['../classrdmnet_1_1_physical_endpoint_responder.html',1,'rdmnet']]]
 ];

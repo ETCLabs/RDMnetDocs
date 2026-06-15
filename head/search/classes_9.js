@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['opaqueid_1639',['OpaqueId',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3acontrollerhandletype_2c_20rdmnet_5fcontroller_5ft_2c_20rdmnet_5fcontroller_5finvalid_20_3e_1640',['OpaqueId&lt; detail::ControllerHandleType, rdmnet_controller_t, RDMNET_CONTROLLER_INVALID &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3adevicehandletype_2c_20rdmnet_5fdevice_5ft_2c_20rdmnet_5fdevice_5finvalid_20_3e_1641',['OpaqueId&lt; detail::DeviceHandleType, rdmnet_device_t, RDMNET_DEVICE_INVALID &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3aeptclienthandletype_2c_20rdmnet_5fept_5fclient_5ft_2c_20rdmnet_5fept_5fclient_5finvalid_20_3e_1642',['OpaqueId&lt; detail::EptClientHandleType, rdmnet_ept_client_t, RDMNET_EPT_CLIENT_INVALID &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]],
-  ['opaqueid_3c_20detail_3a_3allrpmanagerhandletype_2c_20llrp_5fmanager_5ft_2c_20llrp_5fmanager_5finvalid_20_3e_1643',['OpaqueId&lt; detail::LlrpManagerHandleType, llrp_manager_t, LLRP_MANAGER_INVALID &gt;',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_opaque_id.html',1,'etcpal']]]
+  ['netintinfo_1670',['NetintInfo',['https://etclabs.github.io/EtcPalDocs/head/classetcpal_1_1_netint_info.html',1,'etcpal']]],
+  ['notifyhandler_1671',['NotifyHandler',['../classrdmnet_1_1_broker_1_1_notify_handler.html',1,'Broker::NotifyHandler'],['../classrdmnet_1_1_controller_1_1_notify_handler.html',1,'Controller::NotifyHandler'],['../classrdmnet_1_1_device_1_1_notify_handler.html',1,'Device::NotifyHandler'],['../classrdmnet_1_1_ept_client_1_1_notify_handler.html',1,'EptClient::NotifyHandler'],['../classrdmnet_1_1llrp_1_1_manager_1_1_notify_handler.html',1,'Manager::NotifyHandler']]]
 ];
